@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					
+						&#8211;
+						ebuild-uploader利用ガイド</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table class="all" width="99%"><tr><td><div class="navi" align="center"><span><a href="/">トップに戻る</a></span></div></td></tr></table><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0em;"><tr><td valign="top" align="right" colspan="1" bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 0em;"><tr><td width="99%" class="content" valign="top" align="left"><br></br><h1>ebuild-uploader利用ガイド</h1><table width="80%" border="0" style="border: #FF7711 3px dotted;"><tr><td> 
+この文書では、GentooJPで運営しているebuild-uploaderの使い方を説明します。
+</td></tr></table><br></br><br></br><table border="0" width="100%"><tr><td><b>Contents</b>:<br></br>1. <a href="#doc_chap1">ebuild-uploaderって？</a><br></br>2. <a href="#doc_chap2">ebuild-uploaderを利用したアップロード</a><br></br>3. <a href="#doc_chap3">ツリーを同期する</a><br></br>4. <a href="#doc_chap4">ebuildを利用するための設定</a><br></br>5. <a href="#doc_chap5">ebuildをテストする</a><br></br>6. <a href="#doc_chap6">動作／不具合報告をする</a><br></br></td><td align="right" valign="top" style="padding-right: 1.0em;"><span xmlns="" style="white-space:nowrap;"><i>Author</i>
+		:
+		<b><a class="altlink" href="mailto:www@gentoo.gr.jp">GentooJP</a></b></span><br xmlns=""><span xmlns="" style="white-space:nowrap;"><i>Editor</i>
+		:
+		<b><a class="altlink" href="mailto:atzm@gentoo.gr.jp">渡邊 集</a></b></span><br xmlns=""><br></br>
+														Updated 27 August 2006</td></tr></table><br></br><br></br><h2 xmlns="">
+<a name="doc_chap1">1.</a>ebuild-uploaderって？</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect1">ebuild-uploaderについて </a></p>
+<p xmlns=""><a href="http://ebuild.gentoo.gr.jp/">ebuild-uploader</a>
+は、GentooJPで独自に開発した簡易ebuild登録システムです。
+ebuildの登録を容易に行うことができ、laymanやgensyncコマンドを用いることによって
+emerge syncと同じ感覚でツリーの取得を行うことができるので、
+テストもとても簡単になっています。
+もちろん、emerge-webrsyncのような感覚でツリーの取得を行うことも可能です。
+自分で作ったebuildをみんなにテストしてもらいたい、
+本家Portageツリーに入れて欲しいけど英語で登録するのは難しい、
+誰かの作ったebuildのテストをしてみたい、
+というようなときに必ず役に立つはずです。
+</p>
+<p xmlns="">
+また、登録されたebuildはテスト期間を経て、
+本家Portageツリーにコミットしても問題ないだろうという状態になったとき、
+GentooJPの開発者は本家の開発者に連絡を取って本家ツリーに入れてもらえるように計らいます。
+すべてのebuildが本家ツリーにコミットされるとは限りませんが、
+Bugzillaは分かりにくい、英語が苦手だというあなたが作ったebuildが本家ツリーに登録されるための、
+もっとも手軽な方法と言えるでしょう。
+どんなアプリケーションのebuildでも、遠慮せずにどんどん登録して下さい！
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b>
+本家ツリーにあるebuildを改良したといったようなebuildの場合は、充分にテストを行った上で、
+~x86として(x86用であれば)登録を行うようにして下さい。
+登録されたebuildは利用者がOVERLAYすることになりますので、
+パッケージアップデートの対象になってしまう可能性が充分にあるからです。
+</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect2">ebuild-uploaderの機能 </a></p>
+<p xmlns="">
+ebuild-uploaderの機能を簡単に挙げると、以下のようになります。
+</p>
+<ul xmlns="">
+<li>ebuildを簡単に日本語で登録することができます。</li>
+<li>登録された各ebuildごとにコメントをつけることのできる掲示板機能があり、
+ebuildにバグが発見された場合などにはこの機能を使って簡単に報告することができます。</li>
+<li>コメント文を考えている時間のないお忙しいあなたのために、
+動作したかどうかをクリック一回で報告することのできる投票機能があります。</li>
+<li>登録されたebuildはすべて個々に閲覧とダウンロードを行うことができます。</li>
+<li>gentoolkit-devに含まれるgensyncコマンドを用いることによって、
+rsyncサーバを使ったツリーの取得を行うことができます。</li>
+<li>ファイアウォール等の制限のためrsyncを使えない方向けに、
+Webを介してツリーの取得を行う方法も提供されています。</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap2">2.</a>ebuild-uploaderを利用したアップロード</h2>
+<p xmlns="">
+それでは実際にebuild-uploaderを使ってebuildの登録をしてみましょう。
+</p>
+<p xmlns=""><a href="http://ebuild.gentoo.gr.jp/">ebuildJP</a>
+を訪れると、
+左側には登録されているカテゴリ毎のebuild一覧、
+右側のヘッダ部にナビゲーションのためのリンク、
+その下には最近アクションのあったアプリケーションが並んでいるはずです。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect2">ebuildを新規登録する </a></p>
+<p xmlns="">
+ebuildを新規登録する場合、ナビゲーションのところにある<font class="input" color="blue">アップロード</font>というリンクをクリックして下さい。
+アップロードのためのフォームが現れます。
+</p>
+<table xmlns="" class="ntable">
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>ユーザ名(必須)</b></font></td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">自分の名前を記述します。</td>
+</tr>
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>パスワード(必須)</b></font></td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">登録したファイルを編集する際に必要となります。</td>
+</tr>
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>メールアドレス(必須)</b></font></td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">自分のメールアドレスを記述します。メールアドレスはGentooJPのメンバー以外には公開されません。
+メールアドレスは、例えば登録されたebuildを本家に持っていくようなことになった場合、
+その際ebuildの登録者に連絡を取らなければならないことがあるため必須項目となっています。</td>
+</tr>
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>カテゴリー(必須)</b></font></td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">これからアップロードしようとしているebuildがどのカテゴリに属するものなのかを選択して下さい。</td>
+</tr>
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>Ebuildファイル(必須)</b></font></td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">アップロードしたいebuildをここで選択します。</td>
+</tr>
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>Ebuildコメント(任意)</b></font></td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">ebuildの簡単な説明をここに記述して下さい。</td>
+</tr>
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>追加ファイル(任意)</b></font></td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">パッチなどがあってfilesディレクトリに置いておかなければ正常動作しないようなebuildの場合はここでfilesディレクトリに置くファイルを選んで下さい。
+特に必要なければ空欄で構いません。
+また、コメント欄にはそのファイルについての説明を簡潔に記述して下さい。
+</td>
+</tr>
+</table>
+<p xmlns="">
+これらの項目に適切な記述をして、<font class="input" color="blue">送信</font>ボタンをクリックするだけで新規登録作業は完了です。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b>digestやManifest等のファイルはアップロードしないようにして下さい。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect3">ebuildファイルを追加登録する </a></p>
+<p xmlns="">
+すでに登録されているパッケージに、ebuildや他のファイルを追加でアップロードしたい場合は以下のようにします。
+</p>
+<ol xmlns="">
+<li>左側の一覧や運営ログなどから、これから何か追加したいアプリケーションを選びます。</li>
+<li>ebuildsのテーブルの下にある<font class="input" color="blue">ebuildの追加</font>をクリックします。</li>
+<li>
+<a href="#doc_chap2_sect2">新規登録</a>
+と同じ画面になりますので、あとは同じ手順でアップロードを行って下さい。</li>
+</ol>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+既にアップロードされているファイルと同一の名前を持つファイルはアップロードできませんので、
+そのような場合は-r1といったリビジョンを付けるなどしてからアップロードを行って下さい。
+</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect4">filesディレクトリに入るべきファイルを追加登録する </a></p>
+<p xmlns="">
+すでに登録されているパッケージに、filesディレクトリに入るべきファイルを追加でアップロードしたい場合は以下のようにします。
+</p>
+<ol xmlns="">
+<li>左側の一覧や運営ログなどから、これから何か追加したいアプリケーションを選びます。</li>
+<li>Filesのテーブルの下にある<font class="input" color="blue">filesの追加</font>をクリックします。</li>
+<li>
+<a href="#doc_chap2_sect2">新規登録</a>
+の画面から「カテゴリー」「Ebuildファイル」「Ebuildコメント」を除いたフォームが現れますので、
+必要事項を入力して同じようにアップロードを行って下さい。</li>
+</ol>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+ebuildの追加登録と同じく、既にアップロードされているファイルと同一の名前を持つファイルはアップロードできません。
+</p></td></tr></table>
+<h2 xmlns="">
+<a name="doc_chap3">3.</a>ツリーを同期する</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect1">3種類の同期方法 </a></p>
+<p xmlns="">
+ebuild-uploaderに登録してあるebuildをローカルに同期する方法は3種類あります。
+それぞれの方法には一長一短がありますが、環境に合わせて適切な方法を選んで下さい。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect2">laymanを利用する </a></p>
+<p xmlns="">
+この方法がおそらく一番簡単な方法です。
+特殊な理由がない限りはこの方法を選ぶと良いでしょう。
+</p>
+<p xmlns="">
+laymanを利用してebuild-uploaderに登録されているebuildを試すのはとても簡単です。
+laymanをインストールし、&#8221;gentoojp&#8221;というオーバーレイをあなたの利用するオーバーレイのリストに加えるだけです。
+</p>
+<a xmlns="" name="doc_chap3_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.1</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# emerge layman
+# echo "source /usr/portage/local/layman/make.conf" &gt;&gt; /etc/make.conf
+<font class="comment">// laymanの設定をmake.confに読み込ませます。</font>
+# layman -f
+<font class="comment">// laymanで利用可能なオーバーレイのリストを更新します。</font>
+# layman -a gentoojp
+<font class="comment">// "gentoojp"をあなたの利用するオーバーレイのリストに追加します。</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+laymanを利用する場合の設定は以上です。
+ツリーの状態を更新するには、以下のコマンドを打って下さい。
+</p>
+<a xmlns="" name="doc_chap3_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.2</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# layman -s gentoojp
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+laymanのより高度の使い方については、manページをご覧下さい。
+</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+08/27/2006現在、laymanはソフトマスク状態にあります。
+この方法を利用する際は、laymanのソフトマスクを明示的に外す必要があります。
+ソフトマスクの外し方については、Gentooハンドブックの
+<a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=3">ソフトウェアのブランチを併用する</a>
+をご参照下さい。
+</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect3">gensyncを利用する </a></p>
+<p xmlns="">
+この方法は、laymanを利用する場合は自動的に設定されるいくつかのことを自分で設定しなければならないため少々煩雑です。
+ただし08/27/2006現在Stableブランチでも利用可能なため、Testingブランチを利用したくないユーザには適切です。
+</p>
+<p xmlns="">
+まず、ebuild-uploaderに登録されているebuild群を、ローカルのどのディレクトリに展開するのかを決定しなければなりません。
+ここでは、<font class="input" color="blue"><font class="path">/usr/local/portagejp</font></font>に展開するものとして話を進めます。
+よく分からない場合はこの例の通りに設定すると良いでしょう。
+</p>
+<p xmlns=""><font class="path">/etc/make.conf</font>の<font class="input" color="blue">PORTDIR_OVERLAY_JP</font>という変数に展開先を記述します。
+</p>
+<a xmlns="" name="doc_chap3_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.3</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+PORTDIR_OVERLAY_JP="/usr/local/portagejp"
+</pre></td></tr>
+</table>
+<p xmlns="">
+また、このディレクトリをPORTDIR_OVERLAYに加えて、
+Portageがこのツリーを参照してくれるようにしなければなりません。
+</p>
+<a xmlns="" name="doc_chap3_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.4</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+PORTDIR_OVERLAY="/usr/local/portagejp /some/portdir/overlay"
+<font class="comment">// /some/portdir/overlayというのは、他にもディレクトリを設定できるという意味です。</font>
+<font class="comment">// これをそのまま書かないようにして下さい。</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+これで展開先は決定できました。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+PORTDIR_OVERLAYをご存じでない方は、
+<a href="http://www.gentoo.org/doc/ja/portage-user.xml">Portageユーザガイド</a>
+をご一読下さい。
+</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b>
+PORTDIR_OVERLAYにディレクトリを追加する際、
+PORTDIR_OVERLAY_JPに記述されるディレクトリを必ず最初に記述するようにして下さい。
+</p></td></tr></table>
+<p xmlns="">展開先が決定されたので、gensyncを利用するため、gentoolkit-devパッケージをインストールします。</p>
+<a xmlns="" name="doc_chap3_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.5</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# emerge gentoolkit-dev
+</pre></td></tr>
+</table>
+<p xmlns="">
+gentoolkit-devのインストールが終わったら、gensyncの設定を行います。
+gensyncは<font class="path">/etc/gensync</font>以下に*.syncsourceというファイルを作成して利用することができます。
+ここでは、<font class="input" color="blue"><font class="path">/etc/gensync/ebuildjp.syncsource</font></font>というファイルを作成するものとして話を進めます。
+</p>
+<p xmlns=""><font class="path">/etc/gensync/ebuildjp.syncsource</font>を作成し、内容を以下のようにして下さい。
+</p>
+<a xmlns="" name="doc_chap3_pre6"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.6</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+id="ebuildjp"
+description="GentooJP ebuild project source"
+rsync="rsync://ebuild.gentoo.gr.jp/gentoojp-portage"
+
+overlay="/usr/local/portagejp"
+<font class="comment">// 先程/etc/make.confのPORTDIR_OVERLAY_JPで設定した展開先を記述して下さい。</font>
+</pre></td></tr>
+</table>
+<p xmlns="">これで設定は完了です。gensyncを実行してツリーの取得を行いましょう。</p>
+<a xmlns="" name="doc_chap3_pre7"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.7</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# gensync ebuildjp
+</pre></td></tr>
+</table>
+<p xmlns="">ツリーはこのコマンドをタイプすればいつでも更新することができます。</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>gensyncの高度な使い方については、manページをご覧下さい。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect4">tarボールを利用する </a></p>
+<p xmlns="">
+ファイアウォール等の制限によりrsyncポートを使えない利用者の方向けに、
+Webを利用したツリーの取得／更新方法も提供しています。
+Webを利用してツリーを取得するには、
+<a href="#doc_chap3_sect3">gensyncを利用する</a>
+で説明したebuild展開先の設定を行った後で以下のようにします。
+</p>
+<a xmlns="" name="doc_chap3_pre8"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.8</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# cd /tmp
+<font class="comment">// これは一時ダウンロードディレクトリです。どこでも構いません。</font>
+
+# wget http://ebuild.gentoo.gr.jp/distfiles/portagejp.tbz2
+# cd /usr/local
+# tar jxf /tmp/portagejp.tbz2
+<font class="comment">// アーカイブを展開するとportagejpというディレクトリが生成されます。</font>
+<font class="comment">// PORTDIR_OVERLAY_JPを別のディレクトリにしていた場合は適宜調整して下さい。</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+これで利用可能な状態になります。Webを利用してツリーの更新を行うときに必要なのは、
+portagejpというパッケージをemergeすることだけです。
+</p>
+<a xmlns="" name="doc_chap3_pre9"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.9</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# emerge portagejp
+</pre></td></tr>
+</table>
+<h2 xmlns="">
+<a name="doc_chap4">4.</a>ebuildを利用するための設定</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect1">digestの自動生成 </a></p>
+<p xmlns="">
+ebuild-uploaderには基本的にdigestファイルは添付されません。
+そのため、digestファイルは自分で生成してやらなければならないことになります。
+しかしPortageには、emerge時にdigestファイルを自動で生成するための機能があります。
+</p>
+<p xmlns="">
+その機能を有効にするために、<font class="path">/etc/make.conf</font>のFEATURES変数に、以下の記述を加えて下さい。
+</p>
+<a xmlns="" name="doc_chap4_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.1</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+FEATURES="digest"
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>
+これはdigestを自分で生成しなければならないということですが、
+それはアーカイブの正当性について自分で責任を持つという意味を持ちます。
+</p></td></tr></table>
+<h2 xmlns="">
+<a name="doc_chap5">5.</a>ebuildをテストする</h2>
+<p xmlns="">
+ebuildをテストするのはとても簡単です。1度設定とツリーの展開を行った環境であれば、
+</p>
+<a xmlns="" name="doc_chap5_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.1</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# emerge hogehoge
+</pre></td></tr>
+</table>
+<p xmlns="">
+とするだけでテストすることができます。
+この際、コンパイルが通らなかったりアプリケーションが正常に動作しなかった場合など、
+不具合が発生したらebuild-uploaderの掲示板で報告を行って下さい。
+もちろん、正常な動作報告もお待ちしています。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+過去にアップロードされたebuildの名前が本家Portageツリーのアップデートによって重なり、
+結果として依存関係の不整合を引き起こすことがあります。
+もしebuildJPと本家Portageツリーの不整合による不具合を発見したら、
+<a href="#doc_chap6">動作／不具合報告をする</a>
+の手順に従って不具合の報告を行って下さい。
+</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>
+ebuild-uploaderでは誰でもが簡単にebuildを登録できるため、
+システムを破壊させるようなebuildが登録されているかも知れないという可能性が常にあります。
+そのような危険をはらんでいるということを考慮して、テストは慎重に行って下さい。
+</p></td></tr></table>
+<h2 xmlns="">
+<a name="doc_chap6">6.</a>動作／不具合報告をする</h2>
+<p xmlns="">
+何らかの不具合を見つけたり、正常に動作したということを報告したい場合は、
+まず
+<a href="http://ebuild.gentoo.gr.jp/">ebuild-uploader</a>
+にアクセスし、報告を行いたいアプリケーションのページへ行って下さい。
+下の方に<font class="input" color="blue">コメント</font>というセクションがありますので、
+自分の名前とメッセージを書いて<font class="input" color="blue">メッセージ送信</font>をクリックして下さい。
+</p>
+<p xmlns="">
+また、投票機能を使うことで、動作したということを簡単に報告することができます。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+バグ報告はできるだけ的確に、簡潔に書いて下さい。内容が分かりにくいと修正が遅れる可能性があります。
+</p></td></tr></table></td></tr></table></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>

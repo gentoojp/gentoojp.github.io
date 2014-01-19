@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					
+						&#8211;
+						翻訳とオリジナルドキュメント作成環境の構築ガイド</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table class="all" width="99%"><tr><td><div class="navi" align="center"><span><a href="/">トップに戻る</a></span></div></td></tr></table><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0em;"><tr><td valign="top" align="right" colspan="1" bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 0em;"><tr><td width="99%" class="content" valign="top" align="left"><br></br><h1>翻訳とオリジナルドキュメント作成環境の構築ガイド</h1><table width="80%" border="0" style="border: #FF7711 3px dotted;"><tr><td> このガイドでは、GentooJPの翻訳・オリジナルドキュメント作成の際に必要となる環境の構築方法について説明します。
+</td></tr></table><table border="0" style="border: #dddddd 3px dotted;"><tr><td>このドキュメントの著作権はAuthorの方に帰属します。<br></br>詳しくは<a href="/jpmain/original-doc.xml">オリジナルドキュメントプロジェクト</a>を参照してください。</td></tr></table><br></br><br></br><table border="0" width="100%"><tr><td><b>Contents</b>:<br></br>1. <a href="#doc_chap1">GentooJP のドキュメント</a><br></br>2. <a href="#doc_chap2">ドキュメントの構成</a><br></br>3. <a href="#doc_chap3">ドキュメント作成準備</a><br></br>4. <a href="#doc_chap4">ドキュメントの確認方法(HTML)</a><br></br>5. <a href="#doc_chap5">ドキュメントの確認方法(AxKit)</a><br></br>6. <a href="#doc_chap6">ドキュメントの送付方法</a><br></br></td><td align="right" valign="top" style="padding-right: 1.0em;"><span xmlns="" style="white-space:nowrap;"><i>著者</i>
+		:
+		<b><a class="altlink" href="mailto:kihei@ss.iij4u.or.jp">Takashi Ota</a></b></span><br xmlns=""><span xmlns="" style="white-space:nowrap;"><i>改訂者</i>
+		:
+		<b><a class="altlink" href="mailto:idani@gentoo.gr.jp">飴谷 茂寛</a></b></span><br xmlns=""><br></br>
+														Updated 14 Nov 2004</td></tr></table><br></br><br></br><h2 xmlns="">
+<a name="doc_chap1">1.</a>GentooJP のドキュメント</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect1">概要 </a></p>
+<p xmlns="">
+			gentoo.org と GentooJP では、Webコンテンツ、技術文書などにXML関連技術を活用しています。XML関連技術の活用は、次の点で<font class="emphasis">cool</font>です。
+			</p>
+<ul xmlns="">
+<li>Webデザインを、コンテンツを変えることなく短期間に変更できる。</li>
+<li>10個程度の要素タグを覚えることで、誰もが統一化された文書を容易に作成できる。</li>
+<li>翻訳ドキュメント、オリジナルドキュメントの反映が即座に可能である。</li>
+<li>xml文書は、htmlなどに比べて非常に見通しが良い。</li>
+</ul>
+<p xmlns="">
+			Gentoo Linuxは、比較的新しいディストリビューションです。即応性を考え、GentooJPではXML関連技術を通して、さまざまなドキュメントの作成と提供を行います。
+			</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect2">ドキュメント作成上の注意点 </a></p>
+<p xmlns="">
+			ドキュメントの作成を行う場合には以下の点に注意してください。
+			<ul>
+<li>エンコーディング UTF-8、改行コード LFで文書を作成します。</li>
+<li>翻訳ドキュメントでは、オリジナルの要素タグを変更しないでください。原則的として変更できるのは、翻訳者の追加のみです。</li>
+<li>作成者、作成者メールアドレスが必要になります。個人名、所有メールアドレスを推奨しますが、作成者名にGentooJP、メールアドレスに docs@gentoo.gr.jpを選択することも可能です。</li>
+</ul></p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect3">ドキュメント作成の手順 </a></p>
+<p xmlns="">
+			ドキュメントの作成は次の手順で行ってください。なお、次章以降ではその詳細な手順を説明します。
+			<ul>
+<li>
+<a href="#doc_chap2">第２章ドキュメントの構成：</a>gentoo.orgとGentooJPドキュメントの構成・文法を理解してください。</li>
+<li>
+<a href="#doc_chap3">第３章ドキュメント作成準備：</a>GentooJPのディレクトリ構成にあわせたドキュメント作業用ディレクトリを作成したり、必要ファイルの取得をします。いろいろな取得方法がありますのでそれぞれについて解説します。</li>
+<li>
+<a href="#doc_chap4">第４章ドキュメントの確認方法(HTML)：</a>作成されたドキュメントのチェックを、コンソール環境で行います。</li>
+<li>
+<a href="#doc_chap5">第５章ドキュメントの確認方法(AxKit)：</a>GentooJPのwebコンテンツと同じ環境でチェックを行いたい場合には、AxKit + LibXSLTを使うこともできます。</li>
+<li>
+<a href="#doc_chap6">第６章ドキュメントの送付方法：</a>ドキュメントの送付について解説します。</li>
+</ul></p>
+<h2 xmlns="">
+<a name="doc_chap2">2.</a>ドキュメントの構成</h2>
+<p xmlns="">
+			ここでは、ドキュメントの最低限必要となる項目について解説します。<br>
+			文書の作成にとてもよいガイド、<a href="/doc/ja/xml-guide.xml">Gentoo Linux ドキュメンテーションガイド</a>がありますので、参照してください。
+			GentooJPのドキュメントで、必ず必要となる初期化部及び終了部などは次のとおりです。
+			また、<font class="emphasis">ドキュメントのファイル名、文書のタイトル、作成者のメールアドレス、作成者名、文書の摘要、作成年月日、文書のバージョン</font>は適宜変更する必要があります。<br>
+			ドキュメントのファイル名は、簡潔にその文書の内容が理解できるものが良いでしょう。なお、翻訳ドキュメントの場合は、バージョン番号を変更しないで下さい。オリジナルドキュメントの場合は、バージョンを<font class="code">1.0</font>としてください。<br>
+                        これ以外の項目については、変更の必要はありません。<font class="code">青文字</font>の部分が、変更を必要とする箇所です。実際のドキュメントは次のような構成となります。<br></p>
+<a xmlns="" name="doc_chap2_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.1: ドキュメント 基本構成</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+&lt;?xml version='1.0' encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt; 
+&lt;!--<font class="comment">上の行は最終的な翻訳ドキュメントでは必要ありません。AxKit以外で確認する場合の文法チェックで必要となります</font>--&gt;
+&lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
+
+&lt;!--<font class="comment">ドキュメントのファイル名</font>--&gt;
+&lt;guide link="/jpdoc/<font class="input" color="blue">test-xml.xml</font>"&gt;
+
+&lt;!--<font class="comment">ドキュメントのタイトル</font>--&gt;
+&lt;title&gt;<font class="input" color="blue">ドキュメントサンプル文書</font>&lt;/title&gt;
+
+&lt;!--<font class="comment">作成者名、作成者のメールアドレス</font>--&gt;
+&lt;author title="Author"&gt;&lt;mail link="<font class="input" color="blue">docs@gentoo.gr.jp</font>"&gt;<font class="input" color="blue">GentooJP</font>&lt;/mail&gt;
+&lt;/author&gt;
+
+&lt;!--<font class="comment">翻訳ドキュメントの場合は、以下を追加します</font>--&gt;
+&lt;author title="翻訳"&gt;&lt;mail link="<font class="input" color="blue">翻訳者メールアドレス</font>"&gt;<font class="input" color="blue">翻訳者名</font>&lt;/mail&gt;
+&lt;/author&gt;
+
+&lt;!--<font class="comment">Original revision:<font class="input" color="blue"> 1.49</font></font>--&gt;&lt;!--<font class="comment">// 翻訳ドキュメントでオリジナルリビジョンを確認するために記入してください</font>--&gt;
+
+
+&lt;!--<font class="comment">文書の摘要</font>--&gt;
+&lt;abstract&gt;<font class="input" color="blue">
+このガイドは、GentooJPの翻訳・オリジナルドキュメントの基本構成について、サンプルを提供します。 
+</font>&lt;/abstract&gt;
+
+&lt;!--<font class="comment">ドキュメントのバージョン</font>--&gt;
+&lt;version&gt;<font class="input" color="blue">1.0</font>&lt;/version&gt;
+
+&lt;!--<font class="comment">作成年月日</font>--&gt;
+&lt;date&gt;<font class="input" color="blue">8 November 2002</font>&lt;/date&gt;
+
+
+&lt;!--<font class="comment"> ここから本文です。</font>--&gt;
+&lt;chapter&gt;
+&lt;title&gt;<font class="input" color="blue">これは第１章のタイトルです</font>&lt;/title&gt;
+&lt;section&gt;
+
+&lt;title&gt;<font class="input" color="blue">これは第１章第１節のタイトルです</font>&lt;/title&gt;
+
+&lt;body&gt;
+
+&lt;p&gt;<font class="input" color="blue">第１章の第１節の本文です。</font>&lt;/p&gt;
+
+&lt;pre&gt;<font class="input" color="blue">コード領域です。実際に入力する操作を記載します。</font>&lt;/pre&gt;
+
+&lt;note&gt;これは注記です。&lt;/note&gt;
+&lt;warn&gt;これは警告です。&lt;/warn&gt;
+&lt;impo&gt;これは重要項目です。&lt;/impo&gt;
+
+&lt;/body&gt;
+&lt;/section&gt;
+&lt;/chapter&gt;
+&lt;!--<font class="comment"> ここまでが本文です。</font>--&gt;
+
+&lt;/guide&gt;
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+		このサンプル文書の名前はjpdoc/test-xml.xmlです。<a href="/jpdoc/test-xml.xml">実際の表示</a>を確認してみてください。
+		</p></td></tr></table>
+<h2 xmlns="">
+<a name="doc_chap3">3.</a>ドキュメント作成準備</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect1">概要 </a></p>
+<p xmlns="">gentoo.orgやGentooJPのXMLドキュメントは、すべてcvsで公開されています
+		回線状況やディスクスペースの問題なども考慮して、必要最小限のファイルで準備する方法、
+		www.tar.gzを取得し展開する方法、cvs利用による方法を紹介します。<br>
+		(翻訳ドキュメントでは作業の開始宣言、gentoo.orgの原文取得など追加作業が必要になりますが、この章の最後に説明します。)<br>
+		どの方法でも、次の点は守ってください。
+		<ul>
+<li>ドキュメント作成は、必ずjpdoc/以下で行うこと。(翻訳ドキュメントでは、doc/ja/以下での作業を推奨)</li>
+<li>オリジナルドキュメントで画像イメージを使用する場合は、/images/(ドキュメント名)/画像ファイル名とすること。</li>
+<li>画像フォーマットは、PNGを推奨します。</li>
+</ul></p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect2">必要最小限のファイルで準備する方法 </a></p>
+<p xmlns="">
+		オリジナルドキュメントを作成するには、まずディレクトリを適切なユーザーの /home 領域などに、dtd、xsl、css、jpdoc、imagesの５つを作成します。
+		次に、dtd/guide.dtd、xsl/guide.xsl、css/main.css を配置します。作成しようとするドキュメントは、jpdocディレクトリで作業を行って下さい。<br>
+		作業領域として<font class="input" color="blue">www</font>以下に各ディレクトリとファイルを展開します。
+		</p>
+<a xmlns="" name="doc_chap3_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.1: ディレクトリの作成とファイルの配置</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+$ <font class="input" color="blue">mkdir www </font>
+$ <font class="input" color="blue">mkdir www/{dtd,xsl,css,jpdoc,images}</font>
+$ <font class="input" color="blue">wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/dtd/guide.dtd? -P www/dtd</font>
+$ <font class="input" color="blue">wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/xsl/guide.xsl? -P www/xsl</font>
+$ <font class="input" color="blue">wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/css/main.css? -P www/css</font>
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect3">www.tar.gzを取得して展開する方法 </a></p>
+<p xmlns="">
+		GentooJPのwebコンテンツ全体を取得することのできるwww.tar.gzは、<a href="http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/gentoojp/www/www.tar.gz?tarball=1">こちら</a>から取得できます。<br>
+		www.tar.gzを取得して展開する方法は、他のドキュメントを参考にしながら作業できるのが利点です。コマンドラインから取得して展開する方法は次のとおりです。<br>
+		展開が終われば、GentooJPのwebコンテンツと同様のディレクトリ構成とファイルがwww/以下に配置されます。
+		</p>
+<a xmlns="" name="doc_chap3_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.2: www.tar.gzの取得と展開</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+$ <font class="input" color="blue">cd ~/</font>
+$ <font class="input" color="blue">wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/gentoojp/www/www.tar.gz?tarball=1</font>
+$ <font class="input" color="blue">tar -zxvf www.tar.gz</font>
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect4">cvsを利用する方法 </a></p>
+<p xmlns="">
+		cvsを利用する方法は、いくつかのコマンドを覚えることでファイルのバージョンを常に最新版にしておけるなど大変便利です。<br>
+		以下に基本的な内容を書きますが、詳細は
+		<a href="/doc/ja/cvs-tutorial.xml">CVSチュートリアル</a>、
+		<a href="http://sourceforge.jp/cvs/?group_id=190">sourceforge.jp</a>などを参照してください。<br>
+		あなたのホームディレクトリを<font class="code">/home/username</font>、リポジトリは、<font class="code">gentoojp</font>として説明します。
+		</p>
+<a xmlns="" name="doc_chap3_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.3: cvsのインストールとリポジトリの作成</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// cvsのインストール</font>
+# <font class="input" color="blue">emerge cvs</font>
+
+<font class="comment">// リポジトリの作成</font>
+$ <font class="input" color="blue">cvs -d /home/username/gentoojp init</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+		GentooJPのWebコンテンツ(www.tar.gzと同内容)をチェックアウト(作業コピー取り出し)し、/home/username/gentoojp/www/以下に必要ファイルを取得します。
+		</p>
+<a xmlns="" name="doc_chap3_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.4: checkout</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+$ <font class="input" color="blue">cd /home/username/gentoojp</font>
+$ <font class="input" color="blue">cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/gentoojp co www</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+		次のコマンドは、取得した作業コピーをアップデートする場合に使用します。
+		</p>
+<a xmlns="" name="doc_chap3_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.5</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+$ <font class="input" color="blue">cd /home/username/gentoojp</font>
+$ <font class="input" color="blue">cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/gentoojp update -dP</font>
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b>このガイドでは、作業ディレクトリを<font class="code">www/</font>として解説していますが、
+		cvsを利用した場合には作業ディレクトリが <font class="code">gentoojp/www/</font>となります</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect5">翻訳ドキュメント作成の際に必要となる追加手順 </a></p>
+<p xmlns="">
+	翻訳ドキュメント作成の際には、翻訳状況の確認と翻訳手順を確認してください。
+        GentooJPでは、<a href="/jpmain/trans_status.xml">GentooJP翻訳プロジェクト - 進捗状況</a>と
+        <a href="/jpmain/translation.xml">GentooJP翻訳プロジェクト</a>の２つの詳細なドキュメントを用意しています。
+        なお、この手順はオリジナルドキュメント作成では必要ありません。
+        </p>
+<h2 xmlns="">
+<a name="doc_chap4">4.</a>ドキュメントの確認方法(HTML)</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect1">HTML変換による確認 </a></p>
+<p xmlns="">
+		HTML変換による確認方法は、コンソールから内容、記述上の間違いなどを検証する方法です。まず文法チェック・変換ツールのインストールを行います。一度インストールを行ってしまえば、次回からは必要ありません。
+		</p>
+<a xmlns="" name="doc_chap4_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.1: HTML変換に必要なパッケージのインストール</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/dtd/guide.dtd? -P www/dtd
+<font class="comment">// xmllint(文法チェック)</font>
+# <font class="input" color="blue">emerge libxml2</font>
+
+<font class="comment">// xsltproc(HTML変換)</font>
+# <font class="input" color="blue">emerge libxslt</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+		完成したオリジナルドキュメントをHTMLに変換して確認するには、まず、xmllintで文法チェックを行います。次にHTMLに変換するのですが、
+		jpdoc/test-xml.xml(あなたが作成した文書名)とxsl/guide.xslに、dtdとcssが絶対パス指定として記述されている部分があるため、変更してから確認する必要があります。
+		</p>
+<a xmlns="" name="doc_chap4_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.2: jpdoc/test-xml.xml</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">３行目変更前</font>
+&lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
+<font class="comment">３行目変更後</font>
+&lt;!DOCTYPE guide SYSTEM "../dtd/guide.dtd"&gt;
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap4_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.3: xsl/guide.xsl の変更</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">11行目変更前</font>
+href="/css/main.css"
+<font class="comment">11行目変更後</font>
+href="../css/main.css"
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>この変更は、AxKitで確認をする場合には必要ありません。</p></td></tr></table>
+<a xmlns="" name="doc_chap4_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.4: HTMLへの変換</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+$ <font class="input" color="blue">cd ~/www/jpdoc</font>
+
+$ <font class="input" color="blue">xmllint --valid --noout test-xml.xml</font>
+<font class="comment">// ここでエラーが表示されるかも知れません。チェックしてください。</font>
+
+$ <font class="input" color="blue">xsltproc  ../xsl/guide.xsl test-xml.xml &gt; test-xml.html</font>
+
+
+<font class="comment">// UTF-8コードをeucJPコードに変換します。ここで次のようなメッセージが表示されることがありますが、無視してください。</font>
+$ <font class="input" color="blue">iconv -f utf-8 -t eucjp -c -o test-xml-euc.html &lt; test-xml.html </font>
+iconv: 位置 3859 で不正な入力シーケンスがありました
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>xmllintでの文法チェックは、AxKitでの確認方法を使用する場合でも、とても便利です。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect2">ドキュメントの確認 </a></p>
+<p xmlns="">
+	作成したドキュメントは、w3mなどから確認を行います。
+	</p>
+<a xmlns="" name="doc_chap4_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.5</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">//  w3mがインストールされていない場合には、次のコマンドでw3mをインストールします。</font>
+# <font class="input" color="blue">emerge w3m</font>
+
+<font class="comment">//  HTMLの確認をします。</font>
+$ <font class="input" color="blue">w3m file:///home/username/www/jpdoc/test-xml-euc.html</font>
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>net-www/w3mmeeを使って、UTF-8エンコーディングのまま、HTMLを参照することもできます。</p></td></tr></table>
+<h2 xmlns="">
+<a name="doc_chap5">5.</a>ドキュメントの確認方法(AxKit)</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect1">AxKitのインストールとApacheの設定 </a></p>
+<p xmlns="">
+		AxKitを使えば、GentooJPでドキュメントがが公開されるときとほぼ同じ状態で文法のチェック、レイアウトのチェックなどが可能になりますし、印刷用のXSLスタイルシートを使って紙上でも確認ができます。<br>
+		このガイドでは、ローカル環境で、Apache Virtual Hostを使った設定方法を紹介します。
+		ユーザー名<font class="code">username</font>、グループ名<font class="code">users</font>、ドキュメントディレクトリを<font class="code">/home/username/www</font>として説明します。
+		まず、AxKitをインストールします。
+		</p>
+<a xmlns="" name="doc_chap5_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.1: AxKitのインストール</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">emerge -p AxKit</font>
+[ebuild  N   ] dev-perl/AxKit-1.6-r1 
+<font class="comment">// AxKitに必要なパッケージの一覧が表示されます。お使いの環境によってはたくさんのパッケージがインストールされます。</font>
+
+# <font class="code">emerge AxKit</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+		/etc/conf.d/apache にmod_perlモジュールが有効となるオプションを加えます。
+		</p>
+<a xmlns="" name="doc_chap5_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.2: /etc/conf.d/apacheの設定</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+APACHE_OPTS="-D PERL"
+</pre></td></tr>
+</table>
+<p xmlns="">
+		mod_perlの設定をします。次のコマンドを実行することで、/etc/apache/conf/appache.conf に設定が追加されます。
+		</p>
+<a xmlns="" name="doc_chap5_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.3: /etc/apache/conf/apache.confへの設定追加</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">ebuild /var/db/pkg/dev-perl/mod_perl-1.27-r1/mod_perl-1.27-r1.ebuild config</font>
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap5_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.4: apache.confに追加される内容</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+&lt;IfDefine PERL&gt;
+  LoadModule perl_module        extramodules/libperl.so
+&lt;/IfDefine&gt;
+
+&lt;IfDefine PERL&gt;
+  AddModule mod_perl.c
+&lt;/IfDefine&gt;
+</pre></td></tr>
+</table>
+<p xmlns="">
+		vhosts.conf を有効にするために、/etc/apache/conf/appache.conf を次のとおり設定します。
+		</p>
+<a xmlns="" name="doc_chap5_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.5: /etc/apache/conf/apache.confの設定</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# Include conf/vhosts/Vhosts.conf
+<font class="comment">コメントアウトを取り除いて有効化します</font>
+Include conf/vhosts/Vhosts.conf
+</pre></td></tr>
+</table>
+<p xmlns="">
+		/etc/apache/conf/vhosts/Vhosts.confは次のように設定します。
+		ローカルエリア内の環境を想定していますので、追加的に必要となるApache、DNSその他の設定は、適切なドキュメントを参照してください。
+		なお、IPアドレスは、<font class="code">192.168.1.1</font>を想定しています。
+		</p>
+<a xmlns="" name="doc_chap5_pre6"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.6: /etc/apache/conf/vhosts/Vhosts.conf の設定</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+Port 8080
+Listen 8080
+
+&lt;VirtualHost 192.168.1.1:8080&gt;
+User username
+Group users
+DocumentRoot /home/username/www
+ErrorLog /home/username/www-error_log
+&lt;IfModule mod_alias.c&gt;
+ Alias /doc /home/username/www/doc
+&lt;/IfModule&gt;
+&lt;Directory /home/username/www&gt;
+Options Indexes FollowSymLinks Multiviews ExecCGI
+ AllowOverride All
+ Order allow,deny
+ Allow from all
+&lt;IfModule mod_perl.c&gt;
+ PerlModule AxKit
+  SetHandler perl-script
+  PerlHandler AxKit
+  <font class="comment">// 次の１行は表示用と印刷用のXSLを使い分ける場合に必要です</font>
+  AxAddPlugin Apache::AxKit::StyleChooser::QueryString
+  AxAddStyleMap text/xsl Apache::AxKit::Language::LibXSLT
+&lt;/IfModule&gt;
+&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>エラーログが /home/username/www-error_log に作成されます。</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>ここで説明したApacheの設定は、あくまでGentooJPドキュメントチェック用であり、外部への公開、セキュリティなどは考慮していません。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect2">印刷用表示をする場合の追加設定 </a></p>
+<p xmlns="">
+表示用と印刷用を使い分け確認作業を行う場合は、まず表示用と印刷用のxslファイルを取得する必要があります。また、翻訳ドキュメントは最終的にgentoo.orgのディレクトリ下におかれるので、なるべくgentoo.orgの最新版xslファイルを取得してください。
+xslファイルのダウンロードは<a href="http://www.gentoo.org/cgi-bin/viewcvs.cgi/xml/htdocs/xsl/?cvsroot=gentoo">こちら</a>からできます。最低限、印刷用の<font class="code">guide-print.xsl</font>を取得して、www/xsl/以下に保存して下さい。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b>
+xsl取得用のアドレスは将来変更になる可能性があります。
+</p></td></tr></table>
+<p xmlns="">
+次に表示用と印刷用を使い分けるために作業ディレクトリjpdoc/以下に.httaccessファイルを作成します。
+</p>
+<a xmlns="" name="doc_chap5_pre7"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.7: .htaccessファイルの例</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+&lt;AxMediaType screen&gt;
+    &lt;AxStyleName "#default"&gt;
+      AxAddProcessor text/xsl /xsl/guide.xsl
+    &lt;/AxStyleName&gt;
+    &lt;AxStyleName printable&gt;
+      AxAddProcessor text/xsl /xsl/guide-print.xsl
+    &lt;/AxStyleName&gt;
+&lt;/AxMediaType&gt;
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+.htaccessファイルには適切なパーミションを設定して下さい。
+</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b>
+印刷用で表示されない場合、&lt;?xml-stylesheet href=&#8221;/xsl/guide.xsl&#8221; type=&#8221;text/xsl&#8221;?&gt;を削除しているか確認して下さい。
+</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect3">Apacheの起動 </a></p>
+<p xmlns="">
+		各confファイルの準備が整ったら、apachectl で 各ファイルの変更点にミスがないかチェックし、問題がなければApacheを起動します。
+		</p>
+<a xmlns="" name="doc_chap5_pre8"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 5.8: configtest</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">apachectl configtest</font>
+
+<font class="comment">// Apacheが起動していない場合</font>
+# <font class="code">/etc/init.d/apache start</font>
+
+<font class="comment">// すでにApacheが起動している場合</font>
+# <font class="code">/etc/init.d/apache stop start</font>
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect4">ドキュメントの確認 </a></p>
+<p xmlns="">
+	作成したドキュメントは、mozillaなどから、<font class="code">http://192.168.1.1:8080/jpdoc/test-xml.xml</font>を開いて確認します。
+	印刷用のxslで確認するには同じく<font class="code">http://192.168.1.1:8080/jpdoc/test-xml.xml?style=printable</font>とします。
+	</p>
+<h2 xmlns="">
+<a name="doc_chap6">6.</a>ドキュメントの送付方法</h2>
+<p xmlns="">
+	翻訳・オリジナルドキュメントの作成が終わったら、翻訳ドキュメントは、<a href="/jpmain/translation.xml">GentooJP翻訳プロジェクト</a>を、オリジナルドキュメントは、<a href="/jpmain/original-doc.xml">GentooJP オリジナルドキュメントプロジェクト</a>を参照して、
+	あなたが作成したすばらしい文書を送信して下さい。<br>
+        なお、ドキュメントの確認を<a href="#doc_chap4">&#8220;ドキュメントの確認方法(HTML)&#8221;で、行った場合には、</a><a href="#doc_chap4_pre2">jpdoc/test-xml.xmlの変更</a>を忘れずに元に戻してから、送付してください。<br>
+        送信する前に、文字コードはutf-8、改行コードはLF、xmllintのチェックはもう一度してくださいね。:)
+	</p></td></tr></table></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>

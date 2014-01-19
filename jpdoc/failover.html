@@ -1,0 +1,1275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					
+						&#8211;
+						Gentoo Linux フェイルオーバーガイド</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table class="all" width="99%"><tr><td><div class="navi" align="center"><span><a href="/">トップに戻る</a></span></div></td></tr></table><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0em;"><tr><td valign="top" align="right" colspan="1" bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 0em;"><tr><td width="99%" class="content" valign="top" align="left"><br></br><h1>Gentoo Linux フェイルオーバーガイド</h1><table width="80%" border="0" style="border: #FF7711 3px dotted;"><tr><td> 
+このガイドではHeartbeatとDRBDを用いてフェイルオーバシステムを構築する方法を解説します。
+</td></tr></table><table border="0" style="border: #dddddd 3px dotted;"><tr><td>このドキュメントの著作権はAuthorの方に帰属します。<br></br>詳しくは<a href="/jpmain/original-doc.xml">オリジナルドキュメントプロジェクト</a>を参照してください。</td></tr></table><br></br><br></br><table border="0" width="100%"><tr><td><b>Contents</b>:<br></br>1. <a href="#doc_chap1">はじめに</a><br></br>2. <a href="#doc_chap2">インストール</a><br></br>3. <a href="#doc_chap3">設定</a><br></br>4. <a href="#doc_chap4">補足</a><br></br></td><td align="right" valign="top" style="padding-right: 1.0em;"><span xmlns="" style="white-space:nowrap;"><i>Author</i>
+		:
+		<b><a class="altlink" href="mailto:syuu@dokukino.com">Takuya Asada</a></b></span><br xmlns=""><br></br>
+														Updated January 26, 2005</td></tr></table><br></br><br></br><h2 xmlns="">
+<a name="doc_chap1">1.</a>はじめに</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect1">フェイルオーバとは？ </a></p>
+<p xmlns="">
+フェイルオーバとは、サーバに障害が発生した時に待機系サーバが処理を引き継ぐことにより、サービスのダウンタイムを軽減し、高可用性を実現する機能の事です。<br>
+このドキュメントでは、Gentoo Linuxが予めインストールされた運用系・待機系の2台のサーバの上に、HeartbeatとDRBDというソフトウェアを用いてフェイルオーバシステムを構築します。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect2">Heartbeatとは？ </a></p>
+<p xmlns="">
+Heartbeatは、サーバの障害を検知し、IPアドレスやサービスの引継ぎを実現するソフトウェアです。<br>
+詳細は、<a href="http://ultramonkey.jp/2.0.1/heartbeat.html">Ultra Monkey: Heartbeat</a>が参考になります。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect3">DRBDとは？ </a></p>
+<p xmlns="">
+DRBDは、ブロックデバイスをネットワークを介してミラーリングするソフトウェアです。<br>
+DRBDを利用することにより、障害発生時にデータを引き継ぐ事が可能になります。<br>
+詳細は、<a href="http://www.wbc.co.jp/~drbd/documentation/HOWTO/">DRBD HOWTO</a>が参考になります。
+</p>
+<h2 xmlns="">
+<a name="doc_chap2">2.</a>インストール</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect1">前提 </a></p>
+<ul xmlns="">
+<li>運用系のサーバのホスト名はsrv01、IPアドレスは192.168.1.101とします。</li>
+<li>待機系のサーバのホスト名はsrv02、IPアドレスは192.168.1.102とします。</li>
+<li>フェイルオーバの対象とするIPアドレスは192.168.4.11とします。 srv01がダウンした場合、このIPアドレスは自動的にsrv02に引き継がれ、外部からはサーバが稼動し続けているように見えます。</li>
+<li>DRBDはLVMのボリューム上に構築します。 LVMについての詳細は<a href="http://www.gentoo.org/doc/ja/lvm2.xml">Gentoo LVM2インストール</a>が参考になります。</li>
+<li>UNIXユーザアカウントの情報をフェイルオーバに対応させる為に、LDAPによるユーザ認証を用います。</li>
+<li>HTTPサーバはApache2、FTPサーバはProFTPD、LDAPサーバはOpenLDAP、DBサーバはMySQL/PostgreSQL、DNSサーバはBIND、メールサーバはCourierで構築します。</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect2">インストール </a></p>
+<p xmlns="">前提となるUSEフラグは以下の通りです。</p>
+<a xmlns="" name="doc_chap2_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.1: USEフラグ</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+apache2 bzlib cjk crypt innodb ldap ldirectord maildir memlimit nls \
+pam readline xml xml2 zlib
+</pre></td></tr>
+</table>
+<p xmlns="">
+パッケージをインストールします。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap2_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.2: インストール</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">cd /usr/src</font>
+# <font class="input" color="blue">ln -s linux-`uname -r` linux</font>
+# <font class="input" color="blue">emerge drbd heartbeat =apache-2* openldap nss_ldap pam_ldap \
+	mysql postgresql bind courier</font>
+<font class="comment">// ドキュメント作成の時点ではGentoo LinuxのPortageツリーにあるProFTPDはLDAPの動作に問題が有った※ ため、
+ここではパッチ済のebuildを使用します</font>
+# <font class="input" color="blue">cd /usr/local</font>
+# <font class="input" color="blue">wget http://ekinoco.dokukino.com/ekinoco.tbz2</font>
+# <font class="input" color="blue">tar xjf ekinoco.tbz2</font>
+# <font class="input" color="blue">PORTDIR_OVERLAY="/usr/local/ekinoco" USE="ldap" \
+emerge ekinoco/net-ftp/proftpd-nlst-ldapv3/proftpd-nlst-ldapv3-1.2.10.ebuild</font>
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>DRBDのコンパイルには、現在使用しているカーネルのソースディレクトリから/usr/src/linuxへシンボリックリンクを張っておく必要があります。</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>DRBD 0.6はkernel 2.6に対応していないため、2.4である必要があります。</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>DRBDはカーネルモジュールとしてコンパイルされるので、カーネルモジュールを有効にしている必要があります。</p></td></tr></table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>※ proftpd-1.2.10に付属のmod_ldapは、LDAPv3に未対応のようだったので、対応しているバージョンのmod_ldapを使うように変更してあります。<br>
+また、一部のFTPクライアントソフトがファイル一覧の取得に使うNLST命令に対応する為のパッチを当てています。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect3">Heartbeatのresourceスクリプト </a></p>
+<p xmlns="">
+Heartbeatでは、各サーバアプリケーションの起動・終了処理を/etc/ha.d/resource.dに配置されているシェルスクリプトを通して行います。<br>
+このドキュメントでは、設定の柔軟性を高める為に独自のresourceスクリプトを用いています。<br>
+このスクリプトは以下の手順でインストール可能です。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap2_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.3: resourceスクリプト</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01/02# <font class="input" color="blue">cd /etc/ha.d/resource.d</font>
+srv01/02# <font class="input" color="blue">wget http://documents.dokukino.com/jpdoc/resource_scripts.tar.bz2</font>
+srv01/02# <font class="input" color="blue">tar xvjpf resource_scripts.tar.bz2</font>
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>詳細な使用方法は、<a href="#doc_chap3_sect13">設定の章</a>で説明します。</p></td></tr></table>
+<h2 xmlns="">
+<a name="doc_chap3">3.</a>設定</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect1">前提 </a></p>
+<p xmlns="">サーバアプリケーションをフェイルオーバする為に必要な全てのデータ・コンフィグレーションは、/mnt/<font class="code">[DRBDリソース名]</font>/<font class="code">[アプリケーション名]</font>に保存する事とします。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+drbdデバイス内のファイル・ディレクトリのオーナに注意しなければいけません。<br>
+同じユーザ名・グループ名でも、サーバ間でuid・gidが違う場合、正常に認識されないのでサーバアプリケーションが実行できない恐れがあります。
+Gentoo Linuxでは、サーバアプリが利用するユーザ名・グループ名のuid・gidは固定されているのでこれを使用しますが、異なるディストリビューションやパッケージ管理システムを用いずにサーバアプリをインストールし、ユーザを追加した場合、サーバ間のuid・gidを合わせておくか、ldap上にユーザを作成する必要があります。
+</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect2">下準備 </a></p>
+<p xmlns="">
+DRBD用のLVMボリュームを作成します。<br>
+予めLVMがセットアップされている必要があります。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap3_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.1: DRBD用ボリュームの作成</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">lvcreate -n drbd0 -L 2G vg0</font>
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+LVMはDRBDに必須という訳では有りません。<br>
+一般的な/dev/hda4などのパーティーションを利用する事も可能です。<br>
+また、LVMのボリュームも空きのパーティーション領域も無ければ、<a href="#doc_chap4_sect1">ループバックデバイスを使う</a>という方法もあります。
+</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect3">DRBD </a></p>
+<p xmlns="">
+初めに、drbd.confを作成します。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap3_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.2: /etc/drbd.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+resource drbd0 {
+    protocol=C
+    fsckcmd=fsck.reiserfs -y
+
+    disk {
+        do-panic
+        disk-size = 2097152
+    }
+<font class="comment">// 下記の設定は、ダウンしていたサーバとの再同期に対しての帯域制限の設定です。
+600Mが最高値ですので、以下の設定が最もリカバリの所要時間が少なくなります。
+負荷等の問題で速度に制限を加えたい場合は、設定値を小さくしてください。	
+</font>
+    net {
+        sync-min=600M
+        sync-max=600M
+    }
+
+    on srv01 {
+        device=/dev/nbd/0
+        disk=/dev/vg0/drbd0
+        address=192.168.1.101
+        port=7788
+    }
+
+    on srv02 {
+        device=/dev/nbd/0
+        disk=/dev/vg0/drbd0
+        address=192.168.1.102
+        port=7788
+    }
+}
+</pre></td></tr>
+</table>
+<p xmlns="">
+次に、srv01でdrbdを有効化します。
+</p>
+<a xmlns="" name="doc_chap3_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.3: [srv01] /drbd drbd0 start</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">/drbd drbd0 start</font>
+Setting up 'drbd0' .. disk ok .. net .. OK
+Do you want to abort waiting for other server and make this one primary?
+<font class="input" color="blue">[リターン]</font>
+still waiting:
+        drbdsetup /dev/nbd/0 wait_connect -t 0
+Answer either "yes" or not at all: <font class="input" color="blue">yes</font>
+</pre></td></tr>
+</table>
+<p xmlns="">一定時間を経過しても、ミラー先サーバと接続が出来ない場合、上記のようなメッセージが出ます。<br>
+ここでは、未だsrv02を立ち上げていないのでyesと入力してください。<br>
+続けて、srv02でdrbdを有効化してください。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>そのまま待機させておいても、ミラー先と接続が確立すれば正常起動します。</p></td></tr></table>
+<a xmlns="" name="doc_chap3_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.4: [srv02] /drbd drbd0 start</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv02# <font class="input" color="blue">/drbd drbd0 start</font>
+Setting up 'drbd0' .. disk ok .. net .. OK
+drbd:  drbd0  done.
+drbd: 'drbd0' SyncingAll, waiting for this to finish
+Sun Jan  9 00:42:03 Local time zone must be set--see zic manual page 2005
+0: cs:SyncingAll st:Secondary/Primary ns:0 nr:206476 dw:206480 dr:0 pe:0 ua:1041
+        [=&gt;..................] sync'ed: 10.0% (1846/2048)M
+        finish: 0:11:30h speed: 2,944 (20,647) K/sec
+Waiting for Sync to finish ...
+drbd: 'drbd0' SyncingAll finished, issue drbdsetup /dev/nbd/0 secondary_remote
+</pre></td></tr>
+</table>
+<p xmlns="">
+コンフィグレーションが正しければ、drbdデバイスの同期が始まるはずです。<br>
+同期の様子は、以下のようなコマンドで見ることが出来ます。
+</p>
+<a xmlns="" name="doc_chap3_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.5: watch cat /proc/drbd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">watch cat /proc/drbd</font>
+version: 0.6.12 (api:64/proto:62)
+
+0: cs:SyncingAll st:Primary/Secondary ns:282536 nr:0 dw:0 dr:282540 pe:954 ua:0
+        [==&gt;.................] sync'ed: 13.6% (1772/2048)M
+        finish: 0:02:23h speed: 21,738 (21,738) K/sec
+</pre></td></tr>
+</table>
+<p xmlns="">
+表示を止めるにはCTRL+Cを入力してください。<br>
+同期が完了するまで暫く掛かりますが、終わるまで待たなくても作業は続行できます。<br>
+次に、srv01をdrbd0のPrimaryサーバにしてください。
+</p>
+<a xmlns="" name="doc_chap3_pre6"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.6: [srv01] drbdsetup /dev/nbd/0 primary</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">cat /proc/drbd</font>
+version: 0.6.12 (api:64/proto:62)
+
+0: cs:Connected st:Secondary/Secondary ns:2097152 nr:0 dw:0 dr:2097152 pe:0 ua:0
+srv01# <font class="input" color="blue">drbdsetup /dev/nbd/0 primary</font>
+srv01# <font class="input" color="blue">cat /proc/drbd</font>
+version: 0.6.12 (api:64/proto:62)
+
+0: cs:Connected st:Primary/Secondary ns:2097152 nr:0 dw:0 dr:2097152 pe:0 ua:0
+</pre></td></tr>
+</table>
+<p xmlns="">
+/proc/drbdをみると、st:の表示がSecondary/SecondaryからPrimary/Secondaryに変わっているはずです。<br>
+これでdrbdデバイスに書き込みを行う事が出来るようになりました。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
+DRBDでは、書き込みに対する排他制御が行われており、同時に両方のサーバからDRBDデバイスに対する書き込みを行う事は出来ません。<br>
+書き込みが可能なのはPrimaryのサーバのみです。
+</p></td></tr></table>
+<p xmlns="">
+書き込めるようになったので、早速フォーマットを行う事にします。<br>
+今回は、ファイルシステムにReiserFSを用いることにしました。
+</p>
+<a xmlns="" name="doc_chap3_pre7"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.7: [srv01] mkreiserfs /dev/nbd/0</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkreiserfs /dev/nbd/0</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+マウントポイントを作成し、fstabに加えます。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap3_pre8"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.8: mkdir /mnt/drbd0</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">mkdir /mnt/drbd0</font>
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre9"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.9: /etc/fstab</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// 変更すべき部分のみ抜粋</font>
+/dev/nbd/0              /mnt/drbd0      reiserfs        noauto,noatime,notail  0 0
+</pre></td></tr>
+</table>
+<p xmlns="">
+srv01でDRBDデバイスをマウントします。
+ホームディレクトリを作成します。
+フェイルオーバに対応させるユーザのホームディレクトリは、このディレクトリ内に作成してください。
+</p>
+<a xmlns="" name="doc_chap3_pre10"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.10: [srv01] mount /mnt/drbd0</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">mount /mnt/drbd0</font>
+# <font class="input" color="blue">mkdir /mnt/drbd0/home</font>
+# <font class="input" color="blue">mkdir /mnt/drbd0/init</font>
+</pre></td></tr>
+</table>
+<p xmlns="">起動時に、drbdを起動させる必要があります。<br>
+これを怠ると、Heartbeatがdrbdデバイスをマウントできず、フェイルオーバが機能しなくなります。<br>
+この作業は両方のサーバで行う必要があります。</p>
+<a xmlns="" name="doc_chap3_pre11"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.11: /etc/conf.d/drbd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+DRBD=/drbd
+DRBDDEV=drbd0
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre12"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.12: rc-update</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">rc-update add drbd default</font>
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>複数のDRBDデバイスに対応させる場合、initスクリプトを修正する必要があります。<br><a href="drbd">こちら</a>からダウンロード出来ます。<br>
+また、複数のデバイスをサポートする場合のconf.dは以下のようになります。<br><font class="input" color="blue">DRBD=/drbd<br>
+DRBDDEV=&#8221;drbd0 drbd1&#8221;</font></p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect4">Apache </a></p>
+<p xmlns="">
+Apacheの設定・データを/mnt/drbd0/apache2に用意します。<br>
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<a xmlns="" name="doc_chap3_pre13"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.13: [srv01] /mnt/drbd0/apache2に設定・データを用意する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/apache2</font>
+srv01# <font class="input" color="blue">cd /mnt/drbd0/apache2</font>
+srv01# <font class="input" color="blue">mkdir logs run</font>
+srv01# <font class="input" color="blue">ln -s /usr/lib/apache2/build ./</font>
+srv01# <font class="input" color="blue">ln -s /usr/lib/apache2-extramodules ./extramodules</font>
+srv01# <font class="input" color="blue">ln -s /usr/lib ./</font>
+srv01# <font class="input" color="blue">ln -s /usr/lib/apache2/modules ./</font>
+srv01# <font class="input" color="blue">cd -a /etc/apache2/conf ./</font>
+srv01# <font class="input" color="blue">cp -a /var/www ./</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+apache2.conf、commonapache2.confを参考にして、パスを書き換えた設定ファイルを作成します。
+</p>
+<a xmlns="" name="doc_chap3_pre14"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.14: [srv01] /mnt/drbd0/apache2/conf/apache2.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// 変更すべき部分のみ抜粋</font>
+ServerRoot /mnt/drbd0/apache2
+PidFile run/apache2.pid
+DocumentRoot /mnt/drbd0/apache2/www/localhost/htdocs
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre15"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.15: [srv01] /mnt/drbd0/apache2/conf/commonapache2.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// 変更すべき部分のみ抜粋</font>
+&lt;IfModule mod_alias.c&gt;
+    Alias /icons/ /mnt/drbd0/apache2/www/localhost/icons/
+    Alias /doc /usr/share/doc
+    ScriptAlias /cgi-bin/ /mnt/drbd0/apache2/www/localhost/cgi-bin/
+    ScriptAlias /protected-cgi-bin/ /mnt/drbd0/apache2/www/localhost/protected-cgi-bin/
+    ScriptAliasMatch ^/~([^/]*)/cgi-bin/(.*) /mnt/drbd0/home/$1/public_html/cgi-bin/$2
+    &lt;IfModule mod_perl.c&gt;
+	Alias /perl/ /mnt/drbd0/apache2/www/localhost/perl/
+	Alias /cgi-perl/ /mnt/drbd0/apache2/www/localhost/perl/
+    &lt;/IfModule&gt;
+&lt;/IfModule&gt;
+
+&lt;IfModule mod_deflate.c&gt;
+	&lt;Directory "/mnt/drbd0/apache2/www/localhost/htdocs/manual"&gt;
+
+&lt;Directory /mnt/drbd0/apache2/www/localhost/htdocs&gt;
+	
+&lt;Directory /mnt/drbd0/apache2/www/localhost/perl&gt;
+
+&lt;Directory /mnt/drbd0/apache2/www/localhost/cgi-bin&gt;
+
+&lt;Directory /mnt/drbd0/apache2/www/localhost/protected-cgi-bin&gt;
+
+&lt;Directory /mnt/drbd0/home/*/public_html&gt;
+
+&lt;Directory /mnt/drbd0/home/*/public_html/cgi-bin&gt;
+
+&lt;IfModule mod_perl.c&gt;
+    &lt;Directory /mnt/drbd0/home/*/public_html/perl&gt;
+	
+&lt;Directory /mnt/drbd0/apache2/www/localhost/icons&gt;
+
+&lt;IfModule mod_alias.c&gt;
+AliasMatch ^/manual(?:/(?:de|en|fr|ja|ko|ru))?(/.*)?$ \
+"/mnt/drbd0/apache2/www/localhost/htdocs/manual/$1"
+
+&lt;Directory "/mnt/drbd0/apache2/www/localhost/htdocs/manual"&gt;
+</pre></td></tr>
+</table>
+<p xmlns="">
+webapp-configを使う場合、VHOST_ROOTを以下のように書き換えます。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap3_pre16"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.16: /etc/vhosts/webapp-config</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// 変更すべき部分のみ抜粋</font>
+VHOST_ROOT="/mnt/drbd0/apache2/www/${G_HOSTNAME}"
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre17"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.17: [srv01] /mnt/drbd0/init/apache2</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+OPTS="-D PHP4"
+SERVERROOT=/mnt/drbd0/apache2
+CONFIGFILE=conf/apache2.conf
+PIDFILE=/mnt/drbd0/apache2/run/apache2.pid
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect5">ProFTPD </a></p>
+<p xmlns="">
+ProFTPDの設定・データを/mnt/drbd0/proftpdに用意します。
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<a xmlns="" name="doc_chap3_pre18"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.18: [srv01] /mnt/drbd0/proftpdに設定・データを用意する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/proftpd</font>
+srv01# <font class="input" color="blue">cd /mnt/drbd0/proftpd</font>
+srv01# <font class="input" color="blue">mkdir conf log run</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+proftpd.conf.distrib等を参考にして、proftpd.confを作成します。
+</p>
+<a xmlns="" name="doc_chap3_pre19"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.19: [srv01] /mnt/drbd0/proftpd/conf/proftpd.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+ServerName                              "ProFTPD Default Installation"
+ServerType                              standalone
+DefaultServer                   on
+Port                                    21
+Umask                                   022
+MaxInstances                    30
+User                                    proftpd
+Group                                   proftpd
+DefaultRoot                             ~
+AuthPAM                                 off
+LDAPServer                              192.168.4.11
+LDAPDoAuth                              on "ou=People,dc=cluster1,dc=dokukino,dc=com"
+LDAPProtocolVersion             3
+LDAPDoUIDLookups                on "ou=People,dc=cluster1,dc=dokukino,dc=com"
+LDAPDoGIDLookups                on "ou=Group,dc=cluster1,dc=dokukino,dc=com"
+AllowOverwrite                  on
+MultilineRFC2228                on
+ShowSymlinks                    on
+AllowForeignAddress             on
+TimesGMT                                off
+IdentLookups                    off
+UseReverseDNS                   off
+ServerIdent                             on ""
+AllowStoreRestart               on
+AllowRetrieveRestart    on
+AllowOverwrite                  on
+RequireValidShell               off
+ScoreboardFile                  /mnt/drbd0/proftpd/log/scoreboard
+TransferLog             /mnt/drbd0/proftpd/log/xferlog
+LogFormat               default "%h %l %u %t \"%r\" %s %b"
+LogFormat               auth    "%v [%P] %h %t \"%r\" %s"
+LogFormat               write   "%h %l %u %t \"%r\" %s %b"
+ExtendedLog             /mnt/drbd0/proftpd/log/access_log    WRITE,READ write
+ExtendedLog             /mnt/drbd0/proftpd/log/auth_log      AUTH auth
+ExtendedLog             /mnt/drbd0/proftpd/log/paranoid_log  ALL default
+PidFile                                 /mnt/drbd0/proftpd/run/proftpd.pid
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre20"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.20: [srv01] /mnt/drbd0/init/proftpd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+CONFIGFILE=/mnt/drbd0/proftpd/conf/proftpd.conf
+PIDFILE=/mnt/drbd0/proftpd/run/proftpd.pid
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect6">OpenLDAP（サーバ） </a></p>
+<p xmlns="">
+OpenLDAPの設定・データを/mnt/drbd0/openldapに用意します。
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<a xmlns="" name="doc_chap3_pre21"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.21: [srv01] /mnt/drbd0/openldapに設定・データを用意する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/openldap</font>
+srv01# <font class="input" color="blue">cd /mnt/drbd0/openldap</font>
+srv01# <font class="input" color="blue">mkdir conf data run</font>
+srv01# <font class="input" color="blue">cp -a /etc/openldap/schema conf/</font>
+srv01# <font class="input" color="blue">cp -a /etc/openldap/ssl conf/</font>
+</pre></td></tr>
+</table>
+<p xmlns="">
+slappasswdで暗号化されたパスワードを生成します。<br>
+このツールは、ユーザアカウントを生成する際にも使用します。
+</p>
+<a xmlns="" name="doc_chap3_pre22"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.22: [srv01] slappasswd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">slappasswd</font>
+New password: <font class="input" color="blue">[パスワード]</font>
+Re-enter new password: <font class="input" color="blue">[パスワード]</font>
+{SSHA}*******************************
+</pre></td></tr>
+</table>
+<p xmlns="">
+slapd.confを参考にして、パスを書き換えます。
+</p>
+<a xmlns="" name="doc_chap3_pre23"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.23: [srv01] /mnt/drbd0/openldap/conf/slapd.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+include /mnt/drbd0/openldap/conf/schema/core.schema
+include /mnt/drbd0/openldap/conf/schema/corba.schema
+include /mnt/drbd0/openldap/conf/schema/cosine.schema
+include /mnt/drbd0/openldap/conf/schema/inetorgperson.schema
+include /mnt/drbd0/openldap/conf/schema/java.schema
+include /mnt/drbd0/openldap/conf/schema/misc.schema
+include /mnt/drbd0/openldap/conf/schema/nis.schema
+include /mnt/drbd0/openldap/conf/schema/openldap.schema
+
+pidfile         /mnt/drbd0/openldap/run/slapd.pid
+argsfile        /mnt/drbd0/openldap/run/slapd.args
+
+database        bdb
+suffix  "dc=cluster1,dc=dokukino,dc=com"
+rootdn  "cn=manager,dc=cluster1,dc=dokukino,dc=com"
+rootpw <font class="input" color="blue">[slappasswdで暗号化したパスワード]</font>
+directory       /mnt/drbd0/openldap/data
+
+index   objectClass             pres,eq
+index   cn,sn,uid               eq
+index   uidNumber,gidNumber,memberUid   eq
+index   oncRpcNumber,ipServicePort      eq
+index   ipNetworkNumber,ipHostNumber    eq
+
+access to attribute=userPassword
+        by self write
+        by dn="cn=manager,dc=cluster1,dc=dokukino,dc=com" write
+        by anonymous auth
+        by * none
+
+access to *
+        by self write
+        by dn="cn=manager,dc=cluster1,dc=dokukino,dc=com" write
+        by * read	
+</pre></td></tr>
+</table>
+<p xmlns="">LDAPツリーに、ユーザとグループのオブジェクトを作成します。</p>
+<a xmlns="" name="doc_chap3_pre24"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.24: [srv01] ~/root.ldif</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+dn: dc=cluster1,dc=dokukino,dc=com
+objectClass: dcObject
+objectClass: organization
+o: cluster1
+dc: cluster1
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre25"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.25: [srv01] ~/base.ldif</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+dn: ou=People,dc=cluster1,dc=dokukino,dc=com
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Group,dc=cluster1,dc=dokukino,dc=com
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre26"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.26: [srv01] slapd start</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">/usr/lib/openldap/slapd -u ldap -g ldap -f /mnt/drbd0/openldap/conf/slapd.conf</font>
+<font class="comment">// 引数で-d [デバッグレベル]を指定すると、フォアグラウンドでデバッグメッセージを表示しながら動作します。</font>
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre27"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.27: [srv01] ldapadd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/root.ldif</font>
+Enter LDAP Password:<font class="input" color="blue">[パスワード]</font>
+adding new entry "dc=cluster1,dc=dokukino,dc=com"
+
+srv01# <font class="input" color="blue">ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/base.ldif</font>
+Enter LDAP Password:<font class="input" color="blue">[パスワード]</font>
+adding new entry "ou=People,dc=cluster1,dc=dokukino,dc=com"
+adding new entry "ou=Group,dc=cluster1,dc=dokukino,dc=com"
+</pre></td></tr>
+</table>
+<p xmlns="">必要にあわせて、ユーザやグループを追加します。</p>
+<a xmlns="" name="doc_chap3_pre28"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.28: [srv01] ~/group1.ldif</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// グループ[group1]</font>
+dn: cn=group1,ou=Group,dc=cluster1,dc=dokukino,dc=com
+cn: group1
+gidNumber: 2001
+objectClass: top
+objectClass: posixGroup
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre29"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.29: [srv01] ~/test01.ldif</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// ユーザ[test01]</font>
+dn: uid=test01,ou=People,dc=cluster1,dc=dokukino,dc=com
+uid: test01
+cn: test01
+sn: test01
+loginShell: /bin/bash
+uidNumber: 2001
+gidNumber: 2001
+homeDirectory: /mnt/drbd0/home/test01
+userPassword: <font class="input" color="blue">[slappasswdで暗号化したパスワード]</font>
+shadowMin: -1
+shadowMax: 999999
+shadowWarning: 7
+shadowInactive: -1
+shadowExpire: -1
+shadowFlag: 0
+objectClass: top
+objectClass: person
+objectClass: posixAccount
+objectClass: shadowAccount
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre30"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.30: [srv01] ldapadd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/group1.ldif</font>
+Enter LDAP Password:<font class="input" color="blue">[パスワード]</font>
+adding new entry "ou=People,dc=cluster1,dc=dokukino,dc=com"
+
+srv01# <font class="input" color="blue">ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/test01.ldif</font>
+Enter LDAP Password:<font class="input" color="blue">[パスワード]</font>
+adding new entry "cn=test01,ou=Group,dc=cluster1,dc=dokukino,dc=com"
+
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/home/test01</font>
+srv01# <font class="input" color="blue">chown test01:group1 /mnt/drbd0/home/test01</font>
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre31"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.31: [srv01] killall slapd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">killall slapd</font>
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre32"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.32: [srv01] /mnt/drbd0/init/slapd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+CONFIGFILE=/mnt/drbd0/openldap/conf/slapd.conf
+PIDFILE=/mnt/drbd0/openldap/run/slapd.pid
+#LISTEN="ldap://192.168.4.11"
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect7">OpenLDAP（クライアント） </a></p>
+<p xmlns="">OpenLDAPによる認証を有効化します。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap3_pre33"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.33: /etc/nssswitch.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// 以下を見れば判るように、nss_ldapはhosts等の共有もサポートしています。
+ですが、このドキュメントではユーザ認証についてのみ扱います。</font>
+passwd:      files <font class="input" color="blue">ldap</font>
+shadow:      files <font class="input" color="blue">ldap</font>
+group:       files <font class="input" color="blue">ldap</font>
+
+hosts:       files dns
+networks:    files dns
+
+services:    db files
+protocols:   db files
+rpc:         db files
+ethers:      db files
+netmasks:    files
+netgroup:    files
+bootparams:  files
+
+automount:   files
+aliases:     files
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre34"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.34: /etc/pam.d/system-auth</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+#%PAM-1.0
+
+auth       required     /lib/security/pam_env.so
+auth       sufficient   /lib/security/pam_unix.so likeauth nullok
+<font class="input" color="blue">auth       sufficient   /lib/security/pam_ldap.so use_first_pass</font>
+auth       required     /lib/security/pam_deny.so
+
+account    required     /lib/security/pam_unix.so
+<font class="input" color="blue">account    sufficient   /lib/security/pam_ldap.so</font>
+
+password   required     /lib/security/pam_cracklib.so retry=3
+password   sufficient   /lib/security/pam_unix.so nullok md5 shadow use_authtok
+<font class="input" color="blue">password   sufficient   /lib/security/pam_ldap.so use_authok</font>
+password   required     /lib/security/pam_deny.so
+
+session    required     /lib/security/pam_limits.so
+session    required     /lib/security/pam_unix.so
+<font class="input" color="blue">session    optional     /lib/security/pam_ldap.so</font>
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre35"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.35: /etc/ldap.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+host 192.168.4.11
+base dc=cluster1,dc=dokukino,dc=com
+pam_password exop
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect8">MySQL </a></p>
+<p xmlns="">
+MySQLの設定・データを/mnt/drbd0/mysqlに用意します。<br>
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<a xmlns="" name="doc_chap3_pre36"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.36: [srv01] /mnt/drbd0/mysqlに設定・データを用意する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/mysql</font>
+srv01# <font class="input" color="blue">cd /mnt/drbd0/mysql</font>
+srv01# <font class="input" color="blue">mkdir conf data log run</font>
+srv01# <font class="input" color="blue">chown mysql:mysql data log run</font>
+</pre></td></tr>
+</table>
+<p xmlns="">my.cnfを参考にして、パスを書き換えます。</p>
+<a xmlns="" name="doc_chap3_pre37"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.37: [srv01] /mnt/drbd0/mysql/conf/my.cnf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+[client]
+port            = 3306
+socket          = /mnt/drbd0/mysql/run/mysqld.sock
+
+[safe_mysqld]
+err-log         = /mnt/drbd0/mysql/log/mysql.err
+
+[mysqld]
+user            = mysql
+pid-file        = /mnt/drbd0/mysql/run/mysqld.pid
+socket          = /mnt/drbd0/mysql/run/mysqld.sock
+log-error       = /mnt/drbd0/mysql/log/mysqld.err
+basedir         = /usr
+datadir         = /mnt/drbd0/mysql/data
+tmpdir          = /tmp
+language        = /usr/share/mysql/english
+skip-locking
+set-variable    = key_buffer=16M
+set-variable    = max_allowed_packet=1M
+set-variable    = thread_stack=128K
+bind-address    = 127.0.0.1
+port            = 3306
+
+[mysqldump]
+quick
+set-variable    = max_allowed_packet=1M
+
+[isamchk]
+set-variable    = key_buffer=16M
+</pre></td></tr>
+</table>
+<p xmlns="">DBを初期化し、drbdデバイスにコピーします。</p>
+<a xmlns="" name="doc_chap3_pre38"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.38: [srv01] mysql_install_db</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mysql_install_db</font>
+srv01# <font class="input" color="blue">cp -a /var/lib/mysql/* ./data/</font>
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre39"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.39: [srv01] /mnt/drbd0/init/mysql</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+CONFIGFILE=/mnt/drbd0/mysql/conf/my.cnf
+PIDFILE=/mnt/drbd0/mysql/run/mysqld.pid
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect9">PostgreSQL </a></p>
+<p xmlns="">
+PostgreSQLの設定・データを/mnt/drbd0/mysqlに用意します。<br>
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<a xmlns="" name="doc_chap3_pre40"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.40: [srv01] /mnt/drbd0/potgresqlに設定・データを用意する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/postgresql</font>
+srv01# <font class="input" color="blue">cd /mnt/drbd0/postgresql</font>
+srv01# <font class="input" color="blue">mkdir data</font>
+srv01# <font class="input" color="blue">chown postgres:postgres data</font>
+srv01# <font class="input" color="blue">su postgres initdb -E EUC_JP -D /mnt/drbd0/postgresql/data</font>
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre41"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.41: [srv01] /mnt/drbd0/init/postgresql</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+PGDATA=/mnt/drbd0/postgresql/data
+PGLOG=/mnt/drbd0/postgresql/data/postgresql.log
+PGUSER=postgres
+PGOPTS=""
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre42"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.42: [srv01] /mnt/drbd0/init/pg_autovacuum</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+PGUSER=postgres
+PG_AUTOVACUUM_LOG=/mnt/drbd0/postgresql/data/pg_autovacuum.log
+VACUUM_BASE=1000
+VACUUM_SCALE=2
+SLEEP_BASE=300
+SLEEP_SCALE=2
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect10">BIND </a></p>
+<p xmlns="">
+BINDの設定・データを/mnt/drbd0/bindに用意します。<br>
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<a xmlns="" name="doc_chap3_pre43"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.43: [srv01] /mnt/drbd0/bindに設定・データを用意する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/bind</font>
+srv01# <font class="input" color="blue">cd /mnt/drbd0/bind</font>
+srv01# <font class="input" color="blue">mkdir conf run zone</font>
+srv01# <font class="input" color="blue">cp -a /var/bind/* zone/</font>
+srv01# <font class="input" color="blue">chown named:named run zone</font>
+</pre></td></tr>
+</table>
+<p xmlns="">named.confを参考にして、パスを書き換えます。</p>
+<a xmlns="" name="doc_chap3_pre44"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.44: [srv01] /mnt/drbd0/bind/conf/named.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+options {
+        directory "/mnt/drbd0/bind/zone";
+        listen-on-v6 { none; };
+        listen-on { 127.0.0.1; };
+        pid-file "/mnt/drbd0/bind/run/named.pid";
+};
+
+zone "." IN {
+        type hint;
+        file "named.ca";
+};
+
+zone "localhost" IN {
+        type master;
+        file "pri/localhost.zone";
+        allow-update { none; };
+        notify no;
+};
+
+zone "127.in-addr.arpa" IN {
+        type master;
+        file "pri/127.zone";
+        allow-update { none; };
+        notify no;
+};
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre45"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.45: /mnt/drbd0/init/named</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+CONFIGFILE="/mnt/drbd0/bind/conf/named.conf"
+PIDFILE="/mnt/drbd0/bind/run/named.pid"
+CPU="1"
+OPTS=""
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect11">Courier </a></p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>
+この項は未完成です。<br>
+この通りに設定しても、正常に動作しない可能性があります。
+</p></td></tr></table>
+<p xmlns="">
+Courierの設定・データを/mnt/drbd0/courierに用意します。<br>
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<a xmlns="" name="doc_chap3_pre46"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.46: [srv01] /mnt/drbd0/courierに設定・データを用意する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/courier</font>
+srv01# <font class="input" color="blue">cd /mnt/drbd0/courier</font>
+srv01# <font class="input" color="blue">mkdir conf run</font>
+srv01# <font class="input" color="blue">chown mail:mail run</font>
+srv01# <font class="input" color="blue">cp -a /etc/courier/* conf/</font>
+srv01# <font class="input" color="blue">cp -a /var/lib/courier data</font>
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre47"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.47: [srv01] /mnt/drbd0/init/courier</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+prefix="/usr"
+exec_prefix="/usr/bin"
+sysconfdir="/mnt/drbd0/courier/conf"
+bindir="/usr/bin"
+sbindir="/usr/sbin"
+libexecdir="/usr/lib/courier"
+datadir="/usr/share/courier"
+rundir="/mnt/drbd0/courier/run"
+initdir="/etc/ha.d/resource.d"
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect12">NFS（サーバ） </a></p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>
+この項は未完成です。<br>
+この通りに設定しても、正常に動作しない可能性があります。
+</p></td></tr></table>
+<p xmlns="">初めに、ディレクトリを作成します。</p>
+<a xmlns="" name="doc_chap3_pre48"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.48: [srv01] ディレクトリを作成</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01# <font class="input" color="blue">mkdir -p /mnt/drbd0/nfs/data</font>
+srv01# <font class="input" color="blue">mkdir /mnt/drbd0/nfs/conf</font>
+</pre></td></tr>
+</table>
+<p xmlns="">exportsを作成します。<br></p>
+<a xmlns="" name="doc_chap3_pre49"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.49: [srv01] /mnt/drbd0/nfs/conf/exports</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+/mnt/drbd0/nfs/data 192.168.4.0/255.255.255.0(rw,no_root_squash,async)
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<a xmlns="" name="doc_chap3_pre50"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.50: /mnt/drbd0/init/nfs</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+opts="start stop restart reload"
+restarting=yes
+exportfs=/usr/sbin/exportfs
+statd=/sbin/rpc.statd
+rquotad=/usr/sbin/rpc.rquotad
+nfsd=/usr/sbin/rpc.nfsd
+mountd=/usr/sbin/rpc.mountd
+exports=/mnt/drbd0/nfs/conf/exports
+PORTMAP_OPTS=""
+EXPORTFSTIMEOUT=30
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect13">NFS（クライアント） </a></p>
+<p xmlns="">上記のNFSサーバに対して、アクセスを行うクライアント側の設定です。</p>
+<a xmlns="" name="doc_chap3_pre51"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.51: /etc/fstab</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+192.168.4.11:/mnt/drbd0/nfs/data /mnt/nfs nfs rw,hard,intr 0 0
+</pre></td></tr>
+</table>
+<p xmlns="">netmountを起動します。これによって、NFSがマウントされます。</p>
+<a xmlns="" name="doc_chap3_pre52"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.52</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">/etc/init.d/netmount restart</font>
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect14">Mon </a></p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>この項は未完成です。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect15">Heartbeat </a></p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>Heartbeatの全ての設定は、両方のサーバで行う必要があります。</p></td></tr></table>
+<p xmlns="">初めに、ha.cfを作成します。<br>
+これはHeartbeatの全般的な設定ファイルであり、以下のような内容になります。</p>
+<a xmlns="" name="doc_chap3_pre53"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.53: /etc/ha.d/ha.cf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+logfacility     local0
+keepalive 2
+deadtime 10
+initdead 120
+<font class="comment">// 以下の二行は、イーサネットを介してUDPブロードキャストによるハートビート信号を送る場合の設定です。</font>
+udpport 694
+bcast eth0
+<font class="comment">// 以下の二行は、シリアルポートを介してハートビート信号を送る場合の設定です。</font>
+#serial /dev/ttyS0
+#baud 19200
+<font class="comment">// auto_failbackを有効にすると、一度ダウンしたサーバが復帰した場合、リソースは復帰したサーバへ再度フェイルオーバされます。</font>
+auto_failback on
+node srv01
+node srv02
+debug 1
+</pre></td></tr>
+</table>
+<p xmlns="">authkeysは、Heartbeatの認証情報ファイルです。<br>
+以下のように設定します。</p>
+<a xmlns="" name="doc_chap3_pre54"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.54: /etc/ha.d/authkeys</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+auth 1
+1 crc
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre55"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.55: chmod</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">chmod 600 /etc/ha.d/authkeys</font>
+</pre></td></tr>
+</table>
+<p xmlns="">haresourcesは、Heartbeatのリソース情報ファイルです。<br>
+	このファイルによって、フェイルオーバ対象が決定されます。</p>
+<a xmlns="" name="doc_chap3_pre56"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.56: /etc/ha.d/haresources</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// haresourcesのシンタックスは、サーバ名 IPアドレス/ネットマスク サービス名::引数 … という単純なものです。
+サービス名は、/etc/ha.d/resource.d/にあるスクリプトと解釈され、
+/etc/ha.d/resource.d/サービス名 start|stop 引数 という形で実行されています。
+各サービスは、通常指定されたサーバ上で実行され、サーバがダウンした時のみフェイルオーバされ、待機系のサーバで実行されます。</font>
+srv01 192.168.4.11/24 datadisk::drbd0 \
+named::/mnt/drbd0/init/named \
+slapd::/mnt/drbd0/init/slapd \
+mysql::/mnt/drbd0/init/mysql \
+postgresql::/mnt/drbd0/init/postgresql \
+pg_autovacuum::/mnt/drbd0/init/pg_autovacuum \
+apache2::/mnt/drbd0/init/apache2 \
+proftpd::/mnt/drbd0/init/proftpd \
+courier::/mnt/drbd0/init/courier \
+nfs::/mnt/drbd/init/nfs
+</pre></td></tr>
+</table>
+<p xmlns="">Heartbeatを起動します。</p>
+<a xmlns="" name="doc_chap3_pre57"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.57: /drbd stop</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">/etc/init.d/heartbeat start</font>
+<font class="comment">// 正常に起動できているか、ログを見て確かめます。</font>
+# <font class="input" color="blue">tail -f /var/log/ha-debug</font>
+</pre></td></tr>
+</table>
+<h2 xmlns="">
+<a name="doc_chap4">4.</a>補足</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect1">LVMボリュームをセットアップするディスクスペースが無く、DRBDに割り当て可能なパーティーションも無い場合 </a></p>
+<p xmlns="">既に全てのディスク領域に一般的なパーティーションを作成しており、LVMボリュームをセットアップするディスクスペースも無く、DRBDに割り当て可能なパーティーションも無い場合、DRBDを構築する事が不可能に思われるかもしれません。<br>
+このような場合、よく使われる方法としてループバックデバイスというものがあります。<br>
+ファイルをブロックデバイスと見立てて利用する方法です。<br>
+パフォーマンスは落ちますが、動作検証が目的であれば、十分に機能します。</p>
+<p xmlns="">DRBDでループバックを用いるには幾つかの手順を踏む必要があるので、以下ではその方法を説明します。</p>
+<p xmlns="">最初に、ddコマンドでループバックデバイスとして扱うファイルを作成します。<br>
+count=の部分には、MB単位で容量を入力してください。<br>
+パーティーションのスペースを使い切らないように注意してください。</p>
+<a xmlns="" name="doc_chap4_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.1: dd</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">dd if=/dev/zero of=/drbd0.img bs=1M count=1024</font>
+# <font class="input" color="blue">dd if=/dev/zero of=/drbd1.img bs=1M count=512</font>
+</pre></td></tr>
+</table>
+<p xmlns="">次に、<a href="losetup">こちら</a>からinitスクリプトをダウンロードしてください。<br>
+これは/dev/loop*とループバックデバイスとして扱うファイルを関連付ける為に必要なlosetupコマンドを起動時に実行します。</p>
+<a xmlns="" name="doc_chap4_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.2: wget</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">cd /etc/init.d</font>
+# <font class="input" color="blue">wget http://documents.dokukino.com/jpdoc/losetup</font>
+# <font class="input" color="blue">chmod a+x losetup</font>
+</pre></td></tr>
+</table>
+<p xmlns="">conf.dファイルを作成します。<br>
+ここにファイルとデバイス名、起動時にロードするか否かを記述してください。</p>
+<a xmlns="" name="doc_chap4_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.3: /etc/conf.d/losetup</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+loop0=/drbd0.img
+loop1=/drbd1.img
+auto_load="0 1"
+</pre></td></tr>
+</table>
+<p xmlns="">最後にlosetupを起動し、runlevelsに登録します。</p>
+<a xmlns="" name="doc_chap4_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.4: init.d &amp; rc-update</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">/etc/init.d/losetup start</font>
+# <font class="input" color="blue">rc-update add losetup default</font>
+</pre></td></tr>
+</table>
+<p xmlns="">以上の設定で、/dev/loop0は1024MBのブロックデバイスとして、/dev/loop1は512MBブロックデバイスとしてDRBDから扱えるようになりました。<br>
+drbd.confの中で<font class="input" color="blue">disk=/dev/loop0</font>と記述して、正しく動作する事を確認してください。</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect2">待機系サーバを活用したい </a></p>
+<p xmlns="">運用系・待機系でサーバを分けて設定してしまうと、片方のサーバのみ負荷がかかり、もう片方は遊んでいるという事になるかもしれません。<br>
+drbdデバイスを複数定義しharesourcesを書換えることによって、サービス毎に実行するサーバを別々に出来ます。<br>
+勿論、片方に障害が発生した場合はフェイルオーバがかかり、正常動作中のサーバが全ての処理を引き継ぎます。</p>
+<p xmlns="">初めに、二つ目のdrbdデバイスを定義します。<br>
+予め、ブロックデバイス（ここでは/dev/vg0/drbd1とします）を用意しておいてください。<br>
+要領は一つの時と変わりません：</p>
+<a xmlns="" name="doc_chap4_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.5: /etc/drbd.conf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// 追記すべき部分のみ抜粋</font>
+resource drbd1 {
+    protocol=C
+    fsckcmd=fsck.reiserfs -y
+
+    disk {
+        do-panic
+        disk-size = 2097152
+    }
+    net {
+        sync-min=600M
+        sync-max=600M
+    }
+
+    on srv01 {
+        device=/dev/nbd/1
+        disk=/dev/vg0/drbd1
+	address=192.168.1.101
+<font class="comment">// drbd0で使用しているポート番号は使えませんので、番号を変える必要があります。</font>
+        port=7789
+    }
+
+    on srv02 {
+        device=/dev/nbd/1
+        disk=/dev/vg0/drbd1
+        address=192.168.1.102
+        port=7789
+    }
+}
+</pre></td></tr>
+</table>
+<p xmlns="">フォーマット・マウントポイントの設定は同じですので省略します。<br>
+drbd0、drbd1を同時にマウントして、データをコピーしてきましょう。</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>Heartbeatは終了しておいてください。</p></td></tr></table>
+<a xmlns="" name="doc_chap4_pre6"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.6: mv</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">/drbd restart</font>
+# <font class="input" color="blue">/etc/ha.d/resource.d/datadisk drbd0 start</font>
+# <font class="input" color="blue">/etc/ha.d/resource.d/datadisk drbd1 start</font>
+<font class="comment">// 移動したいサービスを、drbd1にコピーしてください。</font>
+# <font class="input" color="blue">cp -a /mnt/drbd0/bind /mnt/drbd1</font>
+<font class="comment">// initファイルを書換えつつコピーします。</font>
+# <font class="input" color="blue">cat /mnt/drbd0/init/named |sed -e "s/drbd0/drbd1/g" &gt; /mnt/drbd1/init/named</font>
+</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>多くの設定ファイルにもdrbd0を含むパスが含まれています。<br>
+initファイルと同様に、それらも書換える必要があります。</p></td></tr></table>
+<p xmlns="">haresourcesを変更します。<br>
+この作業は両方のサーバで行う必要があります。
+</p>
+<a xmlns="" name="doc_chap4_pre7"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.7: /etc/ha.d/haresources</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01 192.168.4.11/24 datadisk::drbd0 \
+slapd::/mnt/drbd0/init/slapd \
+mysql::/mnt/drbd0/init/mysql \
+postgresql::/mnt/drbd0/init/postgresql \
+pg_autovacuum::/mnt/drbd0/init/pg_autovacuum \
+apache2::/mnt/drbd0/init/apache2 \
+proftpd::/mnt/drbd0/init/proftpd \
+courier::/mnt/drbd0/init/courier
+srv02 192.168.4.12/24 datadisk::drbd1 \
+named::/mnt/drbd1/init/named
+</pre></td></tr>
+</table>
+<p xmlns="">一度全てのdrbdを停止し、Heartbeatを起動します。</p>
+<a xmlns="" name="doc_chap4_pre8"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.8: /drbd stop</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">umount /mnt/drbd0</font>
+# <font class="input" color="blue">umount /mnt/drbd1</font>
+<font class="comment">// busyでアンマウント出来ない場合、fuserコマンドでどのプロセスが使用中なのか調べることが出来ます。</font>
+# <font class="input" color="blue">/drbd stop</font>
+# <font class="input" color="blue">/etc/init.d/heartbeat start</font>
+<font class="comment">// 正常に起動できているか、ログを見て確かめます。</font>
+# <font class="input" color="blue">tail -f /var/log/ha-debug</font>
+</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect3">同じサーバアプリを両方のサーバで動かし、どちらかがダウンしたときにフェイルオーバさせる事は可能？ </a></p>
+<p xmlns="">このような設定が考えられます：</p>
+<a xmlns="" name="doc_chap4_pre9"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.9: haresources</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01 192.168.4.11/24 datadisk::drbd0 named::/mnt/drbd0/init/named
+srv02 192.168.4.12/24 datadisk::drbd1 named::/mnt/drbd1/init/named
+</pre></td></tr>
+</table>
+<p xmlns="">
+この設定では、片方のサーバがダウンしているときは、一台のサーバ上で２つのnamedを立ち上げようとします。<br>
+デフォルトの設定では全てのIPアドレスに対してLISTENしようとしてしまいどちらかがソケットを開けず起動できなくなりますが、LISTENするIPをharesourcesに記述したIPアドレスに限定すれば、正常に動作します。
+</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>
+複数のサーバ上でアプリケーションを動かし、相互にフェイルオーバをかける場合、UNIXユーザアカウントについて注意ください。<br>
+UNIXアカウントをNSS/PAMを通して認証に使い、かつアカウント情報を別々のLDAPサーバに格納した場合、恐らく正しく動作しないでしょう。<br>
+NSS及びPAMの設定は、アプリケーションのインスタンス毎に設定出来る訳では無く、サーバに対して１つになっているからです。<br>
+これに該当する主なアプリケーションは、Apacheのuserdir・suexec機能です。
+</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect4">運用系２台：待機系１台の設定は可能？ </a></p>
+<p xmlns="">Heartbeatは基本的には１：１のフェイルオーバシステムを実現する為のソフトですが、haresourcesの書き方を工夫すれば運用系２台：待機系１台という設定も可能です。<br>
+その場合、運用系のharesourcesにはそのサーバ自身のリソースのみを記述し、待機系のharesourcesには運用系の全てのリソースを記述します。</p>
+<a xmlns="" name="doc_chap4_pre10"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.10: [srv01] haresources</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01 192.168.4.11/24 datadisk::drbd0 apache2::/mnt/drbd0/init/apache2
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap4_pre11"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.11: [srv02] haresources</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv02 192.168.4.12/24 datadisk::drbd1 named::/mnt/drbd1/init/named
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap4_pre12"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.12: [srv03] haresources</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01 192.168.4.11/24 datadisk::drbd0 apache2::/mnt/drbd0/init/apache2
+srv02 192.168.4.12/24 datadisk::drbd1 named::/mnt/drbd1/init/named
+</pre></td></tr>
+</table></td></tr></table></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>

@@ -1,0 +1,73 @@
+BODY {
+	font-family: Georgia, Verdana, Arial; 
+	font-size: 0.9em;
+}
+
+a:link { color: #7a5ada; text-decoration: none; }
+a:visited { color: #7a5ada; text-decoration: none; }
+a:hover { color: #7a5ada; text-decoration: underline; }
+a:active { color: #7a5ada; text-decoration: underline; }
+
+.employer {
+	font-size: 1.25em;
+	padding-top: 0.15em;
+	padding-left: 1.0cm;
+	padding-right: 0.5cm; 
+}
+
+.secthead {
+	font-size: 1.5em;
+	padding-top: 0.15em;
+	padding-left: 0.5cm;
+	padding-right: 0.5cm; 
+	font-variant: small-caps;
+}
+
+.address {
+	padding-top: 0.5em;
+	padding-left: 1.0cm;
+	padding-right: 0.5cm; 
+}
+
+.header {
+	margin 0cm;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding-left: 1.0cm;
+	padding-right: 0.5cm; 
+}
+
+.desc {
+	margin: 0cm;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+	padding-left: 1.5cm;
+	padding-right: 0.5cm; 
+}
+
+.list {
+	margin: 0cm;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+	padding-left: 2.0cm;
+	padding-right: 0.5cm; 
+}
+
+.sublist {
+	font-size: 0.9em;
+	padding-left: 0.5cm;
+}
+
+.listitem {
+	margin-top: 0.3cm;
+}
+
+.sublistitem {
+	margin-top: 0.1cm;
+}
+
+
+.path {
+	font-family: Lucida Console, Courier;
+	font-size: 0.9em;
+}

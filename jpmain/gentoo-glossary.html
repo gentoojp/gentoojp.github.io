@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					
+						&#8211;
+						Gentoo用語集(draft)</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table class="all" width="99%"><tr><td><div class="navi" align="center"><span><a href="/">トップに戻る</a></span></div></td></tr></table><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0em;"><tr><td valign="top" align="right" colspan="1" bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 0em;"><tr><td width="99%" class="content" valign="top" align="left"><br></br><h1>Gentoo用語集(draft)</h1><table width="80%" border="0" style="border: #FF7711 3px dotted;"><tr><td> 
+このガイドは、Gentooでよく使われる用語を集めたものです。 
+</td></tr></table><br></br><br></br><table border="0" width="100%"><tr><td><b>Contents</b>:<br></br>1. <a href="#doc_chap1">はじめに</a><br></br>2. <a href="#doc_chap2">C-c</a><br></br>3. <a href="#doc_chap3">D-d</a><br></br>4. <a href="#doc_chap4">E-e</a><br></br>5. <a href="#doc_chap5">G-g</a><br></br>6. <a href="#doc_chap6">I-i</a><br></br>7. <a href="#doc_chap7">L-l</a><br></br>8. <a href="#doc_chap8">J-j</a><br></br>9. <a href="#doc_chap9">K-k</a><br></br>10. <a href="#doc_chap10">M-m</a><br></br>11. <a href="#doc_chap11">P-p</a><br></br>12. <a href="#doc_chap12">Q-q</a><br></br>13. <a href="#doc_chap13">R-r</a><br></br>14. <a href="#doc_chap14">S-s</a><br></br>15. <a href="#doc_chap15">U-u</a><br></br></td><td align="right" valign="top" style="padding-right: 1.0em;"><span xmlns="" style="white-space:nowrap;"><i>Author</i>
+		:
+		<b><a class="altlink" href="mailto:www@gentoo.gr.jp">GentooJP</a></b></span><br xmlns=""><br></br>
+														Updated 9 July 2003</td></tr></table><br></br><br></br><h2 xmlns="">
+<a name="doc_chap1">1.</a>はじめに</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect1">Gentoo用語集について </a></p>
+<p xmlns=""><a href="http://www.gentoo.org/">Gentoo Linux Project</a>が公開しているドキュメントを読んだり、
+Gentoo Linuxを操作する際、Gentoo特有の用語や頻繁に出てくる用語に遭遇します。Gentoo用語集は、
+そのような用語をとりまとめ、翻訳者や新たにGentooを始める人にとって参考となるようなものを目指しています。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect2">用語集への追加 </a></p>
+<p xmlns="">用語集へ追加は簡単です。追加して欲しい用語があったら次のような書式で<a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a>
+かgentoojp-docsメーリングリストまで送付してください。
+</p>
+<a xmlns="" name="doc_chap1_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 1.1: 送付書式</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+&lt;section&gt;&lt;title&gt;用語&lt;/title&gt;&lt;body&gt;&lt;ul&gt;
+	&lt;li&gt;読み：用語の日本語発音&lt;/li&gt;
+	&lt;li&gt;表記：翻訳ドキュメントなどに記載する表記&lt;/li&gt;
+	&lt;li&gt;意味：用語の意味&lt;/li&gt;
+	&lt;li&gt;詳細：詳細情報へのリンク&lt;/li&gt;
+	&lt;li&gt;実行：簡単な実行例、指定方法など&lt;/li&gt;
+&lt;/ul&gt;&lt;/body&gt;&lt;/section&gt;
+</pre></td></tr>
+</table>
+<h2 xmlns="">
+<a name="doc_chap2">2.</a>C-c</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect1">(/etc/)conf.d </a></p>
+<ul xmlns="">
+<li>読み：コンフ・ディー?</li>
+<li>表記：(/etc/)conf.d</li>
+<li>意味：(/etc/)init.dディレクトリ以下にある起動スクリプトにオプションを与えるファイルを格納する。</li>
+<li>詳細：</li>
+<li>実行：なし</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap3">3.</a>D-d</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect1">dep-clean </a></p>
+<ul xmlns="">
+<li>読み：ディプ・クリーン?</li>
+<li>表記：dep-clean</li>
+<li>意味：dependency cleanの略？。パッケージ依存の整理</li>
+<li>詳細：$ man dep-clean</li>
+<li>実行：# dep-clean</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect2">digest </a></p>
+<ul xmlns="">
+<li>読み：ダイジェスト</li>
+<li>表記：digest</li>
+<li>意味１：ソースファイルのMD5ハッシュ署名。</li>
+<li>意味２：ebuild digestコマンド。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap4_sect1">Gentoo Linux 開発者 HOWTO</a>
+</li>
+<li>実行：$ ebuild <font class="emphasis">your</font>.ebuild digestで作成される。</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect3">distfiles </a></p>
+<ul xmlns="">
+<li>読み：ディストファイルズ？</li>
+<li>表記：distfiles</li>
+<li>意味：distributed files(配布ファイル)の略。 /usr/portage/distfilesのこと。ダウンロードしたソース(*.tbz2など)を保存する場所。</li>
+<li>詳細：/etc/make.conf 内の説明</li>
+<li>実行：なし</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap4">4.</a>E-e</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect1">ebuild </a></p>
+<ul xmlns="">
+<li>読み：イー・ビルド？</li>
+<li>表記：ebuild</li>
+<li>意味１：Portage システムへの低レベルインタフェース、ebuild コマンドラインプログラム。</li>
+<li>意味２：ソフトウェアに関する情報やインストール手順などが書かれたebuild スクリプト。</li>
+<li>詳細１：$ man ebuild -S 1</li>
+<li>詳細２：$ man ebuild -S 5、<a href="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap2">Gentoo Linux 開発者 HOWTO</a>
+</li>
+<li>実行２：$ ebuild <font class="emphasis">your</font>.ebuild digest</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect2">echangelog </a></p>
+<ul xmlns="">
+<li>読み：イー・チェンジログ？</li>
+<li>表記：echangelog</li>
+<li>意味：PortageのChangeLogをアップデートするツール。</li>
+<li>詳細：$ man echangelog、$ echangelog &#8211;help</li>
+<li>実行：$ echangelog <font class="emphasis">&#8216;ChangeLog Text&#8217;</font>
+</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect3">eclass </a></p>
+<ul xmlns="">
+<li>読み：イー・クラス？</li>
+<li>表記：eclass</li>
+<li>意味：ebuild.1の構成要素のひとつで、同種のebuildに標準設定と特定の関数を与えるもの。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/eclass-howto.xml">Gentoo Documentation - eclass HOWTO 日本語訳</a>
+</li>
+<li>実行：なし</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect4">ekeyword </a></p>
+<ul xmlns="">
+<li>読み：イー・キーワード？</li>
+<li>表記：ekeyword</li>
+<li>意味：アーキテクチャ(ARCH x86,~x86,-x86など)をebuildに追加するツール</li>
+<li>詳細：# ekeyword</li>
+<li>実行：# ekeyword ~x86 <font class="emphasis">your</font>.ebuild</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect5">emerge </a></p>
+<ul xmlns="">
+<li>読み：イー・マージ？</li>
+<li>表記：emerge</li>
+<li>意味：Portageシステムへのコマンドラインインターフェース。</li>
+<li>詳細：$ man emerge、$emerge &#8211;help、もしくは<a href="http://www.gentoo.org/doc/ja/portage-manual.xml#doc_chap3">Portage Manual</a>
+</li>
+<li>実行：# emerge system、emerge -u world など</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect6">env-update </a></p>
+<ul xmlns="">
+<li>読み：エンブ・アップデート？</li>
+<li>表記：env-update</li>
+<li>意味：environment updateの略？。環境設定を自動的に更新するコマンドラインプログラム。</li>
+<li>詳細：$ man env-update、<a href="http://www.gentoo.org/doc/ja/env.d-howto.xml#doc_chap2_sect2">env.d HOWTO</a>
+</li>
+<li>実行：# env-update</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect7">(/etc/)env.d </a></p>
+<ul xmlns="">
+<li>読み：エンブ・ディー？</li>
+<li>表記：(/etc/)env.d</li>
+<li>意味：default environmental variableの略？。各種環境変数が格納される。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/env.d-howto.xml">env.d HOWTO</a>
+</li>
+<li>実行：なし</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect8">epm </a></p>
+<ul xmlns="">
+<li>読み：イー・ピー・エム</li>
+<li>表記：epm</li>
+<li>意味：Gentoo Linux Projectが作成したrpmコマンドのgentoo版。</li>
+<li>詳細：$ man epm、<a href="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap7">GWN December 30th, 2002 December 30th, 2002</a>
+</li>
+<li>実行：# epm -q apache</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect9">etcat </a></p>
+<ul xmlns="">
+<li>読み：イー・ティー・キャット？</li>
+<li>表記：etcat</li>
+<li>意味：Gentoo Portage情報展開ツール </li>
+<li>詳細：$ man etcat、<a href="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap9">GWN 2003年6月23日号 9.Tips and Tricks</a>
+</li>
+<li>実行：# etcat size apache</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect10">etc-update </a></p>
+<ul xmlns="">
+<li>読み：エトセ・アップデート？</li>
+<li>表記：etc-update</li>
+<li>意味：/etc以下の設定ファイルに対して前回のインストールからユーザーが変更していない場合には自動、そうでない場合には対話形式で変更を行えるコマンドラインプログラム。</li>
+<li>詳細：$ man etc-update</li>
+<li>実行：# etc-update</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect11">euse </a></p>
+<ul xmlns="">
+<li>読み：イー・ユーズ？</li>
+<li>表記：euse</li>
+<li>意味：gentoolkitに含まれるUSEフラグの設定ツール。</li>
+<li>詳細：$ man euse、$ less /usr/share/doc/gentoolkit-(バージョン)/README.gz</li>
+<li>実行：# euse -c</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap5">5.</a>G-g</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect1">gcc-config </a></p>
+<ul xmlns="">
+<li>読み：ジ－シーシー・コンフィグ</li>
+<li>表記：gcc-config</li>
+<li>意味：gccのバージョンやビルドするホスト名などを指定する。/etc/env.d/以下も参照のこと。</li>
+<li>詳細：# gcc-config </li>
+<li>実行：$ gcc-config &#8211;list-profiles</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect2">Gentoo </a></p>
+<ul xmlns="">
+<li>読み：ジェンツー</li>
+<li>表記：Gentoo</li>
+<li>意味：すばしっこいペンギン。Gentoo Linuxそのもの。Gentoo Project全体を表す。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/faq.xml#doc_chap1">Gentoo Linux Frequently Asked Questions 日本語訳</a>
+</li>
+<li>実行：なし</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect3">gentoolkit </a></p>
+<ul xmlns="">
+<li>読み：ジェンツールキット？</li>
+<li>表記：Gentoolkit</li>
+<li>意味：Gentooを使う上で便利なコマンドを集めたパッケージ。Gentooオリジナルコマンド全体を指す場合もある。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/gentoolkit.xml">gentoolkit</a>
+</li>
+<li>実行： インストールは  # emerge gentoolkit</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect4">gentool-author-coverage </a></p>
+<ul xmlns="">
+<li>読み：ジェンツール・オーサー・カバーエイジ？</li>
+<li>表記：gentool-author-coverage</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。メールアドレスを指定してebuild内に記載されている数を返すみたい。bashスクリプト。</li>
+<li>詳細：</li>
+<li>実行：# gentool-author-coverage</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect5">gentool-bump-reversion </a></p>
+<ul xmlns="">
+<li>読み：ジェンツール・バンプ・バージョン？</li>
+<li>表記：gentool-bunp-version</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。開発者専用ツール。リビジョン番号に対照してCVSに新しい修正を加えるとともに古い修正を削除し、変更記録を適切に更新します。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap6">Gentoo Linux 開発者 HOWTO</a>
+</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect6">gentool-total-coverage </a></p>
+<ul xmlns="">
+<li>読み：ジェンツール・トータル・カバーエイジ？</li>
+<li>表記：gentool-total-coverage</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。ebuildからメールアドレスを抜き出しカウントするプログラムみたい。bashスクリプト。</li>
+<li>詳細：</li>
+<li>実行：# gentool-total-coverage</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect7">gentool-package-count </a></p>
+<ul xmlns="">
+<li>読み：ジェンツール・パッケージ・カウント</li>
+<li>表記：gentool-package-count</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。カテゴリ数、ebuild総数、リビジョンを取り除いたebuild個数を表示する。bashスクリプト。</li>
+<li>詳細：</li>
+<li>実行：# gentool-package-count</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect8">GDP </a></p>
+<ul xmlns="">
+<li>読み：ジー・ディー・ピー</li>
+<li>表記：GDP</li>
+<li>意味：Gentoo Documentation Project</li>
+<li>詳細：<a href="http://www.gentoo.org/proj/en/gdp/">Gentoo Documentation Project: Main Page</a>
+</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect9">GLEP </a></p>
+<ul xmlns="">
+<li>読み：ジー・エル・イー・ピー</li>
+<li>表記：GLEP</li>
+<li>意味：Gentoo Linux Enhancement Proposalsの略。まだよくわからず。</li>
+<li>詳細：<a href="http://www.gentoo.org/proj/en/glep/">GLEP Index</a>
+</li>
+<li>実行：なし</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect10">GLSA </a></p>
+<ul xmlns="">
+<li>読み：ジー・エル・エス・エー</li>
+<li>表記：GLSA</li>
+<li>意味：Gentoo Linux Security ANNOUNCEMENTの略。セキュリティ情報。</li>
+<li>詳細：</li>
+<li>実行：gentoo-announce@gentoo.orgに参加すると自動的にもらえる。</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect11">GRP </a></p>
+<ul xmlns="">
+<li>読み：ジー・アール・ピー</li>
+<li>表記：GRP</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap5_sect12">GWN </a></p>
+<ul xmlns="">
+<li>読み：ジー・ダブリュー・エヌ</li>
+<li>表記：GWN</li>
+<li>意味：Gentoo Weekly Newsletterの略。週間Gentooニュース。</li>
+<li>詳細：</li>
+<li>実行：gentoo-gwn@gentoo.orgに参加するとテキスト版、ホームサイトからはWeb版を見ることができます。</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap6">6.</a>I-i</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap6_sect1">(/etc/)init.d </a></p>
+<ul xmlns="">
+<li>読み：イニット・ディー?</li>
+<li>表記：(/etc/)init.d</li>
+<li>意味：デーモンなどの起動スクリプトを格納する。rc-updateも参照のこと。</li>
+<li>詳細：</li>
+<li>実行：なし</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap7">7.</a>L-l</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap7_sect1">lintool </a></p>
+<ul xmlns="">
+<li>読み：リンツール？</li>
+<li>表記：lintool</li>
+<li>意味：ebuild スクリプトが文法上など標準的条件に適合しているかチェックするコマンドラインプログラム。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/gentoolkit.xml#doc_chap3">Gentoolkit</a>
+</li>
+<li>実行：lintool <font class="emphasis">hoge</font>.ebuild</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap7_sect2">livecd(s) </a></p>
+<ul xmlns="">
+<li>読み：ライブ・シーディー(ズ)</li>
+<li>表記：livecd</li>
+<li>意味：Gentoo Linux インストールCDのこと。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/gentoo-x86-install.xml#doc_chap1">Gentoo Linux 1.4_rc4 インストール手引書</a>
+</li>
+<li>実行：なし</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap8">8.</a>J-j</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap8_sect1">java-config </a></p>
+<ul xmlns="">
+<li>読み：ジャバ・コンフィグ</li>
+<li>表記：java-config</li>
+<li>意味：GentooのためのJava設定ツール</li>
+<li>詳細：$ man java-config、#java-config &#8211;help</li>
+<li>実行：$ java-config &#8211;java-version</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap9">9.</a>K-k</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap9_sect1">keychain </a></p>
+<ul xmlns="">
+<li>読み：キー・チェーン</li>
+<li>表記：keychain</li>
+<li>意味：Gentoo Linux Projectが作成したssh-agentのフロントエンドツール。</li>
+<li>詳細：$ man keychain</li>
+<li>実行：(manを参照)</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap10">10.</a>M-m</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap10_sect1">Manifest </a></p>
+<ul xmlns="">
+<li>読み：マニフェスト</li>
+<li>表記：Manifest</li>
+<a href="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap1">Gentoo Linux 開発者 HOWTO</a><li>意味：積荷目録。ebuildスクリプトファイルや、Portageパッケージ管理システムに含まれるファイルの信頼性確認のために作られるMD5ハッシュ署名のリスト。</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap10_sect2">(/etc/)make.conf </a></p>
+<ul xmlns="">
+<li>読み：メイク・コンフ</li>
+<li>表記：(/etc/)make.conf</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap10_sect3">(/etc/)make.defaults </a></p>
+<ul xmlns="">
+<li>読み：メイク・デフォルツ</li>
+<li>表記：(/etc/)make.defaults</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap10_sect4">(/etc/)make.globals </a></p>
+<ul xmlns="">
+<li>読み：メイク・グローバルス</li>
+<li>表記：(/etc/)make.globals</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap10_sect5">(/etc/)make.profiles </a></p>
+<ul xmlns="">
+<li>読み：メイク・プロファイルズ</li>
+<li>表記：(/etc/)make.profiles</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap10_sect6">mirrorselect </a></p>
+<ul xmlns="">
+<li>読み：ミラー・セレクト</li>
+<li>表記：mirrorselect</li>
+<li>意味：Gentoo Linux Projectが作成したコマンドラインツール。近くのミラーを選ぶ。</li>
+<li>詳細：<a href="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap8">GWN 2003年2月24日号 8.Tips and Tricks</a>
+</li>
+<li>実行：# mirrorselect -a など</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap10_sect7">mkebuild </a></p>
+<ul xmlns="">
+<li>読み：メイク・イービルド</li>
+<li>表記：mkebuild</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。Makefileをもとにebuildの雛型を作ってくれる。</li>
+<li>詳細：mkebuild -h</li>
+<li>実行：ソースディレクトリでmkebuild？</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap11">11.</a>P-p</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap11_sect1">pkglist </a></p>
+<ul xmlns="">
+<li>読み：パッケージリスト</li>
+<li>表記：pkglist</li>
+<li>意味：(これはまだあるんだろうか。)</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap11_sect2">pkg-clean </a></p>
+<ul xmlns="">
+<li>読み：パッケージ・クリーンリスト</li>
+<li>表記：pkg-clean</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap11_sect3">pkg-size </a></p>
+<ul xmlns="">
+<li>読み：パッケージ・サイズ？</li>
+<li>表記：pkg-size</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。インストール済みのパッケージのサイズを返す。</li>
+<li>詳細：なし</li>
+<li>実行：# pkg-size apache</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap11_sect4">Portage </a></p>
+<ul xmlns="">
+<li>読み：ポーテージ、ポルテージ、ポートエイジなど諸説</li>
+<li>表記：Portage</li>
+<li>意味１：Gentooのパッケージシステム</li>
+<li>意味２：portageファイル(tarball形式で提供される)</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap11_sect5">Portage tree </a></p>
+<ul xmlns="">
+<li>読み：ポーテージ、ポルテージ、ポートエイジなど諸説 ＋ ツリー</li>
+<li>表記：Portage ツリー</li>
+<li>意味：/usr/portageディレクトリに展開される構造的なファイル群。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap1">Gentoo Linux 開発者 HOWTO</a>
+</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap11_sect6">(/usr/portage/)profiles </a></p>
+<ul xmlns="">
+<li>読み：プロファイル(ス)</li>
+<li>表記：(/usr/portage/)profiles</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap12">12.</a>Q-q</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap12_sect1">qpkg </a></p>
+<ul xmlns="">
+<li>読み：キューパッケージ？</li>
+<li>表記：Gentoolkit</li>
+<li>意味：Querying Packageの略称？。gentoolkitに含まる。パッケージに対する様々な問い合わせを行うコマンド。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/gentoolkit.xml#doc_chap2">Gentoolkit</a>
+</li>
+<li>実行：$ qpkg -I などいろいろ</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap13">13.</a>R-r</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap13_sect1">rc-update </a></p>
+<ul xmlns="">
+<li>読み：アールシーアップデート？</li>
+<li>表記：rc-update</li>
+<li>意味：</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/rc-scripts.xml">Gentoo Linux 1.0 Init System</a>
+</li>
+<li>実行：# rc-update add apache default など</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap13_sect2">revdep-rebuild </a></p>
+<ul xmlns="">
+<li>読み：？</li>
+<li>表記：revdep-rebuild</li>
+<li>意味：gentoolkitに含まれるコマンドラインツール。</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap13_sect3">repoman </a></p>
+<ul xmlns="">
+<li>読み：レポマン？</li>
+<li>表記：repoman</li>
+<li>意味：repository management の略？。Gentooのportage ツリーに追加されたパッケージの最低レベルの品質保証を徹底させ、cvsチェックイン手続きを簡素化する開発者専用コマンドラインツール</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap14">14.</a>S-s</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap14_sect1">sandbox </a></p>
+<ul xmlns="">
+<li>読み：サンド・ボックス</li>
+<li>表記：sandbox</li>
+<li>意味：(砂場)</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap14_sect2">SLOT(s) </a></p>
+<ul xmlns="">
+<li>読み：スロット</li>
+<li>表記：SLOT(s)</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap14_sect3">stage,stage1,stage2,stage3 </a></p>
+<ul xmlns="">
+<li>読み：ステージ</li>
+<li>表記：ステージ、stage1,stage2,stage3</li>
+<li>意味：</li>
+<li>詳細：</li>
+<li>実行：</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap14_sect4">superadduser </a></p>
+<ul xmlns="">
+<li>読み：スーパーアドドユーザー？</li>
+<li>表記：superadduser</li>
+<li>意味：Gentoo Linux Projectが作成したコマンドラインツール。</li>
+<li>詳細：<a href="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap7">GWN 2003年5月5日号 7.Tips and Tricks</a>
+</li>
+<li>実行：# superadduser</li>
+</ul>
+<h2 xmlns="">
+<a name="doc_chap15">15.</a>U-u</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap15_sect1">USE flag(s) </a></p>
+<ul xmlns="">
+<li>読み：ユーズフラグ(ス)</li>
+<li>表記：USE フラグ</li>
+<li>意味：/etc/make.conf内でカスタマイズできる変数。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/use-howto.xml">USE HOWTO日本語訳</a>
+</li>
+<li>実行：(/etc/make.confで設定。コマンドラインで設定)</li>
+</ul>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap15_sect2">USE valiable(s) </a></p>
+<ul xmlns="">
+<li>読み：ユーズバリアブル(ス)</li>
+<li>表記：USE変数</li>
+<li>意味：USEフラグと同様の意味で使われる。</li>
+<li>詳細：<a href="http://www.gentoo.org/doc/ja/use-howto.xml">USE HOWTO日本語訳</a>
+</li>
+<li>実行：(/etc/make.confで設定。コマンドラインで設定)</li>
+</ul></td></tr></table></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					
+						&#8211;
+						Gentoo Linux tips 集</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table class="all" width="99%"><tr><td><div class="navi" align="center"><span><a href="/">トップに戻る</a></span></div></td></tr></table><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0em;"><tr><td valign="top" align="right" colspan="1" bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 0em;"><tr><td width="99%" class="content" valign="top" align="left"><br></br><h1>Gentoo Linux tips 集</h1><table width="80%" border="0" style="border: #FF7711 3px dotted;"><tr><td> 
+	このガイドは、GentooJP の Wiki で出た tips を集めて編集したものです。
+</td></tr></table><br></br><br></br><table border="0" width="100%"><tr><td><b>Contents</b>:<br></br>1. <a href="#doc_chap1">この tips 集について</a><br></br>2. <a href="#doc_chap2">Portage 系 tips</a><br></br>3. <a href="#doc_chap3">Gentoo Linux 全般 tips</a><br></br>4. <a href="#doc_chap4">Gentoo Linux インストール tips</a><br></br></td><td align="right" valign="top" style="padding-right: 1.0em;"><span xmlns="" style="white-space:nowrap;"><i>Author</i>
+		:
+		<b><a class="altlink" href="mailto:www@gentoo.gr.jp">GentooJP</a></b></span><br xmlns=""><span xmlns="" style="white-space:nowrap;"><i>Editor</i>
+		:
+		<b><a class="altlink" href="mailto:nabeken@gentoo.gr.jp">TANABE Ken&#8217;ichi</a></b></span><br xmlns=""><br></br>
+														Updated 7 May 2004</td></tr></table><br></br><br></br><h2 xmlns="">
+<a name="doc_chap1">1.</a>この tips 集について</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect1">あなたの tips も </a></p>
+<p xmlns="">
+			この tips 集の元である
+			 <a href="http://wiki.gentoo.gr.jp/">Wiki(http://wiki.gentoo.gr.jp/)</a> 
+			 は誰でも編集が可能です。あなたも追加してみませんか？いつでも待ってます！
+			</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect2">まとめるにあたって </a></p>
+<p xmlns="">
+			いくつかの記事には、具体例などを追加させてもらいました。さらに、 tips をいくつかのグループに分けさせてもらいました。
+			一番、使われているであろう x86 で説明しています。それ以外の人は適宜読み替えてください。
+			</p>
+<h2 xmlns="">
+<a name="doc_chap2">2.</a>Portage 系 tips</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect1">emerge で何が行なわれたか (thanks,真藤さん 中野さん) </a></p>
+<p xmlns=""><font class="code">emerge</font> のログはすべて <font class="path">/var/log/emerge.log</font> に出力されるようになっています。
+			よって、そのファイルを見ることで何が行われたかがわかります。
+			</p>
+<a xmlns="" name="doc_chap2_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.1</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">less /var/log/emerge.log</font>
+
+1051319292: Started emerge on: Apr 26, 2003 01:08:12
+1051319292:  *** emerge  sync
+1051319292:  === rsync
+1051320882: Started emerge on: Apr 26, 2003 01:34:42
+1051320882:  *** emerge  &gt;=sys-apps/portage-2.0.25
+1051320882:  &gt;&gt;&gt; emerge (1 of 1) sys-apps/portage-2.0.47-r10 to /
+1051321008: Started emerge on: Apr 26, 2003 01:36:48
+1051321008:  *** emerge  &gt;=sys-apps/portage-2.0.25
+1051321008:  &gt;&gt;&gt; emerge (1 of 1) sys-apps/portage-2.0.47-r10 to /
+1051321035:  ::: completed emerge (1 of 1) sys-apps/portage-2.0.47-r10 to /
+			</pre></td></tr>
+</table>
+<p xmlns="">
+			以下の設定を行なうと <font class="code">emerge</font> 毎の詳しいログが記録されます。
+			</p>
+<a xmlns="" name="doc_chap2_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.2</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">nano -w /etc/make.conf</font>
+PORT_LOGDIR=/var/log/portage
+
+# <font class="input" color="blue">mkdir /var/log/portage</font>
+
+<font class="comment">// Portage を emerge すると</font>
+# <font class="input" color="blue">emerge portage</font>
+# <font class="input" color="blue">less /var/log/portage/xxxx-portage-2.0.49-r18.log</font>
+setup
+unpack
+&gt;&gt;&gt; Unpacking source...
+&gt;&gt;&gt; Unpacking portage-2.0.49-r18.tar.bz2 to /var/tmp/portage/portage-2.0.49-r18/work
+&gt;&gt;&gt; Source unpacked.
+compile
+./create-localdecls
+Checking truncate argument type... off_t
+Checking libc version... libc.so.6
+Checking glibc subversion... 
+gcc -march=i386 -O1 -pipe -Wall -c -D_GNU_SOURCE -DPIC -fPIC -D_REENTRANT libsandbox.c
+gcc -march=i386 -O1 -pipe -Wall -c -D_GNU_SOURCE -DPIC -fPIC -D_REENTRANT sandbox_futils.c
+gcc libsandbox.o sandbox_futils.o -shared -fPIC -ldl -lc -o libsandbox.so -nostdlib -lgcc
+gcc -march=i386 -O1 -pipe -Wall -c sandbox.c
+gcc sandbox.o sandbox_futils.o getcwd.c -ldl -lc -o sandbox
+install
+
+&gt;&gt;&gt; Install portage-2.0.49-r18 into /var/tmp/portage/portage-2.0.49-r18/image/ category sys-apps
+running install
+running build
+running build_ext
+building 'missingos' extension
+creating build
+creating build/temp.linux-i686-2.2
+
+<font class="comment">// 以下省略</font>
+			</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect2">ACCEPT_KEYWORDS (thanks,篠原さん) </a></p>
+<p xmlns="">Portage のデフォルト設定は Gentoo Linux の開発者達が stable と判断したパッケージのみをインストールするように
+			セットされています。「最新バージョンがリリースされて ebuild も用意されているのに、インストールできない」という
+			経験はありませんか？実は、その最新バージョンが unstable と判断されたために自動ではインストールされないようにな
+			っているのです。これを期に unstable 街道まっしぐらでも構わないですが:-)、一時的に設定を変更することもできます。
+			</p>
+<a xmlns="" name="doc_chap2_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.3: unstable パッケージを使う</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// unstable 街道まっしぐら向け</font>
+# <font class="input" color="blue">nano -w /etc/make.conf</font>
+以下のように修正してください。
+
+ACCEPT_KEYWORDS="~x86"
+
+<font class="comment">// 一時的に unstable なパッケージをインストールする</font>
+bash を使ってる人 は /root/.bashrc に以下を追加してください。
+
+# <font class="input" color="blue">nano -w /root/.bashrc</font>
+# <font class="input" color="blue">alias ak='env ACCEPT_KEYWORDS=~x86'</font>
+
+<font class="comment">// セットすると</font>
+本来なら、
+# <font class="input" color="blue"> ACCEPT_KEYWORDS="~x86" emerge -p hogehoge</font>
+と、いう長いコマンドを
+# <font class="input" color="blue">ak emerge -p hogehoge</font>
+と、短縮することができます。応用として
+# <font class="input" color="blue">ak ALSA_CARDS="usb-audio" emerge alsa-driver</font>
+と、 <font class="input" color="blue">ak</font> と <font class="input" color="blue">emerge</font> の間にいくつでも入れることができます。
+			</pre></td></tr>
+</table>
+<p xmlns="">
+			Portage について、さらに知りたい場合は
+			<a href="http://www.gentoo.org/doc/ja/portage-user.xml">Portageユーザーガイド</a> 
+			を参照してください。
+			</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect3">qpkg and etcat </a></p>
+<p xmlns="">
+			「<font class="code">/bin/ps</font> ってどのパッケージに入ってたっけ」などと思ったことはありませんか？そのような時には
+			<font class="code">qpkg</font> か <font class="code">etcat</font> を使うと幸せになれます。
+			</p>
+<a xmlns="" name="doc_chap2_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.4</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// qpkg の場合</font>
+# <font class="input" color="blue">qpkg -f /bin/ps</font>
+sys-apps/procps *
+
+<font class="comment">// etcat の場合(こちらの方がすこし速いです)</font>
+# <font class="input" color="blue">etcat -b /bin/ps</font>
+Searching for /bin/ps in * ...
+sys-apps/procps-3.1.9
+			</pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b><font class="code">etcat</font> は root で実行するか、 portage グループに属している必要があります。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect4">emerge 中でも快適に (thanks,真藤さん) </a></p>
+<p xmlns="">
+			emerge 中、つまりコンパイル中は CPU パワーを取られてしまい、他のアプリケーションの動作に支障がでる
+			場合があります。emerge の nice 値を変更することで優先順位を下げることができます。これにより、多少なりとも
+			負荷を下げることができます。
+			</p>
+<a xmlns="" name="doc_chap2_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.5</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// emerge 中の場合</font>
+# <font class="input" color="blue">ps axo pgid,command | grep emerge</font>
+26963 python2.2 /usr/bin/emerge -u world
+いちばん左の数字が PGID です。
+# <font class="input" color="blue">renice +5 -g PGID</font>
++19 が一番優先順位が低い。-20 が一番優先されるが、順位を上げれるのは root のみ。
+
+<font class="comment">// 一時的に nice 値を下げる場合</font>
+# <font class="input" color="blue">PORTAGE_NICENESS=5 emerge hogehoge</font>
+
+<font class="comment">// これからずっと emerge の nice 値を下げる場合</font>
+# <font class="input" color="blue">nano -w /etc/make.conf</font>
+
+<font class="comment">// 以下を追加してください。</font>
+PORTAGE_NICENESS=5
+			</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect5">world のコメントアウト文字は？ (thanks,真藤さん, 中野さん) </a></p>
+<p xmlns=""><font class="path">/var/cache/edb/world</font> のコメントアウト文字は <font class="emphasis">#</font> です。</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect6">package.mask and package.unmask </a></p>
+<p xmlns="">
+			Gentoo Linux では、最近 <font class="emphasis">Apache2</font> , <font class="emphasis">Mysql4</font> が unstable から stable になりました。
+			この影響により、 Apache1 系列で運用している人が <font class="code">emerge -u world</font> とすると Apache2 がアップグレードの対象に
+			なりました。アップグレード対象から外すには <font class="path">/etc/portage/package.mask</font> を編集してください。
+			</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>/etc/portage/profile/package.mask から /etc/portage/package.mask に変更されました</p></td></tr></table>
+<a xmlns="" name="doc_chap2_pre6"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.6: package.mask and package.unmask</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// Apache2 と Mysql4 を mask します。これにより、 emerge -u world で Apache2 Mysql4 はアップグレードの対象から外れます。</font>
+# <font class="code">mkdir /etc/portage</font>
+# <font class="code">cd /etc/portage</font>
+# <font class="code">nano -w package.mask</font>
+&gt;=net-www/apache-2*
+&gt;=dev-db/mysql-4*
+
+<font class="comment">// /usr/portage/profile/package.mask にあるパッケージの mask を外す</font>
+# <font class="code">cd /etc/portage</font>
+# <font class="code">nano -w package.unmask</font>
+
+として、対象のパッケージを書きます。
+			</pre></td></tr>
+</table>
+<p xmlns=""><font class="path">/usr/portage/profile/package.mask</font>などに追加する方法では、<font class="code">emerge sync</font>の度に上書きされてしまいます。</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect7">回線に優しくあれ (thanks,stingerさん) </a></p>
+<p xmlns="">
+			portage では <font class="path">/usr/portage/distfiles/</font> にないものはインターネット上からダウンロードしようとします。
+			会社や学校など、共有の回線を使用している時は、目立たないよう、こっそりとダウンロードしたいですよね。wget を使っ
+			ているので簡単にダウンロード時の帯域を制限することができます。</p>
+<a xmlns="" name="doc_chap2_pre7"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.7: wget で帯域制限を掛ける</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">nano -w /etc/make.conf</font>
+<font class="comment">// 以下を追加してください。ほとんどの人はコメントアウトをはずすだけです</font>
+
+FETCHCOMMAND="/usr/bin/wget -t 5 --passive-ftp --limit-rate=200k \${URI} -P　\${DISTDIR}"
+
+200k は各自の環境に合せてください。
+			</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect8">emerge sync の rsync 先を日本のサーバ類に指定する。(thanks,桜本さん)  </a></p>
+<p xmlns="">
+			Gentoo Project の rsync サーバーは各地域ごとにエイリアスが設定されています。
+			日本国内の人は極力 <b>rsync.jp.gentoo.org</b> を使うようにしてください。
+			</p>
+<a xmlns="" name="doc_chap2_pre8"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.8: 各地域ごとのエイリアス一覧</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+rsync.at.gentoo.org
+rsync.au.gentoo.org
+rsync.be.gentoo.org
+rsync.ca.gentoo.org
+rsync.de.gentoo.org
+rsync.es.gentoo.org
+rsync.fi.gentoo.org
+rsync.fr.gentoo.org
+rsync.gr.gentoo.org
+rsync.hu.gentoo.org
+rsync.is.gentoo.org
+rsync.it.gentoo.org
+<b>rsync.jp.gentoo.org</b> 日本国内には現在5台以上のサーバーがあります。
+rsync.kr.gentoo.org
+rsync.kw.gentoo.org
+rsync.nl.gentoo.org
+rsync.no.gentoo.org
+rsync.ru.gentoo.org
+rsync.se.gentoo.org
+rsync.sg.gentoo.org
+rsync.sk.gentoo.org
+rsync.uk.gentoo.org
+rsync.us.gentoo.org
+rsync.ve.gentoo.org
+
+# <font class="input" color="blue">nano -w /etc/make.conf</font>
+SYNC="rsync://rsync.jp.gentoo.org/gentoo-portage"
+			</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect9">コンパイルに要した時間を調べる </a></p>
+<p xmlns="">Portage にある app-portage/splat を使うと調べることができます。</p>
+<a xmlns="" name="doc_chap2_pre9"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.9</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">//  splat -f emerge.logのパス 調べたいパッケージ名</font>
+# splat -f /var/log/emerge.log glibc
+
+ * sys-libs/glibc-2.3.2-r9
+
+	Emerged at: 金 11月 21 04:41:00 2003
+	Build time: 1 hour, 54 minutes, and 34 seconds
+
+	Emerged at: 土 11月 22 10:32:44 2003
+	Build time: 1 hour, 31 minutes
+
+ * sys-libs/glibc-2.3.3_pre20031212
+
+	Emerged at: 金 12月 26 21:09:15 2003
+	Build time: 1 hour, 58 minutes, and 14 seconds
+
+ * sys-libs/glibc-2.3.3_pre20031222
+
+	Emerged at: 土 12月 27 23:14:32 2003
+	Build time: 2 hours, 11 minutes, and 13 seconds
+
+	Emerged at: 日 12月 28 06:18:43 2003
+	Build time: 1 hour, 42 minutes, and 59 seconds
+			</pre></td></tr>
+</table>
+<h2 xmlns="">
+<a name="doc_chap3">3.</a>Gentoo Linux 全般 tips</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect1">うちの Gentoo は何歳かしら (thanks,真藤さん) </a></p>
+<p xmlns="">
+			ふと思う。「Gentoo をインストールしたのはいつだろう」と。そんな時は;
+			</p>
+<ul xmlns="">
+<li>/etc/issue, /etc/motd の作成日</li>
+<li>&#8220;ls -al /&#8221; の結果</li>
+<li>/var/log/emerge.logの最初(stage3でのインストールの場合)</li>
+<li>/etc/gentoo-release</li>
+<li>/etc/make.conf.build</li>
+<li>/etc/runlevels/</li>
+<li>&#8220;ls -ltd /var/db/pkg/*/* | tail&#8221;</li>
+<li>/lost+found </li>
+</ul>
+<p xmlns="">
+			これらのファイル/ディレクトリで一番古いものが「インストールした日」になるようです。
+			</p>
+<a xmlns="" name="doc_chap3_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.1</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">ls -al /</font>
+合計 11036
+drwxr-xr-x   16 root     root         4096 2003-07-17 01:11 .
+drwxr-xr-x   16 root     root         4096 2003-07-17 01:11 ..
+drwxr-xr-x    2 root     root         4096 2003-07-14 02:59 bin
+drwxr-xr-x    3 root     root           61 2003-06-27 17:45 boot
+drwxr-xr-x    1 root     root            0 1970-01-01 09:00 dev
+drwxr-xr-x   63 root     root         4096 2003-07-17 01:11 etc
+drwxr-xr-x    7 root     root          110 2003-07-05 17:31 home
+drwxr-xr-x    8 root     root         4096 2003-07-06 12:30 lib
+drwxr-xr-x    5 root     root           45 2003-05-13 20:19 mnt
+drwxr-xr-x    4 root     root           70 2003-05-30 10:08 opt
+dr-xr-xr-x   86 root     root            0 2003-07-16 04:23 proc
+drwx------    8 root     root         4096 2003-07-15 01:21 root
+drwxr-xr-x    2 root     root         4096 2003-07-14 02:59 sbin
+<font class="input" color="blue">-rw-r--r--    1 root     root     11253769 2003-04-26 10:06 stage1-x86-1.4_rc4.tar.bz2</font>
+drwxrwxrwt   11 root     root         4096 2003-07-17 01:13 tmp
+drwxr-xr-x   15 root     root         4096 2003-06-27 16:20 usr
+drwxr-xr-x   12 root     root          137 2003-05-30 15:19 var
+
+<font class="comment">// 2003-04-26 が一番古かったようです</font>
+			</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect2">Gentoo Linux なマシンを複数台運用する時のアイデア (thanks,Fuktommy さん) </a></p>
+<p xmlns="">Gentoo なマシンが2台以上の人はぜひこのアイデアを実践してください！資源は限られています。</p>
+<p xmlns=""><font class="path">/usr/portage</font> を NFS で共有しましょう。これは非常に効果があります。</p>
+<a xmlns="" name="doc_chap3_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.2: /usr/portage を NFS で共有する</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+kernel option で NFS サーバーが有効になっているか確認してください。もし、有効になっていない場合は kernel を再構築する必要があります。
+<font class="comment">// kernel で NFS を有効にする (説明は linux-2.4.21 に沿っています)</font>
+# <font class="input" color="blue">cd /usr/src/linux</font>
+# <font class="input" color="blue">make menuconfig</font>
+
+File Systems -&gt;
+	Network File Systems -&gt;
+		NFS Server Support (module か 組み込み)
+			Pronano -wde NFSv3 Server Support (有効にする)
+
+# <font class="input" color="blue">make bzImage</font>
+# <font class="input" color="blue">make modules modules_install</font>
+
+再構築した kernel で再起動してください。
+
+# <font class="input" color="blue">emerge nfs-utils</font>
+# <font class="input" color="blue">nano -w /etc/exports</font>
+<font class="comment">// 192.168.1.0/255.255.255.0 は共有を許可するネットワークです。各自の環境に合せてください。</font>
+
+/usr/portage 192.168.1.0/255.255.255.0(rw,sync,no_root_squash)
+
+# <font class="input" color="blue">/sbin/rc-update add nfs default</font>
+# <font class="input" color="blue">/etc/init.d/nfs start</font>
+
+<font class="comment">// クライアントから /usr/portage を NFS で mount します</font>
+# <font class="input" color="blue">mount サーバーのIPアドレス:/usr/portage /usr/portage</font>
+# <font class="input" color="blue">df -hT</font>
+
+Filesystem    タイプ  サイズ  使用  残り 使用% マウント位置
+/dev/hda2      xfs    9.4G  4.6G  4.9G  49% /
+/dev/hda4      xfs     65G   40G   25G  62% /home
+none         tmpfs    125M     0  125M   0% /dev/shm
+yuki.tknetworks.org:/usr/portage
+               nfs    9.6G  1.6G  8.1G  16% /usr/portage
+			</pre></td></tr>
+</table>
+<p xmlns="">ローカル用なので更新は<font class="emphasis">一日に一度</font>で十分です。cron で 0:00 に rsync.jp.gentoo.org と
+			同期するようにします。
+			</p>
+<a xmlns="" name="doc_chap3_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.3: cron の設定</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">cd /etc/cron.daily/</font>
+# <font class="input" color="blue">nano -w rsync</font>
+
+#!/bin/sh
+emerge sync
+</pre></td></tr>
+</table>
+<p xmlns="">これにより <font class="path">/usr/portage</font> 以下が共有できます。distfiles も Portage-Tree もです。
+			いちいち、クライアント側で <font class="code">emerge sync</font> をする必要がなくなります。スバラシイ！</p>
+<p xmlns="">マシンの構成が同じ場合はバイナリパッケージを作って、2台目にはそのパッケージをインストールことも可能です。</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>CPU や gcc の最適化フラグに注意してください。これらが違うと動かない場合があります。</p></td></tr></table>
+<a xmlns="" name="doc_chap3_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.4: &#8211;buildpkg &#8211;usepkg</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">emerge hogehoge --buildpkg</font>
+<font class="comment">// 常に --buildpkg したい場合は /etc/make.conf の FEATURES に buildpkg を追加してください。</font>
+
+すると、 /usr/portage/packages/All に hogehoge,tbz2 というパッケージが出来ています。あとは、インストールしたいマシンに持っていき
+
+# <font class="input" color="blue">emerge hogehoge.tbz2</font>
+
+とすれば、簡単にインストールできます。
+		</pre></td></tr>
+</table>
+<p xmlns="">最後に。distcc というソフトを使うと分散コンパイルをすることができます。一度、使うと便利すぎて手放せなくなりますよ。</p>
+<a xmlns="" name="doc_chap3_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.5: emerge で distcc を使う</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// 分散する側、分散される側、共に distcc を emerge する必要があります。</font>
+# <font class="input" color="blue">emerge distcc</font>
+
+<font class="comment">// 分散する側の設定</font>
+# <font class="input" color="blue">/sbin/rc-update add distccd default</font>
+# <font class="input" color="blue">nano -w /etc/conf.d/distccd</font>
+DISTCCD_OPTS="-a 127.0.0.1"
+
+# <font class="input" color="blue">nano -w /etc/make.conf</font>
+FEATURES に distcc を 追加してください。
+DISTCC_HOSTS="分散するマシンのIPアドレス 127.0.0.1"
+スペースで区切ることで何台でも追加できます。
+
+MAKEOPTS="-j3"
+数値は分散する台数+1 くらい。
+
+<font class="comment">// 分散される側の設定</font>
+# <font class="input" color="blue">/sbin/rc-update add distccd</font>
+# <font class="input" color="blue">nano -w /etc/conf.d/distccd</font>
+DISTCCD_OPTS="-a 192.168.1.0/24"
+分散コンパイルを受けつけるネットワークを指定します。
+		</pre></td></tr>
+</table>
+<p xmlns="">あとは、普通に <font class="code">emerge hogehoge</font> とすると分散コンパイルが行なわれます。</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect3">kdeでたまにkinput2 -cannaが数秒フリーズする </a></p>
+<p xmlns="">解決するには <font class="path">/etc/X11/app-defaults/Kinput2</font> を編集します。 </p>
+<a xmlns="" name="doc_chap3_pre6"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.6</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">nano -w /etc/X11/app-defaults/Kinput2</font>
+!*OverTheSpotConversion.UseOverrideShellForMode: True 
+
+*OverTheSpotConversion.UseOverrideShellForMode: True
+
+<font class="comment">// 頭の!だけを消して Kinput2 を再起動させます。</font>
+			</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect4">HDD の動作が遅く感じる </a></p>
+<p xmlns="">HDD 自体は DMA モードで認識しているのに有効になってないことがあります。</p>
+<a xmlns="" name="doc_chap3_pre7"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.7</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">rc-update add hdparm default</font>
+			</pre></td></tr>
+</table>
+<p xmlns="">以上で起動時に有効にしてくれます。</p>
+<h2 xmlns="">
+<a name="doc_chap4">4.</a>Gentoo Linux インストール tips</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect1">LiveCDとほぼ同じカーネル/モジュールを作る (thanks,yamakuraさん) </a></p>
+<p xmlns="">
+			1.4_rc4のLiveCDに入っているカーネルのconfigは、/proc/configとして参照できます。これを利用するとブートできる
+			であろうカーネルを簡単に作ることができます。
+			</p>
+<a xmlns="" name="doc_chap4_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 4.1</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="input" color="blue">cd /usr/src/linux</font>
+# <font class="input" color="blue">cat /proc/config &gt; .config</font>
+# <font class="input" color="blue">make oldconfig</font>
+			</pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect2">ドキュメントを見ながら&#8230; </a></p>
+<p xmlns="">
+			CD 一枚で起動できて、 KDE などが利用できる Linux ディストリビューションがあります。これらを利用すると
+			ブラウザで <a href="http://www.gentoo.org/">http://www.gentoo.org/</a> のドキュメントを見ながらインストールを行なうことができます。
+			CD からブートできるもので有名なものは</p>
+<ul xmlns="">
+<li>
+<a href="http://www.knopper.net/knoppix/">Knoppix</a> / <a href="http://unit.aist.go.jp/it/knoppix/">日本語版 knoppix</a>
+</li>
+<li>
+<a href="http://www.demolinux.org/">Demo Linux</a> / <a href="http://unit.aist.go.jp/it/demolinux/index.html">日本語版 Demo Linux</a>
+</li>
+</ul>
+<p xmlns="">
+			などがあります。非常に便利なのでお試しあれ。
+			</p></td></tr></table></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					
+						&#8211;
+						Gentoo Linux フロッピーインストールガイド</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table class="all" width="99%"><tr><td><div class="navi" align="center"><span><a href="/">トップに戻る</a></span></div></td></tr></table><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0em;"><tr><td valign="top" align="right" colspan="1" bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 0em;"><tr><td width="99%" class="content" valign="top" align="left"><br></br><h1>Gentoo Linux フロッピーインストールガイド</h1><table width="80%" border="0" style="border: #FF7711 3px dotted;"><tr><td> 
+このガイドでは、CD-ROMドライブが使えないマシンに、フロッピーディスクを使って
+Gentoo Linux をインストールする方法を解説します。
+</td></tr></table><table border="0" style="border: #dddddd 3px dotted;"><tr><td>このドキュメントの著作権はAuthorの方に帰属します。<br></br>詳しくは<a href="/jpmain/original-doc.xml">オリジナルドキュメントプロジェクト</a>を参照してください。</td></tr></table><br></br><br></br><table border="0" width="100%"><tr><td><b>Contents</b>:<br></br>1. <a href="#doc_chap1">はじめに</a><br></br>2. <a href="#doc_chap2">下準備</a><br></br>3. <a href="#doc_chap3">インストール手順</a><br></br></td><td align="right" valign="top" style="padding-right: 1.0em;"><span xmlns="" style="white-space:nowrap;"><i>Author</i>
+		:
+		<b><a class="altlink" href="mailto:makoto@dsb.club.ne.jp">yamakura</a></b></span><br xmlns=""><br></br>
+														Updated 8 February 2003</td></tr></table><br></br><br></br><h2 xmlns="">
+<a name="doc_chap1">1.</a>はじめに</h2>
+<p xmlns="">この文書では<a href="http://archlinux.org/">Arch Linux</a>の<a href="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/">インストール用ブートディスク</a>を利用してGentoo Linuxをインストールする方法を紹介します。
+   このディスクを使う理由は、特殊なフォーマットを使っていないためWindows環境でも容易にフロッピーに書き込めること、2.4系列のカーネルを使っていること、それとReiserFS、DevFSをサポートしていることです。
+   ただし、非常に残念なことに、Arch Linuxのブートディスクにはbzip2が含まれていません。
+   そのためすこし手順が増えますが、別途bzip2を入手することで対応します。
+   余談ですが、汎用的なブートディスクとして一番多く使われているのは、<a href="http://www.toms.net/rb/">tomsrtbt</a>でしょう。
+   Gentoo ForumsのFAQでは<a href="http://forums.gentoo.org/viewtopic.php?t=8690">tomsrtbtを使ったインストール方法</a>が紹介されています。
+   また、<a href="http://www.gentoo.org/doc/en/altinstall.xml">Netbootや既存のLinuxマシンを利用したインストール方法</a>も文書化されています。</p>
+<h2 xmlns="">
+<a name="doc_chap2">2.</a>下準備</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect1">用意するもの </a></p>
+<li xmlns="">Gentoo Linux インストールガイド…1式</li>
+<li xmlns="">フロッピーディスク…3枚</li>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect2">フロッピーイメージの取得 </a></p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b>この文書では例として<a href="http://www.ibiblio.org">www.ibiblio.org</a>からHTTPでファイルをダウンロードする場合を取り上げます。
+   なお、ダウンロードには<font class="code">snarf</font>というツールを使っています。
+   このツールはHTTPだけでなくFTPにも対応していますし、プロクシも利用できます(<font class="code">HTTP_PROXY</font>、<font class="code">FTP_PROXY</font>に設定。大文字ですので注意してください)。
+   Gentoo Linuxの配布ファイルに関しては、<a href="http://www.gentoo.org/main/en/where.xml">ミラーサイト一覧</a>を見て、なるべく近いところから適切なプロトコルでダウンロードすることをお薦めします。</p></td></tr></table>
+<p xmlns="">以下のURLからブートディスクのイメージや必要なツールをダウンロードしてください。
+   イメージは3つ(<a href="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/boot.img">Boot</a>/<a href="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/root.img">Root</a>/<a href="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/modules.img">Modules</a>)あります。
+   それぞれをフロッピーディスクに書き込んでください。</p>
+<li xmlns="">ブートディスクイメージ … <a href="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/">http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/</a>
+</li>
+<li xmlns="">Windows用のイメージ書き込みツール … <a href="http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm">http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm</a>
+</li>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>既にDOS版のrawrite.exeなどを持っているなら、そちらを利用しても構いません。</p></td></tr></table>
+<p xmlns="">Windows版のRawWriteを使う場合は、&#8221;Floppy drive&#8221;でフロッピーを入れたドライブを選択し、&#8221;Image file&#8221;にダウンロードしたBootイメージを指定して、[Write]ボタンを押してください。
+   書き込みが終わったら、Root/Modulesをそれぞれ同じようにして書き込みます。</p>
+<p xmlns="">UNIXやLinuxなどを使っている場合は、次のようにしてフロッピーに書き込みます。</p>
+<a xmlns="" name="doc_chap2_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.1: ブートディスクの書き込み</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">/dev/fd0は使っているシステムにあわせて変更してください。</font>
+<font class="comment">１枚目 (Bootイメージ)</font>
+# <font class="code">dd if=boot.img of=/dev/fd0</font>
+<font class="comment">２枚目 (Rootイメージ)</font>
+# <font class="code">dd if=root.img of=/dev/fd0</font>
+<font class="comment">３枚目 (Modulesイメージ)</font>
+# <font class="code">dd if=modules.img of=/dev/fd0</font>
+   </pre></td></tr>
+</table>
+<h2 xmlns="">
+<a name="doc_chap3">3.</a>インストール手順</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect1">ブート </a></p>
+<p xmlns="">PCの電源を入れ、Bootイメージを書き込んだディスクを入れてください。
+   すぐにブートプロンプト(<font class="code">Boot:</font>)が出ますので、Enterキーを押してください。
+   カーネルが読み込まれ、さまざまなデバイスが認識された後、フロッピーを交換するように指示されます。
+   ここでRootイメージを書き込んだディスクに差し替え、Enterキーを押してください。</p>
+<p xmlns="">Rootディスクの中身が展開されると、プロンプトが表示されます。
+   Modulesイメージを書き込んだディスクを入れて、次のようにコマンドを入力してください。</p>
+<a xmlns="" name="doc_chap3_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.1: モジュールファイルのロード</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">loadmods /dev/floppy/0</font>
+   </pre></td></tr>
+</table>
+<p xmlns="">これでモジュールをロードする準備ができました。</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>キーマップの変更はできませんので、日本語106/109キーボードなどを使っている場合は、キートップの刻印とは違うキーを押さなければならないことがあります。
+   たとえば、&#8221;|&#8221;(バー、パイプ記号)をタイプするにはSHIFT+&#8221;]&#8221;、&#8221;:&#8221;(コロン)をタイプするにはSHIFT+&#8221;;&#8221;(セミコロン)、&#8221;_&#8221;(下線)をタイプするにはSHIFT+&#8221;-&#8220;(マイナス記号)、などです。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect2">モジュールのロード </a></p>
+<p xmlns="">インストールガイドの「カーネルモジュールのロード」(Load Kernel Modules)を参照してください。</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect3">ネットワーク環境 </a></p>
+<p xmlns="">インストールガイドの「ネットワークの設定」(Configuring Networking)を参照してください。
+   ただし、PPPoE接続およびnet-setupスクリプトは利用できません。</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect4">bzip2のインストール </a></p>
+<p xmlns="">Gentoo Linuxは、提供されるファイルの圧縮にbzip2を利用しています。と
+   ころが、Arch Linuxのブートディスクにはbzip2が含まれていません。
+   このため、bzip2を別途入手する必要があります。</p>
+<a xmlns="" name="doc_chap3_pre2"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.2: bzip2のインストール</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">cd /tmp</font>
+# <font class="code">snarf http://www.ibiblio.org/pub/linux/distributions/archlinux/stable/</font>
+# <font class="code">grep bzip2 index.html</font>
+<font class="comment">bzip2パッケージの名前を確認してください。必要に応じて、以下のバージョン(<font class="emphasis">1.0.2-3</font>)を書き換えてください。</font>
+# <font class="code">snarf http://www.ibiblio.org/pub/linux/distributions/archlinux/stable/bzip2-<font class="emphasis">1.0.2-3</font>.pkg.tar.gz</font>
+# <font class="code">zcat bzip2-<font class="emphasis">1.0.2-3</font>.pkg.tar.gz | tar xvf - -C /</font>
+   </pre></td></tr>
+</table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect5">パーティションの設定 </a></p>
+<p xmlns="">インストールガイドの「パーティションの設定」(Partition Configuration)を参照してください。
+   cfdiskコマンドが利用可能です。</p>
+<p xmlns="">ここで注意しなければいけないのは、/dev/hda といった一般的に使われているデバイス名が利用できない、ということです。
+   以下に簡単に対応表を示しますので参考にして下さい。</p>
+<table xmlns="" class="ntable">
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>一般的な名前</b></font></td>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>devfsでの名前</b></font></td>
+</tr>
+<tr>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">/dev/hda</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">/dev/ide/host0/bus0/target0/lun0/disc</td>
+</tr>
+<tr>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">/dev/hda1</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">/dev/ide/host0/bus0/target0/lun0/part1</td>
+</tr>
+<tr>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">/dev/hdb3</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">/dev/ide/host0/bus0/target1/lun0/part3</td>
+</tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>hda,hdbはtarget0,target1に対応します。
+   またディスク全体はdisc、パーティションはpart1などに対応します。</p></td></tr></table>
+<a xmlns="" name="doc_chap3_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.3: cfdiskコマンド</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">cfdisk /dev/ide/host0/bus0/target0/lun0/disc</font>
+   </pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>いうまでもありませんが、記述を間違えると大変なことになりかねませんので、落ち着いて充分に確認を取りながら作業を進めてください。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect6">パーティションのマウント </a></p>
+<p xmlns="">インストールガイドの「パーティションのマウント」(Mount Partitions)を参照してください。
+   デバイス名に注意してください。</p>
+<a xmlns="" name="doc_chap3_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.4: スワップをアクティブにする</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">swapon /dev/ide/host0/bus0/target0/lun0/part2</font>
+   </pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre5"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.5: マウントポイントの作成</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">mkdir /mnt/gentoo</font>
+# <font class="code">mount /dev/ide/host0/bus0/target0/lun0/part3 /mnt/gentoo</font>
+# <font class="code">mkdir /mnt/gentoo/boot</font>
+# <font class="code">mount /dev/ide/host0/bus0/target0/lun0/part1 /mnt/gentoo/boot</font>
+   </pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>デバイス名の記述に注意してください。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect7">stageファイルのダウンロード </a></p>
+<p xmlns="">必要なステージの圧縮ファイルをダウンロードします。
+   ひょっとしたら、URLが変わっているかもしれませんので、可能ならあらかじめ調べてメモを取ってください。
+   それがダメなら、directory indexを取得して見つけることもできるでしょう。</p>
+<a xmlns="" name="doc_chap3_pre6"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.6: 圧縮ファイルの名前を調べる</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">cd /tmp</font>
+<font class="comment">stage1からインストールするなら</font>
+# <font class="code">snarf http://www.ibiblio.org/pub/linux/distributions/gentoo/releases/1.4_rc2/x86/x86/stages/</font>
+# <font class="code">grep stage1 index.html</font>
+<font class="comment">stage2か3からインストールするなら</font>
+# <font class="code">snarf http://www.ibiblio.org/pub/linux/distributions/gentoo/releases/1.4_rc2/x86/<font class="comment">&lt;arch&gt;</font>/stages/</font>
+# <font class="code">grep stage index.html</font>
+<font class="comment">&lt;arch&gt;に指定できるものは以下の通り: athlon-mp, athlon-xp, athlon, i586, i686, pentium3</font>
+   </pre></td></tr>
+</table>
+<p xmlns="">それではファイルをダウンロードしてください。</p>
+<a xmlns="" name="doc_chap3_pre7"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.7: ステージファイルのダウンロード</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">cd /mnt/gentoo</font>
+<font class="comment">stage1なら、以下のようになるでしょう。(長くなるので折り返しています)</font>
+# <font class="code">snarf http://www.ibiblio.org/pub/linux/distributions/
+        gentoo/releases/1.4_rc2/x86/x86/stages/stage1-x86-1.4_rc2.tbz2</font>
+<font class="comment">または、</font>
+# <font class="code">snarf http://www.ibiblio.org/pub/linux/distributions/
+        gentoo/releases/1.4_rc2/x86/<font class="comment">&lt;arch&gt;</font>/stages/stage2-<font class="comment">&lt;arch&gt;</font>-1.4_rc2.tbz2</font>
+<font class="comment">または、</font>
+# <font class="code">snarf http://www.ibiblio.org/pub/linux/distributions/
+        gentoo/releases/1.4_rc2/x86/<font class="comment">&lt;arch&gt;</font>/stages/stage3-<font class="comment">&lt;arch&gt;</font>-1.4_rc2.tbz2</font>
+   </pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>もちろん、Gentoo Linux 1.2をインストールすることもできます。
+   その場合は、<a href="http://www.ibiblio.org/pub/linux/distributions/gentoo/releases/1.2/stage1-ix86-1.2.tbz2">http://www.ibiblio.org/pub/linux/distributions/gentoo/releases/1.2/stage1-ix86-1.2.tbz2</a>をお試しください。</p></td></tr></table>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect8">圧縮ファイルの展開 </a></p>
+<p xmlns="">ここで、圧縮ファイルを<font class="path">/mnt/gentoo</font>に展開します。
+   そのあと、chrootして新しい Gentoo Linux のインストール環境に入っていきます。</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffffbb"><p class="note"><b>Important: </b><font class="code">tar</font>する時は必ず<font class="code">p</font>オプションを使用してください。
+   これを怠ると、いくつかのファイルに誤ったパーミッションを与えてしまいます。</p></td></tr></table>
+<a xmlns="" name="doc_chap3_pre8"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.8: 圧縮ファイルの展開</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">cd /mnt/gentoo</font>
+# <font class="code">bzip2 -dc stage?-*.tbz2 | tar -xvpf -</font>
+# <font class="code">mount -o bind /proc /mnt/gentoo/proc</font>
+# <font class="code">cp /etc/resolv.conf /mnt/gentoo/etc/resolv.conf</font>
+   </pre></td></tr>
+</table>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>Arch Linuxのブートディスクに収められているコマンドの多くは<a href="http://www.busybox.net">BusyBox</a>によって提供されています。
+   しかし、このツールはbzip2形式を取り扱うことができません。
+   そのためLiveCDでのインストールとは異なり、上記のようにbzip2とtarをそれぞれ別に実行する必要があります。</p></td></tr></table>
+<a xmlns="" name="doc_chap3_pre9"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.9: chroot 環境に入る</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+# <font class="code">chroot /mnt/gentoo /bin/bash</font>
+# <font class="code">env-update</font>
+Regenerating /etc/ld.so.cache...
+# <font class="code">source /etc/profile</font>
+   </pre></td></tr>
+</table>
+<p xmlns="">このコマンドを実行したあとは、インストールガイドに沿って進めることができます。
+   Gentoo Linuxのインストールをお楽しみください ;)</p></td></tr></table></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>

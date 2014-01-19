@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table><tr><td><dl><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20120423-trans-summary.xml">翻訳プロジェクト11月から3月の活動内容
+																Posted on 2012-03-03
+																by morota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20120102-livedvd.xml">Gentoo Linux LiveDVD 12.0のリリース
+																Posted on 2012-01-02
+																by David Abbott (翻訳: 青田直大)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20111109-wiki-announcement.xml">Gentooに新たな装備…「公式Gentoo Wiki」が加わりました!
+																Posted on 2011-11-09
+																by a3li (翻訳: 青田直大)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20111101-trans-summary.xml">翻訳プロジェクト10月の活動内容
+																Posted on 2011-11-01
+																by naota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20111011-trans-summary.xml">翻訳プロジェクト9月の活動内容
+																Posted on 2011-10-10
+																by naota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20110906-trans-summary.xml">翻訳プロジェクト8月の活動内容
+																Posted on 2011-09-06
+																by morota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20110807-livedvd.xml">Gentoo LinuxはLiveDVD 11.2をリリースしました
+																Posted on 2011-08-07
+																by David Abbott (翻訳: 青田直大)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20110701-2011-screenshot-contest-announcement.xml">Gentoo スクリーンショットコンテスト 2011
+																Posted on 2011-07-02
+																by naota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20110506-openrc.xml">5月8日にOpenRCとbaselayout 2がstableになります
+																Posted on 2011-05-06
+																by naota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20110408-osc2011kobe.xml">オープンソースカンファレンス2011 Kansai@Kobeに出展します。
+																Posted on 08 Apr 2011
+																by naota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20110227-kansai-gentoo.xml">FYI: 関西Gentoo勉強会
+																Posted on 27 Feb 2011
+																by naota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20101008-kof2010.xml">関西オープンソース2010に出展します。
+																Posted on 08 Oct 2010
+																by Kojima</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20100902-osc2010fall.xml">オープンソースカンファレンス2010 Tokyo/Fallに出展します。
+																Posted on 02 Sep 2010
+																by Kojima</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20100801-gentoo-study-session.xml">FYI: Gentoo 勉強会
+																Posted on 01 Aug 2010
+																by Kojima</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20091028-osc2009fall.xml">オープンソースカンファレンス2009 Tokyo/Fallに出展します。
+																Posted on 28 Oct 2009
+																by Kojima</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20081221-manually-fixing-portage.xml">Manually fixing broken portage installations 翻訳完了
+																Posted on 21 Nov 2008
+																by shindo</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20081221-gmn.xml">Gentoo Monthly Newsletter &#8211; 2008年12月21日
+																Posted on 2008年12月21日
+																by GMN (翻訳: Ryo Kuya, 飴谷)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20081115-mysqlhowto.xml">MySQLスタートアップドキュメント翻訳完了
+																Posted on 15 Nov 2008
+																by shindo</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20081013-gmn.xml">Gentoo Monthly Newsletter &#8211; 2008年9月30日
+																Posted on 2008年10月13日
+																by GMN (翻訳: Ryo Kuya、Yoko Kuya、opentaka)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20080929-osc2008fall.xml">オープンソースカンファレンス2008 Tokyo/Fallに出展します。
+																Posted on 29 Sep 2008
+																by shindo</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20080915-gmn.xml">Gentoo Monthly Newsletter &#8211; 2008年8月31日
+																Posted on 2008年09月15日
+																by GMN (翻訳: Ryo Kuya、Yoko Kuya、opentaka)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20080806-gmn.xml">Gentoo Monthly Newsletter &#8211; 2008年7月28日
+																Posted on 2008年8月06日
+																by GMN (翻訳: opentaka、Ryo Kuya)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20080727-gmn.xml">Gentoo Monthly Newsletter &#8211; 2008年6月30日
+																Posted on 2008年7月27日
+																by GMN (翻訳: 武田洋之、Ryo Kuya 、Yoko Kuya)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20080708-release-2008.0-r1.xml">LiveCDの問題があった場合は2008.0-r1が役立つかもしれません
+																Posted on 2008-07-08
+																by 増田 昌也 / shindo</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20080706-release-2008.0.xml">Gentoo Linux 2008.0 リリース
+																Posted on 2008-07-06
+																by 増田 昌也 / shindo</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20080301-osc2008spring.xml">オープンソースカンファレンス2008 Tokyo/Springに出展中です。
+																Posted on 1 Mar 2008
+																by idani</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20070922-osc2007fall.xml">オープンソースカンファレンス2007 Tokyo/Fallに出展します。
+																Posted on 22 Sep 2007
+																by Kojima</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20070905-bluetooth.xml">「Gentoo Linux Bluetoothガイド」の翻訳が完了しました
+																Posted on 05 Sep 2007
+																by 真藤 直観</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20070507-release-2007.0.xml">Gentoo Linux 2007.0　リリース！
+																Posted on 2007-05-07
+																by Chris Gianelloni(翻訳：真藤)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20070317-osc2007spring.xml">オープンソースカンファレンス2007 Tokyoに参加中です
+																Posted on 17 Mar 2007
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20061021-osc2006fall.xml">オープンソースカンファレンス2006 Tokyo/Fallに参加します
+																Posted on 21 Oct 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060917-jffnms.xml">「Jffnmsインストール・セットアップガイド」の翻訳が完了しました
+																Posted on 17 Sep 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060916-portage-utils.xml">「Portage-utils」の翻訳が完了しました
+																Posted on 16 Sep 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060910-conkey-howto.xml">「Gentoo Linux Conky Howto」の翻訳が完了しました
+																Posted on 10 Sep 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060830-release.xml">Gentoo Linux 2006.1 が解き放たれました
+																Posted on 2006-08-30
+																by Christel Dahlskjaer</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060827-layman.xml">laymanを使ってebuildJPを利用できます
+																Posted on 27 August 2006
+																by 渡邊 集</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060630-modular-x.xml">Modular X enters stable
+																Posted on 2006-06-30
+																by Donnie Berkholz(翻訳:Takeshi Matsuba)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060620-store.xml">Gentoo Store最新情報
+																Posted on 2006-06-20
+																by Chris Gianelloni(訳注:Takeshi Matsuba)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060618-gentoo-uk-2006.xml">Gentoo UK 2006 カンファレンス
+																Posted on 2006-06-18
+																by Daniel Drake(翻訳:飴谷　茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060613-userrel.xml">ユーザの代表を募集中
+																Posted on 2006-06-13
+																by Chris Gianelloni(翻訳：飴谷)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060609-portage.xml">Portage 2.1 リリース！
+																Posted on 2006-06-09
+																by Chris Gianelloni(翻訳:飴谷　茂寛 と みなさん)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060521-tiger-faq.xml">「Gentoo Java 1.5 FAQ」の翻訳が最新にされました
+																Posted on 21 May 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060510-security-handbook.xml">「Gentoo セキュリティ ハンドブック」の翻訳完了のお知らせ
+																Posted on 2006-05-10
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060502-gentoo-upgrading.xml">「Gentoo アップグレーディング ガイド」の翻訳完了のお知らせ
+																Posted on 2006-05-02
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060501-php-upgrading.xml">「PHPのアップグレード」の翻訳完了のお知らせ
+																Posted on 2006-05-01
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060501-modular-x-howto.xml">「モジュラー化されたXへの移行手引き」の翻訳更新のお知らせ
+																Posted on 2006-05-01
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060501-liveusb.xml">「Gentoo Linux LiveUSB HOWTO」の翻訳完了のお知らせ
+																Posted on 2006-05-01
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060501-ldapdns.xml">「Gentoo LDAP-DNSガイド」の翻訳完了のお知らせ
+																Posted on 2006-05-01
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060430-statuswww.xml">www.gentoo.orgサイトの更新
+																Posted on 2006-04-30
+																by Curtis Napier(翻訳:Akira KAKINOHANA)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060401-power-management-guide.xml">「電力管理ガイド」の更新完了のお知らせ
+																Posted on 2006-04-01
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060401-cross-compiling-distcc.xml">「DistCC クロスコンパイルガイド」の翻訳完了のお知らせ
+																Posted on 2006-04-01
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060401-amd64howtos.xml">「Gentoo/AMD64のHowto」の翻訳完了のお知らせ
+																Posted on 2006-04-01
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060314-03-modular-x-howto.xml">「モジュラー化されたXへの移行手引き」の翻訳完了のお知らせ
+																Posted on 2006-03-14
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060314-02-apache-up.xml">「Apacheのアップグレード」の翻訳完了のお知らせ
+																Posted on 2006-03-14
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060314-01-mysql-up.xml">「MySQl 4.1.xへのアップグレードガイド」の翻訳完了のお知らせ
+																Posted on 2006-03-14
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060304-01-infra.xml">インフラプロジェクト関係のドキュメントの翻訳完了のお知らせ
+																Posted on 2006-03-05
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060227-release-2006.0.xml">リリースアナウンス: Gentoo Linux 2006.0
+																Posted on 2006-02-27
+																by Tim Yamin (翻訳: KIMURA Masaru) </a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060227-gwn.xml">Gentoo Weekly Newsletter &#8211; 2006年2月27日
+																Posted on 2006年2月27日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060216-doc-update.xml">2月度、前半翻訳ドキュメント更新のお知らせ
+																Posted on 17 February 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060122-sudo-guide.xml">「Gentoo Sudo(ers) ガイド」の翻訳が完了しました
+																Posted on 22 January 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060121-tiger-faq.xml">「Gentoo Java 1.5 FAQ」の翻訳が完了しました
+																Posted on 21 January 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060114-gpm.xml">「コンソールでマウスを使おう」の翻訳が完了しました
+																Posted on 14 January 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060113-jp-doc-news.xml">翻訳されたドキュメントのお知らせ
+																Posted on 13 January 2006
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20060113-gcc-upgrading.xml">「Gentoo Linux GCCアップグレードガイド」の翻訳が完了しました
+																Posted on 13 January 2006
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20060112-statusamd64.xml">Gentoo/AMD64プロジェクト最新状況
+																Posted on 2006-01-12
+																by Simon Stelling(翻訳:小林　弘樹)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20051207-statusalpha.xml">Gentoo Alphaプロジェクト最新状況
+																Posted on 2005-12-07
+																by Josテゥ Luis Rivero(翻訳:Chris White)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20051202-gcc34-stable-x86.xml">GCC 3.4がx86でstableに
+																Posted on 2005-12-02
+																by Mark Loeser(翻訳:小林 弘樹)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20051121-release-2005.1-r1.xml">メディア更新: Gentoo Linux 2005.1-r1
+																Posted on 2005-11-21
+																by Jeffrey Forman (翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20051102-macaroni-shutdown.xml">2005/11/06 停電による macaroni の全サービス一時停止
+																Posted on 02 November 2005
+																by TANABE Ken&#8217;ichi</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20051007-macaroni-down.xml">macaroniのサーバダウンについて
+																Posted on 06 Octber 2005
+																by 小島和範</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050908-GentooHandbook-x86-2005.1.xml">Gentoo Linux x86 ハンドブックの翻訳が完了!
+																Posted on 8 Sep 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050906-www.xml">このサイトのデザイン変更のお知らせ
+																Posted on 6 Sep 2005
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050902-osc2005.xml">OSC2005 Tokyo/Fall GentooJP参加します
+																Posted on 2 Sep 2005
+																by 松鵜</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050820-fluxbox.xml">「Fluxbox設定ガイド」の翻訳が完了しました
+																Posted on 20 Aug 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050815-amd64-technote.xml">「Gentoo/AMD64 技術ノート情報」の翻訳が完了しました
+																Posted on 15 Aug 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050813-doc-dev-and-tip.xml">「ドキュメント開発のTips &amp; Tricks」の翻訳が完了しました
+																Posted on 13 Aug 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050808-annoncement-release-2005.1.xml">Releaseのお知らせ: Gentoo Linux 2005.1
+																Posted on 2005-08-08
+																by Alex Howells(翻訳:飴谷 茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050801-statusgdp.xml">Gentooドキュメントプロジェクト最新状況
+																Posted on 2005-08-01
+																by Sven Vermeulen(翻訳:飴谷 茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050729-gonzui.xml">ebuild 閲覧サービス開始のおしらせ
+																Posted on 29 July 2005
+																by 石橋  賢一</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050726-devconference.xml">Gentoo開発者＆ユーザ会議
+																Posted on 2005-07-26
+																by Corey Shields(翻訳:飴谷 茂寛・Akira KAKINOHANA)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050706-kde-split-ebuilds.xml">「KDE 分割 ebuild ガイド」の翻訳が完了しました
+																Posted on 6 July 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050630-statusgdp.xml">Gentoo ドキュメントプロジェクト最新状況
+																Posted on 2005-06-30
+																by Sven Vermeulen</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050622-linuxtag.xml">GentooはLinuxTag 2005に参加しています
+																Posted on 2005-06-22
+																by Tobias Scherbaum(翻訳者:池田 健吾)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050616-storecds.xml">Gentoo Foundation storeで2005.0リリースのCDを販売しています
+																Posted on 2005-06-16
+																by Corey Shields(翻訳者:池田 健吾)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050613-drobbins.xml">Daniel RobbinsはMicrosoftを新天地とし、Gentoo技術の知的所有権をGentoo Foundationへ譲渡する手続きを完了しました
+																Posted on 2005-06-13
+																by g2boojum(翻訳者:池田 健吾)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050608-metastructurevote.xml">Gentoo全体投票
+																Posted on 2005-06-08
+																by Daniel Drake(訳者:垣花  顕)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050529-statusgdp.xml">Gentooドキュメントプロジェクト最新状況
+																Posted on 2005-05-29
+																by Sven Vermeulen(翻訳:飴谷茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050526-usb-guide.xml">「Gentoo Linux USBガイド」の翻訳が完了しました
+																Posted on 26 May 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050520-grub-error.xml">「Gentoo GRUBエラー集」の翻訳が完了しました
+																Posted on 20 May 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050517-trustees.xml">Gentoo Foundationの新役員
+																Posted on 2005-05-17
+																by Lance Albertson(訳:飴谷 茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050502-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年5月2日
+																Posted on 2005年5月2日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050501-utf-8.xml">「GentooでのUTF-8の使用方法」の翻訳が完了しました
+																Posted on 01 May 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050428-macaroni.xml">macaroni.gentoo.gr.jp サーバロケーション移動のお知らせ
+																Posted on 28 Apr 2005
+																by TANABE Ken&#8217;ichi</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050427-gnome-config.xml">「GNOME設定ガイド」の翻訳が完了しました
+																Posted on 27 Apr 2005
+																by 飴谷　茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050425-GentooHandbook-amd64-ppc64-2005.0.xml">Gentoo Linux AMD64ハンドブックの翻訳とPPC64ハンドブックの2005.0への追従が完了!
+																Posted on 25 Apr 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050421-GentooHandbook-x86-2005.0.xml">Gentoo Linux x86 ハンドブックの翻訳が完了!
+																Posted on 21 Apr 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050418-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年4月18日
+																Posted on 2005年4月18日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050414-home-router-howto.xml">「ホームルータガイド」の翻訳が完了しました
+																Posted on 14 Apr 2005
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050413-statusgdp.xml">Gentooドキュメントプロジェクト最新状況
+																Posted on 2005-04-13
+																by Sven Vermeulen(翻訳:飴谷　茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050411-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年4月11日
+																Posted on 2005年4月11日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050408-cosmetics.xml">www.gentoo.orgの見た目が替わりました
+																Posted on 2005-04-08
+																by Xavier Neys(翻訳:池田 健吾)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050404-keychain-guide.xml">「Gentoo Linux keychainガイド」の翻訳が完了しました
+																Posted on 4 Apr 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050404-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年4月4日
+																Posted on 2005年4月4日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050329-name-logo.xml">「Gentooの名称とロゴの使用に関するガイドライン」の翻訳が完了しました
+																Posted on 29 Mar 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050329-foundation.xml">Gentoo Foundationへの資金援助の最新情報
+																Posted on 2005-03-29
+																by Corey Shields(翻訳:池田 健吾)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050327-translators-howto.xml">「Gentooドキュメント翻訳者ガイド」の翻訳が完了しました
+																Posted on 27 Mar 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050327-release-2005.0.xml">リリースアナウンス: Gentoo Linux 2005.0
+																Posted on 2005-03-27
+																by Jeffrey Forman(翻訳:飴谷 茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050326-foundation.xml">Paypalを利用してのGentooへの寄附の復活のお知らせ
+																Posted on 2005-03-26
+																by Corey Shields</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050323-osc2005.xml">オープンソースカンファレンス2005  GentooJPインストール大会
+																Posted on 23 Mar 2005
+																by 小町 守</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050314-nvidia-guide.xml">Gentoo Linux nVidiaガイドの翻訳が完了しました
+																Posted on 14 Mar 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050314-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年3月14日
+																Posted on 2005年3月14日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050311-planetgentoo.xml">Planet Gentooのお知らせ
+																Posted on 2005-03-11
+																by Daniel Drake(翻訳:飴谷 茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050310-uk-conference.xml">Gentoo UKカンファレンスのお知らせ
+																Posted on 2005-03-10
+																by Stuart Herbert(翻訳:飴谷 茂寛)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050308-cron-guide.xml">Gentoo Linux Cronガイドの翻訳が完了しました
+																Posted on 08 Mar 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050307-usagefeedback.xml">Gentoo利用例
+																Posted on March 7th, 2005
+																by Chris Gianelloni(翻訳:M Nakamura)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050307-statusgdp.xml">Gentooドキュメントプロジェクト最新状況
+																Posted on March 7th, 2005
+																by Sven Vermeulen(翻訳:M Nakamura)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050307-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年3月7日
+																Posted on 2005年3月7日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050303-2005.0-secrebuild.xml">Gentoo Linux 2005.0 Security Rebuild
+																Posted on 2005-03-03
+																by Jeffrey Forman(翻訳:M Nakamura)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050228-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年2月28日
+																Posted on 2005年2月28日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050226-gentoo-x86-tipsntricks.xml">Gentoo/x86 インストールの Tips &amp; Tricksの翻訳が完了しました
+																Posted on 26 Feb 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050221-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年2月21日
+																Posted on 2005年2月21日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050207-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年2月7日
+																Posted on 2005年2月7日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050202-trustedgentoo.xml">Trusted Gentoo
+																Posted on 2005-02-02
+																by Daniel Black(翻訳:飴谷 茂寛、武田 洋之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050201-GentooHandoobk-ppc64.xml">Gentoo Linux PPC64 ハンドブックの翻訳が完了しました
+																Posted on 1 Feb 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050131-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年1月31日
+																Posted on 2005年1月31日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050127-power-management.xml">電力管理ガイドの翻訳が完了しました
+																Posted on 27 Jan 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050124-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年1月24日
+																Posted on 2005年1月24日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-clock.png" width="50" alt="Clock"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050118-genesi.xml">Gentoo/PPCがGenesi Open Desktop Workstationを正式サポート
+																Posted on January 18th, 2005
+																by Sven Vermeulen(翻訳:小林 弘樹)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050117-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年1月17日
+																Posted on 2005年1月17日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050116-kernel-upgrade.xml">Gentoo Linuxカーネルアップグレードガイドの翻訳が完了しました
+																Posted on 16 Jan 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050111-namelogo.xml">Gentooの名前とロゴの使用について
+																Posted on January 11th, 2005
+																by Sven Vermeulen(翻訳:小林 弘樹)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050111-dri-howto.xml">「ハードウェア3Dアクセラレーションガイド」の翻訳が完了しました
+																Posted on 11 Jan 2005
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050110-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年1月10日
+																Posted on 2005年1月10日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050104-handbookseparation.xml">インストールガイドの分離
+																Posted on January 4th, 2005
+																by Sven Vermeulen(翻訳:小林 弘樹)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20050103-gwn.xml">Gentoo Weekly Newsletter &#8211; 2005年1月3日
+																Posted on 2005年1月3日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20050101-lvm2.xml">Gentoo LVM2インストールの翻訳が完了しました
+																Posted on 1 Jan 2005
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041229-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年12月29日
+																Posted on 2004年12月29日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041225-kde-config.xml">KDE 設定ガイドの翻訳が完了しました
+																Posted on 25 Dec 2004
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041220-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年12月20日
+																Posted on 2004年12月20日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041218-server-move-complete.xml">GentooJPのサーバメンテナンス完了
+																Posted on 18 December 2004
+																by 小島和範</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041217-server-move.xml">GentooJPのサーバメンテナンス
+																Posted on 17 December 2004
+																by 小島和範</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041216-catalyst-ml.xml">新しいCatalystのメーリングリスト &#8211; December 16th, 2004
+																Posted on 16 December 2004
+																by John Davis (翻訳: 小林弘樹)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041215-migration-to-2.6.xml">Gentoo Linux 2.6完全移行ガイドの翻訳が完了しました
+																Posted on 15 Dec 2004
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041213-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年12月19日
+																Posted on 2004年12月19日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041211-localization.xml">Gentoo Linuxローカライズガイドの翻訳が完了しました
+																Posted on 11 Dec 2004
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041208-xorg.xml">X サーバー設定ガイドの翻訳が完了しました
+																Posted on 8 Dec 2004
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041206-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年12月6日
+																Posted on 2004年12月13日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041205-maintenancerelease.xml">2004.3メンテナンスリリース
+																Posted on 5 December 2004
+																by swift (翻訳: samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041205-colinux.xml">coLinuxのドキュメントの翻訳が完了しました
+																Posted on 5 Dec 2004
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041130-newsclarification.xml">Gentoo Linux 2005.0についての説明
+																Posted on 30 November 2004
+																by Jeffrey Forman (翻訳: 中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041129-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年11月29日
+																Posted on 2004年11月22日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041128-GentooHandbook-x86.xml">Gentoo Linux 2004.3 x86 ハンドブックの翻訳が完了!
+																Posted on 28 Nov 2004
+																by 飴谷茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041123-genkernel.xml">genkernelガイドの翻訳が完了しました
+																Posted on 23 Nov 2004
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041122-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年11月22日
+																Posted on 2004年11月22日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041121-storedvds.xml">Gentoo DVDあるよ！
+																Posted on 21 November 2004
+																by swift (翻訳: 中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041121-statusgdp.xml">Gentoo ドキュメントプロジェクト更新のお知らせ
+																Posted on 21 November 2004
+																by swift (翻訳: samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041120-sd.xml">Software Design 2004年12月号 Gentoo Linuxパッケージ操作研究【前編】
+																Posted on 21 Nov 2004
+																by 小町守</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041115-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年11月15日
+																Posted on 2004年11月15日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041114-release-2004.3.xml">Gentoo 2004.3
+																Posted on 15 Nov 2004
+																by jforman (翻訳: samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041113-udev.xml">Gentoo udev Guideの翻訳が完了しました
+																Posted on 13 Nov 2004
+																by 飴谷 茂寛</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041113-kernels.xml">portageからいくつかkernelと重要なhotplug情報を削除
+																Posted on 13 November 2004
+																by dsd (翻訳: samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041108-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年11月8日
+																Posted on 2004年11月8日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20041106-distcc.xml">distccドキュメントの翻訳が完了しました
+																Posted on 6 Nov 2004
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041101-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年10月25日
+																Posted on 2004年10月25日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041025-gwn.xml">Gentoo Weekly Newsletter &#8211; 2004年10月25日
+																Posted on 2004年10月25日
+																by Ulrich Plate (翻訳: 桜井知之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041021-statusgdp.xml">Gentoo Documentation Project Status Update
+																Posted on 21 October 2004
+																by swift (翻訳: 飴谷)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041021-portage51.xml">Portage 2.0.51 released
+																Posted on 21 October 2004
+																by swift (翻訳: samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041018-redesignwinner.xml">Redesign contest: And the winner is&#8230; Aaron Shi
+																Posted on 18 October 2004
+																by swift (翻訳: 中村)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041018-gwn.xml">Gentoo Weekly Newsletter 2004年10月18日号
+																Posted on 18 October 2004
+																by Ulrich Plate　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041011-gwn.xml">Gentoo Weekly Newsletter 2004年10月11日号
+																Posted on 11 October 2004
+																by Ulrich Plate　（翻訳：今野勝之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20041004-gwn.xml">Gentoo Weekly Newsletter 2004年10月4日号
+																Posted on 4 October 2004
+																by Ulrich Plate　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040930-redesign.xml">Gentoo Web Redesign Contest &#8211; The Poll is Open
+																Posted on 30 September 2004
+																by g2boojum (翻訳:中村)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040927-gwn.xml">Gentoo Weekly Newsletter 2004年9月27日号
+																Posted on 27 September 2004
+																by SwifT　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040924-gdp.xml">Gentoo Documentation Project &#8211; Status Update
+																Posted on 24 September 2004
+																by swift (翻訳: 中村)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040920-gwn.xml">Gentoo Weekly Newsletter 2004年9月20日号
+																Posted on 20 September 2004
+																by Ulrich Plate　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040916-survey.xml">Gentooユーザへのアンケートのお願い
+																Posted on 16 September 2004
+																by klieber (翻訳: 飴谷)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040913-gwn.xml">Gentoo Weekly Newsletter 2004年9月13日号
+																Posted on 17 September 2004
+																by swift　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040912-release2004.2-r1.xml">Gentoo 2004.2-r1 x86 Minimal LiveCD
+																Posted on 12 September 2004
+																by jforman (翻訳:Samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040906-gwn.xml">Gentoo Weekly Newsletter 2004年9月6日号
+																Posted on 6 September 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040823-gwn.xml">Gentoo Weekly Newsletter 2004年8月23日号
+																Posted on 23 August 2004
+																by klieber　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040816-gwn.xml">Gentoo Weekly Newsletter 2004年8月16日号
+																Posted on 16 August 2004
+																by klieber　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040809-gwn.xml">Gentoo Weekly Newsletter 2004年8月9日号
+																Posted on 9 August 2004
+																by klieber　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040802-gwn.xml">Gentoo Weekly Newsletter 2004年8月2日号
+																Posted on 2 August 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040726-release2004.2.xml">Gentoo 2004.2
+																Posted on 26 July 2004
+																by jforman (翻訳:飴谷)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040726-release2004.2-torrents.xml">Gentoo 2004.2
+																Posted on 26 July 2004
+																by jforman (翻訳:samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040726-gwn.xml">Gentoo Weekly Newsletter 2004年7月26日号
+																Posted on 26 July 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040719-tenshi.xml">Tenshi 0.3
+																Posted on 19 July 2004
+																by klieber (翻訳:samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040719-net-www.xml">net-wwwご隠居
+																Posted on 19 July 2004
+																by klieber (翻訳：Samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040719-gwn.xml">Gentoo Weekly Newsletter 2004年7月19日号
+																Posted on 19 July 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040712-gwn.xml">Gentoo Weekly Newsletter 2004年7月12日号
+																Posted on 12 July 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040705-gwn.xml">Gentoo Weekly Newsletter 2004年7月5日号
+																Posted on 5 July 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040704-redesign.xml">Gentoo Foundation ウェブサイトリデザインコンテスト
+																Posted on 04 July 2004
+																by klieber (翻訳：Samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040628-gwn.xml">Gentoo Weekly Newsletter 2004年6月28日号
+																Posted on 28 June 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040621-gwn.xml">Gentoo Weekly Newsletter 2004年6月21日号
+																Posted on 21 June 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040614-gwn.xml">Gentoo Weekly Newsletter 2004年6月14日号
+																Posted on 14 June 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040607-nfp.xml">Gentoo非営利団体の事務手続きが完了
+																Posted on 07 June 2004
+																by klieber（翻訳：Samantha）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040607-gwn.xml">Gentoo Weekly Newsletter 2004年6月7日号
+																Posted on 7 June 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040606-wasabi.xml">Wasabiの発表 - カスタム・ログ監視ツール
+																Posted on 06 June 2004
+																by klieber（翻訳：Samantha）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040531-gwn.xml">Gentoo Weekly Newsletter 2004年5月31日号
+																Posted on 31 May 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040524-gwn.xml">Gentoo Weekly Newsletter 2004年5月24日号
+																Posted on 24 May 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040524-fsij.xml">Gentoo セミナーのご案内
+																Posted on 24 May 2004
+																by 小町守</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040517-gwn.xml">Gentoo Weekly Newsletter 2004年5月17日号
+																Posted on 17 May 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040510-gwn.xml">Gentoo Weekly Newsletter 2004年5月10日号
+																Posted on 10 May 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040509-new-ebuild-uploader.xml">ebuild-uploaderが生まれ変わりました！
+																Posted on 9 May 2004
+																by 渡邊 集</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040503-gwn.xml">Gentoo Weekly Newsletter 2004年5月3日号
+																Posted on 3 May 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040428-release2004.1.xml">Gentoo 2004.1
+																Posted on 28 April 2004
+																by jforman (翻訳:Samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040427-gentoofuture.xml">Gentoo Linuxの将来
+																Posted on 27 April 2004
+																by klieber (翻訳: Samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040426-gwn.xml">Gentoo Weekly Newsletter 2004年4月26日号
+																Posted on 26 April 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040426-drobbins.xml">Gentoo Linux設計主任のDaniel Robbinsが辞任表明
+																Posted on 26 April 2004
+																by g2boojum(翻訳: Samantha)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040419-gwn.xml">Gentoo Weekly Newsletter 2004年4月19日号
+																Posted on 19 April 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040412-gwn.xml">Gentoo Weekly Newsletter 2004年4月12日号
+																Posted on 12 April 2004　（翻訳：今野勝之）
+																by carlos</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040408-unixuser.xml">UNIX USER 5月号「Gentoo Linuxを選ぶ理由」
+																Posted on 8 April 2004
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040405-gwn.xml">Gentoo Weekly Newsletter 2004年4月5日号
+																Posted on 05 April 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040329-gwn.xml">Gentoo Weekly Newsletter 2004年3月29日号
+																Posted on 29 March 2004
+																by carlos　（今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040328-gentoojpbugs.xml">GentooJP Bugzilla稼動開始のお知らせ
+																Posted on 28 March 2004
+																by GentooJP</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040322-gwn.xml">Gentoo Weekly Newsletter 2004年3月22日号
+																Posted on 22 March 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040321-renewal.xml">GentooJPリニューアル！
+																Posted on 21 March 2004
+																by GentooJP</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040321-gentoobook.xml">[書籍] はじめてのGentoo Linux
+																Posted on 21 March 2004
+																by ソフトバンク パブリッシング株式会社</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040315-gwn.xml">Gentoo Weekly Newsletter 2004年3月15日号
+																Posted on 15 March 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040312-mlstop.xml">メーリングリスト配送一時停止のお知らせ
+																Posted on 12 March 2004
+																by 小町 守</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040308-gwn.xml">Gentoo Weekly Newsletter 2004年3月8日号
+																Posted on 8 March 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040304-release2004update.xml">Gentoo 2004.0
+																Posted on 04 March 2004
+																by zhen（翻訳：武田洋之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040301-release2004.xml">Gentoo 2004.0
+																Posted on 01 March 2004
+																by avenj　（翻訳：武田洋之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040301-gwn.xml">Gentoo Weekly Newsletter 2004年3月1日号
+																Posted on 1 March 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040223-gwn.xml">Gentoo Weekly Newsletter 2004年2月23日号
+																Posted on 23 February 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040216-gwn.xml">Gentoo Weekly Newsletter 2004年2月16日号
+																Posted on 16 February 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040209-gwn.xml">Gentoo Weekly Newsletter 2004年2月9日号
+																Posted on 9 February 2004
+																by carlos　（翻訳：今野勝之）</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20040114-lwe.xml">Gentoo Linuxがベストオープンソースプロジェクトの最終候補にあげられています
+																Posted on 14 January 2004
+																by klieber(翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20040112-originaldoc.xml">GentooJP新ドキュメント＆Tips集アップデート
+																Posted on 12 January 2004
+																by 真藤直観</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20031222-lists.xml">メーリングリストの不具合
+																Posted on 22 December 2003
+																by klieber(翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20031204-rsync.xml">GLSA: rsync 2.5.6のbuffer overflowを用いた外部からの脆弱性
+																Posted on 04 December 2003
+																by drobbins(翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20031203-news.xml">Gentoo: 2004年から先
+																Posted on 03 December 2003
+																by drobbins(翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20031203-glsa.xml">Gentoo rsync serverがクラック(compromised)されました。
+																Posted on 03 December 2003
+																by g2boojum(翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20031201-ebuilduploader.xml">ebuild-uploaderの運用を開始しました
+																Posted on 01 December 2003
+																by 渡邊 集</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-ibm.png" width="50" alt="IBM"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20031111-g5.xml">PowerPC G5用Gentooが入手可能になりました
+																Posted on 11 November 2003
+																by pvdabeel (翻訳:おぎうち やすお)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20031029-bsdlinuxday.xml">BSD/Linux Day で Gentoo が紹介されます
+																Posted on 29 October 2003
+																by 小町守</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20031024-webapps.xml">Gentoo Linuxはバーチャルホスティングウェブサイトのサポートを向上します。
+																Posted on 24 October 2003
+																by klieber(翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20031017-seminar.xml">Gentooセミナーのお知らせ
+																Posted on 17 Oct 2003
+																by 萩原佳明</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030904-bugday.xml">第２回BugDayが９月６日に開催されます
+																Posted on 4 September 2003
+																by iggy(翻訳:中野正智)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-clock.png" width="50" alt="Clock"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030814-store.xml">Gentoo Store が信じられないほど人気(ありすぎる?)
+																Posted on 14 Aug 2003
+																by drobbins(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030806-livecds.xml">新たな x86/i686 LiveCD
+																Posted on 06 August 2003
+																by avenj(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030805-gentoo14.xml">Gentoo Linux 1.4
+																Posted on 05 August 2003
+																by avenj(翻訳:萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030804-webpage.xml">新しいwebコンテンツが加わりました
+																Posted on 04 August 2003
+																by Takashi Ota</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-clock.png" width="50" alt="Clock"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030724-store-ja-2.xml">ただいまPowerPC用Gentoo Linux 1.4が予約できます
+																Posted on 24 Jul 2003
+																by drobbins (翻訳：今野勝之)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-clock.png" width="50" alt="Clock"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030719-store.xml">Gentoo Linux 1.4 事前注文について
+																Posted on 19 Jul 2003
+																by drobbins (翻訳：千里)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030718-gentoo14.xml">GentooLinux 1.4 LinuxWorld Expoでリリース
+																Posted on 18 Jul 2003
+																by drobbins (翻訳：千里)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030714-gwn-trans-project.xml">GWN翻訳プロジェクト発足
+																Posted on 14 July 2003
+																by 小杉悠嗣</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030707-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年7月7日号
+																Posted on 07 July 2003
+																by carlos</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030630-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年6月30日号
+																Posted on 30 June 2003
+																by klieber(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-clock.png" width="50" alt="Clock"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030625-manage.xml">Gentoo Linux&#8230; into the future
+																Posted on 25 June 2003
+																by drobbins(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030623-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年6月23日
+																Posted on 23 June 2003
+																by klieber(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030620-metapkg.xml">The Meta Package Project
+																Posted on 20 June 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030616-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年6月16日号
+																Posted on 16 June 2003
+																by klieber(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030612-articles.xml">Linux Magazineにて連載を始めました。
+																Posted on 12 June 2003
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030609-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年6月9日号
+																Posted on 09 June 2003
+																by cybersystem(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030604-mac.xml">Gentoo/MacOS X のアナウンス
+																Posted on 04 June 2003
+																by drobbins (翻訳: yamakura)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030603-ppclivecd.xml">New KDE/GNOME LiveCDs for the PowerPC
+																Posted on 03 June 2003
+																by drobbins(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030602-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年6月2日号
+																Posted on 02 June 2003
+																by klieber(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030526-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年5月26日号
+																Posted on 26 May 2003
+																by klieber(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030526-dev-ml.xml">新しいメーリングリスト(-dev)のお知らせ
+																Posted on 26 May 2003
+																by yamakura</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030519-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年5月19日号
+																Posted on 19 May 2003
+																by klieber(翻訳:Takashi Ota.)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030517-doc.xml">gentoo.orgドキュメント翻訳者 大募集
+																Posted on 17 May 2003
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoo.png" width="50" alt="gentoo"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030515-games.xml">Gentoo Games and America&#8217;s Army GameCD
+																Posted on 15 May 2003
+																by drobbins(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030512-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年5月12日号
+																Posted on 12 May 2003
+																by klieber(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030506-articles.xml">記事の掲載
+																Posted on 6 May 2003
+																by Takashi Ota.</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030505-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年5月5日号
+																Posted on 05 May 2003
+																by klieber(翻訳:Takashi Ota)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030428-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年4月28日号
+																Posted on 28 April 2003
+																by klieber (翻訳：yamakura)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030423-news.xml">ミラーサーバーが登録されました。
+																Posted on 24 Apr 2003
+																by 松田 和雄</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030421-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年4月21日号
+																Posted on 21 April 2003
+																by klieber(翻訳:Takashi Ota.)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030414-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年4月14日号
+																Posted on 14 April 2003
+																by klieber(翻訳:Takashi Ota.)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-nvidia.png" width="50" alt="nvidia"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030411-ut2003cd.xml">New UT2003 GameCD
+																Posted on 11 April 2003
+																by drobbins(翻訳:Takashi Ota.)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030407-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年4月7日号
+																Posted on 07 April 2003
+																by klieber(翻訳:Takashi Ota.)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030401-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年4月1日号
+																Posted on 01 April 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030324-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年3月24日
+																Posted on 24 Mar 2003
+																by klieber(翻訳：小杉悠嗣)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030318-articles.xml">Gentooの記事が雑誌に掲載されました
+																Posted on 18 March 2003
+																by 萩原佳明</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030317-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年3月17日
+																Posted on 17 Mar 2003
+																by klieber(翻訳：小杉悠嗣)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-stick.png" width="50" alt="stick man"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030315-store.xml">改装されたGentooショップ
+																Posted on 15 Mar 2003
+																by drobbins(翻訳：小杉悠嗣)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030310-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年3月10日
+																Posted on 10 Mar 2003
+																by klieber(翻訳：小杉悠嗣)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030303-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年3月3日
+																Posted on 03 Mar 2003
+																by klieber(翻訳：小杉悠嗣)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030227-gentoo14_rc3.xml">Gentoo Linux 1.4_rc3のリリース
+																Posted on 27 Feb 2003
+																by zhen (翻訳：小杉悠嗣)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030226-new-docs.xml">翻訳ドキュメント追加
+																Posted on 26 February 2003
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030224-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年2月24日
+																Posted on 24 Feb 2003
+																by klieber (翻訳：小杉悠嗣)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030217-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年2月17日号
+																Posted on 17 Feb 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030211-new-docs.xml">オリジナルドキュメント
+																Posted on 11 February 2003
+																by Takashi Ota.</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030210-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年2月10日号
+																Posted on 10 Feb 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030209-gnome.xml">Gentoo Linux GNOME 2.2 ebuilds
+																Posted on 9th February 2003
+																by klieber (翻訳:Takashi Ota.)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030203-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年2月3日号
+																Posted on 3 Feb 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-kde.png" width="50" alt="KDE"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030128-kde.xml">Gentoo LinuxのKDE 3.1用ebuild
+																Posted on 28th January 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030127-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年1月27日号
+																Posted on 27 Jan 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030126-docs-start.xml">ドキュメントプロジェクトについて
+																Posted on 26 Jan 2003
+																by Takashi Ota.</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030120-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年1月20日号
+																Posted on 20 Jan 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20030116-about-gwn.xml">Gentoo Weekly Newsletter(GWN)日本語版
+																Posted on 16 Jan 2003
+																by 萩原佳明</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030113-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年1月13日号
+																Posted on 13 Jan 2003
+																by klieber (翻訳：萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030106-gwn.xml">Gentoo Weekly Newsletter &#8211; 2003年1月6日
+																Posted on 06 Jan 2003
+																by klieber (翻訳:ケテル&#8217;kage-chan&#8217;ダニエル)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030102-gwn.xml">Gentoo Weekly Newsletter(GWN) 日本語翻訳メンバー募集
+																Posted on 02 Jan 2003
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20030101-gentoo14_rc2.xml">Gentoo Linux 1.4_rc2 リリース
+																Posted on 01 Jan 2003
+																by drobbins (翻訳:yamakura)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-penguin.png" width="50" alt="tux"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20021223-gwn.xml">Gentoo Weekly Newsletterのお知らせ
+																Posted on 23 Dec 2002
+																by klieber (翻訳:萩原佳明)</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20021208-misc-ml-change.xml">MLアドレス変更のお知らせ
+																Posted on 8 Dec 2002
+																by 松田 和雄</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20021204-iw.xml">InternetWeek2002 BSD/Linux Day
+																Posted on 4 Dec 2002
+																by 中野正智</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-gentoojp.png" width="50" alt="GentooJP"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/main/20021201-start.xml">Gentoo Linux Users Group Japan(GentooJP) 設立
+																Posted on 1 Dec 2002
+																by GentooJP admin</a></td></tr></table></dt><dd></dd><dt><table border="0" style="margin: 1px ! important;"><tr><td style="width: 60px;"><img src="/images/icon-cow.png" width="50" alt="larry"></img></td><td valign="middle" style="vertical-align: middle;"><a href="/jpnews/org/20021129-misc.xml">Miscellaneous Yummy News(耳寄りなお話) 
+																Posted on 29 Nov 2002
+																by drobbins (翻訳:GentooJP)</a></td></tr></table></dt><dd></dd></dl></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>

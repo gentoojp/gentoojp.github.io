@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rss="http://purl.org/rss/1.0/" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8"></meta><meta http-equiv="Content-style-type" content="text/css; charset=UTF-8"></meta><meta http-equiv="Content-script-type" content="text/javascript; charset=UTF-8"></meta><title>
+					Gentoo Linux Users Group Japan
+					
+						&#8211;
+						GentooJP開発者用ドキュメント</title><link title="new" rel="stylesheet" href="/css/main.css" type="text/css"></link><link title="new" rel="stylesheet" href="/css/gentoojp.css" type="text/css"></link><link rev="Made" href="mailto:www@gentoo.gr.jp"></link><link rel="alternate" type="application/rss+xml" title="GentooJP News" href="/gentoojp-news.xml"></link></head><body><div class="logo"><p>日本語：
+							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
+							</p><p>英語：
+							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]
+							[ <a href="http://packages.gentoo.org/">Packages</a> ]
+							[ <a href="http://forums.gentoo.org/">Forums</a> ]
+              [ <a href="http://bugs.gentoo.org/">Bugzilla</a> ]
+              [ <a href="http://wiki.gentoo.org/">Wiki</a> ]</p></div><table class="all" width="99%"><tr><td><div class="navi" align="center"><span><a href="/">トップに戻る</a></span></div></td></tr></table><table border="0" style="margin:0em ! important;" cellspacing="5" width="100%"><tr><td class="sidebar" valign="top" rowspan="2"><h4>はじめに</h4><ul><li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li><li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li><li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li><li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</a></li><li><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</a></li></ul><h4><a href="http://www.gentoo.org/doc/ja/index.xml">翻訳ドキュメント</a></h4><ul><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=faq">FAQ (よくある質問)</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=install">インストール関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=desktop">Gentooデスクトップドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoo">Gentooシステムドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=sysadmin">システム管理ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=gentoodev">Gentoo開発ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=project">プロジェクト関連ドキュメント</a></li><li><a href="http://www.gentoo.org/doc/ja/index.xml?catid=other">その他のドキュメント</a></li></ul><h4>クイックリンク</h4><ul><li><a href="http://www.gentoo.org/news/ja/gmn/">GMN日本語</a></li><li><a href="http://www.gentoo.org/doc/ja/printing-howto.xml">印刷環境構築ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li><li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li><li><a href="/jpmain/tips.xml">TIPS集</a></li><li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li></ul><h4>プロジェクト</h4><ul><li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li><li><a href="/jpmain/translation.xml">翻訳</a><a href="/jpmain/trans_status.xml">[状況]</a></li><li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li></ul><h4>その他</h4><ul><li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li><li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li><li><a href="/jpmain/sponsors.xml">スポンサー</a></li></ul></td><td valign="top"><div class="day"><div class="body"><div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0em;"><tr><td valign="top" align="right" colspan="1" bgcolor="#ffffff"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 0em;"><tr><td width="99%" class="content" valign="top" align="left"><br></br><h1>GentooJP開発者用ドキュメント</h1><table width="80%" border="0" style="border: #FF7711 3px dotted;"><tr><td> 
+このドキュメントはGentooJPの開発者用です。
+ただし、将来の開発者のために情報はすべて公開しています。
+</td></tr></table><br></br><br></br><table border="0" width="100%"><tr><td><b>Contents</b>:<br></br>1. <a href="#doc_chap1">
+GentooJP開発者とは
+</a><br></br>2. <a href="#doc_chap2">www.gentoo.gr.jp サイトの更新方法</a><br></br>3. <a href="#doc_chap3">
+新規開発者の登録手順
+</a><br></br>4. <a href="#doc_chap4">
+その他
+</a><br></br></td><td align="right" valign="top" style="padding-right: 1.0em;"><span xmlns="" style="white-space:nowrap;"><i>Author</i>
+		:
+		<b><a class="altlink" href="mailto:www@gentoo.gr.jp">GentooJP</a></b></span><br xmlns=""><span xmlns="" style="white-space:nowrap;"><i>Editor</i>
+		:
+		<b><a class="altlink" href="mailto:nakano@gentoo.gr.jp">中野正智</a></b></span><br xmlns=""><br></br>
+														Updated 25 May 2004</td></tr></table><br></br><br></br><h2 xmlns="">
+<a name="doc_chap1">1.</a>
+GentooJP開発者とは
+</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect1">
+GentooJP開発者とは
+ </a></p>
+<p xmlns="">
+GentooJPのプロジェクト運営を円滑に進めるための有志のことです。
+GentooJPでは、ソフトウェアの開発だけでなく、ドキュメント作成者や、サーバーの管理者など、GentooJPの運営をサポートしてくれる人すべてをGentooJP開発者と呼んでいます。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap1_sect2">
+GentooJP開発者になるための条件
+ </a></p>
+<p xmlns="">
+特に条件はありません。<br>
+責任感を持って常識的な行動を取れる人なら、どなたでも大歓迎です。
+</p>
+<h2 xmlns="">
+<a name="doc_chap2">2.</a>www.gentoo.gr.jp サイトの更新方法</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect1">更新について </a></p>
+<p xmlns="">
+AuthorがGentooJPとなっているものの更新は自由に行なってください。
+また編集を加えた場合にはeditorとして自分の名前を追加してください。
+ただしtypoの修正などわざわざ追加するほどでもないと判断した場合はその限りではありません。
+そして周知という意味で-adminや-miscまたは-docsメーリングリストなど、
+関係するところへ報告を行なってください。事後報告で構いません。
+</p>
+<p xmlns="">
+更新の内容が不安な場合には事前にメーリングリストで話し合ってください。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect2">更新の基本的な仕組み </a></p>
+<p xmlns="">
+現在<a href="/">www.gentoo.gr.jp</a>上のコンテンツは、
+GentooJPのCVSにて管理を行なっています。
+そしてそのCVSからwww.gentoo.gr.jpへ10分間隔で定期的にコピーを行なっています。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect3">コンテンツの取得手順 </a></p>
+<p xmlns="">
+CVS上には、いくつかレポジトリがありますが現在はwwwしか使用していません。
+<font class="path">www</font>レポジトリが、そのまま<font class="path">http://www.gentoo.gr.jp/</font>になります。
+
+<a name="doc_chap2_pre1"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.1: checkoutの例(GentooJP開発者の場合)</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+$ cvs -d user_name@cvs.gentoo.gr.jp:/var/cvsroot co www
+</pre></td></tr>
+</table>
+
+CVSの詳しい使い方については他のドキュメントや資料を参照してください。
+
+<table class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>参照だけの場合には<a href="http://cvs.gentoo.gr.jp/viewcvs/">ViewCVSを使用したwebインターフェース</a>もありますので、目的に応じて使用してください。</p></td></tr></table><table class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>
+現在、anonymous CVSは停止中です。GentooJP開発者でない方は、
+上記ViewCVSを使用してください。
+</p></td></tr></table></p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect4">コンテンツの更新手順 </a></p>
+<p xmlns="">
+ドキュメントを更新した場合には、commitをする前に必ず<font class="code">xmllint</font>でXMLの文法チェックを行なってください。
+文法が間違っているとWeb上で&#8221;Internal Error&#8221;になってしまい、たくさんの人に迷惑をかけることになってしまいます。
+
+<a name="doc_chap2_pre2"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.2: XMLの文法チェック</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+$ xmllint --noout developer.xml
+$
+(何も出力されなければ問題ありません。
+エラーがある場合にはエラーメッセージが表示されます。)
+</pre></td></tr>
+</table></p>
+<p xmlns="">
+これで準備完了です。commitしてください。
+commit後、最大10分で更新されますので、必ず変更箇所を確認してください。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect5">ニュースの追加方法 </a></p>
+<p xmlns="">
+ニュースとはwww.gentoo.gr.jpでアクセスしたときに出てくるGentooやGentooJPに関するお知らせのことです。
+GentooJP開発者は誰でも自由にニュースを追加することができます。
+内容についてはGentooに関係することなら何でもOKです。
+一般の人向けである<a href="/jpmain/news-submit.xml">GentooJPニュース掲載手順</a>も参照しておいてください。
+</p>
+<p xmlns="">
+ニュースは/jpnewsディレクトリ以下にカテゴリ別に格納されています。
+また、１ニュースが１ファイルになっています。
+ファイル名は、<font class="path">yyyymmdd-name.xml</font>という形にしてください。
+yyyymmddは西暦の年月日です。nameの部分は任意の名前を付けます。
+</p>
+<p xmlns="">
+サンプルとして一つあげます。
+
+<a name="doc_chap2_pre3"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.3: ニュースファイルのサンプル</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt;
+&lt;news gentoo="yes" category="gentoojp"&gt;
+	&lt;poster&gt;中野正智&lt;/poster&gt;
+	&lt;date&gt;15 November 2003&lt;/date&gt;
+	&lt;title&gt;翻訳者募集&lt;/title&gt;
+&lt;body&gt;
+&lt;p&gt;
+GentooJP翻訳プロジェクトでは下記の文章を翻訳してくれる人を捜しています。
+興味のある人は、&lt;uri link="/jpmain/translation.xml"&gt;
+翻訳プロジェクトのドキュメント&lt;/uri&gt;を参照の上、
+&lt;uri link="/jpmain/about-gentoojp.xml#doc_chap4"&gt;
+ドキュメントメーリングリスト&lt;/uri&gt;に参加してください。
+
+&lt;pre caption="募集中の新規翻訳ドキュメント"&gt;
+-- 省略 --
+&lt;/pre&gt;
+
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/news&gt;
+</pre></td></tr>
+</table><p>
+1,2行目は固定です。必ずこれを入れてください。
+3行目のcategoryはいくつかあるのでニュースにあったものを選択します。
+これによってニュース本文の横の画像が変わります。
+いろいろあるのですが、ほとんどGentooプロジェクトのニュースの翻訳で使用しているものです。
+GentooJP発のニュースとして新規にニュースを作成する場合は以下のどれかを使用します。
+</p><table class="ntable">
+<tr>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>指定する文字</b></font></td>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>意味</b></font></td>
+<td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF"><b>画像</b></font></td>
+</tr>
+<tr>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">gentoojp</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">GentooJP関連のニュースです。</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;"><img src="/images/icon-gentoojp.png"></td>
+</tr>
+<tr>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">gentoo</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">Gentooの一般的なニュースです。</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;"><img src="/images/icon-gentoo.png"></td>
+</tr>
+<tr>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">moo</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;">これもGentooの一般的なニュースです。気分によって使いわけましょう。</td>
+<td bgcolor="#FFDBA4" class="tableinfo" style="background: #FFDBA4 ! important;"><img src="/images/icon-cow.png"></td>
+</tr>
+</table></p>
+<p xmlns="">
+ニュースが書けたら、次はindexファイルを更新します。
+indexファイルは<font class="path">/jpnews/{main|gwn|org}/news-index.xml</font>です。
+このファイルは日付で降順になっていますので、
+作成したファイルを一番上へ記述してください。
+このファイルを追加することで実際にニュースが掲載されることになります。
+
+<a name="doc_chap2_pre4"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 2.4: indexファイル</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;uris&gt;
+&lt;uri&gt;/jpnews/main/20031029-bsdlinuxday.xml&lt;/uri&gt;
+&lt;uri&gt;/jpnews/main/20031017-seminar.xml&lt;/uri&gt;
+&lt;uri&gt;/jpnews/main/20030804-webpage.xml&lt;/uri&gt;
+(省略)
+</pre></td></tr>
+</table></p>
+<h2 xmlns="">
+<a name="doc_chap3">3.</a>
+新規開発者の登録手順
+</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect1">新規登録について </a></p>
+<p xmlns="">
+誘った人、または立候補の場合にはそれを受けた人、
+が新規開発者の登録の各種手続きを手伝うようにしてください。
+そして以下の登録をすべて確実に完了できるように、
+GentooJPの各担当者と新規登録者の間に入って調整してください。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect2">admin MLへ報告 </a></p>
+<p xmlns="">
+フリーフォーマットで構わないですが以下の情報を報告してください。
+</p>
+<ul xmlns="">
+<li>名前 (本名でなくても構いません)
+<a href="/jpmain/about-gentoojp.xml">
+GentooJPについて</a>で公表する名前です。</li>
+<li>通常使用しているメールアドレス。xxxxxx@gentoo.gr.jpの転送先になります。</li>
+<li>xxxxxx@gentoo.gr.jpのメールアドレスで使用するxxxxxxの部分。
+またxxxxxxは各GentooJPマシン上でのアカウントにも使用されます。</li>
+<li>GentooJPで担当する場所</li>
+</ul>
+<p xmlns="">
+この情報を元に各担当者が、
+</p>
+<ul xmlns="">
+<li>gentoojp-admin MLへ登録</li>
+<li>xxxxxx@gentoo.gr.jpアドレスの作成と転送先を設定</li>
+</ul>
+<p xmlns="">
+を行ないます。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect3">開発者用サーバー(現在dev.gentoo.gr.jp)へのCVS/shellアカウントの作成 </a></p>
+<p xmlns="">
+新規登録者がサーバー管理担当者に公開鍵をメールで送信するようにしてください。
+</p>
+<p xmlns="">
+これが完了したら、CVSの設定の確認を兼ねて以下の登録を各自(新規登録者)でお願いします。CVSの使い方とドキュメント修正方法についてはこのドキュメントにありますので、参照してください。
+</p>
+<ul xmlns=""><li>
+<a href="/jpmain/about-gentoojp.xml">GentooJPについて</a>へ開発者の情報を追加</li></ul>
+<h2 xmlns="">
+<a name="doc_chap4">4.</a>
+その他
+</h2>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect1">内部メーリングリスト(-admin)について </a></p>
+<p xmlns="">
+GentooJP開発者には非公開の-adminメーリングリストに入ってもらっています。
+もし漏れている方がいましたら連絡してください。
+このメーリングリストは外部には流せないような内容、たとえばサーバーのセキュリティについてなどを話すときのみに使用します。<br>
+その他のことは、それにふさわしいメーリングリストに投稿してください。ふさわしいメーリングリストが見つからない場合には-miscメーリングリストがいいでしょう。
+</p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap4_sect2">個人用Webスペースについて </a></p>
+<p xmlns="">
+http://dev.gentoo.gr.jp/~account/ に個人用のWebスペースを持つことができます。
+各ホームディレクトリ以下にpublic_htmlディレクトリを作成してその下にコンテンツを置いてください。
+</p>
+<p xmlns="">
+このスペースでは、自己紹介や、各種ドキュメント、ちょっとしたファイルの配布など自由に使ってもらって構わないです。
+現在のところ内容や容量の制限などのルールを設けていませんが、
+常識の範囲内でよろしくお願いします。
+</p>
+<p xmlns="">
+必要なソフトウェア(mod_*など)がありましたら、
+-adminまたは-miscメーリンリグリストまでお願いします。
+</p></td></tr></table></td></tr></table></div></div></div></td></tr><tr height="1.3em" valign="bottom"><td height="1.3em" valign="bottom"><div class="footer">[ <a href="http://ml.gentoo.gr.jp/users/">users ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
+					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
+						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div></td></tr></table><div align="center" class="copy">
+					Copyright&copy; 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br></br>
+					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a></div></body></html>
