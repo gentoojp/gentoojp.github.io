@@ -7,7 +7,7 @@
 <body>
 <p>
 <b>
-<uri link="/news/ja/gwn/20030401-newsletter.xml">今週のGWN</uri>のトップニュースとして、Gentoo LinuxとPortage 2.1の重要なアーキテクチャ変更があります。
+<uri link="http://www.gentoo.org/news/ja/gwn20030401-newsletter.xml">今週のGWN</uri>のトップニュースとして、Gentoo LinuxとPortage 2.1の重要なアーキテクチャ変更があります。
 </b>  
 RPMフォーマットへの移行を含むこれらの変更が、今後のGentoo Linuxにどのような影響を与えるかご理解ください。他には、Gentoo Linux 1.4の次リリースやBugzilla、Portage、新しい開発者についてのニュースなどを掲載しています。
 </p>

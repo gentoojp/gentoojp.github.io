@@ -19,7 +19,7 @@
 
 <!-- Alter to your own likings -->
 <p>
-<b>今週の<uri link="/news/ja/gwn/20041115-newsletter.xml">Gentoo Weekly Newsletter</uri>のトップニュースはGentoo Linux 2004.3のリリースです。</b>今週から始まった"Future Zone"では、KDEのアプリケーションを分割したebuildのプロジェクトについてお伝えしています。この臨時セクションでは、Gentoo開発者による開発状況に注目し、懸案事項のPortageツリーへの統合作業に焦点を当てていきます。この他のニュースには、Gentooのカーネルパッケージの整理、X11チームから開発者募集のお知らせ、世界のGentooからはブラジル、イタリア、ドイツ各国からのレポートとお知らせ、もちろんいつものBugzilla、今週のGLSA、新開発者のお知らせ、Gentoo関連情報、tips and tricksもお楽しみに！
+<b>今週の<uri link="http://www.gentoo.org/news/ja/gwn20041115-newsletter.xml">Gentoo Weekly Newsletter</uri>のトップニュースはGentoo Linux 2004.3のリリースです。</b>今週から始まった"Future Zone"では、KDEのアプリケーションを分割したebuildのプロジェクトについてお伝えしています。この臨時セクションでは、Gentoo開発者による開発状況に注目し、懸案事項のPortageツリーへの統合作業に焦点を当てていきます。この他のニュースには、Gentooのカーネルパッケージの整理、X11チームから開発者募集のお知らせ、世界のGentooからはブラジル、イタリア、ドイツ各国からのレポートとお知らせ、もちろんいつものBugzilla、今週のGLSA、新開発者のお知らせ、Gentoo関連情報、tips and tricksもお楽しみに！
 </p>
 
 </body>
