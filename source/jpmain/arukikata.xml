@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding="UTF-8"?>
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
-<guide link="/jpmain/arukikata.xml">
+<guide link="/jpmain/arukikata.html">
 <title>Gentooの歩き方</title>
 <author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
 <author title="Editor"><mail link="y4su0@y4su0.com">おぎうち やすお</mail></author>
@@ -44,7 +44,7 @@ Gentooのドキュメントをご紹介します。
 
 <body>
 <p>
-Gentoo Linuxの概略を知るためには、まず<b><uri link="http://www.gentoo.org/main/ja/about.xml">About Gentoo Linux</uri></b>を読んでください。また、GentooJPの概略を知るためには、<b><uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri></b>を読んでください。
+Gentoo Linuxの概略を知るためには、まず<b><uri link="http://www.gentoo.org/main/ja/about.xml">About Gentoo Linux</uri></b>を読んでください。また、GentooJPの概略を知るためには、<b><uri link="/jpmain/about-gentoojp.html">GentooJPについて</uri></b>を読んでください。
 </p>
 
 <p>
@@ -97,7 +97,7 @@ Gentooプロジェクトでは、ハンドブックと呼ばれる一貫性の�
 </p>
 
 <p>
-GentooJPではユーザー間の情報交換のためのメーリングリストとして、gentoojp-usersメーリングリストを開設しています。概要は<b><uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri></b>内の<b><uri link="/jpmain/about-gentoojp.xml#doc_chap4">4.メーリングリスト</uri></b>をご覧ください。
+GentooJPではユーザー間の情報交換のためのメーリングリストとして、gentoojp-usersメーリングリストを開設しています。概要は<b><uri link="/jpmain/about-gentoojp.html">GentooJPについて</uri></b>内の<b><uri link="/jpmain/about-gentoojp.html#doc_chap4">4.メーリングリスト</uri></b>をご覧ください。
 </p>
 
 </body>
@@ -109,11 +109,11 @@ GentooJPではユーザー間の情報交換のためのメーリングリスト
 
 <body>
 <p>
-現在GentooJPが開設しているメーリングリストは、ユーザー向けのUsers Mailing List、GentooJPの運営に関することを議論するMisc Mailing List、GentooJPのドキュメントに関するDocument Mailing List、Portageやebuildに関するDeveloper Mailing Listの4つです。各メーリングリストの詳細については、<b><uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri></b>内の<b><uri link="/jpmain/about-gentoojp.xml#doc_chap4">4.メーリングリスト</uri></b>をご覧ください。
+現在GentooJPが開設しているメーリングリストは、ユーザー向けのUsers Mailing List、GentooJPの運営に関することを議論するMisc Mailing List、GentooJPのドキュメントに関するDocument Mailing List、Portageやebuildに関するDeveloper Mailing Listの4つです。各メーリングリストの詳細については、<b><uri link="/jpmain/about-gentoojp.html">GentooJPについて</uri></b>内の<b><uri link="/jpmain/about-gentoojp.html#doc_chap4">4.メーリングリスト</uri></b>をご覧ください。
 </p>
 
 <p>
-気軽な情報交換の場として、IRCチャンネル(irc.freenode.net上の#gentoo-ja)も用意されています。IRCチャンネルの詳細は<b><uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri></b>内の<b><uri link="/jpmain/about-gentoojp.xml#doc_chap5">5.IRC</uri></b>をご覧ください。
+気軽な情報交換の場として、IRCチャンネル(irc.freenode.net上の#gentoo-ja)も用意されています。IRCチャンネルの詳細は<b><uri link="/jpmain/about-gentoojp.html">GentooJPについて</uri></b>内の<b><uri link="/jpmain/about-gentoojp.html#doc_chap5">5.IRC</uri></b>をご覧ください。
 </p>
 
 <p>
@@ -130,7 +130,7 @@ Gentoo Linuxで使えるソフトの新着情報が必要だったら<b><uri lin
 </p>
 
 <p>
-よくある質問については、<b><uri link="http://www.gentoo.org/doc/ja/faq.xml">Gentoo Linux Frequently Asked Questions</uri></b>や<b><uri link="/jpmain/tips.xml">Gentoo Linux tips集</uri></b>にまとめられています。
+よくある質問については、<b><uri link="http://www.gentoo.org/doc/ja/faq.xml">Gentoo Linux Frequently Asked Questions</uri></b>や<b><uri link="/jpmain/tips.html">Gentoo Linux tips集</uri></b>にまとめられています。
 </p>
 
 </body>

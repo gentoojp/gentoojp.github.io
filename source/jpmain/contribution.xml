@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding="UTF-8"?>
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
-<guide link="/jpmain/contribution.xml">
+<guide link="/jpmain/contribution.html">
 <title>Gentooへの貢献</title>
 <author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
 <author title="Editor"><mail link="nakano@gentoo.gr.jp">中野正智</mail></author>
@@ -225,14 +225,14 @@ GentooJPでは、大きくわけて二種類のドキュメントを作成して
 
 <p>
 翻訳プロジェクトについては<uri
-link="/jpmain/translation.xml">翻訳プロジェクトのドキュメント</uri>に、
-また、オリジナルドキュメントプロジェクトについては<uri link="/jpmain/original-doc.xml">
+link="/jpmain/translation.html">翻訳プロジェクトのドキュメント</uri>に、
+また、オリジナルドキュメントプロジェクトについては<uri link="/jpmain/original-doc.html">
 GentooJPオリジナルドキュメントプロジェクトのドキュメント</uri>に、概要が紹介されています。
 </p>
 
 <p>
 どのような雰囲気で作業が行われているのか知るために、GentooJPのドキュメント作成者用のメーリングリストに参加してみるのもよいでしょう。
-また、ログも一般に公開されています。ドキュメント作成者向けメーリングリストの概要は<uri link="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</uri>をご覧ください。
+また、ログも一般に公開されています。ドキュメント作成者向けメーリングリストの概要は<uri link="/jpmain/about-gentoojp.html#doc_chap4">メーリングリスト</uri>をご覧ください。
 </p>
 
 </body>
@@ -258,7 +258,7 @@ Gentooの大きな魅力の一つであるパッケージ(ebuild)の作成や改
 </p>
 
 <p>
-もし、何かわからないことがあれば、GentooJP開発者向けメーリングリストで質問してみてくだささい。このメーリングリストの概要は<uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri>内の<uri link="/jpmain/about-gentoojp.xml#doc_chap4">4.メーリングリスト</uri>をご覧ください。
+もし、何かわからないことがあれば、GentooJP開発者向けメーリングリストで質問してみてくだささい。このメーリングリストの概要は<uri link="/jpmain/about-gentoojp.html">GentooJPについて</uri>内の<uri link="/jpmain/about-gentoojp.html#doc_chap4">4.メーリングリスト</uri>をご覧ください。
 </p>
 
 <p>
@@ -282,7 +282,7 @@ Gentooの大きな魅力の一つであるパッケージ(ebuild)の作成や改
 
 <p>
 いきなりGentooプロジェクトに登録するのはちょっと敷居が高いという方向けに、
-GentooJPでは<uri link="http://ebuild.gentoo.gr.jp/">ebuild-uploader</uri>という独自の簡易ebuild登録システムを開発し、使用しています。ebuild-uploaderの詳細については、<uri link="/jpmain/ebuild-uploader.xml">ebuild-uploader利用ガイド</uri>をご覧ください。
+GentooJPでは<uri link="http://ebuild.gentoo.gr.jp/">ebuild-uploader</uri>という独自の簡易ebuild登録システムを開発し、使用しています。ebuild-uploaderの詳細については、<uri link="/jpmain/ebuild-uploader.html">ebuild-uploader利用ガイド</uri>をご覧ください。
 </p>
 
 </body>

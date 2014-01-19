@@ -2,7 +2,7 @@
 <?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
-<guide link="/jpmain/translation.xml">
+<guide link="/jpmain/translation.html">
 
 <title>GentooJP翻訳プロジェクト</title>
 
@@ -50,7 +50,7 @@
 <title>翻訳を行なう未翻訳ドキュメントを翻訳状況一覧から探す。</title>
 <body>
 <p>
-<uri link="/jpmain/trans_status.xml#doc_chap1">翻訳状況一覧</uri>を参照し、
+<uri link="/jpmain/trans_status.html#doc_chap1">翻訳状況一覧</uri>を参照し、
 「新規募集中」となっているドキュメントから自分が翻訳できそうなものを選びます。
 </p>
 <p>
@@ -198,8 +198,8 @@ Original revisionは翻訳状況自動更新スクリプトで使用されるの
 ドキュメント内で他のGentoo Projectドキュメントへのリンクがあり、
 そのドキュメントに日本語翻訳がある場合には以下のようにしてください。
 <pre caption="他ドキュメントへのリンク">
-&lt;uri link="/doc/en/portage-manual.xml"&gt;Portage Manual&lt;/uri&gt;
-&lt;uri link="/doc/ja/portage-manual.xml"&gt;（日本語訳）&lt;/uri&gt;
+&lt;uri link="/doc/en/portage-manual.html"&gt;Portage Manual&lt;/uri&gt;
+&lt;uri link="/doc/ja/portage-manual.html"&gt;（日本語訳）&lt;/uri&gt;
 </pre>
 </p>
 </body>

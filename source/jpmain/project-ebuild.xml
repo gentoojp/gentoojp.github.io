@@ -2,7 +2,7 @@
 <?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
-<guide link="/jpmain/project-ebuild.xml">
+<guide link="/jpmain/project-ebuild.html">
 
 <title>ebuildプロジェクト</title>
 

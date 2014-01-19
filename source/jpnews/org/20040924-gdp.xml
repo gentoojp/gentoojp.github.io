@@ -19,8 +19,8 @@
 
 <!-- Alter to your own likings -->
 <p>
-<uri link="/proj/en/gdp">Gentoo Documentation Project</uri>は新たに
-<uri link="/proj/en/gdp/status/status_20040924.xml">Status Update</uri>のページをリリースしました。
+  <uri link="http://www.gentoo.org/proj/en/gdp">Gentoo Documentation Project</uri>は新たに
+  <uri link="http://www.gentoo.org/proj/en/gdp/status/status_20040924.xml">Status Update</uri>のページをリリースしました。
 新規、更新された文書の情報や、印刷用表示に関する新しい機能が加わりました。
 </p>
 

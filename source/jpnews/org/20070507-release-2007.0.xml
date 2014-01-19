@@ -16,7 +16,7 @@
 
 <!-- Alter to your own likings -->
 <p>
-<b>遅れに遅れましたが、Gentoo <uri link="/proj/en/releng">Release Engineering</uri> プロジェクトからGentooLinux2007.0（コードネーム "Secret Sause"）のリリースが発表でき嬉しく思っています。</b>
+  <b>遅れに遅れましたが、Gentoo <uri link="http://www.gentoo.org/proj/en/releng">Release Engineering</uri> プロジェクトからGentooLinux2007.0（コードネーム "Secret Sause"）のリリースが発表でき嬉しく思っています。</b>
 多くのパッケージで、より新しく、
 セキュアなバージョンで再ビルドしなければならないセキュリティ上の脆弱性が数多くあったため、
 リリースがたびたび遅れてしまいました。
@@ -26,7 +26,7 @@
 
 <p>
 <uri
-link="/proj/en/releng/release/2007.0/2007.0-press-release.txt">オフィシャルプレスリリース</uri>により詳しい情報があります。
+  link="http://www.gentoo.org/proj/en/releng/release/2007.0/2007.0-press-release.txt">オフィシャルプレスリリース</uri>により詳しい情報があります。
 新しいリリースはこちらです。
 <uri>http://www.gentoo.org/main/en/where.xml</uri>.
 

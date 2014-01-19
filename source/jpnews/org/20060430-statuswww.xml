@@ -24,17 +24,17 @@
 </p>
 
 <ul>
-  <li><uri link="/main/en/about.xml">About Gentoo</uri></li>
-  <li><uri link="/main/en/philosophy.xml">Gentoo Philosophy</uri></li>
-  <li><uri link="/main/en/contract.xml">Social Contract</uri></li>
-  <li><uri link="/main/en/graphics.xml">Logos and Themes</uri></li>
-  <li><uri link="/main/en/irc.xml">IRC Channels</uri></li>
-  <li><uri link="/main/en/lists.xml">Mailing Lists</uri></li>
-  <li><uri link="/main/en/mirrors.xml">Download Mirrors</uri></li>
-  <li><uri link="/main/en/name-logo.xml">Name and Logo Usage Guidelines</uri></li>
-  <li><uri link="/main/en/sponsors.xml">Sponsors</uri></li>
-  <li><uri link="/main/en/support.xml">Support</uri></li>
-  <li><uri link="/main/en/where.xml">Get Gentoo!</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/about.xml">About Gentoo</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/philosophy.xml">Gentoo Philosophy</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/contract.xml">Social Contract</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/graphics.xml">Logos and Themes</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/irc.xml">IRC Channels</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/lists.xml">Mailing Lists</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/mirrors.xml">Download Mirrors</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/name-logo.xml">Name and Logo Usage Guidelines</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/sponsors.xml">Sponsors</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/support.xml">Support</uri></li>
+  <li><uri link="http://www.gentoo.org/main/en/where.xml">Get Gentoo!</uri></li>
 </ul>
 
 </body>

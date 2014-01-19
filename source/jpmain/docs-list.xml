@@ -45,56 +45,56 @@ GentooJP開発者によって作成/編集/メンテナンスされているド�
 <table>
 <tr><th>タイトル</th><th>要約</th></tr>
 <tr>
-<ti><uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri></ti>
+<ti><uri link="/jpmain/about-gentoojp.html">GentooJPについて</uri></ti>
 <ti>GentooJPについての説明が記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/arukikata.xml">GentooJPの歩き方</uri></ti>
+<ti><uri link="/jpmain/arukikata.html">GentooJPの歩き方</uri></ti>
 <ti>Gentoo LinuxまたはGentooJPについて良く知らない方向けに、各ドキュメントやサイトの説明が記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/tips.xml">Gentoo Linux tips集</uri></ti>
+<ti><uri link="/jpmain/tips.html">Gentoo Linux tips集</uri></ti>
 <ti>このガイドは<uri link="http://wiki.gentoo.gr.jp/">GentooJPのWiki</uri>で出たtipsを集めて編集したものです。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/news-submit.xml">GentooJP ニュース投稿について</uri></ti>
+<ti><uri link="/jpmain/news-submit.html">GentooJP ニュース投稿について</uri></ti>
 <ti>GentooJPではニュースを一般から広く募集しています。
 このドキュメントではその手順を説明します。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/original-doc.xml">オリジナルドキュメントプロジェクト</uri></ti>
+<ti><uri link="/jpmain/original-doc.html">オリジナルドキュメントプロジェクト</uri></ti>
 <ti>GentooJPで掲載を行なっているオリジナルドキュメントに関する説明や参加方法が記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/project-ebuild.xml">ebuildプロジェクト</uri></ti>
+<ti><uri link="/jpmain/project-ebuild.html">ebuildプロジェクト</uri></ti>
 <ti>Gentoo Linuxの核となるパッケージ記述ファイルであるebuildに関するGentooJPのプロジェクトの説明が記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/translation.xml">翻訳プロジェクト</uri></ti>
+<ti><uri link="/jpmain/translation.html">翻訳プロジェクト</uri></ti>
 <ti>Gentoo Linux Projectのドキュメントを翻訳するGentooJP翻訳プロジェクトへの、
 参加方法や注意点などが記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/project-gwn.xml">GWN翻訳プロジェクト</uri></ti>
+<ti><uri link="/jpmain/project-gwn.html">GWN翻訳プロジェクト</uri></ti>
 <ti>Gentoo Linux Projectが毎週発行しているGentoo Weekly
 Newsletter(GWN)を翻訳するGentooJP GWN翻訳プロジェクトへの、
 参加方法や注意点などが記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/xmltohtml.xml">本家XMLドキュメントのHTML変換ガイド</uri></ti>
+<ti><uri link="/jpmain/xmltohtml.html">本家XMLドキュメントのHTML変換ガイド</uri></ti>
 <ti>Gentoo Linux ProjectのXMLドキュメントをHTMLに変換する方法について実例を示しながら説明しています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpmain/developer.xml">GentooJP開発者ドキュメント</uri></ti>
+<ti><uri link="/jpmain/developer.html">GentooJP開発者ドキュメント</uri></ti>
 <ti>GentooJP開発者用のドキュメントです。ニュースの投稿の仕方や、
 CVSの使い方などが記述されています。</ti>
 </tr>
@@ -117,7 +117,7 @@ CVSの使い方などが記述されています。</ti>
 <table>
 <tr><th>タイトル</th><th>著者</th><th>要約</th></tr>
 <tr>
-<ti><uri link="/jpdoc/WindowMaker.xml">Window Maker</uri></ti>
+<ti><uri link="/jpdoc/WindowMaker.html">Window Maker</uri></ti>
 <ti>真藤直観</ti>
 <ti>Window Maker は NEXTSTEP(TM)のLook&#38;Feel をもつ Window Manager
 です。この文書では、GentooLinux でのWindow Maker について説明します。
@@ -125,21 +125,21 @@ CVSの使い方などが記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpdoc/guide-irc-xchat.xml">IRCクライアントの設定 (XChat編)</uri></ti>
+<ti><uri link="/jpdoc/guide-irc-xchat.html">IRCクライアントの設定 (XChat編)</uri></ti>
 <ti>Kojima</ti>
 <ti>このガイドでは、XChatを使った、GentooJP・IRCチャンネルへの接続について解説します。対象
 は、(Gentoo) Linux 上で、初めてIRCに参加するユーザーです。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpdoc/guide-irc-xchat2.xml">IRCクライアントの設定(XChat-2編)</uri></ti>
+<ti><uri link="/jpdoc/guide-irc-xchat2.html">IRCクライアントの設定(XChat-2編)</uri></ti>
 <ti>Kojima</ti>
 <ti>このガイドでは、XChatを使った、GentooJP・IRCチャンネルへの接続について解説します。対象
 は、(Gentoo) Linux 上で、初めてIRCに参加するユーザーです。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpdoc/guide-irc-limechat.xml">IRCクライアントの設定 (LimeChat編)</uri></ti>
+<ti><uri link="/jpdoc/guide-irc-limechat.html">IRCクライアントの設定 (LimeChat編)</uri></ti>
 <ti>Takashi Ota.</ti>
 <ti>このガイドでは、LimeChatを使った、GentooJP・IRCチャンネルへの接続について解
 説します。対象は、Microsoft Windows 上で、初めてIRCに参加するユーザー
@@ -147,27 +147,27 @@ CVSの使い方などが記述されています。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpdoc/fd-install.xml">Gentoo Linux フロッピーインストールガイド</uri></ti>
+<ti><uri link="/jpdoc/fd-install.html">Gentoo Linux フロッピーインストールガイド</uri></ti>
 <ti>yamakura</ti>
 <ti>このガイドでは、CD-ROMドライブが使えないマシンに、フロッピーディスクを使っ
 て Gentoo Linux をインストールする方法を解説します。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpdoc/gentoojp-xml-environment.xml">翻訳とオリジナルドキュメント作成環境の構築ガイド</uri></ti>
+<ti><uri link="/jpdoc/gentoojp-xml-environment.html">翻訳とオリジナルドキュメント作成環境の構築ガイド</uri></ti>
 <ti>Takashi Ota</ti>
 <ti>このガイドでは、GentooJPの翻訳・オリジナルドキュメント作成の際に必
 要となる環境の構築方法について説明します。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpdoc/failover.xml">Gentoo Linux フェイルオーバーガイド</uri></ti>
+<ti><uri link="/jpdoc/failover.html">Gentoo Linux フェイルオーバーガイド</uri></ti>
 <ti>Takuya Asada</ti>
 <ti>このドキュメントでは、Gentoo Linuxが予めインストールされた運用系・待機系の2台のサーバの上に、HeartbeatとDRBDというソフトウェアを用いてフェイルオーバシステムを構築します。</ti>
 </tr>
 
 <tr>
-<ti><uri link="/jpdoc/load_balancing.xml">Gentoo Linux 負荷分散ガイド</uri></ti>
+<ti><uri link="/jpdoc/load_balancing.html">Gentoo Linux 負荷分散ガイド</uri></ti>
 <ti>Takuya Asada</ti>
 <ti>このドキュメントでは、Gentoo Linuxが予めインストールされたサーバ群（４台）の上に、LVS,Ldirectord,NFS,Heartbeat,DRBD等のソフトウェアを用いて高可用性を持つ負荷分散システムを構築します。</ti>
 </tr>

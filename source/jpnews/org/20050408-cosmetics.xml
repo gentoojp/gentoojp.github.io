@@ -44,7 +44,7 @@
 コード例の表示幅が広いと横スクロールバーが現れ、右側欄が画面の外に追いやられてしまいます。
 <c>overflow:auto</c>属性を追加すると、この属性をサポートしているブラウザは、表示幅の広いコード例の内側に横スクロールバーを表示するでしょう。
 この属性を無視するブラウザもあることに注意してください。
-<uri link="/doc/en/gentoo-x86-quickinstall.xml">x86 Quick Install Guide</uri>に良い例があります。
+<uri link="http://www.gentoo.org/doc/en/gentoo-x86-quickinstall.xml">x86 Quick Install Guide</uri>に良い例があります。
 </li>
 <li>
 Operaユーザは、ページの内容部分が狭く右側欄が非常識に広いページがいくつかあることに不満を持っていました。

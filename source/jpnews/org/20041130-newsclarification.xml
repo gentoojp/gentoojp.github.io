@@ -12,11 +12,11 @@
 </p>
 
 <p>
-<uri link="/proj/en/releng">Gentoo Release Engineering Project</uri>を率いるChris Gianelloni氏は、その記事の中(訳注：修正された後の記事のことです)で「2005.0リリースでは、Minimal、Universal、パッケージCDが含まれます。また、実験的なLiveCDとして、AMD64とx86向けにKnoppixライクなものもリリースされるでしょう。」と述べています。
+  <uri link="http://www.gentoo.org/proj/en/releng">Gentoo Release Engineering Project</uri>を率いるChris Gianelloni氏は、その記事の中(訳注：修正された後の記事のことです)で「2005.0リリースでは、Minimal、Universal、パッケージCDが含まれます。また、実験的なLiveCDとして、AMD64とx86向けにKnoppixライクなものもリリースされるでしょう。」と述べています。
 </p>
 
 <p>
-また、この記事には、<uri link="/proj/en/releng/installer/">Gentoo Linux Installer Project</uri>の継続的な開発成果についての記述もあります。これは、グラフィカルなインストールツールから自動的なインストールまでと言った幅広いインストール方法の多様性に狙いを定めているものです。
+  また、この記事には、<uri link="http://www.gentoo.org/proj/en/releng/installer/">Gentoo Linux Installer Project</uri>の継続的な開発成果についての記述もあります。これは、グラフィカルなインストールツールから自動的なインストールまでと言った幅広いインストール方法の多様性に狙いを定めているものです。
 </p>
 </body>
 </news>

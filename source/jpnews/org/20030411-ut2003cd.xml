@@ -7,7 +7,7 @@
 <body>
 
 <p>
-<b>新しい Unreal Tournament 2003 GameCD が発表され、</b>僕らの<uri link="/main/en/mirrors.xml">ミラーサーバー</uri>と同様に<b><uri link="ftp://mirror.iawnet.sandia.gov/pub/gentoo/experimental/x86/gamecd/gamecd-ut2003-20030405.iso">ここ</uri>からも利用できます。</b>
+  <b>新しい Unreal Tournament 2003 GameCD が発表され、</b>僕らの<uri link="http://www.gentoo.org/main/en/mirrors.xml">ミラーサーバー</uri>と同様に<b><uri link="ftp://mirror.iawnet.sandia.gov/pub/gentoo/experimental/x86/gamecd/gamecd-ut2003-20030405.iso">ここ</uri>からも利用できます。</b>
 -- あなたのお近くのものを選んで下さい。</p>
 
 <p>最新のインストール CD は最適化された gaming kernel (<b>かなり</b> ゲームプレーが快適) と GeForce FXをサポートした最新のNVIDIAドライバー(1.0.4349)、予備のbootsplashサポート、ハードウェア(サウンド/入力装置/ネットワーク)の全自動検出、数え切れない数々の改善と最新のut2003-demoビルドを含んでいます。このGameCDでは ut-2003-demoを起動させるためにモダンなNVIDIAグラフィックカードを必要とします。楽しんで!</p>

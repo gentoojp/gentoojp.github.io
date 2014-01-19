@@ -2,7 +2,7 @@
 <?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
-<guide link="/jpmain/gentoo-glossary.xml">
+<guide link="/jpmain/gentoo-glossary.html">
 <title>Gentoo用語集(draft)</title>
 
 <author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail>
@@ -85,7 +85,7 @@ Gentoo Linuxを操作する際、Gentoo特有の用語や頻繁に出てくる�
 	<li>詳細：/etc/make.conf 内の説明</li>
 	<li>実行：なし</li>
 </ul>
-<!-- <p><uri link="/jpdoc/gentoo-glossary.xml">戻る</uri></p> -->
+<!-- <p><uri link="/jpdoc/gentoo-glossary.html">戻る</uri></p> -->
 </body></section>
 
 </chapter>

@@ -6,7 +6,7 @@
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
 <!--ドキュメントのファイル名-->
-<guide link="/jpdoc/test-xml.xml">
+<guide link="/jpdoc/test-xml.html">
 
 <!--ドキュメントのタイトル-->
 <title>ドキュメントサンプル文書</title>

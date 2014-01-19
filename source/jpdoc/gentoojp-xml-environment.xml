@@ -3,7 +3,7 @@
 
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
-<guide link="/jpdoc/gentoojp-xml-environmet.xml">
+<guide link="/jpdoc/gentoojp-xml-environmet.html">
 
 <title>翻訳とオリジナルドキュメント作成環境の構築ガイド</title>
 <author title = "著者"><mail link = "kihei@ss.iij4u.or.jp">Takashi Ota</mail></author>
@@ -72,7 +72,7 @@
 		<body>
 			<p>
 			ここでは、ドキュメントの最低限必要となる項目について解説します。<br />
-			文書の作成にとてもよいガイド、<uri link="/doc/ja/xml-guide.xml">Gentoo Linux ドキュメンテーションガイド</uri>がありますので、参照してください。
+            文書の作成にとてもよいガイド、<uri link="http://www.gentoo.org/doc/ja/xml-guide.xml">Gentoo Linux ドキュメンテーションガイド</uri>がありますので、参照してください。
 			GentooJPのドキュメントで、必ず必要となる初期化部及び終了部などは次のとおりです。
 			また、<e>ドキュメントのファイル名、文書のタイトル、作成者のメールアドレス、作成者名、文書の摘要、作成年月日、文書のバージョン</e>は適宜変更する必要があります。<br />
 			ドキュメントのファイル名は、簡潔にその文書の内容が理解できるものが良いでしょう。なお、翻訳ドキュメントの場合は、バージョン番号を変更しないで下さい。オリジナルドキュメントの場合は、バージョンを<c>1.0</c>としてください。<br />
@@ -85,7 +85,7 @@
 &lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
 
 &lt;!--<comment>ドキュメントのファイル名</comment>--&gt;
-&lt;guide link="/jpdoc/<i>test-xml.xml</i>"&gt;
+&lt;guide link="/jpdoc/<i>test-xml.html</i>"&gt;
 
 &lt;!--<comment>ドキュメントのタイトル</comment>--&gt;
 &lt;title&gt;<i>ドキュメントサンプル文書</i>&lt;/title&gt;
@@ -138,7 +138,7 @@
 &lt;/guide&gt;
 </pre>
 		<note>
-		このサンプル文書の名前はjpdoc/test-xml.xmlです。<uri link="/jpdoc/test-xml.xml">実際の表示</uri>を確認してみてください。
+		このサンプル文書の名前はjpdoc/test-xml.xmlです。<uri link="/jpdoc/test-xml.html">実際の表示</uri>を確認してみてください。
 		</note>
 		</body>
 		</section>
@@ -205,7 +205,7 @@ $ <i>tar -zxvf www.tar.gz</i>
 		<p>
 		cvsを利用する方法は、いくつかのコマンドを覚えることでファイルのバージョンを常に最新版にしておけるなど大変便利です。<br />
 		以下に基本的な内容を書きますが、詳細は
-		<uri link="/doc/ja/cvs-tutorial.xml">CVSチュートリアル</uri>、
+        <uri link="http://www.gentoo.org/doc/ja/cvs-tutorial.xml">CVSチュートリアル</uri>、
 		<uri link="http://sourceforge.jp/cvs/?group_id=190">sourceforge.jp</uri>などを参照してください。<br />
 		あなたのホームディレクトリを<c>/home/username</c>、リポジトリは、<c>gentoojp</c>として説明します。
 		</p>
@@ -241,8 +241,8 @@ $ <i>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/gentoojp update -d
 	<body>
 	<p>
 	翻訳ドキュメント作成の際には、翻訳状況の確認と翻訳手順を確認してください。
-        GentooJPでは、<uri link="/jpmain/trans_status.xml">GentooJP翻訳プロジェクト - 進捗状況</uri>と
-        <uri link="/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>の２つの詳細なドキュメントを用意しています。
+        GentooJPでは、<uri link="/jpmain/trans_status.html">GentooJP翻訳プロジェクト - 進捗状況</uri>と
+        <uri link="/jpmain/translation.html">GentooJP翻訳プロジェクト</uri>の２つの詳細なドキュメントを用意しています。
         なお、この手順はオリジナルドキュメント作成では必要ありません。
         </p>
 	</body>
@@ -465,7 +465,7 @@ xsl取得用のアドレスは将来変更になる可能性があります。
 <section>
 	<body>
 	<p>
-	翻訳・オリジナルドキュメントの作成が終わったら、翻訳ドキュメントは、<uri link="/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>を、オリジナルドキュメントは、<uri link="/jpmain/original-doc.xml">GentooJP オリジナルドキュメントプロジェクト</uri>を参照して、
+	翻訳・オリジナルドキュメントの作成が終わったら、翻訳ドキュメントは、<uri link="/jpmain/translation.html">GentooJP翻訳プロジェクト</uri>を、オリジナルドキュメントは、<uri link="/jpmain/original-doc.html">GentooJP オリジナルドキュメントプロジェクト</uri>を参照して、
 	あなたが作成したすばらしい文書を送信して下さい。<br />
         なお、ドキュメントの確認を<uri link="#doc_chap4">"ドキュメントの確認方法(HTML)"で、行った場合には、</uri>
 	<uri link="#doc_chap4_pre2">jpdoc/test-xml.xmlの変更</uri>を忘れずに元に戻してから、送付してください。<br />

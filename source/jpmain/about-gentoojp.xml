@@ -3,7 +3,7 @@
 
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
-<guide link="/jpmain/about-gentoojp.xml">
+<guide link="/jpmain/about-gentoojp.html">
 
 <title>GentooJPについて</title>
 <author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
@@ -40,15 +40,15 @@
 					<th>内容</th>
 				</tr>
 				<tr>
-					<ti><uri link="/jpmain/original-doc.xml">オリジナルドキュメントプロジェクト</uri></ti>
+					<ti><uri link="/jpmain/original-doc.html">オリジナルドキュメントプロジェクト</uri></ti>
 					<ti>GentooJPのオリジナルドキュメントの企画</ti>
 				</tr>
 				<tr>
-					<ti><uri link="/jpmain/translation.xml">翻訳プロジェクト</uri></ti>
+					<ti><uri link="/jpmain/translation.html">翻訳プロジェクト</uri></ti>
 					<ti>gentoo.orgなどから配布されているドキュメントの翻訳</ti>
 				</tr>
 				<tr>
-					<ti><uri link="/jpmain/project-ebuild.xml">ebuildプロジェクト</uri></ti>
+					<ti><uri link="/jpmain/project-ebuild.html">ebuildプロジェクト</uri></ti>
 					<ti>オリジナルebuildなどの企画</ti>
 				</tr>
 				<tr>
@@ -56,7 +56,7 @@
 					<ti>Webコンテンツの作成、メーリングリスト及びサーバーの管理</ti>
 				</tr>
 				<tr>
-					<ti><uri link="/jpmain/project-gwn.xml">GWN翻訳プロジェクト</uri></ti>
+					<ti><uri link="/jpmain/project-gwn.html">GWN翻訳プロジェクト</uri></ti>
 					<ti>gentoo.orgから毎週発行されているGentoo Weekly Newsletterの翻訳</ti>
 				</tr>
 			</table>
@@ -209,9 +209,9 @@
 
 			<p>
 			GentooJPプロジェクト推進メンバーに参加したい場合、
-			<uri link="/jpmain/about-gentoojp.xml#doc_chap4">gentoojp-misc</uri>メーリングリストにて、立候補をお願いいたします。<br />
+			<uri link="/jpmain/about-gentoojp.html#doc_chap4">gentoojp-misc</uri>メーリングリストにて、立候補をお願いいたします。<br />
 			また"新しいプロジェクト"を提案するなどしたい場合にも、
-			<uri link="/jpmain/about-gentoojp.xml#doc_chap4">gentoojp-misc</uri>
+			<uri link="/jpmain/about-gentoojp.html#doc_chap4">gentoojp-misc</uri>
 			メーリングリストに投稿してください。
 			</p>
 		</body>
@@ -351,7 +351,7 @@
 			<impo>IRCチャンネルでの一般的なマナーを十分お守りください。</impo>
 			<p>
 			IRCクライアントの設定方法などは、<br />
-			UNIX系では、<uri link="/jpdoc/guide-irc-xchat.xml">XChat</uri>、<uri link="/jpdoc/guide-irc-xchat2.xml">XChat2</uri>、Windows系では、<uri link="/jpdoc/guide-irc-limechat.xml">LimeChat</uri>などのドキュメントを参照してください。
+			UNIX系では、<uri link="/jpdoc/guide-irc-xchat.html">XChat</uri>、<uri link="/jpdoc/guide-irc-xchat2.html">XChat2</uri>、Windows系では、<uri link="/jpdoc/guide-irc-limechat.html">LimeChat</uri>などのドキュメントを参照してください。
 			</p>
 		</body>
 		</section>

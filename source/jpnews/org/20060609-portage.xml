@@ -16,7 +16,7 @@
 
 <!-- Alter to your own likings -->
 <p>
-<b>Gentoo <uri link="/proj/en/portage/index.xml">Portageチーム</uri>は、Portage 2.1バージョンが完成し、
+  <b>Gentoo <uri link="http://www.gentoo.org/proj/en/portage/index.xml">Portageチーム</uri>は、Portage 2.1バージョンが完成し、
 テストのためにツリーに追加できたことをアナウンスでき、
 嬉しく思います。</b>
 新機能と主要なバグ修正<uri

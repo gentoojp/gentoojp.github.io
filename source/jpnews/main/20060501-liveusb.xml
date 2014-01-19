@@ -38,7 +38,7 @@ USBからブートするようBIOSが設定されていることを必ず確認�
 
 <p>
 ここまでくれば、
-<uri link="/doc/en/handbook/">Gentooハンドブック</uri>(<uri link="/doc/ja/handbook/">日本語</uri>)から一般的なインストール方法に進むことができるはずです。
+<uri link="http://www.gentoo.org/doc/en/handbook/">Gentooハンドブック</uri>(<uri link="http://www.gentoo.org/doc/ja/handbook/">日本語</uri>)から一般的なインストール方法に進むことができるはずです。
 </p>
 
 

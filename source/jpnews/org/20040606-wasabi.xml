@@ -7,7 +7,7 @@
 <body>
 <p>
 カスタムログ監視ツールである、<uri
- link="/proj/en/infrastructure/wasabi/">Wasabi</uri>の初期公式リリースをお知らせします。
+  link="http://www.gentoo.org/proj/en/infrastructure/wasabi/">Wasabi</uri>の初期公式リリースをお知らせします。
 このツールは当初、私達のインフラサーバ用のログ監視を補助するために開発されました。
 Wasabiは、ユーザが定義した正規表現に適合する部分を監視し、適合した箇所をメールで通知するように設計されています。
 Wasabiはその環境で最も関係のあるものだけについて通知をしてくれるように、ログをフィルタリングする際にシステム管理者に多くの柔軟性を提供します。

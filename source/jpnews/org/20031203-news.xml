@@ -12,8 +12,8 @@ Gentoo Linux(Gentoo Linux 2004)は次のリリースから、年4回のリリー
 詳細な情報は<uri link="http://www.gentoo.org/proj/en/releng/">Roadmap for Gentoo Linux2004</uri>を参照してください。</p>
 
 <p>次に、さらにポピュラーなパッケージ管理システムになるために<b>"portage-ng"の開発がスタートしたことを発表します。</b>
-詳細は<uri link="/proj/en/portage/">Portageプロジェクトページ</uri>と
-<uri link="/proj/en/portage/portage-ng/systemspec.xml">作成中のPortage-ngの仕様ドキュメント</uri>を参照してください。
+  詳細は<uri link="http://www.gentoo.org/proj/en/portage/">Portageプロジェクトページ</uri>と
+  <uri link="http://www.gentoo.org/proj/en/portage/portage-ng/systemspec.xml">作成中のPortage-ngの仕様ドキュメント</uri>を参照してください。
 Portage-ngは真のコミュティの成果となるでしょう。あなたの参加をお待ちしています。</p>
 
 <p><b>そして、catalystです。</b>Gentoo Linux 2004では、LiveCDを含むすべてのリリースは、新しいcatalystビルドテクノロジーを使用して、完全にユーザーが再構築可能なものになります。
@@ -21,6 +21,6 @@ catalystを使用することによって、Gentooユーザーは簡単に自分
 <uri link="http://dev.gentoo.org/~drobbins/catalyst-20031118.tar.gz">
 最新の開発中バージョンのcatalyst</uri>では、stage、GRPセットをAMD64 (64-bitと32-bit x86)、x86、PowerPC上での構築をサポートしています。
 LiveCD/GameCDのビルドに関しては今年の終わりまでにはリリースできる予定です。
-catalystに関する最新の情報は(まだ貧弱ですが)、<uri link="/proj/en/releng/catalyst/">catalyst project pages</uri>で見ることができます。 Enjoy!</p>
+catalystに関する最新の情報は(まだ貧弱ですが)、<uri link="http://www.gentoo.org/proj/en/releng/catalyst/">catalyst project pages</uri>で見ることができます。 Enjoy!</p>
 </body>
 </news>

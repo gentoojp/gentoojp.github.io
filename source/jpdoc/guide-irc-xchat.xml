@@ -3,7 +3,7 @@
 
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
-<guide link="/jpdoc/guide-irc-xchat.xml">
+<guide link="/jpdoc/guide-irc-xchat.html">
 
 <title>IRCクライアントの設定 (XChat編)</title>
 <author title = "著者"><mail link = "dk@kojima.sytes.net">Kojima</mail></author>

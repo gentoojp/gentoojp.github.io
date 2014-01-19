@@ -12,7 +12,7 @@ Gentoo Release Engineering Projectではいくつかのアーキテクチャに�
 <body>
 
 <p>
-<uri link="/proj/en/releng">Release Engineering Project</uri>はいくつかのアーキテクチャに関してメンテナンスリリースを出しました。
+  <uri link="http://www.gentoo.org/proj/en/releng">Release Engineering Project</uri>はいくつかのアーキテクチャに関してメンテナンスリリースを出しました。
 このリリースはメディアに少々変更を加えただけで、新しい機能はありません。
 </p>
 
@@ -36,7 +36,7 @@ x86パッケージCDに関しては、<c>kdegraphics</c>に対するglibの依�
 </ul>
 
 <p>
-メンテナンスリリースのメディアはお好きな<uri link="/main/en/mirrors.xml">Gentoo ミラー</uri>の2004.3のリリースメディアと同じ場所にあります。
+  メンテナンスリリースのメディアはお好きな<uri link="http://www.gentoo.org/main/en/mirrors.xml">Gentoo ミラー</uri>の2004.3のリリースメディアと同じ場所にあります。
 </p>
 
 </body>

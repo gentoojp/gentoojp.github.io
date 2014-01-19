@@ -10,9 +10,9 @@
 <body>
 
 <p>
-特に<uri link="/proj/en/releng">リリースエンジニアリングプロジェクト</uri>が、半年ごとのリリースサイクルを使用する決めたので、Gentooリリース後の変化に対処できるように、<uri link="/proj/en/gdp">Gentooドキュメントプロジェクト</uri>は、Gentooハンドブックのインストールガイドを2つに分離しました。
-1つは<uri link="/doc/en/handbook/2004.3/index.xml">最新のリリース</uri>と密接に関係するネットワークを使用しないインストール方法のためのものです。
-もう一方は全ての利用可能なパッケージの最新版を使用する<uri link="/doc/en/handbook/index.xml">インターネットベース</uri><uri link="/doc/ja/handbook/index.xml">(日本語訳)</uri>のインストール方法ですが、GRPやネットワークを使用しないインストールはサポートしません。
+  特に<uri link="http://www.gentoo.org/proj/en/releng">リリースエンジニアリングプロジェクト</uri>が、半年ごとのリリースサイクルを使用する決めたので、Gentooリリース後の変化に対処できるように、<uri link="http://www.gentoo.org/proj/en/gdp">Gentooドキュメントプロジェクト</uri>は、Gentooハンドブックのインストールガイドを2つに分離しました。
+1つは<uri link="http://www.gentoo.org/doc/en/handbook/2004.3/index.xml">最新のリリース</uri>と密接に関係するネットワークを使用しないインストール方法のためのものです。
+もう一方は全ての利用可能なパッケージの最新版を使用する<uri link="http://www.gentoo.org/doc/en/handbook/index.xml">インターネットベース</uri><uri link="http://www.gentoo.org/doc/ja/handbook/index.xml">(日本語訳)</uri>のインストール方法ですが、GRPやネットワークを使用しないインストールはサポートしません。
 </p>
 
 <p>

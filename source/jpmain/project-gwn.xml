@@ -2,7 +2,7 @@
 <?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 
-<guide link="/jpmain/project-gwn.xml">
+<guide link="/jpmain/project-gwn.html">
 <title>GWN翻訳プロジェクト</title>
 
 <author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
@@ -78,8 +78,8 @@ GWNには、聖書に書かれている言葉、スラング、フランス語�
 <p>
 ドキュメント内で他ドキュメントへのリンクがあり、そのドキュメントに日本語翻訳がある場合には以下のようにしてください。
 <pre caption="他ドキュメントへのリンク">
-&lt;uri link="/doc/en/portage-manual.xml"&gt;Portage Manual&lt;/uri&gt;
-&lt;uri link="/doc/ja/portage-manual.xml"&gt;（日本語訳）&lt;/uri&gt;
+&lt;uri link="/doc/en/portage-manual.html"&gt;Portage Manual&lt;/uri&gt;
+&lt;uri link="/doc/ja/portage-manual.html"&gt;（日本語訳）&lt;/uri&gt;
 </pre>
 </p>
 <p>リンクしている単語（あるいは文）については、固有名詞だと思われる場合は翻訳する必要はありません。固有名詞でない場合や訳したほうが自然だと考えられる場合については翻訳を行ってください。</p>

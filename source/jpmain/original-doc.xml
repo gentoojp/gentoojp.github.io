@@ -141,7 +141,7 @@ Gentoo Linux Projectや翻訳ドキュメントには書かれていないこと
 &lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
 
 &lt;guide link="/contribution/**オリジナルドキュメントのファイル名**"&gt;
-<comment>//たとえば、hoge.xml ならば、&lt;guide link="/contribution/hoge.xml"&gt; としてください。</comment>
+<comment>//たとえば、hoge.xml ならば、&lt;guide link="/contribution/hoge.html"&gt; としてください。</comment>
 
 &lt;title&gt;GentooJP オリジナルドキュメントプロジェクト&lt;/title&gt;
 &#60;author title="Author"&#62;
@@ -167,8 +167,8 @@ GentooJP でのオリジナルドキュメントに関する説明です。
 &lt;/guide&gt;
 </pre>
 <p>ドキュメントの作成については、オリジナルドキュメントにある<uri
-link="/jpdoc/gentoojp-xml-environment.xml">「翻訳とオリジナルドキュメント作成環境の構築ガイド</uri>や
-<uri link="/doc/ja/xml-guide.xml">Gentoo Linux XMLガイド</uri>
+link="/jpdoc/gentoojp-xml-environment.html">「翻訳とオリジナルドキュメント作成環境の構築ガイド</uri>や
+<uri link="http://www.gentoo.org/doc/ja/xml-guide.html">Gentoo Linux XMLガイド</uri>
 も参考にしてください。
 特に「翻訳とオリジナルドキュメント作成環境ガイド」には AxKit での環境構築方法が載っており、
 ドキュメントを書くときには非常に役に立ちます。</p> </body>

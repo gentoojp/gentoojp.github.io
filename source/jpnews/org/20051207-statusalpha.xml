@@ -10,7 +10,7 @@
 <body>
 
 <p>
-<b><uri link="/proj/en/base/alpha/status/status-20051207.xml">Gentoo
+  <b><uri link="http://www.gentoo.org/proj/en/base/alpha/status/status-20051207.xml">Gentoo
 Alpha最新状況</uri>がリリースされました。</b>コアシステムパッケージ 
 (kernel、gcc、glibc…)、作業が進行中のもの(試験的なjavaサポート、
 モジュラー化されたXorg,SELinux...)と今後計画されているもの(Alpha

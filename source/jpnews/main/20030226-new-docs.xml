@@ -7,11 +7,11 @@
 <body>
 <p>
 <b>新しい翻訳ドキュメントが二つ加わりました。</b><p />
-一つは、<uri link="/doc/ja/desktop.xml">Gentoo Linux デスクトップ構築ガイド(翻訳:小玉 博和さん)</uri>です。<br />
+一つは、<uri link="http://www.gentoo.org/doc/ja/desktop.xml">Gentoo Linux デスクトップ構築ガイド(翻訳:小玉 博和さん)</uri>です。<br />
 Summaryを引用します。<br />
 <e>「このガイドは、全目的デスクトップシステムとして、Gentoo Linuxの設定を行うためのものです。特にインストールとX、KDE、GNOME、OSS（サウンド）、Postfix（電子メール）、そして Samba（Unix/Windows相互運用）の環境設定をざっと一通り行います。」</e><p/>
 
-もう一つは<uri link="/doc/ja/gnupg-user.xml">GnuPG Gentoo ユーザーガイド(翻訳：so1さん)</uri>です。<br/>
+もう一つは<uri link="http://www.gentoo.org/doc/ja/gnupg-user.xml">GnuPG Gentoo ユーザーガイド(翻訳：so1さん)</uri>です。<br/>
 こちらもSummaryを引用します。<br />
 <e>「このちょっとしたガイドは安全なコミュニケーションのためのツールであるGnuPGの使い方の基礎を解説します。」</e><p/>
 

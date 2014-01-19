@@ -10,11 +10,11 @@
 <body>
 
 <p>
-Gentoo<uri link="/proj/en/gdp">ドキュメントプロジェクト</uri>の<uri link="/proj/en/gdp/status/status_20050529.xml">最新状況</uri>が発表されました。
-今月は、相当数のバグ修正と、<uri link="/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1">A 
-Portage Introduction</uri>や<uri link="/doc/en/kde-config.xml">KDE
+  Gentoo<uri link="http://www.gentoo.org/proj/en/gdp">ドキュメントプロジェクト</uri>の<uri link="http://www.gentoo.org/proj/en/gdp/status/status_20050529.xml">最新状況</uri>が発表されました。
+  今月は、相当数のバグ修正と、<uri link="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1">A 
+    Portage Introduction</uri>や<uri link="http://www.gentoo.org/doc/en/kde-config.xml">KDE
 Configuration Guide</uri>、<uri
-link="/doc/en/handbook/handbook-mips.xml">Gentoo/MIPS Handbook</uri>などのような大規模な修正が特色となっています。
+link="http://www.gentoo.org/doc/en/handbook/handbook-mips.xml">Gentoo/MIPS Handbook</uri>などのような大規模な修正が特色となっています。
 </p>
 
 </body>
