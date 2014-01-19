@@ -59,7 +59,7 @@
 <a name="doc_chap2">2.</a>ドキュメントの構成</h2>
 <p xmlns="">
 			ここでは、ドキュメントの最低限必要となる項目について解説します。<br>
-			文書の作成にとてもよいガイド、<a href="/doc/ja/xml-guide.xml">Gentoo Linux ドキュメンテーションガイド</a>がありますので、参照してください。
+            文書の作成にとてもよいガイド、<a href="http://www.gentoo.org/doc/ja/xml-guide.xml">Gentoo Linux ドキュメンテーションガイド</a>がありますので、参照してください。
 			GentooJPのドキュメントで、必ず必要となる初期化部及び終了部などは次のとおりです。
 			また、<font class="emphasis">ドキュメントのファイル名、文書のタイトル、作成者のメールアドレス、作成者名、文書の摘要、作成年月日、文書のバージョン</font>は適宜変更する必要があります。<br>
 			ドキュメントのファイル名は、簡潔にその文書の内容が理解できるものが良いでしょう。なお、翻訳ドキュメントの場合は、バージョン番号を変更しないで下さい。オリジナルドキュメントの場合は、バージョンを<font class="code">1.0</font>としてください。<br>
@@ -74,7 +74,7 @@
 &lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
 
 &lt;!--<font class="comment">ドキュメントのファイル名</font>--&gt;
-&lt;guide link="/jpdoc/<font class="input" color="blue">test-xml.xml</font>"&gt;
+&lt;guide link="/jpdoc/<font class="input" color="blue">test-xml.html</font>"&gt;
 
 &lt;!--<font class="comment">ドキュメントのタイトル</font>--&gt;
 &lt;title&gt;<font class="input" color="blue">ドキュメントサンプル文書</font>&lt;/title&gt;
@@ -128,7 +128,7 @@
 </pre></td></tr>
 </table>
 <table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>
-		このサンプル文書の名前はjpdoc/test-xml.xmlです。<a href="/jpdoc/test-xml.xml">実際の表示</a>を確認してみてください。
+		このサンプル文書の名前はjpdoc/test-xml.xmlです。<a href="/jpdoc/test-xml.html">実際の表示</a>を確認してみてください。
 		</p></td></tr></table>
 <h2 xmlns="">
 <a name="doc_chap3">3.</a>ドキュメント作成準備</h2>
@@ -179,7 +179,7 @@ $ <font class="input" color="blue">tar -zxvf www.tar.gz</font>
 <p xmlns="">
 		cvsを利用する方法は、いくつかのコマンドを覚えることでファイルのバージョンを常に最新版にしておけるなど大変便利です。<br>
 		以下に基本的な内容を書きますが、詳細は
-		<a href="/doc/ja/cvs-tutorial.xml">CVSチュートリアル</a>、
+        <a href="http://www.gentoo.org/doc/ja/cvs-tutorial.xml">CVSチュートリアル</a>、
 		<a href="http://sourceforge.jp/cvs/?group_id=190">sourceforge.jp</a>などを参照してください。<br>
 		あなたのホームディレクトリを<font class="code">/home/username</font>、リポジトリは、<font class="code">gentoojp</font>として説明します。
 		</p>
@@ -221,8 +221,8 @@ $ <font class="input" color="blue">cvs -z3 -d:pserver:anonymous@cvs.sourceforge.
 <p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect5">翻訳ドキュメント作成の際に必要となる追加手順 </a></p>
 <p xmlns="">
 	翻訳ドキュメント作成の際には、翻訳状況の確認と翻訳手順を確認してください。
-        GentooJPでは、<a href="/jpmain/trans_status.xml">GentooJP翻訳プロジェクト - 進捗状況</a>と
-        <a href="/jpmain/translation.xml">GentooJP翻訳プロジェクト</a>の２つの詳細なドキュメントを用意しています。
+        GentooJPでは、<a href="/jpmain/trans_status.html">GentooJP翻訳プロジェクト - 進捗状況</a>と
+        <a href="/jpmain/translation.html">GentooJP翻訳プロジェクト</a>の２つの詳細なドキュメントを用意しています。
         なお、この手順はオリジナルドキュメント作成では必要ありません。
         </p>
 <h2 xmlns="">
@@ -461,7 +461,7 @@ xsl取得用のアドレスは将来変更になる可能性があります。
 <h2 xmlns="">
 <a name="doc_chap6">6.</a>ドキュメントの送付方法</h2>
 <p xmlns="">
-	翻訳・オリジナルドキュメントの作成が終わったら、翻訳ドキュメントは、<a href="/jpmain/translation.xml">GentooJP翻訳プロジェクト</a>を、オリジナルドキュメントは、<a href="/jpmain/original-doc.xml">GentooJP オリジナルドキュメントプロジェクト</a>を参照して、
+	翻訳・オリジナルドキュメントの作成が終わったら、翻訳ドキュメントは、<a href="/jpmain/translation.html">GentooJP翻訳プロジェクト</a>を、オリジナルドキュメントは、<a href="/jpmain/original-doc.html">GentooJP オリジナルドキュメントプロジェクト</a>を参照して、
 	あなたが作成したすばらしい文書を送信して下さい。<br>
         なお、ドキュメントの確認を<a href="#doc_chap4">&#8220;ドキュメントの確認方法(HTML)&#8221;で、行った場合には、</a><a href="#doc_chap4_pre2">jpdoc/test-xml.xmlの変更</a>を忘れずに元に戻してから、送付してください。<br>
         送信する前に、文字コードはutf-8、改行コードはLF、xmllintのチェックはもう一度してくださいね。:)
