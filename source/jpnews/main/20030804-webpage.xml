@@ -7,9 +7,9 @@
 <body>
 <p>
 <b>GentooJPのサイトに３つの新しいwebコンテンツが加わりました。</b>
-ひとつめは、Gentoo用語をまとめてみようという<uri link="/jpdoc/gentoo-glossary.xml">Gentoo用語集</uri>、
-ふたつめは、GWNの歴史、Gentooの歴史をひもとく道しるべ<uri link="/jpdoc/gwn-history.xml">GWNヒストリー</uri>、
-そしてGentooJP参加者の方に丁寧にまとめていただいた<uri link="/jpmain/tips.xml">Gentoo Linux tips 集</uri>です。
+ひとつめは、Gentoo用語をまとめてみようという<uri link="/jpdoc/gentoo-glossary.html">Gentoo用語集</uri>、
+ふたつめは、GWNの歴史、Gentooの歴史をひもとく道しるべ<uri link="/jpdoc/gwn-history.html">GWNヒストリー</uri>、
+そしてGentooJP参加者の方に丁寧にまとめていただいた<uri link="/jpmain/tips.html">Gentoo Linux tips 集</uri>です。
 GentooJPでは、Webサイト充実のためのアイデアやお手伝いしていただける方を募集しています。興味のある方は-users ML、-docs ML、IRCなどで
 お伝え下さい。いつでもお待ちしています。
 </p>
