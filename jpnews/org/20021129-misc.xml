@@ -1,16 +1,16 @@
-      <!DOCTYPE html>
-      <html>
-      <head>
-      <title>Redirecting...</title>
-      <link rel="canonical" href="/jpnews/org/20021129-misc.html"/>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      <meta http-equiv="refresh" content="0; url=/jpnews/org/20021129-misc.html" />
-      </head>
-      <body>
-        <p><strong>Redirecting...</strong></p>
-        <p><a href='/jpnews/org/20021129-misc.html'>Click here if you are not redirected.</a></p>
-        <script>
-          document.location.href = "/jpnews/org/20021129-misc.html";
-        </script>
-      </body>
-      </html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Redirecting...</title>
+<link rel="canonical" href="/jpnews/org/20021129-misc.html"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="0; url=/jpnews/org/20021129-misc.html" />
+</head>
+<body>
+  <p><strong>Redirecting...</strong></p>
+  <p><a href='/jpnews/org/20021129-misc.html'>Click here if you are not redirected.</a></p>
+  <script>
+    document.location.href = "/jpnews/org/20021129-misc.html";
+  </script>
+</body>
+</html>
