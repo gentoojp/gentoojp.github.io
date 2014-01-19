@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>13 Jan 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年1月13日号</title>
+<body>
+<p><b><uri link="http://www.gentoo.org/news/en/gwn/20030113-newsletter.xml">今週号のGentoo Weekly Newsletter</uri>(<uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml">日本語版</uri>)では、最新版のgccをあなたのGentoo Linuxでちゃんと動くようにする方法についてお知らせします。</b>さらに次のリリースであるGentoo Linux 1.4についての情報もあります(Portage treeが、<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml">先週</uri>論じた公式のリリースプロセスによる1.4_final/rc3の次の段階への移行に基づきフリーズされる、という情報など)。もちろん最新のBugzillaやPortage Watch、Gentooのセキュリティ関連の更新についての情報も、いつもどおりにお届けします。</p>
+</body>
+</news>
+
+

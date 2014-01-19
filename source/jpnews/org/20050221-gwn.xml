@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005年2月21日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2005年2月21日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>ボストンで開催されたLinux World ExpoでのGentooブースのリポート、FOSDEMとGentoo UKカンファレンスのお知らせ、そしてGentoo RSSフィードに関するおしらせと、今週も<uri link="/news/ja/gwn/20050221-newsletter.xml">Gentoo Weekly Newsletter</uri>はユーザ、開発者に関係なくおもしろい記事が盛りだくさんです。</b>Future Zoneでは、ちょっと変っているハードウェアをGentoo化する過程を紹介しています。いつもおなじみのセクション、Gentoo関連の記事とニュースや、GLSA、Bugzilla統計、新開発者の紹介も！それでは今週のGWNをどうぞ！
+</p>
+
+</body>
+</news>

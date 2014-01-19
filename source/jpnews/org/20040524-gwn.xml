@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>24 May 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年5月24日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040524-newsletter.xml">Gentoo Weekly Newsletter</uri>では、Gentooドキュメンテーションプロジェクトのアップデート情報やGentoo/PPCプロジェクトの組織変更に関するニュースをお届けします。</b>そのほか盛りだくさんのGLSA、コミュニティの話題、前のディレクトリに戻る便利なショートカット法も掲載されています。楽しんで！
+</p>
+</body>
+</news>

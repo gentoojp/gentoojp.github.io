@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>g2boojum(翻訳: Samantha)</poster>
+	<date>26 April 2004</date>
+	<title>Gentoo Linux設計主任のDaniel Robbinsが辞任表明</title>
+<body>
+<p>
+<b>Gentoo Linuxの設計主任(Chief Architect)のDaniel Robbinsが本日、
+開発責任者を辞任することを表明しました。
+D.Robbinsは非営利組織が設立されるまでGentooに留まってくれますが、
+新たに選任される取締役の非営利議会が管理を引き継ぐことになります。</b>
+
+Dainel Robbinsの出発はとても悲しいことです。
+彼が新たな目的に向かって全力を尽くすことを期待し、
+戻って来る為のドアをいつもあけておくように約束します。
+</p>
+</body>
+</news>

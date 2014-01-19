@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>17 Mar 2007</date>
+	<title>オープンソースカンファレンス2007 Tokyoに参加中です</title>
+<body>
+
+<p>
+今回もGnetooJPとして、<uri link="http://www.ospn.jp/osc2007/">オープンソースカンファレンス2007 Tokyo</uri>に参加しています。
+現在、<b>Gentoo on PS3の展示</b>を行っています。
+展示場所は7Fです。エレベータは常に混んでいますので、階段の方が早いかもしれません。頑張って登ってきてください。
+</p>
+
+<p>
+GentooJPの展示内容:
+</p>
+
+<ol>
+<li>Gentoo Linuxの紹介</li>
+<li>Gentoo 2006.1 PS3用　LiveCDの配布</li>
+<li>缶バッチの実費販売</li>
+</ol>
+
+<p>
+それでは、会場でみなさまのご来場をお待ちしています。
+</p>
+
+</body>
+</news>

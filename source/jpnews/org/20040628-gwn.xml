@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>28 June 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年6月28日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040628-newsletter.xml">Gentoo Weekly Newsletter</uri>では、Quadruple Opteronに初めてGentoo Linuxがインストールされたニュース、またドイツ・カールスルーエで開催されたLinuxTagにGentooが出たことについてお伝えします。</b>さらに新しい記事で、Gentooにおけるさまざまなプロジェクトのアップデート情報をお届けするプロジェクトアップデート（今週はインフラ、セキュリティ、リリースエンジニアリングの最新情報です）もお届けします。Portage開発者のMarius Mauchの紹介、コミュニティの話題やlsを使った最近のファイルを探すTipもお見逃しなく。楽しんで！
+</p>
+</body>
+</news>
+

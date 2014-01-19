@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>26 July 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年7月26日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040726-newsletter.xml">Gentoo Weekly Newsletter</uri>では、net-wwwがPortageカテゴリから廃止されるニュースや、9月、または10月はじめに行われる予定のUKのGentoo開発者、ユーザを対象としたミーティングのボランティアの募集を掲載しています。</b>また、Portage、devrel、インフラ、リリースエンジニアリング、そしてtoolsのプロジェクトアップデートや、MIPS開発者Stephen Beckerの紹介もあります。その他Gentooセキュリティ、コミュニティの話題もあることも忘れずに。楽しんで！
+</p>
+</body>
+</news>
+

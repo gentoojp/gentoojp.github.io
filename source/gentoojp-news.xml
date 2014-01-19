@@ -1,0 +1,13 @@
+---
+layout: nil
+permalink: /gentoojp-news.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/gentoojp-news.xsl" type="text/xsl"?>
+
+<rdffeed type="news">
+	<title>GentooJP News</title> 
+	<link>http://www.gentoo.gr.jp/</link>
+	<description>GentooJP News</description>
+	<feeditems />
+</rdffeed>

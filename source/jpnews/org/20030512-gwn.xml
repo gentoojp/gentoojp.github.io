@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota)</poster>
+	<date>12 May 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年5月12日号</title>
+<body>
+<p>
+<b>
+今週の<uri link="/news/ja/gwn/20030512-newsletter.xml">Gentoo Weekly Newsletter</uri>は２つの主要なアナウンスがヘッドラインです。</b>  最初のアナウンスは、<uri link="http://www.supercomputerinc.com">Super Computer, Inc</uri>との新しい協力関係のおかげで、Gentoo LinuxがもうすぐAMD Opteronプラットフォームで利用可能になること。 ２つ目のアナウンスの詳細については、新しい２つのGWNのセクション: <uri link="/news/ja/gwn/20030512-newsletter.xml#doc_chap3">ユーザーストーリー</uri>と<uri link="/news/ja/gwn/20030512-newsletter.xml#doc_chap10">今週の名言</uri>を読み進めてください。楽しんで!
+</p>
+</body>
+</news>

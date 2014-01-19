@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>klieber(翻訳:中野正智)</poster>
+	<date>22 December 2003</date>
+	<title>メーリングリストの不具合</title>
+<body>
+<p>
+メールサーバーがいくつかの技術的な問題でダウンしています。
+現在、できるだけ早く復旧できるようにスポンサーと共に対応中です。
+その間、ユーザーサポートはIRCや<uri link="http://forums.gentoo.org/">Gentoo user forums</uri>を使用してください。</p>
+<p>
+<b>更新:</b>
+先週末Gentooのメーリングリストに発生したネットワーク問題の間、
+問題が解決された後のためにemailはすべて保存されていました。
+そして、本日、バックアップから復旧を行ないました。
+しかし、先週の木曜日と金曜日の講読申し込みが無くなってしまいました。
+その間登録を行なった方は、再度登録をしてください。</p>
+(訳注: これはgentoo.orgのメーリングリストについてです。
+GentooJPのメーリングリストは別なので影響を受けていません。)
+</body>
+</news>

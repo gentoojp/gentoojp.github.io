@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+  <poster>増田 昌也 / shindo</poster>
+  <date>2008-07-06</date>
+  <title>Gentoo Linux 2008.0 リリース</title>
+  <body>
+    <p>
+      <b>2008.0のファイナルリリースが公開されました。</b>
+      コードネーム“It's got what plants crave”（訳注：計画で切望されたものは得た）と名づけられたこのリリースは、
+      <uri link="/proj/en/releng/installer/">インストーラ</uri>のアップデート、
+      ハードウェアサポートの改善、profileの刷新、
+      そして、LiveCDのGNOMEからXfceへの移行など、
+      非常に多くの新機能を含みます。
+      x86やamd64向けのLiveDVDは用意されませんが、
+      将来的には提供されるかもしれません。
+      2008.0はまたすでにebuildで利用できる多くのパッケージのアップデートバージョンも収録しています。
+    </p>
+
+    <ul>
+      <li><b>アップデートされたインストーラ</b>：今回インストーラはLiveCD上のパッケージとebuildを使用し、
+      ネットワークレスインストールのみを行います。
+      また、拡張のための多数の修正と自動パーティション分割を含みます。</li>
+      <li><b>改良されたハードウェアサポート</b>：カーネル2.6.24に移行したことで、
+      2007.0以降にリリースされたハードウェアのための新しいドライバが追加されました。</li>
+      <li><b>profileの刷新</b>：profileを再構築したことで、
+      余分なものの大幅な整理や、開発者のメンテナスと混乱の軽減ができました。
+      あなたにとっての違いは、plofileが現在<path>default-linux/</path>にかわって、
+      <path>default/linux/</path>の下の<path>/usr/portage/profiles/</path>にあることです。
+      詳しくは<uri link="/doc/en/gentoo-upgrading.xml">upgrading guide</uri>を見てください。</li>
+      <li><b>LiveCDのGNOMEからXfceへの移行</b>：スペースを確保するため、
+      LiveCDをより小さなXfce環境に切り替えました。
+      これはLiveCDを使ったバイナリインストールではXfceがインストールされることを意味します。
+      ですが、まだGNOMEやKDEをソースからビルドすることは自由です。</li>
+      <li><b>x86とamd64のLiveDVDがないこと</b>：リリース版を公開するために、
+      LiveDVDの作成に関する問題から、
+      <uri link="/proj/en/releng/">リリースエンジアリングチーム</uri>はLiveDVDを先延ばしすることを決定しました。
+      LiveDVDは今後発表されるでしょう。そのときはお知らせします。</li>
+      <li><b>アップデートされたパッケージ</b>：2008.0リリース版のハイライトは<uri
+      link="/proj/en/portage/">Portage</uri>2.1.4.4、
+      カーネル2.6.24、gcc 4.1.2、glibc 2.6.1の収録です。</li>
+    </ul>
+
+    <p>
+      <uri link="/proj/en/releng/">リリースエンジニアリングチーム</uri>の方々の、
+      2008.0を世に出すための何ヶ月にも渡る大変な仕事に心から感謝します。
+    </p>
+
+    <p>
+      <b>新リリースは
+      <uri link="http://www.gentoo.org/main/en/where.xml">"Get Gentoo!"ページ</uri>から取得してください。</b>
+    </p>
+
+    <p>
+      <uri
+      link="http://forums.gentoo.org/viewtopic-t-699099.html">Discuss
+      this!</uri>
+    </p>
+
+    <p>
+        このリリースニュースは増田 昌也さんに翻訳していただきました。
+        ありがとうございます。
+    </p>
+  </body>
+</news>

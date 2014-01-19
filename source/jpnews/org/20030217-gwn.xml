@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>17 Feb 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年2月17日号</title>
+<body>
+<p><b>GentooのZetaGridフィーバー、新しいrsyncミラー、GNOME 2.2といったところが、<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml">今週のGWN</uri>のトップニュースです。</b>他にもBashの役に立つ小ワザの話や我々の主任KDE開発者であるDan Armakさんのプロフィール、それからさまざまなGentooメーリングリストやWebフォーラムの要約も掲載しています。予定されているGentoo Linux 1.4_finalのリリースについてはニュースがありませんが、来週の更新の準備は万端です。
+</p>
+</body>
+</news>

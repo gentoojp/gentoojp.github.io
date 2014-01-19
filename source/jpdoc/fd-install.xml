@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/fd-install.xml">
+
+<title><i>Gentoo Linux フロッピーインストールガイド</i></title>
+
+<author title="Author"><mail link="makoto@dsb.club.ne.jp">yamakura</mail>
+</author>
+
+
+<abstract>
+このガイドでは、CD-ROMドライブが使えないマシンに、フロッピーディスクを使って
+Gentoo Linux をインストールする方法を解説します。
+</abstract>
+
+<version>1.1</version>
+
+<date>8 February 2003</date>
+
+<chapter>
+ <title>はじめに</title>
+ <section>
+  <body>
+   <p>この文書では<uri link="http://archlinux.org/">Arch Linux</uri>の<uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/">インストール用ブートディスク</uri>を利用してGentoo Linuxをインストールする方法を紹介します。
+   このディスクを使う理由は、特殊なフォーマットを使っていないためWindows環境でも容易にフロッピーに書き込めること、2.4系列のカーネルを使っていること、それとReiserFS、DevFSをサポートしていることです。
+   ただし、非常に残念なことに、Arch Linuxのブートディスクにはbzip2が含まれていません。
+   そのためすこし手順が増えますが、別途bzip2を入手することで対応します。
+   余談ですが、汎用的なブートディスクとして一番多く使われているのは、<uri link="http://www.toms.net/rb/">tomsrtbt</uri>でしょう。
+   Gentoo ForumsのFAQでは<uri link="http://forums.gentoo.org/viewtopic.php?t=8690">tomsrtbtを使ったインストール方法</uri>が紹介されています。
+   また、<uri link="http://www.gentoo.org/doc/en/altinstall.xml">Netbootや既存のLinuxマシンを利用したインストール方法</uri>も文書化されています。</p>
+ </body>
+ </section>
+</chapter>
+<chapter>
+ <title>下準備</title>
+ <section>
+  <title>用意するもの</title>
+  <body>
+   <li>Gentoo Linux インストールガイド…1式</li>
+   <li>フロッピーディスク…3枚</li>
+  </body>
+ </section>
+ <section>
+  <title>フロッピーイメージの取得</title>
+  <body>
+   <impo>この文書では例として<uri link="http://www.ibiblio.org">www.ibiblio.org</uri>からHTTPでファイルをダウンロードする場合を取り上げます。
+   なお、ダウンロードには<c>snarf</c>というツールを使っています。
+   このツールはHTTPだけでなくFTPにも対応していますし、プロクシも利用できます(<c>HTTP_PROXY</c>、<c>FTP_PROXY</c>に設定。大文字ですので注意してください)。
+   Gentoo Linuxの配布ファイルに関しては、<uri link="http://www.gentoo.org/main/en/where.xml">ミラーサイト一覧</uri>を見て、なるべく近いところから適切なプロトコルでダウンロードすることをお薦めします。</impo>
+   <p>以下のURLからブートディスクのイメージや必要なツールをダウンロードしてください。
+   イメージは3つ(<uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/boot.img">Boot</uri>/<uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/root.img">Root</uri>/<uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/modules.img">Modules</uri>)あります。
+   それぞれをフロッピーディスクに書き込んでください。</p>
+   <li>ブートディスクイメージ … <uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/">http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/</uri></li>
+   <li>Windows用のイメージ書き込みツール … <uri link="http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm">http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm</uri></li>
+   <note>既にDOS版のrawrite.exeなどを持っているなら、そちらを利用しても構いません。</note>
+   <p>Windows版のRawWriteを使う場合は、"Floppy drive"でフロッピーを入れたドライブを選択し、"Image file"にダウンロードしたBootイメージを指定して、[Write]ボタンを押してください。
+   書き込みが終わったら、Root/Modulesをそれぞれ同じようにして書き込みます。</p>
+   <p>UNIXやLinuxなどを使っている場合は、次のようにしてフロッピーに書き込みます。</p>
+   <pre caption="ブートディスクの書き込み">
+<comment>/dev/fd0は使っているシステムにあわせて変更してください。</comment>
+<comment>１枚目 (Bootイメージ)</comment>
+# <c>dd if=boot.img of=/dev/fd0</c>
+<comment>２枚目 (Rootイメージ)</comment>
+# <c>dd if=root.img of=/dev/fd0</c>
+<comment>３枚目 (Modulesイメージ)</comment>
+# <c>dd if=modules.img of=/dev/fd0</c>
+   </pre>
+  </body>
+ </section>
+</chapter>
+<chapter>
+ <title>インストール手順</title>
+ <section>
+  <title>ブート</title>
+  <body>
+   <p>PCの電源を入れ、Bootイメージを書き込んだディスクを入れてください。
+   すぐにブートプロンプト(<c>Boot:</c>)が出ますので、Enterキーを押してください。
+   カーネルが読み込まれ、さまざまなデバイスが認識された後、フロッピーを交換するように指示されます。
+   ここでRootイメージを書き込んだディスクに差し替え、Enterキーを押してください。</p>
+   <p>Rootディスクの中身が展開されると、プロンプトが表示されます。
+   Modulesイメージを書き込んだディスクを入れて、次のようにコマンドを入力してください。</p>
+   <pre caption="モジュールファイルのロード">
+# <c>loadmods /dev/floppy/0</c>
+   </pre>
+   <p>これでモジュールをロードする準備ができました。</p>
+   <note>キーマップの変更はできませんので、日本語106/109キーボードなどを使っている場合は、キートップの刻印とは違うキーを押さなければならないことがあります。
+   たとえば、"|"(バー、パイプ記号)をタイプするにはSHIFT+"]"、":"(コロン)をタイプするにはSHIFT+";"(セミコロン)、"_"(下線)をタイプするにはSHIFT+"-"(マイナス記号)、などです。</note>
+  </body>
+ </section>
+ <section>
+  <title>モジュールのロード</title>
+  <body>
+   <p>インストールガイドの「カーネルモジュールのロード」(Load Kernel Modules)を参照してください。</p>
+  </body>
+ </section>
+ <section>
+  <title>ネットワーク環境</title>
+  <body>
+   <p>インストールガイドの「ネットワークの設定」(Configuring Networking)を参照してください。
+   ただし、PPPoE接続およびnet-setupスクリプトは利用できません。</p>
+<!--
+調査中(^^;
+http://www.ibiblio.org/pub/Linux/distributions/archlinux/stable/glibc-2.3.1-1.pkg.tar.gz
+ftp://ibiblio.org/pub/linux/distributions/archlinux/unofficial/rpmunpack-0-1.pkg.tar.gz
+ftp://ibiblio.org/pub/linux/distributions/archlinux/stable/ppp-2.4.1-2.pkg.tar.gz
+http://www.roaringpenguin.com/pppoe/rp-pppoe-3.5-1.i386.rpm
+-->
+  </body>
+ </section>
+ <section>
+  <title>bzip2のインストール</title>
+  <body>
+   <p>Gentoo Linuxは、提供されるファイルの圧縮にbzip2を利用しています。と
+   ころが、Arch Linuxのブートディスクにはbzip2が含まれていません。
+   このため、bzip2を別途入手する必要があります。</p>
+   <pre caption="bzip2のインストール">
+# <c>cd /tmp</c>
+# <c>snarf http://www.ibiblio.org/pub/linux/distributions/archlinux/stable/</c>
+# <c>grep bzip2 index.html</c>
+<comment>bzip2パッケージの名前を確認してください。必要に応じて、以下のバージョン(<e>1.0.2-3</e>)を書き換えてください。</comment>
+# <c>snarf http://www.ibiblio.org/pub/linux/distributions/archlinux/stable/bzip2-<e>1.0.2-3</e>.pkg.tar.gz</c>
+# <c>zcat bzip2-<e>1.0.2-3</e>.pkg.tar.gz | tar xvf - -C /</c>
+   </pre>
+  </body>
+ </section>
+ <section>
+  <title>パーティションの設定</title>
+  <body>
+   <p>インストールガイドの「パーティションの設定」(Partition Configuration)を参照してください。
+   cfdiskコマンドが利用可能です。</p>
+   <p>ここで注意しなければいけないのは、/dev/hda といった一般的に使われているデバイス名が利用できない、ということです。
+   以下に簡単に対応表を示しますので参考にして下さい。</p>
+   <table>
+    <tr>
+     <th>一般的な名前</th>
+     <th>devfsでの名前</th>
+    </tr>
+    <tr>
+     <ti>/dev/hda</ti>
+     <ti>/dev/ide/host0/bus0/target0/lun0/disc</ti>
+    </tr>
+    <tr>
+     <ti>/dev/hda1</ti>
+     <ti>/dev/ide/host0/bus0/target0/lun0/part1</ti>
+    </tr>
+    <tr>
+     <ti>/dev/hdb3</ti>
+     <ti>/dev/ide/host0/bus0/target1/lun0/part3</ti>
+    </tr>
+   </table>
+   <note>hda,hdbはtarget0,target1に対応します。
+   またディスク全体はdisc、パーティションはpart1などに対応します。</note>
+   <pre caption="cfdiskコマンド">
+# <c>cfdisk /dev/ide/host0/bus0/target0/lun0/disc</c>
+   </pre>
+   <warn>いうまでもありませんが、記述を間違えると大変なことになりかねませんので、落ち着いて充分に確認を取りながら作業を進めてください。</warn>
+  </body>
+ </section>
+ <section>
+  <title>パーティションのマウント</title>
+  <body>
+   <p>インストールガイドの「パーティションのマウント」(Mount Partitions)を参照してください。
+   デバイス名に注意してください。</p>
+   <pre caption = "スワップをアクティブにする">
+# <c>swapon /dev/ide/host0/bus0/target0/lun0/part2</c>
+   </pre>
+   <pre caption = "マウントポイントの作成">
+# <c>mkdir /mnt/gentoo</c>
+# <c>mount /dev/ide/host0/bus0/target0/lun0/part3 /mnt/gentoo</c>
+# <c>mkdir /mnt/gentoo/boot</c>
+# <c>mount /dev/ide/host0/bus0/target0/lun0/part1 /mnt/gentoo/boot</c>
+   </pre>
+   <warn>デバイス名の記述に注意してください。</warn>
+  </body>
+ </section>
+ <section>
+  <title>stageファイルのダウンロード</title>
+  <body>
+   <p>必要なステージの圧縮ファイルをダウンロードします。
+   ひょっとしたら、URLが変わっているかもしれませんので、可能ならあらかじめ調べてメモを取ってください。
+   それがダメなら、directory indexを取得して見つけることもできるでしょう。</p>
+   <pre caption="圧縮ファイルの名前を調べる">
+# <c>cd /tmp</c>
+<comment>stage1からインストールするなら</comment>
+# <c>snarf http://www.ibiblio.org/pub/linux/distributions/gentoo/releases/1.4_rc2/x86/x86/stages/</c>
+# <c>grep stage1 index.html</c>
+<comment>stage2か3からインストールするなら</comment>
+# <c>snarf http://www.ibiblio.org/pub/linux/distributions/gentoo/releases/1.4_rc2/x86/<comment>&lt;arch&gt;</comment>/stages/</c>
+# <c>grep stage index.html</c>
+<comment>&lt;arch&gt;に指定できるものは以下の通り: athlon-mp, athlon-xp, athlon, i586, i686, pentium3</comment>
+   </pre>
+   <p>それではファイルをダウンロードしてください。</p>
+   <pre caption="ステージファイルのダウンロード">
+# <c>cd /mnt/gentoo</c>
+<comment>stage1なら、以下のようになるでしょう。(長くなるので折り返しています)</comment>
+# <c>snarf http://www.ibiblio.org/pub/linux/distributions/
+        gentoo/releases/1.4_rc2/x86/x86/stages/stage1-x86-1.4_rc2.tbz2</c>
+<comment>または、</comment>
+# <c>snarf http://www.ibiblio.org/pub/linux/distributions/
+        gentoo/releases/1.4_rc2/x86/<comment>&lt;arch&gt;</comment>/stages/stage2-<comment>&lt;arch&gt;</comment>-1.4_rc2.tbz2</c>
+<comment>または、</comment>
+# <c>snarf http://www.ibiblio.org/pub/linux/distributions/
+        gentoo/releases/1.4_rc2/x86/<comment>&lt;arch&gt;</comment>/stages/stage3-<comment>&lt;arch&gt;</comment>-1.4_rc2.tbz2</c>
+   </pre>
+   <note>もちろん、Gentoo Linux 1.2をインストールすることもできます。
+   その場合は、<uri>http://www.ibiblio.org/pub/linux/distributions/gentoo/releases/1.2/stage1-ix86-1.2.tbz2</uri>をお試しください。</note>
+  </body>
+ </section>
+ <section>
+  <title>圧縮ファイルの展開</title>
+  <body>
+   <p>ここで、圧縮ファイルを<path>/mnt/gentoo</path>に展開します。
+   そのあと、chrootして新しい Gentoo Linux のインストール環境に入っていきます。</p>
+   <impo><c>tar</c>する時は必ず<c>p</c>オプションを使用してください。
+   これを怠ると、いくつかのファイルに誤ったパーミッションを与えてしまいます。</impo>
+
+   <pre caption = "圧縮ファイルの展開">
+# <c>cd /mnt/gentoo</c>
+# <c>bzip2 -dc stage?-*.tbz2 | tar -xvpf -</c>
+# <c>mount -o bind /proc /mnt/gentoo/proc</c>
+# <c>cp /etc/resolv.conf /mnt/gentoo/etc/resolv.conf</c>
+   </pre>
+   <note>Arch Linuxのブートディスクに収められているコマンドの多くは<uri link="http://www.busybox.net">BusyBox</uri>によって提供されています。
+   しかし、このツールはbzip2形式を取り扱うことができません。
+   そのためLiveCDでのインストールとは異なり、上記のようにbzip2とtarをそれぞれ別に実行する必要があります。</note>
+   <pre caption = "chroot 環境に入る">
+# <c>chroot /mnt/gentoo /bin/bash</c>
+# <c>env-update</c>
+Regenerating /etc/ld.so.cache...
+# <c>source /etc/profile</c>
+   </pre>
+
+   <p>このコマンドを実行したあとは、インストールガイドに沿って進めることができます。
+   Gentoo Linuxのインストールをお楽しみください ;)</p>
+  </body>
+ </section>
+</chapter>
+<!--
+<chapter>
+ <title>謝辞</title>
+ <body>
+  <p>まず、ブートディスクの供給元であるArch Linuxのプロジェクトに感謝します。
+  ReiserFSが使いたいんだけどCD-ROMがない、という条件下でのインストールが簡単にできるブートディスクはまだ多くないと思います。
+  また、Arch Linuxを私に紹介してくれたのはGentooJPの千里さんに感謝します。
+  これがなければ、強引にマシンにCD-ROMドライブを繋いでインストールするというつまらない作業になってしまったことでしょう。
+  最後にGentooJP(特にOPNの#gentoo-jaにいるみなさん)に感謝します。
+  彼らの声がなければ、このような文書を書くこともなかったでしょうから。</p>
+  <p>それではみなさん、Happy Gentooing!!</p>
+ </body>
+</chapter>
+-->
+</guide>

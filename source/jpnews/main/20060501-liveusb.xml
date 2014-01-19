@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-05-01</date>
+	<title>「Gentoo Linux LiveUSB HOWTO」の翻訳完了のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/doc/ja/liveusb.xml">Gentoo Linux LiveUSB HOWTO</uri>の翻訳完了のお知らせです。
+</p>
+
+<p>
+日本ではモバイルノートという部類で光学ドライブを搭載していない機種がありますが、このようなノートPCにGentooをインストールするには、別売の光学ドライブを購入したり、ネットワーク経由でインストールを行ったりする必要があります。
+</p>
+
+<p>
+このドキュメントでは、USBメモリを使用してGentooのインストールCDの代わりとして使ってインストールする方法を説明します。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+この手引書では、Gentoo Linux LiveUSBの作成方法、すなわちUSBフラッシュドライブを使用してGentoo LinuxインストールCDをエミュレートする方法について説明しています。これは、CD-ROMドライブが付属していない最新のラップトップにGentoo Linuxをインストールする際、特に有用です。
+</p>
+
+<p>
+このドキュメントでは、 USBフラッシュドライブを使用したGentoo LinuxインストールCDのエミュレートに焦点を当てて説明していますが、デバイス名を合わせればどのような任意のブロックデバイスでも動作するはずです。
+</p> 
+
+<p>
+USBフラッシュドライブを挿入し、コンピュータをブートしてください。その際に、
+USBからブートするようBIOSが設定されていることを必ず確認して下さい。
+全てがうまくいけば、標準のsyslinuxプロンプトが表示されるはずです。
+</p>
+
+<p>
+ここまでくれば、
+<uri link="/doc/en/handbook/">Gentooハンドブック</uri>(<uri link="/doc/ja/handbook/">日本語</uri>)から一般的なインストール方法に進むことができるはずです。
+</p>
+
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/liveusb.xml">Gentoo Linux LiveUSB HOWTO</uri>
+</p>
+
+<p>
+翻訳をしてくださった村上　卓さん、査読をしてくださったみなさん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>Takashi Ota.</poster>
+	<date>6 May 2003</date>
+	<title>記事の掲載</title>
+<body>
+<p>
+<uri link="/jpnews/20030318-articles.xml">ニュース</uri>と、<uri link="http://www.gentoo.gr.jp/ml/misc/msg00062.html">-misc ML</uri>
+で投稿された<uri link="http://www.enterbrain.co.jp/">株式会社エンターブレイン</uri>発行のエンターブレインムック Linux Powerに掲載の<b>萩原さん</b>
+の記事が、GentooJPでご覧いただけるようになりました。関係者の皆様本当にありがとうございます。<uri link="/articles/linuxpower90_97.pdf">(記事;PDF-228KB)</uri>
+チャート図は、僕のお気に入り。楽しんで！
+</p>
+</body>
+</news>

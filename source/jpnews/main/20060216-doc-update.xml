@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>17 February 2006</date>
+	<title>2月度、前半翻訳ドキュメント更新のお知らせ</title>
+<body>
+
+<p>
+1月中旬から2月中旬まで更新されたドキュメントをご紹介します。
+</p>
+
+<p>
+Gentoo2006.0のリリースを控え、次のすべてのアーキテクチャのハンドブックを更新しました。今回の変更で以前ニュースでお知らせしたとおり、stage1、stage2を使ったインストール方法の記述が削除されました。また、未訳でしたネットワーク関連の文書をすべて翻訳いたしました。これで完全なハンドブックとなっております。
+</p>
+<ul>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">x86</uri></li>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-amd64.xml">amd64</uri></li>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc64.xml">ppc64</uri></li>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc.xml">ppc</uri></li>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-sparc.xml">sparc(一部未訳)</uri></li>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-alpha.xml">alpha(一部未訳)</uri></li>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-hppa.xml">hppa(一部未訳)</uri></li>
+<li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-mips.xml">mips(一部未訳)</uri></li>
+</ul>
+
+<p>
+現在のところ、sparc、alpha、hppa、mipsアーキテクチャのハンドブックは、アーキテクチャ依存部分は未訳となっております。該当のハードウェアをお持ちの方で、我こそはという方は、翻訳に立候補していただければ幸いです。
+</p>
+
+<p>
+更新作業、確認作業を行ってくださいました、小林さん、藤中さん、佐藤さん、村上さん、五十嵐さん、松葉さん、シンドウさん、武田さん、ありがとうございました。
+</p>
+
+<p>
+その他、更新されたドキュメントを紹介します。作業を行ってくださったみなさん、ありがとうございました。
+</p>
+<ul>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/dri-howto.xml">ハードウェア3Dアクセラレーションガイド</uri>(r1.27)～小林さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/kde-split-ebuilds.xml">KDE 分割 ebuild ガイド</uri>(r1.10)～小林さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/kde-config.xml">KDE 設定ガイド</uri>(r1.17)～小林さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/guide-localization.xml">Gentoo Linux ローカライズガイド</uri>(r1.35)～小林さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/ati-faq.xml">Gentoo Linux ATI FAQ</uri>(r1.36)～小林さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/keychain-guide.xml">Gentoo Linux keychainガイド</uri>(r1.2)～小林さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/kde-split-ebuilds.xml">KDE 分割 ebuild ガイド</uri>(r1.10)～小林さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/udev-guide.xml">Gentoo udev ガイド</uri>(r1.28)～五十嵐さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/lvm2.xml">Gentoo LVM2 インストール</uri>(r1.17)～五十嵐さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/gentoo-kernel.xml">Gentoo Linuxカーネルガイド</uri>(r1.37)～中野さん
+ </li>
+ <li>
+ <uri link="http://www.gentoo.org/doc/ja/faq.xml">Gentoo Linux よくある質問とその回答(FAQ)</uri>(r1.103)～中野さん
+ </li>
+</ul>
+
+
+</body>
+</news>

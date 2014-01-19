@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>小町 守</poster>
+	<date>12 March 2004</date>
+	<title>メーリングリスト配送一時停止のお知らせ</title>
+<body>
+<p>
+ただいま Gentoo 日本ユーザ会では順次ウェブサーバ、
+メールサーバなどの入れ替えを行なっています。
+つきましては、今週末(13日-14日)にかけて GentooJP
+メーリングリストを運営しているサーバの移転を予定しており、
+2日間程度メーリングリストに投稿されたメールの配信が停止します。
+</p>
+
+<p>
+メーリングリストの配送停止中も普段通り
+<uri link="http://www.gentoo.gr.jp/">http://www.gentoo.gr.jp/</uri>
+は見られますし、
+<uri link="http://wiki.gentoo.gr.jp/">GentooJP Wiki</uri>
+や
+<uri link="http://ebuild.gentoo.gr.jp/">Ebuild uploader</uri>、
+それに
+<uri link="http://diary.gentoo.gr.jp/">Gentoo 航海日誌</uri>
+は投稿・閲覧できますので、期間中はそちらをご活用ください。
+</p>
+
+<p>
+ご迷惑をおかけしますが、よろしくお願いします。
+</p>
+</body>
+</news>

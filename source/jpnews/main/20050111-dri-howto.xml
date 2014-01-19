@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>11 Jan 2005</date>
+	<title>「ハードウェア3Dアクセラレーションガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+「ハードウェア3Dアクセラレーションガイド」の翻訳が完了しました。
+</p>
+
+<p>
+本文より引用:
+</p>
+<p>
+「ハードウェア3Dアクセラレーションを使うと、3次元表現をする際に、貴重なCPUリソースを使う代わりにビデオカードの上のグラフィックスプロセッサーを使うようになります。」
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/dri-howto.xml">ハードウェア3Dアクセラレーションガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林弘樹さん、お疲れさまでした。
+</p>
+</body>
+</news>

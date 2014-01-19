@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="plans">
+	<poster>drobbins(翻訳:Takashi Ota)</poster>
+	<date>25 June 2003</date>
+	<title>Gentoo Linux... into the future</title>
+<body>
+<p>
+<b>Gentoo Linux人気の急上昇は(その証拠に
+<uri link="http://www.novell.com/linux">Novell.com</uri>の投票でRed HatにつづきGentoo
+Linuxが２番目にランクされています)自らのプロジェクトにたいして自ら
+挑むという位置を作り上げました。</b> </p>
+<p>
+この挑戦に打ち勝つために、Gentooは組織化される
+必要があります。このため、新しく
+運営組織提案(<b>草案</b>段階)が作成され、ここで<uri
+link="/doc/en/management-structure.xml">公開討論のためにオンラインで利用する
+ことができます</uri>。 この新しい運営組織は、正式なものとなれば、重大な責任を明らかにすることで
+Gentooの自らへの挑戦、そして
+各種ユーザーコミュニティとのコミュニケーションへの素早く持続的な対応を
+可能にするでしょう。</p>
+
+<p>また<uri
+link="http://article.gmane.org/gmane.linux.gentoo.devel/9539">gentoo-dev
+メーリングリスト投稿</uri>を読んで下さい。それは新しい運営組織提案に関してあなたが抱いている質問への
+助けとなるかもしれません。</p>
+
+<note>Gentoo LinuxはNovell.comの投票で現在<b>第１位</b>です。
+公平にみれば、投票がこのニュースで報じられる前はRed Hatが第１位でGentooは第２位であり、
+いまの投票状況より現実的な状況であると信じています。
+</note>
+
+</body>
+</news>

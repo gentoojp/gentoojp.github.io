@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota)</poster>
+	<date>26 May 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年5月26日号</title>
+<body>
+<p>
+<b>
+<uri link="/news/ja/gwn/20030526-newsletter.xml">戦没者追悼記念日のGWN</uri>はGentoo Linuxオレゴン大学ミラーサーバーの問題に関する重要な記事</b>とGNOME開発者の募集を一緒にお届けします。さらに、Gentoo Linuxについて最近報じられた記事のハイライトについても。楽しんで。
+</p>
+</body>
+</news>

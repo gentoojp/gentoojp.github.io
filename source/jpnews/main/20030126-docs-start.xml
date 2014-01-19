@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoojp="yes" category="gentoojp">
+	<poster>Takashi Ota.</poster>
+	<date>26 Jan 2003</date>
+	<title>ドキュメントプロジェクトについて</title>
+<body>
+<p>
+<b>たくさんの方にご協力を頂いている翻訳・オリジナルドキュメントプロジェクトは、新しい管理運営に移行します。</b> <br />
+まず、www.gentoo.gr.jp 内に、ドキュメントの取り扱い、プロジェクトへの参加方法など全般について書かれた<uri link="/jpmain/docs-guide.xml">"GentooJPドキュメント"</uri>、
+それぞれのプロジェクトで進行状況を確認するための、<uri link="/jpmain/translation.xml">"GentooJP翻訳プロジェクト"</uri>、
+<uri link="/jpmain/docs-list.xml">"オリジナルドキュメントリスト"</uri>の３つのページが新たに作成されています。<br />
+また、ドキュメント応募の受付や議論する場として<b>Document Mailing List</b>を開設します。<br />
+今後とも、翻訳・オリジナルドキュメントプロジェクトへのご協力をよろしくお願いします。
+</p>
+</body>
+</news>

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>klieber (翻訳：Samantha)</poster>
+	<date>19 July 2004</date>
+	<title>net-wwwご隠居</title>
+<body>
+<p>
+2004年8月の2週目に私達はPortageツリーのnet-www配下にあるパッケージを全て新しいホームに移動します。
+net-wwwは元来の目的より大きくなってしまい、ユーザがパッケージを検索する際に新しいカテゴリを追加した方が容易になるでしょう。
+</p>
+<p>
+全パッケージリストは<uri link="http://dev.gentoo.org/~stuart/www-split.txt">ここから</uri>御利用になれます。
+</p>
+<p>
+<b>あなたがしなければならないことは:</b>
+</p>
+<p>
+Portageは、あなたが次回「emerge -u」を実行する際に自動的にアップグレードされます。
+しかし、「/etc/portage/package.*」については新しいカテゴリを参照する用に手動で修正する必要があります。
+</p>
+</body>
+</news>

@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-05-01</date>
+	<title>「Gentoo LDAP-DNSガイド」の翻訳完了のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/doc/ja/ldapdns-guide.xml">Gentoo LDAP-DNSガイド</uri>の翻訳完了のお知らせです。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+ldapdnsとは、DNSサービスをネットワークに提供してくれる軽量なサーバです。DNSサービスがあれば、中央管理されたルールのもとでホスト名を管理できます。また、それはシステムの追加/削除、もしくはホスト名が変更される度に発生する退屈な/etc/hostsの更新作業から開放してくれます。
+</p>
+
+<p>
+ldapdnsパッケージは、LDAPサービスを使用し全てのDNSレコードを格納します(簡単に説明すれば、 DNSレコードとはホスト名とIPアドレスを1行で表現します)。 LDAPとは、階層的に表されたナレッジベース(ディレクトリ)から情報を取得するための標準プロトコルです。 Linuxで最もよく知られたLDAPサービスには、無償のLDAP実装であるOpenLDAPがあります。
+</p> 
+
+<p>
+この手頃な小ガイドにより、最小限の労力でDNSサービスをネットワークにセットアップできるはずです。
+</p>
+
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/ldapdns-guide.xml">Gentoo LDAP-DNSガイド</uri>
+</p>
+
+<p>
+翻訳をしてくださった村上　卓さん、査読をしてくださったみなさん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:中野正智)</poster>
+	<date>24 October 2003</date>
+	<title>Gentoo Linuxはバーチャルホスティングウェブサイトのサポートを向上します。</title>
+<body>
+<p>
+Gentoo Linuxプロジェクトは1つ以上のwebサイトをGentoo Linuxで使用することをより容易にするために、Apacheとwebベースのパッケージの最新版を数週間以内にリリースします。
+
+この変更の一部として、webサイトが置かれる'htdocs'ディレクトリのデフォルトが<path>/home/httpd</path> から <path>/var/www/localhost</path>へ変更になります。そして、複数のwebサイトをサポートを同時にする必要のあるサーバーのために、新しいツール<c>webapp-config</c>と<c>vhost-config</c>が、また'vhosts' USEフラグがwebベースアプリケーションとバーチャルホストを管理・インストールするのを支援するために導入されます。
+</p>
+
+<p>
+この技術全体の詳細は<uri
+link="http://www.gentoo.org/proj/en/glep/glep-0011.html">GLEP #11</uri>で見ることができます。近いうちにwebサーバーとバーチャルホストのガイドと、webベースパッケージ用のebuildの書き方を説明した新しい開発者用ドキュメントを出す予定です。
+</p>
+</body>
+</news>

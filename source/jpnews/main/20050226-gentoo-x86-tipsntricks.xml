@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>26 Feb 2005</date>
+	<title>Gentoo/x86 インストールの Tips &amp; Tricksの翻訳が完了しました</title>
+<body>
+
+<p>
+Gentooのインストールに関する情報は<uri link="http://www.gentoo.org/doc/ja/handbook/">ハンドブック</uri>の方へ集積される方針なのですが、まだまだ未知の小技や裏技が存在しています。そんなちょっと気の利いた技をサポートするのが<uri link="http://www.gentoo.org/doc/ja/gentoo-x86-tipsntricks.xml">Gentoo/x86 インストールの Tips &amp; Tricks</uri>になります。
+このガイドでは、ソフトウェアRAIDやATA RAIDを使用した場合のインストール方法など、一風変わった<uri link="http://www.gentoo.org/doc/ja/handbook/">ハンドブック</uri>ではサポートしていない部分を紹介しています。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+このドキュメントはGentoo/x86のインストールに関する様々なtips and tricksを扱っています。 このドキュメントには、たくさんの情報がつめこまれています。 そしてこのことは、このtips and tricksがインストールガイドに対する追加情報になりますが、代替にはならないことを意味しています。
+</p>
+
+<p>
+多くの人はコンパイル中にシステムから離れたいと思います。 皆を信じることができない公共の環境でインストールをするといった場合これはかなり難しいです。 もしそのようならば、コンパイルをバックグラウンドで行い全てのターミナルからログアウトしたいでしょう。 
+</p>
+
+<p>
+このための様々な解決方法があります。 最初のものはscreenを使うことです。 LiveCDで起動したら、rootのパスワードを設定してscreenセッションを起動します。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/gentoo-x86-tipsntricks.xml">Gentoo/x86 インストールの Tips &amp; Tricks</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、お疲れさまでした。
+</p>
+</body>
+</news>

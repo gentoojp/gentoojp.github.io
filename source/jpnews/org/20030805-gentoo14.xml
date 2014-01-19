@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>avenj(翻訳:萩原佳明)</poster>
+	<date>05 August 2003</date>
+	<title>Gentoo Linux 1.4</title>
+<body>
+<p>
+<b>Gentoo Linux 1.4が公開されました。</b>1.4には、カーネルの自動作成、
+CFLAGSの生成、GRP(Gentoo Reference Platform)が含まれます。ネットワークが無い状態でのインストールも可能です。
+各ステージやLiveCDは、
+<uri link="http://www.gentoo.org/main/en/mirrors.xml">ミラー</uri>から入手できます。
+</p>
+</body>
+</news>

@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2004年11月8日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2004年11月8日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+今週の<uri link="/news/ja/gwn/20041108-newsletter.xml">GWN</uri>のトップニュースは第1回Gentooユーザアンケートの結果をお届けします。イタリアのGentooユーザと開発者は、11月27日に開催される"Gentoo-Day"を心待ちにしているでしょう。他には、gentoo-userとgentoo-devのダイジェスト、クリーンなシステムを維持する便利な裏技、またGentoo関連情報セクションからはちょっと変ったレビューをお届けします。今週は新しく4人の開発者がGentooチームに仲間入りして、残念ながら1人が去りました。</p>
+
+</body>
+</news>

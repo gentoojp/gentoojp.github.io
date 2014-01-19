@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>20 Aug 2005</date>
+	<title>「Fluxbox設定ガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/fluxbox-config.xml">Fluxbox設定ガイド</uri>です。
+ご存知のように、Fluxboxは、Linuxで使用できるウィンドウマネージャの1つで、KDEやGNOMEに比べ、機能を必要最低限に絞ることで軽快な動作を実現しています。また、たくさんの機能追加用のプログラムも提供されています。KDEやGNOMEのような統合環境を使いたいけど、PCの能力的に厳しい方、軽量と呼ばれるウィンドウマネージャは、機能が不足していてイマイチと思われる方は、試してみてはいかがでしょうか？
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+このガイドは、Fluxboxを初めて使う人、好奇心のある人、GentooのFluxboxでより多くのことを体験したいだけの人が対象です。 また、Fluxboxでうまく動作するサードパーティ製プログラムを使って機能を増やす方法(完全に自由選択)も説明します。
+</p>
+
+<p>
+Gentooは、Fluxboxを素早く簡単にインストールできるようebuildを提供しています。
+GnomeやKDE、Fluxboxといったウインドウマネージャに「互換性」を提供する<c>gnome</c>や<c>kde</c>のようなUSEフラグをGentooは提供していますが、
+著者の経験ではこれらが必要になったことはありません。
+qt、gtk+、あるいはKDE/GNOMEユーティリティをお望みなら、自由にemergeして独立に設定できます。
+例えば、著者はFluxboxでk3b KDE CD-R(W)焼きユーティリティを使っています。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/fluxbox-config.xml">http://www.gentoo.org/doc/ja/fluxbox-config.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、池田 健吾 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

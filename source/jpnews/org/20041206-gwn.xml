@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2004年12月13日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2004年12月6日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>今週の<uri link="/news/ja/gwn/20041206-newsletter.xml">Gentoo Weekly Newsletter</uri>は、2ヶ所で開催される開発者ミーティングのお知らせと、Gentoo 2004.3のメンテナンスリリースがトップニュースです。Future Zoneの"USBスティックでGentooを"では、Gentooプロジェクトから派生したUSBメモリから起動するGentoo非公式プロジェクトを紹介します。</b>Gechi (Gentoo Channel Italia)からはPratoでのGentooDayの報告、世界のGentooではヨーロッパのニュースを、またZDNetに取り上げられたGentoo Embeddedプロジェクトと2005.0リリースの最新記事を。そしてTips and Tricksでは、ベテランUnixユーザには懐かしいかもしれない、あのCompose Key機能を取り上げています！
+</p>
+
+</body>
+</news>

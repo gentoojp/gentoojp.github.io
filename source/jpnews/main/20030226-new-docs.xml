@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>26 February 2003</date>
+	<title>翻訳ドキュメント追加</title>
+<body>
+<p>
+<b>新しい翻訳ドキュメントが二つ加わりました。</b><p />
+一つは、<uri link="/doc/ja/desktop.xml">Gentoo Linux デスクトップ構築ガイド(翻訳:小玉 博和さん)</uri>です。<br />
+Summaryを引用します。<br />
+<e>「このガイドは、全目的デスクトップシステムとして、Gentoo Linuxの設定を行うためのものです。特にインストールとX、KDE、GNOME、OSS（サウンド）、Postfix（電子メール）、そして Samba（Unix/Windows相互運用）の環境設定をざっと一通り行います。」</e><p/>
+
+もう一つは<uri link="/doc/ja/gnupg-user.xml">GnuPG Gentoo ユーザーガイド(翻訳：so1さん)</uri>です。<br/>
+こちらもSummaryを引用します。<br />
+<e>「このちょっとしたガイドは安全なコミュニケーションのためのツールであるGnuPGの使い方の基礎を解説します。」</e><p/>
+
+なお、翻訳プロジェクトでは随時翻訳をして頂けるかたを募集しています。<br/>
+詳しくは<uri link="/jpmain/translation.xml">こちら</uri>に記述していますので、よろしくお願いします。
+
+</p>
+</body>
+</news>

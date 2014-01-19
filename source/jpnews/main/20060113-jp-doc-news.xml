@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding="utf-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>13 January 2006</date>
+	<title>翻訳されたドキュメントのお知らせ</title>
+<body>
+<p>
+以下のドキュメントを更新しました。
+</p>
+
+ <ul>
+   <li><uri link="http://www.gentoo.org/doc/ja/alsa-guide.xml">Gentoo Linux ALSA ガイド(2.20)</uri></li>
+   <li><uri link="http://www.gentoo.org/doc/ja/migration-to-2.6.xml">Gentoo Linux 2.6完全移行ガイド(0.2.11)</uri></li>
+   <li><uri link="http://www.gentoo.org/doc/ja/nvidia-guide.xml">Gentoo Linux nVidiaガイド(1.16)</uri></li>
+   <li><uri link="http://www.gentoo.org/doc/ja/dri-howto.xml">ハードウェア3Dアクセラレーションガイド(1.0.14)</uri></li>
+   <li><uri link="http://www.gentoo.org/doc/ja/gentoo-x86-tipsntricks.xml">Gentoo/x86 インストールの Tips &amp; Tricks(1.9)</uri></li>
+   <li><uri link="http://www.gentoo.org/doc/ja/gentoo-x86-quickinstall.xml">Gentoo Linux x86クイックインストールガイド(2.8)</uri></li>
+   <li><uri link="http://www.gentoo.org/doc/ja/java.xml">Gentoo Java ガイド</uri></li>
+ </ul>
+
+<p>
+特に<uri link="http://www.gentoo.org/doc/ja/alsa-guide.xml">Gentoo Linux ALSA ガイド(2.20)</uri>は、80%以上、書き直されたドキュメントの翻訳ですから、ALSAの設定に悩まれている方は一読されてみてはいかがでしょうか？
+</p>
+
+<p>
+差分更新をしてくださった小林さん、確認作業をしてくださった、真藤さん、松葉さん。お疲れさまでした。
+</p>
+
+</body>
+</news>

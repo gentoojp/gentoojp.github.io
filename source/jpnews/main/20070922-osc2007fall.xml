@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>Kojima</poster>
+	<date>22 Sep 2007</date>
+	<title>オープンソースカンファレンス2007 Tokyo/Fallに出展します。</title>
+<body>
+
+<p>
+今回もGnetooJPとして、<uri link="http://www.ospn.jp/osc2007-fall/">オープンソースカンファレンス2007 Tokyo/Fall</uri>に参加します。
+※今までのカンファレンスとは会場が異なるので要注意。<uri link="http://www.pio.or.jp/plaza/access/index.htm">地図はこちら</uri>。
+GentooJPとしては、10/6(土)のみの参加予定です。
+今回は展示のみの参加で、セミナーは実施しません。
+展示・配布は以下を予定しています。
+
+今回の会場は物販禁止らしいので、Gentooバッジの実費おすそ分けはナシの予定です。
+</p>
+
+<p>
+GentooJPの展示内容:
+</p>
+
+<ol>
+<li>Gentoo Linuxの布教活動</li>
+<p>Gentoo LinuxをインストールしたPCの展示と紹介チラシを配布する予定です。</p>
+<li>Gentoo Bugday出張所の開催（バグつぶすよ）</li>
+<p>10/6がGentoo Bugdayなので、現地でもりもりバグ潰しを行えたらいいなぁと思ってます。
+本家Developerが1人以上参加しますので、「ここ腐ってんだけど」等あればビシバシ指摘してください。</p>
+<li>Gentoo Linux日本語化インストーラ搭載LiveCDの配布（予定）</li>
+<p>現在制作中で間に合うかどうかわかりませんが、日本語に対応したインストーラーを搭載した非公式LiveCDを配布する予定です。
+間に合わなければ2007.0のLiveCDを配布します。
+</p>
+</ol>
+
+<p>
+それでは、会場でみなさまのご来場をお待ちしています。
+</p>
+
+</body>
+</news>

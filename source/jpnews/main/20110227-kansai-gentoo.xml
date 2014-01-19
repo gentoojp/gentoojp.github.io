@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>naota</poster>
+	<date>27 Feb 2011</date>
+	<title>FYI: 関西Gentoo勉強会</title>
+<body>
+
+<p>
+	2011/03/05 に大阪学院大学 2号館3F 02-03-02教室にて「関西Gentoo勉強会」を開催します。
+	まだまだ参加枠に空きがありますので、ご興味のある方はご参加ください。
+	詳細は、<uri link="http://partake.in/events/e65d37df-fc62-4c0d-b3f7-38093cb1dcdb">こちら</uri>をご覧ください。
+</p>
+
+</body>
+</news>

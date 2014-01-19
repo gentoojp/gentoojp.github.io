@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="gentoo">
+	<poster>Corey Shields</poster>
+	<date>2005-03-26</date>
+	<title>Paypalを利用してのGentooへの寄附の復活のお知らせ</title>
+<body>
+<p>
+<uri link="http://www.gentoo.org/foundation/en/">Gentoo
+Foundation</uri>は、Paypalを利用した寄附リンクがwww.gentoo.orgのページに復活したというお知らせができ嬉しく思います。
+このリンクで、望むだけの寄附をFoundationへの直接送ることができるようになりました。
+Foundationの責任の1つは、Gentooの資金的ニーズを管理することであり、
+Gentoo Linux開発を促進するための資金提供のサポートをすることです。
+資金的ニーズに関するより詳細な情報については、<uri
+link="http://www.gentoo.org/foundation/en/funds.xml">http://www.gentoo.org/foundation/en/funds.xml</uri>を参照してください。
+Foundationが抱える、最も早急に必要な資金的ニーズは、Foundationの銀行口座の繰越残高を500ドル以上にすることです(これは銀行口座を維持する最低残高になります)。
+ユーザや団体へに寄附をしてもらえるようにお願いするつもりです。みなさんができる、ほんのちょっとの寄附でもかまいません！ Gentoo Linuxへの引き続きのサポートをよろしくお願いいたします。
+</p>
+</body>
+</news>

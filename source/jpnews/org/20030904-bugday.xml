@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>iggy(翻訳:中野正智)</poster>
+	<date>4 September 2003</date>
+	<title>第２回BugDayが９月６日に開催されます</title>
+<body>
+<p><b>
+先月のGentoo BugDayがあのような大成功だったので、次の土曜日(9月6日）に第二回を行なうことになりました。またこれから先、毎月第一土曜日に行なうことになります。</b>
+irc.freenode.netの<b>#gentoo-bugs</b>チャンネルに来て、バグを潰し、このディストリビューションの質を高めるのを手伝ってください。そして、またこれは、開発者・ユーザーがお互いを知る絶好の機会でもあります。
+</p>
+</body>
+</news>

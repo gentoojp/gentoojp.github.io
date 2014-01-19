@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding="utf-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>TANABE Ken'ichi</poster>
+	<date>02 November 2005</date>
+	<title>2005/11/06 停電による macaroni の全サービス一時停止</title>
+<body>
+<p>
+macaroni.gentoo.gr.jp を収容しているビルが下記の日程で停電
+することにともない、 macaroni で提供してる全サービスが一時
+停止します。
+</p>
+
+<h4>停電時間</h4>
+<p>2005/11/06 09:00 ~ 20:00</p>
+
+<h4>影響範囲</h4>
+ <ul>
+   <li>http://wiki.gentoo.gr.jp/</li>
+   <li>http://diary.gentoo.gr.jp/</li>
+   <li>http://ebuild.gentoo.gr.jp/</li>
+   <li>http://bugs.gentoo.gr.jp/</li>
+   <li>http://gonzui.gentoo.gr.jp/</li>
+   <li>http://dev.gentoo.gr.jp/</li>
+   <li>rsync://ebuild.gentoo.gr.jp/gentoojp-portage</li>
+ </ul>
+
+<p>
+なお、 galapagos.gentoo.gr.jp で提供している下記のサービスはこの影響を受けません。
+</p>
+
+<h4>影響を受けないサービス</h4>
+<ul>
+ <li>http://www.gentoo.gr.jp/</li>
+ <li>http://mirror.gentoo.gr.jp/</li>
+ <li>ml.gentoo.gr.jp (メーリングリスト)</li>
+ <li>rsync://rsync.gentoo.gr.jp/gentoo-portage (aka rsync2.jp.gentoo.org)</li>
+</ul>
+<p>
+長時間に及びますが、ご協力をお願い致します。
+</p>
+</body>
+</news>

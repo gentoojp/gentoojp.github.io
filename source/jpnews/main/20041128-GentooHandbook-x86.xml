@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>28 Nov 2004</date>
+	<title>Gentoo Linux 2004.3 x86 ハンドブックの翻訳が完了!</title>
+<body>
+
+<p>
+お待たせしました！ 日本のGentooフリーク待望の「<uri link="http://www.gentoo.org/doc/ja/handbook/">Gentooハンドブック</uri>」の1つ、「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">Gentoo Linux 2004.3 x86 ハンドブック</uri>」の翻訳が完了しました。手前みそですが、GentooJPドキュメントプロジェクトでは、Gentoo Linuxを利用する日本の広範なユーザが満足できるレベルに翻訳ができたと自負しています:)
+</p>
+
+<p>
+さて、ハンドブックは現在で完了というわけではなく、まだまだ成長していきます。そして現在は以下の3部構成となっています。
+</p>
+<ul>
+  <li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</uri></li>
+  <li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</uri></li>
+  <li><uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3&amp;chap=0">Portageを使いこなす</uri></li>
+</ul>
+
+<p>
+<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentooをインストールする</uri>は、Gentooをセットアップする方法が事細かに説明されています。それは単なるインストールの解説書という範囲を超え、Linuxを使う上で絶対にしておくべき基礎的なことがらをインストールという実作業に沿って説明するLinuxビギナー向けの学習書という趣もあると言えるでしょう。たとえば、<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=3">ネットワーク設定</uri>では、ADSLでの接続方法やVPNでの接続方法、果てはネットワークの基礎知識を説明してのマニュアル設定を解説していますし、<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=4">ディスクの準備</uri>では、ハードディスクを利用するためのfdiskの使い方から、ファイルシステムの話まで一通り説明します。そして<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=7">カーネル設定</uri>では、一般的に初心者には難しいと言われているカーネルのビルド方法を手取足取り解説しています。このようにインストール作業が終わった時点で、あなたはLinuxの基本的な仕組みを身につけていることでしょう。
+</p>
+
+<p>
+さて、インストールは完了しました。しかし、日々Gentooを使う上での操作方法については、何も教えていませんでしたね。この<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=2&amp;chap=0">Gentooを使いこなす</uri>では、Gentooシステムを快適にする方法を説明していきます。
+</p>
+
+<p>
+そして、Gentoo Linuxを少しは使いこなせるようになった中級ユーザは、Portageをもっと細かく制御したいと思っていることでしょう。この<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=3">Portageを使いこなす</uri>では、Portageの詳細に踏み込んだ内容となっており、ソフトウェア毎のUSEフラグの設定方法や、Portageの追加ツールの使い方、Portageを通して使用するebuildを直接利用する方法などを解説し、あなたをGentooの上級ユーザへと引き上げてくれることでしょう。
+</p>
+<p>
+以下、本文より抜粋:
+</p>
+
+<p>
+Gentooハンドブックの最終目標は、Gentoo Linuxのあらゆる面について説明する一貫性のあるドキュメントを作成することです。一つのドキュメントで、あらゆるアーキテクチャ、すべてのインストール方法、すべてのユーザに対応するように、既存のガイドを一冊の整合性のあるブックにまとめます。
+</p>
+
+<p>
+ハンドブックに翻訳ミスやタイポがあれば、<uri link="http://bugs.gentoo.gr.jp/">BugzillaJP</uri>にて、Documentプロダクト、Gentoo Documentationの翻訳コンポーネントでそのバグを報告してください。担当者が迅速に対処いたします。もし、本家ドキュメントにミスを発見された方は、<uri link="http://bugs.gentoo.org/">Gentoo Linux Bugzilla</uri>にて、Docs-userカテゴリ、Handbookコンポーネントでその間違いの報告を行ってください。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/handbook/">Gentooハンドブック</uri>と<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">Gentoo Linux 2004.3 x86 ハンドブック</uri>
+</p>
+
+<p>
+翻訳を担当した以下のみなさん、お疲れさまでした。
+</p>
+<ul>
+  <li>おぎうち やすお さん</li>
+  <li>わただ ゆうすけ さん</li>
+  <li>せーいち さん</li>
+  <li>五十嵐 正尚 さん</li>
+  <li>武田 洋之 さん</li>
+  <li>村上 誠 さん</li>
+  <li>小林 弘樹 さん</li>
+  <li>真藤 直観 さん</li>
+  <li>萩原 佳明 さん</li>
+  <li>中野 正智 さん</li>
+  <li>飴谷 茂寛</li>
+</ul>
+
+</body>
+</news>

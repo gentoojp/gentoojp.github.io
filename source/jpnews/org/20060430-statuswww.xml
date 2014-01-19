@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+<poster>Curtis Napier(翻訳:Akira KAKINOHANA)</poster>
+<date>2006-04-30</date>
+<title>www.gentoo.orgサイトの更新</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>
+来る設計変更にあわせて、以下のページが更新されました。ほと
+んどが内部書式の変更ですが、コンテンツが変わっているのも存在します。
+</b>
+エラー等が出る場合は、www@gentoo.org までお問い合わせ下さい。
+</p>
+
+<p>
+<br />
+<br />
+<br />
+</p>
+
+<ul>
+  <li><uri link="/main/en/about.xml">About Gentoo</uri></li>
+  <li><uri link="/main/en/philosophy.xml">Gentoo Philosophy</uri></li>
+  <li><uri link="/main/en/contract.xml">Social Contract</uri></li>
+  <li><uri link="/main/en/graphics.xml">Logos and Themes</uri></li>
+  <li><uri link="/main/en/irc.xml">IRC Channels</uri></li>
+  <li><uri link="/main/en/lists.xml">Mailing Lists</uri></li>
+  <li><uri link="/main/en/mirrors.xml">Download Mirrors</uri></li>
+  <li><uri link="/main/en/name-logo.xml">Name and Logo Usage Guidelines</uri></li>
+  <li><uri link="/main/en/sponsors.xml">Sponsors</uri></li>
+  <li><uri link="/main/en/support.xml">Support</uri></li>
+  <li><uri link="/main/en/where.xml">Get Gentoo!</uri></li>
+</ul>
+
+</body>
+</news>
+

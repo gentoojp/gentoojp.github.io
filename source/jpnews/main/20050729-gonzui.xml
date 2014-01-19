@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>石橋  賢一</poster>
+	<date>29 July 2005</date>
+	<title>ebuild 閲覧サービス開始のおしらせ</title>
+<body>
+<p>
+GentooJP はソースコード検索エンジン <uri link="http://gonzui.sourceforge.net/">gonzui</uri> を利用した <uri link="http://gonzui.gentoo.gr.jp/">ebuild 閲覧サービス</uri>を
+開始します。この閲覧サービスでは Portage ツリーに格納されている ebuild スクリプ
+トを閲覧、検索することが可能です。ebuildの書き方を手軽に参照したい、関数の利用方
+法を調べたい、といった場合に役に立つのではないでしょうか。
+</p>
+
+<p>
+ぜひご利用ください!
+</p>
+</body>
+</news>

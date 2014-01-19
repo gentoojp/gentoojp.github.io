@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="moo">
+<poster>萩原佳明</poster>
+<date>17 Oct 2003</date>
+<title>Gentooセミナーのお知らせ</title>
+<body>
+<p>
+ちょうど1週間後の10月24日(金)、秋葉原ぷらっとホームさんにて、<uri link="http://www.plathome.co.jp/hqsales/seminer/index_home031024.html">『Gentoo Linuxの始め方 〜ジェンツーペンギンを育てよう〜』</uri>というセミナーをやらせて頂くことになりました。
+Gentooに興味がある方向けに、インストールやemergeコマンドの使い方の基礎をお話しする予定です。お時間のある方、ぜひお越しください。
+</p>
+</body>
+</news>

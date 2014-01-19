@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+		<poster>渡邊 集</poster>
+		<date>9 May 2004</date>
+		<title>ebuild-uploaderが生まれ変わりました！</title>
+		<body>
+				<p>
+						<b>
+								これまでテスト中だった、新しい
+								<uri link="http://ebuild.gentoo.gr.jp/">ebuild-uploader</uri>
+								が運用を開始しました。
+						</b>
+				</p>
+				<p>
+						この新しいバージョンのebuild-uploaderでは、かねてから要望のあった、
+						登録したファイルの編集機能や簡単な動作報告のための投票機能など、便利な機能が加わっています。
+				</p>
+				<p>
+						皆さんの積極的な参加をお待ちしています！
+				</p>
+		</body>
+</news>

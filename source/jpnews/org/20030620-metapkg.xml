@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="main">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>20 June 2003</date>
+	<title>The Meta Package Project</title>
+<body>
+<p> 
+Gentoo Linuxと<uri link="http://opendarwin.org/projects/darwinports/">DarwinPorts</uri>、<uri link="http://fink.sourceforge.net/">Fink</uri>の3者は、DarwinとMac OS Xコミュニティに自由とオープンソースソフトウェアをもたらすため、 今後共同して活動していきます。
+それぞれの活動を無駄にしないため、3者間で憲章が形成されました。
+我々の目的はMax OS X/Darwinのユーザーに、自由に配布できる数々のソフトウェアを提供することです。
+ソースコードに対するパッチの膨大なリポジトリと、DarwinとOS Xへソースを移植するためのより質の高いドキュメントが、我々の最終成果物になる予定です。
+詳しくは<uri link="http://metapkg.org/pr-20030620.html">Metapkg.org</uri>を訪れてみてください。
+</p>
+</body>
+</news>

@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>27 Jan 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年1月27日号</title>
+<body>
+<p><b><uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml">今週号のGentoo Weekly Newsletter</uri>では、まず最初にLinuxWorld ExpoでのGentoo Linuxブースの写真を紹介しています。</b>
+LinuxWorld Expoでのこのような成功を導いてくれたGentoo Linuxのすべての開発者のみなさん、そしてもちろんGetnoo Linux作りに協力してくれているユーザーのみなさん、本当にありがとうございました。
+他にもPortageの新機能の話や、スパムを受信するのにイヤ気がさしている人向けのTips and Tricksが掲載されています。
+</p>
+</body>
+</news>
+

@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<news gentoo="yes" category="main">
+	<poster>Jeffrey Forman (翻訳:中野正智)</poster>
+	<date>2005-11-21</date>
+	<title>メディア更新: Gentoo Linux 2005.1-r1</title>
+<body>
+<p>
+
+<b>Gentooリリースエンジニアリングチームは、Gentoo Linux 2005.1-r1のリリースをアナウンスします。
+</b>
+
+</p>
+
+<p>
+この2005.1-r1リリースは、2005.1リリースに対するメディア更新です。
+これは、同じベースのスナップショットを用いとてもわずかな変更点を含んでいるリリース、という言うことになります。
+基本的に、バグフィクス以外の修正を含んでいません。
+すべてのアーキテクチャチームがこのリリースを依頼されましたが、来年の2006.0リリースの前に一時的なリリースが必要なほどのバグがあるアーキテクチャはわずかでした。
+
+このメディア更新は、ステージファイルとインストールCDイメージだけの更新です。
+2005.1のパッケージイメージはそのままで、リビルドされていません。
+</p>
+
+<p>
+お使いのミラーサーバーの2005.1-r1ディレクトリの下に新しいリリースメディアがあります。
+次のアーキテクチャが存在します。
+AMD64, PPC64, SPARC, x86
+</p>
+
+<p>この一時的なリリースは2005.1リリースにあるたくさんのバグを修正しています。
+
+SPARC - Added missing mdadm package
+PPC64 - Updated iprutils/sysfsutils</p>
+
+<p>
+このリリースで修正されたバグ:</p>
+<ul>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=79758">#79758</uri> - Add vlock to the livecd</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=83276">#83276</uri> - Install CD fails when using a USB CD-ROM</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=87182">#87182</uri> - skge: ignoring bogus sensor interrupts</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=88777">#88777</uri> - python-fchksum missing dependancy during emerge -e system</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=89650">#89650</uri> - Adding ACX1xx support to the next LiveCD</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=101962">#101962</uri> - Bad permissions on stage3-athlon-xp-2005.1, stage3-pentium3-2005.1 and stage4-pentium4-2005.1</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=102128">#102128</uri> - portage snapshot stored in /mnt/cdrom/snapshot not /mnt/cdrom/snapshots </li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=102491">#102491</uri> - Cannot clear first character of keymap if incorrect</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=103275">#103275</uri> - stage1-x86-2005.1.tar.bz2 - bad symlinks under /etc/runlevels/*</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=103610">#103610</uri> - yaboot-static claims incorrectly that /proc/device-tree broken is in the 2.6.12 kernel series</li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=107529">#107529</uri> - forcedeth driver on LiveCD not patched to v 0.42; causes unrecoverable ethernet hard reset </li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=108689">#108689</uri> - smbfs support problematic (request: support cifs instead) </li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=108751">#108751</uri> - amd64 2005.1 default kernel lacks IOMMU support; breaks w/ >4GB RAM </li>
+	<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=111269">#111269</uri> - genkernel mismatch on 2005.1 amd64 universal cd</li>
+</ul>
+
+<p>
+また、x86用の新しいGentoo LinuxインストールLiveCDが/experimentalの下にあります。
+このバージョンは2005.1スナップショットがベースになっていますが、いくつかのバグが修正されています。そしてGentoo Linuxインストーラー0.2が付属しています。
+また、AMD64用のLiveCDも/experimentalにあります。このLiveCDは新規のもので、多くのテストがされていません。
+しかし、2005.1リリースの構築の成功したものと同じスナップショットが使われているので、問題は最小限のはずです。
+</p>
+
+<p>
+どちからのLiveCDで問題に遭遇した場合には、http://bugs.gentoo.orgでGentoo Release Mediaのところにバグ報告してください。
+インストーラー自身の問題の場合には、Gentoo LinuxのGLIでバグ報告してください。
+</p>
+</body>
+</news>

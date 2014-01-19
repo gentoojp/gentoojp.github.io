@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>14 Apr 2005</date>
+	<title>「ホームルータガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/home-router-howto.xml">ホームルータガイド</uri>です。
+このガイドではGentoo Linuxマシンをルーターにする設定方法や、その際のセキュリティに関する注意点などが記載されています。
+また、一般的なネットワークの基本についても記述されていますので、そちらに興味がある方にもお勧めのガイドになっています。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+このガイドでは、最初にルータ上でのネットワークアドレス変換(NAT)の設定方法を紹介していきます。
+そして、dnsmasqでのドメインネームサービス(DNS)、dhcpcdによるDHCP、rp-pppoeによるADSLといった一般的なサービスの追加と設定方法を紹介します。
+最後に、ポートフォワーディング、帯域制御、proxyやキャッシングなどの凝った面白い話題を紹介します。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/home-router-howto.xml">http://www.gentoo.org/doc/ja/home-router-howto.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、池田 健吾 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

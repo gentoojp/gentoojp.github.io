@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>8 Dec 2004</date>
+	<title>X サーバー設定ガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+X Windowの設定は、今も昔もUNIX/Linuxユーザー泣かせのものの一つです。
+このドキュメントでは、その設定方法をXorgを用いて解説しています。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</uri>。
+</p>
+
+<p>
+翻訳を行った小林弘樹さん、お疲れさまでした。
+</p>
+
+</body>
+</news>

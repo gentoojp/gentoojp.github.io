@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷 茂寛</poster>
+	<date>13 Nov 2004</date>
+	<title>Gentoo udev Guideの翻訳が完了しました</title>
+<body>
+
+<p>
+最新の2.6カーネルでは、2.4カーネルで導入されたdevfsを置き換えるudevが開発されています。udevは従来のdevfsの機能に加え、以下の魅力的な機能を提供します。
+</p>
+<ul>
+  <li>ユーザスペースでの実行</li>
+  <li>デバイスファイルを動的に作成/削除</li>
+  <li>一貫性のある命名規則の提供</li>
+  <li>ユーザスペース向けAPIの提供</li>
+</ul>
+<p>
+udevはデバイスファイルの扱いにおいてデファクトスタンダートに位置づけらており、
+その開発ペースはとても早いです。それは裏を返せばまだまだ不安定ということです。
+しかし、どんなトラブルをも自力で解決できるスキルを持ち、
+最新のLinux機能を誰よりも早く体験したいという強力なソウルをお持ちのGentooユーザなら、
+このドキュメントはあなたのudevへの旅立ちの最良のお供となることでしょう。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/udev-guide.xml">Gentoo udev ガイド</uri>。
+</p>
+
+<p>
+翻訳を担当された 五十嵐 正尚さん、お疲れさまでした。
+</p>
+
+</body>
+</news>

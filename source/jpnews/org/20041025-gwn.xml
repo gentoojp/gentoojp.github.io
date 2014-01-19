@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2004年10月25日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2004年10月25日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>今週も、Portage 2.0.51のリリース、サイトデザインコンテストの結果発表、ドキュメントアップデート、ドイツLinux World ExpoにGentooが参加などなど、ニュースが盛りだくさんです。</b>今週の<uri link="/news/ja/gwn/20041025-newsletter.xml">Gentoo Weekly Newsletter</uri>では、Haskellチームから開発者の募集、CambridgeでGentooユーザグループミーティング開催のお知らせ、コミュニティの話題とメディアで取り上げられたGentoo、新しくリリースされたPortage関連のtips and tricks, bugzillaの統計データ、新しく3人の開発者がGentooに仲間入りをお届けします。
+</p>
+
+</body>
+</news>

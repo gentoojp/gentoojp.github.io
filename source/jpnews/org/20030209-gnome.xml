@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳:Takashi Ota.)</poster>
+	<date>9th February 2003</date>
+	<title>Gentoo Linux GNOME 2.2 ebuilds</title>
+<body>
+<p>
+<b>私たちのGNOME開発者の一人、Marinus Schraalは書きました。:  </b> 
+"GNOME 2.0 のリリースからちょうど5ヶ月、GNOMEチームはあなたにGNOME2.2をお届けします。
+GNOME2.2は、全般的な安定性とスピード向上のほかに、
+最近開いたファイル、スタートアップ通知、通知スペースアプレットといった多くの新しい機能を含みます。
+広範なリストは<uri link="http://www.gnome.org/start/2.2/notes/">リリースノート</uri>をご覧ください。
+</p>
+<p>
+現在、x86のみがステーブル・マークされていて(訳注；利用可能)、他のアーキテクチャはまもなく登場することになるでしょう。
+<uri link="http://bugs.gentoo.org/show_bug.cgi?id=15194">このbug</uri>情報に基づいて、
+*UTF-8ロケールセットでGNOME2.2をビルドしないことをお勧めします。"
+</p>
+</body>
+</news>

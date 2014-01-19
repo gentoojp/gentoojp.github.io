@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+        <poster>swift (翻訳: samantha)</poster>
+        <date>5 December 2004</date>
+        <title>2004.3メンテナンスリリース</title>
+<summary>
+Gentoo Release Engineering Projectではいくつかのアーキテクチャに関してメンテナンスリリースを出しました。
+このリリースはメディアに少々変更を加えただけで、新しい機能はありません。
+</summary>
+
+<body>
+
+<p>
+<uri link="/proj/en/releng">Release Engineering Project</uri>はいくつかのアーキテクチャに関してメンテナンスリリースを出しました。
+このリリースはメディアに少々変更を加えただけで、新しい機能はありません。
+</p>
+
+<p>
+今回アップデートされたアーキテクチャは以下の通りです。
+</p>
+
+<ul>
+<li>
+<b>alpha</b>には、新しいLiveCDに正常動作する<path>aboot.conf</path>が入りました。
+各stageとLiveCDは現在<path>releases/</path>ディレクトリにあります。
+</li>
+<li>
+<b>amd64</b>と<b>x86</b>では、新しいLiveCDに正常動作するSpeakup サポートが導入され、pnpbios(訳注: Plug and Play BIOS)がデフォルトでオフとなります。
+Universal LiveCDには<c>dhcpd</c>,<c>slocate</c>,<c>usbutil</c>そして<c>pciutils</c>のソースコードが追加されています。
+x86パッケージCDに関しては、<c>kdegraphics</c>に対するglibの依存性がないため、リビルドしています。
+  </li>
+  <li>
+    <b>hppa</b>の新しいLiveCDはLVM2をサポートしています。
+  </li>
+</ul>
+
+<p>
+メンテナンスリリースのメディアはお好きな<uri link="/main/en/mirrors.xml">Gentoo ミラー</uri>の2004.3のリリースメディアと同じ場所にあります。
+</p>
+
+</body>
+</news>

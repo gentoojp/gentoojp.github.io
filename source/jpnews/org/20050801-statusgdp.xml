@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="main">
+<poster>Sven Vermeulen(翻訳:飴谷 茂寛)</poster>
+<date>2005-08-01</date>
+<title>Gentooドキュメントプロジェクト最新状況</title>
+
+<body>
+
+<p>
+<uri link="/proj/en/gdp/status/status_20050801.xml">Gentooドキュメントプロジェクト最新状況</uri>の最新の見所は、<uri link="/doc/en/articles">Articles</uri><uri link="/doc/ja/articles">(日本語)</uri>セクションへGentooとLinux関連の記事をいくつか追加したことです。その他のアップデートは、<uri link="/doc/en/gentoo-x86-quickinstall.xml">Gentoo x86 Quick Installation Guide</uri><uri link="/doc/ja/gentoo-x86-quickinstall.xml">(日本語)</uri>の更新と、<uri link="/doc/en/bugzilla-howto.xml">Gentoo Bug Reporting HOWTO</uri>(貢献者のためのデバッグの仕方と指示の仕方も含まれます)と<uri link="/doc/en/gpm.xml">Gentoo GPM Guide</uri>などのいくつかの新しいガイドが追加されたことです。
+</p>
+
+</body>
+</news>

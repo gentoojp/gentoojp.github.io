@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>Kojima</poster>
+	<date>02 Sep 2010</date>
+	<title>オープンソースカンファレンス2010 Tokyo/Fallに出展します。</title>
+<body>
+
+<p>
+GnetooJP は9月11日に開催される<uri link="http://www.ospn.jp/osc2010-fall/">オープンソースカンファレンス2010 Tokyo/Fall</uri>に参加します。
+</p>
+
+<p>
+GentooJPの展示内容:
+</p>
+
+<ol>
+<li>Gentoo Linuxの紹介</li>
+<li>タイル型WMの紹介</li>
+</ol>
+
+<p>
+今回の会場は、日野キャンパス 26号館になっております。
+アクセス方法は、<uri link="http://www.ospn.jp/osc2010-fall/">オープンソースカンファレンス2010 Tokyo/Fall</uri>をご参照ください。
+</p>
+
+</body>
+</news>

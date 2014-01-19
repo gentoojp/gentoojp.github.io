@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>shindo</poster>
+	<date>29 Sep 2008</date>
+	<title>オープンソースカンファレンス2008 Tokyo/Fallに出展します。</title>
+<body>
+
+<p>
+今回もGnetooJPとして、<uri link="http://www.ospn.jp/osc2008-fall/">オープンソースカンファレンス2008 Tokyo/Fall</uri>に参加します。
+今回も<uri link="http://jp.tilingwindowmanager.org">日本タイル</uri>との共同展示で、セミナーは実施しません。
+展示・配布は以下を行います。
+</p>
+
+<p>
+GentooJPの展示内容:
+</p>
+
+<ol>
+<li>Gentoo Linuxの布教活動</li>
+<p>Gentoo LinuxをインストールしたPCの展示と紹介チラシを配布する予定です。</p>
+<li>Gentoo Linux 2008.0 αインストーラ搭載LiveCDの配布</li>
+<p>様々なタイル型ウィンドウマネージャを試せて、GentooもインストールができるLiveCDです。</p>
+</ol>
+
+<p>
+それでは、会場でみなさまのご来場をお待ちしています。
+</p>
+
+</body>
+</news>

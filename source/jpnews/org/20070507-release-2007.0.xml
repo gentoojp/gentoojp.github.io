@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+
+<!-- Enter your name here -->
+<poster>Chris Gianelloni(翻訳：真藤)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2007-05-07</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Gentoo Linux 2007.0　リリース！</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>遅れに遅れましたが、Gentoo <uri link="/proj/en/releng">Release Engineering</uri> プロジェクトからGentooLinux2007.0（コードネーム "Secret Sause"）のリリースが発表でき嬉しく思っています。</b>
+多くのパッケージで、より新しく、
+セキュアなバージョンで再ビルドしなければならないセキュリティ上の脆弱性が数多くあったため、
+リリースがたびたび遅れてしまいました。
+また、今回はリリースに時間がかかり、パッケージが古くなりはじめていたため、
+リリース準備中に完全なスナップショットも取られました。
+</p>
+
+<p>
+<uri
+link="/proj/en/releng/release/2007.0/2007.0-press-release.txt">オフィシャルプレスリリース</uri>により詳しい情報があります。
+新しいリリースはこちらです。
+<uri>http://www.gentoo.org/main/en/where.xml</uri>.
+
+</p>
+
+</body>
+</news>

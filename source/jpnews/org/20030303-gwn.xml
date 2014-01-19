@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳：小杉悠嗣)</poster>
+	<date>03 Mar 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年3月3日</title>
+<body>
+<p><b><uri link="/news/ja/gwn/20030303-newsletter.xml">3月初の</uri>Gentoo Weekly Newsletterはもうすぐ開催されるGame Developers ConferenceでのGentoo LinuxとNVIDIAに関する情報が入ってます。</b> 他のニュースはGentoo Linux開発者の募集とGentoo Linuxの1.4_rc3リリース候補の発表を含みます。</p>
+<p>
+Portageツリーのフリーズが解かれた今、Portage Watchは更新で一杯ですし、Bugzilla、Tips and Tricks、そしてコミュニティーの話題も耳よりな情報が満載です。
+</p>
+</body>
+</news>

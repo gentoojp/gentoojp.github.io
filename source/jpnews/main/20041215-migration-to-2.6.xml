@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>15 Dec 2004</date>
+	<title>Gentoo Linux 2.6完全移行ガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+お待たせしました！ <uri link="http://www.gentoo.org/doc/ja/migration-to-2.6.xml">「Gentoo Linux 2.6完全移行ガイド」</uri>の翻訳が完了しました。これはたくさんのユーザが翻訳されるのを待っていたドキュメントではないでしょうか？
+</p>
+
+<p>
+タイトルにありますように「完全移行ガイド」ですから、カーネルの変更を説明するだけではありません。カーネル2.6の恩恵を最大限に得るために、udevへの移行手順、ALSAへの変更手順、NPTLへの移行方法などが書かれています。
+</p>
+
+<p>
+以下、本文より抜粋:
+</p>
+
+<p>
+私たちは2005.0が(いくらかのアーキテクチャで)リリースされるときに、Linux 2.6をデフォルトにするつもりです。 そしてリリースと同時に、多くのGentooがまだ2.4で稼働しているままなので私たちはこれらのアーキテクチャのユーザー全員にLinux 2.6へのアップグレードを推奨することになるでしょう。 その時が来た(2005.0リリース)時に、集団移行に関してドキュメントが信頼できる状態となるように、このドキュメントへのあなたのフィードバックは高く評価されます。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/migration-to-2.6.xml">Gentoo Linux 2.6完全移行ガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、お疲れさまでした。
+</p>
+</body>
+</news>

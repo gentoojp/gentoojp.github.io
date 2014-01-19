@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="moo">
+	<poster>小町守</poster>
+	<date>29 October 2003</date>
+	<title>BSD/Linux Day で Gentoo が紹介されます</title>
+<body>
+<p>
+12月に開催される<uri link="http://internetweek.jp/">Internet Week 2003</uri>
+の中で、日本UNIXユーザ会主催で12月2日に行なわれる<uri link="http://www.jus.or.jp/events/bsd-linux-day/">BSD/Linux Day</uri>にて、10分間程度ですが Gentoo が紹介されます。
+Gentoo だけでなく他のディストリビューションや *BSD との比較にも関心のある人は楽しめるでしょう。10月31日までに申し込めば早期料金で参加できるそうです。
+
+</p>
+</body>
+</news>

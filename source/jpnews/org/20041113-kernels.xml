@@ -1,0 +1,178 @@
+<news gentoo="yes" category="gentoo">
+<poster>dsd (翻訳: samantha)</poster>
+<date>13 November 2004</date>
+
+<title>portageからいくつかkernelと重要なhotplug情報を削除</title>
+
+<summary>
+Gentoo Linuxカーネル管理者はportageのsys-kernelパッケージ群に関して大掃除を実施しています。
+もし次のkernelパッケージを動かしている場合は、記事全文を読んでください。
+<c>aa-sources</c>,<c>alpha-sources</c>, <c>gaming-sources</c>, <c>gs-sources</c>,
+<c>ia64-sources</c>, <c>pac-sources</c>, <c>planet-ccrma-sources</c>, or
+<c>selinux-sources</c>.
+<c>sys-apps/hotplug</c>パッケージでの重要な振舞の変更についても、このお知らせの中に書いてあります。
+</summary>
+
+<body>
+
+<p><b>重要なsys-apps/hotplugに関する動作の変更に付いて</b></p>
+
+<p>
+今までのhotplugは、ブート時にハードウェアを検出するために使用しているinit.dスクリプトを含んでいたり、関係あるモジュールを積極的にロードしたりしてました。
+技術的にはこれはhotplugではありません(hotplugとはシステムを運用している間にデバイスを挿した場合使用可能にすることを目的としています)。
+</p>
+
+<p>
+この理由で、ブート時の機能として自動的にロードするモジュールは、20040923 hotplugリリースにて削除され、より適切に命名した<c>coldplug</c>パッケージへ移行しました。
+</p>
+
+<p>
+最新hotplugリリースへアップグレード後は、もし重要なモジュールがブート時にロードされていない場合は以前の動作を持続させるため<c>coldplug</c>をインストールし、始動させることになるでしょう。
+</p>
+<pre caption="coldplugのインストールと稼働">
+# emerge coldplug
+# rc-update add coldplug boot
+</pre>
+
+<p>
+
+<c>/etc/modules.autoload.d/kernel-2.x</c>にロードするのに必要なモジュールを記述する方法がより安全です。
+coldplugは極めて積極的で、ときどきここで問題が発生します。
+</p>
+
+<p><b>カーネルパッケージのいくつかはportageから削除されます。</b></p>
+
+<p>
+カーネルパッケージを管理しやすくするために、最近portageツリーからいくつか、古くてメンテナンスされていないパッケージを削除しました。他のカーネルパッケージへ移行するユーザを補助するドキュメントを提供しています。
+</p>
+
+<p>動かしているカーネルに関係するセクションと、他のカーネルパッケージに移行するための新ドキュメントをお読みください。</p>
+
+<ul>
+<li>
+もし同系のカーネルパッケージに移行したい場合は
+<uri link="http://www.gentoo.org/doc/en/kernel-upgrade.xml">Gentoo Linux Kernel Upgrade Guide</uri>をお読みください。
+例えば、<c>gs-sources</c>(Linux 2.4系ベース)を<c>gentoo-sources</c>(これもLinux 2.4系ベース)に移行したい場合はこのドキュメントが該当します。
+</li>
+
+<li>
+もし2.4系から2.6系に移行したい場合は<uri link="http://www.gentoo.org/doc/en/migration-to-2.6.xml">The Gentoo Linux 2.6 Migration Guide</uri>をお読みください。
+私達のデフォルトカーネルは2.4(2.6は後にデフォルトになります)で、2.4から2.6系の移行は2.4の同系の移行に比べて大幅に作業が増えることを念頭においてください。
+</li>
+</ul>
+<p>
+利用可能な移行用カーネルパッケージの完全なリストを参照したい場合は<uri link="http://www.gentoo.org/doc/en/gentoo-kernel.xml">Kernel Guide</uri>(<uri link="http://www.gentoo.org/doc/ja/gentoo-kernel.xml">日本語訳</uri>)によく目を通してください。
+</p>
+
+<p><b>aa-sources</b></p>
+
+<p>
+upstreamの管理者はAndrea Arcangeliで、カーネルのパッチセットの提供を停止しました。
+このカーネルパッケージの最新リリースは古くなってしまい、セキュリティ面とメンテナンス面で問題が発生しています。
+</p>
+
+<p>
+<c>aa-sources</c>は現在、Linux 2.4系、2.6系のカーネル両方のebuildを提供しています。
+aa-sources-2.4.xを使っているユーザには<c>gentoo-source</c>、そしてaa-sources-2.6.xを使っているユーザには<c>gentoo-dev-sources</c>への移行を推奨します。
+</p>
+
+<p><b>alpha-sources</b></p>
+
+<p>
+<c>alpha-sources</c>はAlphaプロセッサベースのシステム互換で動作するハードウェア向けに改善されたパッチを含んだLinux 2.4系カーネルでした。
+これらの修正は現在、メインで開発しているカーネルに組み込まれました。つまりもうAlpha用にカーネル管理をわける必要がなくなったのです。
+</p>
+
+<p>
+Linux 2.4系を使い続けたいAlphaユーザには<c>gentoo-sources</c>への移行をお薦めします。
+2.6系へ移行したいユーザには<c>gentoo-dev-sources</c>への移行をお薦めします。
+</p>
+
+<p>
+gentoo-sourcesがsysctlのUAC構成機能を提供しないため、alpha-sourcesはまだ完全には削除されていません。
+これはまもなく解決します。
+</p>
+
+<p><b>gaming-sources</b></p>
+
+<p>
+このパッケージはちょっと前にportageから削除されましたが、この機会に改めて公式にアナウンスします。
+<c>gaming-sources</c>は'壊れた'CPUスケジューラを搭載し、いくつかのアプリケーションのパフォーマンスを劇的に上げています。
+この壊れたスケジューラは将来のカーネルには移植されませんでした。そのため古くなってしまいました。
+同時に、ハイパフォーマンスに相当する開発ツリーを投入して、Linux 2.6系が受けついでいます。
+</p>
+
+<p>
+Linux 2.4を使い続けたい人は<c>gentoo-sources</c>への移行をお薦めします。
+Linux 2.6系へ移行したい場合は<c>gentoo-dev-sources</c>をお薦めします。
+あるいは<c>ck-sources</c>はもう一つの選択です。このカーネルは最大パフォーマンスに特化し、Linux 2.4と2.6両方のパッケージが利用ができます。
+ck-sourcesは私達によって、開発・サポートされていないことに注意してください。
+</p>
+
+<p><b>gs-sources</b></p>
+
+<p>
+一旦サーバ用途のカーネル選択として衰えてしまい、<c>gs-sources</c>はもはやメンテナンスされなくなり、時代遅れとなり、そして申告な問題が増加しています。
+このパッケージはportageから削除されました。
+</p>
+
+<p>
+Linux 2.4系に留まりたいデスクトップユーザは<c>gentoo-souces</c>への移行を推奨します。
+また、Linux 2.6系へ移行したい場合は<c>gentoo-dev-souces</c>へ移行したほうがいいでしょう。
+</p>
+
+<p>
+サーバタイプのシステム上でこのカーネルを使っている場合は安定性とセキュリティをターゲットとしたLinux 2.4系カーネル、<c>hardend-sources</c>への移行を推奨します。あるいは、Linux 2.6系に移行した場合は<c>hardend-dev-sources</c>の方へ移行したほうがいいでしょう。
+</p>
+
+<p><b>ia64-sources</b></p>
+
+
+<p>
+当初IA-64アーキテクチャとそのハードウェアをサポートするために提供された<c>ia64-sources</c>はLinux開発ツリーのメインに統合されました。
+最近の2.6カーネルでIA-64のマシンを動作させるために、もはやこのパッケージ必須でありません。
+</p>
+
+<p>
+デスクトップユーザは<c>gentoo-dev-sources</c>への移行を、そしてサーバシステムで動作しているユーザは<c>hardend-dev-sources</c>へ移行をお薦めします。
+</p>
+
+<p><b>pac-sources</b></p>
+
+<p>
+<c>pac-sources</c>はLinux 2.4系でマルチメディア拡張を施した、珍しいカーネルパッケージでした。
+しばらく管理されなくなって、古くなってしまいました。
+</p>
+
+
+<p>
+Linux 2.4系に留まりたい場合は<c>gentoo-sources</c>への移行をお薦めします。
+マルチメディアを最大活用したい場合、Linux 2.6系に上げたい場合は<c>gentoo-dev-sources</c>が推奨です。
+</p>
+
+<p><b>planet-ccrma-sources</b></p>
+
+<p>
+このパッケージはちょっと前に削除されましたが、この機会に公式アナウンスを行います。
+<c>planet-ccrma-sources</c>は<c>pac-sources</c>と似ていて、オーディオアプリケーションに最適化されたカーネルパッケージでした。
+この最適化はLinux 2.6系の開発によって取って代わられました。
+</p>
+
+<p>
+Linux 2.4系にとどまりたいなら<c>gentoo-sources</c>への移行をお薦めします。
+オーディオを最大活用したい、Linux 2.6系に上げたい、と言う場合は<c>gentoo-dev-sources</c>が推奨です。
+</p>
+
+<p><b>selinux-sources</b></p>
+
+<p>
+<c>selinux-sources</c>はNSAからセキュリティベースのパッチを伴ったLinux 2.4系ベースのカーネルでした。
+このパッチセットは既に管理されて折らず、また同様のもの(と他のセキュリティオプション)は現在Linux 2.6系に含まれています。
+</p>
+
+<p>
+Linux 2.4系に留まりたいなら<c>hardend-sources</c>への移行をお薦めします。
+しかし、Linux 2.6系カーネルはセキュリティ面で大幅な増強を提供しているので、ユーザは<c>hardend-dev-sources</c>への移行に駆り立てられるでしょう。
+</p>
+</body>
+</news>

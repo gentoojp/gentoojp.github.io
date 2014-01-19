@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide>
+<title>本家XMLドキュメントのHTML変換ガイド</title>
+<author title="Author"><mail link="www@gentoo.jp">GentooJP</mail></author>
+<author title="Editor"><mail link="nigoro@gentoo.gr.jp">nigoro</mail></author>
+<abstract>
+このドキュメントは本家のXMLドキュメントをHTMLに変換する方法を紹介します。
+</abstract>
+<version>0.1</version>
+<date>28 Nov 2004</date>
+
+<chapter>
+<title>はじめに</title>
+<section>
+<body>
+<p>
+ドキュメントを翻訳した後、実際に表示される内容で確認したいと思ったことはありませんか? また、査読中にXMLタグがちょっと邪魔だなと思ったことは? それとも、翻訳した時にXMLタグを消してしまって文法エラーがあるかも…とちょっと不安になりませんか?
+</p>
+<p>
+このドキュメントは本家のXMLドキュメントを実際にHTMLへ変換する実例を示しながらわかりやすく説明しますので、そんなあなたに打って付けのものになるはずです。なお、このドキュメントは<uri link="http://www.gentoo.org/proj/en/gdp/doc/doc-tipsntricks.xml">Documentation Development Tips &amp; Tricks</uri>を参考に作成されています。
+</p>
+<note>
+<p>
+とはいえ、変換してしまうと本家XMLドキュメントと翻訳したXMLドキュメントの間でタグが合致しているのか分からなくなってしまうので、XMLドキュメントも読んでくださいね。
+</p>
+</note>
+</body>
+</section>
+</chapter>
+<chapter>
+<title>必要なファイルの準備</title>
+<section>
+<title>ファイルを保存するディレクトリ(フォルダ)を作成する</title>
+<body>
+<p>
+まず、変換したいXMLドキュメントを置くディレクトリを作成します。このドキュメントでは、このディレクトリをGentoo Linuxの場合は<path>~/jadoc</path>、Windowsの場合は<path>C:\jadoc</path>に作成したものとして説明していきます。
+</p>
+<p>
+次に、作成したディレクトリにサブディレクトリを作成します。以下に挙げるディレクトリを作成してください。
+</p>
+<table>
+<tr>
+  <th>Gentoo</th>
+  <th>Windows</th>
+</tr>
+<tr>
+  <ti>~/jadoc/dtd</ti>
+  <ti>C:\jadoc\dtd</ti>
+</tr>
+<tr>
+  <ti>~/jadoc/xsl</ti>
+  <ti>C:\jadoc\xsl</ti>
+</tr>
+<tr>
+  <ti>~/jadoc/css</ti>
+  <ti>C:\jadoc\css</ti>
+</tr>
+<tr>
+  <ti>~/jadoc/images</ti>
+  <ti>C:\jadoc\images</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>必要なファイルをダウンロードして準備する</title>
+<body>
+<p>
+ちょっと大変ですが、HTMLに変換するために必要なファイルを準備しましょう。
+</p>
+<p>
+以下に挙げるファイルを先ほど作成したディレクトリに保存してください。その際、書かれているディレクトリと同じ場所にファイルを置くようにしてください。つまり、guide.dtdならば<path>~/jadoc/dtd</path>(<path>C:\jadoc\dtd</path>)に、main.cssならば<path>~/jadoc/css</path>(<path>C:\jadoc\css</path>)というように保存してください。
+</p>
+<ul>
+<li><uri link="http://www.gentoo.org/dtd/guide.dtd">dtd/guide.dtd</uri></li>
+<li><uri link="http://www.gentoo.org/dtd/book.dtd">dtd/book.dtd</uri></li>
+<li><uri link="http://www.gentoo.org/css/main.css">css/main.css</uri></li>
+<li><uri link="http://www.gentoo.org/images/gbot-s.gif">images/gbot-s.gif</uri></li>
+<li><uri link="http://www.gentoo.org/images/gridtest.gif">images/gridtest.gif</uri></li>
+<li><uri link="http://www.gentoo.org/images/gtop-s.jpg">images/gtop-s.jpg</uri></li>
+<li><uri link="http://www.gentoo.org/images/line.gif">images/line.gif</uri></li>
+<li><uri link="http://www.gentoo.org/images/netraverse-gentoo.gif">images/netraverse-gentoo.gif</uri></li>
+</ul>
+<p>
+そして、SwifTさんのウェブスペースからローカルで変換できるようにした特別な<uri link="http://dev.gentoo.org/~swift/local/guide.xsl">guide.xsl</uri>をxslディレクトリにダウンロードします。Windows環境やブラウザを使った場合、guide.xslの拡張子がxmlに変わってしまったり、xslの後にxmlが付いてしまうことがありますので気を付けてください。
+</p>
+</body>
+</section>
+<section>
+<body>
+<p>
+実際に変換を行うために準備をする必要があります。Gentooをお使いの場合は、<uri link="#doc_chap3">実行準備 - Gentoo編</uri>に、Windowsをお使いの場合は<uri link="#doc_chap4">実行準備 - Windows編</uri>に進んでください。
+</p>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>実行準備 - Gentoo編</title>
+<section>
+<title>変換と文法チェックに必要なパッケージをインストールする</title>
+<body>
+<p>
+Gentooですので、インストールは<c>emerge</c>するだけですね。
+</p>
+<pre caption="libxml2とlibxsltのインストール">
+emerge libxml2 libxslt
+</pre>
+<p>
+そして、<path>/etc/xml/catalog</path>に以下の内容を追加します。hogeの部分はユーザー名を入れてください。
+</p>
+<pre caption="/etc/xml/catalogへ追加する内容">
+&lt;rewriteURI uriStartString="/dtd" rewritePrefix="/home/hoge/jadoc/dtd"/&gt;
+</pre>
+<warn>
+<p>
+初めてcatalogに追加する場合、3行目のcatalogタグが閉じられている(最後に/がある)場合があります。このままで追加するとエラーが出てしまいますので、catalogタグ以降をWindows編のcatalog.txtと同等の内容にしてください。
+</p>
+</warn>
+</body>
+</section>
+<section>
+<body>
+<p>
+さあ、実行する準備ができました。<uri link="#doc_chap5">実行</uri>へ進んで実際に試してみてください。
+</p>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>実行準備 - Windows編</title>
+<section>
+<body>
+<note>
+<p>
+このドキュメントではWindows 2000/XPを対象にしています。
+</p>
+</note>
+</body>
+</section>
+<section>
+<title>変換と文法チェックに必要なパッケージをインストールする</title>
+<body>
+<p>
+まず、<uri link="http://xmlsoft.org/sources/win32/">http://xmlsoft.org/sources/win32/</uri>から次のファイルをダウンロードします。
+</p>
+<ul>
+<li>iconv-1.9.1.win32.zip</li>
+<li>libxml2-2.6.15.win32.zip</li>
+<li>libxslt-1.1.12.win32.zip</li>
+<li>zlib-1.2.1.win32.zip</li>
+</ul>
+<note>
+<p>
+これらは現時点(04/11/28)での最新バージョンです。これより新しいバージョンがある場合はそちらをダウンロードしてください。
+</p>
+</note>
+<p>
+次に、それらを適当なフォルダに解凍します。拡張子(.zip)を除いた部分のフォルダが自動的に作成されますが、必要なのはそのフォルダに入っている<path>bin</path>、<path>lib</path>、<path>include</path>、<path>util</path>フォルダだけです。<path>C:\xsltproc</path>というフォルダを作成し、その中に前述のフォルダを移動してください。(上書きの確認ダイアログではすべて上書きを選んでください)
+</p>
+<p>
+さらに、環境変数のPATHに2つのディレクトリを追加し、新しい環境変数SGML_CATALOG_FILESを作成します。
+</p>
+<p>
+環境変数PATHは次のように設定します。ただし、既にユーザーの環境変数でPATHを設定している場合は、新規ボタンを押すかわりに変数PATHの部分を選択して編集ボタンをクリックします。そして、既に設定されている変数値の最後に;C:\xsltproc\bin;C:\xsltproc\libを追加してください。
+</p>
+<ol>
+<li>コントロールパネルでシステムを開き、詳細設定タブをクリックします。</li>
+<li>環境変数ボタンをクリックします。</li>
+<li>ユーザーの環境変数の所の新規ボタンをクリックします。</li>
+<li>変数名にPATHと入力し、変数値にC:\xsltproc\bin;C:\xsltproc\libと入力してOKをクリックします。</li>
+</ol>
+<p>
+続いて、環境変数SGML_CATALOG_FILESを設定します。
+</p>
+<ol>
+<li>ユーザーの環境変数の所の新規ボタンをクリックします。</li>
+<li>変数名にSGML_CATALOG_FILESと入力し、変数値にC:\xsltproc\catalog.txtと入力してOKをクリックします。</li>
+<li>後は、OKを何度かクリックしてシステムのプロパティを閉じます。</li>
+</ol>
+<p>
+最後に、以下の内容を記述したテキストファイルを作り、<path>C:\xsltproc\catalog.txt</path>として保存します。
+</p>
+<pre caption="C:\xsltproc\catalog.txtとして保存する内容">
+&lt;?xml version="1.0"?>
+&lt;!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN"
+ "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd"&gt;
+&lt;catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"&gt;
+&lt;rewriteURI uriStartString="/dtd" rewritePrefix="C:/jadoc/dtd"/&gt;
+&lt;/catalog&gt;
+</pre>
+
+</body>
+</section>
+<section>
+<body>
+<p>
+さあ、実行する準備ができました。<uri link="#doc_chap5">実行</uri>へ進んで実際に試してみてください。
+</p>
+
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>実行</title>
+<section>
+<title>一般的なドキュメントをHTMLに変換する</title>
+<body>
+<p>
+変換したいXMLドキュメントをjadocディレクトリに入れましたか? それでは実行してみましょう。(ここでは変換したいXMLドキュメントのファイル名をhoge.xmlとして説明しています)
+</p>
+<p>
+Gentooの場合は、コンソールや端末エミュレータで次のコマンドを入力してください。
+</p>
+<pre caption="GentooでXMLをHTMLに変換する">cd ~/jadoc
+xmllint --valid --noout hoge.xml
+xsltproc --novalid xsl/guide.xsl hoge.xml &gt; hoge.html
+</pre>
+<p>
+Windowsの場合は、コマンド プロンプトを実行して次のコマンドを入力してください。
+</p>
+<pre caption="WindowsでXMLをHTMLに変換する">C:
+cd \jadoc
+xmllint --catalogs --valid --noout hoge.xml
+xsltproc --catalogs xsl\guide.xsl hoge.xml &gt; hoge.html
+</pre>
+<p>
+エラーが出なかったら、jadocディレクトリを見てみましょう。hoge.htmlができているはずです!
+</p>
+</body>
+</section>
+<section>
+<title>ハンドブックをHTMLに変換する</title>
+<body>
+<p>
+まず、変換したいハンドブックのアーキテクチャのトップにあたるXMLドキュメントをViewCVS経由で入手し、最初に作成したXMLドキュメントを置くディレクトリに保存します(例えばhandbook-x86.xml)。また、変換したいハンドブックのXMLドキュメントも同様にします。
+</p>
+<p>
+次に、変換したいXMLドキュメントがどのパートのどの章なのかを調べます。<uri link="http://www.gentoo.org/doc/ja/handbook/">Gentoo.orgのハンドブック</uri>を見て確認してください。例えば、「Gentoo Linuxのインストールについて」(hb-install-about.xml)はパート1の1章です。
+</p>
+<p>
+最後に、<c>xsltproc</c>のオプションとしてパート番号(part)と章番号(chap)を与えてHTMLへ変換します。変換したい章に合わせて設定してください。この例ではパート1の1章、hb-install-about.xmlを変換しています。
+</p>
+<pre caption="GentooでハンドブックをHTMLに変換する">
+xmllint --valid --noout handbook-x86.xml
+xmllint --valid --noout hb-install-about.xml
+xsltproc --stringparam part 1 --stringparam chap 1 xsl/guide.xsl handbook-x86.xml > hb-install-about.html
+</pre>
+<pre caption="WindowsでハンドブックをHTMLに変換する">
+xmllint --catalogs --valid --noout handbook-x86.xml
+xmllint --catalogs --valid --noout hb-install-about.xml
+xsltproc --catalogs --stringparam part 1 --stringparam chap 1 xsl/guide.xsl handbook-x86.xml > hb-install-about.html
+</pre>
+<p>
+エラーが出なかったら、jadocディレクトリを見てみましょう。hb-install-about.htmlができているはずです!
+</p>
+</body>
+</section>
+<section>
+<title>xmllint実行時に警告・エラーが出ます...</title>
+<body>
+<p>
+<c>xmllint</c>はXMLの文法をチェックするコマンドです。ここでエラーが表示された場合、XMLドキュメントに文法的なエラーがある可能性があります。行番号も一緒に表示されますのでそのあたりを重点的に見直してみてください。
+</p>
+<p>
+タグの閉じ忘れなどのエラーの場合、一つ閉じ忘れただけでいくつもエラーが表示されてしまう事があります。この場合、一番最初に表示されたエラーを修正するだけで解決することがほとんどですので、安心してください。
+</p>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>うまくいかない時は?</title>
+<section>
+<body>
+<p>
+気軽にdocs MLにメールを出してください。:-)
+</p>
+</body>
+</section>
+</chapter>
+
+</guide>

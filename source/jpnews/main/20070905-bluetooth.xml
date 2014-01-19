@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>真藤 直観</poster>
+	<date>05 Sep 2007</date>
+	<title>「Gentoo Linux Bluetoothガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+<uri link="http://www.gentoo.org/doc/ja/bluetooth-guide.xml">Gentoo Linux Bluetoothガイド</uri>の翻訳が完了しました。
+このガイドでは、Gentoo Linux 上で Bluetooth を利用する方法が紹介されています。
+</p>
+
+<p>
+原文より：
+</p>
+
+<p>
+このガイドには、Bluetoothデバイスをホストに導入しカーネルを正しく構成する手順が書かれています。
+さらに、Blutooth技術にできることやBlutoothの使い方も紹介します。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/bluetooth-guide.xml">Gentoo Linux Bluetoothガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、田中 裕也さん、お疲れさまでした。
+</p>
+</body>
+</news>

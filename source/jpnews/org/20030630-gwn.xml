@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota)</poster>
+	<date>30 June 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年6月30日号</title>
+<body>
+<p>
+<b>6月最後の<uri link="/news/ja/gwn/20030630-newsletter.xml">Gentoo Weekly Newsletter</uri>はGentoo Linux projectにおける重要な管理運営の変更について、新しい情報をお届けします。</b>  組込み型市場に新しいlinuxディストリビューションが注目していること、GWN翻訳者への要請についての情報もあります。Portage Watchは短期休暇から戻ってきました。楽しんで!
+</p>
+</body>
+</news>

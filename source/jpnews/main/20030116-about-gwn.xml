@@ -1,0 +1,18 @@
+<?xml version='1.0' ?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>萩原佳明</poster>
+	<date>16 Jan 2003</date>
+	<title>Gentoo Weekly Newsletter(GWN)日本語版</title>
+<body>
+
+<p>
+<uri link="http://www.gentoo.org/news/en/gwn/gwn.xml">Gentoo Weekly Newsletter(GWN)</uri>に<uri link="http://www.gentoo.org/news/ja/gwn/gwn.xml">日本語版</uri>が登場しました。日本語版独自の記事はありませんが、Gentooに関する最近のニュースやセキュリティ情報、 Portage treeに追加されたパッケージのリスト、それからGentooを使う上でのちょっとしたワザなど、もりだくさんの内容を日本語で読むことができます。詳しくはページ上部のGWNのリンクからどうぞ。
+</p>
+
+<p>
+もりだくさんの内容ですので、翻訳のお手伝いをしてくださる方の募集はまだまだ続けています。興味のある方は是非、<mail link="carlos@pubbawup.net">小杉悠嗣</mail>さん、もしくは<mail link="hagi@p1d.com">萩原</mail>までご連絡ください。
+</p>
+
+</body>
+</news>

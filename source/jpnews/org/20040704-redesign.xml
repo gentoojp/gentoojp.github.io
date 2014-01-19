@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>klieber (翻訳：Samantha)</poster>
+	<date>04 July 2004</date>
+	<title>Gentoo Foundation ウェブサイトリデザインコンテスト</title>
+<body>
+<p>
+Gentoo Foundationでは、Gentooコミュニティの一部である様々なウェブサイトを、新しく、テーマで統一されたデザインに変更する計画を発表しました。
+コミュニティに基づいたディストリビューションにするため、私達は新しい「ルックアンドフィール」をユーザから投稿してもらうことを決定しました。
+</p>
+<p>
+私達は正式に<uri link="/proj/en/infrastructure/redesign-guidelines.xml">Gentoo Foundationウェブリデザインコンテスト</uri>を開催しています。
+このコンテストはGentooユーザのあなたに新しいルックアンドフィールを設計する機会をあたえ、そのデザインは私達の公式ウェブサイトで披露します。
+最優秀デザインは公開投票のうえでコミュニティによって選ばれるでしょう。
+コンテストの詳細は<uri link="/proj/en/infrastructure/redesign-guidelines.xml">コンテストガイドライン</uri>を参照してください。
+</p>
+<p>
+最優秀デザインを投稿した個人、企業、あるいは組織は、新しいデザインのGentooウェブサイトに自身のサイトへのリンクを張り付けておく良い機会でしょう。
+私達のサイトは日毎数万訪れるなユーザで支えていますから、これはあなたやあなたの会社にとって利益を得るものすごく良い機会ですよ。
+</p>
+</body>
+</news>

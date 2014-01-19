@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>TANABE Ken'ichi</poster>
+	<date>28 Apr 2005</date>
+	<title>macaroni.gentoo.gr.jp サーバロケーション移動のお知らせ</title>
+<body>
+
+<p>2005/4/28 22:30 追記</p>
+<p>移動は16時に終了しましたが、Apache の起動に問題があり復旧が遅れました。ご迷惑をおかけいたしました。</p>
+<p>
+急ではありますが、本日 (2005/4/28) 13時ごろから14時ごろにかけて各種動的コンテンツを収容している macaroni.gentoo.gr.jp 
+を OSDL Japan へ移動することになりました。今日まで macaroni.gentoo.gr.jp を提供していただいたびぎねっと
+様に感謝します。</p>
+
+<p>DNS の関係上、最大で約1日ほどつながらない場合があります。影響範囲は下記の通りです。</p>
+<ul>
+	<li>macaroni.gentoo.gr.jp</li>
+	<li>cvs.gentoo.gr.jp</li>
+	<li>dev.gentoo.gr.jp</li>
+	<li>diary.gentoo.gr.jp</li>
+	<li>wiki.gentoo.gr.jp</li>
+	<li>ebuild.gentoo.gr.jp</li>
+	<li>bugs.gentoo.gr.jp</li>
+</ul>
+<p>なお、 www, rsync, mirror, メーリングリストについては今回の影響を受けません。ご協力をお願いします。</p>
+</body>
+</news>

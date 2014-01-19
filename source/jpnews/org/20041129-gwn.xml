@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2004年11月22日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2004年11月29日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>今週の<uri link="/news/ja/gwn/20041129-newsletter.xml">Gentoo Weekly Newsletter</uri>は、Pegasos-PPCメーカーのGenesiがGentoo Linuxがプレインストールされたデスクトップマシンの販売を開始、システム管理者向けのスクリプトリポジトリ、2004.3リリースの各国語インストールハンドブックが登場！</b>"Future Zone"では、2005.0リリースに向けたロードマップがさらに明らかになるとともに、各アーキテクチャにおけるカーネル開発の状況も解説しています。世界のGentoo関連ニュースも盛りだくさんで、しかも今週は2週間分のBugzillaレポートが！って、先週の統計データが間違っていたせいなのですけど。今週のTips and tricksの特集は、PortageのGUIフロントエンドです。あまり注目されなくなってしまっていたので、取り上げてみました。では、今週のGWNをお楽しみください！
+</p>
+
+</body>
+</news>

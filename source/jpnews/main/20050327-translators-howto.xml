@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>27 Mar 2005</date>
+	<title>「Gentooドキュメント翻訳者ガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは、<uri link="http://www.gentoo.org/proj/ja/gdp/doc/translators-howto.xml">Gentooドキュメント翻訳者ガイド</uri>です。これから翻訳作業を目指そうという方、それもGentoo本家にドキュメント開発者として登録される方は必須のドキュメントになります。
+</p>
+
+<p>
+私も今回の翻訳をしていただくまでは、実は知らなかったのですが、翻訳の方針、心構えなど勉強になることが多いですので、翻訳を目指される方は一読されてみてはいかがでしょうか?
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+たびたび、人々はGentoo翻訳チームへの加入し、翻訳作業に貢献することに興味を持ちます。しかしながら、彼らのうちのほとんどは翻訳者がすること、知っておくべきこと、そしてどのように翻訳作業を進めていくのかを知りません。このガイドはほとんどの質問に答えるでしょうし、もし未だ疑問が残っていたら、Xavier NeysかSven Vermeulenに連絡してください。
+</p>
+
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/proj/ja/gdp/doc/translators-howto.xml">Gentooドキュメント翻訳者ガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

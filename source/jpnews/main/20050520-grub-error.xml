@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>20 May 2005</date>
+	<title>「Gentoo GRUBエラー集」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/grub-error-guide.xml">Gentoo GRUBエラー集</uri>です。
+このガイドは、GRUBをインストールした場合にであうエラーに対して、その対処法を説明するものです。例えば「GRUB Error 12」が表示された場合の対処方法などです。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+「GRUB loading, please wait...」。このメッセージの後、システムが停止します。 GRUBフロッピーを使ってシステムをブートした場合には、この問題は起こりません。この場合の解決法は、<uri link="http://forums.gentoo.org/profile.php?mode=viewprofile&amp;u=3134">The_Bell</uri>によると BIOSでのブート順を変えるとよいそうです。
+</p>
+
+<p>フロッピーを一番目にブートしないようにBIOSを設定します。</p>
+
+<p>
+
+また、
+<uri link="http://forums.gentoo.org/profile.php?mode=viewprofile&amp;u=39305">penetrode</uri>
+は、
+CFLAGSの設定が悪い可能性もあると書きました。
+現在のGRUBのebuildでは、
+<c>-fstack-protector</c>
+を取り除いていますが、
+とにかく、不要なものが無いCFLAGSでgrubを再コンパイルすれば問題はありません。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/grub-error-guide.xml">http://www.gentoo.org/doc/ja/grub-error-guide.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、池田 健吾 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

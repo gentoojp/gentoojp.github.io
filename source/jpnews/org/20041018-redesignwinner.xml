@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!-- No dtd due to irregularity in summary -->
+
+<news gentoo="yes" category="moo">
+<poster>swift (翻訳: 中村)</poster>
+<date>18 October 2004</date>
+<title>Redesign contest: And the winner is... Aaron Shi</title>
+<summary>
+
+<p>
+Gentoo Webサイト再デザインコンテストの優勝者は、<uri
+	link="http://forums.gentoo.org">Gentooフォーラム</uri>での<uri
+	link="http://forums.gentoo.org/viewtopic.php?t=227589">投票</uri>の結果、Aaron Shiさんに決まりました!
+どんなデザインなのか興味ある人は、Aaronによる<uri
+	link="http://www.gentoo.org/images/wwwcontest/contest1_front.png">入り口ページのデザイン</uri>と<uri
+	link="http://www.gentoo.org/images/wwwcontest/contest1_handbook.png">ハンドブックのデザイン</uri>をちょっと見てください。
+</p>
+
+</summary>
+<body>
+
+<p>
+Gentoo Webサイト再デザインコンテストの優勝者は、<uri
+	link="http://forums.gentoo.org">Gentooフォーラム</uri>での<uri
+	link="http://forums.gentoo.org/viewtopic.php?t=227589">投票</uri>の結果、Aaron Shiさんに決まりました!
+おめでとう!
+どんなデザインなのか興味ある人は、Aaronによる<uri
+	link="http://www.gentoo.org/images/wwwcontest/contest1_front.png">入り口ページのデザイン</uri>と<uri
+	link="http://www.gentoo.org/images/wwwcontest/contest1_handbook.png">ハンドブックのデザイン</uri>をちょっと見てください。
+</p>
+
+<p>
+リデザインコンテストのためにがんばってくれた皆さんに感謝します。
+たくさんの素晴らしいデザインが寄せられました。
+応募してくれた方々の、更なる活躍を一同願っております。
+重ね重ね、ありがとうございました。
+</p>
+
+<p>
+選挙は終了しました。
+開発者チームはAaron Shiと共に、さらにデザインを仕上げるべく作業をしています。
+これらの仕上げ作業は、デザインそのものに変更を加えるわけではなく、コンテストの間に寄せられたコメントに基づくものです。
+</p>
+
+<p>
+次はこの新しいレイアウトに基づく、XHTMLのドラフト版が作られます。
+ほとんどのGentoo開発者は標準化技術に気を使います。
+もちろん、私たちは適切な標準化技術(XHTMLとCSSなど)を使ってページを作成していきます。
+</p>
+
+<p>
+私たちのWebサイトのページはXMLで記述され、XSLを使ってXHTMLに変換されます。
+従って、その次の(そして最終の)作業は、XSLスタイルシートにXHTMLコードをマージすることです。
+</p>
+
+</body>
+</news>

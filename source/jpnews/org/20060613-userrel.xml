@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Chris Gianelloni(翻訳：飴谷)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2006-06-13</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>ユーザの代表を募集中</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>Gentoo <uri link="/proj/en/devrel/user-relations/index.xml">User
+Relationsプロジェクト</uri>は、ユーザの意欲と必要性をよりよく理解するために、
+<uri
+link="http://www.gentoo.org/proj/en/devrel/user-relations/userrep.xml">ユーザの代理</uri>としての役職を新設しました。そして、現在、候補を探しています。</b>
+更なる情報は、<uri
+link="http://forums.gentoo.org/viewtopic-t-470136.html">このフォーラムのスレッド</uri>を参照してください。そして、候補を選出してください。
+</p>
+
+</body>
+</news>
+

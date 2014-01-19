@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>14 January 2006</date>
+	<title>「コンソールでマウスを使おう」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/gpm.xml">コンソールでマウスを使おう</uri>です。
+その名の通り、コンソールで使用する場合にマウスを利用する方法を解説しています。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+このガイドではコマンドラインインターフェースでGPM(the General Purpose Mouse server)をセットアップする方法を紹介します。これはGentooの新規インストールや、Xサーバを使用しないシステムにとても役立ちます。
+</p>
+
+<p>
+Gentooをインストールした直後なら、大部分のユーザはまだコマンドラインインターフェース(CLI)ではマウスは動作していないでしょう。それとも、Xサーバが使用できなかったり必要とはしていないけれども、マウスを使用したいかもしれません。これらの解決方法は非常に簡単で、<c>gpm</c>(General Purpose Mouse server)を使用することです。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/gpm.xml">コンソールでマウスを使おう</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、また査読の手伝いをしてくださった真藤さん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>松鵜</poster>
+	<date>2 Sep 2005</date>
+	<title>OSC2005 Tokyo/Fall GentooJP参加します</title>
+<body>
+
+<p>
+9月17日（土）に開催されるオープンソースカンファレンス2005 Tokyo/Fallに、GentooJPからも参加します（セミナー＋展示）。
+</p>
+
+<p>
+セミナー
+<ul>
+<li>テーマ：Gentoo Linux 2005.1 stage3インストール ハンズオンセミナー</li>
+<li>講師：桜井知之</li>
+<li>対象者：Gentooに興味がある方</li>
+<li>概要： 実機を使って Gentoo Linux
+2005.1のstage3インストールのハンズオンセミナーを行います。
+ノートPCを持参してくださった方はインストール大会も合わせて開催します。
+Gentoo 日本ユーザ会の BOF も兼ねているので、Gentoo をインストールしたことのない方も、
+もうかなり使いこなしている方もぜひお越しください。
+<uri link="http://www.ospn.jp/osc2005-fall/modules/xfsection/article.php?articleid=50">http://www.ospn.jp/osc2005-fall/modules/xfsection/article.php?articleid=50</uri>
+</li>
+</ul>
+</p>
+
+<p>
+展示
+<ul>
+<li>テーマ：実はここにもGentoo（仮）</li>
+<li>
+展示内容：Gentooが動作してるマシンの展示（OpenBlockS、白箱、他）や、
+2005年8月10日にリリースされたばかりのGentoo Linux 2005.1のCD配布、本販売などなど。
+<uri link="http://www.ospn.jp/osc2005-fall/modules/xfsection/article.php?articleid=5">http://www.ospn.jp/osc2005-fall/modules/xfsection/article.php?articleid=5</uri>
+</li>
+</ul>
+</p>
+
+<p>
+※内容は急遽変更になる場合もありますので予めご了承ください。
+</p>
+
+<p>
+現在、セミナーのアシスタントを募集しております（数名程度？）。
+我こそは！と思われる方はgentoojp-misc ML等で手を挙げていただけると幸いです。
+</p>
+
+</body>
+</news>

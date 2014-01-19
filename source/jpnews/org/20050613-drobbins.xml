@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+
+<!-- Enter your name here -->
+<poster>g2boojum(翻訳者:池田 健吾)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005-06-13</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Daniel RobbinsはMicrosoftを新天地とし、Gentoo技術の知的所有権をGentoo Foundationへ譲渡する手続きを完了しました</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+Gentooの創始者で元GentooチーフアーキテクトのDaniel Robbinsが、2005年5月23日付けでMicrosoft入りしました。
+「オープンソースやコミュニティベースのプロジェクトをMicrosoftに理解してもらう手助けをしている」とdrobbinsは述べています。
+またdrobbinsは、Redmondへ引っ越す荷作りの真っ最中にもかかわらず、Gentooの知的所有権(つまりebuildと他のソフトウェアの著作権や、間もなく商標登録されるGentooロゴ)を非営利組織のGentoo Foundationに移す手続きを完了しました。
+</p>
+
+</body>
+</news>
+

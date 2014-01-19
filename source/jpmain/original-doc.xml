@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+<guide>
+<title>GentooJP オリジナルドキュメントプロジェクト</title>
+<author title="Author"><mail link="www@gentoo.jp">GentooJP</mail></author>
+<author title="Editor"><mail link="shindo-n@zephyr.dti.ne.jp">真藤直観</mail></author>
+<author title="Edtior"><mail link="shindo-n@zephyr.dti.ne.jp">中野正智</mail></author>
+
+<abstract>
+GentooJP でのオリジナルドキュメントに関する説明です。
+</abstract>
+
+<version>0.2</version>
+<date>18 Nov 2003</date>
+
+<chapter>
+<title>GentooJP オリジナルドキュメントプロジェクトにようこそ!!</title>
+<section>
+
+<body>
+<p>
+GentooJP オリジナルドキュメントプロジェクトは、Gentoo Linux Project には無いドキュメントを作成したり、作成の支援をするプロジェクトです。
+</p>
+<p>
+このドキュメントにはオリジナルドキュメントを書くときの注意、投稿の流れが書いてあります。
+
+</p>
+
+<p>
+オリジナルドキュメントプロジェクトとは、
+Gentoo に関する日本語のドキュメントを募集して、それを発表していこう、というものです。GentooJP は発表の場所を提供するだけです。ドキュメントの保守などは各著者の方にお任せします。
+</p>
+
+<p>
+オリジナルドキュメントプロジェクトは、Gentoo Linuxを使っていく上でのヒント、
+チュートリアル、みんなに自慢したい使い方、ちょっと賢い設定方法、
+Gentoo Linux Projectや翻訳ドキュメントには書かれていないこと、
+そんなドキュメントを募集しています。
+</p>
+
+<note>もちろん、全世界をアッと言わせる凄いドキュメントも受付けます。
+</note>
+
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>ドキュメントの投稿方法</title>
+<section>
+<body>
+<p>ドキュメントの投稿は簡単です。Gentoo Linux Project/GentooJPで仕様しているxml形式でドキュメントを書いて送ってくれるだけでOKです。
+詳しい流れは下記のようになります。</p>
+</body>
+</section>
+
+<section>
+<title>ドキュメントを書く</title>
+<body>
+<p>初めに書いたように、オリジナルドキュメントの内容にはあまり制約を持たせません。
+ただし、過度に商業的なもの、誹謗、中傷の類い、性的な内容、など一般常識的に不適格なものは当然ダメです。誰かが幸せになれるドキュメントにしてください。
+また、ドキュメントは xml 形式で書いてください。xmlの書き方、構成については、次の章で簡単に触れます。</p>
+</body>
+</section>
+
+<section>
+<title>ドキュメント用メーリングリストに入る</title>
+<body>
+<p>そして、<link uri="/jpmain/about-gentoojp.xml#doc_chap4">ドキュメント用のメーリングリスト(gentoojp-docs)</link>に入ってください。この ML がドキュメントの受付け窓口になります。</p>
+</body>
+</section>
+
+<section>
+<title>ドキュメントを投稿する</title>
+<body>
+<p>できあがったドキュメントを gentoojp-docsメーリングリストに投稿してください。オリジナルドキュメントの内容については、著者の責任とします。
+このため、翻訳と違い、文章的な査読（誤字や言い回しなどのチェック）はありますが、内容に関する査読（技術的な検証等）はありません。
+もし、内容に関する査読希望の場合は「査読希望」という旨のメッセージも付けてください。</p>
+</body>
+</section>
+
+<section>
+<title>ドキュメント掲載</title>
+<body>
+<p>投稿されたドキュメントは GentooJP のオリジナルドキュメントのリストに加
+えられます。</p>
+</body>
+</section>
+
+<section>
+<title>ドキュメントのメンテナンス</title>
+<body>
+<p>内容が古くなってしまったり、変更が必要なドキュメントについては、
+メンテナンス(更新作業)が必要になります。
+メンテナンスするかどうかについては、著者の判断でお願いします。
+また、もしかしたら、ドキュメント管理メンバーからメンテナンスのお願いがあるかもしれません。
+</p>
+
+<p>
+更新する場合には、新規登録時と同じようにgentoojp-docsメーリングリストに投稿してください。
+</p>
+
+<note>ドキュメントが古くなった場合は、ドキュメント管理メンバーの判断で
+削除したり「内容が古くなっています」といった注意書きを付けることがあり
+ます。ご了承ください。</note>
+</body>
+</section>
+
+<section>
+<title>ちょっと細かいけど大事なこと</title>
+<body>
+<p>オリジナルドキュメントのプロジェクトに参加するのは簡単ですが、いく
+つか御理解いただきたい点があります。</p>
+<ul>
+<li>著作権について -- 完全にドキュメントの著者の方に帰属します。</li>
+<li>でも、ページの下の方に Copyright 云々とでてますけど? -- 早くなおします。</li>
+<li>匿名投稿について -- まったくの匿名はご遠慮ねがいます。
+ハンドルネームはOKです。</li>
+<li>メールアドレスについて -- かならず連絡がとれるメールアドレスをmail タグに指定してください。</li>
+<li>管理者は内容を変更するの? -- 原則内容の変更しませんが、
+タグ属性を変更するといったシステム側の変更は、著者に連絡なしに行うことがあります。
+</li>
+</ul>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>ドキュメントの書き方</title>
+<section>
+<body>
+<p>オリジナルドキュメントも他のドキュメントや翻訳と同じように xml で記
+述します。xml といっても約束事は最低限のものしかありません。次のサンプ
+ル書式を参考にしてください。</p> 
+
+<pre caption="オリジナルドキュメントの書式">
+<comment>//エンコードは必ず UTF-8 を使用してください。</comment>
+&lt;xml version='1.0' encoding='UTF-8'?&gt;
+&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt;
+&lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
+
+&lt;guide link="/contribution/**オリジナルドキュメントのファイル名**"&gt;
+<comment>//たとえば、hoge.xml ならば、&lt;guide link="/contribution/hoge.xml"&gt; としてください。</comment>
+
+&lt;title&gt;GentooJP オリジナルドキュメントプロジェクト&lt;/title&gt;
+&#60;author title="Author"&#62;
+&#60;mail link="shindo-n@zephyr.dti.ne.jp"&#62;真藤直観&#60;/mail&#62;
+&#60;/author&#62;
+<comment>//author タグの title 属性は"Author"を指定してください。</comment>
+<comment>//また、メールアドレスは必ず記載してください。</comment>
+
+&lt;abstract&gt;
+GentooJP でのオリジナルドキュメントに関する説明です。
+&lt;/abstract&gt;
+&lt;version&gt;0.1&lt;/version&gt;
+&lt;date&gt;27 Oct 2003&lt;/date&gt;
+<comment>//title, author, abstract, version, date タグは必ず入れてください。</comment>
+
+&lt;chapter&gt;
+&lt;title&gt;chapter のタイトル&lt;/title&gt;
+&lt;section&gt;
+...本文...
+&lt;/section&gt;
+&lt;/chapter&gt;
+
+&lt;/guide&gt;
+</pre>
+<p>ドキュメントの作成については、オリジナルドキュメントにある<uri
+link="/jpdoc/gentoojp-xml-environment.xml">「翻訳とオリジナルドキュメント作成環境の構築ガイド</uri>や
+<uri link="/doc/ja/xml-guide.xml">Gentoo Linux XMLガイド</uri>
+も参考にしてください。
+特に「翻訳とオリジナルドキュメント作成環境ガイド」には AxKit での環境構築方法が載っており、
+ドキュメントを書くときには非常に役に立ちます。</p> </body>
+</section>
+</chapter>
+
+</guide>

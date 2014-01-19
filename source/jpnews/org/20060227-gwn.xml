@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2006年2月27日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2006年2月27日</title>
+<body>
+
+<!-- Alter to your own likings -->
+
+<p>
+<b>
+今週の<uri link="/news/ja/gwn/20060227-newsletter.xml">Gentoo Weekly Newsletter</uri>のトップニュースはGentoo Linux 2006.6リリースです。ブリュッセルで開催されたFOSDEMカンファレンスのレポート、第3回ヨーロッパGentoo開発者会議、きたる土曜日のBugday参加告知と、今週もプロジェクトにまつわるニュースは尽きません。</b>ドイツでで開催されるカンファレンスにGentooが参加、いつものセキュリティアナウンスとBugzillaの統計と、休む暇はありません。では、今週のGWNをお楽しみください。
+</p>
+
+</body>
+</news>

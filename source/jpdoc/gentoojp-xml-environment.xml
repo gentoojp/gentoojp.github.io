@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/gentoojp-xml-environmet.xml">
+
+<title>翻訳とオリジナルドキュメント作成環境の構築ガイド</title>
+<author title = "著者"><mail link = "kihei@ss.iij4u.or.jp">Takashi Ota</mail></author>
+<author title = "改訂者"><mail link = "idani@gentoo.gr.jp">飴谷 茂寛</mail></author>
+
+<abstract>このガイドでは、GentooJPの翻訳・オリジナルドキュメント作成の際に必要となる環境の構築方法について説明します。
+</abstract>
+
+<version>1.2</version>
+<date>14 Nov 2004</date>
+
+<chapter>
+	<title>GentooJP のドキュメント</title>
+		<section>
+			<title>概要</title>
+		<body>
+			<p>
+			gentoo.org と GentooJP では、Webコンテンツ、技術文書などにXML関連技術を活用しています。XML関連技術の活用は、次の点で<e>cool</e>です。
+			</p>
+			<ul>
+				<li>Webデザインを、コンテンツを変えることなく短期間に変更できる。</li>
+				<li>10個程度の要素タグを覚えることで、誰もが統一化された文書を容易に作成できる。</li>
+				<li>翻訳ドキュメント、オリジナルドキュメントの反映が即座に可能である。</li>
+				<li>xml文書は、htmlなどに比べて非常に見通しが良い。</li>
+			</ul>
+			<p>
+			Gentoo Linuxは、比較的新しいディストリビューションです。即応性を考え、GentooJPではXML関連技術を通して、さまざまなドキュメントの作成と提供を行います。
+			</p>
+		</body>
+		</section>
+
+		<section>
+			<title>ドキュメント作成上の注意点</title>
+		<body>
+			<p>
+			ドキュメントの作成を行う場合には以下の点に注意してください。
+			<ul>
+				<li>エンコーディング UTF-8、改行コード LFで文書を作成します。</li>
+				<li>翻訳ドキュメントでは、オリジナルの要素タグを変更しないでください。原則的として変更できるのは、翻訳者の追加のみです。</li>
+				<li>作成者、作成者メールアドレスが必要になります。個人名、所有メールアドレスを推奨しますが、作成者名にGentooJP、メールアドレスに docs@gentoo.gr.jpを選択することも可能です。</li>
+			</ul>
+			</p>
+		</body>
+		</section>
+
+		<section>
+			<title>ドキュメント作成の手順</title>
+		<body>
+			<p>
+			ドキュメントの作成は次の手順で行ってください。なお、次章以降ではその詳細な手順を説明します。
+			<ul>
+				<li><uri link="#doc_chap2">第２章ドキュメントの構成：</uri>gentoo.orgとGentooJPドキュメントの構成・文法を理解してください。</li>
+				<li><uri link="#doc_chap3">第３章ドキュメント作成準備：</uri>GentooJPのディレクトリ構成にあわせたドキュメント作業用ディレクトリを作成したり、必要ファイルの取得をします。いろいろな取得方法がありますのでそれぞれについて解説します。</li>
+				<li><uri link="#doc_chap4">第４章ドキュメントの確認方法(HTML)：</uri>作成されたドキュメントのチェックを、コンソール環境で行います。</li>
+				<li><uri link="#doc_chap5">第５章ドキュメントの確認方法(AxKit)：</uri>GentooJPのwebコンテンツと同じ環境でチェックを行いたい場合には、AxKit + LibXSLTを使うこともできます。</li>
+				<li><uri link="#doc_chap6">第６章ドキュメントの送付方法：</uri>ドキュメントの送付について解説します。</li>
+
+			</ul>
+			</p>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>ドキュメントの構成</title>
+		<section>
+		<body>
+			<p>
+			ここでは、ドキュメントの最低限必要となる項目について解説します。<br />
+			文書の作成にとてもよいガイド、<uri link="/doc/ja/xml-guide.xml">Gentoo Linux ドキュメンテーションガイド</uri>がありますので、参照してください。
+			GentooJPのドキュメントで、必ず必要となる初期化部及び終了部などは次のとおりです。
+			また、<e>ドキュメントのファイル名、文書のタイトル、作成者のメールアドレス、作成者名、文書の摘要、作成年月日、文書のバージョン</e>は適宜変更する必要があります。<br />
+			ドキュメントのファイル名は、簡潔にその文書の内容が理解できるものが良いでしょう。なお、翻訳ドキュメントの場合は、バージョン番号を変更しないで下さい。オリジナルドキュメントの場合は、バージョンを<c>1.0</c>としてください。<br />
+                        これ以外の項目については、変更の必要はありません。<c>青文字</c>の部分が、変更を必要とする箇所です。実際のドキュメントは次のような構成となります。<br />
+			</p>
+<pre caption="ドキュメント 基本構成">
+&lt;?xml version='1.0' encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt; 
+&lt;!--<comment>上の行は最終的な翻訳ドキュメントでは必要ありません。AxKit以外で確認する場合の文法チェックで必要となります</comment>--&gt;
+&lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
+
+&lt;!--<comment>ドキュメントのファイル名</comment>--&gt;
+&lt;guide link="/jpdoc/<i>test-xml.xml</i>"&gt;
+
+&lt;!--<comment>ドキュメントのタイトル</comment>--&gt;
+&lt;title&gt;<i>ドキュメントサンプル文書</i>&lt;/title&gt;
+
+&lt;!--<comment>作成者名、作成者のメールアドレス</comment>--&gt;
+&lt;author title="Author"&gt;&lt;mail link="<i>docs@gentoo.gr.jp</i>"&gt;<i>GentooJP</i>&lt;/mail&gt;
+&lt;/author&gt;
+
+&lt;!--<comment>翻訳ドキュメントの場合は、以下を追加します</comment>--&gt;
+&lt;author title="翻訳"&gt;&lt;mail link="<i>翻訳者メールアドレス</i>"&gt;<i>翻訳者名</i>&lt;/mail&gt;
+&lt;/author&gt;
+
+&lt;!--<comment>Original revision:<i> 1.49</i></comment>--&gt;&lt;!--<codenote>翻訳ドキュメントでオリジナルリビジョンを確認するために記入してください</codenote>--&gt;
+
+
+&lt;!--<comment>文書の摘要</comment>--&gt;
+&lt;abstract&gt;<i>
+このガイドは、GentooJPの翻訳・オリジナルドキュメントの基本構成について、サンプルを提供します。 
+</i>&lt;/abstract&gt;
+
+&lt;!--<comment>ドキュメントのバージョン</comment>--&gt;
+&lt;version&gt;<i>1.0</i>&lt;/version&gt;
+
+&lt;!--<comment>作成年月日</comment>--&gt;
+&lt;date&gt;<i>8 November 2002</i>&lt;/date&gt;
+
+
+&lt;!--<comment> ここから本文です。</comment>--&gt;
+&lt;chapter&gt;
+&lt;title&gt;<i>これは第１章のタイトルです</i>&lt;/title&gt;
+&lt;section&gt;
+
+&lt;title&gt;<i>これは第１章第１節のタイトルです</i>&lt;/title&gt;
+
+&lt;body&gt;
+
+&lt;p&gt;<i>第１章の第１節の本文です。</i>&lt;/p&gt;
+
+&lt;pre&gt;<i>コード領域です。実際に入力する操作を記載します。</i>&lt;/pre&gt;
+
+&lt;note&gt;これは注記です。&lt;/note&gt;
+&lt;warn&gt;これは警告です。&lt;/warn&gt;
+&lt;impo&gt;これは重要項目です。&lt;/impo&gt;
+
+&lt;/body&gt;
+&lt;/section&gt;
+&lt;/chapter&gt;
+&lt;!--<comment> ここまでが本文です。</comment>--&gt;
+
+&lt;/guide&gt;
+</pre>
+		<note>
+		このサンプル文書の名前はjpdoc/test-xml.xmlです。<uri link="/jpdoc/test-xml.xml">実際の表示</uri>を確認してみてください。
+		</note>
+		</body>
+		</section>
+
+</chapter>
+
+<chapter>
+	<title>ドキュメント作成準備</title>
+
+	<section>
+		<title>概要</title>
+		<body>
+		<p>gentoo.orgやGentooJPのXMLドキュメントは、すべてcvsで公開されています
+		回線状況やディスクスペースの問題なども考慮して、必要最小限のファイルで準備する方法、
+		www.tar.gzを取得し展開する方法、cvs利用による方法を紹介します。<br />
+		(翻訳ドキュメントでは作業の開始宣言、gentoo.orgの原文取得など追加作業が必要になりますが、この章の最後に説明します。)<br />
+		どの方法でも、次の点は守ってください。
+		<ul>
+			<li>ドキュメント作成は、必ずjpdoc/以下で行うこと。(翻訳ドキュメントでは、doc/ja/以下での作業を推奨)</li>
+			<li>オリジナルドキュメントで画像イメージを使用する場合は、/images/(ドキュメント名)/画像ファイル名とすること。</li>
+			<li>画像フォーマットは、PNGを推奨します。</li>
+		</ul>
+		</p>
+		</body>
+	</section>
+
+	<section>
+		<title>必要最小限のファイルで準備する方法</title>
+		<body>
+		<p>
+		オリジナルドキュメントを作成するには、まずディレクトリを適切なユーザーの /home 領域などに、dtd、xsl、css、jpdoc、imagesの５つを作成します。
+		次に、dtd/guide.dtd、xsl/guide.xsl、css/main.css を配置します。作成しようとするドキュメントは、jpdocディレクトリで作業を行って下さい。<br />
+		作業領域として<i>www</i>以下に各ディレクトリとファイルを展開します。
+		</p>
+<pre caption="ディレクトリの作成とファイルの配置">
+$ <i>mkdir www </i>
+$ <i>mkdir www/{dtd,xsl,css,jpdoc,images}</i>
+$ <i>wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/dtd/guide.dtd? -P www/dtd</i>
+$ <i>wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/xsl/guide.xsl? -P www/xsl</i>
+$ <i>wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/css/main.css? -P www/css</i>
+</pre>
+	</body>
+	</section>
+
+	<section>
+		<title>www.tar.gzを取得して展開する方法</title>
+		<body>
+		<p>
+		GentooJPのwebコンテンツ全体を取得することのできるwww.tar.gzは、<uri link="http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/gentoojp/www/www.tar.gz?tarball=1">こちら</uri>から取得できます。<br />
+		www.tar.gzを取得して展開する方法は、他のドキュメントを参考にしながら作業できるのが利点です。コマンドラインから取得して展開する方法は次のとおりです。<br />
+		展開が終われば、GentooJPのwebコンテンツと同様のディレクトリ構成とファイルがwww/以下に配置されます。
+		</p>
+<pre caption="www.tar.gzの取得と展開">
+$ <i>cd ~/</i>
+$ <i>wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/gentoojp/www/www.tar.gz?tarball=1</i>
+$ <i>tar -zxvf www.tar.gz</i>
+</pre>
+		</body>
+	</section>
+
+	<section>
+		<title>cvsを利用する方法</title>
+		<body>
+		<p>
+		cvsを利用する方法は、いくつかのコマンドを覚えることでファイルのバージョンを常に最新版にしておけるなど大変便利です。<br />
+		以下に基本的な内容を書きますが、詳細は
+		<uri link="/doc/ja/cvs-tutorial.xml">CVSチュートリアル</uri>、
+		<uri link="http://sourceforge.jp/cvs/?group_id=190">sourceforge.jp</uri>などを参照してください。<br />
+		あなたのホームディレクトリを<c>/home/username</c>、リポジトリは、<c>gentoojp</c>として説明します。
+		</p>
+<pre caption="cvsのインストールとリポジトリの作成">
+<codenote>cvsのインストール</codenote>
+# <i>emerge cvs</i>
+
+<codenote>リポジトリの作成</codenote>
+$ <i>cvs -d /home/username/gentoojp init</i>
+</pre>
+		<p>
+		GentooJPのWebコンテンツ(www.tar.gzと同内容)をチェックアウト(作業コピー取り出し)し、/home/username/gentoojp/www/以下に必要ファイルを取得します。
+		</p>
+<pre caption="checkout">
+$ <i>cd /home/username/gentoojp</i>
+$ <i>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/gentoojp co www</i>
+</pre>
+
+		<p>
+		次のコマンドは、取得した作業コピーをアップデートする場合に使用します。
+		</p>
+<pre>
+$ <i>cd /home/username/gentoojp</i>
+$ <i>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/gentoojp update -dP</i>
+</pre>
+		<impo>このガイドでは、作業ディレクトリを<c>www/</c>として解説していますが、
+		cvsを利用した場合には作業ディレクトリが <c>gentoojp/www/</c>となります</impo>
+		</body>
+	</section>
+
+	<section>
+		<title>翻訳ドキュメント作成の際に必要となる追加手順</title>
+	<body>
+	<p>
+	翻訳ドキュメント作成の際には、翻訳状況の確認と翻訳手順を確認してください。
+        GentooJPでは、<uri link="/jpmain/trans_status.xml">GentooJP翻訳プロジェクト - 進捗状況</uri>と
+        <uri link="/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>の２つの詳細なドキュメントを用意しています。
+        なお、この手順はオリジナルドキュメント作成では必要ありません。
+        </p>
+	</body>
+	</section>
+</chapter>
+
+<chapter>
+	<title>ドキュメントの確認方法(HTML)</title>
+	<section>
+		<title>HTML変換による確認</title>
+	<body>
+		<p>
+		HTML変換による確認方法は、コンソールから内容、記述上の間違いなどを検証する方法です。まず文法チェック・変換ツールのインストールを行います。一度インストールを行ってしまえば、次回からは必要ありません。
+		</p>
+<pre caption="HTML変換に必要なパッケージのインストール">wget http://cvs.sourceforge.jp/cgi-bin/viewcvs.cgi/*checkout*/gentoojp/www/dtd/guide.dtd? -P www/dtd
+<codenote>xmllint(文法チェック)</codenote>
+# <i>emerge libxml2</i>
+
+<codenote>xsltproc(HTML変換)</codenote>
+# <i>emerge libxslt</i>
+</pre>
+		<p>
+		完成したオリジナルドキュメントをHTMLに変換して確認するには、まず、xmllintで文法チェックを行います。次にHTMLに変換するのですが、
+		jpdoc/test-xml.xml(あなたが作成した文書名)とxsl/guide.xslに、dtdとcssが絶対パス指定として記述されている部分があるため、変更してから確認する必要があります。
+		</p>
+<pre caption="jpdoc/test-xml.xml">
+<comment>３行目変更前</comment>
+&lt;!DOCTYPE guide SYSTEM "/dtd/guide.dtd"&gt;
+<comment>３行目変更後</comment>
+&lt;!DOCTYPE guide SYSTEM "../dtd/guide.dtd"&gt;
+</pre>
+<pre caption="xsl/guide.xsl の変更">
+<comment>11行目変更前</comment>
+href="/css/main.css"
+<comment>11行目変更後</comment>
+href="../css/main.css"
+</pre>
+<warn>この変更は、AxKitで確認をする場合には必要ありません。</warn>
+<pre caption="HTMLへの変換">
+$ <i>cd ~/www/jpdoc</i>
+
+$ <i>xmllint --valid --noout test-xml.xml</i>
+<codenote>ここでエラーが表示されるかも知れません。チェックしてください。</codenote>
+
+$ <i>xsltproc  ../xsl/guide.xsl test-xml.xml &gt; test-xml.html</i>
+
+
+<codenote>UTF-8コードをeucJPコードに変換します。ここで次のようなメッセージが表示されることがありますが、無視してください。</codenote>
+$ <i>iconv -f utf-8 -t eucjp -c -o test-xml-euc.html &lt; test-xml.html </i>
+iconv: 位置 3859 で不正な入力シーケンスがありました
+</pre>
+<note>xmllintでの文法チェックは、AxKitでの確認方法を使用する場合でも、とても便利です。</note>
+	</body>
+	</section>
+	<section>
+		<title>ドキュメントの確認</title>
+	<body>
+	<p>
+	作成したドキュメントは、w3mなどから確認を行います。
+	</p>
+<pre>
+<codenote> w3mがインストールされていない場合には、次のコマンドでw3mをインストールします。</codenote>
+# <i>emerge w3m</i>
+
+<codenote> HTMLの確認をします。</codenote>
+$ <i>w3m file:///home/username/www/jpdoc/test-xml-euc.html</i>
+</pre>
+	<note>net-www/w3mmeeを使って、UTF-8エンコーディングのまま、HTMLを参照することもできます。</note>
+	</body>
+	</section>
+</chapter>
+<chapter>
+	<title>ドキュメントの確認方法(AxKit)</title>
+
+	<section>
+		<title>AxKitのインストールとApacheの設定</title>
+		<body>
+		<p>
+		AxKitを使えば、GentooJPでドキュメントがが公開されるときとほぼ同じ状態で文法のチェック、レイアウトのチェックなどが可能になりますし、印刷用のXSLスタイルシートを使って紙上でも確認ができます。<br />
+		このガイドでは、ローカル環境で、Apache Virtual Hostを使った設定方法を紹介します。
+		ユーザー名<c>username</c>、グループ名<c>users</c>、ドキュメントディレクトリを<c>/home/username/www</c>として説明します。
+		まず、AxKitをインストールします。
+		</p>
+<pre caption="AxKitのインストール">
+# <c>emerge -p AxKit</c>
+[ebuild  N   ] dev-perl/AxKit-1.6-r1 
+<codenote>AxKitに必要なパッケージの一覧が表示されます。お使いの環境によってはたくさんのパッケージがインストールされます。</codenote>
+
+# <c>emerge AxKit</c>
+</pre>
+		<p>
+		/etc/conf.d/apache にmod_perlモジュールが有効となるオプションを加えます。
+		</p>
+<pre caption="/etc/conf.d/apacheの設定">
+APACHE_OPTS="-D PERL"
+</pre>
+		<p>
+		mod_perlの設定をします。次のコマンドを実行することで、/etc/apache/conf/appache.conf に設定が追加されます。
+		</p>
+<pre caption="/etc/apache/conf/apache.confへの設定追加">
+# <i>ebuild /var/db/pkg/dev-perl/mod_perl-1.27-r1/mod_perl-1.27-r1.ebuild config</i>
+</pre>
+
+<pre caption="apache.confに追加される内容">
+&lt;IfDefine PERL&gt;
+  LoadModule perl_module        extramodules/libperl.so
+&lt;/IfDefine&gt;
+
+&lt;IfDefine PERL&gt;
+  AddModule mod_perl.c
+&lt;/IfDefine&gt;
+</pre>
+		<p>
+		vhosts.conf を有効にするために、/etc/apache/conf/appache.conf を次のとおり設定します。
+		</p>
+<pre caption="/etc/apache/conf/apache.confの設定">
+# Include conf/vhosts/Vhosts.conf
+<comment>コメントアウトを取り除いて有効化します</comment>
+Include conf/vhosts/Vhosts.conf
+</pre>
+		<p>
+		/etc/apache/conf/vhosts/Vhosts.confは次のように設定します。
+		ローカルエリア内の環境を想定していますので、追加的に必要となるApache、DNSその他の設定は、適切なドキュメントを参照してください。
+		なお、IPアドレスは、<c>192.168.1.1</c>を想定しています。
+		</p>
+<pre caption="/etc/apache/conf/vhosts/Vhosts.conf の設定">
+Port 8080
+Listen 8080
+
+&lt;VirtualHost 192.168.1.1:8080&gt;
+User username
+Group users
+DocumentRoot /home/username/www
+ErrorLog /home/username/www-error_log
+&lt;IfModule mod_alias.c&gt;
+ Alias /doc /home/username/www/doc
+&lt;/IfModule&gt;
+&lt;Directory /home/username/www&gt;
+Options Indexes FollowSymLinks Multiviews ExecCGI
+ AllowOverride All
+ Order allow,deny
+ Allow from all
+&lt;IfModule mod_perl.c&gt;
+ PerlModule AxKit
+  SetHandler perl-script
+  PerlHandler AxKit
+  <codenote>次の１行は表示用と印刷用のXSLを使い分ける場合に必要です</codenote>
+  AxAddPlugin Apache::AxKit::StyleChooser::QueryString
+  AxAddStyleMap text/xsl Apache::AxKit::Language::LibXSLT
+&lt;/IfModule&gt;
+&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</pre>
+<note>エラーログが /home/username/www-error_log に作成されます。</note>
+<warn>ここで説明したApacheの設定は、あくまでGentooJPドキュメントチェック用であり、外部への公開、セキュリティなどは考慮していません。</warn>
+	</body>
+	</section>
+	<section>
+	<title>印刷用表示をする場合の追加設定</title>
+	<body>
+<p>
+表示用と印刷用を使い分け確認作業を行う場合は、まず表示用と印刷用のxslファイルを取得する必要があります。また、翻訳ドキュメントは最終的にgentoo.orgのディレクトリ下におかれるので、なるべくgentoo.orgの最新版xslファイルを取得してください。
+xslファイルのダウンロードは<uri link="http://www.gentoo.org/cgi-bin/viewcvs.cgi/xml/htdocs/xsl/?cvsroot=gentoo">こちら</uri>からできます。最低限、印刷用の<c>guide-print.xsl</c>を取得して、www/xsl/以下に保存して下さい。
+</p>
+<impo>
+xsl取得用のアドレスは将来変更になる可能性があります。
+</impo>
+<p>
+次に表示用と印刷用を使い分けるために作業ディレクトリjpdoc/以下に.httaccessファイルを作成します。
+</p>
+<pre caption=".htaccessファイルの例">
+&lt;AxMediaType screen&gt;
+    &lt;AxStyleName "#default"&gt;
+      AxAddProcessor text/xsl /xsl/guide.xsl
+    &lt;/AxStyleName&gt;
+    &lt;AxStyleName printable&gt;
+      AxAddProcessor text/xsl /xsl/guide-print.xsl
+    &lt;/AxStyleName&gt;
+&lt;/AxMediaType&gt;
+</pre>
+<note>
+.htaccessファイルには適切なパーミションを設定して下さい。
+</note>
+<impo>
+印刷用で表示されない場合、&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt;を削除しているか確認して下さい。
+</impo>
+	</body>
+
+	</section>
+	<section>
+		<title>Apacheの起動</title>
+	<body>
+		<p>
+		各confファイルの準備が整ったら、apachectl で 各ファイルの変更点にミスがないかチェックし、問題がなければApacheを起動します。
+		</p>
+<pre caption="configtest">
+# <c>apachectl configtest</c>
+
+<codenote>Apacheが起動していない場合</codenote>
+# <c>/etc/init.d/apache start</c>
+
+<codenote>すでにApacheが起動している場合</codenote>
+# <c>/etc/init.d/apache stop start</c>
+</pre>
+
+	</body>
+	</section>
+	<section>
+		<title>ドキュメントの確認</title>
+	<body>
+	<p>
+	作成したドキュメントは、mozillaなどから、<c>http://192.168.1.1:8080/jpdoc/test-xml.xml</c>を開いて確認します。
+	印刷用のxslで確認するには同じく<c>http://192.168.1.1:8080/jpdoc/test-xml.xml?style=printable</c>とします。
+	</p>
+	</body>
+	</section>
+</chapter>
+<chapter>
+	<title>ドキュメントの送付方法</title>
+<section>
+	<body>
+	<p>
+	翻訳・オリジナルドキュメントの作成が終わったら、翻訳ドキュメントは、<uri link="/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>を、オリジナルドキュメントは、<uri link="/jpmain/original-doc.xml">GentooJP オリジナルドキュメントプロジェクト</uri>を参照して、
+	あなたが作成したすばらしい文書を送信して下さい。<br />
+        なお、ドキュメントの確認を<uri link="#doc_chap4">"ドキュメントの確認方法(HTML)"で、行った場合には、</uri>
+	<uri link="#doc_chap4_pre2">jpdoc/test-xml.xmlの変更</uri>を忘れずに元に戻してから、送付してください。<br />
+        送信する前に、文字コードはutf-8、改行コードはLF、xmllintのチェックはもう一度してくださいね。:)
+	</p>
+	</body>
+</section>
+</chapter>
+
+</guide>

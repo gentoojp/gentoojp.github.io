@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota.)</poster>
+	<date>07 April 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年4月7日号</title>
+<body>
+<p>
+<b>
+Gentoo Weekly Newsletter<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml">今週号の</uri>トップニュースは、Poatageの期待される仕様についてです。
+</b>  
+いつもどおりのセクションや、Portage Watch、BugzillaそれにGentooセキュリティーもあります。おお、それに間違ってるといけないので、先週のエイプリルフールに発表された記事についても。
+</p>
+</body>
+</news>

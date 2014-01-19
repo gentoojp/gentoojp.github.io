@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/guide-irc-xchat.xml">
+
+<title>IRCクライアントの設定 (XChat編)</title>
+<author title = "著者"><mail link = "dk@kojima.sytes.net">Kojima</mail></author>
+
+<abstract>このガイドでは、XChatを使った、GentooJP・IRCチャンネルへの接続について解説します。
+対象は、(Gentoo) Linux 上で、初めてIRCに参加するユーザーです。
+</abstract>
+
+<version>0.1</version>
+<date>25 November 2002</date>
+
+
+<chapter>
+	<title>XChatのインストールと設定</title>
+		<section>
+			<title>XChatについて</title>
+		<body>
+			<p>
+			XChatはUNIX向けに作られたIRCクライアントです。<br/>
+			また、XChatは*BSDやPOSIX準拠なOSで動作しますが、Windows版も作られています。。<br/>
+			詳しくは<uri link="http://xchat.org/">XChat</uri>を御覧ください。
+			</p>
+		</body>
+		</section>
+		<section>
+			<title>XChatのインストール</title>
+		<body>
+			<p>
+			ここでGentooLinuxな皆様にはemergeという便利なコマンドがありますね。<br/>
+			インストールも簡単に1コマンド！<br/>
+<pre>
+# <i>emerge xchat</i>
+</pre>
+			これでOKです。<br/>
+			</p>
+		</body>
+		</section>
+
+		<section>
+			<title>XChatの設定</title>
+		<body>
+			<p>
+			XChatの設定を始める前に、IRCサーバー、IRCチャンネル、ニックネームを決めておきます。<br/>
+			IRCサーバーホストはfreenodeですが、IRCサーバーは複数あります。<br/>
+			最新の情報は、<uri link="http://freenode.net/irc_servers.shtml">freenodeIRCサーバリスト</uri>から取得できます。<br/>
+			ここでは、IRCサーバーを<c>irc.freenode.net</c>とします。<br/>
+			IRCチャンネルは、GentooJP では<c>#Gentoo-ja</c>です。<br/>
+			ニックネームを考えておいてください。メーリングリストなどで使っているわかり易いニックネームが良いでしょう。<br/>
+			ここでは、ニックネームを<c>GentooJP</c>、とします
+			</p>
+			<table>
+				<tr>
+					<th>No</th>
+					<th>操作画面</th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<ti> 1</ti>
+					<ti><uri link="/images/xchat/guide-irc-xchat0.png"><img src="/images/xchat/guide-irc-xchat0s.png"></img></uri></ti>
+					<ti>コンソールからXchatを起動します。</ti>
+				</tr>
+				<tr>
+					<ti> 2</ti>
+					<ti><uri link="/images/xchat/guide-irc-xchat1.png"><img src="/images/xchat/guide-irc-xchat1s.png"></img></uri></ti>
+					<ti>サーバ選択画面で「新規サーバー」をクリックします。</ti>
+				</tr>
+				<tr>
+					<ti> 3</ti>
+					<ti><uri link="/images/xchat/guide-irc-xchat2.png"><img src="/images/xchat/guide-irc-xchat2s.png"></img></uri></ti>
+					<ti>
+					入力事項は図のように入力します。<br/>
+					サーバーはここでは<c>irc.freenode.net</c>としています。<br/>
+					チャンネルは<c>#Gentoo-ja</c>と入力します。<br/>
+					ニックにはIRCで使いたいニックネームを入力します(16文字以内の英数字で先頭は英字)<br/>ここでは、<c>GentooJP</c>と入力してます。<br/>
+					自動接続はチェックしてもしなくてもどちらでも構いません。チェックした場合は起動時に自動的に接続します。<br/>
+					</ti>
+				</tr>
+				<tr>
+					<ti> 4</ti>
+					<ti><uri link="/images/xchat/guide-irc-xchat3.png"><img src="/images/xchat/guide-irc-xchat3s.png"></img></uri></ti>
+					<ti>3.の題名という項目に書いたFreenodeというのがサーバ一覧に追加されていますので、それをクリックして接続ボタンを押します。</ti>
+				</tr>
+			</table>
+			<note>これで、<c>#Gentoo-ja</c>を使う最低限の設定は終わります</note>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>IRCチャンネルの利用</title>
+		
+		<section>
+			<title>IRCチャンネルへの接続と発言</title>
+		<body>
+			<p>
+			XChatの設定が終わり、数秒～数分待てば、次のような画面になり、<br/>
+			IRCに参加しているメンバーが右上に表示され、会話が出来る状態になります。
+			</p>
+			<table>
+				<tr>
+					<th>起動画面</th>
+				</tr>
+				<tr>
+					<ti><img src="/images/xchat/guide-irc-xchat4.png"/></ti>
+				</tr>
+			</table>
+			<note>IRCサーバの状態によっては、うまく接続できないことがあります。その場合は再接続などをしてください。</note>
+			<p>
+			XChatを使って発言するには、<e>「こんにちは」</e>と書かれてるところに発言内容を入力して<c>Enterキー</c>を押します。最初は、<c>こんにちは</c>などの挨拶が良いでしょう。
+			</p>
+		</body>
+		</section>
+
+		<section>
+			<title>XChatの終了</title>
+		<body>
+			<p>
+			IRCチャンネルから出て、XChatを終了するには、<br/>
+			右上の×ボタンを押してもいいし、メニューの「X-Chat」の「終了」を押してもいいです。
+			</p>
+		</body>
+		</section>
+
+		<section>
+			<title>おわりに</title>
+		<body>
+			<p>
+			どうしてもわからない事があったら<c>#Gentoo-ja</c>で聞いてみて下さい。:-)
+			</p>
+		</body>
+		</section>
+</chapter>
+</guide>

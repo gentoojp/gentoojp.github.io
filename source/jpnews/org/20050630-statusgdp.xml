@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="main">
+<poster>Sven Vermeulen</poster>
+<date>2005-06-30</date>
+<title>Gentoo ドキュメントプロジェクト最新状況</title>
+
+<body>
+
+<p>
+Gentoo<uri link="/proj/en/gdp">ドキュメントプロジェクト</uri>の<uri link="/proj/en/gdp/status/status_20050630.xml">最新状況</uri>が発表されました。今月はドキュメントの更新作業とGentooガイドの拡大しつつあるリポジトリへの新規貢献がありました。私たちはドキュメントプロジェクトへの新たな開発者の参加を歓迎します。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>17 Sep 2006</date>
+	<title>「Jffnmsインストール・セットアップガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+<uri link="http://www.gentoo.org/doc/ja/jffnms.xml">Jffnmsインストール・セットアップガイド</uri>の翻訳が完了しました。
+このガイドでは、ネットワーク管理・監視システムであるJffnmsのインストール後のセットアップ作業の進め方と、システム監視方法について紹介しています。
+</p>
+
+
+<p>
+原文より：
+</p>
+
+<p>
+<uri link="http://www.jffnms.org">Jffnms</uri>はネットワーク管理・監視システムです。
+これにより、様々なホストやプロトコルから情報を取得できます。このガイドは、
+Jffnmsの適切なインストール方法と、この驚くべきツールを使ったシステム監視方法の説明を目的としています。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/jffnms.xml">Jffnmsインストール・セットアップガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、村上 卓 さん、また査読をしてくださったみなさん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

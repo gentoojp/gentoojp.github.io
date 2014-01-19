@@ -1,0 +1,31 @@
+<?xml version='1.0' ?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>中野正智</poster>
+	<date>02 Jan 2003</date>
+	<title>Gentoo Weekly Newsletter(GWN) 日本語翻訳メンバー募集</title>
+<body>
+
+<p>
+本家Gentoo Linuxで作成しています<uri link="http://www.gentoo.org/news/en/gwn/gwn.xml">Gentoo Weekly Newsletter(GWN)</uri>では日本語翻訳者を募集しています。
+GWNはGentoo Linuxに関する情報源のひとつとして発行されています。
+現在GWNは、英語、フランス語、イタリア語、ポルトガル語、スペイン語があります。
+そこに是非日本語を加えていただける人を募集します。
+</p>
+
+<p>
+現在2、3人の方が中心となり日本語への翻訳を行う準備をしていますが、
+ある程度の量を短い時間で翻訳しなければならないために、
+もっと多くの人の力が必要です。
+GWNは毎週土曜日早朝(日本時間)にオリジナル版ができ、
+月曜日の日中までに翻訳を完了させる必要があります。
+一人あたりの翻訳量は100-300wordsが予定されています。
+</p>
+
+<p>
+興味のある方は、GWNチームの一人であり日本語への翻訳を行う予定の<mail link="carlos@pubbawup.net">小杉悠嗣</mail>さんまで連絡をお願いします。
+</p>
+
+</body>
+</news>
+

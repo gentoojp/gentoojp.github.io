@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/guide-irc-limechat.xml">
+
+<title>IRCクライアントの設定 (LimeChat編)</title>
+<author title = "著者"><mail link = "kihei@ss.iij4u.or.jp">Takashi Ota.</mail></author>
+
+<abstract>このガイドでは、LimeChatを使った、GentooJP・IRCチャンネルへの接続について解説します。
+対象は、Microsoft Windows 上で、初めてIRCに参加するユーザーです。
+</abstract>
+
+<version>0.2</version>
+<date>24 November 2002</date>
+
+<chapter>
+	<title>LimeChatのインストールと設定</title>
+		<section>
+			<title>LimeChatについて</title>
+		<body>
+			<p>
+			LimeChatは、Microsoft Windows用の、日本語対応IRCクライアントです。<br/>
+			明快なインターフェイス、軽快な動作に加え、非常に高度なIRCクライアント機能を備えています。<br/>
+			詳しくは、<uri link="http://www.dive-in.to/~mb-arts/">LimeChatのホームページ</uri>を参照してください。
+			</p>
+		</body>
+		</section>
+		<section>
+			<title>LimeChatのインストール</title>
+		<body>
+			<p>
+			LimeChatのインストールは、とても簡単です。
+			<uri link="http://hp.vector.co.jp/authors/VA022249/limechat_download.html">ダウンロードページ</uri>から、<br/>
+			インストーラー付のソフトなどをダウンロードします。デスクトップなどに保存して、インストールを開始します。<br/>
+			ここでは、インストーラー付のLimeChatについて解説します。<br/>
+			</p>
+			<table>
+				<tr>
+					<th>No</th>
+					<th>操作画面</th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<ti> 1</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat01.png"><img src="/images/limechat/guide-irc-limechat01s.png"></img></uri></ti>
+					<ti>インストールを開始します。次へボタンを押します。なお重要な部分は<e>赤</e>で示します。</ti>
+				</tr>
+				<tr>
+					<ti> 2</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat02.png"><img src="/images/limechat/guide-irc-limechat02s.png"></img></uri></ti>
+					<ti>使用許諾書・注意事項を読み同意ボタンを押します。</ti>
+				</tr>
+				<tr>
+					<ti> 3</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat03.png"><img src="/images/limechat/guide-irc-limechat03s.png"></img></uri></ti>
+					<ti>インストール先ディレクトリを指定して次へボタンを押します。</ti>
+				</tr>
+				<tr>
+					<ti> 4</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat04.png"><img src="/images/limechat/guide-irc-limechat04s.png"></img></uri></ti>
+					<ti>あなたの環境によっては、確認ダイアログが表示されます。はいボタンを押して続けます。</ti>
+				</tr>
+				<tr>
+					<ti> 5</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat05.png"><img src="/images/limechat/guide-irc-limechat05s.png"></img></uri></ti>
+					<ti>次へボタンを押せば、インストールが開始されます。</ti>
+				</tr>
+				<tr>
+					<ti> 6</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat06.png"><img src="/images/limechat/guide-irc-limechat06s.png"></img></uri></ti>
+					<ti>インストールが問題なく終了しました。完了ボタンを押してください</ti>
+
+				</tr>
+			</table>
+		</body>
+		</section>
+
+		<section>
+			<title>LimeChatの設定</title>
+		<body>
+			<p>
+			LimeChatの設定を始める前に、IRCサーバー、IRCチャンネル、ニックネームを決めておきます。<br/>
+			IRCサーバーホストはfreenodeですが、IRCサーバーは複数あります。<br/>
+			最新の情報は、<uri link="http://freenode.net/irc_servers.shtml">freenodeIRCサーバリスト</uri>から取得できます。<br/>
+			ここでは、IRCサーバーを<c>irc.us.freenode.net</c>とします。<br/>
+			IRCチャンネルは、GentooJP では<c>#Gentoo-ja</c>です。<br/>
+			ニックネームを考えておいてください。メーリングリストなどで使っているわかり易いニックネームが良いでしょう。<br/>
+			ここでは、ニックネームを<c>gentoo</c>、とします。<e>(仮にですよ...。実際には使わないで下さい。びっくりしちゃいます。)</e>
+			</p>
+			<table>
+				<tr>
+					<th>No</th>
+					<th>操作画面</th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<ti> 1</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat07.png"><img src="/images/limechat/guide-irc-limechat07s.png"></img></uri></ti>
+					<ti>スタートボタンから、LimeChatを起動します。</ti>
+				</tr>
+				<tr>
+					<ti> 2</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat08.png"><img src="/images/limechat/guide-irc-limechat08s.png"></img></uri></ti>
+					<ti>初心者向けの設定画面を選択し、次に進みます。</ti>
+				</tr>
+				<tr>
+					<ti> 3</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat09.png"><img src="/images/limechat/guide-irc-limechat09s.png"></img></uri></ti>
+					<ti>先ほど決めた、ニックネームとIRCサーバーを設定し次に進みます。</ti>
+				</tr>
+				<tr>
+					<ti> 4</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat10.png"><img src="/images/limechat/guide-irc-limechat10s.png"></img></uri></ti>
+					<ti>起動時設定と、チャンネルを図のように設定し、次に進みます。これで設定は終了です。</ti>
+				</tr>
+			</table>
+			<note>これで、<c>#Gentoo-ja</c>を使う最低限の設定は終わります。あとは、LimeChatのヘルプなどを参照してください。</note>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>IRCチャンネルの利用</title>
+		
+		<section>
+			<title>IRCチャンネルへの接続と発言</title>
+		<body>
+			<p>
+			LimeChatの設定が終わり、自動接続を行っていますので、数分待てば、次のような画面になり、<br/>
+			IRCに参加しているメンバーが右上に表示され、会話が出来る状態になります。
+			</p>
+			<table>
+				<tr>
+					<th>起動画面</th>
+				</tr>
+				<tr>
+					<ti><img src="/images/limechat/guide-irc-limechat11.png"/></ti>
+				</tr>
+			</table>
+			<note>IRCサーバの状態によっては、うまく接続できないことがあります。その場合は再接続などをしてください。</note>
+			<p>
+			LimeChatを使って発言するには、<e>赤枠</e>に発言内容を入力して<c>Enterキー</c>を押します。最初は、<c>こんにちは</c>などの挨拶が良いでしょう。
+			</p>
+		</body>
+		</section>
+
+		<section>
+			<title>LimeChatの終了</title>
+		<body>
+			<p>
+			IRCチャンネルから出て、LimeChatを終了するには次のようにします。
+			</p>
+			<table>
+				<tr>
+					<th>No</th>
+					<th>操作画面</th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<ti> 1</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat12.png"><img src="/images/limechat/guide-irc-limechat12s.png"></img></uri></ti>
+					<ti>IRCチャンネルからでます。<c>チャンネルメニューからチャンネルから出る</c>を選択してください。</ti>
+				</tr>
+				<tr>
+					<ti> 2</ti>
+					<ti><uri link="/images/limechat/guide-irc-limechat13.png"><img src="/images/limechat/guide-irc-limechat13s.png"></img></uri></ti>
+					<ti>LimeChatを終了します。<c>サーバーメニューからプログラムの終了</c>を選択してください。</ti>
+				</tr>
+			</table>
+		</body>
+		</section>
+
+		<section>
+			<title>おわりに</title>
+		<body>
+			<p>
+			LimeChatは簡単でしょ？。どうしてもわからない事があったら<c>#Gentoo-ja</c>で聞いてみて下さい。:-)
+			</p>
+		</body>
+		</section>
+</chapter>
+</guide>

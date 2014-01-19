@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>10 Feb 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年2月10日号</title>
+<body>
+<p><b><uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml">今週のGWN</uri>では、FOSDEMでのGentoo Linuxのこと</b>や、Gentoo Linux 1.4の新しいリリースマネージャーの話、gentoo-sourcesの背後にいるあの人の詳しい話などの最新情報が掲載されています。GNOME 2.2リリースのPortageへのマージの件は、時間がなくて今週号には載せられませんでした。来週号をお待ちください。さてさて、では今週のGWNをどうぞ！
+</p>
+</body>
+</news>

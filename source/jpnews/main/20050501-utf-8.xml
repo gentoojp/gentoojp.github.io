@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>01 May 2005</date>
+	<title>「GentooでのUTF-8の使用方法」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/utf-8.xml">GentooでのUTF-8の使用方法</uri>です。
+このガイドはGentooでのLocaleでUTF-8を設定する方法を説明します。今後は全てのアプリケーションがUTF-8で統一されていくでしょうから、今から乗り換えるのもいいかもしれません。
+</p>
+
+<p>
+ゴミ情報かもしれませんが、WebDAV、sambaなどで同じディレクトリを公開する場合にはUTF-8を使用する方が問題ないでしょう。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+UTF-8を使用するためには事前に、国際化言語サポートされたglibcがインストールされている必要があります。これは、/etc/locales.buildファイルとuserlocales USEフラグが必要なことを意味します。このファイルのことを説明するのは、このドキュメントの範疇を越えてしまいますが、幸いなことに、そのファイルには使い方が豊富なコメントとしてされています。また、Gentoo Linux ローカライズガイドでも説明されています。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/utf-8.xml">http://www.gentoo.org/doc/ja/utf-8.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、中野 正智 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

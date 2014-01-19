@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<!-- $Header: -->
+
+<news gentoo="yes" category="gentoo">
+<poster>David Abbott (翻訳: 青田直大)</poster>
+<date>2012-01-02</date>
+<title>Gentoo Linux LiveDVD 12.0のリリース</title>
+<body>
+
+  <figure link="http://www.gentoo.org/proj/en/pr/releases/12.0/images/wallpaper/frontpage.png"
+    short="12.0 wallpaper" caption="Heating your boxes since 1999"/>
+
+<p> 
+Gentoo Linuxは、Gentooのユーザと開発者の変わらぬコラボレーションを祝福する新しい<b>LiveDVD</b>が出たことを誇りを持ってアナウンスします。
+LiveDVDにはすばらしいほどのパッケージが入っています。以下でいくつか紹介しましょう。
+</p>
+
+<p>
+<uri link="http://www.gentoo.org/proj/en/infrastructure/">Gentoo Infrastructure Team</uri>に特別の感謝を。
+この縁の下の力持ちのチームは、
+Gentoo Linuxプロジェクト存続に必要なリソース・サービス・技術を提供してくれています。
+</p>
+
+<ul>
+  <li>
+    このリリースに入っているパッケージは: Linux Kernel 3.1.5, Xorg 1.10.4, KDE
+    4.7.4, Gnome 3.2.1 XFCE 4.8, Fluxbox 1.3.2 Firefox 9.0, LibreOffice
+    3.4.99.2, Gimp 2.6.11, Blender 2.60, Amarok 2.5 , VLC 1.1.13, Chromium 16.0
+    などなどです。
+  </li>
+  <li>
+    お気に入りのパッケージが入っているかどうか確認したいですか?
+    
+    <uri link="http://www.gentoo.org/proj/en/pr/releases/12.0/X86_package_list.txt">
+    x86版のパッケージリスト</uri>と<uri
+    link="http://www.gentoo.org/proj/en/pr/releases/12.0/AMD64_package_list.txt">amd64版のパッケージリスト
+    </uri>を作成してあります。<uri
+      link="http://www.gentoo.org/proj/en/pr/releases/12.0/faq.xml">FAQ</uri>や新しくなった<uri
+      link="http://www.gentoo.org/proj/en/pr/releases/12.0/graphics.xml">アートワーク</uri>や
+    12.0用のDVDケースやカバーも見てみてください。
+  </li>
+  <li><b>特別機能:</b>
+    <ul>
+      <li>
+	AUFSによる書きこみ可能なファイルシステムで新しくパッケージをemergeできます!
+      </li>
+      <li>
+	リセットされない<path>$HOME</path>。詳しくはF9を!
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+LiveDVDは<b>二種類提供され、</b>ひとつはx86/x86_64のハイブリッド、
+もうひとつはx86_64のmultilibのものになります。
+<path>livedvd-x86-amd64-32ul-11.2</path>の方は、32bitのx86でも64bitのx86_64でも動作するでしょう。
+お使いのCPUアーキテクチャがx86であればデフォルトの<c>gentoo</c>カーネルで起動してください。
+CPUアーキテクチャが<uri link="http://www.gentoo.org/doc/ja/gentoo-amd64-faq.xml#difference">amd64</uri>であれば、
+<c>gentoo64</c>カーネルで起動してください。つまり、DVDで提供されている32bitの環境を使いながら64bitのカーネルで起動し、
+64bitのカスタムしたユーザランドをインストールできる、ということです。
+<path>livedvd-amd64-multilib-11.2</path>の方は、x86_64専用です。
+</p>
+
+<p>
+準備ができたら、
+<uri link="http://bouncer.gentoo.org/fetch/gentoo-12.0-livedvd/x86/">x86用イメージ</uri>か
+<uri link="http://bouncer.gentoo.org/fetch/gentoo-12.0-livedvd/amd64/">amd64用イメージ</uri>かを選んでください。
+一番近くのミラーサイトにリダイレクトされます。
+帯域を節約したかったりコミュニティを手助けしたければ、
+<uri link="http://torrents.gentoo.org">torrents</uri>も用意されているので、
+そちらもお使いください。
+</p>
+
+<p>
+なにかサポートが必要であったり、質問があれば<uri
+link="http://forums.gentoo.org/viewtopic-t-889654.html">forum</uri>(英語)のスレッドにお来しください。
+</p>
+
+<p>
+<e>変わらぬご愛顧ありがとうございます</e><br/>Gentoo Linux開発者、
+<uri link="http://www.gentoo.org/foundation/en/">Gentoo Foundation</uri>および<uri link="http://www.gentoo.org/proj/en/pr/releases/12.0/CREDITS.txt">Gentoo-Ten Project</uri>一同
+</p>
+
+</body>
+</news>

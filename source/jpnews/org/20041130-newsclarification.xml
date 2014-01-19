@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="main">
+<poster>Jeffrey Forman (翻訳: 中野正智)</poster>
+<date>30 November 2004</date>
+<title>Gentoo Linux 2005.0についての説明</title>
+
+<body>
+<p>
+2004.3と2005.0のリリースに関する<uri link="http://news.zdnet.co.uk/software/linuxunix/0,39020390,39175014,00.htm">最近の記事</uri>の中に、かなり多くのGentooユーザーと開発者が気がついたいくつかの間違いがありました。 Chris Gianelloni氏は、この間違いのすべてを修正するために、ZDNetの人達と一緒になって対応しました。私たちは、この件に対するZDNet UKの素早い対応に感謝したいと思います。
+</p>
+
+<p>
+<uri link="/proj/en/releng">Gentoo Release Engineering Project</uri>を率いるChris Gianelloni氏は、その記事の中(訳注：修正された後の記事のことです)で「2005.0リリースでは、Minimal、Universal、パッケージCDが含まれます。また、実験的なLiveCDとして、AMD64とx86向けにKnoppixライクなものもリリースされるでしょう。」と述べています。
+</p>
+
+<p>
+また、この記事には、<uri link="/proj/en/releng/installer/">Gentoo Linux Installer Project</uri>の継続的な開発成果についての記述もあります。これは、グラフィカルなインストールツールから自動的なインストールまでと言った幅広いインストール方法の多様性に狙いを定めているものです。
+</p>
+</body>
+</news>

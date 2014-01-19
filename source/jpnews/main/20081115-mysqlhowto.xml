@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>shindo</poster>
+	<date>15 Nov 2008</date>
+	<title>MySQLスタートアップドキュメント翻訳完了</title>
+<body>
+
+<p>
+MySQLスタートアップドキュメントの翻訳が完了しました。
+このドキュメントは、MySQLをGentoo上でセットアップし利用するためのドキュメントです。
+</p>
+
+<p>
+原文より：
+</p>
+
+<p>
+MySQLは様々なアプリケーションで利用されている、著名なデータベースサーバです。SQLは(S)tructured (Q)uery (L)anguage(構造化問い合わせ言語)を表し、MySQLはこのSQLを使用して他のプログラムと通信します。加えて、MySQLには独自の拡張 SQL関数が用意されおり、ユーザに追加機能を提供しています。このドキュメントでは、初期インストール、データベースとテーブルのセットアップ、新規ユーザの作成方法について見ていきます。それではインストールから始めましょう。 
+</p>
+
+<p>
+翻訳はこちらからどうぞ：
+<uri link="http://www.gentoo.org/doc/ja/mysql-howto.xml">mysql-howto</uri>
+</p>
+
+<p>
+翻訳をしてくださった、平櫛賢二さん、ありがとうございました。
+</p>
+
+</body>
+</news>

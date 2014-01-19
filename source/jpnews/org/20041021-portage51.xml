@@ -1,0 +1,129 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+<poster>swift (翻訳: samantha)</poster>
+<date>21 October 2004</date>
+<title>Portage 2.0.51 released</title>
+
+<summary>
+Gentoo Portageチームは満を持して世界にPortage 2.0.51をプレゼントします!
+変更点はprofileカスケードのサポートを強化、virtualの動的な取り扱い、USEフラグ変更でのリビルド、GPG認証等です。
+</summary>
+
+<body>
+
+<p>
+Gentoo PortageチームはPortage 2.0.51をリリースするという道の上で面白い旅しています。
+変更点と新機能に付いての俗説は幾多のサークルで会話されていました。ですから議論はともかくとして、変更点と新機能のリストを提供します。
+</p>
+
+<p><b>USEフラグ変更でのリビルド</b></p>
+
+<p>
+PortageはUSEフラグの変更を反映したパッケージの自動emerge(とre-emerge)のサポートをします。この機能を使用するには<c>emerge</c>に<c>--newuse</c>オプションを付けてください。
+</p>
+
+<pre caption="アプリケーションのUSEを認識させる">
+# <i>emerge --newuse --update --deep world</i>
+</pre>
+
+<p><b>初のGPG認証のサポート</b></p>
+
+<p>
+どのGentooのパッケージもチェックサムとPortage内でパッケージに付随するファイル群のファイルサイズが書いてある<path>Manifest</path>ファイルを持っています。
+(<path>digest-*</path>は、パッケージがダウンロードしたソースファイルに対して同じことをするためのものです。誤解しないように。)
+</p>
+
+<p>
+「Portageは最近のManifestファイルの中に含まれているGPG署名の認証をサポートします。
+これはManifestファイルの厳密なGPGチェックを行えば、あなたが使っているrsyncミラーでハッカーが改竄しても、あなたのシステムにはほとんどダメージをあたえられない、ということです。
+これはもちろん、ハッカーがGPG証明を無効にせずに変更することができないからです。
+</p>
+
+<p>
+FEATURES変数に<c>gpg</c>を設定して置けば、ユーザは何も意識することなく扱えます。
+他のFEATURES変数によって、Portageは"最小限の信用"(追加のFEATURES変数なしの場合)、"少しの信用"(<c>strict</c>)、GPGキーが署名されていることも要求される"完全な信用"(<c>severe</c>)と扱いが変わります。
+</p>
+
+<pre caption="/etc/make.confでGPG認証を有効にする">
+FEATURES="gpg"                <comment>(For minimal checking, or...)</comment>
+FEATURES="gpg strict"         <comment>(... For strict checking, or...)</comment>
+FEATURES="gpg severe strict"  <comment>(... For severe checking)</comment>
+</pre>
+
+<p><b>FHS準拠</b></p>
+
+<p>
+新しいPortageはいくつかファイルの再配置をします。
+</p>
+
+<ul>
+  <li>仮想(virtual)ファイル(<path>/var/cache/edb/virtuals</path>)はもう使いません。現在は透過的に算出してます。</li>
+  <li>worldファイルは<path>/var/cache/edb</path>の代わりに<path>/var/lib/portage/</path>の下に配置されます。</li>
+  <li><path>/etc/portage/profile/virtuals</path>は<e>ユーザ</e>設定のみの用途になります。</li>
+</ul>
+
+<p>
+worldファイルの再配置とvirtualの動的なチェックのおかげで、Portageは現在FHSとの整合性がとれています。
+例えば、<path>/var/cache</path>以下は消すことができるようになります。実際にcacheデータですし。
+</p>
+
+<p><b>パッケージのコンパイル成功の確認</b></p>
+
+<p>
+新しいebuildは、コンパイルプロセスが正しく終了したかどうかを検査するために、emerge後に走らせる用にいくつかのテストを定義できます。
+</p>
+
+<pre caption="/etc/make.conf内でマージのテストを有効にする">
+FEATURES="maketest"
+</pre>
+
+<p><b>injectされたパッケージの扱いに関する改善</b></p>
+
+<p>
+<c>--inject</c>は廃止予定です。
+パッケージをinjectする場合は<path>/etc/portage/profile/package.provided</path>に(&lt;category&gt;/&lt;name&gt;-&lt;version&gt;)を代わりに使用して追加するべきです。
+(訳注: Gentooでは、Portageに(実際のインストールは行わず)されているように見せかけることを<c>inject</c>と呼んでいます。)
+</p>
+
+<p><b>大規模のスピードアップ</b></p>
+
+<p>
+よく聞かれる苦情は「Portageは遅い」ということです。ええ、そうですね。うちも結構がんばってるんですけどね（笑)。
+依存性の計算時間は2.0.50の約33%になっています。
+</p>
+
+<p><b>埋め込みシステムサポートの改善</b></p>
+
+<p>
+<c>autoconfig</c>の機能を通じて、Portageはgnuconfigが提供するファイルを自動的にアップデートすることでuclibcベースのシステムで構築されたものを扱います。
+これはあなた用にアプリケーションを自動的に構成してくれる機能のことでは<e>ありませんよ</e>!
+</p>
+
+<pre caption="/etc/make.confでuclibcベースの構築を有効にする">
+FEATURES="autoconfig"
+</pre>
+
+<p><b>ロックの強化</b></p>
+
+<p>
+Portageは現在ソフトウェア管理のさまざまな局面でlockfileを使用しています。
+これで(フェッチやマージを含めて)正しく並列に動作するようになります。
+</p>
+
+<p><b>Eye-candy(みてたのしいもの)</b></p>
+
+<p>
+"candy"機能を有効にすると、Portageが新しくクールなスピナーになっていることに気付くことでしょう。
+</p>
+
+<pre caption="coolなスピナーをゲット">
+FEATURES="candy"
+</pre>
+
+<p>もう<c>moo</c>から目が離せない。言いたいことはそれだけさ！</p>
+
+</body>
+</news>

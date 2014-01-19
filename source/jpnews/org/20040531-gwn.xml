@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>31 May 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年5月31日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040531-newsletter.xml">Gentoo Weekly Newsletter</uri>はかなりたくさんのニュースがあります。PPC64用のLiveCDとstageファイルのベータ版のアナウンスで始まっています。これはPPC64用としては十分に実用的な最初のディストリビューションになります。</b>その他のニュースとして、いくつかnet-mail/mailwrapperパッケージに変更を加えたことや、Gentoo/BSD開発者の募集について掲載しています。また、GLSAが今週も多くあり、フランス、ドイツから興味深いニュースを載せています。Bugzillaも帰ってきました。コマンドライン類義語辞書の実装についてのヒントもあります。楽しんで！
+</p>
+</body>
+</news>

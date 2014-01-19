@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>g2boojum(翻訳:中野正智)</poster>
+	<date>03 December 2003</date>
+	<title>Gentoo rsync serverがクラック(compromised)されました。</title>
+<body>
+<p>
+<b>Gentoo rsync.gentoo.orgサーバーがクラックされました。</b> 
+12月2日の3:45(UTC)頃、rsync.gentoo.orgのローテションのうちの一台のサーバーが外部からの侵入によりクラックされました。
+しかしながら、クラックされたシステムにはIDSとfile integrity
+checkerが導入されていてので、私たちはそのマシンで何が起こったのかを詳細に調べました。
+その結果、<e>そのマシンの中にあったPortageツリーが何も影響していないことを確信しています。</e>
+現在のところ、そのマシンはすべてのrsync.*.gentoo.orgローテーションから削除されています。分析が終わり、再インストールされるまでその状態のままでしょう。
+さらに詳しい情報は、<uri link="http://www.gentoo.org/security/en/glsa/glsa-200312-01.xml">GLSA</uri>を参照してください。
+</p>
+</body>
+</news>

@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>10 May 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年5月10日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040510-newsletter.xml">Gentoo Weekly Newsletter</uri>では、Gentooドキュメンテーションプロジェクトに加えて、Portageでカーネルを処理するべきという、GLEP 26に関する情報もお届けします。</b>さらにさらに、詳細を読みたくなるようなセキュリティアナウンス、コミュニティの話題、そして同時に多くのファイルをリネームするヒントも掲載しています。楽しんで！
+</p>
+</body>
+</news>
+

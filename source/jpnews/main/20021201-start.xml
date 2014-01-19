@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoojp="yes" category="gentoojp">
+	<poster>GentooJP admin</poster>
+	<date>1 Dec 2002</date>
+	<title>Gentoo Linux Users Group Japan(GentooJP) 設立</title>
+<body>
+	<p>
+Gentoo Linux Users Group Japan(略称GentooJP)を本日2002年12月1日設立しました。<br />
+GentooJPは、Gentoo Linuxの日本での活動を支援し、普及を図ることを目的にしています。
+また、日本語を使用し<uri link="http://www.gentoo.org">Gentoo Linux</uri>を使用している人、使用しようと考えている人、興味を持っている人に役に立つ情報の掲載、コミュニティの形成を行います。
+</p>
+<p>
+組織についての詳細は<uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri>を参照ください。
+</p>
+</body>
+</news>

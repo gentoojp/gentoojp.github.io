@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>drobbins(翻訳:中野正智)</poster>
+	<date>04 December 2003</date>
+	<title>GLSA: rsync 2.5.6のbuffer overflowを用いた外部からの脆弱性</title>
+<body>
+<p>
+<b>buffer overflowによる外部からの脆弱性についての新しい<uri link="http://www.gentoo.org/security/en/glsa/glsa-200312-03.xml">GLSAがリリースされました。</uri></b>
+その脆弱性は最近発生したGentooの<uri
+link="http://www.gentoo.org/security/en/glsa/glsa-200312-01.xml">rsync rotation servers</uri>の侵入に使われた可能性があります。
+また、
+<uri link="http://www.gentoo.org/security/en/glsa/glsa-200312-02.xml">GLSA-200312-02</uri>
+もあわせて参照し、カーネルからbrk脆弱性を排除してアップグレードしてください。</p>
+
+<p>ログ解析やrsyncに関する脆弱性の修正などに対しての活躍に、Gentooプ
+ロジェクトは、(Gentooインフラストラクチャーチームの)Andrea Barisaniさ
+ん、 Nedd Luddさん、 Kurt Lieberさん、Corey Shieldsさん、そしてMichael
+Warfieldさん、<uri link="http://www.iss.net">ISS</uri>チーム、今回の問
+題を対処してくれたrsync開発チームに、感謝します。
+そしてまた、Indiana UniversityのInformation Technology Security OfficeのLead
+Security EngineerであるDave Monnierさんと、彼のチームにも感謝します。
+</p>
+</body>
+</news>

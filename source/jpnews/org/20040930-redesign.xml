@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+
+<!-- Enter your name here -->
+<poster>g2boojum (翻訳:中村)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>30 September 2004</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Web Redesign Contest -- The Poll is Open</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+	<b>大変長らくお待たせいたしました。Gentooサイトの新デザインコンテストの投票がようやく始まりました。</b>
+	<uri link="http://www.gentoo.org/proj/en/infrastructure/redesign-guidelines.xml">コンテストページ</uri>では最終候補として残った5種類のデザインを見ることができます。
+最優秀デザインを選ぶのはGentooコミュニティです。
+<uri link="http://forums.gentoo.org/viewtopic.php?t=227589">投票</uri>は2004年10月8日金曜日締め切りです。
+デザインを応募してくれた皆さんと、投票してくれる方々に深く感謝いたします。
+</p>
+
+</body>
+</news>

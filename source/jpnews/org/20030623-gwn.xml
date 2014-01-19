@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota)</poster>
+	<date>23 June 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年6月23日</title>
+<body>
+<p>
+<b><uri link="/news/ja/gwn/20030623-newsletter.xml">今週のGentoo Weekly Newsletter</uri>はGentoo Linux 1.4の更新状況と、リリースがあまり重要視されない理由についてお届けします。</b>北アメリカのソースミラーの追加、多くのセキュリティアップデートやその他のニュースもあります。楽しんで!
+</p>
+</body>
+</news>

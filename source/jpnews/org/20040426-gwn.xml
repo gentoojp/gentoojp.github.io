@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>26 April 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年4月26日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040426-newsletter.xml">Gentoo Weekly Newsletter</uri>では新しいApacheメンテナ、Chuck Shortの紹介、WebサーバとしてのGentooについて議論するためのメーリングリストの記事が掲載されています。また、Squidメンテナの募集も掲載しています。</b>辞任する開発者Donnie Daviesの紹介（Grant Goodyearより寄稿）、コミュニティの話題、世界のGentooなどがあることを忘れずに。楽しんで！
+</p>
+</body>
+</news>
+

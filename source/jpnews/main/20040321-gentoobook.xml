@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>ソフトバンク パブリッシング株式会社</poster>
+	<date>21 March 2004</date>
+	<title>[書籍] はじめてのGentoo Linux</title>
+<body>
+<p>
+はじめてGentoo Linuxに挑戦するユーザーを対象に、インストール/システム構築からサーバー構築までを丁寧に解説した書籍です。本書を片手に、他のディストリビューションにはない魅力を放つGentoo Linuxに挑戦してみてください。巻末にはLinuxコマンドガイドを掲載し、付録CD-ROMとしてGentoo Linux 1.4 LiveCD 2枚組を収録しています。
+</p>
+<p>
+また、中身を読んでから購入したいという方向けに、<uri link="http://isbn.sbpnet.jp/24945/">http://isbn.sbpnet.jp/24945/</uri>において、目次、Part1部分のPDFデータを公開しています。正誤情報もこのURLを経由する形で掲載しますので、ぜひご確認ください。
+</p>
+<p>
+発売日 2004年03月22日/本体価格 2800円
+田中秀樹 著/ソフトバンクパブリッシング株式会社/ISBN 4-7973-2494-5
+</p>
+
+</body>
+</news>

@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/about-gentoojp.xml">
+
+<title>GentooJPについて</title>
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
+<author title="Editor"><mail link="nakano@gentoo.gr.jp">中野正智</mail></author>
+
+<abstract>このガイドではGentooJPの運営、プロジェクト、コンタクト方法について説明します。
+</abstract>
+
+<version>2.2</version>
+<date>13 March 2005</date>
+
+<chapter>
+	<title>GentooJPについて</title>
+		<section>
+			<title>GentooJPとは</title>
+		<body>
+			<p>
+			<b>Gentoo Linux Users Group Japan(GentooJP)</b>は、各種のプロジェクトの実施、
+			メーリングリスト・IRCチャンネルの開設などをとおして、
+			gentoo.orgが配布するGentoo Linuxの日本での普及・発展を支援し、
+			ユーザー間の情報交換の円滑化を図ることを目的として2002年12月1日設立されました。
+			</p>
+		</body>
+		</section>
+		<section>
+			<title>GentooJPのプロジェクト</title>
+		<body>
+			<p>
+			GentooJPでは、各種のプロジェクトを実施しています。現在進められているプロジェクトは次のとおりです。
+			</p>
+			<table>
+				<tr>
+					<th>プロジェクト</th>
+					<th>内容</th>
+				</tr>
+				<tr>
+					<ti><uri link="/jpmain/original-doc.xml">オリジナルドキュメントプロジェクト</uri></ti>
+					<ti>GentooJPのオリジナルドキュメントの企画</ti>
+				</tr>
+				<tr>
+					<ti><uri link="/jpmain/translation.xml">翻訳プロジェクト</uri></ti>
+					<ti>gentoo.orgなどから配布されているドキュメントの翻訳</ti>
+				</tr>
+				<tr>
+					<ti><uri link="/jpmain/project-ebuild.xml">ebuildプロジェクト</uri></ti>
+					<ti>オリジナルebuildなどの企画</ti>
+				</tr>
+				<tr>
+					<ti>Webコンテンツプロジェクト</ti>
+					<ti>Webコンテンツの作成、メーリングリスト及びサーバーの管理</ti>
+				</tr>
+				<tr>
+					<ti><uri link="/jpmain/project-gwn.xml">GWN翻訳プロジェクト</uri></ti>
+					<ti>gentoo.orgから毎週発行されているGentoo Weekly Newsletterの翻訳</ti>
+				</tr>
+			</table>
+		</body>
+		</section>
+		<section>
+			<title>GentooJPプロジェクト推進メンバー</title>
+		<body>
+			<p>
+			GentooJPでは各プロジェクト実施の円滑化などを目的にプロジェクト推進メンバーを選出しています。<br />
+			現在のプロジェクト推進メンバーは次のとおりです。
+			</p>
+			<table>
+				<tr>
+					<th>メンバー</th>
+					<th>主な担当</th>
+					<th>備考</th>
+				</tr>
+				<tr>
+					<ti>おぎうち</ti>
+					<ti>Web/ドキュメント管理</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="carlos@gentoo.gr.jp">小杉</mail></ti>
+					<ti>GWN翻訳</ti>
+					<ti>Gentoo Linux Developer (GWN Editor)</ti>
+				</tr>
+				<tr>
+					<ti>Kojima</ti>
+					<ti>サーバー</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="usata@gentoo.gr.jp">小町</mail></ti>
+					<ti>ebuild</ti>
+					<ti>Gentoo Linux Developer</ti>
+				</tr>
+				<tr>
+					<ti>篠原</ti>
+					<ti>ebuild-uploader</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="shindo@gentoo.gr.jp">シンドウ</mail></ti>
+					<ti>オリジナルドキュメント</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="nakano@gentoo.gr.jp">中野</mail></ti>
+					<ti>Webコンテンツ、翻訳プロジェクト</ti>
+					<ti>Gentoo Linux Developer</ti>
+				</tr>
+				<tr>
+					<ti><mail link="matsuu@gentoo.gr.jp">松鵜</mail></ti>
+					<ti>ebuild</ti>
+					<ti>Gentoo Linux Developer</ti>
+				</tr>
+				<tr>
+					<ti><mail link="matsuda@gentoo.gr.jp">松田</mail></ti>
+					<ti>サーバー</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="yakina@gentoo.gr.jp">山倉</mail></ti>
+					<ti>ebuild</ti>
+					<ti>Gentoo Linux Developer</ti>
+				</tr>
+				<tr>
+					<ti><mail link="atzm@gentoo.gr.jp">渡邊</mail></ti>
+					<ti>ebuild/Web</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="hiro@extreme.jspeed.jp">武田(mignon)</mail></ti>
+					<ti>GWN翻訳、翻訳プロジェクト</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="nabeken@gentoo.gr.jp">田辺(nabeken)</mail></ti>
+					<ti>サーバー、Bugzilla</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="a5hr@gentoo.gr.jp">あしはら(a5hr)</mail></ti>
+					<ti>ebuild-uploader, subversion</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="hattya@gentoo.gr.jp">はっとり</mail></ti>
+					<ti>ebuild</ti>
+					<ti>Gentoo Linux Developer</ti>
+				</tr>
+				<tr>
+					<ti><mail link="nigoro@gentoo.gr.jp">佐藤</mail></ti>
+					<ti>ebuild tester</ti>
+					<ti>Gentoo Linux Developer</ti>
+				</tr>
+				<tr>
+					<ti><mail link="idani@gentoo.gr.jp">飴谷</mail></ti>
+					<ti>GWN翻訳、翻訳プロジェクト、その他翻訳全般</ti>
+					<ti>Gentoo Linux Developer</ti>
+				</tr>
+				<tr>
+					<ti><mail link="igarashi@gentoo.gr.jp">五十嵐</mail></ti>
+					<ti>翻訳プロジェクト</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="naota@elisp.net">青田(naota)</mail></ti>
+					<ti>ebuild</ti>
+					<ti></ti>
+				</tr>
+				<tr>
+					<ti><mail link="sorah@tubusu.net">sora_h</mail></ti>
+					<ti>ebuild、翻訳プロジェクト</ti>
+					<ti></ti>
+				</tr>
+			</table>
+
+
+<p>現在お休み中の方々</p>
+    <table>
+		<tr>
+			<th>メンバー</th>
+			<th>主な担当プロジェクト</th>
+			<th>備考</th>
+		</tr>
+		<tr>
+			<ti>萩原</ti>
+			<ti>-</ti>
+			<ti>-</ti>
+		</tr>
+		<tr>
+			<ti>太田</ti>
+			<ti>-</ti>
+			<ti>-</ti>
+		</tr>
+		<tr>
+			<ti>千里</ti>
+			<ti>-</ti>
+			<ti>-</ti>
+		</tr>
+		<tr>
+			<ti>こんの</ti>
+			<ti>GWN翻訳</ti>
+			<ti></ti>
+		</tr>
+    </table>
+
+			<p>
+			GentooJPプロジェクト推進メンバーに参加したい場合、
+			<uri link="/jpmain/about-gentoojp.xml#doc_chap4">gentoojp-misc</uri>メーリングリストにて、立候補をお願いいたします。<br />
+			また"新しいプロジェクト"を提案するなどしたい場合にも、
+			<uri link="/jpmain/about-gentoojp.xml#doc_chap4">gentoojp-misc</uri>
+			メーリングリストに投稿してください。
+			</p>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>ホームページ</title>
+		<section>
+		<body>
+			<p>
+			GentooJPでは情報発信の場として、ホームページを開設しています。<br />
+			GentooJPホームページアドレスは <uri>http://www.gentoo.gr.jp/</uri>です。<br />
+			このホームページについてのお問い合わせは<mail link="www@gentoo.gr.jp">www@gentoo.gr.jp</mail>までお願いします。
+			</p>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>フォーラム</title>
+		<section>
+		<body>
+			<p>
+			GentooJPではユーザー間の情報交換、オリジナルコンテンツ作成の場としてフォーラムを開設しています。<br />
+			GentooJPフォーラムアドレスは <uri>http://wiki.gentoo.gr.jp/</uri>です。<br />
+			フォーラムについてのお問い合わせは用意されている各コーナーをご利用ください。
+			</p>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>メーリングリスト</title>
+		<section>
+		<body>
+			<p>
+			GentooJPではユーザー間の情報交換とGentooJPの運営に関するいくつかのメーリングリストを開設しています。<br />
+			どちらも参加自由です。参加方法は次の通りです。<br />
+			</p>
+			<table>
+				<tr>
+					<ti>Users MailingList</ti>
+				</tr>
+				<tr>
+					<th>gentoojp-users@ml.gentoo.gr.jp</th>
+					<ti>Gentoo Linuxに関する話題を行なうメーリングリスト。
+問題が起こったり、わからなかった時の質問・回答を行なうことにも使用できますが、
+基本的なメーリングリストのマナーは必ず守ってください。また、Gentoo Linuxに関連することならば、Gentoo Linux固有の問題でなくても構いません。</ti>
+					<ti><mail link="gentoojp-users-ctl@ml.gentoo.gr.jp">gentoojp-users-ctl@ml.gentoo.gr.jp</mail>宛に<c>件名に何も書かず、本文に「subscribe お名前」と書いて</c>メールを送って下さい。「お名前」のところは英字(ローマ字など)で記入してください。
+			    参加確認のメールが届きますので、その指示に従ってください。</ti>
+				</tr>
+			</table>
+			<p>
+			Users MailingListに関するお問い合わせは<mail link="gentoojp-users-admin@ml.gentoo.gr.jp">gentoojp-users-admin@ml.gentoo.gr.jp</mail>までお願いいたします。
+			</p>
+			<impo>投稿された内容は原則としてすべて公開します。<uri link="http://ml.gentoo.gr.jp/users/">アーカイブはこちら。</uri>メーリングリストでの一般的なマナーを十分お守りください。</impo>
+
+			<p><br /></p>
+
+			<table>
+				<tr>
+					<ti>Misc MailingList</ti>
+				</tr>
+				<tr>
+					<th>gentoojp-misc@ml.gentoo.gr.jp</th>
+					<ti>Gentoo Linux/GentooJP関連の雑多な話を行なうメーリングリスト。
+ちょっとした雑談から「GentooJPに、こんなプロジェクトあったら面白くない？」などGentooJPのプロジェクト運営に関する話題なども気軽に投稿してください。
+					</ti>
+					<ti><mail link="gentoojp-misc-ctl@ml.gentoo.gr.jp">gentoojp-misc-ctl@ml.gentoo.gr.jp</mail>宛に<c>件名に何も書かず、本文に「subscribe お名前」と書いて</c>メールを送って下さい。「お名前」のところは英字(ローマ字など)で記入してください。
+			    参加確認のメールが届きますので、その指示に従ってください。</ti>
+				</tr>
+			</table>
+			<p>
+			Misc MailingListに関するお問い合わせは<mail link="gentoojp-misc-admin@ml.gentoo.gr.jp">gentoojp-misc-admin@ml.gentoo.gr.jp</mail>までお願いいたします。
+			</p>
+		<impo>投稿された内容は、原則としてすべて公開します。<uri link="http://ml.gentoo.gr.jp/misc/">アーカイブはこちら。</uri>メーリングリストでの一般的なマナーを十分お守りください。</impo>
+
+			<p><br /></p>
+
+			<table>
+	  			<tr>
+	    				<ti>Document Mailing List</ti>
+	  			</tr>
+	  			<tr>
+	    				<th>gentoojp-docs@ml.gentoo.gr.jp</th>
+	    				<ti>GentooJP のドキュメントに関するメーリングリスト</ti>
+	    				<ti><mail link="gentoojp-docs-ctl@ml.gentoo.gr.jp">gentoojp-docs-ctl@ml.gentoo.gr.jp</mail>宛に、<c>件名に何も書かず、本文に「subscribe お名前」と書いて</c>メールを送って下さい。「お名前」のところは英字(ローマ字など)で記入してください。
+			    参加確認のメールが届きますので、その指示に従ってください。</ti>
+	  			</tr>
+			</table>
+			<p>
+			Docs MailingListに関するお問い合わせは<mail link="gentoojp-docs-admin@ml.gentoo.gr.jp">gentoojp-docs-admin@ml.gentoo.gr.jp</mail>までお願いいたします。
+			</p>
+		<impo>投稿された内容は、原則としてすべて公開します。<uri link="http://ml.gentoo.gr.jp/docs/">アーカイブはこちら。</uri>メーリングリストでは、一般的なマナーを十分お守りください。</impo>
+    <impo>2011年8月より、<uri link="http://dir.gmane.org/gmane.linux.gentoo.documentation.japanese">GMANE にもアーカイブ</uri>されるようになりました。</impo>
+
+			<p><br /></p>
+
+			<table>
+	  			<tr>
+	    				<ti>Developer Mailing List</ti>
+	  			</tr>
+	  			<tr>
+	    				<th>gentoojp-dev@ml.gentoo.gr.jp</th>
+	    				<ti>Portageやebuildに関するメーリングリスト</ti>
+	    				<ti><mail link="gentoojp-dev-ctl@ml.gentoo.gr.jp">gentoojp-dev-ctl@ml.gentoo.gr.jp</mail>宛に、<c>件名に何も書かず、本文に「subscribe お名前」と書いて</c>メールを送って下さい。「お名前」のところは英字(ローマ字など)で記入してください。
+			    参加確認のメールが届きますので、その指示に従ってください。</ti>
+	  			</tr>
+			</table>
+			<p>
+			dev MailingListに関するお問い合わせは<mail link="gentoojp-dev-admin@ml.gentoo.gr.jp">gentoojp-dev-admin@ml.gentoo.gr.jp</mail>までお願いいたします。
+			</p>
+		<impo>投稿された内容は、原則としてすべて公開します。<uri link="http://ml.gentoo.gr.jp/dev/">アーカイブはこちら。</uri>メーリングリストでは、一般的なマナーを十分お守りください。</impo>
+
+
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>IRC</title>
+		<section>
+		<body>
+			<p>
+			GentooJPでは気軽な情報交換の場としてIRCチャンネルを開設しています。
+			</p>
+			<table>
+				<tr>
+					<ti>FreeNode:</ti>
+				</tr>
+				<tr>
+					<th>IRCサーバー</th>
+					<ti>irc.freenode.net</ti>
+				</tr>
+				<tr>
+					<th>IRCチャンネル</th>
+					<ti>#gentoo-ja</ti>
+				</tr>
+			</table>
+			<impo>IRCチャンネルでの一般的なマナーを十分お守りください。</impo>
+			<p>
+			IRCクライアントの設定方法などは、<br />
+			UNIX系では、<uri link="/jpdoc/guide-irc-xchat.xml">XChat</uri>、<uri link="/jpdoc/guide-irc-xchat2.xml">XChat2</uri>、Windows系では、<uri link="/jpdoc/guide-irc-limechat.xml">LimeChat</uri>などのドキュメントを参照してください。
+			</p>
+		</body>
+		</section>
+</chapter>
+</guide>

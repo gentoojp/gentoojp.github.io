@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>13 Aug 2005</date>
+	<title>「ドキュメント開発のTips &amp; Tricks」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/proj/ja/gdp/doc/doc-tipsntricks.xml">ドキュメント開発のTips &amp; Tricks</uri>です。
+このドキュメントは、Gentooのドキュメントを翻訳する場合の便利な手順を紹介しています。みなさんが参考にしたいGentooドキュメントが翻訳されていなかった時に、このドキュメントを参考にして翻訳をしていただければと思います:)
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+ドキュメント開発のためだけに、専用のディレクトリを作成してください。例として~/work/gentoo/docというディレクトリを作成します。このディレクトリの中に、(最新の)英語ドキュメントを保持するためのサブディレクトリ(例えばen/)を作成します。
+</p>
+
+<p>
+<uri>http://www.gentoo.org</uri>
+で実行しているのと同じようなaxkit setupを好んで使うドキュメント開発者もいます。
+これと同じような設定にするためのポインタをいくつか紹介します。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/proj/ja/gdp/doc/doc-tipsntricks.xml">http://www.gentoo.org/proj/ja/gdp/doc/doc-tipsntricks.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、池田 健吾 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

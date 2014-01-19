@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>naota</poster>
+	<date>08 Apr 2011</date>
+	<title>オープンソースカンファレンス2011 Kansai@Kobeに出展します。</title>
+<body>
+
+<p>
+GentooJPとして、<uri link="http://www.ospn.jp/osc2011-kobe/">オープンソースカンファレンス2011 Kansai@Kobe</uri>に参加します。
+展示・配布は以下を行う予定です。
+</p>
+
+<ol>
+<li>Gentoo Linuxの布教活動</li>
+<li>LiveDVDの配布</li>
+</ol>
+
+<p>
+今回の会場は、神戸市産業振興センターになっております。
+アクセス方法は、<uri link="http://www.ospn.jp/osc2011-kobe/">オープンソースカンファレンス2011 Kansai@Kobe</uri>をご参照ください。
+</p>
+
+<p>
+それでは、会場でみなさまのご来場をお待ちしています。
+</p>
+
+</body>
+</news>

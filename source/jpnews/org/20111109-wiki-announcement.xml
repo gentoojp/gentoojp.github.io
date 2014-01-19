@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="moo">
+
+<!-- Enter your name here -->
+<poster>a3li (翻訳: 青田直大)</poster>
+
+<!-- Date to be displayed -->
+<date>2011-11-09</date>
+<title>Gentooに新たな装備…「公式Gentoo Wiki」が加わりました!</title>
+
+<body>
+  
+<p>
+11月9日に公式のGentoo Wikiがオープンしました。
+</p>
+
+<p>
+Gentoo開発者の会議によくあるように、色をどうするかなど公式Wikiに関する細かいことでかなりの時間を割きました。
+最後にでてきた答えは、驚きかもしれませんが…紫でした!
+</p>
+
+<p>
+まあ、御託はもういいでしょう。
+<uri link="http://wiki.gentoo.org/?pk_campaign=launch">ぴかぴかの新しいWiki</uri>へようこそ
+</p>
+
+<p>
+Wikiを見てまわって、疑問の答えやGentooに使えるクールな技を探してみてください。
+他のGentooユーザに役立つネタがありますか? ぜひ記事を書いたり編集してみてください!
+</p>
+
+<p>
+Wikiを始める手助けになるように<uri link="http://wiki.gentoo.org/wiki/Help:Contents">Wikiがどのように動くか</uri>を書きました。
+それでも疑問があれば<uri link="irc://irc.gentoo.org/gentoo-wiki">freenodeの#gentoo-wiki</uri>でコンタクトをとったり、
+<mail>wiki@gentoo.org</mail>にメールしてください。
+</p>
+
+<p>
+あなたの投稿をお待ちしております!
+</p>
+
+<p>
+  <e>Gentoo Wikiチーム</e>
+</p>
+
+</body>
+</news>

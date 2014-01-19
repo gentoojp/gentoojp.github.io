@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>klieber (翻訳: Samantha)</poster>
+	<date>27 April 2004</date>
+	<title>Gentoo Linuxの将来</title>
+<body>
+<p>
+<b>Gentoo Linux設計主任Daniel Robbinsの離脱は明らかにプロジェクトとって痛手となるでしょう。
+DanielはGentoo Linux projectの鍵となる貢献者でした。
+そして彼の貢献は大勢に惜しまれるでしょう。
+</b>
+</p>
+<p>
+先に述べたように、Gentoo Technologiesは公式の501(c)(6)非営利団体に移行中です。評議会の手に渡ったGentoo Linuxの財政管理をおき、評議会はGentooの穏やかな管理人として活動してくれることでしょう。
+</p>
+<p>
+この評議会は、およそ200名のGentoo開発者と共にGentoo Linuxの開発がたゆまず続いていくことを確かにしてくれるでしょう。
+ここしばらくの間の事件のように、Gentoo Linuxはある一人の人間よりもはるかに大きくなってしまいました。
+事実上数万人を数えるGentooユーザコミュニティの人々の、まさにその貢献でGentoo Linuxは成り立っています。
+Gentoo Linux最大の強みはいつもすばらしいコミュニティであることです。
+何にも代え難いこの最大の強みさえあれば、Gentoo Linuxは活気があり、
+エキサイティングなLinuxディストリビューションでありつづけるでしょう。
+</p>
+<p>
+この移行によってによって不安を感じる人は、
+成功の鍵はGentooコミュニティのメンバである貴方が握っていることを思い出してください。
+あなたがGentooを成功させてきたのですし、それは今後も変わることはありません。
+故に、貴方がebuildのテストを続けたり、BugzillaでBugFixを助けたり、
+文書を寄稿したり、またフォーラムに参加したり、
+その他Gentoo Linuxを作り上げる無数の任務に参加したりすることによって、
+Gentoo Linuxの成功を確実のものとすることができます。
+</p>
+<p>
+Gentoo Linuxを支え続けてくれてありがとう。
+</p>
+</body>
+</news>

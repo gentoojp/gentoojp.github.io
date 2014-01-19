@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-05-01</date>
+	<title>「モジュラー化されたXへの移行手引き」の翻訳更新のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/proj/ja/desktop/x/x11/modular-x-howto.xml">モジュラー化されたXへの移行手引き</uri>の翻訳更新のお知らせです。
+</p>
+
+<p>
+<uri link="http://www.gentoo.org/proj/ja/desktop/x/x11/mod
+ular-x-howto.xml">モジュラー化されたXへの移行手引き</uri>は、現在も開発中ですので、前回リリースよりも大幅に更新されています。
+移行を試みて、つまずいておられる方は、一読されてはどうでしょうか？
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/proj/ja/desktop/x/x11/mod
+ular-x-howto.xml">モジュラー化されたXへの移行手引き</uri>
+</p>
+
+<p>
+翻訳を担当された、松葉さん、査読をしてくださった五十嵐さん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

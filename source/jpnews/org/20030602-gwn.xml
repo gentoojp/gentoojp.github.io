@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota)</poster>
+	<date>02 June 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年6月2日号</title>
+<body>
+<p>
+<b>
+ふたつの新しい北アメリカソースミラーサイトが<uri link="/news/ja/gwn/20030602-newsletter.xml">Gentoo Weekly Newsletter</uri>のトップを飾ります。</b> そのほか既存のシステムに対して推奨するCHOST/CFLAGS/CXXFLAGSを自動的に作成するプロジェクトについての情報や、近々おこなわれるインフラの変更についての話題があります。楽しんで。
+</p>
+</body>
+</news>

@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+        <poster>Daniel Drake(翻訳:飴谷 茂寛)</poster>
+        <date>2005-03-11</date>
+        <title>Planet Gentooのお知らせ</title>
+<body>
+<p>
+ユーザ連携プロジェクトは、<uri link="http://planet.gentoo.org/">Planet Gentoo</uri>を開始したお知らせができ、嬉しく思います。この<uri link="http://planet.gentoo.org/">Planet Gentoo</uri>は、開発者とユーザとのコミュニケーションをしやすくする目的で設置されました。また、同様に開発者同士のコミュニケーションの目的もあります。Planet Gentooは、現在50人以上の関係開発者によって書かれた記事を蓄積し、簡単で読みやすいニュースのようなフォーマットで提供しています。一度、のぞいてみてはどうでしょうか?
+</p>
+</body>
+</news>

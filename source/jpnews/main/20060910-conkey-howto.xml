@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>10 Sep 2006</date>
+	<title>「Gentoo Linux Conky Howto」の翻訳が完了しました</title>
+<body>
+
+<p>
+<uri link="http://www.gentoo.org/doc/ja/conky-howto.xml">Gentoo Linux Conky Howto</uri>の翻訳が完了しました。
+</p>
+
+<p>
+このドキュメントでは、 Conkyというシステムモニタツールのインストール方法と設定方法を説明しています。
+</p>
+
+<p>
+原文より：
+</p>
+
+<p>
+topのような他のシステムモニタと違い、ConkyはXセッション上のウィンドウとして、つまりルートウィンドウに終端して動作します(Conkyには、標準出力として情報を表示するオプションもありますが、ここでは取り上げません)。Conkyは、テキスト、プログレスバー、そしてグラフの両方を使用して収集された情報を表示します。また、topと異なりフォーマット方法はユーザで全て設定可能です。システム自体のモニタに加え、いくつかの音楽プレイヤー(XMMS、BMPx、 Music Player Daemon、そしてAudacious Media Player等)、メールスプールにある新しいメッセージ数、まだまだたくさんの情報をConkyから入手できます。欲しい機能がConkyにまだなければ、集めたい情報を入手するスクリプトを書くのは簡単なことです。既に対応済みですが、例えばRSSフィードやPOP3 e-mailメッセージカウント、地域の天気、 BOINCのステータス、Portageのステータスがこれにあたります。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/conky-howto.xml">Gentoo Linux Conky Howto</uri>
+</p>
+
+<p>
+翻訳を担当された、村上 卓 さん、また査読をしてくださったみなさん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

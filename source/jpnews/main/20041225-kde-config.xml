@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>25 Dec 2004</date>
+	<title>KDE 設定ガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+KDE 設定ガイドの翻訳が完了しました。
+</p>
+
+<p>
+このガイドではKDEの紹介から、インストール方法、初期設定の方法が説明されています。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/kde-config.xml">KDE 設定ガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林弘樹さん、お疲れさまでした。
+</p>
+</body>
+</news>

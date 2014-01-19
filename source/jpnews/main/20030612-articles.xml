@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>12 June 2003</date>
+	<title>Linux Magazineにて連載を始めました。</title>
+<body>
+<p>
+8日発売の<uri link="http://linux.ascii24.com/linux/linuxmag/">
+Linux Magazine</uri>にGentoo Linuxの記事を書かせて頂きました。
+初回の今回はGentoo Linuxの特徴について紹介しています。
+</p>
+<p>
+よろしくお願いします。
+</p>
+<p>
+また、「こんなところでもGentoo Linuxが紹介されてたよ。」などがありましたら、
+ご連絡頂ければこのような形で紹介することができます。
+<mail link="www@gentoo.gr.jp">こちら</mail>まで、よろしくお願いします。
+</p>
+</body>
+</news>

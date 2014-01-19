@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="gentoo">
+	<poster>Lance Albertson(訳:飴谷 茂寛)</poster>
+	<date>2005-05-17</date>
+	<title>Gentoo Foundationの新役員</title>
+<body>
+    <p>
+<b>2005年～2006年の<uri link="http://www.gentoo.org/foundation/en/">Gentoo Foundation</uri>の新しく役員に選ばれて、おめでとう(そして、成功をお祈りします!)</b>
+投票率はとてもよく(200人程のFoundationメンバーの内の45%が投票しました)、Foundationの初期メンバーの幅広い投票は、ほぼ問題なく行われたようです。
+投票システムの"votify"と"countify"を実装したAron Griffisと選挙管理委員を担当した
+Aron、Mike VapierとTom Martinに感謝します。
+この<uri link="http://electionmethods.org/CondorcetEx.htm">Condorcet選挙</uri>の状況を分析した詳細は、gentoo-nfpメーリングリストへ<uri link="http://article.gmane.org/gmane.linux.gentoo.nfp/252">この様に</uri>投稿されています。
+    </p>
+</body>
+</news>

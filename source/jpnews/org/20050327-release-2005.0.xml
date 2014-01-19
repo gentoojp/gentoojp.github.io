@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="gentoo">
+	<poster>Jeffrey Forman(翻訳:飴谷 茂寛)</poster>
+	<date>2005-03-27</date>
+	<title>リリースアナウンス: Gentoo Linux 2005.0</title>
+<body>
+<p>
+<b>Gentoo Linuxは待望のGentoo Linux 2005.0リリースのお知らせをみなさんにお伝えできることを誇りに思います!</b>
+</p>
+
+<p>
+このリリースは、完全な安全性を保証するためのリビルドを含めて、いくつかの障害がありました。しかしGentoo開発者コミュニティの中のたくさんのチームの助けにより、今までリリースした中で最高のリリースであると信じています。
+</p>
+
+<p>
+このリリースには、新たにAlpha、AMD64、PPC、PPC64、SPARC、そしてx86の新しいインストールメディアが含まれており、加えてIA64とSPARC32のstageファイルも含まれています。
+<uri link="http://www.gentoo.org/main/en/mirrors.xml">mirrorサイト一覧</uri>(<uri link="http://www.gentoo.org/main/ja/mirrors.xml">日本語</uri>)から自分に一番近いダウンロードサイトを調べてください(訳注:日本のミラーサーバは<uri link="http://mirror.gentoo.gr.jp">http://mirror.gentoo.gr.jp</uri>をお使いください)。また、2004.3と同様に、x86とPPC向けに最適化されたパッケージCDのイメージを<uri link="http://torrents.gentoo.org/">bittorrent</uri>サーバとまた、ドイツのFriends of Gentoo e.V.によって提供された「非公式」なセカンダリ<uri link="http://tracker.netdomination.org/">bittorrent</uri>サーバ経由でダウンロードすることもできます。
+</p>
+</body>
+</news>

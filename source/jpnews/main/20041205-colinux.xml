@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>5 Dec 2004</date>
+	<title>coLinuxのドキュメントの翻訳が完了しました</title>
+<body>
+
+<p>
+Windowsの中でLinuxを動かす<uri link="http://www.colinux.org/">coLinux</uri>の解説ドキュメントが翻訳されました。
+</p>
+
+<p>
+このドキュメントでは、インストール、ネットワークの設定、X Windowの設定といった導入部分について主に解説してします。もちろんGentoo Linuxのドキュメントですから、Gentoo Linuxを使用することが前提になっています。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/colinux-howto.xml">Gentooを稼動させるためのcoLinux設定方法</uri>。
+</p>
+
+<p>
+翻訳を行った武田洋之さん、お疲れさまでした。
+</p>
+
+</body>
+</news>

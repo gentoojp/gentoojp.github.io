@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>15 Aug 2005</date>
+	<title>「Gentoo/AMD64 技術ノート情報」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/proj/ja/base/amd64/technotes/index.xml">Gentoo/AMD64 技術ノート情報</uri>です。
+このドキュメントは、Gentoo/AMD64ユーザに貴重な情報を提供してくれますが、AMD64ハンドブックができる前のドキュメントですので、少し情報が古いかも知れません。ですが。AMD64を使用した場合のGrub、JAVAなどの情報がありますので、初めてAMD64を使用される方は、参考にされてはいかがでしょうか？
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+grubは純粋な64-bit環境では構築できません。 multilib gccを使用してのみコンパイル可能です。2004.3は標準でmultilibサポートが含まれています。もしgccからmulitlibサポートを取り除くなら、grub-staticを使用しなければなりません。 grub-staticは以下のコマンドを使用してインストール出来ます。
+</p>
+
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/proj/ja/base/amd64/technotes/index.xml">http://www.gentoo.org/proj/ja/base/amd64/technotes/index.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、藤中 正次 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

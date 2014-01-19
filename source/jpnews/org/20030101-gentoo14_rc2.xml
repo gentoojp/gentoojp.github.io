@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="moo">
+	<poster>drobbins (翻訳:yamakura)</poster>
+	<date>01 Jan 2003</date>
+	<title>Gentoo Linux 1.4_rc2 リリース</title>
+<body>
+
+<p><b>Gentoo Linux 1.4_rc2 がリリースされました ;) 圧縮ファイル、LiveCD、そして検証中のGRPセット(x86用とPowerPC用)が<uri link="http://www.ibiblio.org/pub/Linux/distributions/gentoo/releases/1.4_rc2/">ibiblio マスターミラー</uri>サイトで入手可能です。その他のミラーサイトにまもなく行き渡るでしょう。</b>
+x86リリースには、i586、i686、Athlon、Athlon XP、Athlon MP、Pentium 3用のバイナリが、PowerPCリリースには、PowerPC汎用、G3、G4用のバイナリが用意され、さらにSparcとUltraSparcがサポートされます。Alpha用のリリースは近く入手可能になると思います。さらに、<uri link="http://www.gentoo.org/doc/en/gentoo-x86-install.xml">最新のx86 1.4_rc2対応インストール手引書</uri>も提供しています。</p> 
+
+<p>今回のリリースには1.4_rc1以降に加えられたたくさんの改良が反映されていますので、1.4_rc2を使うことをお勧めします。また、これから新規にインストールをしようする皆さんには是非この&quot;次世代&quot;の1.4_rc2 LiveCDを使って欲しいと思います。次のGentoo Linuxのリリースは2週間後(2003年1月14日頃)を予定しています。このときのリリースが我々の&quot;基準&quot;を満たしているかどうかで、1.4_finalになるか1.4_rc3になるかが決まります。1.4_rc2システムは、1.4_final/_rc3がリリースされたときにそれにアップグレードすることが可能です。</p>
+
+<p>1.4_rc2のリリースに貢献してくれたユーザと開発チームの皆さんに感謝します。今年が良い年でありますように!</p>
+
+</body>
+</news>

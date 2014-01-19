@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005年1月17日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2005年1月17日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>今週の<uri link="/news/ja/gwn/20050117-newsletter.xml">Gentoo Weekly Newsletter</uri>では、先週公開されたGentooのトレードマークおよびロゴを使用するにあたってのガイドラインに焦点を当てています。また、新しいGWN翻訳チームの紹介、ドイツ語GWNのメーリングリストが新設、アメリカとイギリスで開催予定のイベントについてもお伝えします。</b>先週に続きFuture zoneでは、Gentoo開発者コミュニティによるプロジェクトの目標を取り上げ、"Tips &amp; tricks"では、FirefoxユーザのためのGentoo bugzillaサーチプラグインを紹介します。
+</p>
+
+</body>
+</news>

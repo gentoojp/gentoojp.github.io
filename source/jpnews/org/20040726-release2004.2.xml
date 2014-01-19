@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>jforman (翻訳:飴谷)</poster>
+	<date>26 July 2004</date>
+	<title>Gentoo 2004.2</title>
+<body>
+<p>
+<b>今日が、AMD64、SPARC、そしてX86アーキテクチャ用のGentoo　Linux　2004.2のリリース日です。</b>
+</p>
+
+<p>
+Gentoo Linuxリリースエンジニアリングプロジェクトは、2004.1リリースで明らかとなった主要な問題を改善することに注力してきました。
+2004.2リリースには、これらの部分の改善は含まれていますが、それだけではありません。主な改良点を以下にあげます。</p>
+	
+	<ul>
+		<li>LiveCDは、Dellのサーバクラスマシンでも動作をサポート</li>
+		<li>LiveCDは、SMPマシンでも動作をサポート</li>
+		<li>86ラップトップマシンのPCMCIAスロットのサポート</li>
+		<li>ワイヤレスLAN(802.11a/b/g)の対応</li>
+		<li>シリアルATAのサポート</li>
+	</ul>
+
+<p>
+リリースノートやmd5sumsのようなGentoo　Linux　2004.2の詳細な情報は、<uri link="/proj/en/releng/release/2004.2/2004.2.xml">2004.2の情報ページ</uri>に掲載されています。
+</p>
+
+<p>
+Gentoo Linux 2004.2は、公式<uri link="/main/en/mirrors.xml">ミラーサーバ</uri>のうちのいずれかからダウンロードができます。
+同様に、新しく設けましたBitTorrentシステムでも配布されています。
+
+<b>あと、Pentium3、Pentium4、そしてAthlon-XP用のパッケージCDを入手するには注意が必要です。
+これはBitTorrentシステムからダウンロードするか、またはGentoo Storeでの購入のみとなりますので、お気をつけください。そして、近いうちに、追加のGRPセットがBitTorrentシステムからダウンロードできるようになるでしょう...</b>
+</p>
+<!--
+<p>
+Don't forget to visit the <uri link="http://store.gentoo.org">Gentoo Store</uri>!
+The Gentoo Store offers packaged versions of 2004.2 shipped
+right to your doorstep, as well as an easy to use donation system.
+</p>
+-->
+<p>
+<b>最後に、Gentoo　Linuxを選んでいただきありがとうございます！</b>
+</p>
+</body>
+</news>

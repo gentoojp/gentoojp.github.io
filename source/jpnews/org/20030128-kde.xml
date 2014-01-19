@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="kde">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>28th January 2003</date>
+	<title>Gentoo LinuxのKDE 3.1用ebuild</title>
+<body>
+<p>
+<b>我々のKDEディベロッパ、Dan Armakさん曰く：</b>「ついに、ようやく、待ちに待ったKDE 3.1がリリースされました。ebuildがPortageに収録されています。
+emerge rsyncしてemerge kdeすればKDE 3.1が使えます。
+</p>
+<p>
+Gentooでは、KDE 3.1はKDE 3.0.xと(それから私のcvsのebuildを使ったKDE cvsとも)共存する形でインストールされます。インストール済みの3.0.xを置き替えませんから、kdmやgdmやxdmで好きな方を選べます。ディスクの容量が気になるようなら、移行を完了させたあとで古いKDE 3.0.xをunmergeするのを忘れずに。
+</p>
+<p>
+各ebuildはx86とppcでstableになっています。
+</p>
+<p>
+KDE.orgのアナウンスは<uri link="http://www.kde.org/announcements/announce-3.1.html">ここ</uri>に、素晴しい新機能ガイドは<uri link="http://promo.kde.org/3.1/feature_guide.php">ここ</uri>にあります。
+もっと詳細な新機能のリストは<uri link="http://www.kde.org/announcements/changelogs/changelog3_0_5to3_1.html">ここ</uri>です。
+</p>
+<p>
+KDE 3.1を満喫してください！　そしてこのリリースのために頑張ってくれたすべての開発者の方々、ありがとうございました！」
+</p>
+</body>
+</news>
+
+

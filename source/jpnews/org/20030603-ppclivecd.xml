@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="moo">
+	<poster>drobbins(翻訳:Takashi Ota)</poster>
+	<date>03 June 2003</date>
+	<title>New KDE/GNOME LiveCDs for the PowerPC</title>
+	<body>
+	<p>
+	<b>
+	<uri link="http://apple.slashdot.org/apple/03/05/25/2217237.shtml?tid=106&amp;tid=185">最近のSlashdot記事で</uri>、ある人がMacintoshのためのたくさんの機能をもった起動可能なLinux LiveCDを作ることは可能かと聞きました。
+	</b>
+	</p>
+	<p>
+	僕らはこれは優れたアイデアだと思いました。そして今日、PowerPCのために<b>ふたつ</b>
+	のたくさんの機能をもつLiveCDを発表します: ひとつはKDE 3、もうひとつは
+	GNOME 2をもつものです。見てください。
+	<uri link="http://www.maconlinux.org/">Mac-on-Linux</uri>経由のウィンドウで、
+	<uri link="http://www.gentoo.org/images/shots/ppc-livecd/snapshot1.jpg">KDE LiveCDがMacOS Xを起動させています</uri>。
+	</p>
+	<p>LiveCDを使うには、NewWorld PowerPC (iMacかそれより新しいもの)で単純に起動し、そして
+	Gentoo Linux/PPCの優れたパフォーマンスと機能を楽しんでください。LiveCDは
+	<uri link="http://gentoo.oregonstate.edu/releases/ppc/livecd/1.4_rc7/">ここ</uri>や
+	お近くの<uri link="http://www.gentoo.org/main/en/mirrors.xml">ミラーサーバー</uri>からもダウンロードできます。 
+	</p>
+	<p>
+	LiveCDに含まれるもの:
+	</p>
+	<ul>
+	<li>G4 AltiVec(日本語訳注；G4 デュアルプロセッサ)サポートを含むカスタムPPC kernel (2.4.21-r1)</li>
+	<li>最終のMac-On-Linuxエミュレーター(ウィンドウ内でMacOS Xを起動)</li>
+	<li>Gentooの圧縮されたLoopデバイス 2GBファイルシステム</li>
+	<li>Gnome2.2.1/Metacity/OpenboxもしくはKDE3.1.2のXfree 4.3 (DRM)</li>
+	<li>完全なGentoo 1.4_rc7 PPC stages (Gentooをインストールするために)</li>
+	<li>HFS(+) サイズ変更のためのkernel/partedパッチ(簡単にGentooの場所を空けます。)</li>
+	<li>IPv6サポート</li>
+	<li>最新の安定版Mozilla</li>
+	<li>Distcc-が有効にされた一連のgccツール(分散PPCコンパイルのため)</li>
+	<li>無線ネットーワーク向けのパケット解析ツール(kismetとairsnort)</li>
+	<li>ルーティング/拡張iptableのサポート</li>
+	<li>PHPと Apache 2/SSL</li>
+	<li>数え切れないそのほかの優れたもの</li>
+	</ul>
+	</body>
+</news>

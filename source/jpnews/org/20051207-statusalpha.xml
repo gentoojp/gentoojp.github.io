@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+<poster>Josテゥ Luis Rivero(翻訳:Chris White)</poster>
+<date>2005-12-07</date>
+<title>Gentoo Alphaプロジェクト最新状況</title>
+
+<body>
+
+<p>
+<b><uri link="/proj/en/base/alpha/status/status-20051207.xml">Gentoo
+Alpha最新状況</uri>がリリースされました。</b>コアシステムパッケージ 
+(kernel、gcc、glibc…)、作業が進行中のもの(試験的なjavaサポート、
+モジュラー化されたXorg,SELinux...)と今後計画されているもの(Alpha
+Arch Testersプロジェクト)を含んでいます。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="plans">
+<poster>Sven Vermeulen(翻訳:小林 弘樹)</poster>
+<date>January 18th, 2005</date>
+<title>Gentoo/PPCがGenesi Open Desktop Workstationを正式サポート</title>
+
+<body>
+
+<p>
+数カ月の大変な作業を終え、<mail link="pvdabeel@gentoo.org">Pieter van den Abeele</mail>率いるGentoo/PPCチームと、PegasosPPCの製造元でありGentooのスポンサーでもある<uri link="http://www.genesi.lu">Genesi</uri>は<b>Gentoo/PPCがGenesi Open Desktop Workstationを正式サポート</b>したと発表しました。そのうえ、今週にいくらかの残っている技術的な問題を解決するとすぐに、GenesiはGentoo Linuxがインストールされたシステムの販売を開始し、利益の一部をGentoo Foundationに寄付する予定にしています。
+</p>
+
+<p>
+Gentoo Foundationは、Genesiとのより密接なパートナーシップに向かうこのステップに関して非常に満足であり、Gentoo/PPC開発者達のチームがODWプラットフォームのサポートに努力したことを誇りに思っています。協定、販売、およびその他のより詳しい報道情報は次号のGentoo Weekly Newsletterで発表されます。
+</p>
+
+</body>
+</news>

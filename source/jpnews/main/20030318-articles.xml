@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>萩原佳明</poster>
+	<date>18 March 2003</date>
+	<title>Gentooの記事が雑誌に掲載されました</title>
+<body>
+<p>
+今日発売の技術評論社<uri link="http://www.gihyo.co.jp/magazines/SD">Software Design</uri> 2003年4月号に、GentooJPの中野さんによる「Gentoo Linux再び」という記事が掲載されています。PortageのTips、日本語環境構築が主な内容です。
+</p>
+<p>
+また偶然ですが、同じく今日発売のムック<uri link="http://www.enterbrain.co.jp/techwin/linux/index.html">Linux Power</uri>(エンターブレイン)に、「ジェンツーぐらし〜オレとGentooの日々〜」という記事を書かせていただきました。こちらは「Gentoo？　何？」という人に向けた、インストールからとりあえず使えるようになるまでを追った記事になっています。
+</p>
+<p>
+どちらも、よろしくお願いします。
+</p>
+</body>
+</news>

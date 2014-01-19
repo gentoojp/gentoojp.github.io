@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/translation.xml">
+
+<title>GentooJP翻訳プロジェクト</title>
+
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
+<author title="Editor"><mail link="nakano@gentoo.gr.jp">中野正智</mail></author>
+<author title="Editor"><mail link="idani@gentoo.gr.jp">飴谷茂寛</mail></author>
+
+<abstract>
+このドキュメントはGentooJPでの翻訳方法を記述したものです。
+</abstract>
+
+<version>1.3</version>
+<date>13 Mar 2004</date>
+
+<chapter>
+<title>GentooJP翻訳プロジェクトについて</title>
+<body>
+<p>GentooJP翻訳プロジェクトは、Gentoo Linux Projectで作成されたドキュメントを日本語へ翻訳するプロジェクトです。
+翻訳の成果はGentoo Linux Projectへ還元しています。</p>
+<p>
+<uri link="http://www.gentoo.org/doc/ja/index.xml">こちらから翻訳プロジェクトの成果</uri>を参照できます。
+</p>
+
+<p>このドキュメントは翻訳の手順が記述されています。</p>
+
+</body>
+</chapter>
+
+<chapter>
+<title>翻訳の手順</title>
+
+<section>
+<title>GentooJPドキュメントメーリングリストに参加する。</title>
+<body>
+<p>
+翻訳に関する話し合い、翻訳の投稿、査読などは、GentooJPドキュメントメーリングリストで行なわれています。
+このメーリングリストの参加方法についきましては、
+<uri link="about-gentoojp.xml#doc_chap4">このドキュメント</uri>を参照してください。
+また、過去のアーカイブもそちらのドキュメントから参照できますので、参考にしてください。
+</p>
+</body>
+</section>
+
+<section>
+<title>翻訳を行なう未翻訳ドキュメントを翻訳状況一覧から探す。</title>
+<body>
+<p>
+<uri link="/jpmain/trans_status.xml#doc_chap1">翻訳状況一覧</uri>を参照し、
+「新規募集中」となっているドキュメントから自分が翻訳できそうなものを選びます。
+</p>
+<p>
+また、その一覧に載っていないドキュメントを発見した場合には、
+そのドキュメントが現在使われてない可能性、または単に一覧への登録漏れの可能性などが考えられるので、
+GentooJPドキュメントメーリングリストまでお問い合わせください。
+</p>
+<p>
+また、<uri
+link="http://wiki.gentoo.gr.jp/index.php?%E4%BA%88%E7%B4%84%E3%81%BE%E3%81%9F%E3%81%AF%E6%9F%BB%E8%AA%AD%E7%8A%B6%E6%B3%81">予約または査読状況</uri>に翻訳進行中のドキュメントのリストがありますので、
+これも参考にしてください。
+</p>
+</body>
+</section>
+
+<section>
+<title>翻訳を行うことを宣言する。</title>
+<body>
+<p>
+GentooJPドキュメントメーリングリストで、どのドキュメントを翻訳するのか、宣言してください。<br />
+なお、翻訳は宣言を行った日から2週間を目途にしてください。<br />
+もし2週間で終わらなそうな場合にはその旨をメーリングリストで連絡してくだされば、そこから2週間延長することが可能です。
+連絡がない場合は宣言を取り消させていただくこともありますので、ご了承ください。
+</p>
+</body>
+</section>
+
+<section>
+<title>翻訳を行なうドキュメントのオリジナルをGentoo Linux Projectから取得する。</title>
+<body>
+<p>こちらから最新版を取得してください。<br />
+<uri link="http://www.gentoo.org/cgi-bin/viewcvs.cgi/xml/htdocs/doc/en/?cvsroot=gentoo">Gentoo Linux Project ドキュメントCVS</uri> <br />
+ダウロードしたドキュメントのリビジョン(Rev.)は必ず記録しておいてください。
+</p>
+</body>
+</section>
+
+<section>
+<title>翻訳を行なう。</title>
+<body>
+<p>Gentoo Linux Projectのドキュメントはxmlで作成されているので、翻訳もxmlで行ないます。<br />
+xml以外の文章の部分を日本語に翻訳する作業になるので、xmlを知らなくても問題ありません。元のtagを壊さないように注意するだけです。
+詳しくは次の章を参照してください。
+</p>
+
+</body>
+</section>
+
+<section>
+<title>翻訳したドキュメントを投稿する。</title>
+<body>
+<p>
+<uri link="http://projects.gentoo.gr.jp/docs/chkdoc/">翻訳ドキュメントアップロードサイト</uri>で翻訳をしたファイルをアップロードするか、全文をコピーし、貼り付けを行ってください。そこで表示されるURLをコピーし、
+ドキュメントメーリングリストへ先のURLを貼り付けて、メールしてください。<br />
+<uri link="http://projects.gentoo.gr.jp/docs/chkdoc/">翻訳ドキュメントアップロー
+ドサイト</uri>の使用方法がわからない場合は、そのまま添付ファイルとしてメーリングリストにメールしてください。
+</p>
+
+<p>
+ドキュメント用メーリングリストへ投稿されたものは、メーリングリストメンバーによって査読が行なわれ、
+問題ないと判断された場合にはGentoo Linux Project(www.gentoo.org)へ登録されます。
+</p>
+
+</body>
+</section>
+
+</chapter>
+
+<chapter>
+<title>翻訳する際の注意点</title>
+<section>
+<title>ヘッダー部</title>
+<body>
+<p>
+まずは、「guide link」タグに翻訳を行った言語である「ja」を追加します。
+次に翻訳者として自分の名前を「翻訳」として加えます。また翻訳を行なった元のリビジョンを記述します。
+元のドキュメントにあるdateとversionのタグは元のドキュメントのままにしておいてください。
+</p>
+
+<pre caption="リビジョンや翻訳者名の追加">
+<codenote>この原文の該当部分を</codenote>
+
+&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;
+&lt;!DOCTYPE guide SYSTEM &quot;/dtd/guide.dtd&quot;&gt;
+&lt;guide link = &quot;/doc/<i>en</i>/gentoo-security.xml&quot;&gt;
+&lt;title&gt;<i>Gentoo Linux Security Guide</i>&lt;/title&gt;
+&lt;author title=&quot;Author&quot;&gt;&lt;mail link=&quot;kn@insecurity.dk&quot;&gt;Kim Nielsen&lt;/mail&gt;
+&lt;/author&gt;
+(略)
+&lt;author title=&quot;Editor&quot;&gt;&lt;mail link=&quot;peesh@gentoo.org&quot;&gt;Jorge Paulo&lt;/mail&gt;
+&lt;/author&gt;
+&lt;abstract&gt;
+<i>This guide is step-by-step guide for hardening Gentoo Linux.</i>
+&lt;/abstract&gt;
+&lt;version&gt;0.4&lt;/version&gt;
+&lt;date&gt;4 May 2003&lt;/date&gt;
+(略)
+
+<codenote>以下のようにします</codenote>
+
+&lt;?xml version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;?&gt;
+&lt;!DOCTYPE guide SYSTEM &quot;/dtd/guide.dtd&quot;&gt;
+<codenote>jaに変更し、言語としてjaを指定する</codenote>
+&lt;guide link = &quot;/doc/<i>ja</i>/gentoo-security.xml&quot; <i>lang=&quot;ja&quot;</i>&gt;
+<codenote>タイトルも翻訳しましょう</codenote>
+&lt;title&gt;<i>Gentoo Linux セキュリティ・ガイド</i>&lt;/title&gt;
+&lt;author title=&quot;Author&quot;&gt;&lt;mail link=&quot;kn@insecurity.dk&quot;&gt;Kim Nielsen&lt;/mail&gt;
+&lt;/author&gt;
+(略)
+&lt;author title=&quot;Editor&quot;&gt;&lt;mail link=&quot;peesh@gentoo.org&quot;&gt;Jorge Paulo&lt;/mail&gt;
+&lt;/author&gt;
+<codenote>「翻訳」という肩書で追加</codenote>
+<i>&lt;author title=&quot;翻訳&quot;&gt;&lt;mail link=&quot;hagi@p1d.com&quot;&gt;萩原佳明&lt;/mail&gt;</i>
+<i>&lt;/author&gt;</i>
+&lt;abstract&gt;
+<i>このドキュメントでは、Gentoo Linuxのセキュリティを高める方法を順を追って説明します。</i>
+&lt;/abstract&gt;
+&lt;version&gt;0.4&lt;/version&gt;
+&lt;date&gt;4 May 2003&lt;/date&gt;
+<codenote>オリジナルのリビジョンをこのように入れます</codenote>
+<i>&lt;!-- Original revision: 1.11 --&gt;</i>
+(略)
+</pre>
+
+<impo>
+Original revisionは翻訳状況自動更新スクリプトで使用されるので、空白の数や大文字小文字など上記通りにしてください。
+</impo>
+
+</body>
+</section>
+
+<section>
+<title>文体</title>
+<body>
+<p>
+ですます調で記述します。また句読点は"、"と"。"を使用します。","と"."は使用しません。
+</p>
+</body>
+</section>
+
+<section>
+<title>他ドキュメントへのリンク</title>
+<body>
+<p>
+ドキュメント内で他のGentoo Projectドキュメントへのリンクがあり、
+そのドキュメントに日本語翻訳がある場合には以下のようにしてください。
+<pre caption="他ドキュメントへのリンク">
+&lt;uri link="/doc/en/portage-manual.xml"&gt;Portage Manual&lt;/uri&gt;
+&lt;uri link="/doc/ja/portage-manual.xml"&gt;（日本語訳）&lt;/uri&gt;
+</pre>
+</p>
+</body>
+</section>
+
+<section>
+<title>改行の場所</title>
+<body>
+<p>
+文章の途中で改行が存在するとxmlがhtmlに変換された際に、ブラウザによっては小さな隙間が空いてしまいます。それを防ぐために文章の途中に改行を入れずに、句読点の後などに改行を入れてください。
+
+<pre caption="悪い例">
+&lt;p&gt;
+改行が存在するとxmlがhtmlに変換された際に小さな隙間が空いてしまいま
+す。そのため文字の間に改行を入れずに、句読点の後などに改行を入れてく
+ださい。
+&lt;/p&gt;
+</pre>
+
+<pre caption="良い例">
+&lt;p&gt;
+改行が存在するとxmlがhtmlに変換された際に小さな隙間が空いてしまいます。
+そのため文字の間に改行を入れずに、句読点の後などに改行を入れてください。
+&lt;/p&gt;
+</pre>
+
+</p>
+</body>
+</section>
+
+<section>
+<title>その他の注意点</title>
+<body>
+<p>
+現在GentooJPでは翻訳したドキュメントに統一感を持たせるために、英語-日本語の対応表やその他の注意点をWiki上に作成しています。翻訳するにあたって参考にしてください。<uri
+link="http://wiki.gentoo.gr.jp/index.php?%E7%BF%BB%E8%A8%B3%E3%83%A1%E3%83%A2">GentooJP翻訳メモ</uri>。
+</p>
+<p>
+また、対応表に足りない単語や気付いた注意点などを、どしどし追加してください。
+もし、追加するにあたって不安なことなどありましたらgentoojp-docs MLにて、
+相談してください。
+</p>
+<p>
+単語の対応表がこのように存在していますが、現状では件数が少ないこともありますので翻訳済の他のドキュメントも参考にしてください。
+</p>
+</body>
+</section>
+
+<section>
+<title>原文に間違いを発見した場合の対応</title>
+<body>
+<p>
+原文に技術的な間違いを発見をした場合でも、間違いも含めたまま翻訳してください。
+そしてそれとは別に"(訳注: 〜)" として気付いた点を記述してください。
+その上で、可能ならば<uri link="http://bugs.gentoo.org/">Gentoo.orgのbugzilla</uri>で報告してください。
+<uri link="http://bugs.gentoo.org/">Gentoo.orgのbugzilla</uri>に投稿しづらい場合は、メーリングリストに報告してください。GentooJPメンバで<uri link="http://bugs.gentoo.org/">Gentoo.orgのbugzilla</uri>に入れさせていただます。
+</p>
+</body>
+</section>
+
+<section>
+<title>動作確認について</title>
+<body>
+<p>
+原文の内容を実機で確認することを推奨していますが、必須ではありません。
+環境の問題もあり、すべての動作確認をするのは現実的ではないからです。
+また、Gentoo.orgのドキュメントプロジェクトの見解としても、
+「原文(通常は英語)から各国語への翻訳を確実に行なうことは求めているが、技術的な内容の確認までは求めていない。」ということになっています。
+</p>
+
+<p>
+もし技術的な確認ができずに、不安な点があれば査読依頼をする際にその旨を記述してください。
+可能であれば査読者またはメーリングリスト参加者が確認します。
+</p>
+
+</body>
+</section>
+
+</chapter>
+
+<chapter>
+  <title>ドキュメントの取り扱いについて</title>
+  <section>
+    <title>翻訳ドキュメントの権利関係</title>
+    <body>
+    <p>翻訳ドキュメントは、Gentoo Linux Projectのドキュメントとしての取り扱いになりますので、GentooJPには一切権利は発生せず、Gentoo Linux Projectと(Gentoo Linux Projectが定めた範囲で)翻訳を行った方に権利が発生します。</p>
+    </body>
+  </section>
+
+  <section>
+    <title>翻訳ドキュメントの更新について</title>
+    <body>
+    <p>
+       翻訳元ドキュメントに加筆・修正があった場合には、最初に翻訳を行った方(以下、第一翻訳者)に、gentoojp-docs MLを通じて修正をお願いします。<br />
+       しかし、第一翻訳者が都合が悪い場合、または連絡がつかない場合など(<b>基本的に7日</b>)には他の方(以下、差分翻訳者)に翻訳を依頼することがあります。
+       その場合、そのドキュメントの翻訳者は第一翻訳者と差分翻訳者の連名になります。
+    </p>
+    <note>翻訳の作業を進めるための猶予期間7日というのは短かいと感じるかもしれませんが、できる限り翻訳元ドキュメントに素早く追従していきたいと考えています。</note>
+    </body>
+  </section>
+
+  <section>
+    <title>翻訳ドキュメントの取り扱い</title>
+    <body>
+    <p>
+       翻訳元ドキュメントの体裁の変更やtypoなどの簡単な修正はGentooJP翻訳プロジェクトメンバーの判断で、第一翻訳者・差分翻訳者に断りなく行なうことがあります。(この場合差分翻訳者は発生しません。)
+    </p>
+    <p>
+       また、Gentoo Linux Project の判断で、翻訳者に断りなく翻訳ドキュメントが改廃・統合される場合もありますので、あらかじめご承知ください。</p>
+
+    <p>各ドキュメントの取り扱いについては、gentoojp-docs MLの議論を尊重しますが、最終判断はGentoo Linux Projectや翻訳プロジェクトメンバーの判断が優先するものとします。
+      (例えば、公開されるドキュメントの書籍本などへ転載、参照される場合などが考えられます。現時点では具体的にそれらの事態を想定することができませんので、経過的な措置とお考え下さい。)
+      </p>
+    </body>
+  </section>
+</chapter>
+
+<chapter>
+<title>翻訳状況一覧</title>
+<body>
+<p>
+<uri link="trans_status.xml">移動しました。</uri>
+</p>
+</body>
+
+</chapter>
+
+</guide>

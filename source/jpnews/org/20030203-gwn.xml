@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>3 Feb 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年2月3日号</title>
+<body>
+<p><b><uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml">2月最初のGentoo Weekly Newsletter</uri>では、KDE 3.1についてのニュース、それからKDE 3.1がGentooのミラーシステムに及ぼす劇的な影響についてお知らせします。</b>
+PowerPCでGentooを使っているみなさんは、Gentoo Linux/PPCのシニア開発マネージャ、Mark Guertinさんにスポットを当てた今週の開発者紹介に興味を持つことと思います。それからもちろん、Portage WatchやBugzilla、Tips and Tricksといったいつもの情報も掲載しています。
+</p>
+</body>
+</news>
+

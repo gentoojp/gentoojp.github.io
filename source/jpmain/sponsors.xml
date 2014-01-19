@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/sponsors.xml">
+
+<title>スポンサー</title>
+<author title="Author">
+	<mail link="www@gentoo.ge.jp">GentooJP</mail>
+</author>
+<author title="Editor">
+	<mail link="nabeken@gentoo.gr.jp">TANABE Ken'ichi</mail>
+</author>
+<author title="Editor">
+	<mail link="kojima@gentoo.gr.jp">Kojima Kazunori</mail>
+</author>
+
+<abstract>
+	このガイドでは、GentooJPを支援していただいているスポンサーを紹介しています。
+</abstract>
+
+<version>1.3</version>
+
+<!--作成年月日-->
+<date>06 Jan 2012</date>
+
+<chapter>
+<title>謝辞</title>
+
+	<section>
+	<title>Gentoo Linux Users Group Japan(GentooJP)を運営するにあたって</title>
+	
+		<body>
+
+			<p>
+				GentooJPの各種リソースを提供していただいたスポンサーの方々に感謝します。
+			</p>
+	
+		</body>
+		
+	</section>
+</chapter>
+
+<chapter>
+<title>スポンサー一覧 （順不同）</title>
+
+	<section>
+	<title>株式会社びぎねっと / Begi.net</title>
+
+		<body>
+			<p><uri link="http://begi.net/">株式会社びぎねっと様</uri>には、</p>
+			<ul>
+				<li>galapagos.gentoo.gr.jp</li>
+			</ul>
+			<p>これらのマシンを提供していただいています。</p>
+			<p>macaroni にはマシン本体を提供していただき、動的コンテンツなどを収容しているサーバとして稼動しています。</p>
+			<p>galapagos にはネットワーク回線、仮想マシンを提供していただき、 www/mail サーバとして稼動しています。</p>
+			<p>2004/12 に galapagos.gentoo.gr.jp は完全に FSIJ 提供のサーバマシンに移行しました。それまでは、びぎねっとより各種パーツを提供していただいていました。</p>
+			<p>2005/05 に macaroni.gentoo.gr.jp は OSDL 東京オフィスに移動しました。それまでは、びぎねっとよりネットワーク回線、サーバスペースを提供していただいていました。</p>
+			<p>2006/07 に macaroni.gentoo.gr.jp は再び、びぎねっと様にマシンを置かせていただくことになりました。</p>
+			<p>2007/03 に galapagos.gentoo.gr.jp は再び、びぎねっと様に提供していただくことになりました。</p>
+		</body>
+	</section>
+	<section>
+	<title>株式会社KDDIウェブコミュニケーションズ</title>
+		<body>
+      <p>株式会社KDDIウェブコミュニケーションズ様には、開発者支援制度にて<uri link="http://cloudcore.jp/">CloudCore VPS</uri>を提供していただいております。</p>
+      <p><img src="/images/sponser-cloudcore.gif"/></p>
+
+		</body>
+	</section>
+</chapter>
+
+</guide>

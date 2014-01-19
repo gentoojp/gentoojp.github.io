@@ -1,0 +1,10 @@
+﻿<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>GentooJP</poster>
+	<date>28 March 2004</date>
+	<title>GentooJP Bugzilla稼動開始のお知らせ</title>
+<body>
+	<p>GentooJPリニューアル計画と共に進めてきました、 <uri link="http://bugs.gentoo.gr.jp/">GentooJP Bugzilla</uri> の準備が完了致しました。本日より正式に稼働を開始します。</p>
+</body>
+</news>

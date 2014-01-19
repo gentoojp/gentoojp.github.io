@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="moo">
+	<poster>drobbins (翻訳:GentooJP)</poster>
+	<date>29 Nov 2002</date>
+	<title>Miscellaneous Yummy News(耳寄りなお話) </title>
+<body>
+
+<p><b>Gentoo Linux 1.4のリリースは2002年12月の終わりごろに予定されています。</b><br />
+ありがたいことに企業スポンサーがつき、私はフルタイムでGentoo Linuxの仕
+事が出来るようになりました。今は、新しいサーバへの移行作業といった、残
+務作業をこなしています。これにはメーリングリスト管理ツールの移行(ごた
+ついてしまって、申し訳ありません。検索可能なアーカイブはもうすぐ利用可
+能になります)と、Webサイト用の<uri link="http://www.axkit.org">AxKit</uri>
+XMLアプリケーションサーバも含まれ
+ます。残っているうちでもっとも重要な仕事は、1.4がリリースされるまでに
+完成度の高いx86システム用のLiveCDを作成することです。このx86用 LiveCD 
+は、Gentoo Linuxの中でごくわずかな、未だに私だけが開発をしている部分で
+す。残務作業がだんだん減ってくれば、次世代のx86 LiveCDを用意する時間
+ができるでしょうし、有能な開発チームに開発やメンテナンスに加わってもら
+うことができるでしょう。
+</p>
+
+<p><b>Gentoo Linux の世界では、J.Robert Ray氏によりPortageに "fakeroot" (非
+rootユーザによる構築)が追加されました。</b><br />
+また、Nick Jones氏により質の高
+いメンテナンスや開発が続けられています。Stefan Jones氏(Nick氏とは我々
+が知る限りは無関係です :)は柔軟かつ安全な library prelinking support 
+を Gentoo Linux に導入するために先頭にたって努力しています。Gentoo
+Linux 1.4 ではこれがオプションとして利用できるようになるかもしれません。
+さらに、Dan Armak氏とKDEチームはKDE 3.1を準備中ですので、Gentoo Linux
+1.4 には3.1が含まれることになるでしょう。"今後の予定"としては、ebuild 
+の更新ログ(ChangeLog)にXMLを使うことや、Gentoo Linux セキュリティ勧告
+をウェブサイトに掲載することなどが話し合われています。</p>
+
+<p>文書に関しては、 front, <uri
+link="http://www-106.ibm.com/developerworks/linux/library/l-fs13/">私
+のEVMSシリーズの第2部</uri> がIBM developerWorksで公開されています。
+また、現在は<b>Intel</b>社にも文書を書いています。これを見つけるには、
+<uri>http://www.intel.com</uri>で"Daniel Robbins"を検索してください。
+もし１からしっかりしたLinuxファイアウォールを設計する方法を学びたいの
+なら、そしてネットワークフィルタ<c>iptables</c>コマンドが実際にどのよ
+うに働くのかを知りたいのなら、2部からなる私の
+<e>Stateful iptables firewalls</e>シリーズが役に立つでしょう :)</p>
+
+
+</body>
+</news>

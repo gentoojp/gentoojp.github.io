@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="gentoo">
+	<poster>Corey Shields(翻訳:池田 健吾)</poster>
+	<date>2005-03-29</date>
+	<title>Gentoo Foundationへの資金援助の最新情報</title>
+<body>
+<p>
+Foundationの銀行口座の繰越残高に対する寄付のお願いに
+<uri link="http://www.gentoo.org/foundation/en/">Gentoo Foundation</uri>へ信じられないほど多くの反響が寄せられました。
+口座の維持に必要な$500をはるかに超える額をいただくことができました。
+皆さんのご協力に深く感謝いたすとともに、Gentoo開発を促進するために引き続
+きご支援よろしくお願いいたします。
+</p>
+</body>
+</news>

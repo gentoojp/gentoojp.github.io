@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>1 Jan 2005</date>
+	<title>Gentoo LVM2インストールの翻訳が完了しました</title>
+<body>
+
+<p>
+お待たせしました！ <uri link="http://www.gentoo.org/doc/ja/lvm2.xml">「Gentoo LVM2インストール」</uri>の翻訳が完了しました。このドキュメントはLVM2のチュートリアルではなく、<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml?part=1&amp;chap=0">Gentoo ハンドブック</uri>で説明されているGentooのインストール手順の補足という体裁をとっています。それでもLVM2に初めて触れる人でも役に立つドキュメントでしょう。
+</p>
+
+<p>
+補足しますが、LVMの利点はディスクパーティションをシステムの稼働後に動的に増減したり、またバックアップ時に効果を発揮するスナップショットをとったりということができます。またその欠点として通常のディスクI/O層にLVMという層が追加されますので、ディスクI/O処理にオーバーヘッドが生じます。
+</p>
+
+<p>
+個人的にLVMは高速なSCSIディスクを備えた企業サーバ向けだと思います。しかし、新しもの好きなGentooユーザは1度は試してみてはいかがでしょうか？^^
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/lvm2.xml">Gentoo LVM2インストール</uri>
+</p>
+
+<p>
+翻訳を担当された、五十嵐 正尚 さん、お疲れさまでした。
+</p>
+</body>
+</news>

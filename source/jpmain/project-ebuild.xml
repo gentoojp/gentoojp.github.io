@@ -1,0 +1,123 @@
+﻿<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/project-ebuild.xml">
+
+<title>ebuildプロジェクト</title>
+
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
+
+<abstract>
+このガイドでは、GentooJPのebuildプロジェクトについて説明します。 
+</abstract>
+
+<version>1.0</version>
+<date>14 July 2003</date>
+
+
+<chapter>
+<title>GentooJP ebuildプロジェクトとは</title>
+<section>
+<title></title>
+<body>
+<p>Gentoo Linux Users Group Japan(通称: GentooJP)では、日本語を利用する方向けのパッケージを主としたebuildを提供していきます。
+充分にテストされ問題なく機能しているパッケージは、 Gentoo Linuxにフィードバックします。
+そのためには、積極的に公開し多くの人にパッケージを使っていただき、不具合や改善点などを報告していただきたいと考えています。
+現在 ebuild 管理プロジェクトで管理しているパッケージは、 BugTrackに登録されたものとGentooJPのメーリングリストに投稿されたものです。
+今後も、BugTrackやMLで新規に登録/投稿されたり修正されたりしたものについては、随時プロジェクトに反映させていきます。
+このプロジェクトは、ユーザのみなさんの声があって、初めて成り立ちます。このプロジェクトが発展していくことを期待しています。
+</p>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>ダウンロードについて</title>
+<section>
+<title></title>
+<body>
+<p>gentoojp.sourceforge.jp上置いてある
+<!-- <uri link=" "> -->
+tarball形式の圧縮ファイルをダウンロード
+<!-- </uri> -->
+してご利用ください。 
+</p>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>利用方法</title>
+<section>
+<title></title>
+<body>
+<p>現在は、tarballによる提供のみになります。以下に、<c>/usr/local/portage を使う場合を例として説明</c>します。 
+</p>
+</body>
+</section>
+
+<section>
+<title>ツリーを展開するディレクトリを用意する(初回のみ) </title>
+<body>
+<pre>
+# mkdir /usr/local/portage
+</pre>
+</body>
+</section>
+
+<section>
+<title>ダウンロードしたファイルを展開する </title>
+<body>
+<pre>
+ # cd /usr/local/portage
+ # tar jxvf /path/to/downloadedfile/portagejp-&lt;日付&gt;.tar.bz2
+</pre>
+</body>
+</section>
+
+<section>
+<title>make.conf に PORTDIR_OVERLAY を設定する </title>
+<body>
+<pre>
+ (make.conf内に以下のように記述)
+ PORTDIR_OVERLAY=/usr/local/portage
+</pre>
+</body>
+</section>
+
+<section>
+<title>emerge コマンドでパッケージをインストールする</title>
+<body>
+<p>namazuの例です。</p>
+<pre>
+ (namazuのUSEフラグとインストールが必要な依存パッケージを表示する)
+ # emerge -vp namazu
+ (cannaをインストールする)
+ # emerge canna
+ (マスクされているパッケージの場合は、ACCEPT_KEYWORDSを指定する必要があります)
+ # ACCEPT_KEYWORDS="~x86" emerge nkf
+</pre>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>バグレポート</title>
+<section>
+<title></title>
+<body>
+<ul>
+	<li>使おうとしたけれども emerge できない </li>
+	<li>emerge はできたけれどうまくうごかない </li>
+	<li>欲しい機能が有効になっていない </li>
+	<li>このアプリケーションのebuildが欲しい </li>
+</ul>
+<p>
+など、意見や要望を gentoojp-users、gentoojp-dev メーリングリストにお寄せください。たくさんの報告をお待ちしております。
+</p>
+</body>
+</section>
+</chapter>
+</guide>
+

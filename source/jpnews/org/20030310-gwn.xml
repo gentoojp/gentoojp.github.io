@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳：小杉悠嗣)</poster>
+	<date>10 Mar 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年3月10日</title>
+<body>
+<p><b>今週の<uri link="/news/ja/gwn/20030310-newsletter.xml">Gentoo Weekly Newsletter</uri>はPortageツリーのフリーズが解かれたのでパッケージの更新に関する情報が詰まってます。 また、distccに関する情報と先週の開発者募集に答えた皆さんへの感謝の言葉も入ってます。</b></p>
+<p>来週のGWNはGentoo Linux開発者チームの一員になる方法とドキュメンテーションの質を保つための新しいポリシーを記載します。また、GWNの記事のアイディア等がある方は<mail link="gwn-feedback@gentooorg">教えて下さい</mail>。今週のdistccに関する記事は読者のリクエストでした。
+</p>
+</body>
+</news>

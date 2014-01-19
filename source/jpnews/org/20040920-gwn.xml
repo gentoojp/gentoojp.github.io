@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate　（翻訳：今野勝之）</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>20 September 2004</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Gentoo Weekly Newsletter 2004年9月20日号</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040920-newsletter.xml">Gentoo Weekly Newsletter</uri></b>は、9月いっぱい実施されているはじめての公式なGentooユーザ調査についてのお知らせや、フォーラムの状況に関するアップデートに関して、9月30日にドイツで開催されるGentoo PPC開発者ミーティングについてお伝えします。3月中断していたgentoo-devメーリングリストがようやく戻ってきました。Tip and Tricksセクションもです！楽しんでください。
+</p>
+
+</body>
+</news>
+
+

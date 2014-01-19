@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>小町 守</poster>
+	<date>23 Mar 2005</date>
+	<title>オープンソースカンファレンス2005  GentooJPインストール大会</title>
+<body>
+
+<p>
+来る3月25日・26日に開催されるオープンソースカンファレンス2005
+で、GentooJPの催しが開かれます。テーマは「Gentooのインストール」。
+Gentoo 2005.0のリリースが間に合わなさそうなので、インストール
+CDには2004.3-r1を用いて2005.0相当な環境のインストールを行う予定
+です。また、Gentooユーザの集いも兼ねているので、ただ喋りに来て
+いただくのも大歓迎です。
+
+会場は26日の10時から12時までオープンにしてありますので、好きな
+時間に来てくださってかまいません。会場の収容人数の都合で事前の
+登録が必要となっておりますので、<uri link="http://www.ospn.jp/osc2005/">オープンソースカンファレンス2005のページ</uri>から登録してください。
+</p>
+
+</body>
+</news>

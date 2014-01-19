@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-04-01</date>
+	<title>「DistCC クロスコンパイルガイド」の翻訳完了のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/doc/ja/cross-compiling-distcc.xml">DistCC クロスコンパイルガイド</uri>の翻訳完了のお知らせです。
+</p>
+
+<p>
+Gentooではソースからコンパイルしてシステムを構築するため、複数のLinux Boxを持ってられる方は、<uri link="http://www.gentoo.org/doc/ja/distcc.xml">distcc</uri>を使われていると思います。このドキュメントは、アーキテクチャが異なるプログラムをビルドするためのガイドになっていますので、さまざまなアーキテクチャのLinux Boxを持つ方は一読されることをおすすめします。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+<c>distcc</c>とは、ソフトウェアコンパイルの負荷をネットワーク上のコンピュータに分散させるツールです。ネットワーク上のコンピュータがすべて同じプロセッサアーキテクチャ向けの同じツールチェインビルドを使用していれば、 
+<c>distcc</c>の特別な設定は必要ありません。しかし、異なるアーキテクチャを使っている別のコンピュータでコンパイルする必要があるときにはどうしますか？このガイドでは、異なるアーキテクチャで 
+<c>distcc</c>を使ったコンパイルを行うための設定方法を説明します。 
+</p>
+
+<p>
+distccの初期設定では、クロスコンパイルは正しく動作<e>しません</e>。この原因は、多くのビルドが完全なコンパイラ名(<c>sparc-unknown-linux-gnu-gcc</c>など)の代わりに単に<c>gcc</c>を実行しているからです。このコンパイルがdistcc協力コンピュータへ配信を行う際に、新しいクロスコンパイラの代わりにネイティブコンパイラが呼び出されます。 
+</p> 
+
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/cross-compiling-distcc.xml">DistCC クロスコンパイルガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林さん、査読をしてくださったみなさん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

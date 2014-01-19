@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/gentoo-glossary.xml">
+<title>Gentoo用語集(draft)</title>
+
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail>
+</author>
+
+
+<abstract>
+このガイドは、Gentooでよく使われる用語を集めたものです。 
+</abstract>
+
+<version>1.0</version>
+<date>9 July 2003</date>
+
+
+<chapter>
+<title>はじめに</title>
+<section>
+<title>Gentoo用語集について</title>
+<body>
+<p><uri link="http://www.gentoo.org/">Gentoo Linux Project</uri>が公開しているドキュメントを読んだり、
+Gentoo Linuxを操作する際、Gentoo特有の用語や頻繁に出てくる用語に遭遇します。Gentoo用語集は、
+そのような用語をとりまとめ、翻訳者や新たにGentooを始める人にとって参考となるようなものを目指しています。
+</p>
+</body>
+</section>
+<section>
+<title>用語集への追加</title>
+<body>
+<p>用語集へ追加は簡単です。追加して欲しい用語があったら次のような書式で<mail link="www@gentoo.gr.jp">www@gentoo.gr.jp</mail>
+かgentoojp-docsメーリングリストまで送付してください。
+</p>
+<pre caption="送付書式">
+&lt;section&gt;&lt;title&gt;用語&lt;/title&gt;&lt;body&gt;&lt;ul&gt;
+	&lt;li&gt;読み：用語の日本語発音&lt;/li&gt;
+	&lt;li&gt;表記：翻訳ドキュメントなどに記載する表記&lt;/li&gt;
+	&lt;li&gt;意味：用語の意味&lt;/li&gt;
+	&lt;li&gt;詳細：詳細情報へのリンク&lt;/li&gt;
+	&lt;li&gt;実行：簡単な実行例、指定方法など&lt;/li&gt;
+&lt;/ul&gt;&lt;/body&gt;&lt;/section&gt;
+</pre>
+</body>
+</section>
+</chapter>
+
+
+<chapter>
+<title>C-c</title>
+<section><title>(/etc/)conf.d</title><body><ul>
+	<li>読み：コンフ・ディー?</li>
+	<li>表記：(/etc/)conf.d</li>
+	<li>意味：(/etc/)init.dディレクトリ以下にある起動スクリプトにオプションを与えるファイルを格納する。</li>
+	<li>詳細：</li>
+	<li>実行：なし</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>D-d</title>
+<section><title>dep-clean</title><body><ul>
+	<li>読み：ディプ・クリーン?</li>
+	<li>表記：dep-clean</li>
+	<li>意味：dependency cleanの略？。パッケージ依存の整理</li>
+	<li>詳細：$ man dep-clean</li>
+	<li>実行：# dep-clean</li>
+</ul></body></section>
+
+<section><title>digest</title><body><ul>
+	<li>読み：ダイジェスト</li>
+	<li>表記：digest</li>
+	<li>意味１：ソースファイルのMD5ハッシュ署名。</li>
+	<li>意味２：ebuild digestコマンド。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap4_sect1">Gentoo Linux 開発者 HOWTO</uri></li>
+	<li>実行：$ ebuild <e>your</e>.ebuild digestで作成される。</li>
+</ul></body></section>
+
+<section><title>distfiles</title><body><ul>
+	<li>読み：ディストファイルズ？</li>
+	<li>表記：distfiles</li>
+	<li>意味：distributed files(配布ファイル)の略。 /usr/portage/distfilesのこと。ダウンロードしたソース(*.tbz2など)を保存する場所。</li>
+	<li>詳細：/etc/make.conf 内の説明</li>
+	<li>実行：なし</li>
+</ul>
+<!-- <p><uri link="/jpdoc/gentoo-glossary.xml">戻る</uri></p> -->
+</body></section>
+
+</chapter>
+
+<chapter>
+<title>E-e</title>
+<section><title>ebuild</title><body><ul>
+	<li>読み：イー・ビルド？</li>
+	<li>表記：ebuild</li>
+	<li>意味１：Portage システムへの低レベルインタフェース、ebuild コマンドラインプログラム。</li>
+	<li>意味２：ソフトウェアに関する情報やインストール手順などが書かれたebuild スクリプト。</li>
+	<li>詳細１：$ man ebuild -S 1</li>
+	<li>詳細２：$ man ebuild -S 5、<uri link="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap2">Gentoo Linux 開発者 HOWTO</uri></li>
+	<li>実行２：$ ebuild <e>your</e>.ebuild digest</li>
+</ul></body></section>
+
+<section><title>echangelog</title><body><ul>
+	<li>読み：イー・チェンジログ？</li>
+	<li>表記：echangelog</li>
+	<li>意味：PortageのChangeLogをアップデートするツール。</li>
+	<li>詳細：$ man echangelog、$ echangelog --help</li>
+	<li>実行：$ echangelog <e>'ChangeLog Text'</e></li>
+</ul></body></section>
+
+<section><title>eclass</title><body><ul>
+	<li>読み：イー・クラス？</li>
+	<li>表記：eclass</li>
+	<li>意味：ebuild.1の構成要素のひとつで、同種のebuildに標準設定と特定の関数を与えるもの。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/eclass-howto.xml">Gentoo Documentation - eclass HOWTO 日本語訳</uri></li>
+	<li>実行：なし</li>
+</ul></body></section>
+
+<section><title>ekeyword</title><body><ul>
+	<li>読み：イー・キーワード？</li>
+	<li>表記：ekeyword</li>
+	<li>意味：アーキテクチャ(ARCH x86,~x86,-x86など)をebuildに追加するツール</li>
+	<li>詳細：# ekeyword</li>
+	<li>実行：# ekeyword ~x86 <e>your</e>.ebuild</li>
+</ul></body></section>
+
+<section><title>emerge</title><body><ul>
+	<li>読み：イー・マージ？</li>
+	<li>表記：emerge</li>
+	<li>意味：Portageシステムへのコマンドラインインターフェース。</li>
+	<li>詳細：$ man emerge、$emerge --help、もしくは<uri link="http://www.gentoo.org/doc/ja/portage-manual.xml#doc_chap3">Portage Manual</uri></li>
+	<li>実行：# emerge system、emerge -u world など</li>
+</ul></body></section>
+
+<section><title>env-update</title><body><ul>
+	<li>読み：エンブ・アップデート？</li>
+	<li>表記：env-update</li>
+	<li>意味：environment updateの略？。環境設定を自動的に更新するコマンドラインプログラム。</li>
+	<li>詳細：$ man env-update、<uri link="http://www.gentoo.org/doc/ja/env.d-howto.xml#doc_chap2_sect2">env.d HOWTO</uri></li>
+	<li>実行：# env-update</li>
+</ul></body></section>
+
+<section><title>(/etc/)env.d</title><body><ul>
+	<li>読み：エンブ・ディー？</li>
+	<li>表記：(/etc/)env.d</li>
+	<li>意味：default environmental variableの略？。各種環境変数が格納される。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/env.d-howto.xml">env.d HOWTO</uri></li>
+	<li>実行：なし</li>
+</ul></body></section>
+
+<section><title>epm</title><body><ul>
+	<li>読み：イー・ピー・エム</li>
+	<li>表記：epm</li>
+	<li>意味：Gentoo Linux Projectが作成したrpmコマンドのgentoo版。</li>
+	<li>詳細：$ man epm、<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap7">GWN December 30th, 2002 December 30th, 2002</uri></li>
+	<li>実行：# epm -q apache</li>
+</ul></body></section>
+
+<section><title>etcat</title><body><ul>
+	<li>読み：イー・ティー・キャット？</li>
+	<li>表記：etcat</li>
+	<li>意味：Gentoo Portage情報展開ツール </li>
+	<li>詳細：$ man etcat、<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap9">GWN 2003年6月23日号 9.Tips and Tricks</uri></li>
+	<li>実行：# etcat size apache</li>
+</ul></body></section>
+
+<section><title>etc-update</title><body><ul>
+	<li>読み：エトセ・アップデート？</li>
+	<li>表記：etc-update</li>
+	<li>意味：/etc以下の設定ファイルに対して前回のインストールからユーザーが変更していない場合には自動、そうでない場合には対話形式で変更を行えるコマンドラインプログラム。</li>
+	<li>詳細：$ man etc-update</li>
+	<li>実行：# etc-update</li>
+</ul></body></section>
+
+<section><title>euse</title><body><ul>
+	<li>読み：イー・ユーズ？</li>
+	<li>表記：euse</li>
+	<li>意味：gentoolkitに含まれるUSEフラグの設定ツール。</li>
+	<li>詳細：$ man euse、$ less /usr/share/doc/gentoolkit-(バージョン)/README.gz</li>
+	<li>実行：# euse -c</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>G-g</title>
+<section><title>gcc-config</title><body><ul>
+	<li>読み：ジ－シーシー・コンフィグ</li>
+	<li>表記：gcc-config</li>
+	<li>意味：gccのバージョンやビルドするホスト名などを指定する。/etc/env.d/以下も参照のこと。</li>
+	<li>詳細：# gcc-config </li>
+	<li>実行：$ gcc-config --list-profiles</li>
+</ul></body></section>
+
+<section><title>Gentoo</title><body><ul>
+	<li>読み：ジェンツー</li>
+	<li>表記：Gentoo</li>
+	<li>意味：すばしっこいペンギン。Gentoo Linuxそのもの。Gentoo Project全体を表す。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/faq.xml#doc_chap1">Gentoo Linux Frequently Asked Questions 日本語訳</uri></li>
+	<li>実行：なし</li>
+</ul></body></section>
+
+<section><title>gentoolkit</title><body><ul>
+	<li>読み：ジェンツールキット？</li>
+	<li>表記：Gentoolkit</li>
+	<li>意味：Gentooを使う上で便利なコマンドを集めたパッケージ。Gentooオリジナルコマンド全体を指す場合もある。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/gentoolkit.xml">gentoolkit</uri></li>
+	<li>実行： インストールは  # emerge gentoolkit</li>
+</ul></body></section>
+
+<section><title>gentool-author-coverage</title><body><ul>
+	<li>読み：ジェンツール・オーサー・カバーエイジ？</li>
+	<li>表記：gentool-author-coverage</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。メールアドレスを指定してebuild内に記載されている数を返すみたい。bashスクリプト。</li>
+	<li>詳細：</li>
+	<li>実行：# gentool-author-coverage</li>
+</ul></body></section>
+
+<section><title>gentool-bump-reversion</title><body><ul>
+	<li>読み：ジェンツール・バンプ・バージョン？</li>
+	<li>表記：gentool-bunp-version</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。開発者専用ツール。リビジョン番号に対照してCVSに新しい修正を加えるとともに古い修正を削除し、変更記録を適切に更新します。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap6">Gentoo Linux 開発者 HOWTO</uri></li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>gentool-total-coverage</title><body><ul>
+	<li>読み：ジェンツール・トータル・カバーエイジ？</li>
+	<li>表記：gentool-total-coverage</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。ebuildからメールアドレスを抜き出しカウントするプログラムみたい。bashスクリプト。</li>
+	<li>詳細：</li>
+	<li>実行：# gentool-total-coverage</li>
+</ul></body></section>
+
+<section><title>gentool-package-count</title><body><ul>
+	<li>読み：ジェンツール・パッケージ・カウント</li>
+	<li>表記：gentool-package-count</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。カテゴリ数、ebuild総数、リビジョンを取り除いたebuild個数を表示する。bashスクリプト。</li>
+	<li>詳細：</li>
+	<li>実行：# gentool-package-count</li>
+</ul></body></section>
+
+<section><title>GDP</title><body><ul>
+	<li>読み：ジー・ディー・ピー</li>
+	<li>表記：GDP</li>
+	<li>意味：Gentoo Documentation Project</li>
+	<li>詳細：<uri link="http://www.gentoo.org/proj/en/gdp/">Gentoo Documentation Project: Main Page</uri></li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>GLEP</title><body><ul>
+	<li>読み：ジー・エル・イー・ピー</li>
+	<li>表記：GLEP</li>
+	<li>意味：Gentoo Linux Enhancement Proposalsの略。まだよくわからず。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/proj/en/glep/">GLEP Index</uri></li>
+	<li>実行：なし</li>
+</ul></body></section>
+
+<section><title>GLSA</title><body><ul>
+	<li>読み：ジー・エル・エス・エー</li>
+	<li>表記：GLSA</li>
+	<li>意味：Gentoo Linux Security ANNOUNCEMENTの略。セキュリティ情報。</li>
+	<li>詳細：</li>
+	<li>実行：gentoo-announce@gentoo.orgに参加すると自動的にもらえる。</li>
+</ul></body></section>
+
+<section><title>GRP</title><body><ul>
+	<li>読み：ジー・アール・ピー</li>
+	<li>表記：GRP</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>GWN</title><body><ul>
+	<li>読み：ジー・ダブリュー・エヌ</li>
+	<li>表記：GWN</li>
+	<li>意味：Gentoo Weekly Newsletterの略。週間Gentooニュース。</li>
+	<li>詳細：</li>
+	<li>実行：gentoo-gwn@gentoo.orgに参加するとテキスト版、ホームサイトからはWeb版を見ることができます。</li>
+</ul></body></section>
+
+</chapter>
+
+<chapter>
+<title>I-i</title>
+<section><title>(/etc/)init.d</title><body><ul>
+	<li>読み：イニット・ディー?</li>
+	<li>表記：(/etc/)init.d</li>
+	<li>意味：デーモンなどの起動スクリプトを格納する。rc-updateも参照のこと。</li>
+	<li>詳細：</li>
+	<li>実行：なし</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>L-l</title>
+<section><title>lintool</title><body><ul>
+	<li>読み：リンツール？</li>
+	<li>表記：lintool</li>
+	<li>意味：ebuild スクリプトが文法上など標準的条件に適合しているかチェックするコマンドラインプログラム。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/gentoolkit.xml#doc_chap3">Gentoolkit</uri></li>
+	<li>実行：lintool <e>hoge</e>.ebuild</li>
+</ul></body></section>
+
+<section><title>livecd(s)</title><body><ul>
+	<li>読み：ライブ・シーディー(ズ)</li>
+	<li>表記：livecd</li>
+	<li>意味：Gentoo Linux インストールCDのこと。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/gentoo-x86-install.xml#doc_chap1">Gentoo Linux 1.4_rc4 インストール手引書</uri></li>
+	<li>実行：なし</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>J-j</title>
+<section><title>java-config</title><body><ul>
+	<li>読み：ジャバ・コンフィグ</li>
+	<li>表記：java-config</li>
+	<li>意味：GentooのためのJava設定ツール</li>
+	<li>詳細：$ man java-config、#java-config --help</li>
+	<li>実行：$ java-config --java-version</li>
+</ul></body></section>
+</chapter>
+
+
+<chapter>
+<title>K-k</title>
+<section><title>keychain</title><body><ul>
+	<li>読み：キー・チェーン</li>
+	<li>表記：keychain</li>
+	<li>意味：Gentoo Linux Projectが作成したssh-agentのフロントエンドツール。</li>
+	<li>詳細：$ man keychain</li>
+	<li>実行：(manを参照)</li>
+</ul></body></section>
+</chapter>
+
+
+<chapter>
+<title>M-m</title>
+<section><title>Manifest</title><body><ul>
+	<li>読み：マニフェスト</li>
+	<li>表記：Manifest</li><uri link="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap1">Gentoo Linux 開発者 HOWTO</uri>
+	<li>意味：積荷目録。ebuildスクリプトファイルや、Portageパッケージ管理システムに含まれるファイルの信頼性確認のために作られるMD5ハッシュ署名のリスト。</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>(/etc/)make.conf</title><body><ul>
+	<li>読み：メイク・コンフ</li>
+	<li>表記：(/etc/)make.conf</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>(/etc/)make.defaults</title><body><ul>
+	<li>読み：メイク・デフォルツ</li>
+	<li>表記：(/etc/)make.defaults</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>(/etc/)make.globals</title><body><ul>
+	<li>読み：メイク・グローバルス</li>
+	<li>表記：(/etc/)make.globals</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>(/etc/)make.profiles</title><body><ul>
+	<li>読み：メイク・プロファイルズ</li>
+	<li>表記：(/etc/)make.profiles</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>mirrorselect</title><body><ul>
+	<li>読み：ミラー・セレクト</li>
+	<li>表記：mirrorselect</li>
+	<li>意味：Gentoo Linux Projectが作成したコマンドラインツール。近くのミラーを選ぶ。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap8">GWN 2003年2月24日号 8.Tips and Tricks</uri></li>
+	<li>実行：# mirrorselect -a など</li>
+</ul></body></section>
+
+<section><title>mkebuild</title><body><ul>
+	<li>読み：メイク・イービルド</li>
+	<li>表記：mkebuild</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。Makefileをもとにebuildの雛型を作ってくれる。</li>
+	<li>詳細：mkebuild -h</li>
+	<li>実行：ソースディレクトリでmkebuild？</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>P-p</title>
+<section><title>pkglist</title><body><ul>
+	<li>読み：パッケージリスト</li>
+	<li>表記：pkglist</li>
+	<li>意味：(これはまだあるんだろうか。)</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>pkg-clean</title><body><ul>
+	<li>読み：パッケージ・クリーンリスト</li>
+	<li>表記：pkg-clean</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>pkg-size</title><body><ul>
+	<li>読み：パッケージ・サイズ？</li>
+	<li>表記：pkg-size</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。インストール済みのパッケージのサイズを返す。</li>
+	<li>詳細：なし</li>
+	<li>実行：# pkg-size apache</li>
+</ul></body></section>
+
+<section><title>Portage</title><body><ul>
+	<li>読み：ポーテージ、ポルテージ、ポートエイジなど諸説</li>
+	<li>表記：Portage</li>
+	<li>意味１：Gentooのパッケージシステム</li>
+	<li>意味２：portageファイル(tarball形式で提供される)</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>Portage tree</title><body><ul>
+	<li>読み：ポーテージ、ポルテージ、ポートエイジなど諸説 ＋ ツリー</li>
+	<li>表記：Portage ツリー</li>
+	<li>意味：/usr/portageディレクトリに展開される構造的なファイル群。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/gentoo-howto.xml#doc_chap1">Gentoo Linux 開発者 HOWTO</uri></li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>(/usr/portage/)profiles</title><body><ul>
+	<li>読み：プロファイル(ス)</li>
+	<li>表記：(/usr/portage/)profiles</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>Q-q</title>
+<section><title>qpkg</title><body><ul>
+	<li>読み：キューパッケージ？</li>
+	<li>表記：Gentoolkit</li>
+	<li>意味：Querying Packageの略称？。gentoolkitに含まる。パッケージに対する様々な問い合わせを行うコマンド。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/gentoolkit.xml#doc_chap2">Gentoolkit</uri></li>
+	<li>実行：$ qpkg -I などいろいろ</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>R-r</title>
+<section><title>rc-update</title><body><ul>
+	<li>読み：アールシーアップデート？</li>
+	<li>表記：rc-update</li>
+	<li>意味：</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/rc-scripts.xml">Gentoo Linux 1.0 Init System</uri></li>
+	<li>実行：# rc-update add apache default など</li>
+</ul></body></section>
+
+<section><title>revdep-rebuild</title><body><ul>
+	<li>読み：？</li>
+	<li>表記：revdep-rebuild</li>
+	<li>意味：gentoolkitに含まれるコマンドラインツール。</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>repoman</title><body><ul>
+	<li>読み：レポマン？</li>
+	<li>表記：repoman</li>
+	<li>意味：repository management の略？。Gentooのportage ツリーに追加されたパッケージの最低レベルの品質保証を徹底させ、cvsチェックイン手続きを簡素化する開発者専用コマンドラインツール</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>S-s</title>
+
+<section><title>sandbox</title><body><ul>
+	<li>読み：サンド・ボックス</li>
+	<li>表記：sandbox</li>
+	<li>意味：(砂場)</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>SLOT(s)</title><body><ul>
+	<li>読み：スロット</li>
+	<li>表記：SLOT(s)</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>stage,stage1,stage2,stage3</title><body><ul>
+	<li>読み：ステージ</li>
+	<li>表記：ステージ、stage1,stage2,stage3</li>
+	<li>意味：</li>
+	<li>詳細：</li>
+	<li>実行：</li>
+</ul></body></section>
+
+<section><title>superadduser</title><body><ul>
+	<li>読み：スーパーアドドユーザー？</li>
+	<li>表記：superadduser</li>
+	<li>意味：Gentoo Linux Projectが作成したコマンドラインツール。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap7">GWN 2003年5月5日号 7.Tips and Tricks</uri></li>
+	<li>実行：# superadduser</li>
+</ul></body></section>
+</chapter>
+
+<chapter>
+<title>U-u</title>
+<section><title>USE flag(s)</title><body><ul>
+	<li>読み：ユーズフラグ(ス)</li>
+	<li>表記：USE フラグ</li>
+	<li>意味：/etc/make.conf内でカスタマイズできる変数。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/use-howto.xml">USE HOWTO日本語訳</uri></li>
+	<li>実行：(/etc/make.confで設定。コマンドラインで設定)</li>
+</ul></body></section>
+
+<section><title>USE valiable(s)</title><body><ul>
+	<li>読み：ユーズバリアブル(ス)</li>
+	<li>表記：USE変数</li>
+	<li>意味：USEフラグと同様の意味で使われる。</li>
+	<li>詳細：<uri link="http://www.gentoo.org/doc/ja/use-howto.xml">USE HOWTO日本語訳</uri></li>
+	<li>実行：(/etc/make.confで設定。コマンドラインで設定)</li>
+</ul></body></section>
+</chapter>
+</guide>

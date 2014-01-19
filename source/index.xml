@@ -1,0 +1,10 @@
+---
+layout: nil
+---
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<mainpage id="news">
+	<title>Gentoo Linux News</title>
+	<version>Current</version>
+	<newsitems/>
+</mainpage>

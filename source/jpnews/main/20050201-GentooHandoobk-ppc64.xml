@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>1 Feb 2005</date>
+	<title>Gentoo Linux PPC64 ハンドブックの翻訳が完了しました</title>
+<body>
+
+<p>
+PPC64ユーザには待ち遠しかったドキュメントの翻訳が完了しました。「<uri link="http://www.gentoo.org/doc/ja/handbook/">Gentooハンドブック</uri>」の1つ、「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc64.xml">Gentoo Linux PPC64 ハンドブック</uri>」です。およそ2/3の内容は「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">Gentoo Linux 2004.3 x86 ハンドブック</uri>」と同じですが、一番重要なステージファイルの選択やパーティションの作成、ブートローダーの設定などが未訳となっておりました。今回の翻訳でこれらの重要部分が訳されましたので、インストールの障害がかなり低くなったと思います。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+もしパーティションがどれぐらいのサイズにすればいいのか、どれだけの数のパーティションかにすべきかを知りたいのならば読み進んでください。そうでなければ、今からApple G5: パーティション作成にmac-fdiskを使うまたはIBM pSeries: パーティション作成にfdiskを使うに進んでください。
+</p>
+
+<p>
+システムにyaBootを設定する方法が2つあります。自動的にyabootを設定するためにyaboot-1.3.8-r1以降に含まれた、新しく改善されたyabootconfigを使うことができます。何らかの理由のために、自動的に/etc/yaboot.confを設定するためのyabootconfigを実行したくないか、G5(yabootconfigは常に動作するとは限りません)にGentooをインストールしているならば、既にシステムにインストールされたサンプルファイルを編集することができます。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc64.xml">Gentoo Linux PPC64 ハンドブック</uri>
+</p>
+
+<p>
+翻訳を担当された、Yuta SATOH さん、お疲れさまでした。
+</p>
+</body>
+</news>

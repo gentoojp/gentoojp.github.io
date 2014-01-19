@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>17 May 2003</date>
+	<title>gentoo.orgドキュメント翻訳者 大募集</title>
+<body>
+<p>
+翻訳プロジェクトから翻訳のお誘いです。
+現在、たくさんの人の協力により多くのドキュメントの翻訳が進んでいます。
+しかし、まだまだ多くのドキュメントが未翻訳の状態です。そこで今回の大募集となりました。
+(いつも大募集中なのですけども。)
+</p>
+<p>
+もし「翻訳をしてみたい！」ということになったら、まず<uri link="/jpmain/trans_status.xml">翻訳状況</uri>を参照し、「新規募集中」の中から自分ができそうなものを選んでください。
+そして翻訳をするということを、<uri link="/jpmain/about-gentoojp.xml#doc_chap4">ドキュメントメーリング</uri>で宣言して翻訳をはじめてください。
+詳しくは、<uri link="/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>、<uri link="/jpmain/docs-guide.xml">GentooJPドキュメント</uri>を参照してください。翻訳の手順やその他何か不明な点がありましたら、ご連絡ください。
+</p>
+</body>
+</news>

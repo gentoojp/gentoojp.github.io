@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>23 Nov 2004</date>
+	<title>genkernelガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+Gentoo Linuxのインストールで一番難しいのは、Linuxカーネルのコンパイルかもしれないです。そして、そのカーネルのコンパイルを手伝ってくれるのがgenkernelです。
+</p>
+
+<p>
+その一方で、謎が多いと噂されるのもgenkernelです。その謎を解き明かす解説ドキュメントがついに翻訳されました。
+</p>
+
+<p>
+本文より引用:
+</p>
+<p>
+「Genkernelは、カーネルのコンパイルにまだ慣れていないユーザがハードウェアを自動認識するGentoo LiveCD上で使われているカーネルと類似したカーネルをセットアップできる様に設計されました。」
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/genkernel.xml">genkernelガイド</uri>。
+</p>
+
+<p>
+また、「Gentooではどんなカーネルが用意されているの？」という場合には<uri link="http://www.gentoo.org/doc/ja/gentoo-kernel.xml">Gentoo Linux カーネルガイド</uri>も合わせて参照してください。
+</p>
+
+<p>
+翻訳を担当した赤星柔充さん、お疲れさまでした。
+</p>
+
+</body>
+</news>

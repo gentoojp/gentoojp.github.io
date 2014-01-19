@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>Stuart Herbert(翻訳:飴谷 茂寛)</poster>
+	<date>2005-03-10</date>
+	<title>Gentoo UKカンファレンスのお知らせ</title>
+<body>
+<p>
+<uri link="http://dev.gentoo.org/~stuart/2005/">Gentoo UK 2005カンファレンス</uri>は、2005年3月12日、つまり今週の土曜日に、イギリスのマンチェスター州、Salford大学で開催されます。このイベントの参加は自由ですから、当日、Gentoo開発者とユーザに会いに直接お越しください。そしてあなたの大好きなディストリビューションがどのように進もうとしているか見に来てください。あと、交流会が前日(3月11日 金曜日)の夜にあり、午後7時30分に<uri link="http://www.s-h-systems.co.uk/hotels/stayinn.html">Stay Inn</uri>で始まりますので、1、2杯飲みに来て参加してください。
+</p>
+</body>
+</news>

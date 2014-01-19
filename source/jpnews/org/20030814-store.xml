@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="plans">
+	<poster>drobbins(翻訳:Takashi Ota)</poster>
+	<date>14 Aug 2003</date>
+	<title>Gentoo Store が信じられないほど人気(ありすぎる?)</title>
+<body>
+<p>
+<b><uri link="http://store.gentoo.org">Gentoo Store</uri>が極めて
+人気です -- たぶん人気がありすぎます -- 最初の２週間で数百の注文書が
+発行されました。</b> Gentoo Linux 1.4 CDの思いもよらない高い需要に応えるために
+一生懸命働いていますが、
+注文したものが到着するのを辛抱強く待っている人に心から感謝します。
+私たちは、注文された皆さんが完璧な最新ビルドのGentoo Linux 1.4(バグフィックスを含みます)や、
+注文を処理している間に更新され公開された多くのドキュメントの最新版を確実に受け取れる
+ようにします。それから、できるだけ早く出荷できるようにしますし、需要に見合った生産の拡大もします。
+あなたの我慢に感謝するとともに
+出荷の遅れについて心から謝罪します。
+</p>
+</body>
+</news>

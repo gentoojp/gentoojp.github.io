@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>25 Apr 2005</date>
+	<title>Gentoo Linux AMD64ハンドブックの翻訳とPPC64ハンドブックの2005.0への追従が完了!</title>
+<body>
+
+<p>
+最近は、64bit CPUとしてAMD64系を採用されているユーザが増えてきています。Gentooもいち早くAMD64への対応をしていましたが、翻訳ドキュメントの追従が遅れていました。しかし、今回、新たな翻訳協力者を迎え、2005.0リリースに対応した「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-amd64.xml">Gentoo Linux AMD64 ハンドブック</uri>」の翻訳完了のお知らせをできることを嬉しく思います。
+</p>
+<p>
+また、同様に、2005.0リリースに対応した「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc64.xml">Gentoo Linux PPC64 ハンドブック</uri>」の翻訳も少し前に完了しました。こちらの方もx86版からちょっとだけの遅延で追従できたことを嬉しく思います。
+</p>
+
+<p>
+さて、ハンドブックは現在で完了というわけではなく、まだまだ成長していきます。現在は最新となっていますが、本家の更新も頻繁に行われており、最新と異なる場合があるかもしれません。少しでもおかしいと思われましたら、<uri link="http://www.gentoo.org/doc/ja/handbook/">本家英語版ハンドブック</uri>を参照してください。または、<uri link="http://www.gentoo.gr.jp/jpmain/trans_status.xml">翻訳状況</uri>でご確認ください。
+</p>
+
+<p>
+以下、「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-amd64.xml">Gentoo Linux AMD64 ハンドブック</uri>」本文より抜粋:
+</p>
+
+<p>
+Linuxカーネルでは様々なファイルシステムをサポートしています。いくつかのファイルシステムはamd64アーキテクチャで安定していますが、不安定なファイルシステムもあります。 ext2、ext3は安定しています。 jfsとreiserfsは動作するものの、さらに評価が必要です。もし人柱希望であれば、サポートされていないファイルシステムに挑戦してみるのも良いかも知れません。
+</p>
+
+<p>
+以下、「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc64.xml">Gentoo Linux PPC64 ハンドブック</uri>」本文より抜粋:
+</p>
+
+<p>
+MinimalインストールCDは、install-ppc64-g5-minimal-2005.0.isoまたはinstall-ppc64-ibm-minimal-2005.0.isoというファイル名で、ディスク容量は350 MBだけしか占有しません。Gentooをインストールするために、このインストールCDを使用できますが、常時接続のインターネット環境がある場合だけです。
+</p>
+
+<p>
+ハンドブックに翻訳ミスやタイポがあれば、<uri link="http://bugs.gentoo.gr.jp/">BugzillaJP</uri>にて、Documentプロダクト、Gentoo Documentationの翻訳コンポーネントでそのバグを報告してください。担当者が迅速に対処いたします。もし、本家ドキュメントにミスを発見された方は、<uri link="http://bugs.gentoo.org/">Gentoo Linux Bugzilla</uri>にて、Docs-userカテゴリ、Handbookコンポーネントでその間違いの報告を行ってください。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/handbook/">Gentooハンドブック</uri>と<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-amd64.xml">Gentoo Linux AMD64 ハンドブック</uri>並びに「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc64.xml">Gentoo Linux PPC64 ハンドブック</uri>」
+</p>
+
+<p>
+「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-amd64.xml">Gentoo Linux AMD64 ハンドブック</uri>」の翻訳を担当してくださった、藤中 正次さん、査読をしてくださった池田 健吾さん、「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc64.xml">Gentoo Linux PPC64 ハンドブック</uri>」の翻訳をしてくださった、Yuta SATOH さん、お疲れさまでした。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>13 January 2006</date>
+	<title>「Gentoo Linux GCCアップグレードガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/gcc-upgrading.xml">Gentoo Linux GCCアップグレードガイド</uri>です。
+Gentooでは、複数のバージョンのGCCがインストールされますが、常にインストールされた最新のGCCが使われているわけではありません。また、他のディストリビューションにはない、gcc-connfigというツールも存在します。
+このガイドでは、GCCのバージョンアップの仕方、そしてバージョンアップした場合のシステムのアップデートの仕方が詳しく書かれています。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+もし新しいGCCをインストールしても、システムがそれを使うように自動的には切り替わりません。移行のためには追加の手順が要求されるため、明示的に変更する必要があります。もし切り替えないことにしたら、Portageはあなたの気がが変わる、つまり古いコンパイラをシステムから削除するまでは、古いバージョンのコンパイラを使い続けるでしょう。 
+</p>
+
+<p>
+このガイドは、あなたのGentooシステムで使用されているコンパイラのシームレスなアップグレードに必要な手順を説明しています。 GCC 3.3から3.4へのアップグレードと、 libstdc++の問題という特別なセクションが設けられています。 
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/gcc-upgrading.xml">Gentoo Linux GCCアップグレードガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、武田 洋之 さん、また査読の手伝いをしてくださった松葉さん、真藤さん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

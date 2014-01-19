@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+			<poster>小島和範</poster>
+			<date>18 December 2004</date>
+			<title>GentooJPのサーバメンテナンス完了</title>
+<body>
+<p>
+		12月18日 土曜日 10時30分より行なっておりました、サーバマシン入れ替えに伴なうメンテナンスが、作業を完了しましたのでお知らせ致します。
+		</p><p>これにより、停止しておりましたサービスを再開致します。またメーリングリストも投稿できる状態となっております。
+</p>
+<p>また、mirror.gentoo.gr.jp につきましては、ミラーが完了しておりませんのでダウンロード等はお控え下さい。</p>
+<p>追記：ミラー完了しましたのでダウンロードしても大丈夫です。</p>
+</body>
+</news>

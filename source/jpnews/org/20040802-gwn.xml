@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+<poster>carlos　（翻訳：今野勝之）</poster>
+<date>2 August 2004</date>
+<title>Gentoo Weekly Newsletter 2004年8月2日号</title>
+<body>
+<p>
+<b>Gentoo Linux 2004.2のリリースやBugDay１周年記念、ドイツのGWN翻訳者募集が今週の<uri link="/news/ja/gwn/20040802-newsletter.xml">Gentoo Weekly Newsletter</uri>の見出しとなっています。</b>また、Desktop、Documentation、Gentoo-Hardenedプロジェクトのプロジェクトアップデート情報や、Gentooセキュリティ、コミュニティの話題も掲載しています。楽しんで！
+</p>
+</body>
+</news>

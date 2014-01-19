@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+<guide link="/jpmain/contribution.xml">
+<title>Gentooへの貢献</title>
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
+<author title="Editor"><mail link="nakano@gentoo.gr.jp">中野正智</mail></author>
+
+<abstract>
+このドキュメントではGentooに貢献する方法が書いてあります。
+ちょっとしたバグ報告から、ドキュメントの翻訳や作成、Gentoo開発者のなり方が説明されています。
+</abstract>
+
+<version>1.0</version>
+<date>10 March 2005</date>
+
+<chapter>
+<title>はじめに</title>
+<section>
+<body>
+<ul>
+<li>Gentooが好きだからもっと良くなって欲しい</li>
+<li>なんかGentooのバグっぽいものを見つけたので、開発者に教えてあげたい</li>
+<li>Gentooの日本語翻訳ドキュメントでtypoを見つけた。意味がわかんないから自力でオリジナルの英文ドキュメントを読んで解決したけど、せっかくだから改善しよう</li>
+<li>自分用に作ったebuildだけど、みんなにも使って欲しいなあ</li>
+</ul>
+<p>
+などなど、どんな理由でも何か貢献したくなったらこのドキュメントを読み進めてください。
+</p>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>バグ(不具合)を報告する</title>
+<section>
+<title>はじめに</title>
+<body>
+<p>
+バグを開発者に報告することはとても重要な貢献の一つです。
+他のオープンソースソフトウェアと同様にGentooでもバグ報告はとても重要なものになっています。
+特にGentooでは様々な選択肢をユーザーに提供しています。
+そのため、限られた人的・マシン的開発資源の中では、すべての選択肢の組合せのテストが不十分な場合があります。
+そういったことからも、バグ報告はGentooの発展にとってとても重要なものになっています。
+</p>
+
+<p>
+Gentooプロジェクトではすべてのバグを<uri link="http://bugs.gentoo.org/">Bugzilla</uri>というバグ追跡システムで管理しています。
+Bugzillaにはとてもたくさんの機能がありますが、「バグを報告する」ことに限定してみるとそれほど難しいものではありません。
+入力項目がたくさんあって手間がかかると感じるかもしれませんが、ほとんどの箇所は初期値のままか、決まったものを選択すればすみます。
+</p>
+</body>
+</section>
+
+<section>
+<title>アカウントの作成</title>
+<body>
+<p>
+Bugzillaでは一人一つのアカウントが必要です。アカウントの登録で必須なのはメールアドレスだけです。
+<uri link="http://bugs.gentoo.org/">Bugzilla</uri>へ行き、右下の"New Account"をクリックしてアカウントを作成してください。
+</p>
+</body>
+</section>
+
+<section>
+<title>バグの検索</title>
+<body>
+<p>
+バグを登録する前に同じようなバグがないか検索ましょう。もしかすると既に同じバグが報告されているかもしれません。
+</p>
+
+<p>
+<uri link="http://bugs.gentoo.org/">Bugzilla</uri>へ行き、画面左側中央のエリアに検索のためのキーワードを入力します。
+「パッケージがうまくemergeできない」「パッケージがうまく動作しない」と言ったあるパッケージ限定の問題の場合には、
+そのパッケージ名を入力すればいいでしょう。
+そのパッケージに関連するバグがある場合には一覧で表示されます。その中から自分が遭遇しているバグと似ているものを探します。
+もし同じバグが報告されていたら、解決されるのを待つか、既に報告されている以上の情報や解決策を持っている場合には、
+そのバグレポートに追加しましょう。
+また、もしそのバグが開発者によって数ヵ月も放置されているようだったら、「どうなってるの？」と聞くことも問題ないです。</p>
+
+<p>
+さて、検索で見つからなかった場合には、いよいよ登録となります。画面上部の"Report a Bug"をクリックします。
+次の画面で、バグのカテゴリを選択します。ほとんどの場合は"Gentoo Linux"なので、もしわからなければそれをクリックしましょう。
+すると、Step 1 - search for your bugと出てきます。これはつまり上でした「バグの登録をする前に同じバグが既に登録されていないか確認する作業」のことです。
+もう一回ここで検索してみてもいいですし、Step2に進んでもいいでしょう。
+</p>
+
+<p>
+Step 2 - give information に必要な情報を入力していきます。
+Componentをまず選択します。ここではパッケージのバグを想定していますので、"KDE"と"GNOME"関連の場合にはそれぞれを選択します。
+その他のアプリケーションの場合には、"Applications"を選択します。
+注意点として、"Ebuilds"はebuildを新規登録するときに使用するものなので、バグ報告の場合には使用しないでください。
+</p>
+
+<p>
+あまり大きな声では言えないですが、この項目に限らず何か選択肢を間違えてもしまってもGentooプロジェクトの人が直してくれるので
+（一言注意されてしまうかもしれませんが）過度に心配しない方がいいです。
+</p>
+
+<p>
+次にHardware Platformです。ここでは、特定のアーキテクチャのみで起こる不具合の場合にはそれを選択しましょう。良くわからなければ、Allでいいです。
+</p>
+
+<p>
+このバグについて何か参考になるURLがあれば入力します。通常バグ報告の場合には特に入力する必要はないでしょう。
+</p>
+
+<p>
+Summaryには簡潔にバグの内容を英語で入力します。ここで尻込みしてしまう人がいるかもしれませんが、心配しないで大丈夫です。
+"foo-1.2.3 fails to compile" とかそれっぽく書いておけばいいです。
+自分で一から作文するのが恐い場合には、似たような文を他のバグ報告から探してくるのもいいことでしょう。
+この章の最後に、いくつかの典型的なバグ報告を実際のBugzillaから検索できるリンクを並べておきますので、参考にしてください。
+</p>
+
+<p>
+次に本題であるDetailsを書きます。ここもあまり考え込まずに書きましょう。
+エラーログなどの情報は後で書くことができるので、ここでは文章で書けることだけ書きます。
+</p>
+
+<p>
+Reproducibilityには、どの程度の頻度で発生するのかを選択します。例えば「emergeコマンドを実行すると確実にコンパイルに失敗する。」という場合には、
+"Every time."になります。簡単です。
+</p>
+
+<p>
+Steps to Reproduce: にはどういう手順でこのバグが発生するかを書きます。
+単純に以下のように書きます。もちろんもっと複雑な発生条件がある場合にはそれも書きましょう。
+</p>
+
+<pre>
+1. emerge --sync
+2. emerge foo
+</pre>
+
+<p>
+</p>
+
+<p>
+Actual Results には、どのような結果になるかを書きます。
+「foo-1.2.3 fails to compile. (foo-1.2.3のコンパイルが失敗する)」等でいいでしょう。
+</p>
+
+<p>
+Expected Results には、本来どうなるのが正しいのかを書きます。
+「foo-1.2.3 should be installed correctly. (foo-1.2.3が正常にインストールされるべきだ)」とかでいいですが、良くわからなければここは飛ばしても大丈夫です。
+</p>
+
+<p>
+Additional Informationには、開発者に役にたちそうな追加情報を書きましょう。
+ただし、長いエラーログなどは、このバグを一旦投稿した後に、追加資料として<b>圧縮せず</b>にattachmentとして投稿します。
+また、ここに必ずemerge --infoした結果もコピー＆ペーストしておきましょう。この情報から開発者は多くのことを知ることができます。
+</p>
+
+<pre caption="emerge --info">
+# emerge --info
+Portage 2.0.51.16 (default-linux/x86/2004.3, gcc-3.4.3, glibc-2.3.4.20...
+=================================================================
+System uname: 2.6.10-gentoo-r4 i686 Intel(R) Pentium(R) 4 CPU 1500MHz
+Gentoo Base System version 1.6.9
+Python:              dev-lang/python-2.1.3-r1,dev-lang/python-2.2.3-r5...
+distcc 2.18.3 i686-pc-linux-gnu (protocols 1 and 2) (default port 3632)...
+ccache version 2.3 [enabled]
+dev-lang/python:     2.1.3-r1, 2.2.3-r5, 2.3.5
+sys-devel/autoconf:  2.59-r6, 2.13
+sys-devel/automake:  1.7.9-r1, 1.8.5-r3, 1.5, 1.4_p6, 1.6.3, 1.9.4
+sys-devel/binutils:  2.15.92.0.2-r2
+sys-devel/libtool:   1.5.10-r4
+(以下省略)
+</pre>
+
+<p>
+Severityは緊急度ですが、よくわからない場合はNormalのままにしておけばいいです。
+</p>
+
+<p>
+さて完了です。"Submit Bug Report"をクリックして完了です。後は開発者からの連絡を待ってください。
+開発者（または他のユーザー）がこのバグレポートに追加で書き込みを行うと、自動的にメールがやってきます。
+場合によっては開発者から質問されると思いますので、答えてあげてください。
+</p>
+
+<p>
+以上です。簡単ですよね？
+</p>
+
+
+<p>
+以下に、典型的なバグ報告の例を検索するためのBugzillaへのリンクを示します。
+単純にいくつかのキーワードで検索しているだけなので、関係ないものも混じっています。
+</p>
+
+<p>
+よくあるバグ報告の例：<br/>
+</p>
+<ul>
+<li><uri link="http://bugs.gentoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=digest+mismatch&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;changedin=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">ebuildのチェックサムがおかしくてemergeが止まってしまう</uri></li>
+<li><uri link="http://bugs.gentoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=fails+compile+&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;changedin=60&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">emergeでcompileが失敗する</uri></li>
+<li><uri link="http://bugs.gentoo.org/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=init+fails&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;changedin=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">サーバープログラムの起動に失敗する</uri></li>
+<li><uri link="http://bugs.gentoo.org/show_bug.cgi?id=83843">パッケージのバージョンを上げて欲しい</uri></li>
+</ul>
+
+<p>
+また、例文を探すために検索を行う場合には、Gentoo Bugzillaのトップページからの検索では解決済のバグが出てこないため使いにくいです。
+そこでその画面下部の"query"を選択し、<uri link="http://bugs.gentoo.org/query.cgi">詳細検索</uri>の画面から検索を行ってください。Summaryのところに語句を入力し(fails compile等)、Statusをすべて(UNCONFIRMEDからCLOSEDまで)選択した後に"Search"してください。
+</p>
+
+</body>
+</section>
+
+
+</chapter>
+
+<chapter>
+<title>翻訳やドキュメント作成に参加する</title>
+<section>
+
+<body>
+<p>
+GentooJPでは、大きくわけて二種類のドキュメントを作成しています。一つはGentooプロジェクトが作成したドキュメントの翻訳ドキュメントです。
+この成果はすべてGentooプロジェクトへ還元されています。たとえば<uri link="http://www.gentoo.org/doc/ja/">Gentooドキュメント</uri>からたどっていけるドキュメントなどです。
+</p>
+
+<p>
+もう一つはGentooプロジェクトとは別にGentooJPが窓口になって作成しているドキュメントです。
+<uri link="http://www.gentoo.gr.jp/jpmain/docs-list.xml#doc_chap3">オリジナルドキュメント</uri>から参照することができます。
+</p>
+
+<p>
+翻訳プロジェクトについては<uri
+link="/jpmain/translation.xml">翻訳プロジェクトのドキュメント</uri>に、
+また、オリジナルドキュメントプロジェクトについては<uri link="/jpmain/original-doc.xml">
+GentooJPオリジナルドキュメントプロジェクトのドキュメント</uri>に、概要が紹介されています。
+</p>
+
+<p>
+どのような雰囲気で作業が行われているのか知るために、GentooJPのドキュメント作成者用のメーリングリストに参加してみるのもよいでしょう。
+また、ログも一般に公開されています。ドキュメント作成者向けメーリングリストの概要は<uri link="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</uri>をご覧ください。
+</p>
+
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>パッケージ(ebuild)を作成/改造する</title>
+<section>
+<body>
+
+<p>
+Gentooの大きな魅力の一つであるパッケージ(ebuild)の作成や改造についてのドキュメントの紹介をします。
+</p>
+
+<p>
+まずパッケージの作成方法については、
+<uri link="http://www.gentoo.org/proj/en/devrel/handbook/handbook.xml?part=2&amp;chap=1">Ebuild HOWTO</uri>が一番詳しいです。Gentoo開発者向けに書かれているので、一部その他の人には関係ない部分(CVSの使い方等)があります。（そのドキュメントの翻訳をする計画もありますが、現在人手の問題から手がついていません。もし協力できる人がいたら参加をお願いします。）
+</p>
+
+<p>
+また、ある程度ebuildの作成になれたら、よくあるebuildの間違いが載っている<uri link="http://www.gentoo.org/proj/en/devrel/handbook/handbook.xml?part=2&amp;chap=3">Common ebuild Mistakes</uri>を見ておくと良いでしょう。
+</p>
+
+<p>
+もし、何かわからないことがあれば、GentooJP開発者向けメーリングリストで質問してみてくだささい。このメーリングリストの概要は<uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri>内の<uri link="/jpmain/about-gentoojp.xml#doc_chap4">4.メーリングリスト</uri>をご覧ください。
+</p>
+
+<p>
+（ebuild作成自体が楽しくてebuild化されていないパッケージを探している人もいることでしょう。
+そういう人は<uri link="http://wiki.gentoo.gr.jp/index.php?%5B%5B%BF%CD%CD%EA%A4%DF%CA%AA%B7%EF%5D%5D">人頼み物件</uri>を訪れてみてください。）
+</p>
+
+</body>
+</section>
+</chapter>
+
+
+<chapter>
+<title>パッケージ(ebuild)を登録する</title>
+<section>
+<body>
+
+<p>
+新規に作成ebuildをGentooの正式なPortageとして登録したい場合には、<uri link="http://www.gentoo.org/doc/ja/ebuild-submit.xml">ebuildの登録ガイド</uri>をご覧ください。
+</p>
+
+<p>
+いきなりGentooプロジェクトに登録するのはちょっと敷居が高いという方向けに、
+GentooJPでは<uri link="http://ebuild.gentoo.gr.jp/">ebuild-uploader</uri>という独自の簡易ebuild登録システムを開発し、使用しています。ebuild-uploaderの詳細については、<uri link="/jpmain/ebuild-uploader.xml">ebuild-uploader利用ガイド</uri>をご覧ください。
+</p>
+
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>Gentooプロジェクトの開発者になる</title>
+<section>
+<body>
+
+<p>
+"ebuildを作成し、Bugzillaに登録し、それがPortageに登録されているのを待つ。"
+</p>
+
+<p>
+というプロセスを繰り返しているうちに、直接Portageに登録できたらなあ、と考えるようになるかもしれません。
+そのためにはGentooプロジェクトの開発者になる必要があります。
+</p>
+
+<p>
+開発者になる方法はいくつかありますが、最も一般的な方法は他の開発者に推薦してもらう方法です。
+Bugzillaでいくつもebuildやpatchを登録していると、それに気づいた開発者が必ず推薦してくれるはずです。
+もちろんGentooJPにも何人かのGentoo開発者がいますので推薦することが可能です。
+ただし、例えばKDEのことをやりたい、ということであればKDE関連のことをしているGentoo開発者に推薦してもらうのが一般的です。
+</p>
+
+<p>
+その他の情報は、<uri link="http://www.gentoo.org/proj/en/devrel/handbook/handbook.xml?part=1&amp;chap=2">Becoming a developer</uri>を参照してください。
+</p>
+
+</body>
+</section>
+
+</chapter>
+
+</guide>

@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>morota</poster>
+	<date>2012-03-03</date>
+	<title>翻訳プロジェクト11月から3月の活動内容</title>
+<body>
+
+<p>
+GentooJP翻訳プロジェクトは、2011年11月から3月の活動内容を公表します。
+この期間の間に以下の文書が更新されました。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/kernel-config.xml">Gentoo Linux カーネル設定ガイド</uri> (新規)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-x86+amd64-kernel.xml">カーネル設定(x86/amd64)</uri> (version 9 (2011-08-12) -> 14 (2011-11-05))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-config.xml">システム設定</uri> (version 14 (2011-09-11) -> 15 (2011-10-30))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-net-management.xml">ネットワーク管理</uri> (version 9.0 (2008-04-17) -> 10 (2011-10-30))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-working-features.xml">Portageの機能</uri> (version 1.33 (2010-07-12)  -> 2 (2011-10-26))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-tools.xml">必要なシステムツールをインストールする</uri> (version 9.2 (2010-11-14) -> 10 (2011-10-23))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-kernelparams.xml">ハードウェアオプション</uri> (version 2 (2008-05-02) -> 2 (2008-05-02))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-ppc-disk.xml">ブロックデバイス入門</uri> (version 10.1 (2010-07-20) -> 11 (2011-10-17))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-finalise.xml">ユーザ管理</uri> (version 9.0 (2008-04-01) -> 10 (2011-09-18))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-x86+amd64-medium.xml">ハードウェアの必要条件</uri> (version 9 (2010-08-12) -> 10 (2011-11-27))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/inserts.xml">inserts.xml</uri> (version 3 -> 4)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-working-features.xml">Portageの機能</uri> (version 2 (2010-10-26)  -> 4 (2011-11-27))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/kernel-config.xml">Gentoo Linux カーネル設定ガイド</uri> (version 1.4 (2010-03-21) -> 2 (2011-12-26))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/inserts.xml">inserts.xml</uri> (version 4 -> 5)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-next.xml"> ドキュメント</uri> (version 9 (2008-04-01)  -> 10 (2011-12-26))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-portage-advanced.xml">上級者向けのPortageの機能</uri> (新規)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/migration-to-2.6.xml">Gentoo Linux 2.6 完全移行ガイド</uri> (version 0.4 (2008-03-05) -> 3 (2011-12-26))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-working-portage.xml">Portageについて</uri> (version 2 (2010-10-29 -> 4 (2011-10-26))
+  </li>
+</ul>
+
+<p>
+GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/">Gentoo ハンドブック</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/openrc-migration.xml">BaselayoutとOpenRCの移行ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/gentoo-x86-quickinstall.xml">Gentoo Linux x86クイックインストールガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/alsa-guide.xml">Gentoo Linux ALSA ガイド</uri>
+  </li>
+</ul>
+
+<p>
+翻訳に興味があり参加してみたい方は、ぜひ<uri link="http://www.gentoo.gr.jp/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>
+をご覧ください。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>avenj　（翻訳：武田洋之）</poster>
+	<date>01 March 2004</date>
+	<title>Gentoo 2004.0</title>
+<body>
+<p>
+GentooリリースチームはGentoo Linux 2004.0ができるだけ早くミラーにいきわたるように努力していますが、ミラーシステムの配信を阻害する技術的な問題が発生しています。これは、24～48時間以内に解決されるでしょう。もうしばらくお待ちください。
+</p>
+</body>
+</news>

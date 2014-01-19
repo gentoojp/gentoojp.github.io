@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>小杉悠嗣</poster>
+	<date>14 July 2003</date>
+	<title>GWN翻訳プロジェクト発足</title>
+<body>
+<p>
+<b>GWN翻訳プロジェクト</b>がGentooJPの正式プロジェクトとして発足しました。GWN日本語版は既に半年間発行してますが、長いニュースレターを少人数で翻訳していたので、時には英語版に何週間も遅れて発行される事もありました。これからはGentooJPの傘下で人数を増やし、毎週、より早く翻訳版を発行したいと思います。参加したい方、興味がある方、<uri link="/jpmain/project-gwn.xml">プロジェクトページ</uri>を御覧下さい。</p>
+</body>
+</news>

@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-04-01</date>
+	<title>「Gentoo/AMD64のHowto」の翻訳完了のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/proj/ja/base/amd64/howtos/index.xml">Gentoo/AMD64のHowto</uri>の翻訳完了のお知らせです。
+</p>
+
+<p>
+このドキュメントは、AMD64ユーザ向けの手引き書となっています。具体的には「バグレポート手順」と「Gentoo/AMD64 32Bit Chrootガイド」の2部構成となっていて、64bit環境での動作報告の仕方と32bitアプリケーションを利用するための手順を説明しています。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+まず最初にGentoo/AMD64プロジェクトをお手伝い頂いきありがとうございます。あなたのアプリケーション評価における熱心な作業に大いに感謝いたします。次のステップで、maskされているアプリケーションがGentoo/Amd64のシステムで動作することを知らせたいときの、バグレポートを提出する手順を説明します。 
+</p>
+
+<p>
+ご存じの通り、64bitシステムは32bitアプリケーションをネイティブで実行しません(少なくともportageとは)。
+32bitアプリケーションを動作させるために、エミュレーションライブラリを使う必要があります。もしくは、ネイティブ32bitアプリケーションをインストールして実行するためのchroot内に、真の32bitシステムを作成する必要があります。
+もっとも一般的な使用では、32bit chrootシステムを構築する必要はありません。
+しかしながら、もし実行したいアプリケーションが32bitライブラリと動作するバイナリがない場合は32bit chrootが必要になります。 このガイドは、32bit chrootを設定して、そのchroot内でどうやってアプリケーションをインストール、そして実行するかを、お
+教えします。
+</p> 
+
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/proj/ja/base/amd64/howtos/index.xml">Gentoo/AMD64のHowto</uri>
+</p>
+
+<p>
+翻訳を担当された、藤中さん、査読をしてくださったみなさん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>yamakura</poster>
+	<date>26 May 2003</date>
+	<title>新しいメーリングリスト(-dev)のお知らせ</title>
+<body>
+
+<p>
+	GentooJPに、ebuild開発者向けの新しいメーリングリスト(Developer Mailing List; gentoojp-dev)が作成されました。
+	どんどん情報交換しましょう!
+	<ul>
+	<li>ebuild作成のノウハウ、提案など、技術的なこと</li>
+	<li>ebuildの作成依頼、バグレポート、更新情報など、ebuildのメンテナンス</li>
+	<li>Gentoo.org(Bugzilla)への登録など、アップストリームとの連携</li>
+	<li>ebuildプロジェクトに関すること</li>
+	</ul>
+	このメーリングリストへの参加方法などは、<uri link="/jpmain/about-gentoojp.xml#doc_chap4">GentooJPメーリングリスト</uri>を参照して下さい。
+
+</p>
+
+<p>
+</p>
+
+</body>
+</news>

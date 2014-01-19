@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="moo">
+	<poster>中野正智</poster>
+	<date>8 April 2004</date>
+	<title>UNIX USER 5月号「Gentoo Linuxを選ぶ理由」</title>
+<body>
+<p><uri link="http://www.unixuser.jp/magazine/2004/200405.html">UNIX USER 5月号(4月8日発売)
+</uri>にGentoo Linuxの紹介記事を書かせてもらいました。
+「Gentoo Linuxを選ぶ理由」というタイトルで、
+Gentoo Linuxは何が楽しいのかと言ったことを中心に書きました。</p>
+
+<p>Gentoo Linuxを使ったことのない人でも問題なく読める記事になっているので、Gentoo Linuxに興味はあるんだけど…と言う人にもお勧めです。</p>
+
+</body>
+</news>

@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳:萩原佳明)</poster>
+	<date>23 Dec 2002</date>
+	<title>Gentoo Weekly Newsletterのお知らせ</title>
+<body>
+
+<p>
+<b>Gentooに関する情報源のひとつとして<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml">Gentoo Weekly Newsletter</uri>(以下、GWN)を発行することになりました。
+GWNではGentoo Linuxプロジェクトに関する主要な出来事を、 わかりやすく簡潔なフォーマットで毎週要約してお届けします。</b>
+お届けするのは、一般的なニュース、セキュリティ、バグ報告、Portage情報、それから「これはお伝えしなくては」というその他のトピック、となります。
+</p>
+
+<p>
+とりあえずはWebとメーリングリストという形式での提供になりますが、ご要望があれば他のフォーマットで提供することもあるかもしれません。
+GWNのメーリングリストを講読するには<mail link="gentoo-gwn-subscribe@gentoo.org">gentoo-gwn-subscribe@gentoo.org</mail>宛てに空のメールを送ってください。GWNは英語とスペイン語で読むことができますが、翻訳をしてくれる人が参加してくれれば他の言語でも読めるようになる予定です。
+</p>
+
+<p>
+最後になりましたがGWNの第1号を実現させてくれた10人のボランティアのみなさんに感謝します。
+みなさんもGWNチームに参加してみたいなと思ったら、<mail link="gwn-feedback@gentoo.org">gwn-feedback@gentoo.org</mail>までメールを送ってください。
+</p>
+
+</body>
+</news>
+
+

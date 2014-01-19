@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="moo">
+<poster>naota</poster>
+<date>2011-07-02</date>
+<title>Gentoo スクリーンショットコンテスト 2011</title>
+<body>
+
+<p>
+<uri
+  link="http://www.gentoo.org/news/20100808-screenshot-winners-announcement.xml">2010 Screenshot
+  Contest</uri> の成功を受けて、コンテストチームは今年もコンテストを実施することにしました!
+</p>
+
+<p>
+Gentooユーザー・開発者・スタッフのみなさん、一番のスクリーンショットをどしどしご応募ください。
+今年はlikewhoaは全く使わず、コンテスト用に設定されたCMSを使います。
+詳しくは<uri link="http://www.gentoo.org/proj/en/pr/2011-screenshot-contest.xml">2011 Contest Page</uri>をご覧ください。
+</p>
+
+<p>
+この<uri link="http://forums.gentoo.org/viewtopic-t-884954.html">forum post</uri>に、
+コンテストへのコメントや提案をお待ちしております。さて! 話は終わりました!
+さっそくデスクトップをいじりましょう!
+</p>
+
+<p>
+この記事は<mail>dabbott</mail><uri 
+link="http://www.gentoo.org/news/20110701-2011-screenshot-contest-announcement.xml">
+Gentoo Screenshot Contest 2011</uri>の翻訳です。
+</p>
+
+</body>
+</news>

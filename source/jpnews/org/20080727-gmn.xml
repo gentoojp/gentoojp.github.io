@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>GMN (翻訳: 武田洋之、Ryo Kuya 、Yoko Kuya)</poster>
+
+<!-- Date to be displayed - usually the GMN release date -->
+<date>2008年7月27日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Monthly Newsletter -- 2008年6月30日</title>
+<body>
+
+<!-- Alter to your own likings -->
+
+<p>
+2008年から始まった<uri link="http://www.gentoo.org/news/ja/gmn/20080630-newsletter.xml">GMN(Gentoo Monthly Newsletter)6月号の翻訳版</uri>をお送りします。
+GMNはGentoo関連のニュースを提供する毎月1回発行されるGentooのニュースレターです（以前のGWNの後継になります）。
+翻訳はGMN-JPチーム（武田さん、Ryo Kuyaさん、Yoko Kuyaさん）が担当いたしました。
+今月号にはGentoo理事会の結果やドイツとベネズエラでのイベントの様子、
+Google Summer of Code の学生へのインタビューなどが掲載されています。
+</p>
+
+</body>
+</news>

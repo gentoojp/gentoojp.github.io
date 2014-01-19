@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/news-submit.xml">
+
+<title>GentooJPニュース掲載手順</title>
+
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
+<author title="Author"><mail link="nakano@gentoo.gr.jp">中野正智</mail></author>
+<abstract>これはGentooJPのWebページにニュースを掲載するための手順を説明したものです。
+</abstract>
+
+<version>1.1</version>
+<date>13 Mar 2003</date>
+
+<chapter>
+	<title>ニュースについて</title>
+		<section>
+    <title>ニュースとは</title>
+    <body>
+    <p>
+ここで説明するニュースとは、<uri link="/">www.gentoo.gr.jp</uri>でアクセスしたときに表示されるGentoo/GentooJP関連の話題のことです。
+    </p>
+    </body>
+    </section>
+
+		<section>
+    <title>掲載内容</title>
+    <body>
+    <p>
+Gentoo Linuxに関連することなら営利/非営利に関わらず掲載することができます。
+例えば、Gentoo Linux関連の本や雑誌の発売のお知らせや、イベントやセミナーの告知などです。
+ただし、<uri link="/jpmain/about-gentoojp.xml#doc_chap1">GentooJP開発者</uri>が掲載できないと判断した場合には、掲載しなかったり一度掲載されても取りやめることがあります。 
+    </p>
+    </body>
+    </section>
+
+    <section>
+    <title>記述方法</title>
+    <body>
+    <p>
+GentooJPで使用されているXMLのルールで記述してください。具体的には以下のようになります。本文で使用できるタグについては<uri link="http://www.gentoo.org/doc/ja/xml-guide.xml">XMLガイド</uri>を参照してください。
+    <pre>
+&lt;?xml version='1.0'?&gt;
+&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt;
+&lt;news gentoo="yes" category="linux"&gt;
+	&lt;poster&gt;お名前&lt;/poster&gt;
+	&lt;date&gt;24 October 2003&lt;/date&gt;
+	&lt;title&gt;ニュースのタイトル&lt;/title&gt;
+&lt;body&gt;
+&lt;p&gt;
+本文・・・・・・・・・・・・・・・・・・・・・・・・
+・・・&lt;uri link="http://....."&gt;linkです&lt;/uri&gt;・・・・・・
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/news&gt;
+    </pre>
+    </p>
+    </body>
+    </section>
+
+    <section>
+    <title>掲載依頼</title>
+    <body>
+    <p>
+上記フォーマットで記述し、その内容を<mail link = "www@gentoo.gr.jp">GentooJP</mail>まで送付してください。
+掲載の可否についてお返事させて頂きます。
+    </p>
+    </body>
+    </section>
+
+</chapter>
+</guide>

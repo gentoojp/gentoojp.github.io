@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>morota</poster>
+	<date>2011-09-06</date>
+	<title>翻訳プロジェクト8月の活動内容</title>
+<body>
+
+<p>
+GentooJP翻訳プロジェクトは、2011年8月の活動内容を公表します。
+x86/amd64/PPCハンドブックを中心に16の文書に及ぶ差分翻訳が行われました。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/gentoo-amd64-faq.xml">Gentoo Linux/AMD64 よくある質問とその回答(FAQ)</uri> (rev. 1.37 -> 1.38)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-stage.xml">Gentooインストールファイルをインストールする</uri> (rev. 1.122 -> 1.123)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-system.xml">Gentooベースシステムのインストール</uri> (rev. 1.112 -> 1.119)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-x86+amd64-kernel.xml">カーネル設定(x86/amd64)</uri> (rev. 1.35 -> 1.37)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-config.xml">システム設定</uri> (rev. 1.101 -> 1.102)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-tools.xml">必要なシステムツールをインストールする</uri> (rev. 1.48 -> 1.49)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-x86+amd64-bootloader.xml">ブートローダを設定する(x86/amd64)</uri> (rev. 1.17 -> 1.23)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-working-portage.xml">Portageについて</uri> (rev. 1.74 -> 1.75)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-working-use.xml">USEフラグ</uri> (rev. 1.49 -> 1.50)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-working-features.xml">Portageの機能</uri> (rev. 1.36 -> 1.37)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-working-rcscripts.xml">initスクリプト</uri> (rev. 1.31 -> 1.32)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-portage-files.xml">ファイルとディレクトリ</uri> (rev. 1.20 -> 1.21)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-portage-branches.xml">ソフトウェアのブランチを併用する</uri> (rev. 1.15 -> 1.18)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-x86+amd64-medium.xml#hardware">特別なハードウェアの構成</uri> (rev. 1.2 -> 1.6)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-ppc-medium.xml">適切なインストールメディアの選択(PPC)</uri> (rev. 1.44 -> 1.66)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/handbook-ppc.xml">Gentoo Linux PPC ハンドブック</uri> (rev. 1.147 -> 1.159)
+  </li>
+</ul>
+
+<p>
+GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/">Gentoo ハンドブック</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/openrc-migration.xml">BaselayoutとOpenRCの移行ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/gentoo-x86-quickinstall.xml">Gentoo Linux x86クイックインストールガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/alsa-guide.xml">Gentoo Linux ALSA ガイド</uri>
+  </li>
+</ul>
+
+<p>
+翻訳に興味があり参加してみたい方は、ぜひ<uri link="http://www.gentoo.gr.jp/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>
+をご覧ください。
+</p>
+
+</body>
+</news>

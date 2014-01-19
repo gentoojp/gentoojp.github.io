@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>真藤直観</poster>
+	<date>12 January 2004</date>
+	<title>GentooJP新ドキュメント＆Tips集アップデート</title>
+<body>
+<p>
+<b>GentooJPのオリジナルドキュメントに、おぎうちやすおさんによる
+<uri link="/jpdoc/arukikata.xml">「GentooJPの歩き方」</uri>
+が加わりました。</b>
+</p>
+<p>
+これは、Gentoo Linuxを初めて使う方向けにGentooとGentooJPの各ドキュメントを紹介したガイドです。
+初めての方は、このガイドを読みながらGentooを使っていってみてください。
+Gentooに慣れた方も、新しい発見があるかもしれませんよ。
+</p>
+
+<p>
+もう一つ、<b>なべけんさん編集による
+<uri link="/jpdoc/gentoojp-tips.xml">「GentooLinux Tips集」</uri>
+がアップデートされました。</b>
+</p>
+<p>
+今回のアップデートでは
+<ul>
+<li>emerge コマンドの詳細ログをとる方法</li>
+<li>emerge sync コマンドでrsync先を日本のサーバーに指定する方法</li>
+<li>コンパイルにかかった時間を調べる方法</li>
+<li>KDEでのkinput2 -cannaのフリーズを回避する方法</li>
+</ul>
+などが追加されています。
+</p>
+<p>
+GentooJPのTipsは<uri link="http://king.gentoo.gr.jp/pukiwiki/index.php?%5B%5Btips%BD%B8%5D%5D">GentooJPフォーラム tips集</uri>で引き続き募集中です！
+</p>
+
+</body>
+</news>

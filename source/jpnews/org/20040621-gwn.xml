@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>21 June 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年6月21日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040621-newsletter.xml">Gentoo Weekly Newsletter</uri>では、Gentooで稼動しているログモニタリングツール、Wasabiバージョン0.2のアナウンスやカーネル開発者募集のお知らせがあります。</b>他にもGentooセキュリティ、コミュニティの話題、その他のコンテンツがあるのでお見逃しなく。楽しんで！
+</p>
+</body>
+</news>
+

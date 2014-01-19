@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota)</poster>
+	<date>16 June 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年6月16日号</title>
+<body>
+<p>
+<b>GLEPsとbugsについてのお知らせがGentoo Weekly Newsletter<uri link="/news/ja/gwn/20030616-newsletter.xml">今週号</uri>のヘッドラインです。</b>  この号ではユーザー体験話、Bugzillaサマリー、コミュニティーの話題についても読んでみてください。Tips and Tricks はお休みです、来週号にはまた掲載されるでしょう。楽しんで!
+</p>
+</body>
+</news>

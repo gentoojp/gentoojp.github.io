@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/failover.xml">
+<title>Gentoo Linux 負荷分散ガイド</title>
+<author title="Author">
+	<mail link="syuu@dokukino.com">Takuya Asada</mail>
+</author>
+
+<license/>
+
+<abstract>
+このガイドではLVS,NFS,Heartbeat,Ldirectord,DRBD等のソフトウェアを用いて高可用性を持つ負荷分散システムを構築する方法を解説します。
+</abstract>
+<version>0.5</version>
+<date>January 24, 2005</date>
+<chapter>
+<title>はじめに</title>
+<section>
+<title>負荷分散とは？</title>
+<body>
+	
+<p>
+負荷分散とは、ロードバランサという装置を介して、Webアクセス等の負荷の大きい処理を複数のサーバに分散する機能の事です。<br />
+このドキュメントでは、Gentoo Linuxが予めインストールされたサーバ群（４台）の上に、<br />
+LVS,Ldirectord,NFS,Heartbeat,DRBD等のソフトウェアを用いて高可用性を持つ負荷分散システムを構築します。
+</p>
+
+</body>
+</section>
+<section>
+<title>高可用性とは？</title>
+<body>
+
+<p>
+一台のサーバの障害によって、システムのダウンが起こらないような稼働率の高いシステムの事です。<br />
+具体的には、障害時にサーバのフェイルオーバを行う等の手法が採られます。<br />
+フェイルオーバに関する詳細な情報は、<uri link="failover.xml">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。
+</p>
+
+</body>
+</section>
+<section>
+<title>LVS(Linux Virtual Server)とは？</title>
+<body>
+	
+<p>
+LVSは、複数のサーバを一つの仮想サーバとして扱い、IPレベルの負荷分散をするソフトウェアです。<br />
+LVSをインストールする事により、Linuxサーバ上にロードバランサを実装する事が可能になります。<br />
+詳細は、<uri link="http://ultramonkey.jp/2.0.1/lvs.html">Ultra Monkey: The Linux Virtual Server</uri>が参考になります。<br />
+LVSには、<uri link="http://www.linuxvirtualserver.org/deployment.html">様々な用途での実績</uri>があります（最も良く知られているものとしてはsourceforge.netが挙げられます）。
+</p>
+
+</body>
+</section>
+<section>
+<title>Ldirectordとは？</title>
+<body>
+	
+<p>
+Ldirectordは、実サーバ※ に対してHTTP・FTP等のプロトコルでの接続テストを定期的に行い、サーバが正しく動作しているかチェックします。<br />
+サーバが正しく動作していないと判断した場合、LVSに通知してダウンしたサーバへの分散処理を停止します。<br />
+これにより、実サーバがダウンした場合にも影響を受けずに、サービスを続行することが出来ます。<br />
+詳細は、<uri link="http://ultramonkey.jp/2.0.1/ldirectord.html">Ultra Monkey: Ldirectord</uri>が参考になります。
+</p>
+<note>※実（リアル）サーバ… 分散先のサーバ。実際の処理を受け持つ。以下実サーバと記述</note>
+	
+</body>
+</section>
+<section>
+<title>NFSとは？</title>
+<body>
+
+<p>
+UNIX/Linux等のオペレーティングシステムが稼働しているコンピュータ間でファイルを共有する為のプロトコルです。<br />
+Windowsに於けるSMB/CIFS、Macintoshに於けるAFSに相当します。<br />
+詳細は、<uri link="http://www.linux.or.jp/JF/JFdocs/NFS-HOWTO/">Linux NFS-HOWTO</uri>が参考になります。
+</p>
+
+</body>
+</section>
+<section>
+<title>Heartbeatとは？</title>
+<body>
+
+<p>
+Heartbeatは、サーバの障害を検知し、IPアドレスやサービスの引継ぎを実現するソフトウェアです。<br />
+詳細は、<uri link="http://ultramonkey.jp/2.0.1/heartbeat.html">Ultra Monkey: Heartbeat</uri>が参考になります。
+</p>
+
+</body>
+</section>
+<section>
+<title>DRBDとは？</title>
+<body>
+	
+<p>
+DRBDは、ブロックデバイスをネットワークを介してミラーリングするソフトウェアです。<br />
+DRBDを利用することにより、障害発生時にデータを引き継ぐ事が可能になります。<br />
+詳細は、<uri link="http://www.wbc.co.jp/~drbd/documentation/HOWTO/">DRBD HOWTO</uri>が参考になります。
+</p>
+
+</body>
+</section>
+</chapter>
+<chapter>
+<title>インストール</title>
+<section>
+<title>前提</title>
+<body>
+	
+<ul>
+<li>ロードバランサ（運用系）・ファイル/LDAPサーバ（待機系）のホスト名はsrv01、IPアドレスは192.168.1.101とします。</li>	
+<li>ファイル/LDAPサーバ（運用系）・ロードバランサ（待機系）のホスト名はsrv02、IPアドレスは192.168.1.102とします。</li>
+<li>実サーバは２台あり、それぞれホスト名srv03・IPアドレス192.168.1.103、ホスト名srv04・IPアドレス192.168.1.104とします。</li>
+<li>負荷分散の対象とするIPアドレスは192.168.4.11とします。 このIPアドレスに対するアクセスは、srv03,srv04へ分散されてリダイレクトされます。<br />
+	また、srv01がダウンした場合、このIPアドレスは自動的にsrv02に引き継がれ、実サーバからはサーバが稼動し続けているように見えます。</li>
+<li>ファイル/LDAPサーバのIPアドレスは192.168.4.12とします。<br />
+srv02がダウンした場合、このIPアドレスは自動的にsrv01に引き継がれ、実サーバからはサーバが稼働し続けているように見えます。</li>
+<li>Heartbeat、DRBD等のフェイルオーバと共通するソフトウェアの設定は、<uri link="failover.xml">Gentoo Linux フェイルオーバーガイド</uri>の設定をベースにしています。<br />
+これらについての詳細は、このドキュメントでは触れません。<br />
+この事は、負荷分散システムの構築がフェイルオーバシステムの応用である事を意味します。</li>
+</ul>
+
+</body>
+</section>
+<section>
+<title>カーネル構築（ロードバランサ）</title>
+<body>
+	
+<p>最初に、ロードバランサのカーネルをLVSに対応させます。<br />
+この作業はsrv01/02で行う必要があります。
+</p>
+<pre caption=".config">
+<codenote>以下のモジュールを有効化します。<br />
+menuconfigでは、Networking options->Network packet filteringと<br />
+Networking options->IP: Virtual Server Configurationです。
+</codenote>
+CONFIG_NETFILTER=y
+
+CONFIG_IP_VS=m
+CONFIG_IP_VS_DEBUG=y
+CONFIG_IP_VS_TAB_BITS=12
+CONFIG_IP_VS_RR=m
+CONFIG_IP_VS_WRR=m
+CONFIG_IP_VS_LC=m
+CONFIG_IP_VS_WLC=m
+CONFIG_IP_VS_LBLC=m
+CONFIG_IP_VS_LBLCR=m
+CONFIG_IP_VS_DH=m
+CONFIG_IP_VS_SH=m
+CONFIG_IP_VS_SED=m
+CONFIG_IP_VS_NQ=m
+CONFIG_IP_VS_FTP=m
+</pre>
+<pre caption="カーネルコンパイル">
+srv01/02# <i>make dep clean bzImage modules modules_install &amp;&amp; \</i>
+          <i>mount /boot &amp;&amp; cp arch/i386/boot/bzImage /boot/kernel-2.4.28-gentoo-r5</i>
+</pre>
+<p>コンパイルが終わったらgrubやlilo等のBoot Loaderを設定し、再起動してください。</p>
+<note>
+LVSに対応しているカーネルを使用する必要があります。<br />
+現在の2.4の最新版（2.4.28）では既にLVSが含まれていますが、一部のより古いバージョンではパッチを当てる必要があります。
+</note>
+
+</body>
+</section>
+<section>
+<title>カーネル構築（実サーバ）</title>
+<body>
+	
+<p>実サーバでは、隠しデバイスに対応させる為のパッチが必要になります。<br />
+この作業はsrv03/04で行う必要があります。
+</p>
+<pre caption="パッチ適用">
+srv03/04# <i>cd /usr/src/linux-2.4.28-gentoo-r5</i>
+srv03/04# <i>wget http://www.ssi.bg/~ja/hidden-2.4.28-1.diff</i>
+srv03/04# <i>patch -p1 &lt; hidden-2.4.28-1.diff</i>
+srv03/04# <i>make menuconfig</i>
+srv03/04# <i>make dep clean bzImage modules modules_install &amp;&amp; \</i>
+          <i>mount /boot &amp;&amp; cp arch/i386/boot/bzImage /boot/kernel-2.4.28-gentoo-r5</i>
+</pre>
+<p>コンパイルが終わったらgrubやlilo等のBoot Loaderを設定し、再起動してください。</p>
+
+</body>
+</section>
+<section>
+<title>インストール（ロードバランサ）</title>
+<body>
+
+<p>前提となるUSEフラグは以下の通りです。</p>
+<pre caption="USEフラグ">
+apache2 bzlib cjk crypt innodb ldap ldirectord maildir memlimit nls \
+pam readline xml xml2 zlib
+</pre>
+<p>
+パッケージをインストールします。<br />
+この作業はsrv01/02で行う必要があります。
+</p>
+<pre caption="インストール">
+# <i>cd /usr/src</i>
+# <i>ln -sf linux-`uname -r` linux</i>
+# <i>emerge drbd heartbeat ipvsadm nfs-utils</i>
+</pre>
+<note>DRBDのコンパイルには、現在使用しているカーネルのソースディレクトリから/usr/src/linuxへシンボリックリンクを張っておく必要があります。</note>
+<note>DRBD 0.6はkernel 2.6に対応していないため、2.4である必要があります。</note>
+<note>DRBDはカーネルモジュールとしてコンパイルされるので、カーネルモジュールを有効にしている必要があります。</note>
+
+</body>
+</section>
+<section>
+<title>インストール（実サーバ）</title>
+<body>
+
+<p>前提となるUSEフラグは以下の通りです。</p>
+<pre caption="USEフラグ">
+apache2 bzlib cjk crypt innodb ldap ldirectord maildir memlimit nls \
+pam readline xml xml2 zlib
+</pre>
+<p>
+パッケージをインストールします。<br />
+この作業はsrv03/04で行う必要があります。
+</p>
+<pre caption="インストール">
+# <i>emerge nfs-utils =apache-* nss_ldap pam_ldap</i>
+<codenote>ドキュメント作成の時点ではGentoo LinuxのPortageツリーにあるProFTPDはLDAPの動作に問題が有った※ ため、<br />
+ここではパッチ済のebuildを使用します</codenote>
+# <i>cd /usr/local</i>
+# <i>wget http://ekinoco.dokukino.com/ekinoco.tbz2</i>
+# <i>tar xjf ekinoco.tbz2</i>
+# <i>PORTDIR_OVERLAY="/usr/local/ekinoco" USE="ldap" \
+emerge ekinoco/net-ftp/proftpd-nlst-ldapv3/proftpd-nlst-ldapv3-1.2.10.ebuild</i>
+</pre>
+<note>※ <uri link="failover.xml#doc_chap2_sect2">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。</note>
+
+</body>
+</section>
+<section>
+<title>Heartbeatのresourceスクリプト（ロードバランサ）</title>
+<body>
+	
+<p>
+ロードバランサに対してNFSサーバの設定をします。<br />
+<uri link="failover.xml#doc_chap2_sect3">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+この作業はsrv01/02で行う必要があります。
+</p>
+
+</body>
+</section>
+</chapter>
+<chapter>
+<title>設定</title>
+
+<section>
+<title>カーネル（ロードバランサ）</title>
+<body>
+
+<p>ロードバランサがパケットをリダイレクトできるように、パケットフォワーディングを有効化します。<br />
+この作業はsrv01/02で行う必要があります。</p>	
+<pre caption="sysctl.conf">
+net.ipv4.ip_forward = 1
+</pre>
+<pre caption="sysctl">
+srv01/02# <i>sysctl -p</i>
+</pre>
+
+</body>
+</section>
+<section>
+<title>カーネル（実サーバ）</title>
+<body>
+
+<p>実サーバの隠しインターフェースの設定をします。<br />
+これは、ロードバランサからリダイレクトされてくるパケットが自分宛であると認識させる為に必要です。<br />
+この為にインターフェースlo:0を使用するので、initスクリプトの修正が必要になります。<br />
+この作業はsrv03/04で行う必要があります。
+</p>
+<pre caption="/etc/init.d/net.lo">
+start() {
+        ebegin "Bringing ${IFACE} up"
+        /sbin/ifconfig lo 127.0.0.1 up 2>/dev/null
+		<i>/sbin/ifconfig lo:0 192.168.4.11 netmask 255.255.255.255 up 2>/dev/null</i>
+        /sbin/route add -net 127.0.0.0 netmask 255.0.0.0 \
+                gw 127.0.0.1 dev lo 2> /dev/null
+        eend 0
+}
+
+stop() {
+        ebegin "Bringing ${IFACE} down"
+        /sbin/ifconfig ${IFACE} down &amp;>/dev/null
+        eend 0
+}
+</pre>
+<pre caption="rc-udate">
+srv03/04# rc-update add net.lo default
+</pre>
+<p>また、インターフェースを隠しインターフェースとして設定する為に、sysctl.confに以下の内容を追記し、再ロードします。</p>
+<pre caption="sysctl.conf">
+net.ipv4.conf.all.hidden = 1
+net.ipv4.conf.lo.hidden = 1
+</pre>
+<pre caption="sysctl">
+srv03/04# <i>sysctl -p</i>
+</pre>
+
+</body>
+</section>
+<section>
+<title>DRBD（ロードバランサ）</title>
+<body>
+<p>
+ロードバランサに対して、DRBDを設定します。<br />
+<uri link="failover.xml#doc_chap3_sect3">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+但し、drbd0と同時にdrbd1を定義して下さい。この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
+この作業はsrv01/02で行う必要があります。
+</p>
+</body>
+</section>
+<section>
+<title>NFS（ロードバランサ）</title>
+<body>
+<p>
+ロードバランサに対してNFSサーバの設定をします。<br />
+<uri link="failover.xml#doc_chap3_sect12">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+但し、drbd1上に設定して下さい。この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
+この作業はsrv01/02で行う必要があります。
+
+</p>
+</body>
+</section>
+<section>
+<title>OpenLDAP（ロードバランサ）</title>
+<body>
+	
+<p>
+ロードバランサに対してLDAPサーバの設定をします。<br />
+<uri link="failover.xml#doc_chap3_sect6">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+但し、drbd1上に設定して下さい。また、IPアドレスは、192.168.4.12に読み替えてください。<br />
+この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
+この作業はsrv01/02で行う必要があります。
+</p>
+
+</body>
+</section>
+<section>
+<title>ipvsadm（ロードバランサ）</title>
+<body>
+	
+<p>ipvsadmの設定を/mnt/drbd0/ipvsadmに保存するように設定します。<br />
+（フェイルオーバ時に設定を同期させる為です。）<br />
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<pre caption="[srv01] mkdir">
+srv01# <i>mkdir -p /mnt/drbd0/ipvsadm/data</i>
+</pre>
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<pre caption="[srv01] /mnt/drbd0/init/ipvsadm">
+opts="start stop save"
+RULES=/mnt/drbd0/ipvsadm/data/rules
+</pre>
+<p>LVSでの負荷分散を設定するには、ipvsadmというLVSの管理コマンドを使う必要があります。<br />
+コマンドは、以下のような非常に単純なものです：</p>
+<pre caption="[srv01] ipvsadm">
+srv01# <i>ipvsadm -A -t 192.168.4.11:80</i>
+srv01# <i>ipvsadm -a -t 192.168.4.11:80 -r 192.168.1.103:80 -g</i>
+srv01# <i>ipvsadm -a -t 192.168.4.11:80 -r 192.168.1.104:80 -g</i>
+<codenote>設定が終わったら、drbd0に保存します：</codenote>
+srv01# <i>/etc/ha.d/resource.d/ipvsadm /mnt/drbd0/init/ipvsadm save</i>
+</pre>
+
+</body>
+</section>
+<section>
+<title>Heartbeat/Ldirectord（ロードバランサ）</title>
+<p>最初に、ldirectordの設定をします。<br />
+この作業はsrv01/02で行う必要があります。
+</p>
+<pre caption="/etc/ha.d/ldirectord.cf">
+<codenote>Apacheデフォルトのテストページに対する設定です。</codenote>
+checktimeout=10
+checkinterval=2
+autoreload=yes
+logfile="local0"
+quiescent=yes
+
+virtual=192.168.4.11:80
+<codenote>fallbackは、全ての実サーバが落ちている時の転送先です。<br />
+httpなら、エラーメッセージを書いたHTMLを配置したサーバを設定すると良いでしょう。
+</codenote>
+	#fallback=127.0.0.1:80
+	real=192.168.1.103:80 gate
+	real=192.168.1.104:80 gate
+	service=http
+	request="index.html"
+	receive="Test Page"
+	scheduler=rr
+	protocol=tcp
+	checktype=negotiate
+
+virtual=192.168.4.11:21
+	real=192.168.1.103:21 gate
+	real=192.168.1.104:21 gate
+	service=ftp
+	request="welcome.msg"
+	receive="Welcome"
+	login="test01"
+	passwd=<i>[パスワード]</i>
+	scheduler=rr
+	#persistent=600
+	protocol=tcp
+	checktype=negotiate
+</pre>
+<p>次に、Heartbeatの設定をします。<br />
+この作業はsrv01/02で行う必要があります。
+</p>	
+<pre caption="/etc/ha.d/haresources">
+srv01 192.168.4.11/24 datadisk::drbd0 \
+ipvsadm::/mnt/drbd0/init/ipvsadm \
+ldirectord::/mnt/drbd0/init/ldirectord
+srv02 192.168.4.12/24 datadisk::drbd1 \
+nfs::/mnt/drbd1/init/nfs slapd::/mnt/drbd1/init/slapd
+</pre>
+<pre caption="/etc/ha.d/ha.cf">
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+logfacility     local0
+keepalive 2
+deadtime 10
+initdead 120
+udpport 694
+bcast eth0
+auto_failback on
+node srv01
+node srv02
+debug 1
+</pre>
+<p>設定が終わったら、Heartbeatを起動しましょう。</p>
+<pre caption="/etc/init.d/heartbeat">
+srv01/02# <i>/etc/init.d/heartbeat start</i>
+srv01/02# <i>tail -f /var/log/ha-debug</i>
+</pre>
+</section>
+<section>
+<title>NFS（実サーバ）</title>
+<body>
+<p>実サーバに対してNFSクライアントの設定をします。<br />
+<uri link="failover.xml#doc_chap3_sect13">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+但し、drbd1上に設定して下さい。また、IPアドレスは、192.168.4.12に読み替えてください。<br />
+この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
+この作業はsrv03/04で行う必要があります。
+</p>
+<p>また、ホームディレクトリを作成しておいてください。</p>
+<pre caption="mkdir">
+# <i>mkdir /mnt/nfs/home</i>
+</pre>
+</body>
+</section>
+<section>
+<title>OpenLDAP（実サーバ）</title>
+<body>
+<p>実サーバに対してLDAPクライアントの設定をします。<br />
+<uri link="failover.xml#doc_chap3_sect7">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+但し、drbd1上に設定して下さい。また、IPアドレスは、192.168.4.12に読み替えてください。<br />
+更に、ユーザの追加例のホームディレクトリを/mnt/nfs/home/[ユーザ名]と読み替えてください。<br />
+この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
+この作業はsrv03/04で行う必要があります。
+</p>
+<pre caption="~/test01.ldif">
+dn: uid=test01,ou=People,dc=cluster1,dc=dokukino,dc=com
+uid: test01
+cn: test01
+sn: test01
+loginShell: /bin/bash
+uidNumber: 2001
+gidNumber: 2001
+homeDirectory: /mnt/nfs/home/test01
+shadowMin: -1
+shadowMax: 999999
+shadowWarning: 7
+shadowInactive: -1
+shadowExpire: -1
+shadowFlag: 0
+objectClass: top
+objectClass: person
+objectClass: posixAccount
+objectClass: shadowAccount
+</pre>
+</body>
+</section>
+
+<section>
+<title>Apache（実サーバ）</title>
+<body>
+<p>Apacheの設定・データを/mnt/nfsに用意します。<br />
+但し、logとpidファイルはNFS上には置きません。設定とデータのみを共通化します。<br />
+この作業は、全てsrv03から行います。</p>
+<pre caption="[srv03] /mnt/nfs/apache2に設定・データを用意する">
+srv03# <i>cd /mnt/nfs</i>
+srv03# <i>mkdir apache2</i>
+srv03# <i>cd apache2/</i>
+srv03# <i>mkdir conf www</i>
+srv03# <i>ln -s /var/log/apache2 logs</i>
+srv03# <i>ln -l /usr/lib/apache2</i>
+srv03# <i>ls -l /usr/lib/apache2</i>
+srv03# <i>ln -s /usr/lib/apache2/build ./</i>
+srv03# <i>ln -s /usr/lib/apache2-extramodules ./extramodules</i>
+srv03# <i>ls -l</i>
+srv03# <i>ln -s /usr/lib ./</i>
+srv03# <i>ln -s /usr/lib/apache2/modules ./</i>
+srv03# <i>cd /etc/apache2/conf/</i>
+srv03# <i>cp -a magic mime.types modules.d php.ini ssl vhosts /mnt/nfs/apache2/conf/</i>
+srv03# <i>cd -</i>
+srv03# <i>cp -a /var/www/* www/</i>
+</pre>
+<p>
+apache2.conf、commonapache2.confを参考にして、パスを書き換えた設定ファイルを作成します。
+</p>
+<pre caption="[srv01] /mnt/nfs/apache2/conf/apache2.conf">
+<codenote>変更すべき部分のみ抜粋</codenote>
+ServerRoot /mnt/nfs/apache2
+DocumentRoot /mnt/nfs/apache2/www/localhost/htdocs
+</pre>
+<pre caption="[srv01] /mnt/nfs/apache2/conf/commonapache2.conf">
+<codenote>変更すべき部分のみ抜粋</codenote>
+&lt;IfModule mod_alias.c&gt;
+    Alias /icons/ /mnt/nfs/apache2/www/localhost/icons/
+    Alias /doc /usr/share/doc
+    ScriptAlias /cgi-bin/ /mnt/nfs/apache2/www/localhost/cgi-bin/
+    ScriptAlias /protected-cgi-bin/ /mnt/nfs/apache2/www/localhost/protected-cgi-bin/
+    ScriptAliasMatch ^/~([^/]*)/cgi-bin/(.*) /mnt/nfs/home/$1/public_html/cgi-bin/$2
+    &lt;IfModule mod_perl.c&gt;
+	Alias /perl/ /mnt/nfs/apache2/www/localhost/perl/
+	Alias /cgi-perl/ /mnt/nfs/apache2/www/localhost/perl/
+    &lt;/IfModule&gt;
+&lt;/IfModule&gt;
+
+&lt;IfModule mod_deflate.c&gt;
+	&lt;Directory "/mnt/nfs/apache2/www/localhost/htdocs/manual"&gt;
+
+&lt;Directory /mnt/nfs/apache2/www/localhost/htdocs&gt;
+	
+&lt;Directory /mnt/nfs/apache2/www/localhost/perl&gt;
+
+&lt;Directory /mnt/nfs/apache2/www/localhost/cgi-bin&gt;
+
+&lt;Directory /mnt/nfs/apache2/www/localhost/protected-cgi-bin&gt;
+
+&lt;Directory /mnt/nfs/home/*/public_html&gt;
+
+&lt;Directory /mnt/nfs/home/*/public_html/cgi-bin&gt;
+
+&lt;IfModule mod_perl.c&gt;
+    &lt;Directory /mnt/nfs/home/*/public_html/perl&gt;
+	
+&lt;Directory /mnt/nfs/apache2/www/localhost/icons&gt;
+
+&lt;IfModule mod_alias.c&gt;
+AliasMatch ^/manual(?:/(?:de|en|fr|ja|ko|ru))?(/.*)?$ \
+"/mnt/nfs/apache2/www/localhost/htdocs/manual/$1"
+
+&lt;Directory "/mnt/nfs/apache2/www/localhost/htdocs/manual"&gt;
+</pre>
+<p>
+webapp-configのVHOST_ROOTを以下のように書き換えます。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+<pre caption="/etc/vhosts/webapp-config">
+<codenote>変更すべき部分のみ抜粋</codenote>
+VHOST_ROOT="/mnt/nfs/apache2/www/${G_HOSTNAME}"
+</pre>
+<p>
+conf.dの設定を以下のように書き換えます。<br />
+この作業は、両方のサーバで行う必要があります。
+</p>
+<pre caption="/etc/conf.d/apache2">
+SERVERROOT=/mnt/nfs/apache2
+CONFIGFILE=conf/apache2.conf
+PIDFILE=/var/run/apache2.pid
+RESTARTSTYLE="graceful"
+</pre>
+<p>Apacheを起動します。<br />
+この作業は両方のサーバで行う必要があります。</p>
+<pre caption="apacheを起動">
+srv03/04# <i>rc-update add apache2 default</i>
+srv03/04# <i>/etc/init.d/apache2 start</i>
+</pre>
+</body>
+</section>
+<section>
+<title>ProFTPD（実サーバ）</title>
+<body>
+
+<p>
+ProFTPDの設定・データを/mnt/nfs/proftpdに用意します。
+/mnt/nfsの中のファイルの設定は、全てsrv03から行います。
+</p>
+
+<pre caption="[srv03] /mnt/nfs/proftpdに設定・データを用意する">
+srv03# <i>mkdir -p /mnt/nfs/proftpd/conf</i>
+</pre>
+
+<p>
+proftpd.conf.distrib等を参考にして、proftpd.confを作成します。
+</p>
+
+<pre caption="[srv03] /mnt/nfs/proftpd/conf/proftpd.conf">
+ServerName                              "ProFTPD Default Installation"
+ServerType                              standalone
+DefaultServer                   on
+Port                                    21
+Umask                                   022
+MaxInstances                    30
+User                                    proftpd
+Group                                   proftpd
+DefaultRoot                             ~
+AuthPAM                                 off
+LDAPServer                              192.168.4.12
+LDAPDoAuth                              on "ou=People,dc=cluster1,dc=dokukino,dc=com"
+LDAPProtocolVersion             3
+LDAPDoUIDLookups                on "ou=People,dc=cluster1,dc=dokukino,dc=com"
+LDAPDoGIDLookups                on "ou=Group,dc=cluster1,dc=dokukino,dc=com"
+AllowOverwrite                  on
+MultilineRFC2228                on
+ShowSymlinks                    on
+AllowForeignAddress             on
+TimesGMT                                off
+IdentLookups                    off
+UseReverseDNS                   off
+ServerIdent                             on ""
+AllowStoreRestart               on
+AllowRetrieveRestart    on
+AllowOverwrite                  on
+RequireValidShell               off
+DisplayLogin                    welcome.msg
+</pre>
+<p>conf.dの設定を以下のように書き換えます。<br />
+この作業は、両方のサーバで行う必要があります。</p>
+<pre caption="[srv03] /etc/conf.d/proftpd">
+CONFIGFILE=/mnt/nfs/proftpd/conf/proftpd.conf
+</pre>
+<p>ProFTPDを起動します。<br />
+この作業は両方のサーバで行う必要があります。</p>
+<pre caption="proftpdを起動">
+srv03/04# <i>rc-update add proftpd default</i>
+srv03/04# <i>/etc/init.d/proftpd start</i>
+</pre>
+<p>ldirectord用に、welcome.msgを配置します。</p>
+<pre caption="[srv03] welcome.msgを配置">
+srv03# <i>echo "Welcome" > /mnt/nfs/home/test01/welcome.msg</i>
+</pre>
+</body>
+</section>
+</chapter>
+</guide>

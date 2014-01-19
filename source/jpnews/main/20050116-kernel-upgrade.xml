@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>16 Jan 2005</date>
+	<title>Gentoo Linuxカーネルアップグレードガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+<uri link="http://www.gentoo.org/doc/ja/kernel-upgrade.xml">「Gentoo Linuxカーネルアップグレードガイド」</uri>の翻訳が完了しました。
+このドキュメントは、カーネルのバージョンアップや別のカーネルパッケージをインストールする場合の手順を説明します。
+</p>
+
+<p>
+私見ですが、別のカーネルパッケージを初めて試したいという方には、このドキュメントは大変参考になると思います。しかし、2.4カーネルから2.6カーネルへのアップグレードには、こちらのドキュメントより、<uri link="http://www.gentoo.org/doc/ja/migration-to-2.6.xml">Gentoo Linux 2.6完全移行ガイド</uri>をお奨めします。また、このドキュメントには、古いカーネルを削除する方法が書かれていて、gentoo流のカーネル削除の方法が説明されています。たぶん、削除の仕方はこのドキュメントにしか書かれてないような気がします。カーネルの再構築やアップデートが初めてという方は、一読する価値があると思います。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+新しいカーネルを手に入れ古いバージョンのカーネルを保持する必要が無くなったかもしれません。 簡単に現在の物を除いたカーネルのソースを削除するには、emergeのpruneオプションを利用します。以下続く・・・
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/kernel-upgrade.xml">Gentoo Linuxカーネルアップグレードガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、お疲れさまでした。ちなみに、<uri link="http://www.gentoo.org/doc/ja/migration-to-2.6.xml">Gentoo Linux 2.6完全移行ガイド</uri>の翻訳も小林さんが担当されました。本当にありがとうございます^^
+</p>
+</body>
+</news>

@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2004年12月29日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2004年12月29日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>2004年の最終号となる<uri link="/news/ja/gwn/20041229-newsletter.xml">Gentoo Weekly Newsletter</uri>の第52号では、2002年12月23日から2周年を迎え、2周年記念号です！ぱちぱちぱち！Gentoo LinuxとGentooユーザの今年のビッグイベントを振り返ってみました。GWNを支える編集者と翻訳チームのプロフィール、毎週のおなじみBugzillaの統計データは1年分をまとめてご紹介します。</b>今週のFuture Zoneは、Portageにもうすぐ登場するあたらしいQtを、コミュニティの話題と世界のGentooはもちろん、それから今週も新しい開発者がたくさん増えました。もうすぐ2005年、来年もよろしく！
+</p>
+
+</body>
+</news>

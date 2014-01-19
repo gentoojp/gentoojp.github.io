@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="main">
+<poster>swift (翻訳: 飴谷)</poster>
+<date>21 October 2004</date>
+<title>Gentoo Documentation Project Status Update</title>
+
+<body>
+
+<p>
+<uri link="/proj/en/gdp">Gentoo ドキュメントプロジェクト</uri>は、<uri link="/proj/en/gdp/status/status_20041021.xml">ドキュメントの更新情報や新規ドキュメントのリリース情報</uri>を更新しました。
+今回の更新で一番目を引くのは<uri link="/doc/en/handbook">Gentoo handbook</uri>で、今回Portageの働きを説明する&quot;<uri link="/doc/en/handbook/handbook-x86.xml?part=3">Working with Portage</uri>&quot;の章が追加されました。
+</p>
+
+</body>
+</news>

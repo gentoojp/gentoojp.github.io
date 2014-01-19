@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005年3月14日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2005年3月14日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>先週はGentoo関連のイベント報告がたくさんありました。今週の<uri link="/news/ja/gwn/20050314-newsletter.xml">Gentoo Weekly Newsletter</uri>では、マンチェスターで行なわれたGentoo UKカンファレンスと、南ドイツでのLinuxフェアの模様を特集します。開発者のブログアグリゲータ、Planet Gentooも始動、先日お伝えしたOpen Desktop Workstationもついに販売開始しました。</b>世界のGentooでは、日本のGentooユーザが書いた本とドイツのLinuxユーザグループで開催されたプレゼンテーションを、Gentoo関連ニュースでは再び証明されたイギリスとドイツでのGentoo人気、いつものBugzillaとGLSA、開発者メーリングリストをまとめたコミュニティの話題も復活しました。
+</p>
+
+</body>
+</news>

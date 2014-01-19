@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<news gentoo="yes" category="gentoo">
+	<poster>Mark Loeser(翻訳:小林 弘樹)</poster>
+	<date>2005-12-02</date>
+	<title>GCC 3.4がx86でstableに</title>
+<body>
+
+<p>
+<b>GCC 3.4がついにx86でstableになりました。</b>インストールが完了してもコンパイラは自動的にはgcc-3.4へと切り替わらないので、システムコンパイラとして使用するために移行作業を行う必要があります。あなたの移行作業をお手伝いするために、私たちは<uri link="/doc/en/gcc-upgrading.xml">GCCアップグレードガイド</uri>を作成しました。
+</p>
+
+<p>
+サポートの問題については、IRCチャネルの#gentooが救済場所となります。この移行過程で発見されたバグは、<uri link="https://bugs.gentoo.org">GentooのBugzilla</uri>で"Gentoo Linux"プロダクトの"GCC Porting"コンポーネントとして提出してください。
+</p>
+  
+</body>
+</news>

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>26 May 2005</date>
+	<title>「Gentoo Linux USBガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/usb-guide.xml">Gentoo Linux USBガイド</uri>です。
+このガイドは、USBの規格からGentooで利用する上でのカーネルの設定、USBデバイスの確認方法が説明されています。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+USBは、ユニバーサルシリアルバスの略で、基本的にはコンピュータと他の様々な周辺装置の間で通信を可能にする外部インタフェース標準です。
+今日、最もよく用いられているUSBデバイスには、キーボード、マウス、USBメモリ、デジタルカメラ、外付けCD &amp; DVDドライブ、プリンタなどがあります。
+</p>
+
+<p>
+現在使用されているUSBのバージョンは、USB 1.1とUSB 2.0の二つです。
+USBは、以前のバージョンに対して常に後方互換性を保ってきたので、USB 2.0はUSB 1.1に対して後方互換性があります。
+最新のUSBデバイスは通常USB 2.0に対応しています。
+USB 2.0は、最大データ転送速度 480Mbps(60Mbps)をサポートしており、これが二つの標準の間の大きな違いです。
+USBには、デバイスがすべて<e>ホットプラグ可能</e>であるという利点もあります。
+ホットプラグ可能とは、これらのデバイスを利用可能にするためにシステムを再起動する必要がないということです。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/usb-guide.xml">http://www.gentoo.org/doc/ja/usb-guide.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、池田 健吾 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

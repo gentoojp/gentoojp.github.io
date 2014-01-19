@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+  <poster>増田 昌也 / shindo</poster>
+  <date>2008-07-08</date>
+  <title>LiveCDの問題があった場合は2008.0-r1が役立つかもしれません</title>
+  <body>
+    <p>
+      <b>残念ながらLiveCDを起動したり焼いたりすることができなかった皆様、
+      リビジョンを上げた2008.0-r1を提供しました。</b>
+      2008.0-r1は次の特定の問題を修正しています：
+    </p>
+
+    <ul>
+      <li><b><uri link="https://bugs.gentoo.org/show_bug.cgi?id=230998">Bug
+      #230998</uri></b>：x86/amd64向けの2008.0のLiveCDは、
+      kernel/initramfsをtmpfsにコピーするとき失敗する</li>
+      <li><b><uri link="https://bugs.gentoo.org/show_bug.cgi?id=231024">Bug
+      #231024</uri></b>：amd64のLiveCDイメージが普通の700MBのCDには納まらない</li>
+    </ul>
+
+    <p>
+      もしこれらの問題のうちのいずれかに遭遇していたとしたら、お詫びいたします。
+      これらの問題を知り、できる限り急いで修正いたしました。
+      <b>新しい修正版の2008.0-r1を<uri
+      link="http://www.gentoo.org/main/en/where.xml">"Get Gentoo!"
+      ページ</uri>から取得してください</b>。
+    </p>
+
+    <p>
+      <uri link="http://forums.gentoo.org/viewtopic-t-699417.html">Discuss
+      this!</uri>
+    </p>
+
+    <p>
+        今回のニュースは増田 昌也さんに翻訳していただきました。
+        ありがとうございました。
+    </p>
+  </body>
+</news>

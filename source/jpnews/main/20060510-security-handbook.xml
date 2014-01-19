@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-05-10</date>
+	<title>「Gentoo セキュリティ ハンドブック」の翻訳完了のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/doc/ja/security/security-handbook.xml">Gentoo セキュリティ ハンドブック</uri>の翻訳完了のお知らせです。<uri link="http://www.gentoo.org/doc/ja/security/security-handbook.xml">Gentoo セキュリティ ハンドブック</uri>は、<uri link="http://www.gentoo.org/doc/ja/gentoo-security.xml">Gentoo Linux セキュリティ・ガイド</uri>を、より詳細にしたものであり、Gentooをサーバとして利用したい方、デスクトップ環境でも、インターネットに接続しており、クラッキングや不正アクセスなどに気を遣いたい方には、必ず目を通してもらいたいドキュメントです。
+</p>
+
+
+<p>
+<uri link="http://www.gentoo.org/doc/ja/security/security-handbook.xml">このハンドブック</uri>は、以下の14章から構成されています。そして、セキュリティを強化すべき対象の検討から始まり、セキュリティを強化するための方法として、一番の基本であるロギングから解説し、次にマウント、権限、サービスのアクセス制御という風に、順々にレベルを上げていきます。このため、Linux初心者の方でも理解しやすいドキュメントになっています。
+</p>
+
+<ol>
+<li>プレインストール関連</li>
+<li>セキュリティを強化する</li>
+<li>ロギング</li>
+<li>パーティションのマウント</li>
+<li>ユーザ/グループの制限</li>
+<li>ファイルパーミション</li>
+<li>PAM</li>
+<li>TCP Wrapper</li>
+<li>カーネルセキュリティ</li>
+<li>サービスのセキュリティを確保する</li>
+<li>Chrootとバーチャルサーバ</li>
+<li>ファイアーウォール</li>
+<li>侵入検知</li>
+<li>最新状態を維持する</li>
+</ol>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+どれほど数多くの保護を実装しても、攻撃者がコンピュータに物理アクセスすることで、それらすべてが簡単に回避されるかもしれません。しかしながら、機器に物理アクセスする攻撃者に対するセキュリティを決めるために、取りうる対策が一応は存在します。機器を鍵のかかる棚にしまうことで、攻撃者がケーブルを抜き、持ち去るのを防いでください。攻撃者がハードディスクを絶対持ち逃げできないように、コンピュータのケースに鍵をかけるのも良いアイデアです。うまく権限とログイン制限を回避して、別ディスクからのブートができないように、 BIOS上でハードディスクをファーストブートディスクにし、 BIOSパスワードを設定するようにしてください。悪意あるユーザがシングルユーザモードでブートして、システムに対する完全なアクセスを取得できないように、LILOやGRUBのブートパスワードを設定することも重要です。これについては3章の GRUBパスワードの設定 や LILO パスワードの設定 で詳細に触れます。
+</p>
+
+<p>
+もちろん、ログを保存しておくだけでは、片手落ちです。
+Logcheckのようなアプリケーションによって、通常のログ解析はずっと楽になります。
+Logcheckとはスクリプトで、<c>logtail</c>と呼ばれるバイナリに付属しています。
+logtailはcronデーモンから実行され、不審な活動に対する一連のルールに沿って、
+ログをチェックし、結果をrootのメールボックスにメールします。
+</p>
+
+<p>
+Logcheckとlogtailは、<c>app-admin/logsentry</c>パッケージの一部です。
+</p>
+
+<p>
+Logcheckは4つのファイルを使い、
+重要なログエントリを重要でないものからフィルターします。
+これらのファイルには、
+ハッキング攻撃により出力される既知のメッセージを含む<path>logcheck.hacking</path>、
+セキュリティの侵害を知らせるパターンを含む<path>logcheck.violations</path>、
+violationsファイルにマッチしそうで、かつ、
+通常のエントリとして無視してしまって構わないキーワードを含む<path>logcheck.violations.ignore</path>、
+無視されるべきエントリにマッチする<path>logcheck.ignore</path>があります。
+</p>
+
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/security/security-handbook.xml">Gentoo セキュリティ ハンドブック</uri>
+</p>
+
+<p>
+翻訳をしてくださった村上　卓さん、松葉さん、クリスさん、小林さん、シンドウさん、
+また、査読をしてくださったみなさん、ありがとうございました。
+
+どうもお疲れさまでした。
+</p>
+</body>
+</news>

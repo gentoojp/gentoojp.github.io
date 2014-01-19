@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>cybersystem(翻訳:Takashi Ota)</poster>
+	<date>09 June 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年6月9日号</title>
+<body>
+<p>
+<b>
+SELinuxが動作するマシンの発表とGentoo on Mac OSXの発表が今週の<uri link="/news/ja/gwn/20030609-newsletter.xml">Gentoo Weekly Newsletter</uri></b>のトップニュースです。Gentoo Linux projectで空いているポジションについてのお知らせもあります。楽しんで。
+</p>
+</body>
+</news>

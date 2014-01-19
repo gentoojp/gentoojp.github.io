@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+<poster>Simon Stelling(翻訳:小林　弘樹)</poster>
+<date>2006-01-12</date>
+<title>Gentoo/AMD64プロジェクト最新状況</title>
+
+<body>
+
+<p>
+<b>新しい<uri link="/proj/en/base/amd64/status/status_20060110.xml">Gentoo/AMD64プロジェクト最新状況</uri>がリリースされました。</b>
+様々なサブプロジェクトの進行状況をカバーするとともに、昨年からの一般的な概観も含まれています。
+</p>
+
+</body>
+</news>

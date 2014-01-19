@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+<poster>carlos　（翻訳：今野勝之）</poster>
+<date>6 September 2004</date>
+<title>Gentoo Weekly Newsletter 2004年9月6日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040906-newsletter.xml">Gentoo Weekly Newsletter</uri>では、新しいBugDayのWebサイトの紹介をしています。BugDayのWebサイトは、参加者がバグを探すよりも修正するほうに多く時間を費やせるようにするため、BugDayコーディネータが集約したバグをリスト表示します。</b>また、プロジェクトアップデートではDevrel（開発者関連）、リリースエンジニアリング、セキュリティプロジェクトのアップデート情報や、ほかにもコミュニティの話題、開発者Deedra Watersの紹介をお届けします。楽しんで！
+</p>
+</body>
+</news>

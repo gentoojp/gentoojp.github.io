@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>松田 和雄</poster>
+	<date>24 Apr 2003</date>
+	<title>ミラーサーバーが登録されました。</title>
+<body>
+<p>
+  <uri link="http://www.gentoo.org/">本家(gentoo.org)</uri>に
+  <uri link="http://www.gentoo.org/main/en/mirrors.xml">GentooJPのミラーサーバー</uri>が登録されました。
+  データセンターに置かれている豪華サーバーというわけではないので
+  (むしろBフレッツという貧弱な回線です)、
+  もしかすると海外の方が早いかもしれませんが良かったら試してみて下さい。
+</p>
+<p>
+  また、既にお気付きの方も居ると思いますがrsyncサーバーの方も立ち上がってます。
+  萩原さん作のGentooJPロゴを堪能して下さい。
+</p>
+</body>
+</news>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳: 飴谷)</poster>
+	<date>16 September 2004</date>
+	<title>Gentooユーザへのアンケートのお願い</title>
+<body>
+<p>
+Gentooユーザへのアンケートページが公開されています。
+このアンケートで、Gentoo Linuxユーザからいくつかのフィードバックをもらい、そのフィードバックから、「Gentooがどのように使われているのか？」、「どのような改善をしていくべきか？」という方向性を見極めたいと考えています。
+このアンケートは10分程度で終わります。
+そして9月末まで回答を受け付けています。
+お時間がありましたら、<uri link="http://survey.gentoo.org/index.php?sid=3">アンケートページ</uri>にて回答をお願いします。</p>
+</body>
+</news>

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>11 Dec 2004</date>
+	<title>Gentoo Linuxローカライズガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+タイムゾーン、ロケール、キーボードのレイアウトと言った使用する地域・人に依存する設定を解説したガイドが翻訳されました。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/guide-localization.xml">Gentoo Linux ローカライズガイド</uri>。
+</p>
+
+<p>
+翻訳を行った小林弘樹さん、お疲れさまでした。
+</p>
+
+</body>
+</news>

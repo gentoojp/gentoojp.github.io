@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="main">
+	<poster>drobbins (翻訳: yamakura)</poster>
+	<date>04 June 2003</date>
+	<title>Gentoo/MacOS X のアナウンス</title>
+<body>
+<p>
+<b>GentooプラットフォームがまもなくMacOS Xで利用可能になることをお知らせでき、喜ばしく思います。
+</b>このアナウンスが意味するところは、
+今使っているオペレーティングシステム上で(たとえそれがGNU/Linuxではなくても)、
+GentooプラットフォームやPortageがもたらすパワーと簡潔さを
+満喫できるようになるだろうということです。
+我々はユーザに対して、他の誰よりも幅広い選択肢を提供したいと考えています。
+この中には、ユーザが要求あるいは希望する、
+非GNUオペレーティングシステムと非Linuxカーネルを利用できるようにすることも含まれています。
+</p>
+<p>
+現在、このプロジェクトの為の
+メーリングリストやプロジェクトページなどのインフラストラクチャを整えているところです。
+また、メインラインのPortageソースにMacOS X用のPortageを統合しています。
+これらの最初の手続きがおわりしだい、別のニュースで続報をお知らせします。
+</p>
+</body>
+</news>

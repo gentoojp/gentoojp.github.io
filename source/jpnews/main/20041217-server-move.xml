@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+			<poster>小島和範</poster>
+			<date>17 December 2004</date>
+			<title>GentooJPのサーバメンテナンス</title>
+<body>
+<p>
+12月18日 土曜日 サーバマシン入れ替えに伴なうメンテナンスを行います。
+</p><p>
+メンテナンス中につきましては下記の影響範囲のサービスが全て停止致します。
+</p><p>
+また、メーリングリストも停止致しますのでメンテナンス終了の告知が出るまで、投稿は御控え下さい。
+</p>
+<ul>
+<li>予定時間</li>
+<ul>
+   <li>12月18日 土曜日 10時30分 開始</li>
+   <li> 12月18日 土曜日 18時30分 終了</li>
+   <li> 終了時刻につきましては早まる場合も遅くなる場合もありますので予め御了承下さい</li>
+</ul>
+
+<li>影響範囲</li>
+  <ul>
+  <li>galapagos.gentoo.gr.jp の全サービス(下記のサービス)</li>
+  <li>www.gentoo.gr.jp     -  Web</li>
+  <li>mirror.gentoo.gr.jp  -  distfiles ミラー</li>
+  <li>ml.gentoo.gr.jp      -  メーリングリスト</li>
+  <li>rsync2.jp.gentoo.org -  portage ミラー</li>
+  </ul>
+</ul>
+<p>他のサービスは別のサーバで運営しておりますので影響はありません。</p>
+</body>
+</news>

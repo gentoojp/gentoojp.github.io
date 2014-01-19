@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>shindo</poster>
+	<date>21 Nov 2008</date>
+	<title>Manually fixing broken portage installations 翻訳完了</title>
+<body>
+
+<p>
+"Manually fixing broken portage installations"が新たに翻訳されました。
+このドキュメントは、portageが壊れた場合に手動で修復するためのドキュメントです。
+</p>
+
+<p>
+原文より：
+このセクションでは、emerge sys-apps/portageが実行できない場合に、portageを手動で更新・修復する方法を説明します。難しくはありませんが、それでも十分慎重に行う必要がありますので、以下のステップに正確に従って下さい(ただし必要ならば常識を適用して下さい)。 
+</p>
+
+<p>
+翻訳はこちらからどうぞ：
+<uri link="http://www.gentoo.org/proj/ja/portage/doc/manually-fixing-portage.xml">壊れたportageを手動で修復する</uri>
+</p>
+
+<p>
+翻訳をしてくださった、平櫛賢二さん、ありがとうございました。
+</p>
+
+</body>
+</news>

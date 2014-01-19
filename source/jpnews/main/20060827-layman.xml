@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>渡邊 集</poster>
+	<date>27 August 2006</date>
+	<title>laymanを使ってebuildJPを利用できます</title>
+<body>
+
+<p>
+	Portageオーバーレイ管理アプリケーションlaymanの標準で利用可能なオーバーレイのリストに、「gentoojp」が追加されました。
+	これによって、laymanをインストールするだけでebuildJPに登録されているebuildが利用可能になります。
+	ぜひお試し下さい。
+</p>
+
+<p>
+	なお、laymanを利用する場合を含む、ebuildJPの利用方法についての詳細は
+	<uri link="/jpmain/ebuild-uploader.xml">ebuild-uploader利用ガイド</uri>
+	をご覧下さい。
+</p>
+</body>
+</news>

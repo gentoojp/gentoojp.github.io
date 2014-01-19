@@ -1,0 +1,338 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<guide link="/jpmain/developer.xml">
+
+<title>GentooJP開発者用ドキュメント</title>
+
+<author title = "Author"><mail link = "www@gentoo.gr.jp">GentooJP</mail></author>
+<author title = "Editor"><mail link = "nakano@gentoo.gr.jp">中野正智</mail></author>
+
+<abstract>
+このドキュメントはGentooJPの開発者用です。
+ただし、将来の開発者のために情報はすべて公開しています。
+</abstract>
+
+<version>0.5</version>
+<date>25 May 2004</date>
+
+<chapter>
+<title>
+GentooJP開発者とは
+</title>
+
+<section>
+<title>
+GentooJP開発者とは
+</title>
+<body>
+<p>
+GentooJPのプロジェクト運営を円滑に進めるための有志のことです。
+GentooJPでは、ソフトウェアの開発だけでなく、ドキュメント作成者や、サーバーの管理者など、GentooJPの運営をサポートしてくれる人すべてをGentooJP開発者と呼んでいます。
+</p>
+</body>
+</section>
+
+<section>
+<title>
+GentooJP開発者になるための条件
+</title>
+<body>
+<p>
+特に条件はありません。<br />
+責任感を持って常識的な行動を取れる人なら、どなたでも大歓迎です。
+</p>
+</body>
+</section>
+
+</chapter>
+
+<chapter>
+<title>www.gentoo.gr.jp サイトの更新方法</title>
+
+<section>
+<title>更新について</title>
+<body>
+<p>
+AuthorがGentooJPとなっているものの更新は自由に行なってください。
+また編集を加えた場合にはeditorとして自分の名前を追加してください。
+ただしtypoの修正などわざわざ追加するほどでもないと判断した場合はその限りではありません。
+そして周知という意味で-adminや-miscまたは-docsメーリングリストなど、
+関係するところへ報告を行なってください。事後報告で構いません。
+</p>
+
+<p>
+更新の内容が不安な場合には事前にメーリングリストで話し合ってください。
+</p>
+
+</body>
+</section>
+
+<section>
+<title>更新の基本的な仕組み</title>
+<body>
+<p>
+現在<uri link="/">www.gentoo.gr.jp</uri>上のコンテンツは、
+GentooJPのCVSにて管理を行なっています。
+そしてそのCVSからwww.gentoo.gr.jpへ10分間隔で定期的にコピーを行なっています。
+</p>
+
+</body>
+</section>
+
+<section>
+<title>コンテンツの取得手順</title>
+<body>
+<p>
+CVS上には、いくつかレポジトリがありますが現在はwwwしか使用していません。
+<path>www</path>レポジトリが、そのまま<path>http://www.gentoo.gr.jp/</path>になります。
+
+<pre caption="checkoutの例(GentooJP開発者の場合)">
+$ cvs -d user_name@cvs.gentoo.gr.jp:/var/cvsroot co www
+</pre>
+
+CVSの詳しい使い方については他のドキュメントや資料を参照してください。
+
+<note>参照だけの場合には<uri link="http://cvs.gentoo.gr.jp/viewcvs/">ViewCVSを使用したwebインターフェース</uri>もありますので、目的に応じて使用してください。</note>
+
+<warn>
+現在、anonymous CVSは停止中です。GentooJP開発者でない方は、
+上記ViewCVSを使用してください。
+</warn>
+
+</p>
+</body>
+</section>
+
+<section>
+<title>コンテンツの更新手順</title>
+<body>
+<p>
+ドキュメントを更新した場合には、commitをする前に必ず<c>xmllint</c>でXMLの文法チェックを行なってください。
+文法が間違っているとWeb上で"Internal Error"になってしまい、たくさんの人に迷惑をかけることになってしまいます。
+
+<pre caption="XMLの文法チェック">
+$ xmllint --noout developer.xml
+$
+(何も出力されなければ問題ありません。
+エラーがある場合にはエラーメッセージが表示されます。)
+</pre>
+</p>
+
+<p>
+これで準備完了です。commitしてください。
+commit後、最大10分で更新されますので、必ず変更箇所を確認してください。
+</p>
+
+</body>
+</section>
+
+<section>
+<title>ニュースの追加方法</title>
+<body>
+<p>
+ニュースとはwww.gentoo.gr.jpでアクセスしたときに出てくるGentooやGentooJPに関するお知らせのことです。
+GentooJP開発者は誰でも自由にニュースを追加することができます。
+内容についてはGentooに関係することなら何でもOKです。
+一般の人向けである<uri link="/jpmain/news-submit.xml">GentooJPニュース掲載手順</uri>も参照しておいてください。
+</p>
+
+<p>
+ニュースは/jpnewsディレクトリ以下にカテゴリ別に格納されています。
+また、１ニュースが１ファイルになっています。
+ファイル名は、<path>yyyymmdd-name.xml</path>という形にしてください。
+yyyymmddは西暦の年月日です。nameの部分は任意の名前を付けます。
+</p>
+
+<p>
+サンプルとして一つあげます。
+
+<pre caption="ニュースファイルのサンプル">
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt;
+&lt;news gentoo="yes" category="gentoojp"&gt;
+	&lt;poster&gt;中野正智&lt;/poster&gt;
+	&lt;date&gt;15 November 2003&lt;/date&gt;
+	&lt;title&gt;翻訳者募集&lt;/title&gt;
+&lt;body&gt;
+&lt;p&gt;
+GentooJP翻訳プロジェクトでは下記の文章を翻訳してくれる人を捜しています。
+興味のある人は、&lt;uri link="/jpmain/translation.xml"&gt;
+翻訳プロジェクトのドキュメント&lt;/uri&gt;を参照の上、
+&lt;uri link="/jpmain/about-gentoojp.xml#doc_chap4"&gt;
+ドキュメントメーリングリスト&lt;/uri&gt;に参加してください。
+
+&lt;pre caption="募集中の新規翻訳ドキュメント"&gt;
+-- 省略 --
+&lt;/pre&gt;
+
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/news&gt;
+</pre>
+
+<p>
+1,2行目は固定です。必ずこれを入れてください。
+3行目のcategoryはいくつかあるのでニュースにあったものを選択します。
+これによってニュース本文の横の画像が変わります。
+いろいろあるのですが、ほとんどGentooプロジェクトのニュースの翻訳で使用しているものです。
+GentooJP発のニュースとして新規にニュースを作成する場合は以下のどれかを使用します。
+</p>
+
+<table>
+<tr>
+<th>指定する文字</th><th>意味</th><th>画像</th>
+</tr>
+
+<tr>
+<ti>gentoojp</ti>
+<ti>GentooJP関連のニュースです。</ti>
+<ti><img src="/images/icon-gentoojp.png" alt="GentooJP"/></ti>
+</tr>
+
+<tr>
+<ti>gentoo</ti>
+<ti>Gentooの一般的なニュースです。</ti>
+<ti><img src="/images/icon-gentoo.png" alt="gentoo"/></ti>
+</tr>
+
+<tr>
+<ti>moo</ti>
+<ti>これもGentooの一般的なニュースです。気分によって使いわけましょう。</ti>
+<ti><img src="/images/icon-cow.png" alt="Larry the Cow"/></ti>
+</tr>
+</table>
+
+</p>
+
+<p>
+ニュースが書けたら、次はindexファイルを更新します。
+indexファイルは<path>/jpnews/{main|gwn|org}/news-index.xml</path>です。
+このファイルは日付で降順になっていますので、
+作成したファイルを一番上へ記述してください。
+このファイルを追加することで実際にニュースが掲載されることになります。
+
+<pre caption="indexファイル">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;uris&gt;
+&lt;uri&gt;/jpnews/main/20031029-bsdlinuxday.xml&lt;/uri&gt;
+&lt;uri&gt;/jpnews/main/20031017-seminar.xml&lt;/uri&gt;
+&lt;uri&gt;/jpnews/main/20030804-webpage.xml&lt;/uri&gt;
+(省略)
+</pre>
+
+</p>
+
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>
+新規開発者の登録手順
+</title>
+
+<section>
+<title>新規登録について</title>
+<body>
+<p>
+誘った人、または立候補の場合にはそれを受けた人、
+が新規開発者の登録の各種手続きを手伝うようにしてください。
+そして以下の登録をすべて確実に完了できるように、
+GentooJPの各担当者と新規登録者の間に入って調整してください。
+</p>
+</body>
+</section>
+
+<section>
+<title>admin MLへ報告</title>
+<body>
+<p>
+フリーフォーマットで構わないですが以下の情報を報告してください。
+</p>
+
+<ul>
+<li>名前 (本名でなくても構いません)
+<uri link="/jpmain/about-gentoojp.xml">
+GentooJPについて</uri>で公表する名前です。</li>
+<li>通常使用しているメールアドレス。xxxxxx@gentoo.gr.jpの転送先になります。</li>
+<li>xxxxxx@gentoo.gr.jpのメールアドレスで使用するxxxxxxの部分。
+またxxxxxxは各GentooJPマシン上でのアカウントにも使用されます。</li>
+<li>GentooJPで担当する場所</li>
+</ul>
+
+<p>
+この情報を元に各担当者が、
+</p>
+<ul>
+<li>gentoojp-admin MLへ登録</li>
+<li>xxxxxx@gentoo.gr.jpアドレスの作成と転送先を設定</li>
+</ul>
+<p>
+を行ないます。
+</p>
+
+</body>
+</section>
+
+<section>
+<title>開発者用サーバー(現在dev.gentoo.gr.jp)へのCVS/shellアカウントの作成</title>
+<body>
+<p>
+新規登録者がサーバー管理担当者に公開鍵をメールで送信するようにしてください。
+</p>
+
+<p>
+これが完了したら、CVSの設定の確認を兼ねて以下の登録を各自(新規登録者)でお願いします。CVSの使い方とドキュメント修正方法についてはこのドキュメントにありますので、参照してください。
+</p>
+<ul>
+<li><uri link="/jpmain/about-gentoojp.xml">GentooJPについて</uri>へ開発者の情報を追加</li>
+</ul>
+
+</body>
+</section>
+
+</chapter>
+
+<chapter>
+<title>
+その他
+</title>
+
+<section>
+<title>内部メーリングリスト(-admin)について</title>
+<body>
+<p>
+GentooJP開発者には非公開の-adminメーリングリストに入ってもらっています。
+もし漏れている方がいましたら連絡してください。
+このメーリングリストは外部には流せないような内容、たとえばサーバーのセキュリティについてなどを話すときのみに使用します。<br/>
+その他のことは、それにふさわしいメーリングリストに投稿してください。ふさわしいメーリングリストが見つからない場合には-miscメーリングリストがいいでしょう。
+</p>
+</body>
+</section>
+
+<section>
+<title>個人用Webスペースについて</title>
+<body>
+<p>
+http://dev.gentoo.gr.jp/~account/ に個人用のWebスペースを持つことができます。
+各ホームディレクトリ以下にpublic_htmlディレクトリを作成してその下にコンテンツを置いてください。
+</p>
+
+<p>
+このスペースでは、自己紹介や、各種ドキュメント、ちょっとしたファイルの配布など自由に使ってもらって構わないです。
+現在のところ内容や容量の制限などのルールを設けていませんが、
+常識の範囲内でよろしくお願いします。
+</p>
+
+<p>
+必要なソフトウェア(mod_*など)がありましたら、
+-adminまたは-miscメーリンリグリストまでお願いします。
+</p>
+
+</body>
+</section>
+
+</chapter>
+
+</guide>

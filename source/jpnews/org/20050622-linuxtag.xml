@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+
+<!-- Enter your name here -->
+<poster>Tobias Scherbaum(翻訳者:池田 健吾)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005-06-22</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>GentooはLinuxTag 2005に参加しています</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+今年のLinuxTag(ヨーロッパ最大のLinuxフェア)のモットーは"Linux everywhere"です。
+今週6月22日～25日に、今回もKarlsruheで開催されています。
+Gentooブース(E121)は、ドイツのNFPである"Friends of Gentoo e.V"が出展しています。
+ここでは多くのドイツのGentoo開発者と会い、最近の活動やこれからの変革について話し合う機会がたくさんあるでしょう。
+またブースでは、Gentooの商品や無料サービス品を手に入れることもできます。
+皆さんと<uri link="http://www.linuxtag.de">LinuxTag 2005</uri>で会えることを楽しみにしています！
+</p>
+
+</body>
+</news>
+

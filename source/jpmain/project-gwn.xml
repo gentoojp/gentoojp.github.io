@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/project-gwn.xml">
+<title>GWN翻訳プロジェクト</title>
+
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
+<author title="Editor"><mail link="trombik@gentoo.gr.jp">桜井知之</mail></author>
+
+<abstract>
+このガイドでは、GentooJPのGWN翻訳プロジェクトについて説明します。
+</abstract>
+
+<version>1.4</version>
+<date>3 October 2004</date>
+
+<chapter>
+<title>GWN翻訳プロジェクトについて</title>
+<section>
+<title>概要</title>
+<body>
+<p>GWN翻訳プロジェクトは、<uri link="http://www.gentoo.org">Gentoo Linux Project</uri>が毎週発行しているGentoo Weekly Newsletter（略称：GWN）を日本語に翻訳するプロジェクトです。GWNには最新の開発状況、セキュリティ情報、開発者紹介、新しく加わったパッケージの情報などの多彩な情報があり、Gentooユーザの情報源という意味で大きな位置を占めています。
+</p>
+<p>
+GentooJPでは世界のGentooコミュニティに先駆け、早くからGWNの翻訳に取り組んでいます。
+</p>
+</body>
+</section>
+<section>
+<title>GWNに参加するには</title>
+<body>
+<p>
+興味のあるセクションがあり、GWN翻訳に参加したいと思ったら<mail link="trombik@gentoo.gr.jp">GWN翻訳プロジェクトのメンバ</mail>に担当したいセクションを書いて参加表明をしてください。
+</p>
+<p>
+参加表明のあと、そのセクションの担当者とGWN翻訳プロジェクトの推進メンバが担当範囲について調整します。場合によっては希望に添えないこともありますが、ひとつのセクションに複数の担当者を配置することを目標としていますので、遠慮なく申し出てください。
+</p>
+</body>
+</section>
+
+</chapter>
+
+<chapter>
+<title>GWN翻訳のルール</title>
+<section>
+<title>期限</title>
+<body>
+<p>
+GWNは特別な事情がない限り<c>毎週月曜日</c>に発行されます。このため、その週の担当セクション（後述）の翻訳は、<c>毎週金曜日までに終える</c>ことを目標としています。
+</p>
+</body>
+</section>
+<section>
+<title>情報交換とヘルプ</title>
+<body>
+<p>
+GWNには、聖書に書かれている言葉、スラング、フランス語やドイツ語など比較的難しい内容が含まれていることもあります（でも、そこがこのGWN翻訳のおもしろいところでもあるのですが...）。ですから、もしも内容にわからないことがあったらまずはGWN翻訳プロジェクトメンバに聞いてみてください。このプロジェクトの情報交換は、すべて<mail link="gentoojp-gwn@ml.gentoo.gr.jp">gentoojp-gwnメーリングリスト</mail>で行います。
+</p>
+<note>gentoojp-gwnメーリングリストは事務連絡などにも使われているため、基本的に内容は非公開としており、GWN翻訳プロジェクトのメンバは必ずgentoojp-gwnメーリングリスト、および発行前のGWNの記事が流れるgentoo-gwn-adminメーリングリストに加入することになっています。</note>
+<p>
+期限の厳しいプロジェクトですから、個人の事情によってはその週のGWN翻訳が難しい場合もあると思います。その時には、遠慮なくGWN翻訳プロジェクトの推進メンバにヘルプを申し出てください。調整します。なおGWN翻訳プロジェクトでは、ひとつのセクションに複数のGWN翻訳者が配置できることを目標にしています。現状ではまだまだGWN翻訳者が不足している状況です。
+</p>
+<note>継続は力なり :-)</note>
+</body>
+</section>
+<section>
+<title>フォーマット</title>
+<body>
+<p>
+フォーマットは<c>UTF-8エンコード、LF改行</c>でお願いしています。これ以外のフォーマットで翻訳してしまった場合は、UTF-8/LF改行への変更を行ってから投稿ください。
+</p>
+</body>
+</section>
+<section>
+<title>他ドキュメントへのリンク</title>
+<body>
+<p>
+ドキュメント内で他ドキュメントへのリンクがあり、そのドキュメントに日本語翻訳がある場合には以下のようにしてください。
+<pre caption="他ドキュメントへのリンク">
+&lt;uri link="/doc/en/portage-manual.xml"&gt;Portage Manual&lt;/uri&gt;
+&lt;uri link="/doc/ja/portage-manual.xml"&gt;（日本語訳）&lt;/uri&gt;
+</pre>
+</p>
+<p>リンクしている単語（あるいは文）については、固有名詞だと思われる場合は翻訳する必要はありません。固有名詞でない場合や訳したほうが自然だと考えられる場合については翻訳を行ってください。</p>
+</body>
+</section>
+<section>
+<title>文体</title>
+<body>
+<p>
+ですます調で記述します。また句読点は"、"と"。"を使用します。","と"."は使用しません。
+</p>
+</body>
+</section>
+<section>
+<title>改行の場所</title>
+<body>
+<p>
+&lt;p&gt;&lt;/p&gt;で囲まれた翻訳文の途中では改行を入れないようにします。できるだけ余計な空白もなくすようにしてください。</p>
+
+<table>
+<tr>
+	<th>例</th>
+</tr>
+<tr>
+	<ti>&lt;p&gt;
+Gentooコミュニティでは、バグやお知らせ、提案やその他開発チームとのやり取りの記録、追跡にBugzilla（&lt;uri link="http://bugs.gentoo.org"&gt;bugs.gentoo.org&lt;/uri&gt;）を使っています。2004年7月17日から2004年7月23日までのデータは、以下のような結果になっています：
+&lt;/p&gt;
+</ti>
+</tr>
+</table>
+<table>
+<tr>
+	<th>例外</th>
+</tr>
+<tr>
+	<ti>&lt;p&gt;&lt;b&gt;翻訳文&lt;/b&gt;&lt;/p&gt;</ti>
+</tr>
+</table>
+
+
+</body>
+</section>
+<section>
+<title>補足を入れたいとき</title>
+<body>
+<p>
+翻訳をしていて背景を書かないと分かりにくく、補足を入れたいと思うことがありましたら、補足事項を記載していただいてかまいません。ただし、その場合は<c>（訳注：～～）</c>というふうに記載してください。
+</p>
+</body>
+</section>
+<section>
+<title>表記について</title>
+<body>
+<p>
+GWN翻訳プロジェクトでは、ユーザやユーザー、コンピュータやコンピューターなど伸ばす、伸ばさない表記どちらもある場合については伸ばさない表記に統一することにしています（詳しくは<uri link="project-gwn-trans.xml">こちら</uri>をご覧ください）。また、下記文字については表記を統一することにします。
+</p>
+<table>
+<tr>
+	<th>文字</th>
+	<th>翻訳時の表記</th>
+</tr>
+<tr>
+	<ti>数字 0～9</ti>
+	<ti>そのまま半角で表記</ti>
+</tr>
+<tr>
+	<ti>[]?!():{}</ti>
+	<ti>全角［］？！（）：｛｝で表記</ti>
+</tr>
+<tr>
+	<ti>" '</ti>
+	<ti>ダブル・シングルコーテーションで囲まれた文字が英数字の場合はそのまま半角 " ' で表記。日本語に訳す場合は「かぎかっこ」で表記</ti>
+</tr>
+<tr>
+	<ti>/</ti>
+	<ti>/を挟む文字が英数字の場合はそのまま半角 / で表記。日本語の場合は全角／で表記</ti>
+</tr>
+<tr>
+	<ti>+ - = # $ ^ * </ti>
+	<ti>そのまま半角 + - = # $ ^ * で表記</ti>
+</tr>
+</table>
+</body>
+</section>
+
+</chapter>
+
+
+<chapter>
+<title>GWN翻訳の流れ</title>
+<section>
+<title>担当のセクションを翻訳する</title>
+<body>
+<p>
+毎週月曜日にGWNが発行されたら、GWN翻訳プロジェクト推進メンバからXMLファイルがメールされてきます。その週の<c>金曜日24時［JST］までに翻訳が完了</c>するのを目標とします。翻訳が完了したら、翻訳したセクションのXMLファイル（以下のような書式）を<mail link="gentoojp-gwn@ml.gentoo.gr.jp">GWN翻訳プロジェクトのメーリングリスト</mail>に投稿してください。もし金曜日までに翻訳が完了しそうにない、翻訳する時間に取れない場合は、<mail link="gentoojp-gwn@ml.gentoo.gr.jp">GWN翻訳プロジェクトのメーリングリスト</mail>に<c>木曜日24時［JST］までにヘルプ</c>を申し出てください。
+</p>
+<pre>
+&lt;chapter&gt;
+        &lt;title&gt;担当セクション&lt;/title&gt;
+    &lt;body&gt;
+        &lt;p class="secthead"&gt;その週のセクションお題&lt;/p&gt;
+        &lt;p&gt;内容&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/chapter&gt;
+</pre>
+</body>
+</section>
+<section>
+<title>査読をする</title>
+<body>
+<p>
+金曜日までに他の担当者の方が翻訳したGWNがメーリングリストに投稿されてきます。GWN翻訳の品質を高めるためにも査読をお互いに行います。
+</p>
+</body>
+</section>
+<section>
+<title>-docsでさらに査読をする</title>
+<body>
+<p>
+ある程度プロジェクト内で査読され翻訳が揃った時点で、さらに品質を高めるため、gentoojp-docsメーリングリストに査読依頼をします。基本的にこの-docs査読は土日で行い、<c>日曜日の22時［JST］までにフィードバック</c>を受けます。その後フィードバックを翻訳に反映し、Gentoo Linux Projectにcommitします。また、同時にGWN翻訳プロジェクト推進メンバは、gentoojp-userメーリングリストにGWN翻訳のテキスト版を投稿します。
+</p>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>その他</title>
+<section>
+<title>担当者一欄</title>
+<body>
+<p>
+現在のセクション別担当者は次のとおりです。
+</p>
+<table>
+<tr>
+	<th>セクション</th>
+	<th>担当</th>
+</tr>
+<tr>
+	<ti>Gentooニュース</ti>
+	<ti>武田洋之</ti>
+</tr>
+<tr>
+	<ti>Future zone</ti>
+	<ti>小林弘樹</ti>
+</tr>
+<tr>
+	<ti>Gentooセキュリティ</ti>
+	<ti>畠山雅人</ti>
+</tr>
+<tr>
+	<ti>開発者紹介</ti>
+	<ti>中村昌義</ti>
+</tr>
+<tr>
+	<ti>コミュニティの話題</ti>
+	<ti>桜井知之</ti>
+</tr>
+<tr>
+	<ti>世界のGentoo</ti>
+	<ti>中村昌義</ti>
+</tr>
+<tr>
+	<ti>Gentoo関連情報</ti>
+	<ti>飴谷茂寛</ti>
+</tr>
+<tr>
+	<ti>Bugzilla</ti>
+	<ti>桜井知之</ti>
+</tr>
+<tr>
+	<ti>Tips and Tricks</ti>
+	<ti>畠山雅人</ti>
+</tr>
+<tr>
+	<ti>Gentooチームの動き</ti>
+	<ti>桜井知之</ti>
+</tr>
+<tr>
+	<ti>GWNに参加するには</ti>
+	<ti>－</ti>
+</tr>
+<tr>
+	<ti>フィードバックをお待ちしています</ti>
+	<ti>－</ti>
+</tr>
+<tr>
+	<ti>GWNを購読するには</ti>
+	<ti>－</ti>
+</tr>
+<tr>
+	<ti>他の言語でのGWN</ti>
+	<ti>－</ti>
+</tr>
+<tr>
+	<ti>（その他）GWN日本語訳の一覧</ti>
+	<ti>桜井知之</ti>
+</tr>
+<tr>
+	<ti>（その他）GentooJPトップページのGWN ニュース</ti>
+	<ti>桜井知之、他</ti>
+</tr>
+</table>
+<note>
+担当者が「－」の章については毎週翻訳する必要がないため、担当者をつけません。
+</note>
+</body>
+</section>
+</chapter>
+
+</guide>
+

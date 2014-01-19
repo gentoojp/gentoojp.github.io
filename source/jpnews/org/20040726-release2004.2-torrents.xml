@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>jforman (翻訳:samantha)</poster>
+	<date>26 July 2004</date>
+	<title>Gentoo 2004.2</title>
+<body>
+<p>
+<b>Gentoo Linux 2004.2のAthlon-XP, Pentium3, Pentium4用PackageCD、そして全インストールステージ(x86, i686, Pentium3, Pentium4, Athlon-XP用)が入ったUniversal LiveCDのトレント</b>が今、私達の<uri
+ link="http://torrents.gentoo.org/torrents">BitTorrentサーバ</uri>から利用できます。
+楽しもう！
+</p>
+</body>
+</news>

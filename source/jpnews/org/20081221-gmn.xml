@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>GMN (翻訳: Ryo Kuya, 飴谷)</poster>
+
+<!-- Date to be displayed - usually the GMN release date -->
+<date>2008年12月21日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Monthly Newsletter -- 2008年12月21日</title>
+<body>
+
+<!-- Alter to your own likings -->
+
+<p>
+<uri link="http://www.gentoo.org/news/ja/gmn/20081130-newsletter.xml">GMN2008年11月号の翻訳版</uri>をおおくりします。
+今号の翻訳はGMN-JPチーム（Ryo Kuyaさん、飴谷さん）が担当いたしました。
+先月号が発行されなかっため、今月号はボリュームが多め。
+Kernelチームの情報、Gentoo　Wikiの復旧状況などが掲載されています。
+</p>
+
+</body>
+</news>

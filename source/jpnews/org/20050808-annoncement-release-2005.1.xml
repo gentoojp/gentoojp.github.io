@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="gentoo">
+<poster>Alex Howells(翻訳:飴谷 茂寛)</poster>
+<date>2005-08-08</date>
+<title>Releaseのお知らせ: Gentoo Linux 2005.1</title>
+
+<body>
+<p>
+  Gentoo Foundationは、とても楽しみに待たれていた<b>Gentoo Linux 2005.1</b>
+  (コードネーム:'El Nino')のリリースのお知らせができたことを嬉しく、また誇りに思っています。
+  Open Source Laboratory (OSUOSL)での予定された停電が、
+  私たちのマスターミラーサーバに影響を与えているため、
+  現在、<uri link="http://tracker.netdomination.org/">BitTorrent</uri>での
+  配布のみを行っています。
+  私たちは停止時間からの復帰と、総合的なプレスリリースと更新履歴につきものである
+  リリースしたイメージ、全ての48時間以内のミラー公開を心待ちにしています。
+	最後に、突然の依頼にもかかわらず、安定かつ信頼できるtrackerを提供してくださった
+	<uri link="http://www.gentoo-ev.org/">Friends of Gentoo e.V.</uri>に大変感謝しています。
+</p>
+</body>
+
+</news>

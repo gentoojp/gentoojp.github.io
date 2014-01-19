@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+
+<poster>Daniel Drake(翻訳:飴谷　茂寛)</poster>
+
+<date>2006-06-18</date>
+
+<title>Gentoo UK 2006 カンファレンス</title>
+<body>
+
+<p>
+<b>2004年、2005年のイベントの成功を受けて、
+7月8日、首都、ロンドンで、Gentoo UK　ユーザと開発者とのカンファレンスが開催されます。</b>
+Gentooに興味がある方は誰でも、自由にご参加ください。
+さらに詳しい情報は、 <uri link="http://dev.gentoo.org/~dsd/gentoo-uk-2006/">イベント告知サイト</uri>を
+ご覧ください。
+</p>
+
+</body>
+</news>

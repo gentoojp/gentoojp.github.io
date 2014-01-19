@@ -1,0 +1,1196 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/failover.xml">
+<title>Gentoo Linux フェイルオーバーガイド</title>
+<author title="Author">
+	<mail link="syuu@dokukino.com">Takuya Asada</mail>
+</author>
+
+<license/>
+
+<abstract>
+このガイドではHeartbeatとDRBDを用いてフェイルオーバシステムを構築する方法を解説します。
+</abstract>
+<version>0.5</version>
+<date>January 26, 2005</date>
+<chapter>
+<title>はじめに</title>
+<section>
+<title>フェイルオーバとは？</title>
+<body>
+
+<p>
+フェイルオーバとは、サーバに障害が発生した時に待機系サーバが処理を引き継ぐことにより、サービスのダウンタイムを軽減し、高可用性を実現する機能の事です。<br />
+このドキュメントでは、Gentoo Linuxが予めインストールされた運用系・待機系の2台のサーバの上に、HeartbeatとDRBDというソフトウェアを用いてフェイルオーバシステムを構築します。
+</p>
+
+</body>
+</section>
+<section>
+<title>Heartbeatとは？</title>
+<body>
+
+<p>
+Heartbeatは、サーバの障害を検知し、IPアドレスやサービスの引継ぎを実現するソフトウェアです。<br />
+詳細は、<uri link="http://ultramonkey.jp/2.0.1/heartbeat.html">Ultra Monkey: Heartbeat</uri>が参考になります。
+</p>
+
+</body>
+</section>
+<section>
+<title>DRBDとは？</title>
+<body>
+
+<p>
+DRBDは、ブロックデバイスをネットワークを介してミラーリングするソフトウェアです。<br />
+DRBDを利用することにより、障害発生時にデータを引き継ぐ事が可能になります。<br />
+詳細は、<uri link="http://www.wbc.co.jp/~drbd/documentation/HOWTO/">DRBD HOWTO</uri>が参考になります。
+</p>
+
+</body>
+</section>
+
+</chapter>
+<chapter>
+<title>インストール</title>
+<section>
+<title>前提</title>
+<body>
+
+<ul>
+<li>運用系のサーバのホスト名はsrv01、IPアドレスは192.168.1.101とします。</li>
+<li>待機系のサーバのホスト名はsrv02、IPアドレスは192.168.1.102とします。</li>
+<li>フェイルオーバの対象とするIPアドレスは192.168.4.11とします。 srv01がダウンした場合、このIPアドレスは自動的にsrv02に引き継がれ、外部からはサーバが稼動し続けているように見えます。</li>
+<li>DRBDはLVMのボリューム上に構築します。 LVMについての詳細は<uri link="http://www.gentoo.org/doc/ja/lvm2.xml">Gentoo LVM2インストール</uri>が参考になります。</li>
+<li>UNIXユーザアカウントの情報をフェイルオーバに対応させる為に、LDAPによるユーザ認証を用います。</li>
+<li>HTTPサーバはApache2、FTPサーバはProFTPD、LDAPサーバはOpenLDAP、DBサーバはMySQL/PostgreSQL、DNSサーバはBIND、メールサーバはCourierで構築します。</li>
+</ul>
+
+</body>
+</section>
+<section>
+<title>インストール</title>
+<body>
+	
+<p>前提となるUSEフラグは以下の通りです。</p>
+<pre caption="USEフラグ">
+apache2 bzlib cjk crypt innodb ldap ldirectord maildir memlimit nls \
+pam readline xml xml2 zlib
+</pre>
+
+<p>
+パッケージをインストールします。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+
+<pre caption="インストール">
+# <i>cd /usr/src</i>
+# <i>ln -s linux-`uname -r` linux</i>
+# <i>emerge drbd heartbeat =apache-2* openldap nss_ldap pam_ldap \
+	mysql postgresql bind courier</i>
+<codenote>ドキュメント作成の時点ではGentoo LinuxのPortageツリーにあるProFTPDはLDAPの動作に問題が有った※ ため、<br />
+ここではパッチ済のebuildを使用します</codenote>
+# <i>cd /usr/local</i>
+# <i>wget http://ekinoco.dokukino.com/ekinoco.tbz2</i>
+# <i>tar xjf ekinoco.tbz2</i>
+# <i>PORTDIR_OVERLAY="/usr/local/ekinoco" USE="ldap" \
+emerge ekinoco/net-ftp/proftpd-nlst-ldapv3/proftpd-nlst-ldapv3-1.2.10.ebuild</i>
+</pre>
+
+<note>DRBDのコンパイルには、現在使用しているカーネルのソースディレクトリから/usr/src/linuxへシンボリックリンクを張っておく必要があります。</note>
+<note>DRBD 0.6はkernel 2.6に対応していないため、2.4である必要があります。</note>
+<note>DRBDはカーネルモジュールとしてコンパイルされるので、カーネルモジュールを有効にしている必要があります。</note>
+<note>※ proftpd-1.2.10に付属のmod_ldapは、LDAPv3に未対応のようだったので、対応しているバージョンのmod_ldapを使うように変更してあります。<br />
+また、一部のFTPクライアントソフトがファイル一覧の取得に使うNLST命令に対応する為のパッチを当てています。</note>
+</body>
+</section>
+<section>
+<title>Heartbeatのresourceスクリプト</title>
+<body>
+	
+<p>
+Heartbeatでは、各サーバアプリケーションの起動・終了処理を/etc/ha.d/resource.dに配置されているシェルスクリプトを通して行います。<br />
+このドキュメントでは、設定の柔軟性を高める為に独自のresourceスクリプトを用いています。<br />
+このスクリプトは以下の手順でインストール可能です。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+
+<pre caption="resourceスクリプト">
+srv01/02# <i>cd /etc/ha.d/resource.d</i>
+srv01/02# <i>wget http://documents.dokukino.com/jpdoc/resource_scripts.tar.bz2</i>
+srv01/02# <i>tar xvjpf resource_scripts.tar.bz2</i>
+</pre>
+
+<note>詳細な使用方法は、<uri link="#doc_chap3_sect13">設定の章</uri>で説明します。</note>
+
+</body>
+</section>
+</chapter>
+<chapter>
+<title>設定</title>
+<section>
+<title>前提</title>
+<body>
+
+<p>サーバアプリケーションをフェイルオーバする為に必要な全てのデータ・コンフィグレーションは、/mnt/<c>[DRBDリソース名]</c>/<c>[アプリケーション名]</c>に保存する事とします。
+</p>
+
+<note>
+drbdデバイス内のファイル・ディレクトリのオーナに注意しなければいけません。<br />
+同じユーザ名・グループ名でも、サーバ間でuid・gidが違う場合、正常に認識されないのでサーバアプリケーションが実行できない恐れがあります。
+Gentoo Linuxでは、サーバアプリが利用するユーザ名・グループ名のuid・gidは固定されているのでこれを使用しますが、異なるディストリビューションやパッケージ管理システムを用いずにサーバアプリをインストールし、ユーザを追加した場合、サーバ間のuid・gidを合わせておくか、ldap上にユーザを作成する必要があります。
+</note>
+
+</body>
+</section>
+<section>
+<title>下準備</title>
+<body>
+
+<p>
+DRBD用のLVMボリュームを作成します。<br />
+予めLVMがセットアップされている必要があります。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+
+<pre caption="DRBD用ボリュームの作成">
+# <i>lvcreate -n drbd0 -L 2G vg0</i>
+</pre>
+<note>
+LVMはDRBDに必須という訳では有りません。<br />
+一般的な/dev/hda4などのパーティーションを利用する事も可能です。<br />
+また、LVMのボリュームも空きのパーティーション領域も無ければ、<uri link="#doc_chap4_sect1">ループバックデバイスを使う</uri>という方法もあります。
+</note>
+</body>
+</section>
+<section>
+<title>DRBD</title>
+<body>
+
+<p>
+初めに、drbd.confを作成します。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+
+<pre caption="/etc/drbd.conf">
+resource drbd0 {
+    protocol=C
+    fsckcmd=fsck.reiserfs -y
+
+    disk {
+        do-panic
+        disk-size = 2097152
+    }
+<codenote>下記の設定は、ダウンしていたサーバとの再同期に対しての帯域制限の設定です。<br />
+600Mが最高値ですので、以下の設定が最もリカバリの所要時間が少なくなります。<br />
+負荷等の問題で速度に制限を加えたい場合は、設定値を小さくしてください。	
+</codenote>
+    net {
+        sync-min=600M
+        sync-max=600M
+    }
+
+    on srv01 {
+        device=/dev/nbd/0
+        disk=/dev/vg0/drbd0
+        address=192.168.1.101
+        port=7788
+    }
+
+    on srv02 {
+        device=/dev/nbd/0
+        disk=/dev/vg0/drbd0
+        address=192.168.1.102
+        port=7788
+    }
+}
+</pre>
+
+<p>
+次に、srv01でdrbdを有効化します。
+</p>
+
+<pre caption="[srv01] /drbd drbd0 start">
+srv01# <i>/drbd drbd0 start</i>
+Setting up 'drbd0' .. disk ok .. net .. OK
+Do you want to abort waiting for other server and make this one primary?
+<i>[リターン]</i>
+still waiting:
+        drbdsetup /dev/nbd/0 wait_connect -t 0
+Answer either "yes" or not at all: <i>yes</i>
+</pre>
+
+<p>一定時間を経過しても、ミラー先サーバと接続が出来ない場合、上記のようなメッセージが出ます。<br />
+ここでは、未だsrv02を立ち上げていないのでyesと入力してください。<br />
+続けて、srv02でdrbdを有効化してください。
+</p>
+
+<note>そのまま待機させておいても、ミラー先と接続が確立すれば正常起動します。</note>
+
+<pre caption="[srv02] /drbd drbd0 start">
+srv02# <i>/drbd drbd0 start</i>
+Setting up 'drbd0' .. disk ok .. net .. OK
+drbd:  drbd0  done.
+drbd: 'drbd0' SyncingAll, waiting for this to finish
+Sun Jan  9 00:42:03 Local time zone must be set--see zic manual page 2005
+0: cs:SyncingAll st:Secondary/Primary ns:0 nr:206476 dw:206480 dr:0 pe:0 ua:1041
+        [=>..................] sync'ed: 10.0% (1846/2048)M
+        finish: 0:11:30h speed: 2,944 (20,647) K/sec
+Waiting for Sync to finish ...
+drbd: 'drbd0' SyncingAll finished, issue drbdsetup /dev/nbd/0 secondary_remote
+</pre>
+
+<p>
+コンフィグレーションが正しければ、drbdデバイスの同期が始まるはずです。<br />
+同期の様子は、以下のようなコマンドで見ることが出来ます。
+</p>
+
+<pre caption="watch cat /proc/drbd">
+# <i>watch cat /proc/drbd</i>
+version: 0.6.12 (api:64/proto:62)
+
+0: cs:SyncingAll st:Primary/Secondary ns:282536 nr:0 dw:0 dr:282540 pe:954 ua:0
+        [==>.................] sync'ed: 13.6% (1772/2048)M
+        finish: 0:02:23h speed: 21,738 (21,738) K/sec
+</pre>
+
+<p>
+表示を止めるにはCTRL+Cを入力してください。<br />
+同期が完了するまで暫く掛かりますが、終わるまで待たなくても作業は続行できます。<br />
+次に、srv01をdrbd0のPrimaryサーバにしてください。
+</p>
+
+<pre caption="[srv01] drbdsetup /dev/nbd/0 primary">
+srv01# <i>cat /proc/drbd</i>
+version: 0.6.12 (api:64/proto:62)
+
+0: cs:Connected st:Secondary/Secondary ns:2097152 nr:0 dw:0 dr:2097152 pe:0 ua:0
+srv01# <i>drbdsetup /dev/nbd/0 primary</i>
+srv01# <i>cat /proc/drbd</i>
+version: 0.6.12 (api:64/proto:62)
+
+0: cs:Connected st:Primary/Secondary ns:2097152 nr:0 dw:0 dr:2097152 pe:0 ua:0
+</pre>
+
+<p>
+/proc/drbdをみると、st:の表示がSecondary/SecondaryからPrimary/Secondaryに変わっているはずです。<br />
+これでdrbdデバイスに書き込みを行う事が出来るようになりました。
+</p>
+
+<note>
+DRBDでは、書き込みに対する排他制御が行われており、同時に両方のサーバからDRBDデバイスに対する書き込みを行う事は出来ません。<br />
+書き込みが可能なのはPrimaryのサーバのみです。
+</note>
+
+<p>
+書き込めるようになったので、早速フォーマットを行う事にします。<br />
+今回は、ファイルシステムにReiserFSを用いることにしました。
+</p>
+
+<pre caption="[srv01] mkreiserfs /dev/nbd/0">
+srv01# <i>mkreiserfs /dev/nbd/0</i>
+</pre>
+
+<p>
+マウントポイントを作成し、fstabに加えます。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+
+<pre caption="mkdir /mnt/drbd0">
+# <i>mkdir /mnt/drbd0</i>
+</pre>
+
+<pre caption="/etc/fstab">
+<codenote>変更すべき部分のみ抜粋</codenote>
+/dev/nbd/0              /mnt/drbd0      reiserfs        noauto,noatime,notail  0 0
+</pre>
+
+<p>
+srv01でDRBDデバイスをマウントします。
+ホームディレクトリを作成します。
+フェイルオーバに対応させるユーザのホームディレクトリは、このディレクトリ内に作成してください。
+</p>
+
+<pre caption="[srv01] mount /mnt/drbd0">
+# <i>mount /mnt/drbd0</i>
+# <i>mkdir /mnt/drbd0/home</i>
+# <i>mkdir /mnt/drbd0/init</i>
+</pre>
+
+<p>起動時に、drbdを起動させる必要があります。<br />
+これを怠ると、Heartbeatがdrbdデバイスをマウントできず、フェイルオーバが機能しなくなります。<br />
+この作業は両方のサーバで行う必要があります。</p>
+<pre caption="/etc/conf.d/drbd">
+DRBD=/drbd
+DRBDDEV=drbd0
+</pre>
+<pre caption="rc-update">
+# <i>rc-update add drbd default</i>
+</pre>
+<note>複数のDRBDデバイスに対応させる場合、initスクリプトを修正する必要があります。<br />
+<uri link="drbd">こちら</uri>からダウンロード出来ます。<br />
+また、複数のデバイスをサポートする場合のconf.dは以下のようになります。<br />
+<i>DRBD=/drbd<br />
+DRBDDEV="drbd0 drbd1"</i>
+</note>
+
+</body>
+</section>
+<section>
+<title>Apache</title>
+<body>
+
+<p>
+Apacheの設定・データを/mnt/drbd0/apache2に用意します。<br />
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+
+<pre caption="[srv01] /mnt/drbd0/apache2に設定・データを用意する">
+srv01# <i>mkdir /mnt/drbd0/apache2</i>
+srv01# <i>cd /mnt/drbd0/apache2</i>
+srv01# <i>mkdir logs run</i>
+srv01# <i>ln -s /usr/lib/apache2/build ./</i>
+srv01# <i>ln -s /usr/lib/apache2-extramodules ./extramodules</i>
+srv01# <i>ln -s /usr/lib ./</i>
+srv01# <i>ln -s /usr/lib/apache2/modules ./</i>
+srv01# <i>cd -a /etc/apache2/conf ./</i>
+srv01# <i>cp -a /var/www ./</i>
+</pre>
+<p>
+apache2.conf、commonapache2.confを参考にして、パスを書き換えた設定ファイルを作成します。
+</p>
+<pre caption="[srv01] /mnt/drbd0/apache2/conf/apache2.conf">
+<codenote>変更すべき部分のみ抜粋</codenote>
+ServerRoot /mnt/drbd0/apache2
+PidFile run/apache2.pid
+DocumentRoot /mnt/drbd0/apache2/www/localhost/htdocs
+</pre>
+<pre caption="[srv01] /mnt/drbd0/apache2/conf/commonapache2.conf">
+<codenote>変更すべき部分のみ抜粋</codenote>
+&lt;IfModule mod_alias.c&gt;
+    Alias /icons/ /mnt/drbd0/apache2/www/localhost/icons/
+    Alias /doc /usr/share/doc
+    ScriptAlias /cgi-bin/ /mnt/drbd0/apache2/www/localhost/cgi-bin/
+    ScriptAlias /protected-cgi-bin/ /mnt/drbd0/apache2/www/localhost/protected-cgi-bin/
+    ScriptAliasMatch ^/~([^/]*)/cgi-bin/(.*) /mnt/drbd0/home/$1/public_html/cgi-bin/$2
+    &lt;IfModule mod_perl.c&gt;
+	Alias /perl/ /mnt/drbd0/apache2/www/localhost/perl/
+	Alias /cgi-perl/ /mnt/drbd0/apache2/www/localhost/perl/
+    &lt;/IfModule&gt;
+&lt;/IfModule&gt;
+
+&lt;IfModule mod_deflate.c&gt;
+	&lt;Directory "/mnt/drbd0/apache2/www/localhost/htdocs/manual"&gt;
+
+&lt;Directory /mnt/drbd0/apache2/www/localhost/htdocs&gt;
+	
+&lt;Directory /mnt/drbd0/apache2/www/localhost/perl&gt;
+
+&lt;Directory /mnt/drbd0/apache2/www/localhost/cgi-bin&gt;
+
+&lt;Directory /mnt/drbd0/apache2/www/localhost/protected-cgi-bin&gt;
+
+&lt;Directory /mnt/drbd0/home/*/public_html&gt;
+
+&lt;Directory /mnt/drbd0/home/*/public_html/cgi-bin&gt;
+
+&lt;IfModule mod_perl.c&gt;
+    &lt;Directory /mnt/drbd0/home/*/public_html/perl&gt;
+	
+&lt;Directory /mnt/drbd0/apache2/www/localhost/icons&gt;
+
+&lt;IfModule mod_alias.c&gt;
+AliasMatch ^/manual(?:/(?:de|en|fr|ja|ko|ru))?(/.*)?$ \
+"/mnt/drbd0/apache2/www/localhost/htdocs/manual/$1"
+
+&lt;Directory "/mnt/drbd0/apache2/www/localhost/htdocs/manual"&gt;
+</pre>
+<p>
+webapp-configを使う場合、VHOST_ROOTを以下のように書き換えます。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+<pre caption="/etc/vhosts/webapp-config">
+<codenote>変更すべき部分のみ抜粋</codenote>
+VHOST_ROOT="/mnt/drbd0/apache2/www/${G_HOSTNAME}"
+</pre>
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<pre caption="[srv01] /mnt/drbd0/init/apache2">
+OPTS="-D PHP4"
+SERVERROOT=/mnt/drbd0/apache2
+CONFIGFILE=conf/apache2.conf
+PIDFILE=/mnt/drbd0/apache2/run/apache2.pid
+</pre>
+
+</body>
+</section>
+<section>
+<title>ProFTPD</title>
+<body>
+
+<p>
+ProFTPDの設定・データを/mnt/drbd0/proftpdに用意します。
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<pre caption="[srv01] /mnt/drbd0/proftpdに設定・データを用意する">
+srv01# <i>mkdir /mnt/drbd0/proftpd</i>
+srv01# <i>cd /mnt/drbd0/proftpd</i>
+srv01# <i>mkdir conf log run</i>
+</pre>
+<p>
+proftpd.conf.distrib等を参考にして、proftpd.confを作成します。
+</p>
+<pre caption="[srv01] /mnt/drbd0/proftpd/conf/proftpd.conf">
+ServerName                              "ProFTPD Default Installation"
+ServerType                              standalone
+DefaultServer                   on
+Port                                    21
+Umask                                   022
+MaxInstances                    30
+User                                    proftpd
+Group                                   proftpd
+DefaultRoot                             ~
+AuthPAM                                 off
+LDAPServer                              192.168.4.11
+LDAPDoAuth                              on "ou=People,dc=cluster1,dc=dokukino,dc=com"
+LDAPProtocolVersion             3
+LDAPDoUIDLookups                on "ou=People,dc=cluster1,dc=dokukino,dc=com"
+LDAPDoGIDLookups                on "ou=Group,dc=cluster1,dc=dokukino,dc=com"
+AllowOverwrite                  on
+MultilineRFC2228                on
+ShowSymlinks                    on
+AllowForeignAddress             on
+TimesGMT                                off
+IdentLookups                    off
+UseReverseDNS                   off
+ServerIdent                             on ""
+AllowStoreRestart               on
+AllowRetrieveRestart    on
+AllowOverwrite                  on
+RequireValidShell               off
+ScoreboardFile                  /mnt/drbd0/proftpd/log/scoreboard
+TransferLog             /mnt/drbd0/proftpd/log/xferlog
+LogFormat               default "%h %l %u %t \"%r\" %s %b"
+LogFormat               auth    "%v [%P] %h %t \"%r\" %s"
+LogFormat               write   "%h %l %u %t \"%r\" %s %b"
+ExtendedLog             /mnt/drbd0/proftpd/log/access_log    WRITE,READ write
+ExtendedLog             /mnt/drbd0/proftpd/log/auth_log      AUTH auth
+ExtendedLog             /mnt/drbd0/proftpd/log/paranoid_log  ALL default
+PidFile                                 /mnt/drbd0/proftpd/run/proftpd.pid
+</pre>
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<pre caption="[srv01] /mnt/drbd0/init/proftpd">
+CONFIGFILE=/mnt/drbd0/proftpd/conf/proftpd.conf
+PIDFILE=/mnt/drbd0/proftpd/run/proftpd.pid
+</pre>
+
+</body>
+</section>
+<section>
+<title>OpenLDAP（サーバ）</title>
+<body>
+
+<p>
+OpenLDAPの設定・データを/mnt/drbd0/openldapに用意します。
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+<pre caption="[srv01] /mnt/drbd0/openldapに設定・データを用意する">
+srv01# <i>mkdir /mnt/drbd0/openldap</i>
+srv01# <i>cd /mnt/drbd0/openldap</i>
+srv01# <i>mkdir conf data run</i>
+srv01# <i>cp -a /etc/openldap/schema conf/</i>
+srv01# <i>cp -a /etc/openldap/ssl conf/</i>
+</pre>
+<p>
+slappasswdで暗号化されたパスワードを生成します。<br />
+このツールは、ユーザアカウントを生成する際にも使用します。
+</p>
+<pre caption="[srv01] slappasswd">
+srv01# <i>slappasswd</i>
+New password: <i>[パスワード]</i>
+Re-enter new password: <i>[パスワード]</i>
+{SSHA}*******************************
+</pre>
+<p>
+slapd.confを参考にして、パスを書き換えます。
+</p>
+<pre caption="[srv01] /mnt/drbd0/openldap/conf/slapd.conf">
+include /mnt/drbd0/openldap/conf/schema/core.schema
+include /mnt/drbd0/openldap/conf/schema/corba.schema
+include /mnt/drbd0/openldap/conf/schema/cosine.schema
+include /mnt/drbd0/openldap/conf/schema/inetorgperson.schema
+include /mnt/drbd0/openldap/conf/schema/java.schema
+include /mnt/drbd0/openldap/conf/schema/misc.schema
+include /mnt/drbd0/openldap/conf/schema/nis.schema
+include /mnt/drbd0/openldap/conf/schema/openldap.schema
+
+pidfile         /mnt/drbd0/openldap/run/slapd.pid
+argsfile        /mnt/drbd0/openldap/run/slapd.args
+
+database        bdb
+suffix  "dc=cluster1,dc=dokukino,dc=com"
+rootdn  "cn=manager,dc=cluster1,dc=dokukino,dc=com"
+rootpw <i>[slappasswdで暗号化したパスワード]</i>
+directory       /mnt/drbd0/openldap/data
+
+index   objectClass             pres,eq
+index   cn,sn,uid               eq
+index   uidNumber,gidNumber,memberUid   eq
+index   oncRpcNumber,ipServicePort      eq
+index   ipNetworkNumber,ipHostNumber    eq
+
+access to attribute=userPassword
+        by self write
+        by dn="cn=manager,dc=cluster1,dc=dokukino,dc=com" write
+        by anonymous auth
+        by * none
+
+access to *
+        by self write
+        by dn="cn=manager,dc=cluster1,dc=dokukino,dc=com" write
+        by * read	
+</pre>
+<p>LDAPツリーに、ユーザとグループのオブジェクトを作成します。</p>
+<pre caption="[srv01] ~/root.ldif">
+dn: dc=cluster1,dc=dokukino,dc=com
+objectClass: dcObject
+objectClass: organization
+o: cluster1
+dc: cluster1
+</pre>
+<pre caption="[srv01] ~/base.ldif">
+dn: ou=People,dc=cluster1,dc=dokukino,dc=com
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Group,dc=cluster1,dc=dokukino,dc=com
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
+</pre>
+<pre caption="[srv01] slapd start">
+srv01# <i>/usr/lib/openldap/slapd -u ldap -g ldap -f /mnt/drbd0/openldap/conf/slapd.conf</i>
+<codenote>引数で-d [デバッグレベル]を指定すると、フォアグラウンドでデバッグメッセージを表示しながら動作します。</codenote>
+</pre>
+<pre caption="[srv01] ldapadd">
+srv01# <i>ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/root.ldif</i>
+Enter LDAP Password:<i>[パスワード]</i>
+adding new entry "dc=cluster1,dc=dokukino,dc=com"
+
+srv01# <i>ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/base.ldif</i>
+Enter LDAP Password:<i>[パスワード]</i>
+adding new entry "ou=People,dc=cluster1,dc=dokukino,dc=com"
+adding new entry "ou=Group,dc=cluster1,dc=dokukino,dc=com"
+</pre>
+<p>必要にあわせて、ユーザやグループを追加します。</p>
+<pre caption="[srv01] ~/group1.ldif">
+<codenote>グループ[group1]</codenote>
+dn: cn=group1,ou=Group,dc=cluster1,dc=dokukino,dc=com
+cn: group1
+gidNumber: 2001
+objectClass: top
+objectClass: posixGroup
+</pre>
+<pre caption="[srv01] ~/test01.ldif">
+<codenote>ユーザ[test01]</codenote>
+dn: uid=test01,ou=People,dc=cluster1,dc=dokukino,dc=com
+uid: test01
+cn: test01
+sn: test01
+loginShell: /bin/bash
+uidNumber: 2001
+gidNumber: 2001
+homeDirectory: /mnt/drbd0/home/test01
+userPassword: <i>[slappasswdで暗号化したパスワード]</i>
+shadowMin: -1
+shadowMax: 999999
+shadowWarning: 7
+shadowInactive: -1
+shadowExpire: -1
+shadowFlag: 0
+objectClass: top
+objectClass: person
+objectClass: posixAccount
+objectClass: shadowAccount
+</pre>
+<pre caption="[srv01] ldapadd">
+srv01# <i>ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/group1.ldif</i>
+Enter LDAP Password:<i>[パスワード]</i>
+adding new entry "ou=People,dc=cluster1,dc=dokukino,dc=com"
+
+srv01# <i>ldapadd -x -D 'cn=manager,dc=cluster1,dc=dokukino,dc=com' -W -f ~/test01.ldif</i>
+Enter LDAP Password:<i>[パスワード]</i>
+adding new entry "cn=test01,ou=Group,dc=cluster1,dc=dokukino,dc=com"
+
+srv01# <i>mkdir /mnt/drbd0/home/test01</i>
+srv01# <i>chown test01:group1 /mnt/drbd0/home/test01</i>
+</pre>
+<pre caption="[srv01] killall slapd">
+srv01# <i>killall slapd</i>
+</pre>
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<pre caption="[srv01] /mnt/drbd0/init/slapd">
+CONFIGFILE=/mnt/drbd0/openldap/conf/slapd.conf
+PIDFILE=/mnt/drbd0/openldap/run/slapd.pid
+#LISTEN="ldap://192.168.4.11"
+</pre>
+</body>
+</section>
+<section>
+<title>OpenLDAP（クライアント）</title>
+<body>
+<p>OpenLDAPによる認証を有効化します。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+<pre caption="/etc/nssswitch.conf">
+<codenote>以下を見れば判るように、nss_ldapはhosts等の共有もサポートしています。<br />
+ですが、このドキュメントではユーザ認証についてのみ扱います。</codenote>
+passwd:      files <i>ldap</i>
+shadow:      files <i>ldap</i>
+group:       files <i>ldap</i>
+
+hosts:       files dns
+networks:    files dns
+
+services:    db files
+protocols:   db files
+rpc:         db files
+ethers:      db files
+netmasks:    files
+netgroup:    files
+bootparams:  files
+
+automount:   files
+aliases:     files
+</pre>
+<pre caption="/etc/pam.d/system-auth">
+#%PAM-1.0
+
+auth       required     /lib/security/pam_env.so
+auth       sufficient   /lib/security/pam_unix.so likeauth nullok
+<i>auth       sufficient   /lib/security/pam_ldap.so use_first_pass</i>
+auth       required     /lib/security/pam_deny.so
+
+account    required     /lib/security/pam_unix.so
+<i>account    sufficient   /lib/security/pam_ldap.so</i>
+
+password   required     /lib/security/pam_cracklib.so retry=3
+password   sufficient   /lib/security/pam_unix.so nullok md5 shadow use_authtok
+<i>password   sufficient   /lib/security/pam_ldap.so use_authok</i>
+password   required     /lib/security/pam_deny.so
+
+session    required     /lib/security/pam_limits.so
+session    required     /lib/security/pam_unix.so
+<i>session    optional     /lib/security/pam_ldap.so</i>
+</pre>
+<pre caption="/etc/ldap.conf">
+host 192.168.4.11
+base dc=cluster1,dc=dokukino,dc=com
+pam_password exop
+</pre>
+</body>
+</section>
+<section>
+<title>MySQL</title>
+<body>
+
+<p>
+MySQLの設定・データを/mnt/drbd0/mysqlに用意します。<br />
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+
+<pre caption="[srv01] /mnt/drbd0/mysqlに設定・データを用意する">
+srv01# <i>mkdir /mnt/drbd0/mysql</i>
+srv01# <i>cd /mnt/drbd0/mysql</i>
+srv01# <i>mkdir conf data log run</i>
+srv01# <i>chown mysql:mysql data log run</i>
+</pre>
+
+<p>my.cnfを参考にして、パスを書き換えます。</p>
+
+<pre caption="[srv01] /mnt/drbd0/mysql/conf/my.cnf">
+[client]
+port            = 3306
+socket          = /mnt/drbd0/mysql/run/mysqld.sock
+
+[safe_mysqld]
+err-log         = /mnt/drbd0/mysql/log/mysql.err
+
+[mysqld]
+user            = mysql
+pid-file        = /mnt/drbd0/mysql/run/mysqld.pid
+socket          = /mnt/drbd0/mysql/run/mysqld.sock
+log-error       = /mnt/drbd0/mysql/log/mysqld.err
+basedir         = /usr
+datadir         = /mnt/drbd0/mysql/data
+tmpdir          = /tmp
+language        = /usr/share/mysql/english
+skip-locking
+set-variable    = key_buffer=16M
+set-variable    = max_allowed_packet=1M
+set-variable    = thread_stack=128K
+bind-address    = 127.0.0.1
+port            = 3306
+
+[mysqldump]
+quick
+set-variable    = max_allowed_packet=1M
+
+[isamchk]
+set-variable    = key_buffer=16M
+</pre>
+
+<p>DBを初期化し、drbdデバイスにコピーします。</p>
+
+<pre caption="[srv01] mysql_install_db">
+srv01# <i>mysql_install_db</i>
+srv01# <i>cp -a /var/lib/mysql/* ./data/</i>
+</pre>
+
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+
+<pre caption="[srv01] /mnt/drbd0/init/mysql">
+CONFIGFILE=/mnt/drbd0/mysql/conf/my.cnf
+PIDFILE=/mnt/drbd0/mysql/run/mysqld.pid
+</pre>
+
+</body>
+</section>
+<section>
+<title>PostgreSQL</title>
+<body>
+
+<p>
+PostgreSQLの設定・データを/mnt/drbd0/mysqlに用意します。<br />
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+
+<pre caption="[srv01] /mnt/drbd0/potgresqlに設定・データを用意する">
+srv01# <i>mkdir /mnt/drbd0/postgresql</i>
+srv01# <i>cd /mnt/drbd0/postgresql</i>
+srv01# <i>mkdir data</i>
+srv01# <i>chown postgres:postgres data</i>
+srv01# <i>su postgres initdb -E EUC_JP -D /mnt/drbd0/postgresql/data</i>
+</pre>
+
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+
+<pre caption="[srv01] /mnt/drbd0/init/postgresql">
+PGDATA=/mnt/drbd0/postgresql/data
+PGLOG=/mnt/drbd0/postgresql/data/postgresql.log
+PGUSER=postgres
+PGOPTS=""
+</pre>
+
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+
+<pre caption="[srv01] /mnt/drbd0/init/pg_autovacuum">
+PGUSER=postgres
+PG_AUTOVACUUM_LOG=/mnt/drbd0/postgresql/data/pg_autovacuum.log
+VACUUM_BASE=1000
+VACUUM_SCALE=2
+SLEEP_BASE=300
+SLEEP_SCALE=2
+</pre>
+
+</body>
+</section>
+<section>
+<title>BIND</title>
+<body>
+
+<p>
+BINDの設定・データを/mnt/drbd0/bindに用意します。<br />
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+
+<pre caption="[srv01] /mnt/drbd0/bindに設定・データを用意する">
+srv01# <i>mkdir /mnt/drbd0/bind</i>
+srv01# <i>cd /mnt/drbd0/bind</i>
+srv01# <i>mkdir conf run zone</i>
+srv01# <i>cp -a /var/bind/* zone/</i>
+srv01# <i>chown named:named run zone</i>
+</pre>
+
+<p>named.confを参考にして、パスを書き換えます。</p>
+
+<pre caption="[srv01] /mnt/drbd0/bind/conf/named.conf">
+options {
+        directory "/mnt/drbd0/bind/zone";
+        listen-on-v6 { none; };
+        listen-on { 127.0.0.1; };
+        pid-file "/mnt/drbd0/bind/run/named.pid";
+};
+
+zone "." IN {
+        type hint;
+        file "named.ca";
+};
+
+zone "localhost" IN {
+        type master;
+        file "pri/localhost.zone";
+        allow-update { none; };
+        notify no;
+};
+
+zone "127.in-addr.arpa" IN {
+        type master;
+        file "pri/127.zone";
+        allow-update { none; };
+        notify no;
+};
+</pre>
+
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+
+<pre caption="/mnt/drbd0/init/named">
+CONFIGFILE="/mnt/drbd0/bind/conf/named.conf"
+PIDFILE="/mnt/drbd0/bind/run/named.pid"
+CPU="1"
+OPTS=""
+</pre>
+
+</body>
+</section>
+<section>
+<title>Courier</title>
+<body>
+
+<warn>
+この項は未完成です。<br />
+この通りに設定しても、正常に動作しない可能性があります。
+</warn>
+
+<p>
+Courierの設定・データを/mnt/drbd0/courierに用意します。<br />
+/mnt/drbd0の中のファイルの設定は、全てsrv01から行います。
+</p>
+
+<pre caption="[srv01] /mnt/drbd0/courierに設定・データを用意する">
+srv01# <i>mkdir /mnt/drbd0/courier</i>
+srv01# <i>cd /mnt/drbd0/courier</i>
+srv01# <i>mkdir conf run</i>
+srv01# <i>chown mail:mail run</i>
+srv01# <i>cp -a /etc/courier/* conf/</i>
+srv01# <i>cp -a /var/lib/courier data</i>
+</pre>
+
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+
+<pre caption="[srv01] /mnt/drbd0/init/courier">
+prefix="/usr"
+exec_prefix="/usr/bin"
+sysconfdir="/mnt/drbd0/courier/conf"
+bindir="/usr/bin"
+sbindir="/usr/sbin"
+libexecdir="/usr/lib/courier"
+datadir="/usr/share/courier"
+rundir="/mnt/drbd0/courier/run"
+initdir="/etc/ha.d/resource.d"
+</pre>
+
+</body>
+</section>
+
+<section>
+<title>NFS（サーバ）</title>
+<body>
+<warn>
+この項は未完成です。<br />
+この通りに設定しても、正常に動作しない可能性があります。
+</warn>
+
+<p>初めに、ディレクトリを作成します。</p>
+<pre caption="[srv01] ディレクトリを作成">
+srv01# <i>mkdir -p /mnt/drbd0/nfs/data</i>
+srv01# <i>mkdir /mnt/drbd0/nfs/conf</i>
+</pre>
+
+<p>exportsを作成します。<br />
+</p>
+<pre caption="[srv01] /mnt/drbd0/nfs/conf/exports">
+/mnt/drbd0/nfs/data 192.168.4.0/255.255.255.0(rw,no_root_squash,async)
+</pre>
+
+<p>Heartbeatのresourceスクリプトに対応する変数定義ファイルを用意します。</p>
+<pre caption="/mnt/drbd0/init/nfs">
+opts="start stop restart reload"
+restarting=yes
+exportfs=/usr/sbin/exportfs
+statd=/sbin/rpc.statd
+rquotad=/usr/sbin/rpc.rquotad
+nfsd=/usr/sbin/rpc.nfsd
+mountd=/usr/sbin/rpc.mountd
+exports=/mnt/drbd0/nfs/conf/exports
+PORTMAP_OPTS=""
+EXPORTFSTIMEOUT=30
+</pre>
+
+</body>
+</section>
+<section>
+<title>NFS（クライアント）</title>
+<body>
+<p>上記のNFSサーバに対して、アクセスを行うクライアント側の設定です。</p>
+<pre caption="/etc/fstab">
+192.168.4.11:/mnt/drbd0/nfs/data /mnt/nfs nfs rw,hard,intr 0 0
+</pre>
+<p>netmountを起動します。これによって、NFSがマウントされます。</p>
+<pre>
+# <i>/etc/init.d/netmount restart</i>
+</pre>
+</body>
+</section>
+<section>
+<title>Mon</title>
+<body>
+<warn>この項は未完成です。</warn>
+</body>
+</section>
+<section>
+<title>Heartbeat</title>
+<body>
+
+<note>Heartbeatの全ての設定は、両方のサーバで行う必要があります。</note>
+
+<p>初めに、ha.cfを作成します。<br />
+これはHeartbeatの全般的な設定ファイルであり、以下のような内容になります。</p>
+
+<pre caption="/etc/ha.d/ha.cf">
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+logfacility     local0
+keepalive 2
+deadtime 10
+initdead 120
+<codenote>以下の二行は、イーサネットを介してUDPブロードキャストによるハートビート信号を送る場合の設定です。</codenote>
+udpport 694
+bcast eth0
+<codenote>以下の二行は、シリアルポートを介してハートビート信号を送る場合の設定です。</codenote>
+#serial /dev/ttyS0
+#baud 19200
+<codenote>auto_failbackを有効にすると、一度ダウンしたサーバが復帰した場合、リソースは復帰したサーバへ再度フェイルオーバされます。</codenote>
+auto_failback on
+node srv01
+node srv02
+debug 1
+</pre>
+
+<p>authkeysは、Heartbeatの認証情報ファイルです。<br />
+以下のように設定します。</p>
+
+<pre caption="/etc/ha.d/authkeys">
+auth 1
+1 crc
+</pre>
+<pre caption="chmod">
+# <i>chmod 600 /etc/ha.d/authkeys</i>
+</pre>
+
+<p>haresourcesは、Heartbeatのリソース情報ファイルです。<br />
+	このファイルによって、フェイルオーバ対象が決定されます。</p>
+
+<pre caption="/etc/ha.d/haresources">
+<codenote>haresourcesのシンタックスは、サーバ名 IPアドレス/ネットマスク サービス名::引数 … という単純なものです。<br />
+サービス名は、/etc/ha.d/resource.d/にあるスクリプトと解釈され、<br />
+/etc/ha.d/resource.d/サービス名 start|stop 引数 という形で実行されています。<br />
+各サービスは、通常指定されたサーバ上で実行され、サーバがダウンした時のみフェイルオーバされ、待機系のサーバで実行されます。</codenote>
+srv01 192.168.4.11/24 datadisk::drbd0 \
+named::/mnt/drbd0/init/named \
+slapd::/mnt/drbd0/init/slapd \
+mysql::/mnt/drbd0/init/mysql \
+postgresql::/mnt/drbd0/init/postgresql \
+pg_autovacuum::/mnt/drbd0/init/pg_autovacuum \
+apache2::/mnt/drbd0/init/apache2 \
+proftpd::/mnt/drbd0/init/proftpd \
+courier::/mnt/drbd0/init/courier \
+nfs::/mnt/drbd/init/nfs
+</pre>
+
+<p>Heartbeatを起動します。</p>
+<pre caption="/drbd stop">
+# <i>/etc/init.d/heartbeat start</i>
+<codenote>正常に起動できているか、ログを見て確かめます。</codenote>
+# <i>tail -f /var/log/ha-debug</i>
+</pre>
+
+</body>
+</section>
+</chapter>
+<chapter>
+<title>補足</title>
+<section>
+<title>LVMボリュームをセットアップするディスクスペースが無く、DRBDに割り当て可能なパーティーションも無い場合</title>
+<body>
+<p>既に全てのディスク領域に一般的なパーティーションを作成しており、LVMボリュームをセットアップするディスクスペースも無く、DRBDに割り当て可能なパーティーションも無い場合、DRBDを構築する事が不可能に思われるかもしれません。<br />
+このような場合、よく使われる方法としてループバックデバイスというものがあります。<br />
+ファイルをブロックデバイスと見立てて利用する方法です。<br />
+パフォーマンスは落ちますが、動作検証が目的であれば、十分に機能します。</p>
+
+<p>DRBDでループバックを用いるには幾つかの手順を踏む必要があるので、以下ではその方法を説明します。</p>
+
+<p>最初に、ddコマンドでループバックデバイスとして扱うファイルを作成します。<br />
+count=の部分には、MB単位で容量を入力してください。<br />
+パーティーションのスペースを使い切らないように注意してください。</p>
+
+<pre caption="dd">
+# <i>dd if=/dev/zero of=/drbd0.img bs=1M count=1024</i>
+# <i>dd if=/dev/zero of=/drbd1.img bs=1M count=512</i>
+</pre>
+
+<p>次に、<uri link="losetup">こちら</uri>からinitスクリプトをダウンロードしてください。<br />
+これは/dev/loop*とループバックデバイスとして扱うファイルを関連付ける為に必要なlosetupコマンドを起動時に実行します。</p>
+<pre caption="wget">
+# <i>cd /etc/init.d</i>
+# <i>wget http://documents.dokukino.com/jpdoc/losetup</i>
+# <i>chmod a+x losetup</i>
+</pre>
+
+<p>conf.dファイルを作成します。<br />
+ここにファイルとデバイス名、起動時にロードするか否かを記述してください。</p>
+
+<pre caption="/etc/conf.d/losetup">
+loop0=/drbd0.img
+loop1=/drbd1.img
+auto_load="0 1"
+</pre>
+
+<p>最後にlosetupを起動し、runlevelsに登録します。</p>
+
+<pre caption="init.d &amp; rc-update">
+# <i>/etc/init.d/losetup start</i>
+# <i>rc-update add losetup default</i>
+</pre>
+
+<p>以上の設定で、/dev/loop0は1024MBのブロックデバイスとして、/dev/loop1は512MBブロックデバイスとしてDRBDから扱えるようになりました。<br />
+drbd.confの中で<i>disk=/dev/loop0</i>と記述して、正しく動作する事を確認してください。</p>
+
+</body>
+</section>
+<section>
+<title>待機系サーバを活用したい</title>
+<body>
+<p>運用系・待機系でサーバを分けて設定してしまうと、片方のサーバのみ負荷がかかり、もう片方は遊んでいるという事になるかもしれません。<br />
+drbdデバイスを複数定義しharesourcesを書換えることによって、サービス毎に実行するサーバを別々に出来ます。<br />
+勿論、片方に障害が発生した場合はフェイルオーバがかかり、正常動作中のサーバが全ての処理を引き継ぎます。</p>
+<p>初めに、二つ目のdrbdデバイスを定義します。<br />
+予め、ブロックデバイス（ここでは/dev/vg0/drbd1とします）を用意しておいてください。<br />
+要領は一つの時と変わりません：</p>
+<pre caption="/etc/drbd.conf">
+<codenote>追記すべき部分のみ抜粋</codenote>
+resource drbd1 {
+    protocol=C
+    fsckcmd=fsck.reiserfs -y
+
+    disk {
+        do-panic
+        disk-size = 2097152
+    }
+    net {
+        sync-min=600M
+        sync-max=600M
+    }
+
+    on srv01 {
+        device=/dev/nbd/1
+        disk=/dev/vg0/drbd1
+	address=192.168.1.101
+<codenote>drbd0で使用しているポート番号は使えませんので、番号を変える必要があります。</codenote>
+        port=7789
+    }
+
+    on srv02 {
+        device=/dev/nbd/1
+        disk=/dev/vg0/drbd1
+        address=192.168.1.102
+        port=7789
+    }
+}
+</pre>
+<p>フォーマット・マウントポイントの設定は同じですので省略します。<br />
+drbd0、drbd1を同時にマウントして、データをコピーしてきましょう。</p>
+<warn>Heartbeatは終了しておいてください。</warn>
+<pre caption="mv">
+# <i>/drbd restart</i>
+# <i>/etc/ha.d/resource.d/datadisk drbd0 start</i>
+# <i>/etc/ha.d/resource.d/datadisk drbd1 start</i>
+<codenote>移動したいサービスを、drbd1にコピーしてください。</codenote>
+# <i>cp -a /mnt/drbd0/bind /mnt/drbd1</i>
+<codenote>initファイルを書換えつつコピーします。</codenote>
+# <i>cat /mnt/drbd0/init/named |sed -e "s/drbd0/drbd1/g" > /mnt/drbd1/init/named</i>
+</pre>
+<note>多くの設定ファイルにもdrbd0を含むパスが含まれています。<br />
+initファイルと同様に、それらも書換える必要があります。</note>
+<p>haresourcesを変更します。<br />
+この作業は両方のサーバで行う必要があります。
+</p>
+<pre caption="/etc/ha.d/haresources">
+srv01 192.168.4.11/24 datadisk::drbd0 \
+slapd::/mnt/drbd0/init/slapd \
+mysql::/mnt/drbd0/init/mysql \
+postgresql::/mnt/drbd0/init/postgresql \
+pg_autovacuum::/mnt/drbd0/init/pg_autovacuum \
+apache2::/mnt/drbd0/init/apache2 \
+proftpd::/mnt/drbd0/init/proftpd \
+courier::/mnt/drbd0/init/courier
+srv02 192.168.4.12/24 datadisk::drbd1 \
+named::/mnt/drbd1/init/named
+</pre>
+<p>一度全てのdrbdを停止し、Heartbeatを起動します。</p>
+<pre caption="/drbd stop">
+# <i>umount /mnt/drbd0</i>
+# <i>umount /mnt/drbd1</i>
+<codenote>busyでアンマウント出来ない場合、fuserコマンドでどのプロセスが使用中なのか調べることが出来ます。</codenote>
+# <i>/drbd stop</i>
+# <i>/etc/init.d/heartbeat start</i>
+<codenote>正常に起動できているか、ログを見て確かめます。</codenote>
+# <i>tail -f /var/log/ha-debug</i>
+</pre>
+
+</body>
+</section>
+<section>
+<title>同じサーバアプリを両方のサーバで動かし、どちらかがダウンしたときにフェイルオーバさせる事は可能？</title>
+<body>
+
+<p>このような設定が考えられます：</p>
+<pre caption="haresources">
+srv01 192.168.4.11/24 datadisk::drbd0 named::/mnt/drbd0/init/named
+srv02 192.168.4.12/24 datadisk::drbd1 named::/mnt/drbd1/init/named
+</pre>
+<p>
+この設定では、片方のサーバがダウンしているときは、一台のサーバ上で２つのnamedを立ち上げようとします。<br />
+デフォルトの設定では全てのIPアドレスに対してLISTENしようとしてしまいどちらかがソケットを開けず起動できなくなりますが、LISTENするIPをharesourcesに記述したIPアドレスに限定すれば、正常に動作します。
+</p>
+<warn>
+複数のサーバ上でアプリケーションを動かし、相互にフェイルオーバをかける場合、UNIXユーザアカウントについて注意ください。<br />
+UNIXアカウントをNSS/PAMを通して認証に使い、かつアカウント情報を別々のLDAPサーバに格納した場合、恐らく正しく動作しないでしょう。<br />
+NSS及びPAMの設定は、アプリケーションのインスタンス毎に設定出来る訳では無く、サーバに対して１つになっているからです。<br />
+これに該当する主なアプリケーションは、Apacheのuserdir・suexec機能です。
+</warn>
+
+</body>
+</section>
+<section>
+<title>運用系２台：待機系１台の設定は可能？</title>
+<body>
+	
+<p>Heartbeatは基本的には１：１のフェイルオーバシステムを実現する為のソフトですが、haresourcesの書き方を工夫すれば運用系２台：待機系１台という設定も可能です。<br />
+その場合、運用系のharesourcesにはそのサーバ自身のリソースのみを記述し、待機系のharesourcesには運用系の全てのリソースを記述します。</p>
+<pre caption="[srv01] haresources">
+srv01 192.168.4.11/24 datadisk::drbd0 apache2::/mnt/drbd0/init/apache2
+</pre>
+<pre caption="[srv02] haresources">
+srv02 192.168.4.12/24 datadisk::drbd1 named::/mnt/drbd1/init/named
+</pre>
+<pre caption="[srv03] haresources">
+srv01 192.168.4.11/24 datadisk::drbd0 apache2::/mnt/drbd0/init/apache2
+srv02 192.168.4.12/24 datadisk::drbd1 named::/mnt/drbd1/init/named
+</pre>
+</body>
+</section>
+</chapter>
+</guide>

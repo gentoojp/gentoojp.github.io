@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（今野勝之）</poster>
+	<date>29 March 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年3月29日号</title>
+<body>
+<p>
+<b>3月最後の<uri link="/news/ja/gwn/20040329-newsletter.xml">Gentoo Weekly Newsletter</uri>では、複数のMTAが同時にインストールできるサポート情報のお知らせ、Apache2.0.49にアップグレードした場合手動で設定する必要があることの注意喚起、およびApache開発者の求人についてお届けします。</b>そのほかにもたくさんのGLSAのお知らせ、たっぷりあるコミュニティの話題、タイムゾーンを変換するのにdateコマンドを使うヒントがあります。楽しんで！
+</p>
+</body>
+</news>

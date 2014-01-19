@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<poster>John Davis (翻訳: 小林弘樹)</poster>
+<date>16 December 2004</date>
+
+<title>新しいCatalystのメーリングリスト -- December 16th, 2004</title>
+<body>
+
+<p>
+<b><uri link="/proj/en/releng/catalyst">Catalyst</uri>を使用するのに関心があるが、どこから初めて良いかが分からない人、サポートを探している人は、最近作成された gentoo-catalyst@gentoo.org メーリングリストに興味を持つかもしれません！</b>
+</p>
+
+<p>インストールステージ、LiveCD、そしてGRPの作成に使用される<uri link="/proj/en/releng">Release Engineering</uri>チームのmetatoolであるCatalystは、伝統的にgentoo-relengメーリングリストでサポートされています。</p>
+
+<p>登録方法などの詳しい情報は、メーリングリスト<uri link="/main/en/lists.xml">サポートページ</uri>を調べてください。</p>
+
+</body>
+</news>
+

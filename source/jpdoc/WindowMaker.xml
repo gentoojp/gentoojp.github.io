@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+<guide>
+  <title>Window Maker</title>
+  <author><mail link="shindo-n@zephyr.dti.ne.jp">真藤直観</mail></author>
+  <abstract>Window Maker は NEXTSTEP(TM)の Look&amp;Feel をもつ Window Manager です。この文書では、GentooLinux での Window Maker について説明します。
+</abstract>
+  <version>1.0</version>
+  <date>09/04/2003</date>
+  <chapter>
+    <title>Window Maker ってなあに?</title>
+    <section>
+      <title>NEXTSTEP...</title>
+      <body>
+	<p>"NEXTSTEP" この名前をご存じ方は、おそらく長年コンピューターに慣れ親しんだ人ではないかと思います。いまから約15年ほどまえに現れた、先進的な OS の名前です。特にそのスタイリッシュなデザインは現在でも多くの人の記憶に残っています。Window Maker はこのNEXTSTEP の Look&amp;Feel を再現する Window Manager です。</p>
+
+	<note>もしかしたら、Vine Linux のデフォルト Window Manager といったほうが有名かも知れませんね。</note>
+
+      </body>
+    </section>
+    <section>
+      <title>Window Maker の特徴</title>
+      <body>
+	<p>Window Maker の特徴としては</p>
+	<ul>
+	  <li>シンプルでエレガントな見た目</li>
+	  <li>アプリケーション Dock</li>
+	  <li>GUI ベースでのカスタマイズ</li>
+	  <li>テーマ機能</li>
+	</ul>
+	<p>が挙げられます。また、国際化対応もされていますので、日本語でメッセージが表示されます。</p>
+      </body>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Window Maker のインストール</title>
+    <section>
+      <title>xdm の起動</title>
+      
+      <body>
+
+	<warn>もし、<i>startx</i> などで X が起動しない場合は一旦 X の設定を完了してください。以下、X が起動することを前提にしています。</warn>
+
+	<p>早速 Window Maker のインストールといきたいところですが、そのまえに xdm が起動するようにしましょう。xdm は XFree86 をインストールすると自動的にインストールされます。Gentoo の場合、/etc/rc.conf のなかで起動するかしないかを決めます。さらに この rc.conf のなかで XSESSION 変数を "Xsession" にセットしてくだささい。
+
+	<note>xdm は Window Maker の動作に必須ではありませんが、いちいち<i>$ startx</i> する手間が省けます。</note>
+
+	</p>
+
+<pre caption="/etc/rc.conf -- DISPLAYMANAGER と XSESSION のセット"># What display manager do you use ?  [ xdm | gdm | kdm ]
+DISPLAYMANAGER=xdm
+(省略)
+# Gnome - will start gnome-session
+# KDE - will start startkde
+# Xsession - will start a terminal and a few other nice apps
+
+XSESSION=Xsession
+</pre>
+
+	<p>つづいてランレベルに xdm 起動を追加します。</p>
+
+<pre caption="デフォルトランレベルへ xdm の追加"># rc-update add xdm default
+</pre>
+
+	<p>以上の設定でOS再起動後から xdm が自動起動します。gdm や kdm に比べるとちょっと寂しいですね。シンプルなのでよしとしましょう。</p>
+      </body>
+    </section>
+
+    <section>
+      <title>Window Maker のインストール</title>
+      <body>
+	<p>さて、Window Maker のインストールです。といっても、普通のソフトウェアと同じく</p>
+<pre caption="wmaker のインストール"># emerge wmaker</pre>
+
+	<p>で終わってしまいます。KDE とはちがって昼寝をする時間はないと思います。</p>
+      </body>
+    </section>
+    <section>
+      <title>.xsession の準備</title>
+      <body>
+	<p>.xsession ファイルを作らなくてはいけません。もし、すでにこった <e>.xinitrc</e> を書いていた場合は .xsession にリネームするかコピーしておいてください。xdm でログインする場合は、.xsession が実行されます。もし、こったものでなくても記述内容は同じなので参考になるはずです。</p>
+
+	<p>Window Maker を起動させるために必要な .xsession の内容は実は、これだけです。</p>
+<pre>#!/bin/sh 
+exec wmaker
+</pre>
+	<impo>.xsession には実行属性がないといけません。<i>$ chmod +x ~/.xsession</i> を忘れないようにしてください。また、xdm を起動させず、startx にて X を起動する場合は、.xsession ではなく .xinitrc が参照されます。</impo> 
+
+	<p>しかしながら、これだけでは実は英語表示になってしまいますし、自動的にターミナルも起動してくれません。.xsession 自体はただのシェルスクリプトなので、普通のシェルスクリプトと同様に手を加えてあげれば大丈夫です。例えば、こんな具合。</p>
+<pre caption=".xsession サンプル">#!/bin/sh 
+if [ -f "$HOME"/.Xdefaults ];then
+	xrdb -load "$HOME"/.Xdefaults
+fi
+
+LANG=ja_JP.eucJP
+export LANG
+xset -b
+xscreensaver-command -exit
+xscreensaver -no-splash &amp;
+kterm &amp;
+exec wmaker
+</pre>
+
+	<p>これで準備完了です。ログインして Window Maker を立ち上げてみてください。一番初めは必要なディレクトリ(<path>~/GNUstep</path>)を作るため、少し時間がかかるかもしれません。</p>
+      </body>
+    </section>
+  </chapter>
+  <chapter>
+    <title>Window Maker の使い方</title>
+    <section>
+      <title>画面とメニューと終了方法</title>
+      <body>
+
+	<p>設定が正しければ淡いブルーの画面で Window Maker が起動するはずです。画面左上にはクリップアイコン、右側にアイコン(Dock アプリアイコン)があり、もしかしたら、左下にもアイコン(起動中のアプリケーションアイコン)が並んでいるかもしれません。
+	</p>
+	<ul>
+	  <li>クリップアイコン:ワークスペース(後述)の操作ができます。それぞれのワークスペースで使うアイコンが登録できます。</li>
+	  <li>Dockアプリアイコン: クリックすればアプリケーションが起動します。ワークスペースで共通です。</li>
+	  <li>起動中のアプリアイコン: クリックすれば最小化されているものを呼び出すことができます。</li>
+	</ul>
+
+	<p>Window Maker には二つのメニューがあります。ルートウィンドウメニュー(Root Window Menu もしくはアプリケーションメニュー)とウィンドウリストメニュー(Window List Menu) です。ルートウィンドウメニューからアプリケーションを起動することができます。ウィンドウリストメニューは今起動しているウィンドウのリストです。ウィンドウが重なって隠れてしまったときや最小化しているものを呼び出すのに使います。それぞれメニューの呼び出し方は次のように操作します。
+	</p>
+	
+	<table>
+	  <tr>
+	    <!-- one of (TI TH) -->
+	    <th>メニュー</th>
+	    <th>マウス</th>
+	    <th>ショートカットキー</th>
+	  </tr>
+	  <tr>
+	    <!-- one of (TI TH) -->
+	    <ti>Root Window Menu</ti>
+	    <ti>ルートウィンドウ(背景)で右クリック</ti>
+	    <ti>F12(デフォルト)</ti>
+	  </tr>
+	  <tr>
+	    <!-- one of (TI TH) -->
+	    <ti>Window List Menu</ti>
+	    <ti>ルートウィンドウで中ボタンクリック</ti>
+	    <ti>F11(デフォルト)</ti>
+	  </tr>
+	</table>
+
+	<p>ルートウィンドウメニューにはすでにいくつかメニューが登録されていますが、なかにはインストールされていないものがあるかもしれません。
+	</p>
+
+	<p>Window Maker はこのルートウィンドウメニューの<b>[終了]</b>から終了させることができます。</p>
+
+      </body>
+    </section>
+    <section>
+      <title>ワークスペース</title>
+      <body>
+	<p>Window Maker ではワークスペースという1画面分の大きさのデスクトップが複数提供されます(一般的な広いデスクトップが提供される仮想デスクトップと違います)。なにもしなければワークスペースは一つだけですが、必要に応じててワークスペースを増やすことができます。ワークスペースに関する操作は、次の表を参考にしてください。</p>
+	
+	<table>
+	  <tr>
+	    <!-- one of (ti th) -->
+	    <th>動作</th>
+	    <th>マウス</th>
+	    <th>ショートカットキー</th>
+	  </tr>
+	  <tr>
+	    <!-- one of (TI TH) -->
+	    <ti>ワークスペースを作る(次のワークスペースへ移動)</ti>
+	    <ti>クリップアイコンの右上をクリックまたはルートウィンドウメニューから</ti>
+	    <ti>ALT(Mod)+Ctrl+Right</ti>
+	  </tr>
+	  <tr>
+	    <!-- one of (TI TH) -->
+	    <ti>前のワークスペースへ移動</ti>
+	    <ti>クリップアイコンの左下をクリックまたはルートウィンドウメニューから</ti>
+	    <ti>ALT(Mod)+Ctrl+Right</ti>
+	  </tr>
+	  <tr>
+	    <!-- one of (TI TH) -->
+	    <ti>各ワークスペースへ移動</ti>
+	    <ti>ルートウィンドウメニューから</ti>
+	    <ti>Alt+x(x にはワークスペースの数字 ex: Alt+1)</ti>
+	  </tr>
+	</table>
+
+      </body>
+    </section>
+    <section>
+      <title>ウィンドウ</title>
+      <body>
+	<p>ウィンドウの操作は特に難しくありません。右上の[X]ボタンでウィンドウが閉じます。リサイズするにはウィンドウの下側をドラッグしてください。また、タイトルバーをダブルクリックすることでシェードすることができます。その他の操作は、タイトルバーの上で右クリックしてみてください。</p>
+      </body>
+    </section>
+  </chapter>
+  <chapter>
+    <title>カスタマイズ</title>
+    <section>
+      <title>WPrefs と wmakerconf</title>
+      <body>
+	<p>Window Maker には WPrefs と wmakerconf の二つの設定ユーティリティが用意されています。アイコンの配置、フォーカスの当て方、ショートカットキー設定、メニューの変更、ウィンドウの色設定などが変更できます。Window Maker で変更できることのほとんどは、この二つのユーティリティで変更できます。</p>
+
+	<p>なお、二つのユーティリティで設定できる項目はほとんど変わらないようですが、若干 wmakerconf のほうが細かいようです。どちらか使いやすい方を選んでください。 </p>
+
+	<p>起動方法は、WPrefs であれば画面右側の3番目のアイコンをクリックしてください。wmakerconf であれば</p>
+<pre caption="Window Maker の起動">$ wmakerconf
+</pre>
+	<p>とコマンドを打てば起動します。</p>
+      </body>
+    </section>
+    <section>
+      <title>Dock アプリ</title>
+      <body>
+	<p>Dock とはいわゆるアイコンやランチャと呼ばれているものに近いもので、よく使うアプリケーションをアイコン化して画面に置くことができます。また、時計や CPU メモリのように、アイコンの形のまま動くものがあります。</p>
+
+	<p>Dock にアイコンを追加する簡単な方法は起動しているアプリケーションのアイコン(画面左下)をドラッグして、Dock(画面右側)にもっていくだけです。Dock にアイコンが張り付いたら登録完了です。</p>
+
+	<p>つぎに、Dock アプリの代表(?)のカレンダー付時計を登録してみましょう。まずはインストールです。</p>
+<pre caption="wmCalClock の emerge"># emerge wmCalClock
+</pre>
+	<note>Dock アプリは <path>/usr/portage/x11-plugins</path> にあります。</note>
+<pre caption="wmCalClock の起動">$ wmCalClock &amp; <codenote>&amp; を忘れないようにしてください。</codenote>
+</pre>
+	<p>起動すると、左下のアイコンにカレンダー付時計がでてきます。先ほどの要領でアイコンを画面右側にドラッグして登録してください。次にちょっと細いですが、時計とカレンダーの枠あたりを右クリックして、メニューをだしてください。</p>
+
+	<p>メニューの<b>[設定]</b>から<b>[Window Maker起動時に一緒に起動]</b>にチェックをいれてください。これで、Dock アプリの登録が完了します。</p>
+	
+	<note>通常のアプリケーション(Mozilla や Emacs)であれば、<b>[Window Maker起動時に一緒に起動]</b>にはチェックを入れなくても構いません。おなじ要領で、クリップアイコンとしてワークスペース毎にアイコンを登録することもできます。</note>
+
+	<p>Dock アプリはたくさん開発されており、CPU メモリや天気予報、biff、CDプレイヤーなど様々なものがあります。<uri link="http://www.bensinclair.com/dockapp/">こちら(http://www.bensinclair.com/dockapp/)</uri>でいろいろと探してみてください。</p>
+      </body>
+    </section>
+    <section>
+      <title>テーマ</title>
+      <body>
+	<p>カスタマイズで一番面白いのは、なってたってデスクトップを飾ることですよね。WindowMaker では背景画像、ツールバーの色などがまとめられたものがあり、テーマと呼んでいます。このテーマを切り替えることで即座にデスクトップの雰囲気を変えられます。もちろん、背景画像だけ、ツールバーだけの変更も可能です。</p>
+
+	<p>テーマは<uri link="http://themes.freshmeat.net/">ここ(http://themes.freshmeat.net/)</uri>で数多く見つかります。ダウンロードしたテーマは <path>~/GNUstep/Library/WindowMaker</path> の下へ展開してください。ルートウィンドウメニューに展開したテーマが表示されます。</p>
+
+	<note>setstyle や seticons といったコマンドからでも変更が可能です。</note>
+
+	<p>もちろん、自分でテーマを作ることができます。例えば背景の変更は <path>~/GNUstep/Library/WindowMaker/Backgrounds</path> 以下に背景画像をコピーしてください。ルートウィンドウメニューの背景画像リストにコピーしたファイル名がでてきます。(テーマをつくらず背景だけを変更するならばここで終わりです)</p>
+
+	<p>テーマとして完成させるならば、<path>~/GNUstep/Library/WindowMaker</path> 以下にテーマを説明するファイル(README)をつくり、それと Backgrounds 以下の画像ファイルなどを tar で固めて gzip などで圧縮すれば出来上がりです。簡単です。</p>
+      </body>
+    </section>
+  </chapter>
+  <chapter>
+    <title>情報源</title>
+    <section>
+      <body>
+	<p>WindowMaker は以前からある Window Managaer であり、ユーザーも多いことから Web 上には関連サイトがあります。とはいうものの、まずは <uri link="http://www.windowmaker.org/">http://www.windowmaker.org/</uri>を見てください。デスクトップギャラリーや使い方、FAQ などの情報が得られます。</p>
+
+	<p>また、日本語での FAQ として <uri link="http://www.nurs.or.jp/~gen56/wmaker/wmfaq_j.html">ここ</uri>が参考になります。</p>
+      </body>
+    </section>
+  </chapter>
+</guide>

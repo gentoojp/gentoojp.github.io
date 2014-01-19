@@ -1,0 +1,1431 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/project-gwn-trans.xml">
+<title>GWN翻訳後プロジェクト 英語・日本語対応表</title>
+
+<author title="Author"><mail link="docs@gentoo.gr.jp">GentooJP</mail>
+</author>
+
+<abstract>
+このガイドは、GentooJPのGWN翻訳プロジェクトで翻訳の際に利用する英語、日本語の対応について書かれています。
+</abstract>
+
+<version>1.0</version>
+<date>1 August 2004</date>
+
+
+<chapter>
+<title>GWN翻訳後プロジェクト 翻訳前・日本語対応表</title>
+<section>
+<title>A</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>access</ti>
+  <ti>アクセス</ti>
+</tr>
+<tr>
+  <ti>account</ti>
+  <ti>アカウント</ti>
+</tr>
+<tr>
+  <ti>adapter</ti>
+  <ti>アダプタ</ti>
+</tr>
+<tr>
+  <ti>allocation</ti>
+  <ti>アロケーション</ti>
+</tr>
+<tr>
+  <ti>anime</ti>
+  <ti>アニメ</ti>
+</tr>
+<tr>
+  <ti>announce</ti>
+  <ti>アナウンス</ti>
+</tr>
+<tr>
+  <ti>application</ti>
+  <ti>アプリケーション</ti>
+</tr>
+<tr>
+  <ti>architecture</ti>
+  <ti>アーキテクチャ</ti>
+</tr>
+<tr>
+  <ti>archive</ti>
+  <ti>アーカイブ</ti>
+</tr>
+<tr>
+  <ti>audio</ti>
+  <ti>オーディオ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>B</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>base system</ti>
+  <ti>ベースシステム</ti>
+</tr>
+<tr>
+  <ti>binary</ti>
+  <ti>バイナリ</ti>
+</tr>
+<tr>
+  <ti>block</ti>
+  <ti>ブロック</ti>
+</tr>
+<tr>
+  <ti>boot</ti>
+  <ti>ブート</ti>
+</tr>
+<tr>
+  <ti>boot loader</ti>
+  <ti>ブートローダ</ti>
+</tr>
+<tr>
+  <ti>bootstrap</ti>
+  <ti>ブートストラップ</ti>
+</tr>
+<tr>
+  <ti>branch</ti>
+  <ti>ブランチ</ti>
+</tr>
+<tr>
+  <ti>browser</ti>
+  <ti>ブラウザ</ti>
+</tr>
+<tr>
+  <ti>buffer</ti>
+  <ti>バッファ</ti>
+</tr>
+<tr>
+  <ti>bug</ti>
+  <ti>バグ</ti>
+</tr>
+<tr>
+  <ti>bug fix</ti>
+  <ti>バグフィクス</ti>
+</tr>
+<tr>
+  <ti>build</ti>
+  <ti>ビルド</ti>
+</tr>
+<tr>
+  <ti>button</ti>
+  <ti>ボタン</ti>
+</tr>
+<tr>
+  <ti>byte</ti>
+  <ti>バイト</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>C</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>cache</ti>
+  <ti>キャッシュ</ti>
+</tr>
+<tr>
+  <ti>calendar</ti>
+  <ti>カレンダー</ti>
+</tr>
+<tr>
+  <ti>campus</ti>
+  <ti>キャンパス</ti>
+</tr>
+<tr>
+  <ti>cancel</ti>
+  <ti>キャンセル</ti>
+</tr>
+<tr>
+  <ti>card</ti>
+  <ti>カード</ti>
+</tr>
+<tr>
+  <ti>category</ti>
+  <ti>カテゴリ</ti>
+</tr>
+<tr>
+  <ti>center</ti>
+  <ti>センタ</ti>
+</tr>
+<tr>
+  <ti>channel</ti>
+  <ti>チャンネル</ti>
+</tr>
+<tr>
+  <ti>check</ti>
+  <ti>チェック</ti>
+</tr>
+<tr>
+  <ti>chipset</ti>
+  <ti>チップセット</ti>
+</tr>
+<tr>
+  <ti>client</ti>
+  <ti>クライアント</ti>
+</tr>
+<tr>
+  <ti>close</ti>
+  <ti>クローズ</ti>
+</tr>
+<tr>
+  <ti>color</ti>
+  <ti>カラー</ti>
+</tr>
+<tr>
+  <ti>command</ti>
+  <ti>コマンド</ti>
+</tr>
+<tr>
+  <ti>comment</ti>
+  <ti>コメント</ti>
+</tr>
+<tr>
+  <ti>commit</ti>
+  <ti>コミット</ti>
+</tr>
+<tr>
+  <ti>community</ti>
+  <ti>コミュニティ</ti>
+</tr>
+<tr>
+  <ti>compile</ti>
+  <ti>コンパイル</ti>
+</tr>
+<tr>
+  <ti>compiler</ti>
+  <ti>コンパイラ</ti>
+</tr>
+<tr>
+  <ti>component</ti>
+  <ti>コンポーネント</ti>
+</tr>
+<tr>
+  <ti>computer</ti>
+  <ti>コンピュータ</ti>
+</tr>
+<tr>
+  <ti>computer science</ti>
+  <ti>コンピュータサイエンス</ti>
+</tr>
+<tr>
+  <ti>console</ti>
+  <ti>コンソール</ti>
+</tr>
+<tr>
+  <ti>consultant</ti>
+  <ti>コンサルタント</ti>
+</tr>
+<tr>
+  <ti>controller</ti>
+  <ti>コントローラ</ti>
+</tr>
+<tr>
+  <ti>copy</ti>
+  <ti>コピー</ti>
+</tr>
+<tr>
+  <ti>core</ti>
+  <ti>コア</ti>
+</tr>
+<tr>
+  <ti>cracker</ti>
+  <ti>クラッカー</ti>
+</tr>
+<tr>
+  <ti>cradle</ti>
+  <ti>クレイドル</ti>
+</tr>
+<tr>
+  <ti>cross-platform</ti>
+  <ti>クロスプラットフォーム</ti>
+</tr>
+<tr>
+  <ti>customize</ti>
+  <ti>カスタマイズ</ti>
+</tr>
+<tr>
+  <ti>cylinder</ti>
+  <ti>シリンダ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>D</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>daemon</ti>
+  <ti>デーモン</ti>
+</tr>
+<tr>
+  <ti>data</ti>
+  <ti>データ</ti>
+</tr>
+<tr>
+  <ti>database</ti>
+  <ti>データベース</ti>
+</tr>
+<tr>
+  <ti>default</ti>
+  <ti>デフォルト</ti>
+</tr>
+<tr>
+  <ti>desktop</ti>
+  <ti>デスクトップ</ti>
+</tr>
+<tr>
+  <ti>Denial of Service</ti>
+  <ti>DoS</ti>
+</tr>
+<tr>
+  <ti>developer</ti>
+  <ti>開発者</ti>
+</tr>
+<tr>
+  <ti>device</ti>
+  <ti>デバイス</ti>
+</tr>
+<tr>
+  <ti>directory</ti>
+  <ti>ディレクトリ</ti>
+</tr>
+<tr>
+  <ti>diskless</ti>
+  <ti>ディスクレス</ti>
+</tr>
+<tr>
+  <ti>display</ti>
+  <ti>ディスプレイ</ti>
+</tr>
+<tr>
+  <ti>distro / distribution</ti>
+  <ti>ディストリビューション</ti>
+</tr>
+<tr>
+  <ti>directory traversal</ti>
+  <ti>ディレクトリトラバーサル</ti>
+</tr>
+<tr>
+  <ti>document</ti>
+  <ti>ドキュメント</ti>
+</tr>
+<tr>
+  <ti>domain</ti>
+  <ti>ドメイン</ti>
+</tr>
+<tr>
+  <ti>download</ti>
+  <ti>ダウンロード</ti>
+</tr>
+<tr>
+  <ti>downtime</ti>
+  <ti>ダウンタイム</ti>
+</tr>
+<tr>
+  <ti>drive</ti>
+  <ti>ドライブ</ti>
+</tr>
+<tr>
+  <ti>driver</ti>
+  <ti>ドライバ</ti>
+</tr>
+<tr>
+  <ti>dual</ti>
+  <ti>デュアル</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>E</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>ebuild</ti>
+  <ti>ebuild</ti>
+</tr>
+<tr>
+  <ti>editor</ti>
+  <ti>エディタ</ti>
+</tr>
+<tr>
+  <ti>emerge</ti>
+  <ti>emerge</ti>
+</tr>
+<tr>
+  <ti>emulation</ti>
+  <ti>エミュレーション</ti>
+</tr>
+<tr>
+  <ti>emulation code</ti>
+  <ti>エミュレーションコード</ti>
+</tr>
+<tr>
+  <ti>end user</ti>
+  <ti>エンドユーザ</ti>
+</tr>
+<tr>
+  <ti>engine</ti>
+  <ti>エンジン</ti>
+</tr>
+<tr>
+  <ti>entry</ti>
+  <ti>エントリ</ti>
+</tr>
+<tr>
+  <ti>error</ti>
+  <ti>エラー</ti>
+</tr>
+<tr>
+  <ti>ethernet</ti>
+  <ti>イーサネット</ti>
+</tr>
+<tr>
+  <ti>event</ti>
+  <ti>イベント</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>F</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>feedback</ti>
+  <ti>フィードバック</ti>
+</tr>
+<tr>
+  <ti>fibre channel</ti>
+  <ti>ファイバチャネル</ti>
+</tr>
+<tr>
+  <ti>file</ti>
+  <ti>ファイル</ti>
+</tr>
+<tr>
+  <ti>firewall</ti>
+  <ti>ファイアウォール</ti>
+</tr>
+<tr>
+  <ti>flag</ti>
+  <ti>フラグ</ti>
+</tr>
+<tr>
+  <ti>floppy</ti>
+  <ti>フロッピー</ti>
+</tr>
+<tr>
+  <ti>folder</ti>
+  <ti>フォルダ</ti>
+</tr>
+<tr>
+  <ti>font</ti>
+  <ti>フォント</ti>
+</tr>
+<tr>
+  <ti>format</ti>
+  <ti>フォーマット</ti>
+</tr>
+<tr>
+  <ti>forum</ti>
+  <ti>フォーラム</ti>
+</tr>
+<tr>
+  <ti>frame</ti>
+  <ti>フレーム</ti>
+</tr>
+<tr>
+  <ti>free software</ti>
+  <ti>フリーソフトウェア</ti>
+</tr>
+<tr>
+  <ti>front-end</ti>
+  <ti>フロントエンド</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>G</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>game</ti>
+  <ti>ゲーム</ti>
+</tr>
+<tr>
+  <ti>gateway</ti>
+  <ti>ゲートウェイ</ti>
+</tr>
+<tr>
+  <ti>gentoo / Gentoo</ti>
+  <ti>gentoo / Gentoo</ti>
+</tr>
+<tr>
+  <ti>geometry</ti>
+  <ti>ジオメトリ</ti>
+</tr>
+<tr>
+  <ti>global variables</ti>
+  <ti>グローバル変数</ti>
+</tr>
+<tr>
+  <ti>graphical adapter</ti>
+  <ti>グラフィックアダプタ</ti>
+</tr>
+<tr>
+  <ti>group</ti>
+  <ti>グループ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>H</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>hacker</ti>
+  <ti>ハッカー</ti>
+</tr>
+<tr>
+  <ti>hardware</ti>
+  <ti>ハードウェア</ti>
+</tr>
+<tr>
+  <ti>harddisk / HDD</ti>
+  <ti>ハードディスク</ti>
+</tr>
+<tr>
+  <ti>help</ti>
+  <ti>ヘルプ</ti>
+</tr>
+<tr>
+  <ti>high-end</ti>
+  <ti>ハイエンド</ti>
+</tr>
+<tr>
+  <ti>hockey</ti>
+  <ti>ホッケー</ti>
+</tr>
+<tr>
+  <ti>home page</ti>
+  <ti>ホームページ</ti>
+</tr>
+<tr>
+  <ti>host</ti>
+  <ti>ホスト</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>I</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>image</ti>
+  <ti>イメージ</ti>
+</tr>
+<tr>
+  <ti>install</ti>
+  <ti>インストール</ti>
+</tr>
+<tr>
+  <ti>intellimouse</ti>
+  <ti>インテリマウス</ti>
+</tr>
+<tr>
+  <ti>interactive</ti>
+  <ti>インタラクティブ</ti>
+</tr>
+<tr>
+  <ti>interface</ti>
+  <ti>インタフェース</ti>
+</tr>
+<tr>
+  <ti>internet</ti>
+  <ti>インターネット</ti>
+</tr>
+<tr>
+  <ti>interview</ti>
+  <ti>インタビュー</ti>
+</tr>
+<tr>
+  <ti>IP address</ti>
+  <ti>IPアドレス</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>J</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>job</ti>
+  <ti>ジョブ</ti>
+</tr>
+<tr>
+  <ti>journal</ti>
+  <ti>ジャーナル</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>K</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>kernel</ti>
+  <ti>カーネル</ti>
+</tr>
+<tr>
+  <ti>key</ti>
+  <ti>キー</ti>
+</tr>
+<tr>
+  <ti>keyboard</ti>
+  <ti>キーボード</ti>
+</tr>
+<tr>
+  <ti>keymap</ti>
+  <ti>キーマップ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>L</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>lab</ti>
+  <ti>ラボ</ti>
+</tr>
+<tr>
+  <ti>laptop</ti>
+  <ti>ノートパソコン</ti>
+</tr>
+<tr>
+  <ti>leader</ti>
+  <ti>リーダ</ti>
+</tr>
+<tr>
+  <ti>library</ti>
+  <ti>ライブラリ</ti>
+</tr>
+<tr>
+  <ti>license</ti>
+  <ti>ライセンス</ti>
+</tr>
+<tr>
+  <ti>link</ti>
+  <ti>リンク</ti>
+</tr>
+<tr>
+  <ti>linux / Linux</ti>
+  <ti>linux / Linux</ti>
+</tr>
+<tr>
+  <ti>list</ti>
+  <ti>リスト</ti>
+</tr>
+<tr>
+  <ti>liveCD / LiveCD</ti>
+  <ti>LiveCD</ti>
+</tr>
+<tr>
+  <ti>log</ti>
+  <ti>ログ</ti>
+</tr>
+<tr>
+  <ti>logger</ti>
+  <ti>ロガー</ti>
+</tr>
+<tr>
+  <ti>logo</ti>
+  <ti>ロゴ</ti>
+</tr>
+<tr>
+  <ti>low-end</ti>
+  <ti>ローエンド</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>M</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>machine</ti>
+  <ti>マシン</ti>
+</tr>
+<tr>
+  <ti>mail</ti>
+  <ti>メール</ti>
+</tr>
+<tr>
+  <ti>mailer</ti>
+  <ti>メーラ</ti>
+</tr>
+<tr>
+  <ti>mailing-list</ti>
+  <ti>メーリングリスト</ti>
+</tr>
+<tr>
+  <ti>maintainer</ti>
+  <ti>メンテナ</ti>
+</tr>
+<tr>
+  <ti>major releases</ti>
+  <ti>メジャーリリース</ti>
+</tr>
+<tr>
+  <ti>manager</ti>
+  <ti>マネージャ</ti>
+</tr>
+<tr>
+  <ti>manual</ti>
+  <ti>マニュアル</ti>
+</tr>
+<tr>
+  <ti>mask</ti>
+  <ti>マスク</ti>
+</tr>
+<tr>
+  <ti>media</ti>
+  <ti>メディア</ti>
+</tr>
+<tr>
+  <ti>member</ti>
+  <ti>メンバ</ti>
+</tr>
+<tr>
+  <ti>memory</ti>
+  <ti>メモリ</ti>
+</tr>
+<tr>
+  <ti>menu</ti>
+  <ti>メニュー</ti>
+</tr>
+<tr>
+  <ti>merge</ti>
+  <ti>マージ</ti>
+</tr>
+<tr>
+  <ti>message</ti>
+  <ti>メッセージ</ti>
+</tr>
+<tr>
+  <ti>meta</ti>
+  <ti>メタ</ti>
+</tr>
+<tr>
+  <ti>metadata</ti>
+  <ti>メタデータ</ti>
+</tr>
+<tr>
+  <ti>metadata journaling</ti>
+  <ti>メタデータジャーナリング</ti>
+</tr>
+<tr>
+  <ti>mirror</ti>
+  <ti>ミラー</ti>
+</tr>
+<tr>
+  <ti>mixer</ti>
+  <ti>ミキサ</ti>
+</tr>
+<tr>
+  <ti>mobile</ti>
+  <ti>モバイル</ti>
+</tr>
+<tr>
+  <ti>mode</ti>
+  <ti>モード</ti>
+</tr>
+<tr>
+  <ti>modem</ti>
+  <ti>モデム</ti>
+</tr>
+<tr>
+  <ti>module</ti>
+  <ti>モジュール</ti>
+</tr>
+<tr>
+  <ti>monitor</ti>
+  <ti>モニタ</ti>
+</tr>
+<tr>
+  <ti>motherboard</ti>
+  <ti>マザーボード</ti>
+</tr>
+<tr>
+  <ti>mount</ti>
+  <ti>マウント</ti>
+</tr>
+<tr>
+  <ti>mounse</ti>
+  <ti>マウス</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>N</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>nameserver</ti>
+  <ti>ネームサーバ</ti>
+</tr>
+<tr>
+  <ti>network</ti>
+  <ti>ネットワーク</ti>
+</tr>
+<tr>
+  <ti>node</ti>
+  <ti>ノード</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>O</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>on-board</ti>
+  <ti>オンボード</ti>
+</tr>
+<tr>
+  <ti>open source</ti>
+  <ti>オープンソース</ti>
+</tr>
+<tr>
+  <ti>operating system</ti>
+  <ti>オペレーティングシステム</ti>
+</tr>
+<tr>
+  <ti>option</ti>
+  <ti>オプション</ti>
+</tr>
+<tr>
+  <ti>overflow</ti>
+  <ti>オーバーフロー</ti>
+</tr>
+<tr>
+  <ti>owner</ti>
+  <ti>オーナー</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>P</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>package</ti>
+  <ti>パッケージ</ti>
+</tr>
+<tr>
+  <ti>packet</ti>
+  <ti>パケット</ti>
+</tr>
+<tr>
+  <ti>page</ti>
+  <ti>ページ</ti>
+</tr>
+<tr>
+  <ti>partition</ti>
+  <ti>パーティション</ti>
+</tr>
+<tr>
+  <ti>partner</ti>
+  <ti>パートナー</ti>
+</tr>
+<tr>
+  <ti>password</ti>
+  <ti>パスワード</ti>
+</tr>
+<tr>
+  <ti>patch</ti>
+  <ti>パッチ</ti>
+</tr>
+<tr>
+  <ti>path</ti>
+  <ti>パス</ti>
+</tr>
+<tr>
+  <ti>performance</ti>
+  <ti>パフォーマンス</ti>
+</tr>
+<tr>
+  <ti>permission</ti>
+  <ti>パーミッション</ti>
+</tr>
+<tr>
+  <ti>platform</ti>
+  <ti>プラットフォーム</ti>
+</tr>
+<tr>
+  <ti>player</ti>
+  <ti>プレーヤ</ti>
+</tr>
+<tr>
+  <ti>point</ti>
+  <ti>ポイント</ti>
+</tr>
+<tr>
+  <ti>pointer</ti>
+  <ti>ポインタ</ti>
+</tr>
+<tr>
+  <ti>policy</ti>
+  <ti>ポリシー</ti>
+</tr>
+<tr>
+  <ti>portage / Portage</ti>
+  <ti>Portage</ti>
+</tr>
+<tr>
+  <ti>printer</ti>
+  <ti>プリンタ</ti>
+</tr>
+<tr>
+  <ti>process</ti>
+  <ti>プロセス</ti>
+</tr>
+<tr>
+  <ti>processor</ti>
+  <ti>プロセッサ</ti>
+</tr>
+<tr>
+  <ti>professional</ti>
+  <ti>プロフェッショナル</ti>
+</tr>
+<tr>
+  <ti>program</ti>
+  <ti>プログラム</ti>
+</tr>
+<tr>
+  <ti>progress bar</ti>
+  <ti>プログレスバー</ti>
+</tr>
+<tr>
+  <ti>project</ti>
+  <ti>プロジェクト</ti>
+</tr>
+<tr>
+  <ti>prompt</ti>
+  <ti>プロンプト</ti>
+</tr>
+<tr>
+  <ti>proxy</ti>
+  <ti>プロキシ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>Q</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>quota</ti>
+  <ti>クォータ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>R</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>rate</ti>
+  <ti>レート</ti>
+</tr>
+<tr>
+  <ti>reboot</ti>
+  <ti>リブート</ti>
+</tr>
+<tr>
+  <ti>redhat / RedHat</ti>
+  <ti>redhat / RedHat</ti>
+</tr>
+<tr>
+  <ti>refresh</ti>
+  <ti>リフレッシュ</ti>
+</tr>
+<tr>
+  <ti>registry</ti>
+  <ti>レジストリ</ti>
+</tr>
+<tr>
+  <ti>release</ti>
+  <ti>リリース</ti>
+</tr>
+<tr>
+  <ti>remote</ti>
+  <ti>リモート</ti>
+</tr>
+<tr>
+  <ti>request</ti>
+  <ti>リクエスト</ti>
+</tr>
+<tr>
+  <ti>revision</ti>
+  <ti>リビジョン</ti>
+</tr>
+<tr>
+  <ti>robot</ti>
+  <ti>ロボット</ti>
+</tr>
+<tr>
+  <ti>root</ti>
+  <ti>ルート※</ti>
+</tr>
+<tr>
+  <ti>run level</ti>
+  <ti>ランレベル</ti>
+</tr>
+</table>
+<note>※ユーザ名の場合は、root</note>
+</body>
+</section>
+<section>
+<title>S</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>sandbox</ti>
+  <ti>sandbox</ti>
+</tr>
+<tr>
+  <ti>sample</ti>
+  <ti>サンプル</ti>
+</tr>
+<tr>
+  <ti>scheme</ti>
+  <ti>スキーム</ti>
+</tr>
+<tr>
+  <ti>screen</ti>
+  <ti>スクリーン</ti>
+</tr>
+<tr>
+  <ti>script</ti>
+  <ti>スクリプト</ti>
+</tr>
+<tr>
+  <ti>security</ti>
+  <ti>セキュリティ</ti>
+</tr>
+<tr>
+  <ti>serial port</ti>
+  <ti>シリアルポート</ti>
+</tr>
+<tr>
+  <ti>server</ti>
+  <ti>サーバ</ti>
+</tr>
+<tr>
+  <ti>service</ti>
+  <ti>サービス</ti>
+</tr>
+<tr>
+  <ti>setup</ti>
+  <ti>セットアップ</ti>
+</tr>
+<tr>
+  <ti>shell</ti>
+  <ti>シェル</ti>
+</tr>
+<tr>
+  <ti>single-processor</ti>
+  <ti>シングルプロセッサ</ti>
+</tr>
+<tr>
+  <ti>site</ti>
+  <ti>サイト</ti>
+</tr>
+<tr>
+  <ti>size</ti>
+  <ti>サイズ</ti>
+</tr>
+<tr>
+  <ti>skip</ti>
+  <ti>スキップ</ti>
+</tr>
+<tr>
+  <ti>slogan</ti>
+  <ti>スローガン</ti>
+</tr>
+<tr>
+  <ti>slot</ti>
+  <ti>スロット</ti>
+</tr>
+<tr>
+  <ti>snapshot</ti>
+  <ti>スナップショット</ti>
+</tr>
+<tr>
+  <ti>software</ti>
+  <ti>ソフトウェア</ti>
+</tr>
+<tr>
+  <ti>solution</ti>
+  <ti>ソリューション</ti>
+</tr>
+<tr>
+  <ti>sound</ti>
+  <ti>サウンド</ti>
+</tr>
+<tr>
+  <ti>source code</ti>
+  <ti>ソースコード</ti>
+</tr>
+<tr>
+  <ti>stage</ti>
+  <ti>ステージ</ti>
+</tr>
+<tr>
+  <ti>standalone</ti>
+  <ti>スタンドアローン</ti>
+</tr>
+<tr>
+  <ti>start-up</ti>
+  <ti>スタートアップ</ti>
+</tr>
+<tr>
+  <ti>step</ti>
+  <ti>ステップ</ti>
+</tr>
+<tr>
+  <ti>storage</ti>
+  <ti>ストレージ</ti>
+</tr>
+<tr>
+  <ti>stuck</ti>
+  <ti>スタック</ti>
+</tr>
+<tr>
+  <ti>support</ti>
+  <ti>サポート</ti>
+</tr>
+<tr>
+  <ti>swap</ti>
+  <ti>スワップ</ti>
+</tr>
+<tr>
+  <ti>symbolic link</ti>
+  <ti>シンボリックリンク</ti>
+</tr>
+<tr>
+  <ti>system</ti>
+  <ti>システム</ti>
+</tr>
+<tr>
+  <ti>system integration</ti>
+  <ti>システムインテグレーション</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>T</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>table</ti>
+  <ti>テーブル</ti>
+</tr>
+<tr>
+  <ti>team</ti>
+  <ti>チーム</ti>
+</tr>
+<tr>
+  <ti>terminal</ti>
+  <ti>ターミナル</ti>
+</tr>
+<tr>
+  <ti>test</ti>
+  <ti>テスト</ti>
+</tr>
+<tr>
+  <ti>third party</ti>
+  <ti>サードパーティ</ti>
+</tr>
+<tr>
+  <ti>thread</ti>
+  <ti>スレッド</ti>
+</tr>
+<tr>
+  <ti>time zone</ti>
+  <ti>タイムゾーン</ti>
+</tr>
+<tr>
+  <ti>tool</ti>
+  <ti>ツール</ti>
+</tr>
+<tr>
+  <ti>tree</ti>
+  <ti>ツリー</ti>
+</tr>
+<tr>
+  <ti>type</ti>
+  <ti>タイプ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>U</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>unix / Unix</ti>
+  <ti>unix / Unix</ti>
+</tr>
+<tr>
+  <ti>unmerge</ti>
+  <ti>アンマージ</ti>
+</tr>
+<tr>
+  <ti>update</ti>
+  <ti>アップデート</ti>
+</tr>
+<tr>
+  <ti>upgrade</ti>
+  <ti>アップグレード</ti>
+</tr>
+<tr>
+  <ti>upload</ti>
+  <ti>アップロード</ti>
+</tr>
+<tr>
+  <ti>user</ti>
+  <ti>ユーザ</ti>
+</tr>
+<tr>
+  <ti>utility</ti>
+  <ti>ユーティリティ</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>V</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>version</ti>
+  <ti>バージョン</ti>
+</tr>
+<tr>
+  <ti>video</ti>
+  <ti>ビデオ</ti>
+</tr>
+<tr>
+  <ti>virtual</ti>
+  <ti>バーチャル</ti>
+</tr>
+<tr>
+  <ti>volume</ti>
+  <ti>ボリューム</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>W</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>web / Web</ti>
+  <ti>Web</ti>
+</tr>
+<tr>
+  <ti>wheel</ti>
+  <ti>ホイール</ti>
+</tr>
+<tr>
+  <ti>window</ti>
+  <ti>ウィンドウ</ti>
+</tr>
+<tr>
+  <ti>wireless</ti>
+  <ti>ワイヤレス</ti>
+</tr>
+<tr>
+  <ti>wish list</ti>
+  <ti>ウィッシュリスト</ti>
+</tr>
+<tr>
+  <ti>workstation</ti>
+  <ti>ワークステーション</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>X</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>xoops / Xoops</ti>
+  <ti>xoops / Xoops</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>Y</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>Y-Window</ti>
+  <ti>Y-Window</ti>
+</tr>
+</table>
+</body>
+</section>
+<section>
+<title>Z</title>
+<body>
+<table>
+<tr>
+	<th>翻訳前</th>
+	<th>翻訳後</th>
+</tr>
+<tr>
+  <ti>zend / Zend</ti>
+  <ti>zend / Zend</ti>
+</tr>
+</table>
+</body>
+</section>
+</chapter>
+
+</guide>
+

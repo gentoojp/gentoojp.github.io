@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+
+<!-- Enter your name here -->
+<poster>Corey Shields(翻訳者:池田 健吾)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005-06-16</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Gentoo Foundation storeで2005.0リリースのCDを販売しています</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<uri link="http://foundation.gentoo.org">Gentoo Foundation</uri>は、<uri link="http://www.cafepress.com/officialgentoo">Gentoo Linux store</uri>で2005.0リリースのCDを販売しています。
+このCDには、x86版、ppc版、sparc64版、amd64/em64t版があり、各5ドルでGentoo Foundationから直接購入することができます。
+お店の目玉商品はCDですが、Gentooのロゴやメッセージが入った服や、ポスター、ステッカー、マウスパッドといった雑貨も販売しています。
+</p>
+
+</body>
+</news>
+

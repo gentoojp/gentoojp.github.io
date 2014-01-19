@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>GentooJP</poster>
+	<date>21 March 2004</date>
+	<title>GentooJPリニューアル！</title>
+<body>
+<p>
+ご覧のように、このサイトを大幅にリニューアルしました。
+</p>
+
+<p>
+すべての方にとって使いやすいように構成したつもりですが、
+もしこの新しいサイトで迷ってしまったら、
+サイト上部に表示されいている他のサイトへのリンクや、
+サイト左端に表示されている各種ドキュメントやプロジェクトへのリンクを
+チェックしてみてください。
+</p>
+
+<p>
+また、同様に各種GentooJP Webサイトもリニューアルしています。
+<ul>
+<li>GentooJPの<uri link="http://wiki.gentoo.gr.jp/">Wiki</uri></li>
+<li>Gentoo/GentooJP開発者による活動報告、<uri link="http://diary.gentoo.gr.jp/">航海日誌</uri></li>
+</ul>
+</p>
+
+<p>
+今回のリニューアルにあたり<uri link="/jpmain/sponsors.xml">スポンサーの方々</uri>には、多大な協力をして頂きました。この場を借りてお礼申し上げます。
+</p>
+
+<p>
+そして、今回のこのリニューアルを行なったGentooJPのメンバーの皆さま、お疲れさまでした！
+</p>
+
+</body>
+</news>

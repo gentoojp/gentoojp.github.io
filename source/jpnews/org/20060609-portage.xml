@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Chris Gianelloni(翻訳:飴谷　茂寛 と みなさん)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2006-06-09</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Portage 2.1 リリース！</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>Gentoo <uri link="/proj/en/portage/index.xml">Portageチーム</uri>は、Portage 2.1バージョンが完成し、
+テストのためにツリーに追加できたことをアナウンスでき、
+嬉しく思います。</b>
+新機能と主要なバグ修正<uri
+link="http://sources.gentoo.org/viewcvs.py/portage/main/trunk/NEWS?view=markup">リスト</uri>は、とても見応えがあるものです。
+興味がある方は、完全版の修正済みバグリストも入手可能です。
+<uri
+link="http://sources.gentoo.org/viewcvs.py/portage/main/trunk/RELEASE-NOTES?view=markup">リリースノートの完全版</uri>も閲覧できますし、
+この素晴らしい成果を、stable版Portageのユーザへもたらすまでの道のりは、
+<uri
+link="http://sources.gentoo.org/viewcvs.py/portage/main/trunk/RELEASE-NOTES?view=markup">リリースノートの完全版</uri>を読むか、修正された<uri
+link="http://bugs.gentoo.org/show_bug.cgi?id=136198">バグ</uri>の経緯を追うことでわかります。
+</p>
+
+</body>
+</news>
+

@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+        <poster>jforman (翻訳: samantha)</poster>
+        <date>15 Nov 2004</date>
+        <title>Gentoo 2004.3</title>
+<body>
+<p>
+<b>GentooチームがGentoo Linux 2004.3を世界にプレゼント!</b>
+</p>
+<p>
+これは2004年最後のリリースとなりGentoo開発者達の仕事の集大成です。
+このリリースの主な焦点は前回リリースのバグ修正と、より頑丈で使いやすいリリースツールの開発でした。
+2004.3には、amd64, hppa, ppc, sparc, x86そして初対応であるppc64のリリースがあります。
+ia64とs390用のステージに加えて、実験的ではありますがalphaのリリースもあります。
+埋め込みチームが提供しているstageであるarm, mips, ppcとx86は/experimentalの下にあります。
+2004.3の詳細については、<uri link="http://www.gentoo.org/proj/en/releng/release/2004.3/2004.3.xml">リリースページ</uri>を良く読むか、
+<uri link="http://www.gentoo.org/proj/en/releng/release/2004.3/ChangeLog">ChangeLog</uri>を調べるとよいでしょう。
+</p>
+
+
+<p>今回の特徴を数点。</p>
+<ul>
+<li>amd64とppcは使用するコンパイラをgcc 3.4へ変更しました。</li>
+<li>sparcはsparc64メディアのみの提供となります。</li>
+<li>amd64とx86はLiveCD用にシングルカーネルへと変更致しました。</li>
+</ul>
+
+<p>より一貫性のあるリリースとするために各種アーキテクチャチーム同士のコミュニケーションを改善したことは今回の特徴であり、
+Gentooが新しいカスケードプロファイルを使用するように変更するという完成形が含まれています。</p>
+
+
+<p>Gentooリリースエンジニアリングプロジェクトは、全てのGentoo開発者、ならびに過去最高のリリースの作成に携わった多くのテスターに感謝の意を表明し、そして素晴らしいの2005.0ができることを楽しみにしています。</p>
+
+<p>
+新しいリリースは<uri link="http://www.gentoo.org/main/en/mirrors.xml">ミラー</uri>か、私達の<uri link="http://torrents.gentoo.org/">プライマリ</uri>,
+<uri link="http://tracker.netdomination.org/">セカンダリ</uri> BitTorrent経由で取得できます。
+セカンダリサーバは<uri link="http://www.gentoo-ev.org/">Friends of Gentoo e.V.</uri>の提供です。
+</p>
+</body>
+</news>

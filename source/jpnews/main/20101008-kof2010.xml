@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>Kojima</poster>
+	<date>08 Oct 2010</date>
+	<title>関西オープンソース2010に出展します。</title>
+<body>
+
+<p>
+	GnetooJP は11月6日に開催される<uri link="http://k-of.jp/2010/index.html">関西オープンソース2010</uri>に参加します。
+</p>
+
+<p>
+GentooJPの展示内容:
+</p>
+
+<ol>
+	<li>Gentoo/Linuxの紹介</li>
+	<li>Gentoo/FreeBSDの紹介</li>
+	<li>Gentoo/Prefixの紹介</li>
+</ol>
+
+<p>
+	会場へのアクセス方法は、関西オープンソース2010 サイト内の<uri link="http://k-of.jp/2010/access.html">会場までのアクセス方法</uri>をご参照ください。
+</p>
+
+</body>
+</news>

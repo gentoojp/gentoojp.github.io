@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpmain/tips.xml">
+
+<title>Gentoo Linux tips 集</title>
+<author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
+<author title="Editor"><mail link="nabeken@gentoo.gr.jp">TANABE Ken'ichi</mail>
+</author>
+
+<!--Original renano -wsion: 1.0-->
+
+<abstract>
+	このガイドは、GentooJP の Wiki で出た tips を集めて編集したものです。
+</abstract>
+
+<version>1.1.4</version>
+
+<!--作成年月日-->
+<date>7 May 2004</date>
+
+<chapter>
+<title>この tips 集について</title>
+
+	<section>
+	<title>あなたの tips も</title>
+	
+		<body>
+
+			<p>
+			この tips 集の元である
+			 <uri link="http://wiki.gentoo.gr.jp/">Wiki(http://wiki.gentoo.gr.jp/)</uri> 
+			 は誰でも編集が可能です。あなたも追加してみませんか？いつでも待ってます！
+			</p>
+	
+		</body>
+		
+	</section>
+
+	<section>
+	<title>まとめるにあたって</title>
+
+		<body>
+			<p>
+			いくつかの記事には、具体例などを追加させてもらいました。さらに、 tips をいくつかのグループに分けさせてもらいました。
+			一番、使われているであろう x86 で説明しています。それ以外の人は適宜読み替えてください。
+			</p>
+		</body>
+	
+	</section>
+</chapter>
+
+<chapter>
+<title>Portage 系 tips</title>
+	<section>
+	<title>emerge で何が行なわれたか (thanks,真藤さん 中野さん)</title>
+		<body>
+
+			<p>
+			<c>emerge</c> のログはすべて <path>/var/log/emerge.log</path> に出力されるようになっています。
+			よって、そのファイルを見ることで何が行われたかがわかります。
+			</p>
+
+			<pre>
+# <i>less /var/log/emerge.log</i>
+
+1051319292: Started emerge on: Apr 26, 2003 01:08:12
+1051319292:  *** emerge  sync
+1051319292:  === rsync
+1051320882: Started emerge on: Apr 26, 2003 01:34:42
+1051320882:  *** emerge  >=sys-apps/portage-2.0.25
+1051320882:  >>> emerge (1 of 1) sys-apps/portage-2.0.47-r10 to /
+1051321008: Started emerge on: Apr 26, 2003 01:36:48
+1051321008:  *** emerge  >=sys-apps/portage-2.0.25
+1051321008:  >>> emerge (1 of 1) sys-apps/portage-2.0.47-r10 to /
+1051321035:  ::: completed emerge (1 of 1) sys-apps/portage-2.0.47-r10 to /
+			</pre>
+			<p>
+			以下の設定を行なうと <c>emerge</c> 毎の詳しいログが記録されます。
+			</p>
+			<pre>
+# <i>nano -w /etc/make.conf</i>
+PORT_LOGDIR=/var/log/portage
+
+# <i>mkdir /var/log/portage</i>
+
+<codenote>Portage を emerge すると</codenote>
+# <i>emerge portage</i>
+# <i>less /var/log/portage/xxxx-portage-2.0.49-r18.log</i>
+setup
+unpack
+>>> Unpacking source...
+>>> Unpacking portage-2.0.49-r18.tar.bz2 to /var/tmp/portage/portage-2.0.49-r18/work
+>>> Source unpacked.
+compile
+./create-localdecls
+Checking truncate argument type... off_t
+Checking libc version... libc.so.6
+Checking glibc subversion... 
+gcc -march=i386 -O1 -pipe -Wall -c -D_GNU_SOURCE -DPIC -fPIC -D_REENTRANT libsandbox.c
+gcc -march=i386 -O1 -pipe -Wall -c -D_GNU_SOURCE -DPIC -fPIC -D_REENTRANT sandbox_futils.c
+gcc libsandbox.o sandbox_futils.o -shared -fPIC -ldl -lc -o libsandbox.so -nostdlib -lgcc
+gcc -march=i386 -O1 -pipe -Wall -c sandbox.c
+gcc sandbox.o sandbox_futils.o getcwd.c -ldl -lc -o sandbox
+install
+
+>>> Install portage-2.0.49-r18 into /var/tmp/portage/portage-2.0.49-r18/image/ category sys-apps
+running install
+running build
+running build_ext
+building 'missingos' extension
+creating build
+creating build/temp.linux-i686-2.2
+
+<codenote>以下省略</codenote>
+			</pre>
+		</body>
+	</section>
+
+	<section>
+	<title>ACCEPT_KEYWORDS (thanks,篠原さん)</title>
+		<body>
+			<p>Portage のデフォルト設定は Gentoo Linux の開発者達が stable と判断したパッケージのみをインストールするように
+			セットされています。「最新バージョンがリリースされて ebuild も用意されているのに、インストールできない」という
+			経験はありませんか？実は、その最新バージョンが unstable と判断されたために自動ではインストールされないようにな
+			っているのです。これを期に unstable 街道まっしぐらでも構わないですが:-)、一時的に設定を変更することもできます。
+			</p>
+
+			<pre caption="unstable パッケージを使う">
+<codenote>unstable 街道まっしぐら向け</codenote>
+# <i>nano -w /etc/make.conf</i>
+以下のように修正してください。
+
+ACCEPT_KEYWORDS="~x86"
+
+<codenote>一時的に unstable なパッケージをインストールする</codenote>
+bash を使ってる人 は /root/.bashrc に以下を追加してください。
+
+# <i>nano -w /root/.bashrc</i>
+# <i>alias ak='env ACCEPT_KEYWORDS=~x86'</i>
+
+<codenote>セットすると</codenote>
+本来なら、
+# <i> ACCEPT_KEYWORDS="~x86" emerge -p hogehoge</i>
+と、いう長いコマンドを
+# <i>ak emerge -p hogehoge</i>
+と、短縮することができます。応用として
+# <i>ak ALSA_CARDS="usb-audio" emerge alsa-driver</i>
+と、 <i>ak</i> と <i>emerge</i> の間にいくつでも入れることができます。
+			</pre>
+
+			<p>
+			Portage について、さらに知りたい場合は
+			<uri link="http://www.gentoo.org/doc/ja/portage-user.xml">Portageユーザーガイド</uri> 
+			を参照してください。
+			</p>
+
+		</body>
+	</section>
+
+	<section>
+	<title>qpkg and etcat</title>
+		<body>
+			<p>
+			「<c>/bin/ps</c> ってどのパッケージに入ってたっけ」などと思ったことはありませんか？そのような時には
+			<c>qpkg</c> か <c>etcat</c> を使うと幸せになれます。
+			</p>
+
+			<pre>
+<codenote>qpkg の場合</codenote>
+# <i>qpkg -f /bin/ps</i>
+sys-apps/procps *
+
+<codenote>etcat の場合(こちらの方がすこし速いです)</codenote>
+# <i>etcat -b /bin/ps</i>
+Searching for /bin/ps in * ...
+sys-apps/procps-3.1.9
+			</pre>
+			<impo><c>etcat</c> は root で実行するか、 portage グループに属している必要があります。</impo>
+
+		</body>
+	</section>
+
+	<section>
+	<title>emerge 中でも快適に (thanks,真藤さん)</title>
+		<body>
+			<p>
+			emerge 中、つまりコンパイル中は CPU パワーを取られてしまい、他のアプリケーションの動作に支障がでる
+			場合があります。emerge の nice 値を変更することで優先順位を下げることができます。これにより、多少なりとも
+			負荷を下げることができます。
+			</p>
+
+			<pre>
+<codenote>emerge 中の場合</codenote>
+# <i>ps axo pgid,command | grep emerge</i>
+26963 python2.2 /usr/bin/emerge -u world
+いちばん左の数字が PGID です。
+# <i>renice +5 -g PGID</i>
++19 が一番優先順位が低い。-20 が一番優先されるが、順位を上げれるのは root のみ。
+
+<codenote>一時的に nice 値を下げる場合</codenote>
+# <i>PORTAGE_NICENESS=5 emerge hogehoge</i>
+
+<codenote>これからずっと emerge の nice 値を下げる場合</codenote>
+# <i>nano -w /etc/make.conf</i>
+
+<codenote>以下を追加してください。</codenote>
+PORTAGE_NICENESS=5
+			</pre>
+		</body>
+	</section>
+
+	<section>
+		<title>world のコメントアウト文字は？ (thanks,真藤さん, 中野さん)</title>
+		<body>
+			<p><path>/var/cache/edb/world</path> のコメントアウト文字は <e>#</e> です。</p>
+		</body>
+	</section>
+
+	<section>
+	<title>package.mask and package.unmask</title>
+		<body>
+			<p>
+			Gentoo Linux では、最近 <e>Apache2</e> , <e>Mysql4</e> が unstable から stable になりました。
+			この影響により、 Apache1 系列で運用している人が <c>emerge -u world</c> とすると Apache2 がアップグレードの対象に
+			なりました。アップグレード対象から外すには <path>/etc/portage/package.mask</path> を編集してください。
+			</p>
+			<warn>/etc/portage/profile/package.mask から /etc/portage/package.mask に変更されました</warn>
+
+			<pre caption="package.mask and package.unmask">
+<codenote>Apache2 と Mysql4 を mask します。これにより、 emerge -u world で Apache2 Mysql4 はアップグレードの対象から外れます。</codenote>
+# <c>mkdir /etc/portage</c>
+# <c>cd /etc/portage</c>
+# <c>nano -w package.mask</c>
+>=net-www/apache-2*
+>=dev-db/mysql-4*
+
+<codenote>/usr/portage/profile/package.mask にあるパッケージの mask を外す</codenote>
+# <c>cd /etc/portage</c>
+# <c>nano -w package.unmask</c>
+
+として、対象のパッケージを書きます。
+			</pre>
+			<p><path>/usr/portage/profile/package.mask</path>などに追加する方法では、<c>emerge sync</c>の度に上書きされてしまいます。</p>
+		</body>
+
+			</section>
+	
+
+	<section>
+	<title>回線に優しくあれ (thanks,stingerさん)</title>
+		<body>
+			<p>
+			portage では <path>/usr/portage/distfiles/</path> にないものはインターネット上からダウンロードしようとします。
+			会社や学校など、共有の回線を使用している時は、目立たないよう、こっそりとダウンロードしたいですよね。wget を使っ
+			ているので簡単にダウンロード時の帯域を制限することができます。</p>
+
+			<pre caption="wget で帯域制限を掛ける">
+# <i>nano -w /etc/make.conf</i>
+<codenote>以下を追加してください。ほとんどの人はコメントアウトをはずすだけです</codenote>
+
+FETCHCOMMAND="/usr/bin/wget -t 5 --passive-ftp --limit-rate=200k \${URI} -P　\${DISTDIR}"
+
+200k は各自の環境に合せてください。
+			</pre>
+		</body>
+	</section>
+
+	<section>
+	<title>emerge sync の rsync 先を日本のサーバ類に指定する。(thanks,桜本さん) </title>
+		<body>
+			<p>
+			Gentoo Project の rsync サーバーは各地域ごとにエイリアスが設定されています。
+			日本国内の人は極力 <b>rsync.jp.gentoo.org</b> を使うようにしてください。
+			</p>
+			<pre caption="各地域ごとのエイリアス一覧">
+rsync.at.gentoo.org
+rsync.au.gentoo.org
+rsync.be.gentoo.org
+rsync.ca.gentoo.org
+rsync.de.gentoo.org
+rsync.es.gentoo.org
+rsync.fi.gentoo.org
+rsync.fr.gentoo.org
+rsync.gr.gentoo.org
+rsync.hu.gentoo.org
+rsync.is.gentoo.org
+rsync.it.gentoo.org
+<b>rsync.jp.gentoo.org</b> 日本国内には現在5台以上のサーバーがあります。
+rsync.kr.gentoo.org
+rsync.kw.gentoo.org
+rsync.nl.gentoo.org
+rsync.no.gentoo.org
+rsync.ru.gentoo.org
+rsync.se.gentoo.org
+rsync.sg.gentoo.org
+rsync.sk.gentoo.org
+rsync.uk.gentoo.org
+rsync.us.gentoo.org
+rsync.ve.gentoo.org
+
+# <i>nano -w /etc/make.conf</i>
+SYNC="rsync://rsync.jp.gentoo.org/gentoo-portage"
+			</pre>
+		</body>
+	</section>
+
+	<section>
+	<title>コンパイルに要した時間を調べる</title>
+		<body>
+			<p>Portage にある app-portage/splat を使うと調べることができます。</p>
+			<pre>
+<codenote> splat -f emerge.logのパス 調べたいパッケージ名</codenote>
+# splat -f /var/log/emerge.log glibc
+
+ * sys-libs/glibc-2.3.2-r9
+
+	Emerged at: 金 11月 21 04:41:00 2003
+	Build time: 1 hour, 54 minutes, and 34 seconds
+
+	Emerged at: 土 11月 22 10:32:44 2003
+	Build time: 1 hour, 31 minutes
+
+ * sys-libs/glibc-2.3.3_pre20031212
+
+	Emerged at: 金 12月 26 21:09:15 2003
+	Build time: 1 hour, 58 minutes, and 14 seconds
+
+ * sys-libs/glibc-2.3.3_pre20031222
+
+	Emerged at: 土 12月 27 23:14:32 2003
+	Build time: 2 hours, 11 minutes, and 13 seconds
+
+	Emerged at: 日 12月 28 06:18:43 2003
+	Build time: 1 hour, 42 minutes, and 59 seconds
+			</pre>
+		</body>
+	</section>
+</chapter>
+
+<chapter>
+<title>Gentoo Linux 全般 tips</title>
+	
+	<section>
+	<title>うちの Gentoo は何歳かしら (thanks,真藤さん)</title>
+		<body>
+			<p>
+			ふと思う。「Gentoo をインストールしたのはいつだろう」と。そんな時は;
+			</p>
+
+			<ul>
+				<li>/etc/issue, /etc/motd の作成日</li>
+				<li>"ls -al /" の結果</li>
+				<li>/var/log/emerge.logの最初(stage3でのインストールの場合)</li>
+				<li>/etc/gentoo-release</li>
+				<li>/etc/make.conf.build</li>
+				<li>/etc/runlevels/</li>
+				<li>"ls -ltd /var/db/pkg/*/* | tail"</li>
+				<li>/lost+found </li>
+			</ul>
+
+			<p>
+			これらのファイル/ディレクトリで一番古いものが「インストールした日」になるようです。
+			</p>
+			
+			<pre>
+# <i>ls -al /</i>
+合計 11036
+drwxr-xr-x   16 root     root         4096 2003-07-17 01:11 .
+drwxr-xr-x   16 root     root         4096 2003-07-17 01:11 ..
+drwxr-xr-x    2 root     root         4096 2003-07-14 02:59 bin
+drwxr-xr-x    3 root     root           61 2003-06-27 17:45 boot
+drwxr-xr-x    1 root     root            0 1970-01-01 09:00 dev
+drwxr-xr-x   63 root     root         4096 2003-07-17 01:11 etc
+drwxr-xr-x    7 root     root          110 2003-07-05 17:31 home
+drwxr-xr-x    8 root     root         4096 2003-07-06 12:30 lib
+drwxr-xr-x    5 root     root           45 2003-05-13 20:19 mnt
+drwxr-xr-x    4 root     root           70 2003-05-30 10:08 opt
+dr-xr-xr-x   86 root     root            0 2003-07-16 04:23 proc
+drwx------    8 root     root         4096 2003-07-15 01:21 root
+drwxr-xr-x    2 root     root         4096 2003-07-14 02:59 sbin
+<i>-rw-r--r--    1 root     root     11253769 2003-04-26 10:06 stage1-x86-1.4_rc4.tar.bz2</i>
+drwxrwxrwt   11 root     root         4096 2003-07-17 01:13 tmp
+drwxr-xr-x   15 root     root         4096 2003-06-27 16:20 usr
+drwxr-xr-x   12 root     root          137 2003-05-30 15:19 var
+
+<codenote>2003-04-26 が一番古かったようです</codenote>
+			</pre>
+		</body>
+	</section>
+
+	<section>
+	<title>Gentoo Linux なマシンを複数台運用する時のアイデア (thanks,Fuktommy さん)</title>
+		<body>
+			<p>Gentoo なマシンが2台以上の人はぜひこのアイデアを実践してください！資源は限られています。</p>
+			<p><path>/usr/portage</path> を NFS で共有しましょう。これは非常に効果があります。</p>
+
+			<pre caption="/usr/portage を NFS で共有する">
+kernel option で NFS サーバーが有効になっているか確認してください。もし、有効になっていない場合は kernel を再構築する必要があります。
+<codenote>kernel で NFS を有効にする (説明は linux-2.4.21 に沿っています)</codenote>
+# <i>cd /usr/src/linux</i>
+# <i>make menuconfig</i>
+
+File Systems ->
+	Network File Systems ->
+		NFS Server Support (module か 組み込み)
+			Pronano -wde NFSv3 Server Support (有効にする)
+
+# <i>make bzImage</i>
+# <i>make modules modules_install</i>
+
+再構築した kernel で再起動してください。
+
+# <i>emerge nfs-utils</i>
+# <i>nano -w /etc/exports</i>
+<codenote>192.168.1.0/255.255.255.0 は共有を許可するネットワークです。各自の環境に合せてください。</codenote>
+
+/usr/portage 192.168.1.0/255.255.255.0(rw,sync,no_root_squash)
+
+# <i>/sbin/rc-update add nfs default</i>
+# <i>/etc/init.d/nfs start</i>
+
+<codenote>クライアントから /usr/portage を NFS で mount します</codenote>
+# <i>mount サーバーのIPアドレス:/usr/portage /usr/portage</i>
+# <i>df -hT</i>
+
+Filesystem    タイプ  サイズ  使用  残り 使用% マウント位置
+/dev/hda2      xfs    9.4G  4.6G  4.9G  49% /
+/dev/hda4      xfs     65G   40G   25G  62% /home
+none         tmpfs    125M     0  125M   0% /dev/shm
+yuki.tknetworks.org:/usr/portage
+               nfs    9.6G  1.6G  8.1G  16% /usr/portage
+			</pre>
+			<p>ローカル用なので更新は<e>一日に一度</e>で十分です。cron で 0:00 に rsync.jp.gentoo.org と
+			同期するようにします。
+			</p>
+		<pre caption="cron の設定">
+# <i>cd /etc/cron.daily/</i>
+# <i>nano -w rsync</i>
+
+#!/bin/sh
+emerge sync
+</pre>
+			<p>これにより <path>/usr/portage</path> 以下が共有できます。distfiles も Portage-Tree もです。
+			いちいち、クライアント側で <c>emerge sync</c> をする必要がなくなります。スバラシイ！</p>
+
+
+		<p>マシンの構成が同じ場合はバイナリパッケージを作って、2台目にはそのパッケージをインストールことも可能です。</p>
+		<warn>CPU や gcc の最適化フラグに注意してください。これらが違うと動かない場合があります。</warn>
+
+		<pre caption="--buildpkg --usepkg">
+# <i>emerge hogehoge --buildpkg</i>
+<codenote>常に --buildpkg したい場合は /etc/make.conf の FEATURES に buildpkg を追加してください。</codenote>
+
+すると、 /usr/portage/packages/All に hogehoge,tbz2 というパッケージが出来ています。あとは、インストールしたいマシンに持っていき
+
+# <i>emerge hogehoge.tbz2</i>
+
+とすれば、簡単にインストールできます。
+		</pre>
+
+		<p>最後に。distcc というソフトを使うと分散コンパイルをすることができます。一度、使うと便利すぎて手放せなくなりますよ。</p>
+
+		<pre caption="emerge で distcc を使う">
+<codenote>分散する側、分散される側、共に distcc を emerge する必要があります。</codenote>
+# <i>emerge distcc</i>
+
+<codenote>分散する側の設定</codenote>
+# <i>/sbin/rc-update add distccd default</i>
+# <i>nano -w /etc/conf.d/distccd</i>
+DISTCCD_OPTS="-a 127.0.0.1"
+
+# <i>nano -w /etc/make.conf</i>
+FEATURES に distcc を 追加してください。
+DISTCC_HOSTS="分散するマシンのIPアドレス 127.0.0.1"
+スペースで区切ることで何台でも追加できます。
+
+MAKEOPTS="-j3"
+数値は分散する台数+1 くらい。
+
+<codenote>分散される側の設定</codenote>
+# <i>/sbin/rc-update add distccd</i>
+# <i>nano -w /etc/conf.d/distccd</i>
+DISTCCD_OPTS="-a 192.168.1.0/24"
+分散コンパイルを受けつけるネットワークを指定します。
+		</pre>
+
+		<p>あとは、普通に <c>emerge hogehoge</c> とすると分散コンパイルが行なわれます。</p>
+		</body>
+	</section>
+
+	<section>
+	<title>kdeでたまにkinput2 -cannaが数秒フリーズする</title>
+		<body>
+			<p>解決するには <path>/etc/X11/app-defaults/Kinput2</path> を編集します。 </p>
+			<pre>
+# <i>nano -w /etc/X11/app-defaults/Kinput2</i>
+!*OverTheSpotConversion.UseOverrideShellForMode: True 
+
+*OverTheSpotConversion.UseOverrideShellForMode: True
+
+<codenote>頭の!だけを消して Kinput2 を再起動させます。</codenote>
+			</pre>
+		</body>
+	</section> 
+
+	<section>
+	<title>HDD の動作が遅く感じる</title>
+		<body>
+			<p>HDD 自体は DMA モードで認識しているのに有効になってないことがあります。</p>
+			<pre>
+# <i>rc-update add hdparm default</i>
+			</pre>
+			<p>以上で起動時に有効にしてくれます。</p>
+		</body>
+	</section>
+
+
+
+</chapter>
+
+<chapter>
+<title>Gentoo Linux インストール tips</title>
+
+	<section>
+	<title>LiveCDとほぼ同じカーネル/モジュールを作る (thanks,yamakuraさん)</title>
+		<body>
+
+			<p>
+			1.4_rc4のLiveCDに入っているカーネルのconfigは、/proc/configとして参照できます。これを利用するとブートできる
+			であろうカーネルを簡単に作ることができます。
+			</p>
+
+			<pre>
+# <i>cd /usr/src/linux</i>
+# <i>cat /proc/config > .config</i>
+# <i>make oldconfig</i>
+			</pre>
+		</body>
+	</section>
+
+	<section>
+	<title>ドキュメントを見ながら...</title>
+		<body>
+			<p>
+			CD 一枚で起動できて、 KDE などが利用できる Linux ディストリビューションがあります。これらを利用すると
+			ブラウザで <uri>http://www.gentoo.org/</uri> のドキュメントを見ながらインストールを行なうことができます。
+			CD からブートできるもので有名なものは</p>
+
+			<ul>
+				<li><uri link="http://www.knopper.net/knoppix/">Knoppix</uri> / <uri link="http://unit.aist.go.jp/it/knoppix/">日本語版 knoppix</uri></li>
+				<li><uri link="http://www.demolinux.org/">Demo Linux</uri> / <uri link="http://unit.aist.go.jp/it/demolinux/index.html">日本語版 Demo Linux</uri></li>
+			</ul>
+
+			<p>
+			などがあります。非常に便利なのでお試しあれ。
+			</p>
+			
+		</body>
+	</section>
+</chapter>
+</guide>

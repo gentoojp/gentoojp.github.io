@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2004年10月25日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2004年10月25日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+今週の<uri link="/news/ja/gwn/20041101-newsletter.xml">Gentoo Weekly Newsletter</uri>は、<b>先週ドイツで開催されたLinux EXPOのレポート、バグデイのお知らせ、Java開発者の緊急募集などをお届けします。</b>このほかにも、gentoo-userとgentoo-devのサマリや、メディアで取り上げられたGentoo、新しくなったPortageの裏技もどうぞ。</p>
+
+</body>
+</news>

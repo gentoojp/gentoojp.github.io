@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="nvidia">
+	<poster>drobbins(翻訳:Takashi Ota.)</poster>
+	<date>11 April 2003</date>
+	<title>New UT2003 GameCD</title>
+<body>
+
+<p>
+<b>新しい Unreal Tournament 2003 GameCD が発表され、</b>僕らの<uri link="/main/en/mirrors.xml">ミラーサーバー</uri>と同様に<b><uri link="ftp://mirror.iawnet.sandia.gov/pub/gentoo/experimental/x86/gamecd/gamecd-ut2003-20030405.iso">ここ</uri>からも利用できます。</b>
+-- あなたのお近くのものを選んで下さい。</p>
+
+<p>最新のインストール CD は最適化された gaming kernel (<b>かなり</b> ゲームプレーが快適) と GeForce FXをサポートした最新のNVIDIAドライバー(1.0.4349)、予備のbootsplashサポート、ハードウェア(サウンド/入力装置/ネットワーク)の全自動検出、数え切れない数々の改善と最新のut2003-demoビルドを含んでいます。このGameCDでは ut-2003-demoを起動させるためにモダンなNVIDIAグラフィックカードを必要とします。楽しんで!</p>
+
+<p><b>もしモダンなNVIDIAグラフィックカードを持ってて、いまあるGentoo Linuxシステム上でut2003-demoをプレイしたいと思ったら</b>、単純に<c>emerge ut2003-demo</c>とタイプして、その後<c>ut2003-demo</c>とタイプすればゲームを始められます。
+すばらしいゲームパフォーマンスと応答性のためには<c>gaming-sources</c>カーネルをお奨めします。</p>
+
+</body>
+</news>

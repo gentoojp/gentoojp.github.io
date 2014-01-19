@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?> 
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/gwn-history.xml">
+
+<title>Gentoo Weekly Newsletter ヒストリー</title>
+
+<author title="Editor"><mail link="docs@gentoo.gr.jp">GentooJP</mail>
+</author>
+
+<abstract>
+GWNの内容を項目毎にまとめています。
+</abstract>
+
+<version>1.2</version>
+<date>19 July 2003</date>
+
+
+<chapter>
+<title>ニュース</title>
+<section>
+<title>各種プロジェクト・事業</title>
+<body>
+<ul>
+	<li>Gentoo Weekly Newsletter 発刊<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap1">(2002.12.23)</uri></li>
+	<li>Gentoo Stable Project の発表<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap2_sect2">(2002.12.23)</uri>::~archがこのころできました。</li>
+	<li>Gentoo Linuxのためのアイコン<uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml#doc_chap1_sect4">(2003.02.10)</uri></li>
+	<li>NeTraverseがGentoo Linuxのパートナーに<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap1_sect2">(2003.02.24)</uri></li>
+	<li>Gentoo Linux、「hardened Gentoo（Gentoo強化)」活動開始<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap1_sect5">(2003.03.17)</uri></li>
+	<li>Gentooストアの新しいアイテム<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap1_sect6">(2003.03.17)</uri></li>
+	<li>Gentoo/PPCチームの再編成<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap1_sect3">(2003.04.01)</uri></li>
+	<li>メーリングリストの変更<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap1_sect3">(2003.04.01)</uri></li>
+	<li>Gentoo LinuxがHPPAプラットフォーム上で利用可能に<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap1_sect5">(2003.04.21)</uri></li>
+	<li>新しいメーリングリストが利用できます<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap1_sect4">(2003.05.05)</uri></li>
+	<li>Opteronプラットフォーム上にGentoo Linuxを動作させるためにSuper Computer, Incとパートナーになります<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap1_sect3">(2003.05.12)</uri></li>
+	<li>Gentoo Games, Incからの発表<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap1_sect2">(2003.05.19)</uri></li>
+	<li>CFLAGS/cpuinfo コレクションプロジェクト<uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap1_sect3">(2003.06.02)</uri></li>
+	<li>Gentoo/MacOS Xのアナウンス<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap1_sect2">(2003.06.09)</uri></li>
+	<li>Hardened GentooがSELinuxをデモ<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap1_sect3">(2003.06.09)</uri></li>
+	<li>Meta Packageプロジェクト<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap1_sect3">(2003.06.23)</uri></li>
+	<li>Gentoo Linuxが新しい管理体制を発表<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap1_sect2">(2003.06.30)</uri></li>
+	<li>Gentoo Linuxのフォークを発表<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap1_sect3">(2003.06.30)</uri></li>
+	<li>Cygwinを通じてWindowsにやってくるGentoo<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap1_sect3">(2003.07.07)</uri></li>
+	<li>herdsプロジェクトでの画期的なシステム<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap1_sect4">(2003.07.07)</uri></li>
+
+</ul>
+</body>
+</section>
+
+<section>
+<title>展示会出展・講演会</title>
+<body>
+<ul>
+	<li>Gentoo１月のLinuxWorld Expoに出展<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap1_sect2">(2002.12.30)</uri></li>
+	<li>Gentoo PPCの開発者がMITに登場<uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml#doc_chap1_sect3">(2003.01.20)</uri></li>
+	<li>Gentoo LinuxがLinuxWorld Expoに登場<uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml">(2003.01.27)</uri></li>
+	<li>FOSDEMでのGentoo Linux<uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml">(2003.02.10)</uri></li>
+	<li>FOSDEMでの写真<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap1_sect4">(2003.02.24)</uri></li>
+	<li>Game Developers ConferenceでのGentoo Linux<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap1_sect2">(2003.03.03)</uri></li>
+	<li>Game Developers Conferenceからのたより<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap1_sect2">(2003.03.17)</uri></li>
+	<li>Gentoo LinuxはE3で重要な声明を発表します<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap1_sect2">(2003.05.12)</uri></li>
+	<li>Gentoo LinuxはE3に出席しました<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap1_sect3">(2003.05.19)</uri></li>
+	<li>LinuxTagでのGentoo Linux<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap1_sect2">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>ドキュメント情報</title>
+<body>
+<ul>
+	<li>Prelinking Guide<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap1_sect3">(2003.01.06)</uri></li>
+</ul>
+</body>
+</section>
+
+
+<section>
+<title>Gentoo Linux の仕様</title>
+<body>
+<ul>
+	<li>rsyncの置き換えにCVSupを思案中<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap2_sect4">(2002.12.23)</uri>::どうなったんでしょうね。</li>
+	<li>CVS Ebuildsのポリシー<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap2_sect5">(2002.12.23)</uri>::Developmentポリシーに反映。</li>
+	<li>新しいカーネル開発戦略<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap1_sect5">(2002.12.30)</uri></li>
+	<li>Gentoo Linuxの将来に向けた改善進行中です<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap1_sect5">(2003.01.06)</uri></li>
+	<li>GLSAがPortageに統合予定<uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml#doc_chap1_sect3">(2003.01.27)</uri></li>
+	<li>Gentoo LinuxでのCFLAGSGのサポート方針変更<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap1_sect3">(2003.03.24)</uri></li>
+	<li>Portageは新しくなります。より安全なフォーマットに<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap1_sect3">(2003.04.07)</uri></li>
+	<li>Portageセキュリティーの新機能について<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap1_sect2">(2003.04.21)</uri></li>
+	<li>ebuildの管理方法の変更を提案<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap1_sect2">(2003.04.28)</uri></li>
+	<li>Gentoo Linux 1.4の次期リリースの機能<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap1_sect2">(2003.05.05)</uri></li>
+	<li>ユーザのマシンにアクセスすることに関する方針変更の議論<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap1_sect5">(2003.05.05)</uri></li>
+	<li>Gentoo Linux Enhancement Proposal案<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap1_sect2">(2003.06.16)</uri></li>
+	<li>Gentoo Linux 1.4はどこ？<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap1_sect2">(2003.06.23)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>Gentoo Linux ハードウェアリソース</title>
+<body>
+<ul>
+	<li>ミラーの速度低下<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap1_sect3">(2003.02.03)</uri></li>
+	<li>Gentooサーバの移転<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap1_sect4">(2003.02.03)</uri></li>
+	<li>新しいrsyncミラー<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap1_sect3">(2003.02.17)</uri></li>
+	<li>rsync.gentoo.orgがGentoo Linuxの成長の足手まとい<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap1_sect4">(2003.03.17)</uri></li>
+	<li>Gentoo Linuxは新たにソースミラー及び配信スペースを探しています<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap1_sect4">(2003.04.21)</uri></li>
+	<li>Rsyncの利用に関するガイドライン<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap1_sect3">(2003.05.05)</uri></li>
+	<li>オレゴン州のミラーでthenハードウェア故障<uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap1_sect2">(2003.05.26)</uri></li>
+	<li>二つの新しいソースミラーを北アメリカに設置<uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap1_sect2">(2003.06.02)</uri></li>
+	<li>近々行われる設備の変更<uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap1_sect4">(2003.06.02)</uri></li>
+	<li>bugs.gentoo.orgが引越し<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap1_sect3">(2003.06.16)</uri></li>
+	<li>北アメリカに二つの新しいソースミラー<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap1_sect4">(2003.06.23)</uri></li>
+	<li>Gentooにおけるインフラ整備<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap1_sect5">(2003.07.07)</uri></li>
+	<li>ViewCVSが復活 <uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap1_sect3">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>LiveCDs と リリース情報</title>
+<body>
+<ul>
+	<li>Gentoo Linux 1.4 リリーススケジュールと仕様の更新<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap1_sect3">(2002.12.30)</uri></li>
+	<li>12/31にGentoo Linux 1.4_rc2をリリース<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap1_sect4">(2002.12.30)</uri>::GRP登場！</li>
+	<li>新しい正式リリーススケジュールのプロセス<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap1_sect6">(2002.12.30)</uri></li>
+	<li>Gentoo Linuxの次のリリースは1.4_rc3になる予定 <uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml#doc_chap1_sect2">(2003.01.20)</uri></li>
+	<li>Gentoo Linux 1.4新任のリリースマネージャー<uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml#doc_chap1_sect3">(2003.02.10)</uri></li>
+	<li>Gentoo Linux 1.4の更新<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap1_sect3">(2003.02.24)</uri></li>
+	<li>Gentoo Linux 1.4_rc3リリース<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap1_sect4">(2003.03.03)</uri></li>
+	<li>Gentoo Linux 1.4_rc4リリーススケジュールの発表<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap1_sect4">(2003.04.01)</uri></li>
+	<li>Gentoo Linux 1.4_rc4リリース<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap1_sect2">(2003.04.14)</uri></li>
+	<li>Unreal Tournament 2003 Game CDの新版<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap1_sect3">(2003.04.14)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>募集!</title>
+<body>
+<ul>
+	<li>新しい年が始まりました。Gentoo Linuxに寄付をお願い<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap1_sect2">(2003.01.06)</uri></li>
+	<li>GentooのZetaGridフィーバーに追いつけ！<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap1_sect2">(2003.02.17)</uri></li>
+	<li>Gentoo Linuxプロジェクト開発者の募集<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap1_sect3">(2003.03.03)</uri></li>
+	<li>私たちの開発者への呼びかけに対する驚くべき反応<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap1_sect3">(2003.03.10)</uri></li>
+	<li>GWN寄稿者の募集<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap1_sect3">(2003.03.17)</uri></li>
+	<li>Gentoo開発者になるためには<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap1_sect2">(2003.03.24)</uri></li>
+	<li>Gentoo Linuxプロジェクトからの公開募集<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap1_sect3">(2003.04.21)</uri></li>
+	<li>Gentoo LinuxはGNOMEチームで活動していただける開発者募集<uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap1_sect3">(2003.05.26)</uri></li>
+	<li>Gentoo Linuxプロジェクト開発者の募集<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap1_sect4">(2003.06.09)</uri></li>
+	<li>GWNがポルトトガル語(ブラジル)版の翻訳者を募集<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap1_sect5">(2003.06.23)</uri></li>
+	<li>GWNが翻訳者を募集<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap1_sect4">(2003.06.30)</uri></li>
+	<li>GWN寄稿者募集<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap1_sect7">(2003.07.07)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>ebuild関連</title>
+<body>
+<p></p>
+<ul>
+	<li>Portageの混乱状態がコミュニティにも波及<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap2_sect3">(2002.12.23)</uri>::2.0.45-r6は凄かったですね。</li>
+	<li>Perl 5.8 と libperl <uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap1_sect4">(2003.01.06)</uri></li>
+	<li>Gentoo Linux 1.4_rc3/finalに向けPortage Treeがフリーズ <uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap1_sect2">(2003.01.13)</uri></li>
+	<li>gcc Changes to Gentoo Linux<uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap1_sect3">(2003.01.13)</uri></li>
+	<li>virtual/bootloaderとvirtual/editorでGentooをもっと自分好みに<uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap1_sect4">(2003.01.13)</uri></li>
+	<li>KDE 3.1リリース <uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap1_sect2">(2003.02.03)</uri></li>
+	<li>GNOME2.2がPortageに仲間入り<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap1_sect3">(2003.02.17)</uri></li>
+	<li>distccの概要<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap1_sect2">(2003.03.10)</uri></li>
+	<li>tcl/tkの早期追加<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap1_sect4">(2003.04.28)</uri></li>
+	<li>ebuild内のわいせつなコンテンツの不具合についての論争<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap1_sect6">(2003.07.07)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>その他</title>
+<body>
+<p></p>
+<ul>
+	<li>LSBの仕様に従うべく、Portage 2.1からRPMフォーマットを採用<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap1_sect2">(2003.04.1)</uri>::ジョーク</li>
+	<li>エイプリルフールでの冗談<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap1_sect2">(2003.04.07)</uri></li>
+	<li>みなさん、さようならそしてありがとう<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap1_sect2">(2003.07.07)</uri></li>
+</ul>
+</body>
+</section>
+</chapter>
+
+
+<chapter>
+<title>ユーザー体験話</title>
+<section>
+<title>世界のGentooユーザー紹介</title>
+<body>
+<ul>
+	<li>Kai-Uwe Kriewaldさんとrsync7.de.gentoo.org<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap3">(2003.05.12)</uri></li>
+	<li>学校をGentoo Linuxに移行させたKennethさん<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap3">(2003.05.19)</uri></li>
+	<li>Mathyさんとlanzone.be<uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap3">(2003.05.26)</uri></li>
+	<li>breakmygentoo.netを支えている人たち<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap3">(2003.06.09)</uri></li>
+	<li>Jeffrey Paul牧師、本番環境、その他の環境におけるGentoo Linux<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap3">(2003.06.16)</uri></li>
+	<li>XX染色体（女性）ユーザ登場<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap3">(2003.07.07)</uri></li>
+</ul>
+</body>
+</section>
+</chapter>
+
+
+<chapter>
+<title>開発者紹介</title>
+<section>
+<title>Gentoo Linux Developer達</title>
+<body>
+<ul>
+	<li>carpaski::Nicholas Jonesさん<uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml#doc_chap3">(2003.01.27)</uri></li>
+	<li>Gerk::Mark Guertinさん<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap3">(2003.02.03)</uri>(retired)</li>
+	<li>lostlogic::Brandon Lowさん<uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml#doc_chap3">(2003.02.10)</uri></li>
+	<li>danarmak::Dan Armakさん<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap3">(2003.02.17)</uri></li>
+	<li>ZhEN::John P. Davisさん<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap3">(2003.02.24)</uri></li>
+	<li>Bass::Jose Alberto Suarez Lopezさん<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap3">(2003.03.03)</uri></li>
+	<li>jhhudso::Jared H. Hudsonさん<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap3">(2003.03.10)</uri></li>
+	<li>g2boojum::Grant Goodyearさん<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap3">(2003.03.17)</uri></li>
+	<li>aliz::Daniel Ahlbergさん<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap3">(2003.03.24)</uri></li>
+	<li>karltk::Karl Trygve Kallebergさん<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap3">(2003.04.01)</uri></li>
+	<li>sethbc::Seth Chandlerさん<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap3">(2003.04.07)</uri></li>
+	<li>LiveWire::Bob Johnsonさん<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap3">(2003.04.14)</uri></li>
+	<li>lu_zero::Luca Barbatoさん<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap4">(2003.04.21)</uri></li>
+	<li>george::George Shapovalovさん<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap3">(2003.04.28)</uri></li>
+	<li>liquidx::Alastair Tseさん<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap3">(2003.05.05)</uri></li>
+	<li>jmorgan:Jack Morganさん<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap4">(2003.05.12)</uri></li>
+	<li>chadh::Huneycuttさん<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap4">(2003.05.19)</uri></li>
+	<li>avenj::Jon Portnoyさん<uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap4">(2003.06.02)</uri></li>
+	<li>Method::Joshua Brindleさん<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap4">(2003.06.09)</uri></li>
+	<li>robh::Rob Hollandさん<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap4">(2003.06.16)</uri></li>
+	<li>Spider::D.M.D. Ljungmarkさん<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap4">(2003.06.23)</uri></li>
+	<li>pauldv::Paul de Vriezeさん<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap4">(2003.06.30)</uri></li>
+	<li>absinthe::Dylan Carlsonさん<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap4">(2003.07.07)</uri></li>
+	<li>Lisa::Lisa Marie Seelyeさん<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap4">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+<section>
+<title>写真編</title>
+<body>
+<ul>
+	<li>Seemant KulleenさんとDaniel Robbinsさん<uri link="http://www.gentoo.org/news/en/gwn/20030127-newsletter.xml#doc_chap1_fig3">(2003.01.27)</uri></li>
+</ul>
+</body>
+</section>
+</chapter>
+
+
+<chapter>
+<title>コミュニティの話題</title>
+<section>
+<title>Web Forums</title>
+<body>
+<ul>
+	<li>Glibc 2.3 stable and painfree; Distributed Compiling; Gentoo HURD? Gentoo Mach? Gentoo BSD?<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap4_sect1">(2002.12.23)</uri></li>
+	<li>Forums Crashed - Back Online; Dual boot alert!; Gentoo Linux Users Everywhere<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap3_sect1">(2002.12.30)</uri></li>
+	<li>Selective rsync strategies; PCMCIA Worries Anticipating Gentoo 1.4; Overclockers beware!<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap3_sect1">(2003.01.06)</uri></li>
+	<li>進歩を止められない; そして勝者は...; 壁の花に御注目を; <uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap3_sect1">(2003.01.13)</uri></li>
+	<li>ノートPCでのGentoo; フォーラムサーベイ; Linux PDA：シャープザウルスとGentoo<uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml#doc_chap3_sect1">(2003.01.20)</uri></li>
+	<li>emerge-webrsyncツールの問題; ibiblioに文句; 書き寄せの復活; Forumの統計情報<uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml#doc_chap4_sect1">(2003.01.27)</uri></li>
+	<li>Gentooアートはいかがですか？どうぞリクエストを...; トリッキーなラップトップ; DIY ebuildスクリプト; フォーラムサーバがBugzillaをホスト<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap4_sect1">(2003.02.03)</uri></li>
+	<li>フレームバッファで何ができるの？; 資金調達のアイディア; phpBBの使用; cfg*ファイルは何でしたっけ？<uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml#doc_chap4_sect1">(2003.02.10)</uri></li>
+	<li>新しいパワーブックとGentoo PPC; ebuilderのBob; Gentooの音楽家; 30分...<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap4_sect1">(2003.02.17)</uri></li>
+	<li>母国語キャンペーン; エミュレーションはタイヘンだ; 新しいアーキテクチャがもう一つ：MIPSでGentoo<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap4_sect1">(2003.02.24)</uri></li>
+	<li>1.4-rc3が出た！; Xfree 4.3.0; 商用プログラムをLinuxに?<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap4_sect1">(2003.03.03)</uri></li>
+	<li>1.4-rc3による初心者の流入; オランダ語フォーラムモデレーター募集<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap4_sect1">(2003.03.10)</uri></li>
+	<li>ちょっとした不便; カーネルソース - どれが何をするの？; DistroWatchでの不正 <uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap4_sect1">(2003.03.17)</uri></li>
+	<li>Gentoo GNU/Hurdプロジェクト開始; もっと良い使い道; GentooでインテルのCコンパイラ; RS/6000にGentooインストール成功<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap4_sect1">(2003.03.24)</uri></li>
+	<li>CFLAGS Centralの復活; 遂に：XBoxにGentoo; <uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap4_sect1">(2003.04.01)</uri></li>
+	<li>最先端を行く; 最高なエイプリルフールのジョーク; ニュージャージーGentooユーザーグループ<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap4_sect1">(2003.04.07)</uri></li>
+	<li>Gentooフォーラム設立一周年; プロファイル使用でハードの自動設定; Gentooで商用ソフトを稼働する：Oracle 9.2の導入方法<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap4_sect1">(2003.04.14)</uri></li>
+	<li>フォント、フォント、またフォント; XFree86 4.3.0アップグレードの問題<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap5_sect1">(2003.04.21)</uri></li>
+	<li>二人の新モデレータ; フレームバッファ、ブートスプラッシュ画像等の全て<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap4_sect1">(2003.04.28)</uri></li>
+	<li>GCC 3.3; Zetagrid GLUEチームからの報告<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap4_sect1">(2003.05.05)</uri></li>
+	<li>rsyncサーバーへの負担を柔らげるべく; GentooでLotus Domino; Gentooでバイナリパッケージ、他のディストリビューションでPortage？<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap5_sect1">(2003.05.12)</uri></li>
+	<li>喜び歌うゲーマー達; 時代を先駆ける者達; パッチでサーバーへの負担軽減; <uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap5_sect1">(2003.05.19)</uri></li>
+	<li>Gnome 2.3.2; Portageが詰るとき; <uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap4_sect1">(2003.05.26)</uri></li>
+	<li>スパム、スパム、スパム、ベークドビーンズとスパム; 無保証ebuild; OSnews世論調査：そして勝者は...<uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap5_sect1">(2003.06.02)</uri></li>
+	<li>Macintosh騒動; Ximianデスクトップ2の移植<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap5_sect1">(2003.06.09)</uri></li>
+	<li>ローカルRsyncとDistfileサーバ; XPMのバグはXFreeを取り除こうとします<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap5_sect1">(2003.06.16)</uri></li>
+	<li>LiveUSB? ブートできるキーホルダー; ローカルメールセットアップについてのFAQ集<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap5_sect1">(2003.06.23)</uri></li>
+	<li>Fork? TINC?; 新モデレータ<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap5_sect1">(2003.06.30)</uri></li>
+	<li>クラッシュしたサーバの復旧;GUIインストーラ：ほぼ完了...;Eclassエラー<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap5">(2003.07.07)</uri></li>
+	<li>最後の2.5.xカーネルが出ました;Mozilla 1.4が注目を集めています;Gentoo一般メニュー<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap5_sect1">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>gentoo-user</title>
+<body>
+<ul>
+	<li>Gentoo 'Stable'; The Right Stuff<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap4_sect2">(2002.12.23)</uri></li>
+	<li>Gentoo vs. FreeBSD; Don't fear the downgrade; <uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap3_sect2">(2002.12.30)</uri></li>
+	<li>Round 689,554 of the Text Editor Holy War; New Docbook eclass solves SGML problems; Gentoo's supported hardware; How do I telnet into my new Gentoo box?<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap3_sect2">(2003.01.06)</uri></li>
+	<li>システムクロックの設定：ntpdateに勝るntpd<uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap3_sect2">(2003.01.13)</uri></li>
+	<li>問題解決には勉強を; S/MIMEとPGP/MIMEをサポートするKMail; <uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml#doc_chap3_sect2">(2003.01.20)</uri></li>
+	<li>Phoenixって素晴しい; カーネルパフォーマンス<uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml#doc_chap4_sect2">(2003.01.27)</uri></li>
+	<li>鏡よ、鏡よ...; Javaにも色々あります<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap4_sect2">(2003.02.03)</uri></li>
+	<li>ebuildが無いソフトのインストール; あちゃー!; ディスクが一杯？簡単な解決策; Gentoo XMLデータベース; Gentooのためにやるべき事のリスト; 続報：Portageデータベースの管理<uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml#doc_chap4_sect2">(2003.02.10)</uri></li>
+	<li>'gcc: command not found'; 色々な種類のtar; <uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap4_sect2">(2003.02.17)</uri></li>
+	<li>ハードウェアの問題; Red HatユーEclassエラーザー向けのツール; Red Hat系のinitスクリプト<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap4_sect2">(2003.02.24)</uri></li>
+	<li>ユーザーにとってのGentooリリース; Gentooと他のディストリビューションの比較<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap4_sect2">(2003.03.03)</uri></li>
+	<li>GentooとLSB; CFLAGS、CFLAGSをどうぞ<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap4_sect2">(2003.03.10)</uri></li>
+	<li>続報：MozillaとJava<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap4_sect2">(2003.03.17)</uri></li>
+	<li>インストールに掛かる時間; コマンドラインのツール; ftp/iptablesがいつもemerge worldに<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap4_sect2">(2003.03.24)</uri></li>
+	<li>Gentooへの移行方法; Money Danceはまだ生きてる<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap4_sect2">(2003.04.01)</uri></li>
+	<li>Gentooの企業による使用?; ebuildが無いソフトの管理<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap4_sect2">(2003.04.07)</uri></li>
+	<li>USE活用法; 皆のためのp2p<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap4_sect2">(2003.04.14)</uri></li>
+	<li>Gentooとシャープザウルス <uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap5_sect2">(2003.04.21)</uri></li>
+	<li>公開キーのサイン; Upgrading Gentoo RCs (release canidates)<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap4_sect2">(2003.04.28)</uri></li>
+	<li>X responsiveness<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap4_sect2">(2003.05.05)</uri></li>
+	<li>gentoo-userをニューズグループとして; なぜrsync？; Portage Syncのエチケット<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap5_sect2">(2003.05.12)</uri></li>
+	<li>Gentooのやり方を理解する; ほとんど無害<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap5_sect2">(2003.05.19)</uri></li>
+	<li>nVidiaカードのパフォーマンス; ** fixpackages **; <uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap5_sect2">(2003.06.02)</uri></li>
+	<li>ラップトップとGentoo; <uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap5_sect2">(2003.06.09)</uri></li>
+	<li>Mozzilaウェブブラウジングを快適に<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap5_sect2">(2003.06.23)</uri></li>
+	<li>ノートPCインストールトラブル; Gentooで一番好きなものは何ですか？<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap5_sect2">(2003.06.30)</uri></li>
+	<li>注意：Apache2とMySQL4が安定版となります;好みのWindow Managerを選ぶには;NVidiaの問題<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap5_sect2">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+
+<section>
+<title>gentoo-dev</title>
+<body>
+<ul>
+	<li>Portage and Quality Assurance.; New MIPS Gentoo Port Effort Started.; Suggested Improvement for Portage.<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap4_sect3">(2002.12.23)</uri></li>
+	<li>Final Release of Gentoo?; USE Flags Selector.<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap3_sect3">(2002.12.30)</uri></li>
+	<li>USE Aware Emerge.; Gentoo Stable Site Update.<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap3_sect3">(2003.01.06)</uri></li>
+	<li>第二のシステムをビルド; IUSE変数の詳細<uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap3_sect3">(2003.01.13)</uri></li>
+	<li>Portageのための小さなツール<uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml#doc_chap3_sect3">(2003.01.20)</uri></li>
+	<li>etcファイルの管理方法; Gentoo-sources対「標準」カーネル; <uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml#doc_chap4_sect3">(2003.01.27)</uri></li>
+	<li>Portageの悩み; 続報：/etcファイルの管理; Portageデータベースの管理<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap4_sect3">(2003.02.03)</uri></li>
+	<li>ProPolice使用可能なgcc/gentoo<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap4_sect3">(2003.02.17)</uri></li>
+	<li>DJBのdaemontools用のUSEフラグ; ebuildでどこにLISPソースをインストールするか？; GCCの真実; GentooのGNU EmacsユーザーのためのRFC<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap4_sect3">(2003.03.03)</uri></li>
+	<li>不要なファイルを見付けるスクリプト; Gentoo Linux開発者募集; man .vs. man-db<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap4_sect3">(2003.03.10)</uri></li>
+	<li>Portage-2.0.47-r9のテスト開始; GLSAと自動セキュリティパッケージツール; <uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap4_sect3">(2003.03.17)</uri></li>
+	<li>Gentooインストールツール; ACCEPT_KEYWORDSとbootstrap.sh<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap4_sect3">(2003.03.24)</uri></li>
+	<li>ディスクスペースの管理; 依存性を破壊する<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap4_sect3">(2003.04.01)</uri></li>
+	<li>Portageプログラミングの質問; ACCEPT_KEYWORDS="~arch"をもっと速く入力?<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap4_sect3">(2003.04.07)</uri></li>
+	<li>Gentooのパフォーマンス; Gentooのバイナリリリース？<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap4_sect3">(2003.04.14)</uri></li>
+	<li>複数のPortageツリー; Pythonで書かれたinitスクリプト; Ebuild名付けポリシー<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap4_sect3">(2003.04.28)</uri></li>
+	<li>新型サービス依存性; Pythonでinit; GentooBSD; XFree 4.3.0<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap5_sect3">(2003.05.12)</uri></li>
+	<li>システムの状態、そしてPortageの診断; Changelogの変化; 改良されたJDBCサポート; 試作GCC 3.3 ebuild<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap5_sect3">(2003.05.19)</uri></li>
+	<li>JREサポートはシステムの一部であるべきか？; <uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap4_sect2">(2003.05.26)</uri></li>
+	<li>XFree; GentooのWM全てのためのメニュー; 新しいebuildに未使用のuid/gidを割当てる<uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap5_sect3">(2003.06.02)</uri></li>
+	<li>Ebulid用の(FS)属性って？<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap5_sect3">(2003.06.09)</uri></li>
+	<li>Gentoo特定作業用統合ツールって？; md5sumの変更について提案がありました; Ebuildについて質問...<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap5_sect2">(2003.06.16)</uri></li>
+	<li>*-doc vs USE="doc"<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap5_sect3">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>世界のGentoo</title>
+<section>
+<title>世界のGentooコミュニティの話題</title>
+<body>
+<ul>
+	<li>Quite Literally: Phoenix From the Ashes; <b>Portage, Ports and Other Packagers... </b><uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap5">(2002.12.23)</uri></li>
+	<li>Yet Another French Linux Documentation; <b>Gentoo Shinnenkai - New Year's Party at Gentoo-JP...</b><uri link="">(2002.12.30)</uri></li>
+	<li>Gentoo UK Being Constituted; Iberian Peninsula Tops Spanish community; More Gentoo Linux Users Everywhere: ZetaGrid<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap4">(2003.01.06)</uri></li>
+	<li>韓国Gentooユーザグループ; 米国の輸出規制はGentooにも当てはまるか？<uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap4">(2003.01.13)</uri></li>
+	<li><b>明けましておめでとうございます</b>; 中国のGentooユーザーのためのフォーラム<uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml#doc_chap4">(2003.01.20)</uri></li>
+	<li>欧州の非公式Gentooサイト<uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml#doc_chap5">(2003.01.27)</uri></li>
+	<li>欧州の非公式Gentooサイト(つづき)<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap5">(2003.02.03)</uri></li>
+	<li>Gentoo開発者/ユーザーが2003年2月13日にバルセロナに集合; <b>日本からのスナップショット：Redhat 8.0上のユーザーモードリナックスでのGentoo</b><uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml#doc_chap5">(2003.02.10)</uri></li>
+	<li>ウィーンでGentooユーザーの集まり; Pinguino Papua<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap5">(2003.02.17)</uri></li>
+	<li>ヨーロッパ各地域のGentooミーティング; Svenska Gentoo IRC Hemsida; イタリア語ドキュメンテーション翻訳チーム<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap5">(2003.02.24)</uri></li>
+	<li>念押し：明日はウィーンで集まり; イタリア語Gentooフォーラム設立<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap5">(2003.03.03)</uri></li>
+	<li>ウィーンでの集合の報告; 速報：ルーマニアIRCチャンネル<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap5">(2003.03.10)</uri></li>
+	<li>新オランダ語フォーラムモデレータ<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap5">(2003.03.17)</uri></li>
+	<li><b>日本のマスコミにGentoo出現</b>; ロシアのGentooコミュニティ; フランス人のGentooユーザーのための新しいML; 国際イベントカレンダー<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap5">(2003.03.24)</uri></li>
+	<li><b>Gentooお花見</b>; ドイツ警察はGentoo-ARM; 正誤：デンマークのGentooプレゼンテーションは4月2日ではなく、4月1日!<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap5">(2003.04.01)</uri></li>
+	<li>フランスの、メタディストリビューションのためのメタプロジェクト; 国際イベントカレンダー<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap5">(2003.04.07)</uri></li>
+	<li>台湾Gentoo促進ミーティング; そして、現実の世界で：イタリアのコンサルティング企業がGentoo Linuxを使用<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap5">(2003.04.14)</uri></li>
+	<li>トルコ語バージョンの創刊を発表<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap5">(2003.04.28)</uri></li>
+	<li>ドイツ地域のGentooユーザーミーティングがボンで開かれます; ロシア語版Gentoo Weekly Newsletterが他の言語と同様に現在入手可能です<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap5">(2003.05.05)</uri></li>
+	<li>ドイツ地域のGentooユーザー親睦会はボンではなくケルンです！; ドイツのGentooユーザーマップ<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap6">(2003.05.12)</uri></li>
+	<li>ケルン・ミーティングの余波; フランスのGentooユーザーの良き日 - はい、でもどこで?<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap6">(2003.05.19)</uri></li>
+	<li>Gentooポーランド設立; ドイツGentooユーザーミーティング計画中<uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap5">(2003.05.26)</uri></li>
+	<li><b>ドキュメントの翻訳</b><uri link="http://www.gentoo.org/news/ja/gwn/20030602-newsletter.xml#doc_chap6">(2003.06.02)</uri></li>
+	<li>イタリアのGentoo宣伝マシン巡り; Gentooユーザー達の良き一日<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap6">(2003.06.09)</uri></li>
+	<li>スウェーデン人Gentooユーザーのための新しいウェブサイト<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap6">(2003.06.16)</uri></li>
+	<li>gentoo.orgの国際化<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap6">(2003.06.23)</uri></li>
+	<li>Gentoo ブラジル;オーストラリアのGentoo-が動くコンピューターストアとインターネットカフェ;ドイツ: LinuxTag 2003のGentooに会いに来てください;<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap6">(2003.07.07)</uri></li>
+	<li>Gentoo.deでは開発者と翻訳者を募集しています;Gentoo Games CDがBrazilian Linux Magazineにバンドル;更新: 新しいGentooポルトガルのフォーラムにある調整スレッド<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap6">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>Tips and Tricks</title>
+<section>
+<title>Linuxのtips集</title>
+<body>
+<ul>
+	<li>手動でサービスをリセットする<uri link="http://www.gentoo.org/news/en/gwn/20021223-newsletter.xml#doc_chap8">(2002.12.23 英語版)</uri></li>
+	<li>インストール済みのパッケージの情報を得る<uri link="http://www.gentoo.org/news/en/gwn/20021230-newsletter.xml#doc_chap7">(2002.12.30 英語版)</uri></li>
+	<li>Gentooシステムの更新<uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml#doc_chap7">(2003.01.06 英語版)</uri></li>
+	<li>emerge worldのメッセージを読む<uri link="http://www.gentoo.org/news/ja/gwn/20030113-newsletter.xml#doc_chap7">(2003.01.13)</uri></li>
+	<li>電子署名にGnuPGを使う<uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml#doc_chap7">(2003.01.20)</uri></li>
+	<li>ProcmailとSpamAssassinによるスパムのブロックとメーリングリストのフィルタ<uri link="http://www.gentoo.org/news/ja/gwn/20030127-newsletter.xml#doc_chap8">(2003.01.27)</uri></li>
+	<li>ターミナルにタイトルを付ける<uri link="http://www.gentoo.org/news/ja/gwn/20030203-newsletter.xml#doc_chap8">(2003.02.03)</uri></li>
+	<li>どのUSE変数がパッケージのemergeを影響してるか把握する<uri link="http://www.gentoo.org/news/ja/gwn/20030210-newsletter.xml#doc_chap8">(2003.02.10)</uri></li>
+	<li>Bashのコマンドと便利ワザ<uri link="http://www.gentoo.org/news/ja/gwn/20030217-newsletter.xml#doc_chap8">(2003.02.17)</uri></li>
+	<li>ミラーよ、ミラーよ、ミラーさん<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml#doc_chap8">(2003.02.24)</uri></li>
+	<li>スペースがあるファイルの扱い方<uri link="http://www.gentoo.org/news/ja/gwn/20030303-newsletter.xml#doc_chap8">(2003.03.03)</uri></li>
+	<li>認証局(CA)の作成<uri link="http://www.gentoo.org/news/ja/gwn/20030310-newsletter.xml#doc_chap8">(2003.03.10)</uri></li>
+	<li>地域別のrsyncミラーローテーションを使う<uri link="http://www.gentoo.org/news/ja/gwn/20030317-newsletter.xml#doc_chap8">(2003.03.17)</uri></li>
+	<li>--先週発行したGWNの正誤表<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap1_sect4">(2003.03.24)</uri></li>
+	<li>tmpfsを使う<uri link="http://www.gentoo.org/news/ja/gwn/20030324-newsletter.xml#doc_chap8">(2003.03.24)</uri></li>
+	<li>rdateでシステム時間を同期させる<uri link="http://www.gentoo.org/news/ja/gwn/20030401-newsletter.xml#doc_chap8">(2003.04.01)</uri></li>
+	<li>ファイルの属性を変更する<uri link="http://www.gentoo.org/news/ja/gwn/20030407-newsletter.xml#doc_chap8">(2003.04.07)</uri></li>
+	<li>/dev/loopを使ってCDのイメージを見る<uri link="http://www.gentoo.org/news/ja/gwn/20030414-newsletter.xml#doc_chap8">(2003.04.14)</uri></li>
+	<li>Ctrl-Alt-Delでシステムがリブートしないようにする<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml#doc_chap9">(2003.04.21)</uri></li>
+	<li>Portageでの権限分割<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml#doc_chap8">(2003.04.28)</uri></li>
+	<li>superadduserを使ってユーザーを追加する<uri link="http://www.gentoo.org/news/ja/gwn/20030505-newsletter.xml#doc_chap7">(2003.05.05)</uri></li>
+	<li>Fluxboxの自動グループ化機能を使う<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap9">(2003.05.12)</uri></li>
+	<li>ハードウェアクロックを設定する<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap9">(2003.05.19)</uri></li>
+	<li>bogofilterでスパムをブロック<uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap8">(2003.05.26)</uri></li>
+	<li>forを使ってコマンドを連結する<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap9">(2003.06.09)</uri></li>
+	<li>etcatを用いたPortage情報の問い合わせ<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap9">(2003.06.23)</uri></li>
+	<li>素早くバックアップする<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap9">(2003.06.30)</uri></li>
+	<li>ガンコなプロセスもたちまちkill<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap9">(2003.07.07)</uri></li>
+	<li>screenを使う<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap9">(2003.07.14)</uri></li>
+</ul>
+</body>
+</section>
+</chapter>
+
+<chapter>
+<title>今週の名言／サイン</title>
+<section>
+<title>メーリングリスト、MLでの名言や署名</title>
+<body>
+<ul>
+	<li>Gentoo開発者のSven Vermeulenさん<uri link="http://www.gentoo.org/news/ja/gwn/20030512-newsletter.xml#doc_chap10">(2003.05.12)</uri></li>
+	<li>Joseph Carterさんが、initの代りに関する議論にて<uri link="http://www.gentoo.org/news/ja/gwn/20030519-newsletter.xml#doc_chap10">(2003.05.19)</uri></li>
+	<li>フォーラムユーザーのssjfさんのサイン<uri link="http://www.gentoo.org/news/ja/gwn/20030526-newsletter.xml#doc_chap9">(2003.05.26)</uri></li>
+	<li>Pascal Bourguignonがgentoo-devメーリングリストに投稿したメッセージのシグネチャ<uri link="http://www.gentoo.org/news/ja/gwn/20030609-newsletter.xml#doc_chap10">(2003.06.09)</uri></li>
+	<li>Stewart Honsbergerさん がgentoo-devメーリングリストに投稿したメッセージ<uri link="http://www.gentoo.org/news/ja/gwn/20030616-newsletter.xml#doc_chap10">(2003.06.16)</uri></li>
+	<li>フォーラムの第一人者carambola5から<uri link="http://www.gentoo.org/news/ja/gwn/20030623-newsletter.xml#doc_chap10">(2003.06.23)</uri></li>
+	<li>フォーラムユーザAnacificのシグネチャ<uri link="http://www.gentoo.org/news/ja/gwn/20030630-newsletter.xml#doc_chap10">(2003.06.30)</uri></li>
+	<li>Gentoo開発者のPhillip Cockrell<uri link="http://www.gentoo.org/news/ja/gwn/20030707-newsletter.xml#doc_chap10">(2003.07.07)</uri></li>
+	<li>Christian Herzykがgentoo-userのスレッドに投稿<uri link="http://www.gentoo.org/news/ja/gwn/20030714-newsletter.xml#doc_chap10">(2003.07.14)</uri></li>
+
+</ul>
+</body>
+</section>
+</chapter>
+
+</guide>
+

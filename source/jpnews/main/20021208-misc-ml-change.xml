@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>松田 和雄</poster>
+	<date>8 Dec 2002</date>
+	<title>MLアドレス変更のお知らせ</title>
+<body>
+
+<p>
+	この度サーバー側の諸事情により、MLのアドレスを変更することになりました。
+	変更に伴う注意点としては以下の三つです。
+	<ul>
+		<li>旧MLアドレスへの投稿不可</li>
+		<li>投稿記事のHTML閲覧不可(いづれ可能にします)</li>
+		<li>
+			MLに対するコマンドが今までと異なる(新しいMLはezmlmです)<br />
+			詳しくはこちらをどうぞ。
+			<uri link="http://www.ezmlm.org/ezman-0.32/ezman1.html">EZMLM/IDX USER'S MANUAL</uri><br />
+		</li>
+	</ul>
+
+	以前のMLに登録されていた方はこちらで自動的に新しいMLに追加しますので、
+	特に必要な作業は有りません。新しいアドレスで送信していただければ大丈夫です。
+	新しいMLへの案内は<uri link="/jpmain/about-gentoojp.xml#doc_chap4">GentooJPメーリングリスト</uri>を参照して下さい。
+</p>
+
+<p>
+</p>
+
+</body>
+</news>

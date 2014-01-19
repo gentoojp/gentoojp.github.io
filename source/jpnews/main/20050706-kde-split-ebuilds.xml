@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>6 July 2005</date>
+	<title>「KDE 分割 ebuild ガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/kde-split-ebuilds.xml">KDE 分割 ebuild ガイド</uri>です。
+このドキュメントは、以前のKDEの種々のアプリケーションに対してたった15個のebuildで提供していたのを、アプリケーション毎に個別にebuildを分割することに変更になったことに関するガイドです。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+2005年1月までは、Portageにある唯一のKDE ebuildは「一体となっている」物でした。
+すなわち、たった15個のebuildしかなく、それぞれがとても多くのアプリケーションをインストールしていました。
+実際には、それらアプリケーションはお互いに依存しているわけではないのにです。
+これは明らかに最善ではない状況で、とてもGentoo的ではありませんが、長い間我慢されてきました。
+</p>
+
+<p>
+新しい「分割」ebuildは、それぞれのKDEアプリケーションごとに分かれたebuildを提供することによってこの状況を改善しました。
+これにより、総数330に及ぶ新しいebuildがkde-baseカテゴリに追加されました。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/kde-split-ebuilds.xml">http://www.gentoo.org/doc/ja/kde-split-ebuilds.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、小林弘樹 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

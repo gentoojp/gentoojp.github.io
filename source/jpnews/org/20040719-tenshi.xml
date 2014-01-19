@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>klieber (翻訳:samantha)</poster>
+	<date>19 July 2004</date>
+	<title>Tenshi 0.3</title>
+<body>
+<p>
+私達は、多くの主要な改善が加えられたtenshi 0.3のリリースが発表されたことを大変うれしく思います。
+</p>
+<p>
+Tenshiは以前、Wasabiとして知られていました。
+Wasabiは他のソフトウェアの登録商標であると知らされたため、その後名前はTenshiに変更されました。
+</p>
+<p>
+Tenshiはログモニタリングプログラムで、ひとつまたはそれ以上のログファイルをユーザ定義正規表現で行毎に適合するかどうか注意深く監視し、そして適合したものに付いては報告する様に設計されています。
+正規表現は警告間隔とメール受取先のリストを持ったキューに割り当てられます。
+</p>
+<p>
+キューは割り当てられたログの行があったらすぐおしらせを送信するようにしたり、また定期的におしらせを送信するように設定することができます。
+</p>
+<p>
+加えて、(プロセスID等の)どうでもいいログメッセージのフィールドについては、標準正規表現のオペレータである( )でマスクすることができます。
+これはよりきれいで、より読みやすいレポートになります。全てのレポートはホスト名によって分けられ、そして全てのメッセージは可能な場合要約されます。
+</p>
+<p>
+これは当初Gentooインフラサーバのために開発されたGentoo主催のプロジェクトです。
+</p>
+<p>
+資料:
+</p>
+<p>
+<uri link="http://www.gentoo.org/proj/en/infrastructure/tenshi/index.xml">http://www.gentoo.org/proj/en/infrastructure/tenshi/index.xml</uri>
+<uri link="http://www.gentoo.org/~lcars/tenshi">http://www.gentoo.org/~lcars/tenshi</uri>
+</p>
+<p>
+要求/提案/バグの報告については<uri link="mailto:tenshi@gentoo.org">tenshi@gentoo.org</uri>へ御報告ください。
+</p>
+</body>
+</news>

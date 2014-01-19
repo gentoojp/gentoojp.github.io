@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<guide link="/jpdoc/guide-irc-xchat.xml">
+
+<title>IRCクライアントの設定(XChat-2編)</title>
+<author title = "著者"><mail link = "dk@kojima.sytes.net">Kojima</mail></author>
+
+<abstract>このガイドでは、XChatを使った、GentooJP・IRCチャンネルへの接続について解説します。
+対象は、(Gentoo) Linux 上で、初めてIRCに参加するユーザーです。
+</abstract>
+
+<version>0.1</version>
+<date>22 May 2003</date>
+
+
+<chapter>
+	<title>XChat-2のインストールと設定</title>
+		<section>
+			<title>XChat-2について</title>
+		<body>
+			<p>
+			XChat-2はXChatがgtk+2に対応したバージョンです。
+			詳しくはXChat<uri link="http://www.xchat.org/">http://www.xchat.org/</uri>を御覧ください。
+			</p>
+		</body>
+		</section>
+		<section>
+			<title>XChat-2のインストール</title>
+		<body>
+			<p>
+			GentooLinuxを御利用の方は<b>emergeで一発</b>です。
+<pre>
+# <i>emerge -p xchat</i>
+# <i>emerge xchat</i>
+</pre>
+<note>emerge -p xchatのとき、XChatのバージョンが2以上になっているか確認してください。</note>
+			これでOKです。<br/>
+			</p>
+		</body>
+		</section>
+
+		<section>
+			<title>XChat-2の設定</title>
+		<body>
+			<p>
+			ここでは、<c>Freenode.net</c>の<c>#gentoo-ja</c>に接続するための手順を書いていきます。
+			まず、XChat-2を起動させて下さい。
+			</p>
+<pre>
+$ <i>xchat-2 &amp;</i>
+</pre>
+			<p>
+			次に実際の画面での操作です。
+			</p>
+
+			<table>
+				<tr>
+					<th>No</th>
+					<th>操作画面</th>
+					<th>説明</th>
+				</tr>
+				<tr>
+					<ti> 1</ti>
+					<ti><uri link="/images/xchat2/xchat2-1.png"><img src="/images/xchat2/xchat2-1s.png"></img></uri></ti>
+					<ti>起動すると、まずServerListが表示されると思います。
+					そして、「Nick Names」のテキストボックスに左から書いていきます。
+					3つありますが、1番目が他の人が使用中だったりして使えなかったら2番目...と言うような感じです。
+					ここでは、「GentooJP」「GentooJP_」「GentooJP__」と入力してあります。
+					次に真中のリストボックスから「FreeNode」と言うのを見つけクリックしてください。
+					そして、そのリストボックスの下の「Edit mode」にチェックを付けます。
+					そうする次のような画面になります。
+					</ti>
+				</tr>
+				<tr>
+					<ti> 2</ti>
+					<ti><uri link="/images/xchat2/xchat2-2.png"><img src="/images/xchat2/xchat2-2s.png"></img></uri></ti>
+					<ti>この画面では、「Join Channel」と「Character Set」を入力します。
+					「Join Channel」には「#gentoo-ja」と入力してください。
+					そして、次が結構重要なのですが、「Character Set」の所は「UTF-8(Unicode)」を選択してください。
+					そして、「Connect」ボタンを押してください。
+					そうすると次の画面になります。
+					</ti>
+				</tr>
+				<tr>
+					<ti> 3</ti>
+					<ti><uri link="/images/xchat2/xchat2-3.png"><img src="/images/xchat2/xchat2-3s.png"></img></uri></ti>
+					<ti>
+					ここで、赤い囲みのところに「こんにちは」等の発言内容を入れてEnterを押します。
+					</ti>
+				</tr>
+			</table>
+			<note>これで、<c>#Gentoo-ja</c>を使う最低限の設定は終わります</note>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>XChat-2の終了</title>
+		<section>
+		<title>終了</title>
+		<body>
+			<p>
+			メニューの「X-Chat」をクリックし「Quit」を押すか、Ctrl+Qを押します。
+			</p>
+		</body>
+		</section>
+</chapter>
+<chapter>
+	<title>FAQ</title>
+	<section>
+	<title>kinput2を使用しているのですが、gtk2になってから落ちます。</title>
+	<body>
+		<p>
+		原因はよくわかっていませんが、情報によるとgtk2+xchat2で起きることが多いようです。
+		<uri link="http://www.gentoo.gr.jp/ml/users/msg00182.html">gentoojp-usersメーリングリスト</uri>にも情報があります。
+		skkinput、im-ja、atokxなど他の入力方法もお試しください。
+		</p>
+	</body>
+	</section>
+
+</chapter>
+<chapter>
+	<title>おわりに</title>
+	<section>
+	<body>
+		<p>
+		どうしても分からないことがあったら<c>#gentoo-ja</c>で聞いてみてください。
+		</p>
+	</body>
+	</section>
+
+</chapter>
+</guide>

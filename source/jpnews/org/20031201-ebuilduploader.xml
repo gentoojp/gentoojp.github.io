@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>渡邊 集</poster>
+	<date>01 December 2003</date>
+	<title>ebuild-uploaderの運用を開始しました</title>
+<body>
+<p>
+GentooJPで開発が進められていたebuild登録システム
+<uri link="http://ebuild.gentoo.gr.jp/">ebuild-uploader</uri>
+が、今日から正式に運用を開始しました。
+このシステムによって、皆さんの作ったebuildは今までよりも簡単に登録やテストを行えるようになるでしょう。
+</p>
+<p>
+この
+<uri link="http://ebuild.gentoo.gr.jp/">ebuild-uploader</uri>
+の詳細については、
+<uri link="/jpmain/ebuild-uploader.xml">ebuild-uploader運用ドキュメント</uri>
+をご覧下さい。
+皆さんの積極的な参加をお待ちしています！
+</p>
+</body>
+</news>

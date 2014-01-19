@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>5 July 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年7月5日号</title>
+<body>
+<p>
+<b>今週の<uri link="/news/ja/gwn/20040705-newsletter.xml">Gentoo Weekly Newsletter</uri>では、Gentooコミュニティサイトの新しいルック・アンド・フィールの提案をお願いするGentoo Foundation Webデザインコンテストに関するアナウンスと、PPCアーキテクチャでbootsplashが新しく利用可能になったことをお知らせします。</b>また、MIPSプロジェクトのチームリーダJoshua Kinardの特集、Gentooセキュリティ、コミュニティの話題もお届けします。楽しんで！
+</p>
+</body>
+</news>
+

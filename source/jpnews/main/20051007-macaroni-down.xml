@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding="utf-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>小島和範</poster>
+	<date>06 Octber 2005</date>
+	<title>macaroniのサーバダウンについて</title>
+<body>
+<p>
+macaroni.gentoo.gr.jp を収容している建物の停電のため以下の日程で macaroni.gentoo.gr.jp で提供している全てのサービスが停止致します。</p>
+<ul>
+<li>時間</li>
+ <ul>
+  <li>停止：10月9日 21時45分</li>
+  <li>復帰：10月11日 10時00分</li>
+ </ul>
+<li>影響範囲</li>
+ <ul>
+  <li>macaroni.gentoo.gr.jp の全てのサービス</li>
+  <ul>
+   <li>http://wiki.gentoo.gr.jp/</li>
+   <li>http://diary.gentoo.gr.jp/</li>
+   <li>http://ebuild.gentoo.gr.jp/</li>
+   <li>http://bugs.gentoo.gr.jp/</li>
+   <li>http://gonzui.gentoo.gr.jp/</li>
+   <li>http://dev.gentoo.gr.jp/</li>
+   <li>rsync://ebuild.gentoo.gr.jp/gentoojp-portage</li>
+  </ul>
+ </ul>
+</ul>
+<p>
+</p>
+</body>
+</news>

@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Corey Shields(翻訳:飴谷 茂寛・Akira KAKINOHANA)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005-07-26</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Gentoo開発者＆ユーザ会議</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+	来るGentoo開発者(そしてユーザ)会議(訳注:募集はすでに終了しています)の募集人数にまだ少し空きがあります。
+	この会議はサンフランシスコで開催されるLinux World Expoの翌日、8月12日に開催されます。
+	この会議に参加できない方のために、私たちの支持者であるIndiana UniversityによるWeb放送が提供される予定です。
+	さらに詳しい情報と参加登録は、<uri link="http://devconference.gentoo.org">devconference.gentoo.org</uri>を参照してください。
+</p>
+
+</body>
+</news>
+

@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>zhen（翻訳：武田洋之）</poster>
+	<date>04 March 2004</date>
+	<title>Gentoo 2004.0</title>
+<body>
+<p>
+お待たせしました!!ミラーリングシステムの問題が解決し、Gentoo 2004.0がダウン
+ロードできるようになったことをお知らせします。
+ダウンロードするには、<uri link="http://www.gentoo.org/main/en/mirrors.xml">公式ミラーサイト</uri>のリストを参照してください。
+</p>
+</body>
+</news>

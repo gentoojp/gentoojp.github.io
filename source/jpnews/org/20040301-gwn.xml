@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>carlos　（翻訳：今野勝之）</poster>
+	<date>1 March 2004</date>
+	<title>Gentoo Weekly Newsletter 2004年3月1日号</title>
+<body>
+<p>
+<b>今月最初の<uri link="/news/ja/gwn/20040301-newsletter.xml">Gentoo Weekly Newsletter</uri>では、Gentoo Linux 2004.0リリースのお知らせをお届けします</b>。他にも開発者Alexander Gabertの紹介やコミュニティの話題、rootパスワードのリカバーに関するヒントをお届けします。楽しんで！
+</p>
+</body>
+</news>

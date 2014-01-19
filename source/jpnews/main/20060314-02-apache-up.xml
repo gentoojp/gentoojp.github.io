@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-03-14</date>
+	<title>「Apacheのアップグレード」の翻訳完了のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/doc/ja/apache-upgrading.xml">Apacheのアップグレード</uri>の翻訳完了のお知らせです。
+</p>
+
+<p>
+このドキュメントは、GentooにおけるApacheの安全なアップグレードの手順を紹介します。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+このドキュメントでは、あなたのシステムを壊すことなく、Apacheをアップグレードする方法の詳細を説明します。もしあなたが開発者である、または、私たちが変更した内容を知りたい、あるいは、eclassを利用してebuildを修正する方法を知りたいなら、 Apache Developer Referenceを参照してください。 
+</p>
+
+<p>
+GentooにおけるApacheの動作に多くの変更を加えました。 Apacheに直接関係のあるすべてのパッケージは、アップグレードする必要があり、以前は動いていたものがこれ以降は動かないものもあります。 
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/apache-upgrading.xml">Apacheのアップグレード</uri>
+</p>
+
+<p>
+翻訳を担当された、武田さん、査読をしてくださった松葉さん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

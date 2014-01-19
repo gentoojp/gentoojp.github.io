@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+<poster>swift (翻訳: 中野正智)</poster>
+<date>21 November 2004</date>
+<title>Gentoo DVDあるよ！</title>
+
+<body>
+
+<p>
+<uri link="http://store.gentoo.org">Gentoo Store</uri>では、x86用Gentoo Linux 2004.3を販売しています。
+これは、すべてのサブアーキテクチャ(x86、i686、Pentium 3、Pentium 4、Althon XP)用のすべてのバイナリーパッケージも含む、<uri
+link="http://store.gentoo.org/product_info.php?products_id=45">一枚のブータブル(起動可能な)DVD</uri>です。
+</p>
+
+<p>
+また、Gentoo Storeでは、<uri
+link="http://store.gentoo.org/product_info.php?products_id=46">二枚組のDVDセット</uri>も販売しています。
+これには、2004.3リリース時点でのすべてのdistfiles(必要なすべてのソースファイル。ただし、gameカテゴリーは容量の問題で入っていません)のアーカイブを収録しています。
+</p>
+
+<p>
+Gentoo Storeでの利益の一部は直接Gentoo Foundationに入ります。これは非営利組織の設立や、サーバー設備、その他のGentooに関係する開発の助けになるでしょう。
+</p>
+
+</body>
+</news>

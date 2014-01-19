@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>Kojima</poster>
+	<date>01 Aug 2010</date>
+	<title>FYI: Gentoo 勉強会</title>
+<body>
+
+<p>
+	2010/08/07 に大阪NPOプラザ 会議室A にて「Gentoo 勉強会」が開催されるそうです。
+	ニュース掲載時点では、まだ参加枠に空きがあるようですので、ご興味のある方は参加されてみてはどうでしょうか。
+	詳細は、<uri link="http://atnd.org/events/6360">こちら</uri>をご覧ください。
+
+	また、同日東京でも「<uri link="http://atnd.org/events/6728">Gentoo Linux インストール講習会</uri>」が開催されるそうです。
+	残念ながらこちらは既に参加枠が埋まってしまっているようです。
+</p>
+
+</body>
+</news>

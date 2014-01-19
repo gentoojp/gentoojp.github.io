@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Chris Gianelloni(訳注:Takeshi Matsuba)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2006-06-20</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Gentoo Store最新情報</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b><uri link="http://store.gentoo.org">Gentoo Store</uri>はウェアや小物の品揃えを更新しました。
+</b>主な追加商品はGentooロゴがプリントされた女性用のスポーツウェアのラインナップです。  
+これは何人かの<uri link="http://forums.gentoo.org/viewtopic-p-3186289.html">フォーラム</uri>ユーザの要望により実現したもので、
+こうした要望は、<uri link="http://forums.gentoo.org/viewtopic-p-3375197.html">Gentoo Women</uri>プロジェクト提案にも役立っています。
+また、Gentooの素敵な壁掛け時計をはじめ、新しいステッカーやいくつかのアイテムがGentoo Storeのグッズに追加されています。
+2006.1がリリースされた後に、CDメディアの販売も予定されています。
+</p>
+
+</body>
+</news>

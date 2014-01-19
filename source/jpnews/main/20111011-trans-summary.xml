@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>naota</poster>
+	<date>2011-10-10</date>
+	<title>翻訳プロジェクト9月の活動内容</title>
+<body>
+
+<p>
+GentooJP翻訳プロジェクトは、2011年9月の活動内容を公表します。
+9月はx86/amd64/PPCハンドブックを中心に5つの文書の差分翻訳を行ないました。
+また、査読がおいついていませんが、新たに3名の方に翻訳に参加していただきました。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-ppc-disk.xml">Gentoo Linux/PPC ブロックデバイス入門</uri> (version. 2.00 (2005-03-28) → 10.1 (2010-07-20))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-config.xml">Gentoo Linux Portage設定</uri> (version. 9.5 (2010-05-14) → 13 (2011-08-13))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-net-start.xml">Gentoo Linux はじめに (ネットーク設定)</uri> (version. 8.0 (2007-05-07) → 9 (2011-08-13))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-portage-diverttree.xml">Gentoo Linux オフィシャルツリーからの変更</uri> (version. 1.6 (2007-02-26) → 1.7 (2010-07-13))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-portage-tools.xml">Gentoo Linux Portageのツール</uri> (version. 1.5 (2008-03-01) → 2 (2010-10-04))
+  </li>
+</ul>
+
+<p>
+GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/">Gentoo ハンドブック</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/openrc-migration.xml">BaselayoutとOpenRCの移行ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/gentoo-x86-quickinstall.xml">Gentoo Linux x86クイックインストールガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/alsa-guide.xml">Gentoo Linux ALSA ガイド</uri>
+  </li>
+</ul>
+
+<p>
+また、以下の文書の査読者も募集しています。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://permalink.gmane.org/gmane.linux.gentoo.documentation.japanese/101">Gentoo Linux Kernel Configuration Guide</uri>
+  </li>
+</ul>
+
+<p>
+翻訳に興味があり参加してみたい方は、ぜひ<uri link="http://www.gentoo.gr.jp/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>
+をご覧ください。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>21 May 2006</date>
+	<title>「Gentoo Java 1.5 FAQ」の翻訳が最新にされました</title>
+<body>
+
+<p>
+<uri link="http://www.gentoo.org/proj/ja/java/tiger-faq.xml">Gentoo Java 1.5 FAQ</uri>を最新に追従しました。
+SUNのJDK1.5を使用する方は、更新されましたので、目を通されたらどうでしょうか？
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/proj/ja/java/tiger-faq.xml">Gentoo Java 1.5 FAQ</uri>
+</p>
+
+<p>
+翻訳を担当された、五十嵐 正尚 さん、また査読をしてくださった松葉さん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

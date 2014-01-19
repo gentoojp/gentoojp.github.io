@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<mainpage id="news_list" news_category="main">
+	<title>Gentoo Linux News</title>
+	<version>Current</version>
+	<newsitems/>
+</mainpage>

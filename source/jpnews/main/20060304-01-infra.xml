@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>2006-03-05</date>
+	<title>インフラプロジェクト関係のドキュメントの翻訳完了のお知らせ</title>
+<body>
+
+<p>
+今回お知らせするのは、<uri link="http://www.gentoo.org/doc/ja/index.xml?catid=project">インフラプロジェクト関係ドキュメント</uri>の翻訳完了のお知らせです。そして1個のドキュメントの翻訳完了ではなく、以下にお知らせする複数のドキュメントの完了のお知らせになります。
+</p>
+
+<p>
+これらのドキュメントは、一般的なGentooユーザ対象ではなく、Gentooに関わっている開発者が対象になります。所感としてはGentooでサーバを運営される方は、一読されてみると、おもしろいかもしれません。
+</p>
+
+<p>
+以下、翻訳していただいたインフラプロジェクトのドキュメントになります。
+</p>
+
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/dev-email.xml">GentooEメールシステム</uri></b>:
+本文書は、Gentoo開発者としてのあなたに、われわれの新しいEメールシステムがどういったものかを説明します。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/cvs-sshkeys.xml">cvs.gentoo.orgへのSSHアクセス</uri></b>:
+このミニガイドは、特にcvs.gentoo.orgでのssh鍵の作成方法と使いかたを説明してます。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/dev-machines.xml">Gentoo開発者/テスト機</uri></b>:
+この文章は、Gentoo開発者が特に開発目的で利用できるコンピュータを説明しています。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/server-specs.xml">Gentoo基盤サーバ スペック</uri></b>:
+このページはGentooインフラストラクチャプロジェクトで使われ、またサポートされているサーバの一覧です。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/server-standards.xml">Gentooインフラストラクチャプロジェクト サーバスタンダード</uri></b>:
+このガイドは、Gentooインフラチームがそのサーバに設定するさまざまな標準値、パッケージ、必要要件について文書化したものです。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/tenshi/index.xml">Gentoo Linux文書 -- Tenshi</uri></b>:
+このページはtenshi、ログの監視と報告ツール、の紹介です。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/config-ntp.xml">Gentoo基盤サーバ NTP設定ガイド</uri></b>:
+このガイドは、どうやってGentoo基幹サーバのNTPを設定するか記載しています。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/config-ssh.xml">Gentoo基幹サーバでのSSH設定ガイド</uri></b>:
+このガイドは、どうやってGentoo基幹サーバでのOpenSSHを設定するかを記載しています。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/config-syslog.xml">Gentoo基幹サーバでのログ取得設定ガイド</uri></b>:
+このガイドは、Gentoo基幹サーバにてどのようにログ取得が設定されるべきか記載してます。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/dev-webspace.xml">dev.gentoo.orgのウェブスペース設定</uri></b>:
+このガイドは、Gentoo開発者がどのようにして、開発クラスタ上に個人のウェブスペースを設定できるのか記載しています。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/faq.xml">Gentoo基幹サーバよくある質問</uri></b>:
+このページはGentoo基幹サーバに関するもっとよくある質問とその答えを記載しています。
+</p>
+<p><b><uri link="http://www.gentoo.org/proj/ja/infrastructure/mirrors-rsync.xml">rsyncミラーシステム管理のための説明</uri></b>:
+このガイドは、rsyncミラーシステムの、立ち上げ、削除、変更を含む管理方法に関して記載してます。
+</p>
+
+<p>
+翻訳をしてくださった、<mail link="masatsugu@fujinaka.info">藤中 正次</mail> さん、また確認をしてくださったみなさん、ありがとうございました。
+</p>
+
+<p>
+また、1年以上前に翻訳してくださった後も、ニュースにとりあげませんで、申し訳ありませんでした。そして、継続してメンテナンスをしていただき、藤中さんには感謝の言葉もありません。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="gentoo">
+
+<!-- Enter your name here -->
+<poster>Christel Dahlskjaer</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2006-08-30</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Gentoo Linux 2006.1 が解き放たれました</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+Gentooリリースエンジニアリングチームは 今年2回目のリリースとなるGentoo Linux 2006.1のリリースを自信を持ってアナウンスします。
+前回のリリースでの長所をそのままに、Gentooの定評ある柔軟性、パフォーマンスや移植性に基づいており、今回のリリースはGentooがサポートしている全てのアーキテクチャで利用可能です。
+最も注目する構成は、GCC 4.1、glibc 2.4、baselayout 1.12.1が用いられている事です。それだけではなく、デスクトップ用とサーバ用に分けた新しいprofileのレイアウトが導入されました。</p>
+<p>
+詳細な情報は<uri link="http://www.gentoo.org/proj/en/releng/release/2006.1/2006.1-press-release.txt">プレスリリース</uri>を参照してください。<br />今回のリリースは私達の <uri link="http://www.gentoo.org/main/en/where.xml">ダウンロードページ</uri>から手に入ります
+</p>
+
+</body>
+</news>

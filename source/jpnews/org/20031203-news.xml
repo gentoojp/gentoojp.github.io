@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="moo">
+	<poster>drobbins(翻訳:中野正智)</poster>
+	<date>03 December 2003</date>
+	<title>Gentoo: 2004年から先</title>
+<body>
+<p>
+
+<b>Gentoo Linux 2004, Portage-ng, catalystと言う3つの大きな取り込みを開始することをアナウンスします。</b>
+Gentoo Linux(Gentoo Linux 2004)は次のリリースから、年4回のリリースになります。
+詳細な情報は<uri link="http://www.gentoo.org/proj/en/releng/">Roadmap for Gentoo Linux2004</uri>を参照してください。</p>
+
+<p>次に、さらにポピュラーなパッケージ管理システムになるために<b>"portage-ng"の開発がスタートしたことを発表します。</b>
+詳細は<uri link="/proj/en/portage/">Portageプロジェクトページ</uri>と
+<uri link="/proj/en/portage/portage-ng/systemspec.xml">作成中のPortage-ngの仕様ドキュメント</uri>を参照してください。
+Portage-ngは真のコミュティの成果となるでしょう。あなたの参加をお待ちしています。</p>
+
+<p><b>そして、catalystです。</b>Gentoo Linux 2004では、LiveCDを含むすべてのリリースは、新しいcatalystビルドテクノロジーを使用して、完全にユーザーが再構築可能なものになります。
+catalystを使用することによって、Gentooユーザーは簡単に自分でカスタマイズしたGentooリリースを作成できます。(LiveCD, GameCD -- 好きな名前を付けてください)
+<uri link="http://dev.gentoo.org/~drobbins/catalyst-20031118.tar.gz">
+最新の開発中バージョンのcatalyst</uri>では、stage、GRPセットをAMD64 (64-bitと32-bit x86)、x86、PowerPC上での構築をサポートしています。
+LiveCD/GameCDのビルドに関しては今年の終わりまでにはリリースできる予定です。
+catalystに関する最新の情報は(まだ貧弱ですが)、<uri link="/proj/en/releng/catalyst/">catalyst project pages</uri>で見ることができます。 Enjoy!</p>
+</body>
+</news>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>drobbins (翻訳：千里)</poster>
+	<date>18 Jul 2003</date>
+	<title>GentooLinux 1.4 LinuxWorld Expoでリリース</title>
+<body>
+<p>
+
+<b>GentooLinux 1.4は、サンフランシスコ (カリフォルニア州 8月5-7日)の<uri link="http://www.linuxworldexpo.com">LinuxWorld Expo '03</uri>で公式にリリースされます。</b>
+Gentoo Linuxのクルーは、.org パビリオンブース#1の中のショーにいるでしょう。
+どうぞ、立ち寄って、歓談し、あなたの好きなGentoo Linux 1.4のビルドを無料で手にいれるプランを立てて下さい :) </p>
+
+</body>
+</news>

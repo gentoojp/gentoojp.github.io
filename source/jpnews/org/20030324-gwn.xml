@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳：小杉悠嗣)</poster>
+	<date>24 Mar 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年3月24日</title>
+<body>
+<p>
+<b>
+<uri link="/news/ja/gwn/20030324-newsletter.xml">今週のGWN</uri>を読めばどうすれば開発者になれるかわかります。
+</b>
+また、Gentoo LinuxのCFLAGSに対する方針の変更、make.confのSYNC変数の正しい設定方法に関する記事、そしていつものBugzilla、Portage Watch、Tips and Tricksをお楽しみ下さい。また、サーバーのメンテナンス関係で、来週のGWNは一日遅く発行されます。
+</p>
+</body>
+</news>

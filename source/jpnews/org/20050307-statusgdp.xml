@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="main">
+<poster>Sven Vermeulen(翻訳:M Nakamura)</poster>
+<date>March 7th, 2005</date>
+<title>Gentooドキュメントプロジェクト最新状況</title>
+
+<body>
+
+<p>
+<uri link="/proj/en/gdp">Gentooドキュメントプロジェクト</uri>の<uri link="/proj/en/gdp/status/status_20050307.xml">最新状況</uri>が発表されました。
+この数ヵ月でいくつもの新しいガイドが追加され、Gentoo 2005.0のインストール解説作成が開始されました。
+また、今年の同プロジェクトの目標到達点に付いても説明があります。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="main">
+<poster>Jeffrey Forman(翻訳:M Nakamura)</poster>
+<date>2005-03-03</date>
+<title>Gentoo Linux 2005.0 Security Rebuild</title>
+
+<body>
+
+<p>
+<b>2005.0リリース作業完了の数時間前に発覚した、<uri link="http://bugs.gentoo.org/show_bug.cgi?id=83253">Gaim</uri> および<uri link="http://bugs.gentoo.org/show_bug.cgi?id=83484">Mozilla-Firefox</uri>のリモートセキュリティホールと、<uri link="http://bugs.gentoo.org/show_bug.cgi?id=75181">QT</uri>および<uri link="http://bugs.gentoo.org/show_bug.cgi?id=81652">Kdelibs</uri>のローカルなセキュリティホールに対処するため、リリースエンジニア全員はリリースを延期し、これらの問題点に対処するためにリリースメディアを再構築することを決定しました。</b>
+</p>
+
+<p>
+リリースエンジニアチームはセキュリティチームの勤勉さにより、Gentooが最高級のセキュリティを実現していることに感謝します。また、各アーキテクチャ担当には、この最終段階での変更に耐え、各アーキテクチャ上でのこれらのパッケージ確認を素早く行ってくれたことに感謝します。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Donnie Berkholz(翻訳:Takeshi Matsuba)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2006-06-30</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+<title>Modular X enters stable</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>Xチームは大部分のアーキテクチャでmodular Xをstableにしました。</b>
+x86とAMD64アーキテクチャではX.Org 7.0へ、他のアーキテクチャではX.Org 7.1にアップグレードしてください。
+x86とAMD64の二つのアーキテクチャで、バージョンがまだ7.0なのは、
+7.1でアップデートされたABI (Application Binary Interface)の数多くの変更により、
+バイナリドライバが壊れてしまったためです。
+いくつかの残されたアーキテクチャでもすぐにstableになるでしょう。
+
+アップグレードを始める前に、適切なアップグレードの方法を学ぶため、<uri link="http://www.gentoo.org/proj/en/desktop/x/x11/modular-x-howto.xml">マイグレーションガイド</uri>(<uri link="http://www.gentoo.org/proj/ja/desktop/x/x11/modular-x-howto.xml">日本語訳</uri>)を読んでください。
+USEフラグを変更する方法や、なぜX.Orgがモジュラー化されたか、<c>emerge xorg-x11</c>を実行するだけではなぜ十分ではないのかが書かれています。
+
+アップグレードの間に遭遇した問題については、Bugzilla(<uri>https://bugs.gentoo.org/</uri>)に報告してください。
+Modular X は多くの変更がされているため、stableになった後の最初の2、3日は、恐らくいくつかの問題が残っているでしょう。
+</p>
+
+</body>
+</news>
+

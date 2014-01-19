@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>jforman (翻訳:Samantha)</poster>
+	<date>12 September 2004</date>
+	<title>Gentoo 2004.2-r1 x86 Minimal LiveCD</title>
+<body>
+<p>
+x86用の2004.2 Minimal LiveCDのブート時にたくさんの人々が問題に直面していることを、Gentooコミュニティは認識しています。
+これらの問題に対抗するため、リリースチームでは新しいinstall-x86-2004-r1-minimal.isoイメージを実験的に作成しました。
+このISOイメージは、Minimal LiveCDでブートしないというバグの多い、とあるBIOSに関する問題を修正した2004.2相当のCDの焼き直しです。
+install-x86-2004.2-r1-minimal.isoイメージはGentooミラーの/experimental/x86/livecd/x86/ディレクトリで見つかります。
+もしこのISOイメージについて質問があれば、お好きなIRCクライアントでirc.freenode.netの#gentoo-relengに参加して、リリースチームに遠慮なく言ってください。
+</p>
+</body>
+</news>

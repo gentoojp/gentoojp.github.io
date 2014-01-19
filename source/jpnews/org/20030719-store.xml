@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="plans">
+	<poster>drobbins (翻訳：千里)</poster>
+	<date>19 Jul 2003</date>
+	<title>Gentoo Linux 1.4 事前注文について</title>
+<body>
+<p>
+<b>
+私たちの新しい<uri link="http://store.gentoo.org">Gentoo Store</uri>はただいま<uri>http://store.gentoo.org</uri>にてオンライン中です。
+そして、x86, i686, Pentium III, Pentium 4 および Athlon XP、さらにもうすぐ出る他のアーキテクチャと共に、Gentoo Linux 1.4のための事前注文の受付けを行っています。</b>
+
+各CD2枚のセットは、インターネット接続の必要なしでGentooをインストールすることができ、あらかじめビルドされたパッケージ(Xfree86、KDE、GNOMEその他)の数多くのセレクションと、インストール説明書の印刷物が含まれます。Gentoo Linux1.4は2003年8月5日に公式にリリース(および出荷)されるでしょう。
+</p>
+</body>
+</news>

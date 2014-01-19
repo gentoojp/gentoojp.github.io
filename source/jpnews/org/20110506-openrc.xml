@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="linux">
+<poster>naota</poster>
+<date>2011-05-06</date>
+<title>5月8日にOpenRCとbaselayout 2がstableになります</title>
+
+<body>
+<p>
+このニュースはGentoo本家ニュース
+<uri link="http://www.gentoo.org/news/20110505-openrc.xml">OpenRC and baselayout 2 will be stabilized on May 8</uri>の翻訳です。
+</p>
+
+<p>
+5月8日に
+Gentooの現在のサービスシステム(baselayout)を置き換える
+<uri link="http://roy.marples.name/openrc">OpenRC</uri>がstableになります。
+以前のbaselayoutのbashのみのrcシステムに代わり、C言語ベースのコアに
+POSIX準拠のシェルスクリプトのみを使ったrcシステムになります。
+</p>
+
+<p>
+sys-apps/baselayoutが2.xに更新され、sys-apps/openrcという新しいパッケージがインストールされることになります。
+なるべく早くこの更新を行なうようにしてください。
+</p>
+
+<p>
+<b>このパッケージがemergeされたら、すぐに<uri
+link="http://www.gentoo.org/doc/en/handbook/handbook-amd64.xml?part=3&amp;chap=4">dispatch-confやetc-update</uri>
+<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-amd64.xml?part=3&amp;chap=4">(日本語訳)</uri>
+などの設定更新ツールで設定ファイルを更新して、<uri
+link="http://www.gentoo.org/doc/en/openrc-migration.xml">OpenRC Migration
+Guide</uri>に従うようにしてください。</b>
+</p>
+
+<p>
+<b>これらの更新に失敗した場合、システムが起動しなくなる可能性があります。</b>
+もし、起動しなくなった場合は、LiveCDやLiveDVDで起動しルートファイルシステムを
+マウントして<uri
+link="http://www.gentoo.org/doc/en/handbook/handbook-amd64.xml?part=1&amp;chap=6#doc_chap1">
+そこにchrootして</uri><uri
+link="http://www.gentoo.org/doc/ja/handbook/handbook-amd64.xml?part=1&amp;chap=6#doc_chap1">
+(日本語訳)</uri>上に書いた指示に従うようにしてください。
+</p>
+
+<p>
+  <e>Christian Faulhammer and William Hubbs contributed this announcement.</e>
+</p>
+
+</body>
+</news>
+
+

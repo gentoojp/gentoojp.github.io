@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>16 Sep 2006</date>
+	<title>「Portage-utils」の翻訳が完了しました</title>
+<body>
+
+<p>
+<uri link="http://www.gentoo.org/doc/ja/portage-utils.xml">Portage-utils</uri>の翻訳が完了しました。
+</p>
+
+<p>
+このドキュメントは、C言語で書かれた高速なPortageヘルパーアプリケーションであるportage-utilsの一般的な使用方法を取り上げています。 
+</p>
+
+<p>
+原文より：
+</p>
+
+<p>
+<c>portage-utils</c>とは、C言語で書かれた非常に高速なユーティリティ集です。
+これは、類似機能を提供する<c>gentoolkit</c>よりも高速で、
+限定的ながらもその代替手段になることを意味します。
+但し、<c>portage-utils</c>が<c>gentoolkit</c>に取って代わるものではないことは認識しておいて下さい。 
+このユーティリティは、<c>gentoolkit</c>で提供される同等のものよりも効率的で、
+Portageを繰り返し呼び出す必要があるスクリプトで用いるのに適しているかもしれません。
+
+但し、<c>portage-utils</c>では同等の機能性が提供されているわけではありません。
+<c>portage-utils</c>ではeclassが全く考慮されず、
+また<c>revdep-rebuild</c>や<c>glsa-check</c>のようなツールは提供されていません。
+</p>
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/doc/ja/portage-utils.xml">Portage-utils</uri>
+</p>
+
+<p>
+翻訳を担当された、村上 卓 さん、また査読をしてくださった松葉さん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

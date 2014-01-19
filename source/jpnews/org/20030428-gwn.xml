@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+<poster>klieber (翻訳：yamakura)</poster>
+<date>28 April 2003</date>
+<title>Gentoo Weekly Newsletter -- 2003年4月28日号</title>
+<body>
+<p>
+<b>
+今週の<uri link="http://www.gentoo.org/news/ja/gwn/20030428-newsletter.xml">Gentoo Weekly Newsletter</uri>ではebuildの管理の仕方を変更する提案についての情報をお知らせします。
+</b>  
+その他にはメーリングリストの変更、開発者紹介、予定より早くリリースされたtcl/tkに関する注意書きなどが掲載されています。お楽しみ下さい!
+</p>
+</body>
+</news>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!--
+上の行は最終的な翻訳ドキュメントでは必要ありません。AxKit以外で確認する場合の文法チェックで必要となります
+-->
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+
+<!--ドキュメントのファイル名-->
+<guide link="/jpdoc/test-xml.xml">
+
+<!--ドキュメントのタイトル-->
+<title>ドキュメントサンプル文書</title>
+
+<!--作成者名、作成者のメールアドレス-->
+<author title="Author"><mail link="docs@gentoo.gr.jp">GentooJP</mail>
+</author>
+
+<!--翻訳ドキュメントの場合は、以下を追加します-->
+<author title="翻訳"><mail link="翻訳者メールアドレス">翻訳者名</mail>
+</author>
+
+<!--Original revision: 1.49--><!--// 翻訳ドキュメントでオリジナルリビジョンを確認するために記入してください-->
+
+
+<!--文書の摘要-->
+<abstract>
+このガイドは、GentooJPの翻訳・オリジナルドキュメントの基本構成について、サンプルを提供します。 
+</abstract>
+
+<!--ドキュメントのバージョン-->
+<version>1.0</version>
+
+<!--作成年月日-->
+<date>8 November 2002</date>
+
+
+<!-- ここから本文です。-->
+<chapter>
+<title>これは第１章のタイトルです</title>
+<section>
+
+<title>これは第１章第１節のタイトルです</title>
+
+<body>
+
+<p>第１章の第１節の本文です。</p>
+
+<pre>コード領域です。実際に入力する操作を記載します。</pre>
+
+<note>これは注記です。</note>
+<warn>これは警告です。</warn>
+<impo>これは重要項目です。</impo>
+
+</body>
+</section>
+</chapter>
+<!-- ここまでが本文です。-->
+
+</guide>
+

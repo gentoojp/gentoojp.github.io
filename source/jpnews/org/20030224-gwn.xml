@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳：小杉悠嗣)</poster>
+	<date>24 Feb 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年2月24日</title>
+<body>
+<p><b>今週の<uri link="http://www.gentoo.org/news/ja/gwn/20030224-newsletter.xml">Gentoo Weekly Newsletter</uri>はGentoo Linux 1.4に関する情報が満載です。</b>他のニュースは、NeTraverseとの新しいパートナーシップ、FOSDEMの写真、そして多くのGentoo Linuxセキュリティアナウンス等があります。</p>
+<p>また、GWNではgentoo-devメールリストの参加者で耳寄りなトピックや議論をまとめる人を探してます。興味がある方は<mail link="gwn-feedback@gentoo.org">gwn-feedback@gentoo.org</mail>へメールをどうぞ。
+</p>
+</body>
+</news>

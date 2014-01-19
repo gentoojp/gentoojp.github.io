@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>naota</poster>
+	<date>2011-11-01</date>
+	<title>翻訳プロジェクト10月の活動内容</title>
+<body>
+
+<p>
+GentooJP翻訳プロジェクト2011年10月の活動内容を公表します。
+10月はx86/amd64/PPCハンドブックおよび新たな2つのドキュメントの翻訳を行ないました。
+先月の3名の方の翻訳を反映しました。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/bind-guide.xml">Gentoo BIND ガイド</uri> (新たな翻訳)
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/zsh.xml">zshの設定及びインストールガイド</uri> (新たな翻訳)
+  </li>
+
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">Gentoo Linux x86 ハンドブック</uri> (version. 10.1 (2009-12-29) → 10.2 (2010-07-19))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-config.xml">ファイルシステム情報</uri> (version. 13 (2011-08-13) → 14 (2011-09-11))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-kernelmodules.xml">モジュールを設定する</uri> (version. 1 (2008-03-02) → 3 (2011-08-03))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-ppc64-medium.xml">ハードウェア要件</uri> (version. 2.6 (2005-09-15) → 10.0 (2010-07-20))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-system.xml">chrootする</uri> (version. 11 (2011-08-03) → 12 (2011-08-22))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-x86+amd64-disk.xml">ブロックデバイス入門</uri> (version. 6.2 (2009-01-09) → 11 (2011-10-17))
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/hb-install-x86+amd64-medium.xml">ハードウェアの必要条件</uri> (version. 7.2 (2010-07-18) → 9 (2011-10-09))
+  </li>
+</ul>
+
+<p>
+GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。
+</p>
+
+<ul>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/handbook/">Gentoo ハンドブック</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/openrc-migration.xml">BaselayoutとOpenRCの移行ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/gentoo-x86-quickinstall.xml">Gentoo Linux x86クイックインストールガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</uri>
+  </li>
+  <li>
+    <uri link="http://www.gentoo.org/doc/ja/alsa-guide.xml">Gentoo Linux ALSA ガイド</uri>
+  </li>
+</ul>
+
+<p>
+翻訳に興味があり参加してみたい方は、ぜひ<uri link="http://www.gentoo.gr.jp/jpmain/translation.xml">GentooJP翻訳プロジェクト</uri>
+をご覧ください。
+</p>
+
+</body>
+</news>

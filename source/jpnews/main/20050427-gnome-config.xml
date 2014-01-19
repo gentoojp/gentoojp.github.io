@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>27 Apr 2005</date>
+	<title>「GNOME設定ガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/doc/ja/gnome-config.xml">GNOME設定ガイド</uri>です。
+このガイドはGNOME環境のインストール方法ならびに環境の設定方法を説明しています。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+GNOMEのインストールを始める前に、USE変数を編集するべきかもしれません。
+<path>/etc/make.conf</path> にリストされているUSE変数の中に<c>gtk</c>や<c>gnome</c>があるか確認してください。
+もし<c>hald</c>（ハードウェア抽象化層デーモン）のサポートが必要なら、<c>hal</c>をUSEフラグに追加しましょう。
+USEフラグ<c>howl</c>は、GNOMEにDNS検出機能を追加します(Mac OS XにおけるRendevouzと似たものです)。
+あなたがKDE(GNOMEとは別の有名なデスクトップ環境)を必要としないなら、<c>qt</c>や<c>kde</c>を削除してください。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/gnome-config.xml">http://www.gentoo.org/doc/ja/gnome-config.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、池田 健吾 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

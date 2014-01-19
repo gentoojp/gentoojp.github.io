@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005年1月10日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2005年1月10日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>今週の<uri link="/news/ja/gwn/20050110-newsletter.xml">Gentoo Weekly 
+Newsletter</uri>では、(先日起きたアカウントの大量登録の対策として)Forumのユーザ登録に必要となった画像認証、2.6.10カーネルがstableに、この先数ヶ月のプロジェクトの目標をお伝えします。</b>世界のGentooからは、MITでGentoo講座の開催と、カナダの小学校では有望株の Gentoo LTSPプロジェクトが進行中、"Tips &amp; tricks"では、複数のWindowマネージャのGUIメニューを作成する便利なツールを紹介します。"Gentoo in the press"からは、先週のLinux Journalに掲載された記事もお見逃しなく！
+</p>
+
+</body>
+</news>

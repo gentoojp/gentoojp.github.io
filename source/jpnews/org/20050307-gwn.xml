@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>Ulrich Plate (翻訳: 桜井知之)</poster>
+
+<!-- Date to be displayed - usually the GWN release date -->
+<date>2005年3月7日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Weekly Newsletter -- 2005年3月7日</title>
+<body>
+
+<!-- Alter to your own likings -->
+<p>
+<b>
+今週の<uri link="/news/ja/gwn/20050307-newsletter.xml">Gentoo Weekly Newsletter</uri>は、2005.0リリースに向けた作業状況、Gentoo基幹サーバの移行、<span class="path">sys-apps</span>の再編、企業ユーザからの体験談募集などなど、盛りだくさんです。</b>開発者紹介が数ヶ月ぶりに復活して、今週はGentoo packageデータベースサイトの管理者を紹介します。世界のGentooでは、来週末にせまったイギリスとドイツで開催予定のイベントのお知らせと、昨日閉幕したドイツでのイベントレポートをお届けします。今週からGentooセキュリティとBugzillaが後半に移動します。Gentoo関連情報に加えて、知られざる<span class="code">emerge</span>の上手な使い方をご紹介します。
+</p>
+
+</body>
+</news>

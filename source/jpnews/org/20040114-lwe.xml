@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>klieber(翻訳:中野正智)</poster>
+	<date>14 January 2004</date>
+	<title>Gentoo Linuxがベストオープンソースプロジェクトの最終候補にあげられています</title>
+<body>
+<p>
+<b>私たちは、Gentoo LinuxがLinuxWorld ConferenceとExpo's Product Excellence Awardsにて、
+ベストオープンソースプロジェクトの最終候補として
+<uri link="http://www.linuxworldexpo.com/linuxworldny/V40/press.cvn?id=11&amp;p_id=28">発表されている</uri>ことを喜んで報告します。</b>
+他の候補にはKDE、Sun Microsystems、RealNetworksがあげられています。
+最終決定は１月２１日（水）午後に、勝者の発表と同時に行なわれます。
+expoに参加する人は、立ち寄って私たちと一緒に幸運を祈ってくださいね！
+</p>
+</body>
+</news>

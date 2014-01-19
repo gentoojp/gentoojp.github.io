@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>avenj(翻訳:Takashi Ota)</poster>
+	<date>06 August 2003</date>
+	<title>新たな x86/i686 LiveCD</title>
+<body>
+<p>
+<b>x86とi686用の1.4 GRP CD1 LiveCDが更新され</b>、いま
+<uri link="http://www.gentoo.org/main/en/mirrors.xml">mirror</uri>に行き渡りつつあります。
+20030806のタイムスタンプを持つこのCDには、genkernelユーティリティの更新バージョン、
+x86とi686CDユーザーにのみ影響のあるバグ修正が含まれています。
+Pentium3、Pentium4とAthlon-XPのCDのユーザーには
+影響ありません。
+</p>
+</body>
+</news>

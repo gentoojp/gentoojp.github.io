@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>08 Mar 2005</date>
+	<title>Gentoo Linux Cronガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+もはや説明するまでもないcronについて、<uri link="http://www.gentoo.org/doc/ja/cron-guide.xml">Gentoo Linux Cronガイド</uri>は説明します。たぶん、ほとんどのLinuxユーザは、cronについての一般的な利用方法を知っていると思いますので必要ないと思いますが、cronが何？とか、Gentooのインストールで選ばされる3つのcronパッケージの違いは何？とか、一般ユーザでcronを使用したい。という方は、ざっと見ていただければと思います。思わぬ発見があるかもしれません。
+</p>
+
+<p>
+個人的には、私はデフォルトのvixie-cronが好きなので、何も考えずに入れていますが、Gentooユーザたるものこのガイドを読んで、用途に応じたcronデーモンの選択をしてみたいものですね。
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+Portageには選択することができるcronの実装が、少なくとも3つあります。 これらは同じようなインターフェースを提供し、すなわちcrontabかそれに似たコマンドを使います。 連続運用されないシステムでcronと共に動作するanacronという関連したユーティリティもあります。
+</p>
+
+<p>
+root以外のユーザをcronデーモンにアクセスできるようにしたいなら、この章を読んでください。 そうでなければ、次の章であるcronジョブの登録に進みましょう。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/cron-guide.xml">Gentoo Linux Cronガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、全面的な査読に協力してくださった、五十嵐さん、お疲れさまでした。
+</p>
+</body>
+</news>

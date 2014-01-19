@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>6 Nov 2004</date>
+	<title>distccドキュメントの翻訳が完了しました</title>
+<body>
+
+<p>
+Gentoo/Portageを使っていると「もう少し早くコンパイルが終わってくれないかなー」と思うことはありませんか？
+</p>
+
+<p>
+distccがその不満を少し解消してくれるかもしれません。
+このドキュメントを読んで挑戦してみましょう！
+</p>
+
+<p>
+本文より引用 -
+</p>
+<p>
+「distccとはコンパイル作業をネットワークに参加しているホストに分散させるプログラムです。それはサーバである <c>distccd</c>と、クライアントの<c>distcc</c>から成ります。distccは<uri link="http://ccache.samba.org">ccache</uri>や Portageと透過的に動作することができます。」
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/distcc.xml">distccドキュメント</uri>。
+</p>
+
+<p>
+翻訳を担当した小林弘樹さん、お疲れさまでした。
+</p>
+
+</body>
+</news>

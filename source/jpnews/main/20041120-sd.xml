@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoo">
+	<poster>小町守</poster>
+	<date>21 Nov 2004</date>
+	<title>Software Design 2004年12月号 Gentoo Linuxパッケージ操作研究【前編】</title>
+<body>
+
+<p>
+Software Design 12月号(11月18日発売)にGentoo Linuxでのパッケージの作り方について解説記事を書きました。昨年の連載では自分でebuildファイルを書いてみるところまで紹介しましたが、今回はeclassという仕組みを使って実践的にどんどんパッケージを作る方法について触れています。Gentooで数個パッケージを作ってみたので、もっとパッケージの作り方について知りたい、という人にお勧めです。
+</p>
+</body>
+</news>

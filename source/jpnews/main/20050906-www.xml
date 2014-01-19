@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>中野正智</poster>
+	<date>6 Sep 2005</date>
+	<title>このサイトのデザイン変更のお知らせ</title>
+<body>
+
+<p>
+ご覧のようにサイトのデザインを若干変更いたしました。
+</p>
+
+<p>
+不具合やご要望ありましたら、<uri link="http://www.gentoo.gr.jp/jpmain/about-gentoojp.xml#doc_chap4">GentooJP miscメーリングリスト</uri>または<mail link="www@gentoo.gr.jp">www@gentoo.gr.jp</mail>までご連絡ください。
+</p>
+
+</body>
+</news>

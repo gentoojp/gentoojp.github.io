@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+<news gentoo="yes" category="gentoo">
+<poster>Daniel Drake(訳者:垣花  顕)</poster>
+<date>2005-06-08</date>
+<title>Gentoo全体投票</title>
+<body>
+
+<p>
+<b>今週 Gentoo開発者たちは Gentoo 組織の全域に渡る再構築計画について出された、さまざまな案件に対して投票を行っています。</b>
+最近行われた役員の選挙と同様に、
+<uri link="http://electionmethods.org/CondorcetEx.htm">Condorcet Election</uri>
+方式が、選挙過程を処理するための Aron Griffis の votify/countify スクリプトと共に使用されます。
+選挙にかけられる案件も含めた詳しい情報は gentoo-dev メーリングリストの
+<uri link="http://article.gmane.org/gmane.linux.gentoo.devel/28603">posting</uri>
+で見付けることができます。
+</p>
+
+</body>
+</news>

@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳：萩原佳明)</poster>
+	<date>20 Jan 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年1月20日号</title>
+<body>
+<p><b><uri link="http://www.gentoo.org/news/ja/gwn/20030120-newsletter.xml">今週号のGentoo Weekly Newsletter</uri>ではGentoo Linuxの次のリリースがfinalではなくrc3になることについてお知らせします。</b>
+他にもGentoo Linux PPCの開発者のMITでのプレゼンテーションの話題やGnuPGを設定して動かすための情報などを掲載しています。
+</p>
+<p>
+GWNの原稿に協力してみたい方は<mail link="gwn-feedback@gentoo.org">gwn-feedback@gentoo.org</mail>まであなたのアイデアを要約したメールを送ってください。
+Gentoo Linuxに何かしら関係していれば、トピックはあなたの好きなもの何でも構いません。
+頂いた提案は(全てではありませんが)、記者に連絡してこの先のGentoo Weekly Newsletterでフルサイズの記事になるよう手配します。
+</p>
+</body>
+</news>

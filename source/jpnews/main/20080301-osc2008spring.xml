@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>idani</poster>
+	<date>1 Mar 2008</date>
+	<title>オープンソースカンファレンス2008 Tokyo/Springに出展中です。</title>
+<body>
+
+<p>
+今回もGnetooJPとして、<uri link="http://www.ospn.jp/osc2008-spring/">オープンソースカンファレンス2008 Tokyo/Spring</uri>に参加中です。
+今回は<uri link="http://jp.tilingwindowmanager.org">日本タイル</uri>との共同展示のみで、セミナーは実施しません。
+展示・配布は以下を行っています。
+</p>
+
+<p>
+GentooJPの展示内容:
+</p>
+
+<ol>
+<li>Gentoo Linuxの布教活動</li>
+<p>Gentoo LinuxをインストールしたPCの展示と紹介チラシを配布する予定です。</p>
+<li>Gentoo Linux 2008.0 αイ ンストーラ搭載LiveCDの配布</li>
+<p>様々なタイル型ウィンドウマネージャを試せて、GentooもインストールができるLiveCDです。</p>
+</ol>
+
+<p>
+それでは、会場でみなさまのご来場をお待ちしています。
+</p>
+
+</body>
+</news>

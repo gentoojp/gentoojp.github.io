@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+
+<!-- $Header$ -->
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="linux">
+
+<!-- Enter your name here -->
+<poster>GMN (翻訳: Ryo Kuya、Yoko Kuya、opentaka)</poster>
+
+<!-- Date to be displayed - usually the GMN release date -->
+<date>2008年10月13日</date>
+
+<!-- Title of the news item - don't forget to change the date -->
+
+<title>Gentoo Monthly Newsletter -- 2008年9月30日</title>
+<body>
+
+<!-- Alter to your own likings -->
+
+<p>
+<uri link="http://www.gentoo.org/news/ja/gmn/20080930-newsletter.xml">GMN2008年09月号の翻訳版</uri>をおおくりします。
+今号の翻訳はGMN-JPチーム（Ryo Kuyaさん、Yoko Kuyaさん、opentakaさん）が担当いたしました。
+今月号にはteTeXの廃止とTeXLiveへの移行、EAPI-2の承認、iotop使い方などが掲載されています。
+</p>
+
+</body>
+</news>

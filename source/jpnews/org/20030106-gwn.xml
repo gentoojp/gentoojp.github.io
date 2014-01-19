@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber (翻訳:ケテル'kage-chan'ダニエル)</poster>
+	<date>06 Jan 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年1月6日</title>
+<body>
+
+<p><b><uri link="http://www.gentoo.org/news/en/gwn/20030106-newsletter.xml">新年最初のGWN</uri>にはreverse dependencyなど、
+Portageの新機能についての情報が豊富に含まれています。</b>
+さらに、Perl 5.6.1からどうすれば簡単にPerl 5.8に移行することができるかを説明しています。
+その他にもGentoo Linuxに最近導入され、話題をよんでいるprelinkingについても書かれています。
+最後に、この号には皆さんがどうすればGentoo Linuxプロジェクトのお手伝いができるかについての情報が含まれています。 
+</p>
+</body>
+</news>
+
+

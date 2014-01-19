@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE news SYSTEM "/dtd/guide.dtd">
+
+<news gentoo="yes" category="main">
+<poster>Chris Gianelloni(翻訳:M Nakamura)</poster>
+<date>March 7th, 2005</date>
+<title>Gentoo利用例</title>
+
+<body>
+
+<p>
+私達がGentooに関していつも探している事柄の一つに、Gentooを使って日々の生
+活をより快適にしている人達の情報があります。
+例えばそれはコンピュータグラフィックス業界かもしれないし、デスクトップ環
+境での活用かもしれないし、小さな企業のファイアウォールかもしれません。
+このような情報は、私達のプロジェクトの現状捕捉と、今後進むべき方向を判断
+しやすくしてくれます。
+あなたのGentoo成功事例を聞かせてください!
+Gentooの大規模環境への適用や、Gentooのちょっと変わった方面での適用事例に
+ついては、是非とも聞いてみたいです。
+あなたの体験談を<mail
+link="usage-feedback@gentoo.org">usage-feedback@gentoo.org</mail>に早速送ってください。
+</p>
+
+</body>
+</news>

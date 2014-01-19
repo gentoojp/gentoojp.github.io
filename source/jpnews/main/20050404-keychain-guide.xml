@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>4 Apr 2005</date>
+	<title>「Gentoo Linux keychainガイド」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは、<uri link="http://www.gentoo.org/doc/ja/keychain-guide.xml">Gentoo Linux keychainガイド</uri>です。
+sshをパスワード認証で使っている方は、もはやいないと思います。しかし、公開鍵認証でも、パスフレーズの入力を何度も行う場合があってメンドクサイですよね。このガイドでは、そのパスフレーズの入力を簡略化するためのssh-agentの使い方や、screenなどの複数のセッションを利用する場合に便利なkeychainの使い方を解説します。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+あなたはsshdを実行している立派なGentooマシンを多く持っていますが、それらのログインパスワードのすべてをタイプし続けるのは、少し不便ですよね？ もしくは、SSH接続を便利に使用する方法を必要とするスクリプトかcronジョブがあるでしょう。 いずれにせよ、この問題の解決策があります。そして、それは公開鍵認証によって始まります。
+</p>
+
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/keychain-guide.xml">http://www.gentoo.org/doc/ja/keychain-guide.xml</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="plans">
+	<poster>drobbins (翻訳：今野勝之)</poster>
+	<date>24 Jul 2003</date>
+	<title>ただいまPowerPC用Gentoo Linux 1.4が予約できます</title>
+<body>
+<p>
+<b>新しい<uri link="http://store.gentoo.org">Gentoo Store</uri>では
+ただいまPowerPC向けのGentoo Linux 1.4、</b>
+PowerPC G3、PowerPC G4、
+それにKDE/GNOME両方のデスクトップ環境が入った
+PowerPC用LiveCDの予約を受け付けています。
+Gentoo PowerPCチームの素晴らしい働きに感謝します！</p>
+</body>
+</news>

@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>21 Apr 2005</date>
+	<title>Gentoo Linux x86 ハンドブックの翻訳が完了!</title>
+<body>
+
+<p>
+お待たせしました！ Gentoo Linux 2005.0リリースからおよそ1ヶ月経過しましたが、やっと「<uri link="http://www.gentoo.org/doc/ja/handbook/">Gentooハンドブック</uri>」の1つ、「<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">Gentoo Linux x86 ハンドブック</uri>」を最新にアップデートすることができました。今回のハンドブックは、以前のハンドブックと異なり、常にドキュメントを最新状態に保つために、オンラインでのインストールに重点をおくように変更されています。このためパッケージCDを利用してインストールを行うユーザやGRPインストールを行うユーザは、オフライン版インストールガイドである「<uri link="http://www.gentoo.org/doc/en/handbook/2005.0/index.xml">2005.0 Gentooハンドブック(英語)</uri>」を参照していただく形となります。こちらのハンドブックの方はまだ、未訳ですが、現在、翻訳をするべく計画中です。しばらくお待ちください。
+</p>
+
+<p>
+さて、ハンドブックは現在で完了というわけではなく、まだまだ成長していきます。現在は最新となっていますが、本家の更新も頻繁に行われており、最新と異なる場合があるかもしれません。少しでもおかしいと思われましたら、<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">本家英語版ハンドブック</uri>を参照してください。または、<uri link="http://www.gentoo.gr.jp/jpmain/trans_status.xml">翻訳状況</uri>でご確認ください。
+</p>
+
+<p>
+以下、本文より抜粋:
+</p>
+
+<p>
+Gentooへようこそ。あなたは選択の自由とパフォーマンスの追求を許された世界に足を踏み入れようとしています。Gentooとは選択です。 Gentooをインストールするとき、あなたはこの事実に何度か向き合うことになります。どのくらい自分でコンパイルするのか、どのようにGentooをインストールするのか、どのシステムロガーを使うのか、といったことをあなたが自分で決めるのです。
+</p>
+
+<p>
+ハンドブックに翻訳ミスやタイポがあれば、<uri link="http://bugs.gentoo.gr.jp/">BugzillaJP</uri>にて、Documentプロダクト、Gentoo Documentationの翻訳コンポーネントでそのバグを報告してください。担当者が迅速に対処いたします。もし、本家ドキュメントにミスを発見された方は、<uri link="http://bugs.gentoo.org/">Gentoo Linux Bugzilla</uri>にて、Docs-userカテゴリ、Handbookコンポーネントでその間違いの報告を行ってください。
+</p>
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/handbook/">Gentooハンドブック</uri>と<uri link="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">Gentoo Linux x86 ハンドブック</uri>
+</p>
+
+<p>
+翻訳を担当した以下のみなさん、お疲れさまでした。
+</p>
+<ul>
+  <li>おぎうち やすお さん</li>
+  <li>わただ ゆうすけ さん</li>
+  <li>せーいち さん</li>
+  <li>五十嵐 正尚 さん</li>
+  <li>武田 洋之 さん</li>
+  <li>村上 誠 さん</li>
+  <li>小林 弘樹 さん</li>
+  <li>真藤 直観 さん</li>
+  <li>萩原 佳明 さん</li>
+  <li>中野 正智 さん</li>
+  <li>飴谷 茂寛</li>
+</ul>
+
+</body>
+</news>

@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷茂寛</poster>
+	<date>14 Mar 2005</date>
+	<title>Gentoo Linux nVidiaガイドの翻訳が完了しました</title>
+<body>
+
+<p>
+最近のPCのグラフィックカードでは、nVidiaとATIが主流を占めています。今回はnVidiaを使用するユーザには朗報でしょう! 何故ならこの<uri link="http://www.gentoo.org/doc/ja/nvidia-guide.xml">Gentoo Linux nVidiaガイド</uri>を読むことでグラフィックカードのパフォーマンスを100%引き出せるからです。たとえば、このドライバを導入することでデュアルディスプレイが可能となります。モニタが余っている方は試してみてはいかがでしょうか？ 画面の広がりとともにLinuxでの作業・開発の幅が広がることでしょう。 また3D描画の速度向上が見込めますから、Linuxで3Dゲームをするユーザは、その興奮度が大幅にアップするのではないでしょうか？
+</p>
+
+<p>
+原文より:
+</p>
+
+<p>
+nVidiaドライバには現在のカーネルと統合するカーネルモジュールが含まれます。 このドライバを使うためには、カーネルがカーネルモジュールの読み込みをサポートしていなければなりません。 もしカーネルの設定にgenkernelを使用したなら、準備は整っています。 そうでなければ、このサポートが有効になっているかカーネルの設定をもう一度確認してください。
+</p>
+
+
+<p>
+こちらからどうぞ。<uri link="http://www.gentoo.org/doc/ja/nvidia-guide.xml">Gentoo Linux nVidiaガイド</uri>
+</p>
+
+<p>
+翻訳を担当された、小林 弘樹 さん、また査読の手伝いをしてくださったみなさん、お疲れさまでした。
+</p>
+</body>
+</news>

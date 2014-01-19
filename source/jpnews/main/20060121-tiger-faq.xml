@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+	<poster>飴谷　茂寛</poster>
+	<date>21 January 2006</date>
+	<title>「Gentoo Java 1.5 FAQ」の翻訳が完了しました</title>
+<body>
+
+<p>
+今回、翻訳が完了したのは<uri link="http://www.gentoo.org/proj/ja/java/tiger-faq.xml">Gentoo Java 1.5 FAQ</uri>です。
+
+このガイドは、GentooのJAVAプロジェクトが作成したドキュメントで、SUNのJDK1.5を使う方法を説明しています。しかし注意してください。本文でも述べられているとおり、Gentooでの利用はまだ、限定的ですし、システムを不安にしかねない可能性もあります。このためGentooのドキュメント一覧にも掲載されていません。利用する場合には、その辺りを心してご利用ください。
+</p>
+
+
+<p>
+原文より:
+</p>
+
+<p>
+  システムVMとしての1.5 JDKの使用は、システムを不安定にする問題が少々あるため、Java 1.5はまだhard maskされています。
+</p>
+
+<p>
+  Java 1.5を使う上での一つ目の問題は、後方互換性です。
+  1.5 JDKを使用してパッケージをコンパイルすると、
+  コンパイルされたクラスは1.5もしくはそれ以上のバージョンのVMでのみ利用可能にな>るのが、デフォルトの動作です。
+</p>
+
+
+<p>
+こちらからどうぞ。
+<uri link="http://www.gentoo.org/proj/ja/java/tiger-faq.xml">Gentoo Java 1.5 FAQ</uri>
+</p>
+
+<p>
+翻訳を担当された、五十嵐 正尚 さん、また査読の手伝いをしてくださったクリスさん、どうもお疲れさまでした。
+</p>
+</body>
+</news>

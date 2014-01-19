@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="linux">
+	<poster>klieber(翻訳:Takashi Ota.)</poster>
+	<date>21 April 2003</date>
+	<title>Gentoo Weekly Newsletter -- 2003年4月21日号</title>
+<body>
+<p>
+<b>
+Portageセキュリティの新機能の続報が 今週の<uri link="http://www.gentoo.org/news/ja/gwn/20030421-newsletter.xml">Gentoo Weekly Newsletter</uri>のヘッドラインです。 
+</b>  
+そのほかの情報は、Gentoo Linux projectで空いている役割リスト、Gentoo Linux が HPPA プラットフォームで利用できること、それとコロケーション・スペースと回線の寄付要請です。楽しんで！
+</p>
+</body>
+</news>
