@@ -2,11 +2,11 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
+url: http://gentoojp.github.io
+title: Gentoo Linux Users Group Japa
 subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: http://google.com/search
+author: GentooJP
+simple_search:
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -17,7 +17,7 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-subscribe_email:
+subscribe_email: www@gentoo.gr.jp
 # RSS feeds can list your email address if you like
 email:
 
