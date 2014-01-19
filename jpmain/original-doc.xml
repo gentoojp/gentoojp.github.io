@@ -1,0 +1,16 @@
+      <!DOCTYPE html>
+      <html>
+      <head>
+      <title>Redirecting...</title>
+      <link rel="canonical" href="/jpmain/original-doc.html"/>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta http-equiv="refresh" content="0; url=/jpmain/original-doc.html" />
+      </head>
+      <body>
+        <p><strong>Redirecting...</strong></p>
+        <p><a href='/jpmain/original-doc.html'>Click here if you are not redirected.</a></p>
+        <script>
+          document.location.href = "/jpmain/original-doc.html";
+        </script>
+      </body>
+      </html>
