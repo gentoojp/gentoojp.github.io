@@ -36,7 +36,7 @@ LVS,Ldirectord,NFS,Heartbeat,DRBD等のソフトウェアを用いて高可用�
 <p>
 一台のサーバの障害によって、システムのダウンが起こらないような稼働率の高いシステムの事です。<br />
 具体的には、障害時にサーバのフェイルオーバを行う等の手法が採られます。<br />
-フェイルオーバに関する詳細な情報は、<uri link="failover.xml">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。
+フェイルオーバに関する詳細な情報は、<uri link="failover.html">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。
 </p>
 
 </body>
@@ -118,7 +118,7 @@ DRBDを利用することにより、障害発生時にデータを引き継ぐ�
 	また、srv01がダウンした場合、このIPアドレスは自動的にsrv02に引き継がれ、実サーバからはサーバが稼動し続けているように見えます。</li>
 <li>ファイル/LDAPサーバのIPアドレスは192.168.4.12とします。<br />
 srv02がダウンした場合、このIPアドレスは自動的にsrv01に引き継がれ、実サーバからはサーバが稼働し続けているように見えます。</li>
-<li>Heartbeat、DRBD等のフェイルオーバと共通するソフトウェアの設定は、<uri link="failover.xml">Gentoo Linux フェイルオーバーガイド</uri>の設定をベースにしています。<br />
+<li>Heartbeat、DRBD等のフェイルオーバと共通するソフトウェアの設定は、<uri link="failover.html">Gentoo Linux フェイルオーバーガイド</uri>の設定をベースにしています。<br />
 これらについての詳細は、このドキュメントでは触れません。<br />
 この事は、負荷分散システムの構築がフェイルオーバシステムの応用である事を意味します。</li>
 </ul>
@@ -232,7 +232,7 @@ pam readline xml xml2 zlib
 # <i>PORTDIR_OVERLAY="/usr/local/ekinoco" USE="ldap" \
 emerge ekinoco/net-ftp/proftpd-nlst-ldapv3/proftpd-nlst-ldapv3-1.2.10.ebuild</i>
 </pre>
-<note>※ <uri link="failover.xml#doc_chap2_sect2">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。</note>
+<note>※ <uri link="failover.html#doc_chap2_sect2">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。</note>
 
 </body>
 </section>
@@ -242,7 +242,7 @@ emerge ekinoco/net-ftp/proftpd-nlst-ldapv3/proftpd-nlst-ldapv3-1.2.10.ebuild</i>
 	
 <p>
 ロードバランサに対してNFSサーバの設定をします。<br />
-<uri link="failover.xml#doc_chap2_sect3">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+<uri link="failover.html#doc_chap2_sect3">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
 この作業はsrv01/02で行う必要があります。
 </p>
 
@@ -311,7 +311,7 @@ srv03/04# <i>sysctl -p</i>
 <body>
 <p>
 ロードバランサに対して、DRBDを設定します。<br />
-<uri link="failover.xml#doc_chap3_sect3">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+<uri link="failover.html#doc_chap3_sect3">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
 但し、drbd0と同時にdrbd1を定義して下さい。この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
 この作業はsrv01/02で行う必要があります。
 </p>
@@ -322,7 +322,7 @@ srv03/04# <i>sysctl -p</i>
 <body>
 <p>
 ロードバランサに対してNFSサーバの設定をします。<br />
-<uri link="failover.xml#doc_chap3_sect12">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+<uri link="failover.html#doc_chap3_sect12">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
 但し、drbd1上に設定して下さい。この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
 この作業はsrv01/02で行う必要があります。
 
@@ -335,7 +335,7 @@ srv03/04# <i>sysctl -p</i>
 	
 <p>
 ロードバランサに対してLDAPサーバの設定をします。<br />
-<uri link="failover.xml#doc_chap3_sect6">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+<uri link="failover.html#doc_chap3_sect6">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
 但し、drbd1上に設定して下さい。また、IPアドレスは、192.168.4.12に読み替えてください。<br />
 この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
 この作業はsrv01/02で行う必要があります。
@@ -445,7 +445,7 @@ srv01/02# <i>tail -f /var/log/ha-debug</i>
 <title>NFS（実サーバ）</title>
 <body>
 <p>実サーバに対してNFSクライアントの設定をします。<br />
-<uri link="failover.xml#doc_chap3_sect13">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+<uri link="failover.html#doc_chap3_sect13">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
 但し、drbd1上に設定して下さい。また、IPアドレスは、192.168.4.12に読み替えてください。<br />
 この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
 この作業はsrv03/04で行う必要があります。
@@ -460,7 +460,7 @@ srv01/02# <i>tail -f /var/log/ha-debug</i>
 <title>OpenLDAP（実サーバ）</title>
 <body>
 <p>実サーバに対してLDAPクライアントの設定をします。<br />
-<uri link="failover.xml#doc_chap3_sect7">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
+<uri link="failover.html#doc_chap3_sect7">Gentoo Linux フェイルオーバーガイド</uri>を参照してください。<br />
 但し、drbd1上に設定して下さい。また、IPアドレスは、192.168.4.12に読み替えてください。<br />
 更に、ユーザの追加例のホームディレクトリを/mnt/nfs/home/[ユーザ名]と読み替えてください。<br />
 この事は、ファイル/LDAPサーバとロードバランサを分離する為に必要です。<br />
