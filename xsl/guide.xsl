@@ -77,11 +77,11 @@
 							<div class="navi">
 										<span><a href="/">トップ</a></span>
 										|
-										<span><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></span>
+										<span><a href="/jpmain/about-gentoojp.html">GentooJPについて</a></span>
 										|
-										<span><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></span>
+										<span><a href="/jpmain/arukikata.html">Gentooの歩き方</a></span>
 										|
-										<span><a href="/jpmain/docs-list.xml">各種ドキュメント</a></span>
+										<span><a href="/jpmain/docs-list.html">各種ドキュメント</a></span>
 								</div>
 						</td>
 					</tr>
@@ -93,10 +93,10 @@
 				<td class="sidebar" valign="top" rowspan="2">
 					<h4>はじめに</h4>
 					<ul>
-						<li><a href="/jpmain/about-gentoojp.xml">GentooJPについて</a></li>
-						<li><a href="/jpmain/arukikata.xml">Gentooの歩き方</a></li>
-						<li><a href="/jpmain/contribution.xml">Gentooへの貢献</a></li>
-						<li><a href="/jpmain/docs-list.xml">各種ドキュメント</a></li>
+						<li><a href="/jpmain/about-gentoojp.html">GentooJPについて</a></li>
+						<li><a href="/jpmain/arukikata.html">Gentooの歩き方</a></li>
+						<li><a href="/jpmain/contribution.html">Gentooへの貢献</a></li>
+						<li><a href="/jpmain/docs-list.html">各種ドキュメント</a></li>
 					</ul>
 					<h4><a href="http://www.gentoo.org/doc/ja/handbook/handbook-x86.xml">ハンドブック</a></h4>
 					<ul>
@@ -123,21 +123,21 @@
 						<li><a href="http://www.gentoo.org/doc/ja/xorg-config.xml">X サーバー設定ガイド</a></li>
 						<li><a href="http://www.gentoo.org/doc/ja/gentoo-security.xml">セキュリティガイド</a></li>
 						<li><a href="http://www.gentoo.org/doc/ja/faq.xml">FAQ</a></li>
-						<li><a href="/jpmain/tips.xml">TIPS集</a></li>
-						<li><a href="/jpmain/docs-list.xml">ドキュメント一覧</a></li>
+						<li><a href="/jpmain/tips.html">TIPS集</a></li>
+						<li><a href="/jpmain/docs-list.html">ドキュメント一覧</a></li>
 					</ul>
 					<h4>プロジェクト</h4>
 					<ul>
-						<li><a href="/jpmain/original-doc.xml">オリジナルドキュメント</a></li>
-						<li><a href="/jpmain/translation.xml">翻訳</a> <a href="/jpmain/trans_status.xml">[状況]</a></li>
-						<li><a href="/jpmain/project-gwn.xml">GWN翻訳</a></li>
+						<li><a href="/jpmain/original-doc.html">オリジナルドキュメント</a></li>
+						<li><a href="/jpmain/translation.html">翻訳</a> <a href="/jpmain/trans_status.html">[状況]</a></li>
+						<li><a href="/jpmain/project-gwn.html">GWN翻訳</a></li>
 					</ul>
 					<h4>その他</h4>
 					<ul>
 						<li><a href="http://wiki.gentoo.gr.jp/">GentooJP Wiki</a></li>
-						<li><a href="/jpmain/about-gentoojp.xml#doc_chap4">メーリングリスト</a></li>
-						<li><a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a></li>
-						<li><a href="/jpmain/sponsors.xml">スポンサー</a></li>
+						<li><a href="/jpmain/about-gentoojp.html#doc_chap4">メーリングリスト</a></li>
+						<li><a href="/jpmain/about-gentoojp.html#doc_chap5">IRC</a></li>
+						<li><a href="/jpmain/sponsors.html">スポンサー</a></li>
 					</ul>
 				</td>
 				<td valign="top">
@@ -151,7 +151,7 @@
 								<td>
 									<table class="main">
 										<tr>
-											<th colspan="2"><a href="/jpnews/main/"></a>ニュース <font size="-2"><a href="/jpmain/news-submit.xml"><nobr>[投稿について]</nobr></a><a href="/jpnews/"><nobr>[過去のニュース一覧]</nobr></a></font><a href="gentoojp-news.xml"><img src="/images/rss.png" border="0"></img></a>
+											<th colspan="2"><a href="/jpnews/main/"></a>ニュース <font size="-2"><a href="/jpmain/news-submit.html"><nobr>[投稿について]</nobr></a><a href="/jpnews/"><nobr>[過去のニュース一覧]</nobr></a></font><a href="gentoojp-news.xml"><img src="/images/rss.png" border="0"></img></a>
 </th>
 										</tr>
 										<tr valign="top">
@@ -403,7 +403,7 @@
 												</table>
 												<xsl:if test="not(contains(/guide/author, 'GentooJP'))">
 													<table border="0" style="border: #dddddd 3px dotted;">
-														<tr><td>このドキュメントの著作権はAuthorの方に帰属します。<br/>詳しくは<a href="/jpmain/original-doc.xml">オリジナルドキュメントプロジェクト</a>を参照してください。</td></tr>
+														<tr><td>このドキュメントの著作権はAuthorの方に帰属します。<br/>詳しくは<a href="/jpmain/original-doc.html">オリジナルドキュメントプロジェクト</a>を参照してください。</td></tr>
 													</table>
 												</xsl:if>
 												<br/><br/>
@@ -494,7 +494,7 @@
 					  [ <a href="http://ml.gentoo.gr.jp/docs/">docs ML</a> ]
 					  [ <a href="http://ml.gentoo.gr.jp/dev/">dev ML</a> ]
 					  [ <a href="http://ml.gentoo.gr.jp/misc/">misc ML</a> ]
-						[ <a href="/jpmain/about-gentoojp.xml#doc_chap5">IRC</a> ]</div>
+						[ <a href="/jpmain/about-gentoojp.html#doc_chap5">IRC</a> ]</div>
 				</td>
 				</tr>
 				</table>
