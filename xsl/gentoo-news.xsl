@@ -22,7 +22,7 @@
 				<xsl:for-each select="document('/jpnews/org/news-index.xml')/uris/uri[position()&lt;11]/text()">
 					<xsl:sort select="position()" order="ascending" /> 
 					<rdf:li>
-						<xsl:attribute name="rdf:resource">http://www.gentoo.gr.jp<xsl:value-of select="." /></xsl:attribute>
+						<xsl:attribute name="rdf:resource">http://www.gentoo.gr.jp<xsl:value-of select="concat(substring-before(., 'xml'), 'html')" /></xsl:attribute>
 					</rdf:li>
 				</xsl:for-each>
 			</rdf:Seq>
@@ -31,9 +31,9 @@
 
 	<xsl:for-each select="document('/jpnews/org/news-index.xml')/uris/uri[position()&lt;11]/text()">
 	<item>
-		<xsl:attribute name="rdf:about">http://www.gentoo.gr.jp<xsl:value-of select="." /></xsl:attribute>
+		<xsl:attribute name="rdf:about">http://www.gentoo.gr.jp<xsl:value-of select="concat(substring-before(., 'xml'), 'html')" /></xsl:attribute>
 		<title><xsl:value-of select="document(.)/news/title" /></title> 
-		<link>http://www.gentoo.gr.jp<xsl:value-of select="." /></link>
+		<link>http://www.gentoo.gr.jp<xsl:value-of select="concat(substring-before(., 'xml'), 'html')" /></link>
 		<dc:subject><xsl:value-of select="document(.)/news/@category" /></dc:subject>
 		<dc:creator><xsl:value-of select="document(.)/news/poster" /></dc:creator>
 		<!-- <dc:date><xsl:value-of select="document(.)/news/date" /></dc:date> -->
