@@ -500,7 +500,7 @@
 				</table>
 
 				<div align="center" class="copy">
-					Copyright<xsl:text disable-output-escaping="yes">&amp;copy;</xsl:text> 2002-2005 Gentoo Linux Users Group Japan. All rights reserved.<br/>
+					Copyright<xsl:text disable-output-escaping="yes">&amp;copy;</xsl:text> 2002-2014 Gentoo Linux Users Group Japan. All rights reserved.<br/>
 					このサイトはGentooJPが運営するGentoo.org非公式コミュニティサイトです。ご質問、ご意見などはこちらまで。 Email: <a href="mailto:www@gentoo.gr.jp">www@gentoo.gr.jp</a>
 				</div>
 			</body>
