@@ -129,7 +129,7 @@
 					<h4>プロジェクト</h4>
 					<ul>
 						<li><a href="/jpmain/original-doc.html">オリジナルドキュメント</a></li>
-						<li><a href="/jpmain/translation.html">翻訳</a> <a href="/jpmain/trans_status.html">[状況]</a></li>
+                        <li><a href="/jpmain/translation.html">翻訳</a> <a href="http://www.gentoo.org/doc/ja/overview.xml">[状況]</a></li>
 						<li><a href="/jpmain/project-gwn.html">GWN翻訳</a></li>
 					</ul>
 					<h4>その他</h4>
@@ -161,7 +161,7 @@
 														<xsl:sort select="substring-after(substring-after(substring-after(., '/'), '/'), '/')" order="descending" />
 														<xsl:choose>
 														<xsl:when test="position() &lt;= 5">
-														<xsl:variable name="newsuri" select="."/>
+														<xsl:variable name="newsuri" select="concat(substring-before(., 'xml'), 'html')"/>
 														<tr valign="middle" style="vertical-align: middle;">
 														<!-- <td valign="middle" style="vertical-align: middle; width: 60px;"> -->
 														<td valign="middle" style="width: 1%;">
@@ -358,7 +358,7 @@
 																	</xsl:when>
 															</xsl:choose>
 															</td>
-															<xsl:variable name="newsuri" select="."/>
+															<xsl:variable name="newsuri" select="concat(substring-before(., 'xml'), 'html')"/>
 															<td valign="middle" style="vertical-align: middle;">
 															<a href="{$newsuri}">
 																<xsl:value-of select="document(.)/news/title"/>

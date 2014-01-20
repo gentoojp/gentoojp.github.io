@@ -22,7 +22,7 @@
 				<xsl:for-each select="document(document('/jpnews/allnews.xml')/news_indexes/file)/uris/uri[position()&lt;=5]/text()">
 				<xsl:sort select="substring-after(substring-after(substring-after(., '/'), '/'), '/')" order="descending" />
 					<rdf:li>
-						<xsl:attribute name="rdf:resource">http://www.gentoo.gr.jp<xsl:value-of select="." /></xsl:attribute>
+						<xsl:attribute name="rdf:resource">http://www.gentoo.gr.jp<xsl:value-of select="concat(substring-before(., 'xml'), 'html')" /></xsl:attribute>
 					</rdf:li>
 				</xsl:for-each>
 			</rdf:Seq>
@@ -32,9 +32,9 @@
 	<xsl:for-each select="document(document('/jpnews/allnews.xml')/news_indexes/file)/uris/uri[position()&lt;=5]/text()">
 	<xsl:sort select="substring-after(substring-after(substring-after(., '/'), '/'), '/')" order="descending" />
 	<item>
-		<xsl:attribute name="rdf:about">http://www.gentoo.gr.jp<xsl:value-of select="." /></xsl:attribute>
+		<xsl:attribute name="rdf:about">http://www.gentoo.gr.jp<xsl:value-of select="concat(substring-before(., 'xml'), 'html')" /></xsl:attribute>
 		<title><xsl:value-of select="document(.)/news/title" /></title> 
-		<link>http://www.gentoo.gr.jp<xsl:value-of select="." /></link>
+		<link>http://www.gentoo.gr.jp<xsl:value-of select="concat(substring-before(., 'xml'), 'html')" /></link>
 		<dc:subject><xsl:value-of select="document(.)/news/@category" /></dc:subject>
 		<dc:creator><xsl:value-of select="document(.)/news/poster" /></dc:creator>
 		<!-- <dc:date><xsl:value-of select="document(.)/news/date" /></dc:date> -->
