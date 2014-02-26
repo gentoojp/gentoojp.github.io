@@ -9,6 +9,7 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html"/>
@@ -18,10 +19,16 @@
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110506-openrc.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20110408-osc2011kobe.html"/>
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html">
+    <title>オープンソースカンファレンス2014 Tokyo/Springに出展します。</title>
+    <link>http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Alice</dc:creator>
+    <description><![CDATA[GentooJP はオープンソースカンファレンス2014 Tokyo/Springに参加します。 GentooJPの展示内容: Gentoo Linuxの紹介 Gentooバグを潰す タイル型WMの紹介 Gentoo勉強会の紹介 Raspberry PiでGentooを使用の紹介]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html">
     <title>翻訳プロジェクト11月から3月の活動内容</title>
     <link>http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html</link>
@@ -84,12 +91,5 @@
     <dc:subject>linux</dc:subject>
     <dc:creator>naota</dc:creator>
     <description><![CDATA[このニュースはGentoo本家ニュース OpenRC and baselayout 2 will be stabilized on May 8の翻訳です。 5月8日に Gentooの現在のサービスシステム(baselayout)を置き換える OpenRCがstableになります。 以前のbaselayoutのbashのみのrcシステムに代わり、C言語ベースのコアに POSIX準拠のシェルスクリプトのみを使ったrcシステムになります。 sys-apps/baselayoutが2.xに更新され、sys-apps/openrcという新しいパッケージがインストールされることになります。 なるべく早くこの更新を行なうようにしてください。 このパッケージがemergeされたら、すぐにdispatch-confやetc-update (日本語訳) などの設定更新ツールで設定ファイルを更新して、OpenRC Migration Guideに従うようにしてください。 これらの更新に失敗した場合、システムが起動しなくなる可能性があります。 もし、起動しなくなった場合は、LiveCDやLiveDVDで起動しルートファイルシステムを マウントして そこにchrootして (日本語訳)上に書いた指示に従うようにしてください。 Christian Faulhammer and William Hubbs contributed this announcement.]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20110408-osc2011kobe.html">
-    <title>オープンソースカンファレンス2011 Kansai@Kobeに出展します。</title>
-    <link>http://www.gentoo.gr.jp/jpnews/main/20110408-osc2011kobe.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>naota</dc:creator>
-    <description><![CDATA[GentooJPとして、オープンソースカンファレンス2011 Kansai@Kobeに参加します。 展示・配布は以下を行う予定です。 Gentoo Linuxの布教活動 LiveDVDの配布 今回の会場は、神戸市産業振興センターになっております。 アクセス方法は、オープンソースカンファレンス2011 Kansai@Kobeをご参照ください。 それでは、会場でみなさまのご来場をお待ちしています。]]></description>
   </item>
 </rdf:RDF>
