@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+    <poster>Alice</poster>
+    <date>26 Feb 2014</date>
+    <title>オープンソースカンファレンス2014 Tokyo/Springに出展します。</title>
+<body>
+<p>GentooJP は<uri link="http://www.ospn.jp/osc2014-spring/">オープンソースカンファレンス2014 Tokyo/Spring</uri>に参加します。</p>
+
+<p>
+GentooJPの展示内容: 
+</p>
+
+<ol>
+<li>Gentoo Linuxの紹介</li>
+<li>Gentooバグを潰す</li>
+<li>タイル型WMの紹介</li>
+<li>Gentoo勉強会の紹介</li>
+<li>Raspberry PiでGentooを使用の紹介</li>
+</ol>
+
+</body>
+</news>
