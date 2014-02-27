@@ -53,7 +53,9 @@ task :generate do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "## Generating Site with Jekyll"
   system "compass compile --css-dir #{source_dir}/stylesheets"
-  system "jekyll"
+  unless system "jekyll"
+    abort("failed to generate")
+  end
 end
 
 desc "Watch the site and regenerate when it changes"
@@ -258,7 +260,7 @@ multitask :push do
   cd "#{deploy_dir}" do
     system "git add -A"
     puts "\n## Committing: Site updated at #{Time.now.utc}"
-    message = "Site updated at #{Time.now.utc}"
+    message = "Site updated at #{Time.now.utc} [ci skip]"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
     system "git push origin #{deploy_branch}"
