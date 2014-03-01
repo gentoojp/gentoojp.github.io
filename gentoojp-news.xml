@@ -9,19 +9,26 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20111101-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20111011-trans-summary.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20110906-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110506-openrc.html"/>
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html">
+    <title>Github Pagesへ移行しました</title>
+    <link>http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>nabeken</dc:creator>
+    <description><![CDATA[GentooJPのホームページ (www.gentoo.gr.jp)はGithub Pagesへ移行しました。]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html">
     <title>オープンソースカンファレンス2014 Tokyo/Springに出展します。</title>
     <link>http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html</link>
@@ -63,13 +70,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>naota</dc:creator>
     <description><![CDATA[GentooJP翻訳プロジェクトは、2011年9月の活動内容を公表します。 9月はx86/amd64/PPCハンドブックを中心に5つの文書の差分翻訳を行ないました。 また、査読がおいついていませんが、新たに3名の方に翻訳に参加していただきました。 Gentoo Linux/PPC ブロックデバイス入門 (version. 2.00 (2005-03-28) → 10.1 (2010-07-20)) Gentoo Linux Portage設定 (version. 9.5 (2010-05-14) → 13 (2011-08-13)) Gentoo Linux はじめに (ネットーク設定) (version. 8.0 (2007-05-07) → 9 (2011-08-13)) Gentoo Linux オフィシャルツリーからの変更 (version. 1.6 (2007-02-26) → 1.7 (2010-07-13)) Gentoo Linux Portageのツール (version. 1.5 (2008-03-01) → 2 (2010-10-04)) GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。 Gentoo ハンドブック BaselayoutとOpenRCの移行ガイド Gentoo Linux x86クイックインストールガイド X サーバー設定ガイド Gentoo Linux ALSA ガイド また、以下の文書の査読者も募集しています。 Gentoo Linux Kernel Configuration Guide 翻訳に興味があり参加してみたい方は、ぜひGentooJP翻訳プロジェクト をご覧ください。]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20110906-trans-summary.html">
-    <title>翻訳プロジェクト8月の活動内容</title>
-    <link>http://www.gentoo.gr.jp/jpnews/main/20110906-trans-summary.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>morota</dc:creator>
-    <description><![CDATA[GentooJP翻訳プロジェクトは、2011年8月の活動内容を公表します。 x86/amd64/PPCハンドブックを中心に16の文書に及ぶ差分翻訳が行われました。 Gentoo Linux/AMD64 よくある質問とその回答(FAQ) (rev. 1.37 -> 1.38) Gentooインストールファイルをインストールする (rev. 1.122 -> 1.123) Gentooベースシステムのインストール (rev. 1.112 -> 1.119) カーネル設定(x86/amd64) (rev. 1.35 -> 1.37) システム設定 (rev. 1.101 -> 1.102) 必要なシステムツールをインストールする (rev. 1.48 -> 1.49) ブートローダを設定する(x86/amd64) (rev. 1.17 -> 1.23) Portageについて (rev. 1.74 -> 1.75) USEフラグ (rev. 1.49 -> 1.50) Portageの機能 (rev. 1.36 -> 1.37) initスクリプト (rev. 1.31 -> 1.32) ファイルとディレクトリ (rev. 1.20 -> 1.21) ソフトウェアのブランチを併用する (rev. 1.15 -> 1.18) 特別なハードウェアの構成 (rev. 1.2 -> 1.6) 適切なインストールメディアの選択(PPC) (rev. 1.44 -> 1.66) Gentoo Linux PPC ハンドブック (rev. 1.147 -> 1.159) GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。 Gentoo ハンドブック BaselayoutとOpenRCの移行ガイド Gentoo Linux x86クイックインストールガイド X サーバー設定ガイド Gentoo Linux ALSA ガイド 翻訳に興味があり参加してみたい方は、ぜひGentooJP翻訳プロジェクト をご覧ください。]]></description>
   </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html">
     <title>Gentoo LinuxはLiveDVD 11.2をリリースしました</title>
