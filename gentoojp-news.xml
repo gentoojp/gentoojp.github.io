@@ -27,7 +27,7 @@
     <link>http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html</link>
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>nabeken</dc:creator>
-    <description><![CDATA[GentooJPのホームページ (www.gentoo.gr.jp)はGithub Pagesへ移行しました。]]></description>
+    <description><![CDATA[GentooJPのホームページ (www.gentoo.gr.jp)はGithub Pagesへ移行しました。 不具合があればGithubのIssueからお知らせください。]]></description>
   </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html">
     <title>オープンソースカンファレンス2014 Tokyo/Springに出展します。</title>
