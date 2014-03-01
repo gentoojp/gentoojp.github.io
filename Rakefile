@@ -53,7 +53,9 @@ task :generate do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "## Generating Site with Jekyll"
   system "compass compile --css-dir #{source_dir}/stylesheets"
-  system "jekyll"
+  unless system "jekyll"
+    abort("failed to generate")
+  end
 end
 
 desc "Watch the site and regenerate when it changes"
@@ -249,7 +251,9 @@ multitask :push do
   puts "## Deploying branch to Github Pages "
   puts "## Pulling any updates from Github Pages "
   cd "#{deploy_dir}" do 
-    system "git pull"
+    unless system "git pull"
+      raise "failed to git pull"
+    end
   end
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   Rake::Task[:copydot].invoke(public_dir, deploy_dir)
@@ -258,10 +262,14 @@ multitask :push do
   cd "#{deploy_dir}" do
     system "git add -A"
     puts "\n## Committing: Site updated at #{Time.now.utc}"
-    message = "Site updated at #{Time.now.utc}"
-    system "git commit -m \"#{message}\""
+    message = "Site updated at #{Time.now.utc} [ci skip]"
+    unless system "git commit -m \"#{message}\""
+      raise "failed to git commit"
+    end
     puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{deploy_branch}"
+    unless system "git push origin #{deploy_branch}"
+      raise "failed to git push"
+    end
     puts "\n## Github Pages deploy complete"
   end
 end
