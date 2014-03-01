@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+    <poster>nabeken</poster>
+    <date>1 Mar 2014</date>
+    <title>Github Pagesへ移行しました</title>
+<body>
+<p>GentooJPのホームページ (www.gentoo.gr.jp)はGithub Pagesへ移行しました。</p>
+</body>
+</news>
