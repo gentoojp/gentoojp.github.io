@@ -8,11 +8,12 @@
 
 <author title="Author"><mail link="www@gentoo.gr.jp">GentooJP</mail></author>
 <author title="Author"><mail link="nakano@gentoo.gr.jp">中野正智</mail></author>
+<author title="Author"><mail link="nabeken@gentoo.gr.jp">たなべ</mail></author>
 <abstract>これはGentooJPのWebページにニュースを掲載するための手順を説明したものです。
 </abstract>
 
-<version>1.1</version>
-<date>13 Mar 2003</date>
+<version>2.0</version>
+<date>2 Mar 2013</date>
 
 <chapter>
 	<title>ニュースについて</title>
@@ -57,15 +58,18 @@ GentooJPで使用されているXMLのルールで記述してください。具
 &lt;/news&gt;
     </pre>
     </p>
+
+    <p>このXMLファイルを<a href="https://github.com/gentoojp/gentoojp.github.io">リポジトリ内</a>の<path>source/jpnews/main/YYYYMMDD-titile.xml</path>に保存してください。</p>
+
+    <p>次に<a href="https://github.com/gentoojp/gentoojp.github.io/blob/source/source/jpnews/main/news-index.xml">RSS生成用インデックスファイル</a>にURIを<impo>一番上に</impo>追記してください。</p>
     </body>
     </section>
 
     <section>
-    <title>掲載依頼</title>
+    <title>Pull Requestによる掲載依頼</title>
     <body>
     <p>
-上記フォーマットで記述し、その内容を<mail link = "www@gentoo.gr.jp">GentooJP</mail>まで送付してください。
-掲載の可否についてお返事させて頂きます。
+      上記フォーマットで記述し、その内容を<a href="https://github.com/gentoojp/gentoojp.github.io/pulls">Pull Request</a>してください。travis-ciによるビルドがパスし、かつ、掲載の可と判断した場合はマージさせて頂きます。
     </p>
     </body>
     </section>
