@@ -6,8 +6,9 @@
     <title>Github Pagesへ移行しました</title>
 <body>
   <p>
-    GentooJPのホームページ (www.gentoo.gr.jp)はGithub Pagesへ移行しました。
+    GentooJPのホームページ(www.gentoo.gr.jp)はGithub Pagesへ移行しました。
     不具合があれば<a href="https://github.com/gentoojp/gentoojp.github.io/issues">GithubのIssue</a>からお知らせください。
   </p>
+  <p>また、ニュースを掲載してほしい場合は<a href="/jpmain/news-submit.html">ニュース掲載手順</a>を参考にPull Requestをお送りください。</p>
 </body>
 </news>
