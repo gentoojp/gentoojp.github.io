@@ -38,13 +38,13 @@ module Jekyll
     def convert(content)
       setup
       if convert?(content)
-        a = IO.popen("xsltproc --catalogs --novalid - 2>&1", "r+") { |io|
+        a = IO.popen("xsltproc --catalogs - 2>&1", "r+") { |io|
           io.print insert_default_stylesheet_if_needed(content)
           io.close_write
           io.read
         }
-        if a.include?('compilation error')
-          puts content
+        if $?.to_i != 0
+          raise a
         end
         a
       else
