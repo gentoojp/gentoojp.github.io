@@ -15,7 +15,7 @@ before_script:
 script: bundle exec rake generate
 
 after_success:
-- '[ "${TRAVIS_BRANCH}" = "source" ] && ./travis-ci/push-to-github.sh'
+- '[ "${TRAVIS_BRANCH}" = "source" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && ./travis-ci/push-to-github.sh'
 
 env:
   global:
