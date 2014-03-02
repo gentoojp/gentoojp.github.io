@@ -14,6 +14,7 @@ Gentoo Linuxを使うには、はじめにどのドキュメントを読めば�
 
 <chapter>
 <title>はじめに</title>
+<section>
 
 <body>
 
@@ -34,14 +35,14 @@ Gentooのドキュメントをご紹介します。
 <p>
 また、ここで紹介されているドキュメントの一部には翻訳が用意されていないものもあります。この場合、ドキュメント名の後に「(英語)」と注記しています。
 </p>
-
 </body>
+</section>
 
 </chapter>
 
 <chapter>
 <title>Gentooって何?</title>
-
+<section>
 <body>
 <p>
 Gentoo Linuxの概略を知るためには、まず<b><uri link="http://www.gentoo.org/main/ja/about.xml">About Gentoo Linux</uri></b>を読んでください。また、GentooJPの概略を知るためには、<b><uri link="/jpmain/about-gentoojp.html">GentooJPについて</uri></b>を読んでください。
@@ -52,11 +53,13 @@ Gentoo Linuxの概略を知るためには、まず<b><uri link="http://www.gent
 </p>
 
 </body>
+</section>
 
 </chapter>
 
 <chapter>
 <title>ハンドブックを読もう</title>
+<section>
 
 <body>
 <p>
@@ -82,10 +85,12 @@ Gentooプロジェクトでは、ハンドブックと呼ばれる一貫性の�
 </p>
 
 </body>
+</section>
 </chapter>
 
 <chapter>
 <title>そして、次の段階へ</title>
+<section>
 
 <body>
 <p>
@@ -102,10 +107,12 @@ GentooJPではユーザー間の情報交換のためのメーリングリスト
 
 </body>
 
+</section>
 </chapter>
 
 <chapter>
 <title>情報源</title>
+<section>
 
 <body>
 <p>
@@ -135,5 +142,6 @@ Gentoo Linuxで使えるソフトの新着情報が必要だったら<b><uri lin
 
 </body>
 
+</section>
 </chapter>
 </guide>

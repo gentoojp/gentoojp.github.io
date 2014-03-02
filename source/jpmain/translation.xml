@@ -19,6 +19,7 @@
 
 <chapter>
 <title>GentooJP翻訳プロジェクトについて</title>
+<section>
 <body>
 <p>GentooJP翻訳プロジェクトは、Gentoo Linux Projectで作成されたドキュメントを日本語へ翻訳するプロジェクトです。
 翻訳の成果はGentoo Linux Projectへ還元しています。</p>
@@ -29,11 +30,11 @@
 <p>このドキュメントは翻訳の手順が記述されています。</p>
 
 </body>
+</section>
 </chapter>
 
 <chapter>
 <title>翻訳の手順</title>
-
 <section>
 <title>GentooJPドキュメントメーリングリストに参加する。</title>
 <body>
@@ -319,12 +320,14 @@ link="http://wiki.gentoo.gr.jp/index.php?%E7%BF%BB%E8%A8%B3%E3%83%A1%E3%83%A2">G
 
 <chapter>
 <title>翻訳状況一覧</title>
+<section>
 <body>
 <p>
 <uri link="trans_status.xml">移動しました。</uri>
 </p>
 </body>
 
+</section>
 </chapter>
 
 </guide>

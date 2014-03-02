@@ -8,8 +8,6 @@
 	<mail link="syuu@dokukino.com">Takuya Asada</mail>
 </author>
 
-<license/>
-
 <abstract>
 このガイドではHeartbeatとDRBDを用いてフェイルオーバシステムを構築する方法を解説します。
 </abstract>

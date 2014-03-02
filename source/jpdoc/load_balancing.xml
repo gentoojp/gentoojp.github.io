@@ -8,8 +8,6 @@
 	<mail link="syuu@dokukino.com">Takuya Asada</mail>
 </author>
 
-<license/>
-
 <abstract>
 このガイドではLVS,NFS,Heartbeat,Ldirectord,DRBD等のソフトウェアを用いて高可用性を持つ負荷分散システムを構築する方法を解説します。
 </abstract>
@@ -373,6 +371,7 @@ srv01# <i>/etc/ha.d/resource.d/ipvsadm /mnt/drbd0/init/ipvsadm save</i>
 </section>
 <section>
 <title>Heartbeat/Ldirectord（ロードバランサ）</title>
+<body>
 <p>最初に、ldirectordの設定をします。<br />
 この作業はsrv01/02で行う必要があります。
 </p>
@@ -440,6 +439,7 @@ debug 1
 srv01/02# <i>/etc/init.d/heartbeat start</i>
 srv01/02# <i>tail -f /var/log/ha-debug</i>
 </pre>
+</body>
 </section>
 <section>
 <title>NFS（実サーバ）</title>

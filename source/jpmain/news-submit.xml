@@ -59,9 +59,9 @@ GentooJPで使用されているXMLのルールで記述してください。具
     </pre>
     </p>
 
-    <p>このXMLファイルを<a href="https://github.com/gentoojp/gentoojp.github.io">リポジトリ内</a>の<path>source/jpnews/main/YYYYMMDD-titile.xml</path>に保存してください。</p>
+    <p>このXMLファイルを<uri link="https://github.com/gentoojp/gentoojp.github.io">リポジトリ内</uri>の<path>source/jpnews/main/YYYYMMDD-titile.xml</path>に保存してください。</p>
 
-    <p>次に<a href="https://github.com/gentoojp/gentoojp.github.io/blob/source/source/jpnews/main/news-index.xml">RSS生成用インデックスファイル</a>にURIを<impo>一番上に</impo>追記してください。</p>
+    <p>次に<uri link="https://github.com/gentoojp/gentoojp.github.io/blob/source/source/jpnews/main/news-index.xml">RSS生成用インデックスファイル</uri>にURIを<impo>一番上に</impo>追記してください。</p>
     </body>
     </section>
 
@@ -69,7 +69,7 @@ GentooJPで使用されているXMLのルールで記述してください。具
     <title>Pull Requestによる掲載依頼</title>
     <body>
     <p>
-      上記フォーマットで記述し、その内容を<a href="https://github.com/gentoojp/gentoojp.github.io/pulls">Pull Request</a>してください。travis-ciによるビルドがパスし、かつ、掲載の可と判断した場合はマージさせて頂きます。
+      上記フォーマットで記述し、その内容を<uri link="https://github.com/gentoojp/gentoojp.github.io/pulls">Pull Request</uri>してください。travis-ciによるビルドがパスし、かつ、掲載の可と判断した場合はマージさせて頂きます。
     </p>
     </body>
     </section>

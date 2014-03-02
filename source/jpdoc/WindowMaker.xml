@@ -40,13 +40,11 @@
       
       <body>
 
-	<warn>もし、<i>startx</i> などで X が起動しない場合は一旦 X の設定を完了してください。以下、X が起動することを前提にしています。</warn>
+        <warn>もし、<i>startx</i> などで X が起動しない場合は一旦 X の設定を完了してください。以下、X が起動することを前提にしています。</warn>
 
-	<p>早速 Window Maker のインストールといきたいところですが、そのまえに xdm が起動するようにしましょう。xdm は XFree86 をインストールすると自動的にインストールされます。Gentoo の場合、/etc/rc.conf のなかで起動するかしないかを決めます。さらに この rc.conf のなかで XSESSION 変数を "Xsession" にセットしてくだささい。
+        <p>早速 Window Maker のインストールといきたいところですが、そのまえに xdm が起動するようにしましょう。xdm は XFree86 をインストールすると自動的にインストールされます。Gentoo の場合、/etc/rc.conf のなかで起動するかしないかを決めます。さらに この rc.conf のなかで XSESSION 変数を "Xsession" にセットしてくだささい。</p>
 
 	<note>xdm は Window Maker の動作に必須ではありませんが、いちいち<i>$ startx</i> する手間が省けます。</note>
-
-	</p>
 
 <pre caption="/etc/rc.conf -- DISPLAYMANAGER と XSESSION のセット"># What display manager do you use ?  [ xdm | gdm | kdm ]
 DISPLAYMANAGER=xdm
@@ -82,10 +80,10 @@ XSESSION=Xsession
 	<p>.xsession ファイルを作らなくてはいけません。もし、すでにこった <e>.xinitrc</e> を書いていた場合は .xsession にリネームするかコピーしておいてください。xdm でログインする場合は、.xsession が実行されます。もし、こったものでなくても記述内容は同じなので参考になるはずです。</p>
 
 	<p>Window Maker を起動させるために必要な .xsession の内容は実は、これだけです。</p>
-<pre>#!/bin/sh 
+<pre caption=".xsession">#!/bin/sh 
 exec wmaker
 </pre>
-	<impo>.xsession には実行属性がないといけません。<i>$ chmod +x ~/.xsession</i> を忘れないようにしてください。また、xdm を起動させず、startx にて X を起動する場合は、.xsession ではなく .xinitrc が参照されます。</impo> 
+<impo>.xsession には実行属性がないといけません。<i>$ chmod +x ~/.xsession</i> を忘れないようにしてください。また、xdm を起動させず、startx にて X を起動する場合は、.xsession ではなく .xinitrc が参照されます。</impo>
 
 	<p>しかしながら、これだけでは実は英語表示になってしまいますし、自動的にターミナルも起動してくれません。.xsession 自体はただのシェルスクリプトなので、普通のシェルスクリプトと同様に手を加えてあげれば大丈夫です。例えば、こんな具合。</p>
 <pre caption=".xsession サンプル">#!/bin/sh 
@@ -218,8 +216,8 @@ exec wmaker
 <pre caption="wmCalClock の emerge"># emerge wmCalClock
 </pre>
 	<note>Dock アプリは <path>/usr/portage/x11-plugins</path> にあります。</note>
-<pre caption="wmCalClock の起動">$ wmCalClock &amp; <codenote>&amp; を忘れないようにしてください。</codenote>
-</pre>
+    <pre caption="wmCalClock の起動">$ wmCalClock &amp;</pre>
+    <codenote>&amp; を忘れないようにしてください。</codenote>
 	<p>起動すると、左下のアイコンにカレンダー付時計がでてきます。先ほどの要領でアイコンを画面右側にドラッグして登録してください。次にちょっと細いですが、時計とカレンダーの枠あたりを右クリックして、メニューをだしてください。</p>
 
 	<p>メニューの<b>[設定]</b>から<b>[Window Maker起動時に一緒に起動]</b>にチェックをいれてください。これで、Dock アプリの登録が完了します。</p>

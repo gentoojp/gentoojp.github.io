@@ -67,7 +67,7 @@ Gentoo Linux Projectや翻訳ドキュメントには書かれていないこと
 <section>
 <title>ドキュメント用メーリングリストに入る</title>
 <body>
-<p>そして、<link uri="/jpmain/about-gentoojp.xml#doc_chap4">ドキュメント用のメーリングリスト(gentoojp-docs)</link>に入ってください。この ML がドキュメントの受付け窓口になります。</p>
+<p>そして、<uri link="/jpmain/about-gentoojp.xml#doc_chap4">ドキュメント用のメーリングリスト(gentoojp-docs)</uri>に入ってください。この ML がドキュメントの受付け窓口になります。</p>
 </body>
 </section>
 
