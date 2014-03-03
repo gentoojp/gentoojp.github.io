@@ -63,65 +63,7 @@ AuthorがGentooJPとなっているものの更新は自由に行なってくだ
 
 <p>
 更新の内容が不安な場合には事前にメーリングリストで話し合ってください。
-</p>
-
-</body>
-</section>
-
-<section>
-<title>更新の基本的な仕組み</title>
-<body>
-<p>
-現在<uri link="/">www.gentoo.gr.jp</uri>上のコンテンツは、
-GentooJPのCVSにて管理を行なっています。
-そしてそのCVSからwww.gentoo.gr.jpへ10分間隔で定期的にコピーを行なっています。
-</p>
-
-</body>
-</section>
-
-<section>
-<title>コンテンツの取得手順</title>
-<body>
-<p>
-CVS上には、いくつかレポジトリがありますが現在はwwwしか使用していません。
-<path>www</path>レポジトリが、そのまま<path>http://www.gentoo.gr.jp/</path>になります。
-
-<pre caption="checkoutの例(GentooJP開発者の場合)">
-$ cvs -d user_name@cvs.gentoo.gr.jp:/var/cvsroot co www
-</pre>
-
-CVSの詳しい使い方については他のドキュメントや資料を参照してください。
-
-<note>参照だけの場合には<uri link="http://cvs.gentoo.gr.jp/viewcvs/">ViewCVSを使用したwebインターフェース</uri>もありますので、目的に応じて使用してください。</note>
-
-<warn>
-現在、anonymous CVSは停止中です。GentooJP開発者でない方は、
-上記ViewCVSを使用してください。
-</warn>
-
-</p>
-</body>
-</section>
-
-<section>
-<title>コンテンツの更新手順</title>
-<body>
-<p>
-ドキュメントを更新した場合には、commitをする前に必ず<c>xmllint</c>でXMLの文法チェックを行なってください。
-文法が間違っているとWeb上で"Internal Error"になってしまい、たくさんの人に迷惑をかけることになってしまいます。
-
-<pre caption="XMLの文法チェック">
-$ xmllint --noout developer.xml
-$
-(何も出力されなければ問題ありません。
-エラーがある場合にはエラーメッセージが表示されます。)
-</pre>
-</p>
-
-<p>
-これで準備完了です。commitしてください。
-commit後、最大10分で更新されますので、必ず変更箇所を確認してください。
+具体的な更新方法は<uri link="/jpmain/gentoojp-github-pages.html">www.gentoo.gr.jpのGithub Pagesについて</uri>を参照してください。
 </p>
 
 </body>

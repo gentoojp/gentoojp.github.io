@@ -59,9 +59,11 @@ GentooJPで使用されているXMLのルールで記述してください。具
     </pre>
     </p>
 
-    <p>このXMLファイルを<uri link="https://github.com/gentoojp/gentoojp.github.io">リポジトリ内</uri>の<path>source/jpnews/main/YYYYMMDD-titile.xml</path>に保存してください。</p>
+    <p>このXMLファイルを<uri link="https://github.com/gentoojp/gentoojp.github.io">リポジトリ内</uri>の<path>source/jpnews/main/YYYYMMDD-title.xml</path>に保存してください。</p>
 
-    <p>次に<uri link="https://github.com/gentoojp/gentoojp.github.io/blob/source/source/jpnews/main/news-index.xml">RSS生成用インデックスファイル</uri>にURIを<impo>一番上に</impo>追記してください。</p>
+    <p>次に<uri link="https://github.com/gentoojp/gentoojp.github.io/blob/source/source/jpnews/main/news-index.xml">RSS生成用インデックスファイル</uri>にURIを一番上に追記してください。</p>
+
+    <p>詳細は<uri link="/jpmain/developer.html">GentooJP開発者用ドキュメント(ニュースの追加方法)</uri>も参照してください。</p>
     </body>
     </section>
 
