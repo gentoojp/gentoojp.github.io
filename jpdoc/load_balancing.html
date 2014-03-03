@@ -320,6 +320,89 @@ srv01# <font class="input" color="blue">/etc/ha.d/resource.d/ipvsadm /mnt/drbd0/
 </pre></td></tr>
 </table>
 <p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect7">Heartbeat/Ldirectord（ロードバランサ） </a></p>
+<p xmlns="">最初に、ldirectordの設定をします。<br>
+この作業はsrv01/02で行う必要があります。
+</p>
+<a xmlns="" name="doc_chap3_pre10"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.10: /etc/ha.d/ldirectord.cf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+<font class="comment">// Apacheデフォルトのテストページに対する設定です。</font>
+checktimeout=10
+checkinterval=2
+autoreload=yes
+logfile="local0"
+quiescent=yes
+
+virtual=192.168.4.11:80
+<font class="comment">// fallbackは、全ての実サーバが落ちている時の転送先です。
+httpなら、エラーメッセージを書いたHTMLを配置したサーバを設定すると良いでしょう。
+</font>
+	#fallback=127.0.0.1:80
+	real=192.168.1.103:80 gate
+	real=192.168.1.104:80 gate
+	service=http
+	request="index.html"
+	receive="Test Page"
+	scheduler=rr
+	protocol=tcp
+	checktype=negotiate
+
+virtual=192.168.4.11:21
+	real=192.168.1.103:21 gate
+	real=192.168.1.104:21 gate
+	service=ftp
+	request="welcome.msg"
+	receive="Welcome"
+	login="test01"
+	passwd=<font class="input" color="blue">[パスワード]</font>
+	scheduler=rr
+	#persistent=600
+	protocol=tcp
+	checktype=negotiate
+</pre></td></tr>
+</table>
+<p xmlns="">次に、Heartbeatの設定をします。<br>
+この作業はsrv01/02で行う必要があります。
+</p>
+<a xmlns="" name="doc_chap3_pre11"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.11: /etc/ha.d/haresources</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01 192.168.4.11/24 datadisk::drbd0 \
+ipvsadm::/mnt/drbd0/init/ipvsadm \
+ldirectord::/mnt/drbd0/init/ldirectord
+srv02 192.168.4.12/24 datadisk::drbd1 \
+nfs::/mnt/drbd1/init/nfs slapd::/mnt/drbd1/init/slapd
+</pre></td></tr>
+</table>
+<a xmlns="" name="doc_chap3_pre12"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.12: /etc/ha.d/ha.cf</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+debugfile /var/log/ha-debug
+logfile /var/log/ha-log
+logfacility     local0
+keepalive 2
+deadtime 10
+initdead 120
+udpport 694
+bcast eth0
+auto_failback on
+node srv01
+node srv02
+debug 1
+</pre></td></tr>
+</table>
+<p xmlns="">設定が終わったら、Heartbeatを起動しましょう。</p>
+<a xmlns="" name="doc_chap3_pre13"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
+								Code listing 3.13: /etc/init.d/heartbeat</font></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>
+srv01/02# <font class="input" color="blue">/etc/init.d/heartbeat start</font>
+srv01/02# <font class="input" color="blue">tail -f /var/log/ha-debug</font>
+</pre></td></tr>
+</table>
 <p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap3_sect8">NFS（実サーバ） </a></p>
 <p xmlns="">実サーバに対してNFSクライアントの設定をします。<br><a href="failover.html#doc_chap3_sect13">Gentoo Linux フェイルオーバーガイド</a>を参照してください。<br>
 但し、drbd1上に設定して下さい。また、IPアドレスは、192.168.4.12に読み替えてください。<br>

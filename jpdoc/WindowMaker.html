@@ -33,9 +33,8 @@
 <a name="doc_chap2">2.</a>Window Maker のインストール</h2>
 <p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect1">xdm の起動 </a></p>
 <table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>もし、<font class="input" color="blue">startx</font> などで X が起動しない場合は一旦 X の設定を完了してください。以下、X が起動することを前提にしています。</p></td></tr></table>
-<p xmlns="">早速 Window Maker のインストールといきたいところですが、そのまえに xdm が起動するようにしましょう。xdm は XFree86 をインストールすると自動的にインストールされます。Gentoo の場合、/etc/rc.conf のなかで起動するかしないかを決めます。さらに この rc.conf のなかで XSESSION 変数を &#8220;Xsession&#8221; にセットしてくだささい。
-
-	<table class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>xdm は Window Maker の動作に必須ではありませんが、いちいち<font class="input" color="blue">$ startx</font> する手間が省けます。</p></td></tr></table></p>
+<p xmlns="">早速 Window Maker のインストールといきたいところですが、そのまえに xdm が起動するようにしましょう。xdm は XFree86 をインストールすると自動的にインストールされます。Gentoo の場合、/etc/rc.conf のなかで起動するかしないかを決めます。さらに この rc.conf のなかで XSESSION 変数を &#8220;Xsession&#8221; にセットしてくだささい。</p>
+<table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>xdm は Window Maker の動作に必須ではありませんが、いちいち<font class="input" color="blue">$ startx</font> する手間が省けます。</p></td></tr></table>
 <a xmlns="" name="doc_chap2_pre1"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
 								Code listing 2.1: /etc/rc.conf &#8211; DISPLAYMANAGER と XSESSION のセット</font></td></tr>
@@ -70,7 +69,7 @@ XSESSION=Xsession
 <p xmlns="">Window Maker を起動させるために必要な .xsession の内容は実は、これだけです。</p>
 <a xmlns="" name="doc_chap2_pre4"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
-								Code listing 2.4</font></td></tr>
+								Code listing 2.4: .xsession</font></td></tr>
 <tr><td bgcolor="#FFE9C8"><pre>#!/bin/sh 
 exec wmaker
 </pre></td></tr>
@@ -180,10 +179,9 @@ exec wmaker
 <a xmlns="" name="doc_chap4_pre3"></a><table xmlns="" class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
 								Code listing 4.3: wmCalClock の起動</font></td></tr>
-<tr><td bgcolor="#FFE9C8"><pre>$ wmCalClock &amp; <font class="comment">// &amp; を忘れないようにしてください。</font>
-</pre></td></tr>
+<tr><td bgcolor="#FFE9C8"><pre>$ wmCalClock &amp;</pre></td></tr>
 </table>
-<p xmlns="">起動すると、左下のアイコンにカレンダー付時計がでてきます。先ほどの要領でアイコンを画面右側にドラッグして登録してください。次にちょっと細いですが、時計とカレンダーの枠あたりを右クリックして、メニューをだしてください。</p>
+<font xmlns="" class="comment">// &amp; を忘れないようにしてください。</font><p xmlns="">起動すると、左下のアイコンにカレンダー付時計がでてきます。先ほどの要領でアイコンを画面右側にドラッグして登録してください。次にちょっと細いですが、時計とカレンダーの枠あたりを右クリックして、メニューをだしてください。</p>
 <p xmlns="">メニューの<b>[設定]</b>から<b>[Window Maker起動時に一緒に起動]</b>にチェックをいれてください。これで、Dock アプリの登録が完了します。</p>
 <table xmlns="" class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>通常のアプリケーション(Mozilla や Emacs)であれば、<b>[Window Maker起動時に一緒に起動]</b>にはチェックを入れなくても構いません。おなじ要領で、クリップアイコンとしてワークスペース毎にアイコンを登録することもできます。</p></td></tr></table>
 <p xmlns="">Dock アプリはたくさん開発されており、CPU メモリや天気予報、biff、CDプレイヤーなど様々なものがあります。<a href="http://www.bensinclair.com/dockapp/">こちら(http://www.bensinclair.com/dockapp/)</a>でいろいろと探してみてください。</p>

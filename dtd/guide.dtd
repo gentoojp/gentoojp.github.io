@@ -1,6 +1,6 @@
-<!ENTITY  % style.class	"b|box|brite|c|codenote|comment|e|i|path">
+<!ENTITY  % style.class	"img|b|box|brite|c|codenote|comment|e|i|path|br">
 <!ENTITY  % link.class	"uri|mail">
-<!ENTITY  % logic.class	"figure|fig|img|br|note|impo|warn|pre|p|table|ul|ol">
+<!ENTITY  % logic.class	"figure|fig|note|impo|warn|pre|p|table|ul|ol">
 <!ENTITY  % all.class	"%logic.class;|%style.class;|%link.class;">
 
 <!ENTITY half   "&#x00BD;"> <!-- VULGAR FRACTION ONE HALF -->
@@ -122,7 +122,7 @@
 <!ELEMENT table			(tcolumn*, tr+)>
 <!ELEMENT tcolumn		EMPTY>
 <!ATTLIST tcolumn		width CDATA #REQUIRED>
-<!ELEMENT tr			(th+|ti+)>
+<!ELEMENT tr			(th*,ti*)>
 <!ELEMENT th			(#PCDATA|%all.class;)*>
 <!ELEMENT ti			(#PCDATA|%all.class;)*>
 <!ELEMENT ul			(li+)>

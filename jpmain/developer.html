@@ -55,52 +55,9 @@ AuthorがGentooJPとなっているものの更新は自由に行なってくだ
 </p>
 <p xmlns="">
 更新の内容が不安な場合には事前にメーリングリストで話し合ってください。
+具体的な更新方法は<a href="/jpmain/gentoojp-github-pages.html">www.gentoo.gr.jpのGithub Pagesについて</a>を参照してください。
 </p>
-<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect2">更新の基本的な仕組み </a></p>
-<p xmlns="">
-現在<a href="/">www.gentoo.gr.jp</a>上のコンテンツは、
-GentooJPのCVSにて管理を行なっています。
-そしてそのCVSからwww.gentoo.gr.jpへ10分間隔で定期的にコピーを行なっています。
-</p>
-<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect3">コンテンツの取得手順 </a></p>
-<p xmlns="">
-CVS上には、いくつかレポジトリがありますが現在はwwwしか使用していません。
-<font class="path">www</font>レポジトリが、そのまま<font class="path">http://www.gentoo.gr.jp/</font>になります。
-
-<a name="doc_chap2_pre1"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
-								Code listing 2.1: checkoutの例(GentooJP開発者の場合)</font></td></tr>
-<tr><td bgcolor="#FFE9C8"><pre>
-$ cvs -d user_name@cvs.gentoo.gr.jp:/var/cvsroot co www
-</pre></td></tr>
-</table>
-
-CVSの詳しい使い方については他のドキュメントや資料を参照してください。
-
-<table class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#bbffbb"><p class="note"><b>Note: </b>参照だけの場合には<a href="http://cvs.gentoo.gr.jp/viewcvs/">ViewCVSを使用したwebインターフェース</a>もありますので、目的に応じて使用してください。</p></td></tr></table><table class="ncontent" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td bgcolor="#ffbbbb"><p class="note"><b>Warning: </b>
-現在、anonymous CVSは停止中です。GentooJP開発者でない方は、
-上記ViewCVSを使用してください。
-</p></td></tr></table></p>
-<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect4">コンテンツの更新手順 </a></p>
-<p xmlns="">
-ドキュメントを更新した場合には、commitをする前に必ず<font class="code">xmllint</font>でXMLの文法チェックを行なってください。
-文法が間違っているとWeb上で&#8221;Internal Error&#8221;になってしまい、たくさんの人に迷惑をかけることになってしまいます。
-
-<a name="doc_chap2_pre2"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
-								Code listing 2.2: XMLの文法チェック</font></td></tr>
-<tr><td bgcolor="#FFE9C8"><pre>
-$ xmllint --noout developer.xml
-$
-(何も出力されなければ問題ありません。
-エラーがある場合にはエラーメッセージが表示されます。)
-</pre></td></tr>
-</table></p>
-<p xmlns="">
-これで準備完了です。commitしてください。
-commit後、最大10分で更新されますので、必ず変更箇所を確認してください。
-</p>
-<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect5">ニュースの追加方法 </a></p>
+<p xmlns="" class="secthead" style="color: #6A3000 ! important;"><a name="doc_chap2_sect2">ニュースの追加方法 </a></p>
 <p xmlns="">
 ニュースとはwww.gentoo.gr.jpでアクセスしたときに出てくるGentooやGentooJPに関するお知らせのことです。
 GentooJP開発者は誰でも自由にニュースを追加することができます。
@@ -116,9 +73,9 @@ yyyymmddは西暦の年月日です。nameの部分は任意の名前を付け�
 <p xmlns="">
 サンプルとして一つあげます。
 
-<a name="doc_chap2_pre3"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<a name="doc_chap2_pre1"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
-								Code listing 2.3: ニュースファイルのサンプル</font></td></tr>
+								Code listing 2.1: ニュースファイルのサンプル</font></td></tr>
 <tr><td bgcolor="#FFE9C8"><pre>
 &lt;?xml version='1.0' encoding='UTF-8'?&gt;
 &lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt;
@@ -177,9 +134,9 @@ indexファイルは<font class="path">/jpnews/{main|gwn|org}/news-index.xml</fo
 作成したファイルを一番上へ記述してください。
 このファイルを追加することで実際にニュースが掲載されることになります。
 
-<a name="doc_chap2_pre4"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<a name="doc_chap2_pre2"></a><table class="ntable" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr><td bgcolor="#8C5000" class="infohead" style="color: #FFFFFF ! important;"><font color="#FFFFFF">
-								Code listing 2.4: indexファイル</font></td></tr>
+								Code listing 2.2: indexファイル</font></td></tr>
 <tr><td bgcolor="#FFE9C8"><pre>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;uris&gt;
