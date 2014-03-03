@@ -1,7 +1,8 @@
 module Jekyll
   class XSLTConverter < Converter
     XML_STYLESHEET = '<?xml-stylesheet'
-    GUIDE_DTD = '/dtd/guide.dtd'
+    GUIDE_DTD = %Q[guide SYSTEM "/dtd/guide.dtd"]
+    NEWS_DTD = %Q[news SYSTEM "/dtd/guide.dtd"]
     safe true
 
     def setup
@@ -29,8 +30,24 @@ module Jekyll
       end
     end
 
+    def validate?(content)
+      content.include?(GUIDE_DTD)
+    end
+
+    def validate(content)
+      a = IO.popen("xmllint --valid --noout --catalogs - 2>&1", "r+") { |io|
+        io.print insert_default_stylesheet_if_needed(content)
+        io.close_write
+        io.read
+      }
+      if $?.to_i != 0
+        STDERR.puts content
+        raise a
+      end
+    end
+
     def convert?(content)
-      [XML_STYLESHEET, GUIDE_DTD].any? { |m|
+      [XML_STYLESHEET, GUIDE_DTD, NEWS_DTD].any? { |m|
         content.include?(m)
       }
     end
@@ -38,13 +55,16 @@ module Jekyll
     def convert(content)
       setup
       if convert?(content)
-        a = IO.popen("xsltproc --catalogs --novalid - 2>&1", "r+") { |io|
+        validate(content) if validate?(content)
+
+        a = IO.popen("xsltproc --catalogs - 2>&1", "r+") { |io|
           io.print insert_default_stylesheet_if_needed(content)
           io.close_write
           io.read
         }
-        if a.include?('compilation error')
-          puts content
+        if $?.to_i != 0
+          STDERR.puts content
+          raise a
         end
         a
       else

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
+<guide>
+  <title>www.gentoo.gr.jpのGithub Pagesについて</title>
+  <author title="Author"><mail link="www@gentoo.jp">GentooJP</mail></author>
+
+  <abstract>
+    GentooJPのGithub Pagesの管理方法について説明します。
+  </abstract>
+
+  <version>0.1</version>
+  <date>2 Mar 2014</date>
+
+  <chapter>
+    <title>Github Pagesについて</title>
+    <section>
+      <body>
+        <p>
+          <uri link="http://pages.github.com/">Github Pages</uri>はGithubが提供するホスティングサービスです。
+          GentooJPのホームページのリポジトリは<uri link="https://github.com/gentoojp/gentoojp.github.io">https://github.com/gentoojp/gentoojp.github.io</uri>です。
+        </p>
+
+        <p>
+          コンテンツ管理は<uri link="http://octopress.org/">Octopress</uri>を使用しています。
+          <uri link="https://travis-ci.org/gentoojp/gentoojp.github.io">travis-ci</uri>経由で自動的にデプロイされます。
+        </p>
+      </body>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>コンテンツ作成方法</title>
+    <section>
+      <title>リポジトリのチェックアウト</title>
+      <body>
+        <p>Github上でリポジトリをフォークしてください。ここでは <c>nabeken</c> アカウントにフォークしたとします。</p>
+        <pre caption="フォークしたリポジトリをcloneする">$ <i>git clone git@github.com:nabeken/gentoojp.github.io.git</i>
+$ <i>cd gentoojp.github.io</i></pre>
+      </body>
+    </section>
+
+    <section>
+      <title>octopress環境の準備</title>
+      <body>
+        <impo>Rubyを事前にインストールしておいてください。最新版(執筆時点で2.1.0)が望ましいです。</impo>
+        <pre caption="Octopressのインストール">$ <i>bundle install</i></pre>
+      </body>
+    </section>
+
+    <section>
+      <title>記事の作成</title>
+      <body>
+        <p>例としてGentooJPのニュースの記事を作成してみます。</p>
+
+        <pre caption="ニュース記事を作成">$ <i>$EDITOR source/jpnews/main/20140301-github-pages.xml</i>
+&lt;?xml version='1.0'?&gt;
+&lt;?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?&gt;
+&lt;news gentoo="yes" category="gentoojp"&gt;
+  &lt;poster&gt;nabeken&lt;/poster&gt;
+  &lt;date&gt;1 Mar 2014&lt;/date&gt;
+  &lt;title&gt;Github Pagesへ移行しました&lt;/title&gt;
+&lt;body&gt;
+  &lt;p&gt;
+    GentooJPのホームページ(www.gentoo.gr.jp)はGithub Pagesへ移行しました。
+  &lt;/p&gt;
+&lt;/body&gt;</pre>
+        <pre caption="ニュース記事をRSS用インデックスに追加">$ <i>$EDITOR source/jpnews/main/news-index.xml</i>
+<i>&lt;uri&gt;/jpnews/main/20140301-github-pages.xml&lt;/uri&gt;</i> <codenote>一番上に追記します</codenote></pre>
+        <pre caption="記事を確認する">$ <i>bundle exec rake generate</i>
+$ <i>bundle exec rake preview</i>
+$ <i>open http://localhost:4000/jpmain/gentoojp-github-pages.html</i></pre>
+      <p>preview中はファイルの変更を自動的に検知し、再作成してくれます。</p>
+      </body>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>コンテンツの提出方法</title>
+    <section>
+      <title>Pull Request経由の場合</title>
+      <body>
+        <pre caption="作成した記事をコミット">$ <i>git add source/jpnews/main/news-index.xml source/jpnews/main/20140301-github-pages.xml</i>
+$ <i>git commit -m 'jpnews: Add news about github pages'</i>
+$ <i>git push</i></pre>
+
+      <p>pushした後はGithub上からPull Requestしてください。自動的にtravis-ciで構文チェック、ビルドを実行します。</p>
+      <p>travis-ciがパスし、GentooJP開発者によるレビューにパスすればマージされます。</p>
+      </body>
+    </section>
+
+    <section>
+      <title>直接更新する場合</title>
+      <body>
+        <p>
+          Githubのgentoojp organizationメンバーは特別な事情がある場合に限り、直接更新できます。
+          直接更新する場合予めデプロイ用のディレクトリを作成する必要があります。
+        </p>
+        <pre caption="直接デプロイする">$ <i> git clone git@github.com:gentoojp/gentoojp.github.io.git _deploy</i>
+$ <i>(cd _deploy &amp;&amp; git checkout -b master origin/master)</i>
+$ <i>bundle exec rake generate deploy</i></pre>
+      </body>
+    </section>
+  </chapter>
+</guide>

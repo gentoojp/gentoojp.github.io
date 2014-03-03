@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+    <poster>nabeken</poster>
+    <date>1 Mar 2014</date>
+    <title>Github Pagesへ移行しました</title>
+<body>
+  <p>
+    GentooJPのホームページ(www.gentoo.gr.jp)はGithub Pagesへ移行しました。
+    不具合があれば<uri link="https://github.com/gentoojp/gentoojp.github.io/issues">GithubのIssue</uri>からお知らせください。
+  </p>
+  <p>また、ニュースを掲載してほしい場合は<uri link="/jpmain/news-submit.html">ニュース掲載手順</uri>を参考にPull Requestをお送りください。</p>
+</body>
+</news>

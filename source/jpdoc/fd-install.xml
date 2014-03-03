@@ -38,8 +38,10 @@ Gentoo Linux をインストールする方法を解説します。
  <section>
   <title>用意するもの</title>
   <body>
+  <ul>
    <li>Gentoo Linux インストールガイド…1式</li>
    <li>フロッピーディスク…3枚</li>
+  </ul>
   </body>
  </section>
  <section>
@@ -52,8 +54,10 @@ Gentoo Linux をインストールする方法を解説します。
    <p>以下のURLからブートディスクのイメージや必要なツールをダウンロードしてください。
    イメージは3つ(<uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/boot.img">Boot</uri>/<uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/root.img">Root</uri>/<uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/modules.img">Modules</uri>)あります。
    それぞれをフロッピーディスクに書き込んでください。</p>
+   <ul>
    <li>ブートディスクイメージ … <uri link="http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/">http://www.ibiblio.org/pub/Linux/distributions/archlinux/images/</uri></li>
    <li>Windows用のイメージ書き込みツール … <uri link="http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm">http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm</uri></li>
+   </ul>
    <note>既にDOS版のrawrite.exeなどを持っているなら、そちらを利用しても構いません。</note>
    <p>Windows版のRawWriteを使う場合は、"Floppy drive"でフロッピーを入れたドライブを選択し、"Image file"にダウンロードしたBootイメージを指定して、[Write]ボタンを押してください。
    書き込みが終わったら、Root/Modulesをそれぞれ同じようにして書き込みます。</p>
