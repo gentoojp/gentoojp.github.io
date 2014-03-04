@@ -69,7 +69,7 @@ $ <i>cd gentoojp.github.io</i></pre>
 <i>&lt;uri&gt;/jpnews/main/20140301-github-pages.xml&lt;/uri&gt;</i> <codenote>一番上に追記します</codenote></pre>
         <pre caption="記事を確認する">$ <i>bundle exec rake generate</i>
 $ <i>bundle exec rake preview</i>
-$ <i>open http://localhost:4000/jpmain/gentoojp-github-pages.html</i></pre>
+$ <i>open http://localhost:4000/jpnews/main/20140301-github-pages.html</i></pre>
       <p>preview中はファイルの変更を自動的に検知し、再作成してくれます。</p>
       </body>
     </section>
