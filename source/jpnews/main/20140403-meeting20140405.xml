@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+    <poster>Alice</poster>
+    <date>03 Apr 2014</date>
+    <title>GentooJP勉強会 2014/04/05。</title>
+<body>
+<p><uri link="http://connpass.com/event/5798/">Gentoo 勉強会</uri>が始まります。</p>
+これからGentooJPが毎月第一土曜日に勉強会を開催いたします！
+誰でも参加できます。
+
+<p>
+GentooJP勉強会 2014/04/05: 
+</p>
+プレゼンテーションの発表とハッカソンをやります！
+
+プレゼンテーション等をしたいなら、ここに入れてください。
+http://gentoo.titanpad.com/1
+
+<ol>
+<li>皆様の自己紹介</li>
+<li>次のOSC</li>
+<li>最近の Gentoo.gr.jp 関連ニュース</li>
+<li>最近の Gentoo 関連ニュース</li>
+<li>Gentooバグを潰す</li>
+</ol>
+
+
+
+
+</body>
+</news>
