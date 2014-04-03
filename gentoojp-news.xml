@@ -9,19 +9,26 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20111101-trans-summary.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20111011-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110506-openrc.html"/>
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html">
+    <title>GentooJP勉強会 2014/04/05。</title>
+    <link>http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Alice</dc:creator>
+    <description><![CDATA[Gentoo 勉強会が始まります。 これからGentooJPが毎月第一土曜日に勉強会を開催いたします！ 誰でも参加できます。 GentooJP勉強会 2014/04/05: プレゼンテーションの発表とハッカソンをやります！ プレゼンテーション等をしたいなら、ここに入れてください。 http://gentoo.titanpad.com/1 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース Gentooバグを潰す]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html">
     <title>Github Pagesへ移行しました</title>
     <link>http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html</link>
@@ -63,13 +70,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>naota</dc:creator>
     <description><![CDATA[GentooJP翻訳プロジェクト2011年10月の活動内容を公表します。 10月はx86/amd64/PPCハンドブックおよび新たな2つのドキュメントの翻訳を行ないました。 先月の3名の方の翻訳を反映しました。 Gentoo BIND ガイド (新たな翻訳) zshの設定及びインストールガイド (新たな翻訳) Gentoo Linux x86 ハンドブック (version. 10.1 (2009-12-29) → 10.2 (2010-07-19)) ファイルシステム情報 (version. 13 (2011-08-13) → 14 (2011-09-11)) モジュールを設定する (version. 1 (2008-03-02) → 3 (2011-08-03)) ハードウェア要件 (version. 2.6 (2005-09-15) → 10.0 (2010-07-20)) chrootする (version. 11 (2011-08-03) → 12 (2011-08-22)) ブロックデバイス入門 (version. 6.2 (2009-01-09) → 11 (2011-10-17)) ハードウェアの必要条件 (version. 7.2 (2010-07-18) → 9 (2011-10-09)) GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。 Gentoo ハンドブック BaselayoutとOpenRCの移行ガイド Gentoo Linux x86クイックインストールガイド X サーバー設定ガイド Gentoo Linux ALSA ガイド 翻訳に興味があり参加してみたい方は、ぜひGentooJP翻訳プロジェクト をご覧ください。]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20111011-trans-summary.html">
-    <title>翻訳プロジェクト9月の活動内容</title>
-    <link>http://www.gentoo.gr.jp/jpnews/main/20111011-trans-summary.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>naota</dc:creator>
-    <description><![CDATA[GentooJP翻訳プロジェクトは、2011年9月の活動内容を公表します。 9月はx86/amd64/PPCハンドブックを中心に5つの文書の差分翻訳を行ないました。 また、査読がおいついていませんが、新たに3名の方に翻訳に参加していただきました。 Gentoo Linux/PPC ブロックデバイス入門 (version. 2.00 (2005-03-28) → 10.1 (2010-07-20)) Gentoo Linux Portage設定 (version. 9.5 (2010-05-14) → 13 (2011-08-13)) Gentoo Linux はじめに (ネットーク設定) (version. 8.0 (2007-05-07) → 9 (2011-08-13)) Gentoo Linux オフィシャルツリーからの変更 (version. 1.6 (2007-02-26) → 1.7 (2010-07-13)) Gentoo Linux Portageのツール (version. 1.5 (2008-03-01) → 2 (2010-10-04)) GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。 Gentoo ハンドブック BaselayoutとOpenRCの移行ガイド Gentoo Linux x86クイックインストールガイド X サーバー設定ガイド Gentoo Linux ALSA ガイド また、以下の文書の査読者も募集しています。 Gentoo Linux Kernel Configuration Guide 翻訳に興味があり参加してみたい方は、ぜひGentooJP翻訳プロジェクト をご覧ください。]]></description>
   </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html">
     <title>Gentoo LinuxはLiveDVD 11.2をリリースしました</title>
