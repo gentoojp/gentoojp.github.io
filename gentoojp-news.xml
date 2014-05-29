@@ -9,19 +9,26 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140530-meeting20140607.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20111101-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110506-openrc.html"/>
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140530-meeting20140607.html">
+    <title>GentooJP勉強会 2014/06/07</title>
+    <link>http://www.gentoo.gr.jp/jpnews/main/20140530-meeting20140607.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Kojima</dc:creator>
+    <description><![CDATA[6月もGentoo 勉強会が開催されます。 誰でも参加できます。 開催日時: 2014/06/07(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 http://gentoo.titanpad.com/3]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html">
     <title>GentooJP勉強会 2014/04/05。</title>
     <link>http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html</link>
@@ -63,13 +70,6 @@
     <dc:subject>moo</dc:subject>
     <dc:creator>a3li (翻訳: 青田直大)</dc:creator>
     <description><![CDATA[11月9日に公式のGentoo Wikiがオープンしました。 Gentoo開発者の会議によくあるように、色をどうするかなど公式Wikiに関する細かいことでかなりの時間を割きました。 最後にでてきた答えは、驚きかもしれませんが…紫でした! まあ、御託はもういいでしょう。 ぴかぴかの新しいWikiへようこそ Wikiを見てまわって、疑問の答えやGentooに使えるクールな技を探してみてください。 他のGentooユーザに役立つネタがありますか? ぜひ記事を書いたり編集してみてください! Wikiを始める手助けになるようにWikiがどのように動くかを書きました。 それでも疑問があればfreenodeの#gentoo-wikiでコンタクトをとったり、 wiki@gentoo.orgにメールしてください。 あなたの投稿をお待ちしております! Gentoo Wikiチーム]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20111101-trans-summary.html">
-    <title>翻訳プロジェクト10月の活動内容</title>
-    <link>http://www.gentoo.gr.jp/jpnews/main/20111101-trans-summary.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>naota</dc:creator>
-    <description><![CDATA[GentooJP翻訳プロジェクト2011年10月の活動内容を公表します。 10月はx86/amd64/PPCハンドブックおよび新たな2つのドキュメントの翻訳を行ないました。 先月の3名の方の翻訳を反映しました。 Gentoo BIND ガイド (新たな翻訳) zshの設定及びインストールガイド (新たな翻訳) Gentoo Linux x86 ハンドブック (version. 10.1 (2009-12-29) → 10.2 (2010-07-19)) ファイルシステム情報 (version. 13 (2011-08-13) → 14 (2011-09-11)) モジュールを設定する (version. 1 (2008-03-02) → 3 (2011-08-03)) ハードウェア要件 (version. 2.6 (2005-09-15) → 10.0 (2010-07-20)) chrootする (version. 11 (2011-08-03) → 12 (2011-08-22)) ブロックデバイス入門 (version. 6.2 (2009-01-09) → 11 (2011-10-17)) ハードウェアの必要条件 (version. 7.2 (2010-07-18) → 9 (2011-10-09)) GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。 Gentoo ハンドブック BaselayoutとOpenRCの移行ガイド Gentoo Linux x86クイックインストールガイド X サーバー設定ガイド Gentoo Linux ALSA ガイド 翻訳に興味があり参加してみたい方は、ぜひGentooJP翻訳プロジェクト をご覧ください。]]></description>
   </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html">
     <title>Gentoo LinuxはLiveDVD 11.2をリリースしました</title>
