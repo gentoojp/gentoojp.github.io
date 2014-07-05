@@ -9,11 +9,11 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140705-meeting20140705.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140530-meeting20140607.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html"/>
@@ -22,6 +22,13 @@
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140705-meeting20140705.html">
+    <title>GentooJP勉強会 2014/07/05</title>
+    <link>http://www.gentoo.gr.jp/jpnews/main/20140705-meeting20140705.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Kojima</dc:creator>
+    <description><![CDATA[7月もGentoo 勉強会が開催されます。 誰でも参加できます。 開催日時: 2014/07/05(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース その他 Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 http://gentoo.titanpad.com/4]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140530-meeting20140607.html">
     <title>GentooJP勉強会 2014/06/07</title>
     <link>http://www.gentoo.gr.jp/jpnews/main/20140530-meeting20140607.html</link>
@@ -49,13 +56,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>Alice</dc:creator>
     <description><![CDATA[GentooJP はオープンソースカンファレンス2014 Tokyo/Springに参加します。 GentooJPの展示内容: Gentoo Linuxの紹介 Gentooバグを潰す タイル型WMの紹介 Gentoo勉強会の紹介 Raspberry PiでGentooを使用の紹介]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html">
-    <title>翻訳プロジェクト11月から3月の活動内容</title>
-    <link>http://www.gentoo.gr.jp/jpnews/main/20120423-trans-summary.html</link>
-    <dc:subject>linux</dc:subject>
-    <dc:creator>morota</dc:creator>
-    <description><![CDATA[GentooJP翻訳プロジェクトは、2011年11月から3月の活動内容を公表します。 この期間の間に以下の文書が更新されました。 Gentoo Linux カーネル設定ガイド (新規) カーネル設定(x86/amd64) (version 9 (2011-08-12) -> 14 (2011-11-05)) システム設定 (version 14 (2011-09-11) -> 15 (2011-10-30)) ネットワーク管理 (version 9.0 (2008-04-17) -> 10 (2011-10-30)) Portageの機能 (version 1.33 (2010-07-12) -> 2 (2011-10-26)) 必要なシステムツールをインストールする (version 9.2 (2010-11-14) -> 10 (2011-10-23)) ハードウェアオプション (version 2 (2008-05-02) -> 2 (2008-05-02)) ブロックデバイス入門 (version 10.1 (2010-07-20) -> 11 (2011-10-17)) ユーザ管理 (version 9.0 (2008-04-01) -> 10 (2011-09-18)) ハードウェアの必要条件 (version 9 (2010-08-12) -> 10 (2011-11-27)) inserts.xml (version 3 -> 4) Portageの機能 (version 2 (2010-10-26) -> 4 (2011-11-27)) Gentoo Linux カーネル設定ガイド (version 1.4 (2010-03-21) -> 2 (2011-12-26)) inserts.xml (version 4 -> 5) ドキュメント (version 9 (2008-04-01) -> 10 (2011-12-26)) 上級者向けのPortageの機能 (新規) Gentoo Linux 2.6 完全移行ガイド (version 0.4 (2008-03-05) -> 3 (2011-12-26)) Portageについて (version 2 (2010-10-29 -> 4 (2011-10-26)) GentooJP翻訳プロジェクトは引き続き、特に迅速な更新が望まれる次の文書に対して、翻訳者を募集しています。 Gentoo ハンドブック BaselayoutとOpenRCの移行ガイド Gentoo Linux x86クイックインストールガイド X サーバー設定ガイド Gentoo Linux ALSA ガイド 翻訳に興味があり参加してみたい方は、ぜひGentooJP翻訳プロジェクト をご覧ください。]]></description>
   </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html">
     <title>Gentoo Linux LiveDVD 12.0のリリース</title>
