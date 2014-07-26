@@ -9,11 +9,11 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140726-meeting20140802.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140705-meeting20140705.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140530-meeting20140607.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140403-meeting20140405.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140301-github-pages.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html"/>
@@ -22,6 +22,13 @@
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140726-meeting20140802.html">
+    <title>GentooJP勉強会 2014/08/02</title>
+    <link>http://www.gentoo.gr.jp/jpnews/main/20140726-meeting20140802.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Kojima</dc:creator>
+    <description><![CDATA[8月もGentoo 勉強会が開催されます。 誰でも参加できます。 開催日時: 2014/08/02(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース その他 Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 https://gentoo-jp.hackpad.com/]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140705-meeting20140705.html">
     <title>GentooJP勉強会 2014/07/05</title>
     <link>http://www.gentoo.gr.jp/jpnews/main/20140705-meeting20140705.html</link>
@@ -49,13 +56,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>nabeken</dc:creator>
     <description><![CDATA[GentooJPのホームページ(www.gentoo.gr.jp)はGithub Pagesへ移行しました。 不具合があればGithubのIssueからお知らせください。 また、ニュースを掲載してほしい場合はニュース掲載手順を参考にPull Requestをお送りください。]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html">
-    <title>オープンソースカンファレンス2014 Tokyo/Springに出展します。</title>
-    <link>http://www.gentoo.gr.jp/jpnews/main/20140226-osc2014spring.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>Alice</dc:creator>
-    <description><![CDATA[GentooJP はオープンソースカンファレンス2014 Tokyo/Springに参加します。 GentooJPの展示内容: Gentoo Linuxの紹介 Gentooバグを潰す タイル型WMの紹介 Gentoo勉強会の紹介 Raspberry PiでGentooを使用の紹介]]></description>
   </item>
   <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html">
     <title>Gentoo Linux LiveDVD 12.0のリリース</title>
