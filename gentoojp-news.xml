@@ -9,11 +9,11 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150215-new-domain.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20141212-bonenkay20141220.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20140726-meeting20140802.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20140705-meeting20140705.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20140530-meeting20140607.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20140403-meeting20140405.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20110807-livedvd.html"/>
@@ -22,6 +22,13 @@
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.jp/jpnews/main/20150215-new-domain.html">
+    <title>www.gentoo.jp へ変更のお知らせ</title>
+    <link>http://www.gentoo.jp/jpnews/main/20150215-new-domain.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Kojima</dc:creator>
+    <description><![CDATA[長らくGentooJPではwww.gentoo.gr.jpをウェブサイトのドメインとして利用しておりましたが、この度www.gentoo.jpに変更することに致しました。 旧ドメインにアクセスすると新ドメインにリダイレクトするように設定していますが、見れない・表示が乱れるなどの不具合を見つけましたらissueに上げて下さい。 Issues gentoojp/gentoojp.github.io]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/main/20141212-bonenkay20141220.html">
     <title>GentooJP忘年会-勉強会と飲み会 2014/12/20</title>
     <link>http://www.gentoo.jp/jpnews/main/20141212-bonenkay20141220.html</link>
@@ -49,13 +56,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>Kojima</dc:creator>
     <description><![CDATA[6月もGentoo 勉強会が開催されます。 誰でも参加できます。 開催日時: 2014/06/07(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 http://gentoo.titanpad.com/3]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.jp/jpnews/main/20140403-meeting20140405.html">
-    <title>GentooJP勉強会 2014/04/05。</title>
-    <link>http://www.gentoo.jp/jpnews/main/20140403-meeting20140405.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>Alice</dc:creator>
-    <description><![CDATA[Gentoo 勉強会が始まります。 これからGentooJPが毎月第一土曜日に勉強会を開催いたします！ 誰でも参加できます。 GentooJP勉強会 2014/04/05: プレゼンテーションの発表とハッカソンをやります！ プレゼンテーション等をしたいなら、ここに入れてください。 http://gentoo.titanpad.com/1 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース Gentooバグを潰す]]></description>
   </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html">
     <title>Gentoo Linux LiveDVD 12.0のリリース</title>
