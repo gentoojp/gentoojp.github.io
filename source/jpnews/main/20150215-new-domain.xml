@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+  <poster>Kojima</poster>
+  <date>15 Feb 2015</date>
+  <title>www.gentoo.jp へ変更のお知らせ</title>
+<body>
+  <p>長らくGentooJPではwww.gentoo.gr.jpをウェブサイトのドメインとして利用しておりましたが、この度www.gentoo.jpに変更することに致しました。</p>
+  <p>旧ドメインにアクセスすると新ドメインにリダイレクトするように設定していますが、見れない・表示が乱れるなどの不具合を見つけましたらissueに上げて下さい。</p>
+  
+  <uri link="https://github.com/gentoojp/gentoojp.github.io/issues">Issues gentoojp/gentoojp.github.io</uri>
+</body>
+</news>
