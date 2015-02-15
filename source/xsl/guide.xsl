@@ -47,7 +47,7 @@
 
 			<body>
 					<div class="logo"><p>日本語：
-							[ <a href="http://www.gentoo.gr.jp/">GentooJP</a> ]
+							[ <a href="http://www.gentoo.jp/">GentooJP</a> ]
 							[ <a href="http://wiki.gentoo.gr.jp/">Wiki</a> ]
 							</p><p>英語：
 							[ <a href="http://www.gentoo.org/">Gentoo.org</a> ]

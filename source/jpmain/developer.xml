@@ -48,7 +48,7 @@ GentooJP開発者になるための条件
 </chapter>
 
 <chapter>
-<title>www.gentoo.gr.jp サイトの更新方法</title>
+<title>www.gentoo.jp サイトの更新方法</title>
 
 <section>
 <title>更新について</title>
@@ -63,7 +63,7 @@ AuthorがGentooJPとなっているものの更新は自由に行なってくだ
 
 <p>
 更新の内容が不安な場合には事前にメーリングリストで話し合ってください。
-具体的な更新方法は<uri link="/jpmain/gentoojp-github-pages.html">www.gentoo.gr.jpのGithub Pagesについて</uri>を参照してください。
+具体的な更新方法は<uri link="/jpmain/gentoojp-github-pages.html">www.gentoo.jpのGithub Pagesについて</uri>を参照してください。
 </p>
 
 </body>
@@ -73,7 +73,7 @@ AuthorがGentooJPとなっているものの更新は自由に行なってくだ
 <title>ニュースの追加方法</title>
 <body>
 <p>
-ニュースとはwww.gentoo.gr.jpでアクセスしたときに出てくるGentooやGentooJPに関するお知らせのことです。
+ニュースとはwww.gentoo.jpでアクセスしたときに出てくるGentooやGentooJPに関するお知らせのことです。
 GentooJP開発者は誰でも自由にニュースを追加することができます。
 内容についてはGentooに関係することなら何でもOKです。
 一般の人向けである<uri link="/jpmain/news-submit.html">GentooJPニュース掲載手順</uri>も参照しておいてください。
