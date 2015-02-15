@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel rdf:about="http://www.gentoo.gr.jp/">
+  <channel rdf:about="http://www.gentoo.jp/">
     <title>Gentoo News (日本語版)</title>
-    <link>http://www.gentoo.gr.jp/</link>
+    <link>http://www.gentoo.jp/</link>
     <description><![CDATA[GentooJP News]]></description>
     <dc:creator>www@gentoo.gr.jp</dc:creator>
     <dc:language>ja</dc:language>
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20080727-gmn.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20110506-openrc.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20081221-gmn.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20081013-gmn.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20080915-gmn.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.gr.jp/jpnews/org/20080806-gmn.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20080727-gmn.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20111109-wiki-announcement.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20110807-livedvd.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20110506-openrc.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20081221-gmn.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20081013-gmn.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20080915-gmn.html"/>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20080806-gmn.html"/>
       </rdf:Seq>
     </items>
   </channel>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html">
     <title>Gentoo Linux LiveDVD 12.0のリリース</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20120102-livedvd.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20120102-livedvd.html</link>
     <dc:subject>gentoo</dc:subject>
     <dc:creator>David Abbott (翻訳: 青田直大)</dc:creator>
     <description><![CDATA[Gentoo Linuxは、Gentooのユーザと開発者の変わらぬコラボレーションを祝福する新しいLiveDVDが出たことを誇りを持ってアナウンスします。 LiveDVDにはすばらしいほどのパッケージが入っています。以下でいくつか紹介しましょう。 Gentoo Infrastructure Teamに特別の感謝を。 この縁の下の力持ちのチームは、 Gentoo Linuxプロジェクト存続に必要なリソース・サービス・技術を提供してくれています。 このリリースに入っているパッケージは: Linux Kernel 3.1.5, Xorg 1.10.4, KDE 4.7.4, Gnome 3.2.1 XFCE 4.8, Fluxbox 1.3.2 Firefox 9.0, LibreOffice 3.4.99.2, Gimp 2.6.11, Blender 2.60, Amarok 2.5 , VLC 1.1.13, Chromium 16.0 などなどです。 お気に入りのパッケージが入っているかどうか確認したいですか? x86版のパッケージリストとamd64版のパッケージリスト を作成してあります。FAQや新しくなったアートワークや 12.0用のDVDケースやカバーも見てみてください。 特別機能: AUFSによる書きこみ可能なファイルシステムで新しくパッケージをemergeできます! リセットされない$HOME。詳しくはF9を! LiveDVDは二種類提供され、ひとつはx86/x86_64のハイブリッド、 もうひとつはx86_64のmultilibのものになります。 livedvd-x86-amd64-32ul-11.2の方は、32bitのx86でも64bitのx86_64でも動作するでしょう。 お使いのCPUアーキテクチャがx86であればデフォルトのgentooカーネルで起動してください。 CPUアーキテクチャがamd64であれば、 gentoo64カーネルで起動してください。つまり、DVDで提供されている32bitの環境を使いながら64bitのカーネルで起動し、 64bitのカスタムしたユーザランドをインストールできる、ということです。 livedvd-amd64-multilib-11.2の方は、x86_64専用です。 準備ができたら、 x86用イメージか amd64用イメージかを選んでください。 一番近くのミラーサイトにリダイレクトされます。 帯域を節約したかったりコミュニティを手助けしたければ、 torrentsも用意されているので、 そちらもお使いください。 なにかサポートが必要であったり、質問があればforum(英語)のスレッドにお来しください。 変わらぬご愛顧ありがとうございますGentoo Linux開発者、 Gentoo FoundationおよびGentoo-Ten Project一同]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20111109-wiki-announcement.html">
     <title>Gentooに新たな装備…「公式Gentoo Wiki」が加わりました!</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20111109-wiki-announcement.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20111109-wiki-announcement.html</link>
     <dc:subject>moo</dc:subject>
     <dc:creator>a3li (翻訳: 青田直大)</dc:creator>
     <description><![CDATA[11月9日に公式のGentoo Wikiがオープンしました。 Gentoo開発者の会議によくあるように、色をどうするかなど公式Wikiに関する細かいことでかなりの時間を割きました。 最後にでてきた答えは、驚きかもしれませんが…紫でした! まあ、御託はもういいでしょう。 ぴかぴかの新しいWikiへようこそ Wikiを見てまわって、疑問の答えやGentooに使えるクールな技を探してみてください。 他のGentooユーザに役立つネタがありますか? ぜひ記事を書いたり編集してみてください! Wikiを始める手助けになるようにWikiがどのように動くかを書きました。 それでも疑問があればfreenodeの#gentoo-wikiでコンタクトをとったり、 wiki@gentoo.orgにメールしてください。 あなたの投稿をお待ちしております! Gentoo Wikiチーム]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20110807-livedvd.html">
     <title>Gentoo LinuxはLiveDVD 11.2をリリースしました</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20110807-livedvd.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20110807-livedvd.html</link>
     <dc:subject>gentoo</dc:subject>
     <dc:creator>David Abbott (翻訳: 青田直大)</dc:creator>
     <description><![CDATA["The future is now" edition Gentoo Linuxは、Gentooのユーザと開発者の変わらぬコラボレーションを祝福する新しいLiveDVDが出たことを誇りを持ってアナウンスします。 LiveDVDにはすばらしいほどのパッケージが入っています。以下でいくつか紹介しましょう。 システムパッケージ: Linuxカーネル 3.0 (Gentooのパッチこみ), Speakupによるアクセシビリティサポート, Bash 4.2, GLIBC 2.13-r2, GCC 4.5.2, Binutils 2.21.1, Python 2.7.2 and 3.2, Perl 5.12.4などなど デスクトップ環境およびウィンドウマネージャ: KDE 4.7.0, GNOME 3.0.0, Xfce 4.8, Enlightenment 1.0.8, Openbox 3.5.0, Fluxbox 1.3.1, XBMC 10.1 Awesome 3.4.10, LXDE-Meta 0.5.5 オフィス、グラフィックなどの業務用アプリケーション: LibreOffice 3.3.3, XEmacs 21.5.31 GVim 7.3.244, Abiword 2.8.6, Scribus 1.3.9, GIMP 2.6.11, Inkscape 0.48.2, Blender 2.57, XSane 0.998など他にもたくさん Webブラウザ: Mozilla Firefox 5.0, Chromium 13.0 Arora 0.11.0, Opera 11.50.1074, Epiphany 3.0.4, Seamonkey 2.2など他にもみんなの好きなものを コミュニケーションツール: Pidgin 2.9.0, Quassel 0.7.2, Mozilla Thunderbird 5.0, Claws Mail 3.7.9, QTwitter 0.10.0, Irssi 0.8.15などたくさん 開発アプリケーション: KDevelop 4.2.3, KDESvn 1.5.5, Qt-creator 2.2.1, Bluefish 2.0.3などたくさん マルチメディアアプリケーション: Amarok 2.4.3, MPlayer 1.0_rc4, MPlayer2 2.0, DVDAuthor 0.6.14, LAME 3.98.4, FFmpeg 0.6.90, GNOME-MPlayer 1.0.4, SMPlayer 0.6.9などなど 特別機能: AUFSによる書きこみ可能なファイルシステムで新しくパッケージをemergeできます! リセットされない$HOME。詳しくはF9を! LiveDVDは二種類提供され、ひとつはx86/x86_64のハイブリッド、 もうひとつはx86_64のmultilibのものになります。 livedvd-x86-amd64-32ul-11.2の方は、32bitのx86でも64bitのx86_64でも動作するでしょう。 お使いのCPUアーキテクチャがx86であればデフォルトのgentooカーネルで起動してください。 CPUアーキテクチャがamd64であれば、 gentoo64カーネルで起動してください。つまり、DVDで提供されている32bitの環境を使いながら64bitのカーネルで起動し、 64bitのカスタムしたユーザランドをインストールできる、ということです。 アーキテクチャを選んでください。ダウンロードミラーにリダイレクトされます。 x86 amd64 Torrentsもhttp://torrents.gentoo.orgにあります。 なにかサポートが必要であったり、質問があればforum(英語)のスレッドにお来しください。 変わらぬご愛顧ありがとうございますGentoo Linux開発者、 Gentoo FoundationおよびGentoo-Ten Project一同]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html">
     <title>Gentoo スクリーンショットコンテスト 2011</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20110701-2011-screenshot-contest-announcement.html</link>
     <dc:subject>moo</dc:subject>
     <dc:creator>naota</dc:creator>
     <description><![CDATA[2010 Screenshot Contest の成功を受けて、コンテストチームは今年もコンテストを実施することにしました! Gentooユーザー・開発者・スタッフのみなさん、一番のスクリーンショットをどしどしご応募ください。 今年はlikewhoaは全く使わず、コンテスト用に設定されたCMSを使います。 詳しくは2011 Contest Pageをご覧ください。 このforum postに、 コンテストへのコメントや提案をお待ちしております。さて! 話は終わりました! さっそくデスクトップをいじりましょう! この記事はdabbott Gentoo Screenshot Contest 2011の翻訳です。]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20110506-openrc.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20110506-openrc.html">
     <title>5月8日にOpenRCとbaselayout 2がstableになります</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20110506-openrc.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20110506-openrc.html</link>
     <dc:subject>linux</dc:subject>
     <dc:creator>naota</dc:creator>
     <description><![CDATA[このニュースはGentoo本家ニュース OpenRC and baselayout 2 will be stabilized on May 8の翻訳です。 5月8日に Gentooの現在のサービスシステム(baselayout)を置き換える OpenRCがstableになります。 以前のbaselayoutのbashのみのrcシステムに代わり、C言語ベースのコアに POSIX準拠のシェルスクリプトのみを使ったrcシステムになります。 sys-apps/baselayoutが2.xに更新され、sys-apps/openrcという新しいパッケージがインストールされることになります。 なるべく早くこの更新を行なうようにしてください。 このパッケージがemergeされたら、すぐにdispatch-confやetc-update (日本語訳) などの設定更新ツールで設定ファイルを更新して、OpenRC Migration Guideに従うようにしてください。 これらの更新に失敗した場合、システムが起動しなくなる可能性があります。 もし、起動しなくなった場合は、LiveCDやLiveDVDで起動しルートファイルシステムを マウントして そこにchrootして (日本語訳)上に書いた指示に従うようにしてください。 Christian Faulhammer and William Hubbs contributed this announcement.]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20081221-gmn.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20081221-gmn.html">
     <title>Gentoo Monthly Newsletter &#8211; 2008年12月21日</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20081221-gmn.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20081221-gmn.html</link>
     <dc:subject>linux</dc:subject>
     <dc:creator>GMN (翻訳: Ryo Kuya, 飴谷)</dc:creator>
     <description><![CDATA[GMN2008年11月号の翻訳版をおおくりします。 今号の翻訳はGMN-JPチーム（Ryo Kuyaさん、飴谷さん）が担当いたしました。 先月号が発行されなかっため、今月号はボリュームが多め。 Kernelチームの情報、Gentoo　Wikiの復旧状況などが掲載されています。]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20081013-gmn.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20081013-gmn.html">
     <title>Gentoo Monthly Newsletter &#8211; 2008年9月30日</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20081013-gmn.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20081013-gmn.html</link>
     <dc:subject>linux</dc:subject>
     <dc:creator>GMN (翻訳: Ryo Kuya、Yoko Kuya、opentaka)</dc:creator>
     <description><![CDATA[GMN2008年09月号の翻訳版をおおくりします。 今号の翻訳はGMN-JPチーム（Ryo Kuyaさん、Yoko Kuyaさん、opentakaさん）が担当いたしました。 今月号にはteTeXの廃止とTeXLiveへの移行、EAPI-2の承認、iotop使い方などが掲載されています。]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20080915-gmn.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20080915-gmn.html">
     <title>Gentoo Monthly Newsletter &#8211; 2008年8月31日</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20080915-gmn.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20080915-gmn.html</link>
     <dc:subject>linux</dc:subject>
     <dc:creator>GMN (翻訳: Ryo Kuya、Yoko Kuya、opentaka)</dc:creator>
     <description><![CDATA[GMN2008年8月号の翻訳版をおおくりします。 今号の翻訳はGMN-JPチーム（Ryo Kuyaさん、Yoko Kuyaさん、opentakaさん）が担当いたしました。 今月号にはPHP4削除、Google Summer of Code の学生へのインタビュー、 Gentooベースの新しいディストリビューションの話題などが掲載されています。]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20080806-gmn.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20080806-gmn.html">
     <title>Gentoo Monthly Newsletter &#8211; 2008年7月28日</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20080806-gmn.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20080806-gmn.html</link>
     <dc:subject>linux</dc:subject>
     <dc:creator>GMN (翻訳: opentaka、Ryo Kuya)</dc:creator>
     <description><![CDATA[GMN2008年7月号の翻訳版をおおくりします。 今号の翻訳はGMN-JPチーム（opentakaさん、Ryo Kuyaさん）が担当いたしました。 今月号には2008.0リリースニュース、香港のユニークなバーの話題、 削除してしまったファイルの復元方法などが掲載されています。]]></description>
   </item>
-  <item rdf:about="http://www.gentoo.gr.jp/jpnews/org/20080727-gmn.html">
+  <item rdf:about="http://www.gentoo.jp/jpnews/org/20080727-gmn.html">
     <title>Gentoo Monthly Newsletter &#8211; 2008年6月30日</title>
-    <link>http://www.gentoo.gr.jp/jpnews/org/20080727-gmn.html</link>
+    <link>http://www.gentoo.jp/jpnews/org/20080727-gmn.html</link>
     <dc:subject>linux</dc:subject>
     <dc:creator>GMN (翻訳: 武田洋之、Ryo Kuya 、Yoko Kuya)</dc:creator>
     <description><![CDATA[2008年から始まったGMN(Gentoo Monthly Newsletter)6月号の翻訳版をお送りします。 GMNはGentoo関連のニュースを提供する毎月1回発行されるGentooのニュースレターです（以前のGWNの後継になります）。 翻訳はGMN-JPチーム（武田さん、Ryo Kuyaさん、Yoko Kuyaさん）が担当いたしました。 今月号にはGentoo理事会の結果やドイツとベネズエラでのイベントの様子、 Google Summer of Code の学生へのインタビューなどが掲載されています。]]></description>
