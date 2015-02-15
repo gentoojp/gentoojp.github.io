@@ -7,7 +7,7 @@ permalink: /gentoojp-news.xml
 
 <rdffeed type="news">
 	<title>GentooJP News</title> 
-	<link>http://www.gentoo.gr.jp/</link>
+	<link>http://www.gentoo.jp/</link>
 	<description>GentooJP News</description>
 	<feeditems />
 </rdffeed>

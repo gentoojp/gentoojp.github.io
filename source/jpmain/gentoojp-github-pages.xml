@@ -2,7 +2,7 @@
 <?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
 <!DOCTYPE guide SYSTEM "/dtd/guide.dtd">
 <guide>
-  <title>www.gentoo.gr.jpのGithub Pagesについて</title>
+  <title>www.gentoo.jpのGithub Pagesについて</title>
   <author title="Author"><mail link="www@gentoo.jp">GentooJP</mail></author>
 
   <abstract>
@@ -62,7 +62,7 @@ $ <i>cd gentoojp.github.io</i></pre>
   &lt;title&gt;Github Pagesへ移行しました&lt;/title&gt;
 &lt;body&gt;
   &lt;p&gt;
-    GentooJPのホームページ(www.gentoo.gr.jp)はGithub Pagesへ移行しました。
+    GentooJPのホームページ(www.gentoo.jp)はGithub Pagesへ移行しました。
   &lt;/p&gt;
 &lt;/body&gt;</pre>
         <pre caption="ニュース記事をRSS用インデックスに追加">$ <i>$EDITOR source/jpnews/main/news-index.xml</i>
