@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+  <poster>naota</poster>
+  <date>24 Feb 2015</date>
+  <title>Gentooの質問・バグ報告を日本語で</title>
+<body>
+  <p>GentooJPでは、GitHub Issuesを使って日本語でのGentooの質問・バグ報告を受け付け開始しました。</p>
+  <p>Gentoo本家の開発者も所属するGentooJPのメンバーが、質問への解答や本家へのバグ報告を行ないます。</p>
+
+  <p><uri link="https://github.com/gentoojp/issues/issues">Issues gentoojp/issues</uri>からお気軽にどうぞ。</p>
+</body>
+</news>
