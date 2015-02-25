@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+    <poster>naota</poster>
+    <date>24 Feb 2015</date>
+    <title>オープンソースカンファレンス2015 Tokyo/Springに出展します。</title>
+<body>
+<p>GentooJP は<uri link="https://www.ospn.jp/osc2015-spring/">オープンソースカンファレンス2015 Tokyo/Spring</uri>に参加します。</p>
+
+<p>
+GentooJPの展示内容:
+</p>
+
+<ol>
+<li>Gentoo Linuxの紹介</li>
+<li>Gentooバグを潰す</li>
+</ol>
+
+</body>
+</news>
