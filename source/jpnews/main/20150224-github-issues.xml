@@ -2,7 +2,7 @@
 <?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
 <news gentoo="yes" category="gentoojp">
   <poster>naota</poster>
-  <date>24 Feb 2015</date>
+  <date>25 Feb 2015</date>
   <title>Gentooの質問・バグ報告を日本語で</title>
 <body>
   <p>GentooJPでは、GitHub Issuesを使って日本語でのGentooの質問・バグ報告を受け付け開始しました。</p>
