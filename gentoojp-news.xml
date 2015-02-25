@@ -9,11 +9,11 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150225-github-issues.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150224-osc2015spring.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150215-new-domain.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20141212-bonenkay20141220.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20140726-meeting20140802.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20140705-meeting20140705.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20110807-livedvd.html"/>
@@ -22,6 +22,13 @@
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.jp/jpnews/main/20150225-github-issues.html">
+    <title>Gentooの質問・バグ報告を日本語で</title>
+    <link>http://www.gentoo.jp/jpnews/main/20150225-github-issues.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>naota</dc:creator>
+    <description><![CDATA[GentooJPでは、GitHub Issuesを使って日本語でのGentooの質問・バグ報告を受け付け開始しました。 Gentoo本家の開発者も所属するGentooJPのメンバーが、質問への解答や本家へのバグ報告を行ないます。 Issues gentoojp/issuesからお気軽にどうぞ。]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/main/20150224-osc2015spring.html">
     <title>オープンソースカンファレンス2015 Tokyo/Springに出展します。</title>
     <link>http://www.gentoo.jp/jpnews/main/20150224-osc2015spring.html</link>
@@ -49,13 +56,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>Kojima</dc:creator>
     <description><![CDATA[8月もGentoo 勉強会が開催されます。 誰でも参加できます。 開催日時: 2014/08/02(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース その他 Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 https://gentoo-jp.hackpad.com/]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.jp/jpnews/main/20140705-meeting20140705.html">
-    <title>GentooJP勉強会 2014/07/05</title>
-    <link>http://www.gentoo.jp/jpnews/main/20140705-meeting20140705.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>Kojima</dc:creator>
-    <description><![CDATA[7月もGentoo 勉強会が開催されます。 誰でも参加できます。 開催日時: 2014/07/05(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース その他 Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 http://gentoo.titanpad.com/4]]></description>
   </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html">
     <title>Gentoo Linux LiveDVD 12.0のリリース</title>
