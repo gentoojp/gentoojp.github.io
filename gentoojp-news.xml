@@ -9,11 +9,11 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20151115-shutdown-gentoo-gr-jp.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150225-github-issues.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150224-osc2015spring.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150215-new-domain.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20141212-bonenkay20141220.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20140726-meeting20140802.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20110807-livedvd.html"/>
@@ -22,6 +22,13 @@
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.jp/jpnews/main/20151115-shutdown-gentoo-gr-jp.html">
+    <title>gentoo.gr.jp ドメイン廃止とメーリングリスト停止のお知らせ</title>
+    <link>http://www.gentoo.jp/jpnews/main/20151115-shutdown-gentoo-gr-jp.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Kojima</dc:creator>
+    <description><![CDATA[2002年より使用しておりました gentoo.gr.jp ドメインですが、この度利用を停止することに致しました。 今後はwww.gentoo.jpをご利用下さい。 また、ドメイン廃止に併せ、現在提供しております以下のサービスを停止いたします。 wiki.gentoo.gr.jp ebuild.gentoo.gr.jp git.gentoo.gr.jp dev.gentoo.gr.jp gentoojp-users, gentoojp-misc, gentoojp-docsなどml.gentoo.gr.jpで提供しているメーリングリスト メーリングリストの代替としましては、以下のサービスをご利用下さいますようお願いいたします。 gentoojp/issues gentoojp/gentoo-doc-ja GentooJP - Google グループ]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/main/20150225-github-issues.html">
     <title>Gentooの質問・バグ報告を日本語で</title>
     <link>http://www.gentoo.jp/jpnews/main/20150225-github-issues.html</link>
@@ -49,13 +56,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>Alice</dc:creator>
     <description><![CDATA[飲み会の参加は2014/12/14 までです。早めにさんかしてください。 Ｇｅｎｔｏｏ 忘年会ー飲み会の参加 Gentoo 忘年会ー勉強会の参加 誰でも参加できます。 開催日時: 2014/12/20(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 懇親会と忘年会 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース その他 Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 https://gentoo-jp.hackpad.com/ 早い者勝ち 和菓子もって来ても大丈夫です。 Twitterのタッグはいつも#Gentoo勉強会。 後で飲み会やりましょう!]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.jp/jpnews/main/20140726-meeting20140802.html">
-    <title>GentooJP勉強会 2014/08/02</title>
-    <link>http://www.gentoo.jp/jpnews/main/20140726-meeting20140802.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>Kojima</dc:creator>
-    <description><![CDATA[8月もGentoo 勉強会が開催されます。 誰でも参加できます。 開催日時: 2014/08/02(土) 15:00 〜 19:00 場所: ミラクルリナックス(地図) 参加方法: connpass Topic: 皆様の自己紹介 次のOSC 最近の Gentoo.gr.jp 関連ニュース 最近の Gentoo 関連ニュース その他 Gentooバグを潰す Gentoo Wiki の翻訳をする プレゼンテーション等を行いたい方は、こちらにご記入下さい。 https://gentoo-jp.hackpad.com/]]></description>
   </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html">
     <title>Gentoo Linux LiveDVD 12.0のリリース</title>
