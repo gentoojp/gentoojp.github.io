@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+  <poster>Kojima</poster>
+  <date>15 Nov 2015</date>
+  <title>gentoo.gr.jp ドメイン廃止とメーリングリスト停止のお知らせ</title>
+<body>
+  <p>2002年より使用しておりました gentoo.gr.jp ドメインですが、この度利用を停止することに致しました。</p>
+  <p>今後は<uri link="http://www.gentoo.jp">www.gentoo.jp</uri>をご利用下さい。</p>
+  <p>また、ドメイン廃止に併せ、現在提供しております以下のサービスを停止いたします。</p>
+
+  <ol>
+    <li>wiki.gentoo.gr.jp</li>
+    <li>ebuild.gentoo.gr.jp</li>
+    <li>git.gentoo.gr.jp</li>
+    <li>dev.gentoo.gr.jp</li>
+    <li>gentoojp-users, gentoojp-misc, gentoojp-docsなどml.gentoo.gr.jpで提供しているメーリングリスト</li>
+  </ol>
+
+  <p>メーリングリストの代替としましては、以下のサービスをご利用下さいますようお願いいたします。</p>
+  <ol>
+    <li><uri link="https://github.com/gentoojp/issues">gentoojp/issues</uri></li>
+    <li><uri link="https://github.com/gentoojp/gentoo-doc-ja">gentoojp/gentoo-doc-ja</uri></li>
+    <li><uri link="https://groups.google.com/forum/#!forum/gentoojp">GentooJP - Google グループ</uri></li>
+  </ol>
+</body>
+</news>
