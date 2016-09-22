@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+  <poster>Alicef</poster>
+  <date>21 Sep 2016</date>
+  <title>GentooJP勉強会 2016/10/01</title>
+<body>
+
+    <p>10月も<uri link="http://gentoo.connpass.com/event/40906/">Gentoo 勉強会</uri>が開催されます。</p>
+<p>誰でも参加できます。</p>
+<ol>
+  <li>Gentoo 勉強会</li>
+  <li>開催日時: 2016/10/01(土) 15:00 〜 19:00</li>
+  <li>場所: ミラクルリナックス(<uri link="https://goo.gl/maps/c8yKswFFmAt">地図</uri>)</li>
+  <li>参加方法: <uri link="http://gentoo.connpass.com/event/40906/">connpass</uri></li>
+</ol>
+<ol>
+  <li>Gentoo 飲み会</li>
+  <li>開催日時: 2016/10/01(土) 20:00 〜 23:00</li>
+  <li>場所: 予約中</li>
+  <li>参加方法: <uri link="http://gentoo.connpass.com/event/40908/">connpass</uri></li>
+</ol>
+
+<p>Topic: </p>
+<ol>
+  <li>皆様の自己紹介</li>
+  <li>次のOSC</li>
+  <li>最近の Gentoo 関連ニュース</li>
+  <li><uri link="https://gentoo-jp.hackpad.com/ZKizL5TdSsC">その他</uri></li>
+  <li>Gentooの公式gitリポジトリ</li>
+  <li>Gentooバグを潰す</li>
+</ol>
+
+<p>プレゼンテーション等を行いたい方は、こちらにご記入下さい。
+    <uri link="https://gentoo-jp.hackpad.com/ZKizL5TdSsC">https://gentoo-jp.hackpad.com/</uri>
+</p>
+
+</body>
+</news>
