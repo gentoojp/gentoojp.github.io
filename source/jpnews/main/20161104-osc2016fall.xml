@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+    <poster>alicef</poster>
+    <date>04 Nov 2016</date>
+    <title>オープンソースカンファレンス2016 Tokyo/Fallに出展します。</title>
+<body>
+<p>GentooJP は<uri link="https://www.ospn.jp/osc2016-fall/">オープンソースカンファレンス2016 Tokyo/Fall</uri>に参加します。</p>
+<p>OSC2016 Tokyo/Fall Gentoo ブースご協力お願いします。</p>
+<uri link="https://t.co/jsQowoXUcW">
+<p>
+GentooJPの展示内容:
+</p>
+<ol>
+<li>Gentoo Linuxの紹介</li>
+<li>Gentooバグを潰す</li>
+<li>Gentoo ステッカー</li>
+<li>GentooJPコミュニティ紹介</li>
+</ol>
+
+</body>
+</news>
