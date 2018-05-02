@@ -10,7 +10,7 @@ branches:
 before_script:
 - ./travis-ci/travis-secure-sshkey.sh decrypt
 - sudo apt-get update
-- sudo apt-get install -qq xsltproc
+- sudo apt-get install -qq xsltproc libxml2-utils
 
 script: bundle exec rake generate
 
