@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href="/xsl/guide.xsl" type="text/xsl"?>
+<news gentoo="yes" category="gentoojp">
+  <poster>Alicef</poster>
+  <date>16 Apr 2021</date>
+  <title>GentooJP勉強会 2021/04/24</title>
+<body>
+
+    <p><uri link="https://gentoo.connpass.com/event/208492/">Gentoo 勉強会</uri>が開催されます！</p>
+<p>誰でも参加できます。</p>
+<ol>
+  <li>Gentoo 勉強会</li>
+  <li>開催日時: 2021/04/24(土) 15:00 〜 19:00</li>
+  <li>場所: オンライン</li>
+  <li>参加方法: <uri link="https://gentoo.connpass.com/event/208492/">connpass</uri></li>
+</ol>
+<ol>
+  <li>Gentoo 飲み会</li>
+  <li>開催日時: 2021/04/24(土) 19:00 〜</li>
+  <li>場所: オンライン</li>
+</ol>
+
+</body>
+</news>
