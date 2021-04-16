@@ -16,6 +16,8 @@ jobs:
           sudo apt-get install -qq xsltproc libxml2-utils
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
+      - name: Install Bundler 2
+        run: gem install bundler
       - name: Bundle install
         run: bundle install
       - name: Generate pages
