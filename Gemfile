@@ -18,4 +18,4 @@ group :development do
   gem 'travis'
 end
 
-gem 'sinatra', '~> 1.4.2'
+gem 'sinatra', '~> 1.4.8'
