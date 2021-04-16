@@ -21,7 +21,7 @@ GEM
     faraday_middleware (0.12.2)
       faraday (>= 0.7.4, < 1.0)
     fast-stemmer (1.0.2)
-    ffi (1.9.23)
+    ffi (1.15.0)
     fssm (0.2.10)
     gh (0.15.1)
       addressable (~> 2.4.0)
