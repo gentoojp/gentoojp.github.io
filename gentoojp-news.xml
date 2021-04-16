@@ -9,11 +9,11 @@
     <admin:errorReportsTo rdf:resource="mailto:www@gentoo.gr.jp"/>
     <items>
       <rdf:Seq>
+        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20210416-meeting20210424.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20160921-meeting20161001.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20151115-shutdown-gentoo-gr-jp.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150225-github-issues.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150224-osc2015spring.html"/>
-        <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/main/20150215-new-domain.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20111109-wiki-announcement.html"/>
         <rdf:li rdf:resource="http://www.gentoo.jp/jpnews/org/20110807-livedvd.html"/>
@@ -22,6 +22,13 @@
       </rdf:Seq>
     </items>
   </channel>
+  <item rdf:about="http://www.gentoo.jp/jpnews/main/20210416-meeting20210424.html">
+    <title>GentooJP勉強会 2021/04/24</title>
+    <link>http://www.gentoo.jp/jpnews/main/20210416-meeting20210424.html</link>
+    <dc:subject>gentoojp</dc:subject>
+    <dc:creator>Alicef</dc:creator>
+    <description><![CDATA[Gentoo 勉強会が開催されます！ 誰でも参加できます。 Gentoo 勉強会 開催日時: 2021/04/24(土) 15:00 〜 19:00 場所: オンライン 参加方法: connpass Gentoo 飲み会 開催日時: 2021/04/24(土) 19:00 〜 場所: オンライン]]></description>
+  </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/main/20160921-meeting20161001.html">
     <title>GentooJP勉強会 2016/10/01</title>
     <link>http://www.gentoo.jp/jpnews/main/20160921-meeting20161001.html</link>
@@ -49,13 +56,6 @@
     <dc:subject>gentoojp</dc:subject>
     <dc:creator>naota</dc:creator>
     <description><![CDATA[GentooJP はオープンソースカンファレンス2015 Tokyo/Springに参加します。 GentooJPの展示内容: Gentoo Linuxの紹介 Gentooバグを潰す]]></description>
-  </item>
-  <item rdf:about="http://www.gentoo.jp/jpnews/main/20150215-new-domain.html">
-    <title>www.gentoo.jp へ変更のお知らせ</title>
-    <link>http://www.gentoo.jp/jpnews/main/20150215-new-domain.html</link>
-    <dc:subject>gentoojp</dc:subject>
-    <dc:creator>Kojima</dc:creator>
-    <description><![CDATA[長らくGentooJPではwww.gentoo.gr.jpをウェブサイトのドメインとして利用しておりましたが、この度www.gentoo.jpに変更することに致しました。 旧ドメインにアクセスすると新ドメインにリダイレクトするように設定していますが、見れない・表示が乱れるなどの不具合を見つけましたらissueに上げて下さい。 Issues gentoojp/gentoojp.github.io]]></description>
   </item>
   <item rdf:about="http://www.gentoo.jp/jpnews/org/20120102-livedvd.html">
     <title>Gentoo Linux LiveDVD 12.0のリリース</title>
