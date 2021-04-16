@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - source
+  pull_request:
+    branches:
+      - source
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -qq xsltproc libxml2-utils
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+      - name: Bundle install
+        run: bundle install
+      - name: Generate pages
+        run: bundle exec rake generate

@@ -1,0 +1,36 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -qq xsltproc libxml2-utils
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+      - name: Bundle install
+        run: bundle install
+      - name: Generate pages
+        run: bundle exec rake generate
+      - name: Setup git config
+        run: |
+          git config --global --add user.name "GentooJP"
+          git config --global --add user.email www@gentoo.jp
+          git config --local --unset remote.origin.url
+          git config --local --add remote.origin.url git@github.com:gentoojp/gentoojp.github.io.git
+      - name: Checkout master branch
+        uses: actions/checkout@v2
+        with:
+          path: _deploy
+          ref: master
+      - name: Deploy to GitHub Pages
+        run: bundle exec rake deploy
+
