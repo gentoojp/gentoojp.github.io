@@ -68,7 +68,7 @@ DEPENDENCIES
   rubypants (~> 0.2.0)
   sass (~> 3.2)
   sass-globbing (~> 1.0.0)
-  sinatra (~> 1.4.2)
+  sinatra (~> 1.4.8)
   stringex (~> 1.4.0)
 
 BUNDLED WITH
