@@ -14,7 +14,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -qq xsltproc libxml2-utils
-          gem install bundler
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+      - name: Bundle install
+        run: bundle install
       - name: Generate pages
         run: bundle exec rake generate
       - name: Setup git config
